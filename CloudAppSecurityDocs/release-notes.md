@@ -29,6 +29,14 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## July 2023
 
+### Custom connectors with the open app connector platform
+
+Defender for Cloud Apps' new codeless, open app connector platform helps SaaS vendors create app connectors for their SaaS apps.
+
+Create Defender for Cloud Apps connectors to extend app security features across customer SaaS ecosystems, safeguarding data, mitigating risks, and reinforcing overall SaaS security posture.
+
+For more information, see [Microsoft Defender for Cloud Apps open app connector platform](connector-platform.md).
+
 ### Session and access policy consolidation
 
 Defender for Cloud Apps now simplifies working with both session and access policies. Previously, in order to create a session or access policy for a host app, such as Exchange, Teams, or Gmail, customers would need to create a separate policy for any relevant resource app, such as SharePoint, OneDrive, or Google Drive. Starting on July 11, 2023, you now only need to create a single policy on the hosted app.
@@ -166,7 +174,7 @@ To enhance our threat protection and reduce alert fatigue, we've added a new dat
 March 19, 2023
 
 - **Automatic redirection from Microsoft Defender for Cloud Apps to the Microsoft 365 Defender portal (Preview)**  
-A new automatic redirection toggle will allow you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft 365 Defender. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft 365 Defender portal. The toggle default value is set to **Off**, and admins will need explicitly to opt-in to the automatic redirection and start using the Microsoft 365 Defender exclusively. You still have an option to opt-out from the Microsoft 365 Defender experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+A new automatic redirection toggle will allow you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft 365 Defender. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft 365 Defender portal. The toggle default value is set to **Off**, and admins will need explicitly to opt in to the automatic redirection and start using the Microsoft 365 Defender exclusively. You still have an option to opt out from the Microsoft 365 Defender experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
 
 ### Defender for Cloud Apps release 248
 
