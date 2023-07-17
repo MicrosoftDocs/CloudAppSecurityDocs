@@ -104,6 +104,8 @@ items:
       href: protect-servicenow.md
     - name: Protect Slack
       href: protect-slack.md
+    - name: Protect Miro (Preview)
+      href: protect-miro.md
     - name: Protect Workplace (Preview)
       href: protect-workplace.md
     - name: Protect Smartsheet
