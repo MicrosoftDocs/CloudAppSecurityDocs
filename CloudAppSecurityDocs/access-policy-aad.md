@@ -11,7 +11,8 @@ ms.topic: how-to
 Microsoft Defender for Cloud Apps access policies enable real-time monitoring and control over access to cloud apps based on user, location, device, and app. You can create access policies for any device, including devices that aren't Hybrid Azure AD Join and not managed by Microsoft Intune, by rolling out client certificates to managed devices or using existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices and then block access from devices without a certificate.
 
 > [!NOTE]
-> Instead of allowing or blocking access completely, with [session policies](session-policy-aad.md) you can allow access while monitoring the session and/or limit specific session activities.
+> - Instead of allowing or blocking access completely, with [session policies](session-policy-aad.md) you can allow access while monitoring the session and/or limit specific session activities.
+> - There's no connection between a policy that you create for a host app and any related resource apps. For example, access policies that you create for Teams, Exchange, or Gmail, are not connected to Sharepoint, OneDrive, or Google Drive. If you need a policy for the resource app in addition to the host app, create a separate policy. 
 
 ## Prerequisites to using access policies
 
