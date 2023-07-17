@@ -1,5 +1,5 @@
 ---
-title: Connect Miro
+title: Connect Miro to Microsoft Defender for Cloud Apps
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Miro app using the App Connector APIs. 
 ms.date: 07/17/2023
 ms.topic: how-to
@@ -45,5 +45,6 @@ If you have any problems connecting the app, see [Troubleshooting App Connectors
 
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 
 
