@@ -280,6 +280,8 @@ items:
       href: ./connect-servicenow.md
     - name: Connect Slack
       href: ./connect-slack.md
+    - name: Connect Miro (Preview)
+      href: connect-miro.md
     - name: Connect Smartsheet
       href: ./connect-smartsheet.md
     - name: Connect Webex
