@@ -102,6 +102,8 @@ items:
       href: protect-salesforce.md
     - name: Protect ServiceNow
       href: protect-servicenow.md
+    - name: Protect Asana (Preview)
+      href: protect-asana.md
     - name: Protect Slack
       href: protect-slack.md
     - name: Protect Workplace (Preview)
