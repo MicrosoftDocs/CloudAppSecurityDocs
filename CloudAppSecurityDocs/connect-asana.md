@@ -33,10 +33,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 6. Click on **Connect an app** and select **Asana.**
 
-7. Provide an Instance name in the connection wizard and click on **Next.**
-
-![User's image](image3.png)
-
+1. Provide an Instance name in the connection wizard and click on **Next.**
 8. Enter the copied access token and workspace ID in API Key and workspace ID fields respectively. Once entered click on **Submit**.
 
 9. Defender for Cloud Apps will start fetch Asana audit logs once connection is successfully established.
