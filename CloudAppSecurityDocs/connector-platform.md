@@ -16,7 +16,7 @@ This article describes how SaaS app vendors can use the Defender for Cloud Apps 
 
 ## Sample scenarios
 
-As a SaaS vendor, building a Defender for Cloud Apps connector for your app enhances your app security with Defender for Cloud Apps' SaaS security posture management and threat protections features. SaaS apps with connectors are also automatically added to the [Microsoft 365 Defender partner catalog](/microsoft-365/security/defender-endpoint/technological-partners)<!--automatically? really?-->, providing vendors with more visibility and opportunities to expand to new customers.
+As a SaaS vendor, building a Defender for Cloud Apps connector for your app enhances your app security with Defender for Cloud Apps' SaaS security posture management and threat protections features. SaaS apps with connectors are also added to the [Microsoft 365 Defender partner catalog](/microsoft-365/security/defender-endpoint/technological-partners), providing vendors with more visibility and opportunities to expand to new customers.
 
 For example, you might create a connector for your app in one of the following scenarios:
 
