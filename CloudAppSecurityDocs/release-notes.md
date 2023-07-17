@@ -39,6 +39,12 @@ For more information, see:
 - [Access policies in Microsoft Defender for Cloud Apps](/defender-cloud-apps/access-policy-aad)
 - [Session policies](/defender-cloud-apps/session-policy-aad)
 
+### Automatic redirect to Microsoft 365 Defender (Preview)
+
+Customers using preview features are now automatically redirected to Microsoft 365 Defender from the classic Microsoft Defender for Cloud Apps portal. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
+
+For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+
 ## June 2023
 
 > [!NOTE]
