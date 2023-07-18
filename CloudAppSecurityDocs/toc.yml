@@ -248,6 +248,10 @@ items:
     items:
     - name: Connect apps to get visibility and protection
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+    - name: Custom connectors with the open app connector platform
+      href: ./connector-platform.md
+    - name: Connect Asana (Preview)
+      href: ./connect-asana.md
     - name: Connect Atlassian
       href: connect-atlassian.md
     - name: Connect AWS
@@ -270,6 +274,8 @@ items:
       href: ./connect-google-gcp.md
     - name: Connect Google Workspace
       href: ./connect-google-workspace.md
+    - name: Connect Miro (Preview)
+      href: ./connect-miro.md
     - name: Connect NetDocuments
       href: connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
     - name: Connect Office 365
