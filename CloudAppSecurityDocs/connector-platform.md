@@ -49,11 +49,15 @@ The following steps provide more details about the open app connector platform p
 ## Frequently Asked Questions (FAQs)
 
 1. What are the technical prerequisites for the SaaS app to support integration?
+   
 To enable seamless integration with Defender for Cloud Apps, the SaaS app must meet the following technical requirements.
 a. Advanced Threat Protection Scenario: The SaaS app should have REST APIs, facilitating the querying of user accounts and audit logs by Defender for Cloud Apps.
 b. Security Posture Management Scenario: The SaaS app needs to provide APIs, enabling queries regarding SaaS security configurations.
 c. Authentication Requirement: The REST APIs of the SaaS app should support authentication through the oAuth protocol.
+
+
 1. Who should I contact for inquiries about the Open App Connector platform?
+   
 If you have any questions regarding the Open App Connector platform, feel free to get in touch with '**[BuildSaaSConnector@microsoft.com](mailto:BuildSaaSConnector@microsoft.com)**'.
 
 ## Next steps
