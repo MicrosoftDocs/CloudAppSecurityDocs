@@ -27,10 +27,57 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
+## July 2023
+
+### Custom connectors with the open app connector platform
+
+Defender for Cloud Apps' new codeless, open app connector platform helps SaaS vendors create app connectors for their SaaS apps.
+
+Create Defender for Cloud Apps connectors to extend app security features across customer SaaS ecosystems, safeguarding data, mitigating risks, and reinforcing overall SaaS security posture.
+
+For more information, see [Microsoft Defender for Cloud Apps open app connector platform](connector-platform.md).
+
+### Session and access policy consolidation
+
+Defender for Cloud Apps now simplifies working with both session and access policies. Previously, in order to create a session or access policy for a host app, such as Exchange, Teams, or Gmail, customers would need to create a separate policy for any relevant resource app, such as SharePoint, OneDrive, or Google Drive. Starting on July 11, 2023, you now only need to create a single policy on the hosted app.
+
+For more information, see:
+
+- [Control cloud apps with policies](/defender-cloud-apps/control-cloud-apps-with-policies)
+- [Access policies in Microsoft Defender for Cloud Apps](/defender-cloud-apps/access-policy-aad)
+- [Session policies](/defender-cloud-apps/session-policy-aad)
+
+### Automatic redirect to Microsoft 365 Defender (Preview)
+
+Customers using preview features are now automatically redirected to Microsoft 365 Defender from the classic Microsoft Defender for Cloud Apps portal. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
+
+For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+
 ## June 2023
 
 > [!NOTE]
 > Starting in June 2023, updates for app governance are listed together with other Microsoft Defender for Cloud features. For information about earlier releases, see [What's new in the app governance add-on to Defender for Cloud Apps](app-governance-whats-new.md).
+
+### New IP addresses for access and session controls 
+
+The IP addresses used for our access and session controls services have been updated.  Make sure to update your firewall's allowlist accordingly to keep the service fully functional. Newly added addresses include:
+
+|Data center|Public IPs|
+|----|----|
+|**Brazil South**  | 191.235.54.192, 191.235.58.85, 191.235.59.0, 191.235.58.255, 191.235.58.203, 191.235.57.180, 191.235.58.56, 191.235.58.201, 20.206.229.223, 191.235.55.73, 20.206.75.66, 20.226.100.200, 20.206.231.146, 104.41.37.185 |
+|**West US 3**  |20.14.38.222, 20.14.38.249, 20.150.153.126, 20.150.157.146, 20.150.157.211, 20.150.152.101, 20.106.80.235, 20.106.81.123, 20.150.158.183, 20.150.153.110, 20.118.150.70, 20.118.145.8, 20.150.143.88, 20.125.76.39, 20.106.103.34, 20.163.100.176  |
+|**North Europe**|  20.166.182.165, 20.166.182.171, 20.166.182.163, 20.166.182.193, 4.231.129.248, 20.54.22.195, 4.231.129.246, 20.67.137.212, 40.127.131.206, 20.166.182.159, 20.166.182.182, 68.219.99.39, 20.166.182.204, 68.219.99.63 |
+|**Canada Central** | 20.175.151.201, 20.175.142.34, 20.175.143.233, 4.205.74.15, 20.175.142.19, 20.175.142.143, 20.175.140.191, 20.175.151.166, 20.175.140.185, 20.175.143.220, 20.175.140.128, 20.104.25.35, 4.205.74.7, 20.220.128.26 |
+|**East Asia** | 20.195.89.186, 20.195.89.213, 20.195.89.128, 20.195.89.62, 20.195.89.219, 20.239.27.66, 20.239.26.193, 20.195.89.72, 20.195.89.166, 20.195.89.56, 20.187.114.178, 20.239.119.245, 20.205.119.72, 20.187.116.207 |
+|**Australia Southwest**| 20.211.237.204, 20.92.29.167, 4.198.154.86, 4.198.66.117, 4.198.66.135, 20.11.210.40, 4.198.66.90, 20.92.8.154, 4.198.66.105, 4.198.66.78, 20.190.102.146, 4.198.66.126, 4.198.66.94, 4.198.66.92 |
+|**Central India**| 20.219.226.117, 20.204.235.50, 20.235.81.243, 20.204.235.230, 20.219.226.224, 20.204.236.111, 20.204.236.147, 20.204.236.213, 20.204.236.115, 20.204.236.74, 20.204.236.17, 20.235.115.136, 20.219.218.134, 20.204.251.239, 4.224.61.207 |
+|**Southeast Asia** | 20.24.14.233 |
+|**France Central** | 20.74.115.131, 20.74.94.109, 20.111.40.153, 20.74.94.42, 20.74.94.220, 51.103.31.141, 20.74.95.102, 20.74.94.113, 51.138.200.138, 20.74.94.139, 20.74.94.136, 51.103.95.227, 20.74.114.253, 20.74.94.73 | 
+|**West Europe** | 20.76.199.12, 20.160.197.20, 20.76.199.126, 20.76.198.169, 20.4.196.150, 20.76.199.32, 13.69.81.118, 20.76.151.201, 20.76.199.49, 20.76.198.36, 20.76.199.14, 20.76.198.91, 20.93.194.151, 20.229.66.63 |
+|**UK West** | 20.90.53.127, 51.142.187.141, 20.68.122.206, 20.90.53.162, 20.90.53.126, 20.90.50.109, 20.90.53.132, 20.90.53.133, 20.68.124.199, 20.90.49.200, 51.142.187.196, 20.254.168.148, 51.137.144.240, 20.90.50.115 |
+|**East US** | 40.117.113.165, 20.168.249.164, 172.173.135.148, 52.142.27.43, 20.237.22.163, 20.121.150.131, 20.237.18.20, 20.237.16.199, 20.237.16.198, 20.237.23.162, 20.124.59.116, 20.237.18.21, 20.124.59.146, 20.237.22.162 |
+
+For more information, see [Network requirements](network-requirements.md).
 
 ### App governance now available as part of Defender for Cloud Apps license
 
@@ -127,7 +174,7 @@ To enhance our threat protection and reduce alert fatigue, we've added a new dat
 March 19, 2023
 
 - **Automatic redirection from Microsoft Defender for Cloud Apps to the Microsoft 365 Defender portal (Preview)**  
-A new automatic redirection toggle will allow you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft 365 Defender. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft 365 Defender portal. The toggle default value is set to **Off**, and admins will need explicitly to opt-in to the automatic redirection and start using the Microsoft 365 Defender exclusively. You still have an option to opt-out from the Microsoft 365 Defender experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+A new automatic redirection toggle will allow you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft 365 Defender. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft 365 Defender portal. The toggle default value is set to **Off**, and admins will need explicitly to opt in to the automatic redirection and start using the Microsoft 365 Defender exclusively. You still have an option to opt out from the Microsoft 365 Defender experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
 
 ### Defender for Cloud Apps release 248
 

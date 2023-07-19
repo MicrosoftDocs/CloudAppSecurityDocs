@@ -3,6 +3,7 @@ title: What's new in Defender for Cloud Apps app governance
 ms.date: 05/28/2023
 ms.topic: conceptual
 description: Learn about new features and enhancements for app governance in Defender for Cloud Apps
+ROBOTS: NOINDEX
 ---
 
 # What's new for app governance in Defender for Cloud Apps
