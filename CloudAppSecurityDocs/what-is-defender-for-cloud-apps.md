@@ -14,6 +14,8 @@ ms.topic: overview
 
 Software as a service (SaaS) apps are ubiquitous across hybrid work environments, and protecting SaaS apps and the important data they store is a big challenge for organizations. The rise in app usage, combined with employees accessing company resources outside of the corporate perimeter has also introduced new attack vectors. To combat these attacks effectively, security teams need an approach that protects their data within cloud apps beyond the traditional scope of cloud access security brokers (CASBs).
 
+:::image type="content" source="media/overview/defender-for-cloud-apps-pillars.png" alt-text="Diagram of the Defender for Cloud App pillars." border="false":::
+
 Microsoft Defender for Cloud Apps delivers full protection for SaaS applications, helping you monitor and protect your cloud app data across the following feature areas:
 
 - **Fundamental cloud access security broker (CASB) functionality**, such as Shadow IT discovery, visibility into cloud app usage, protection against app-based threats from anywhere in the cloud, and information protection and compliance assessments.
