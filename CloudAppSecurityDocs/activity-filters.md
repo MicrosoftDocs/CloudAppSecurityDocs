@@ -4,6 +4,7 @@ description: This article provides a list of activities, filters, and match para
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Activities
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -90,20 +91,29 @@ To view IP address insights:
 
 1. Select the Activity itself in the **Activity log**.
 
-2. Then select the **IP address** tab.  
+1. Then select the **IP address** tab.  
 This opens the Activity drawer **IP address** tab, which provides the following insights about the IP address:
-    - **Open alerts**: The number of open alerts that involved the IP address.
-    - **Activities**: The number of activities performed by the IP address in the past 30 days.
-    - **IP location**: The geographic locations from which the IP address connected in the past 30 days.
-    - **Activities**: The number of activities performed from this IP address in the past 30 days.
-    - **Admin activities**: The number of administrative activities performed from this IP address in the past 30 days.
+
+- **Open alerts**: The number of open alerts that involved the IP address.
+
+- **Activities**: The number of activities performed by the IP address in the past 30 days.
+
+- **IP location**: The geographic locations from which the IP address connected in the past 30 days.
+
+- **Activities**: The number of activities performed from this IP address in the past 30 days.
+
+- **Admin activities**: The number of administrative activities performed from this IP address in the past 30 days.
+
     - You can perform the following IP address actions:
         - Set as a Corporate IP and add to allowlist
         - Set as a VPN IP address and add to allowlist
         - Set as a Risky IP and add to denylist
 
-   >[!NOTE]
-   > To avoid raising [impossible travel](anomaly-detection-policy.md#impossible-travel) alerts when employees connect from their home locations via the corporate VPN, it's recommended to tag the IP address as **VPN**.
+   > [!NOTE]
+   > 
+   >       - Internal IPv4 or IPv6 IP addresses audited by the cloud applications connected with API, may indicate internal services communications within the network of the cloud application, and shouldn't be confused with internal IPs from the source network the device connected from, as the cloud application is not exposed to the internal IPs of the devices.
+
+   >             - To avoid raising [impossible travel](anomaly-detection-policy.md#impossible-travel) alerts when employees connect from their home locations via the corporate VPN, it's recommended to tag the IP address as **VPN**.
 
 ![IP address insights in Defender for Cloud Apps.](media/ip-address-insights.png)
 
@@ -123,3 +133,4 @@ In the **Activity log**, select the **Export** button in the top-left corner.
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
