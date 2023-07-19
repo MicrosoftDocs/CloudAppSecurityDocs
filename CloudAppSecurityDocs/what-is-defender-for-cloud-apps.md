@@ -24,8 +24,6 @@ Microsoft Defender for Cloud Apps delivers full protection for SaaS applications
 
 - **App-to-app protection**, extending the core threat scenarios to OAuth-enabled apps that have permissions and privileges to critical data and resources.
 
-:::image type="content" source="media/overview/discover-saas-apps.png" alt-text="Diagram showing Microsoft Defender for Cloud App pillars." border="false":::
-
 ## Discover SaaS applications
 
 Defender for Cloud Apps shows the full picture of risks to your environment from SaaS app usage and resources, and gives you control of what’s being used and when. 
