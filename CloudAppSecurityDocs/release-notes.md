@@ -37,6 +37,15 @@ Create Defender for Cloud Apps connectors to extend app security features across
 
 For more information, see [Microsoft Defender for Cloud Apps open app connector platform](connector-platform.md).
 
+### New app connectors for Asana and Miro
+
+Defender for Cloud Apps now supports built-in app connectors for Asana and Miro, which both may hold crticial data your organization and are therefore targets for malicious actors. Connect these apps to Defender for Cloud Apps for improved insights into your users' activities and threat detection with machine learning-based anomaly detections.
+
+For more information, see:
+
+- [Protect Asana](protect-asana.md)
+- [Protect Miro](protect-miro.md)
+
 ### Session and access policy consolidation
 
 Defender for Cloud Apps now simplifies working with both session and access policies. Previously, in order to create a session or access policy for a host app, such as Exchange, Teams, or Gmail, customers would need to create a separate policy for any relevant resource app, such as SharePoint, OneDrive, or Google Drive. Starting on July 11, 2023, you now only need to create a single policy on the hosted app.
