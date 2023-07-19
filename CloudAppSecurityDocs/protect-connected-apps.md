@@ -1,7 +1,7 @@
 ---
 title: Protect connected apps using cloud service provider APIs - Microsoft Defender for Cloud Apps
 description: This article describes how Defender for Cloud Apps protects your connected apps.
-ms.date: 06/19/2023
+ms.date: 07/04/2023
 ms.topic: conceptual
 ---
 # Protect connected apps using cloud service provider APIs
@@ -35,6 +35,23 @@ The breadth of support for each app relies on the richness of its APIs. Use the 
 - [Protect Webex](protect-webex.md)
 - [Protect Workday](protect-workday.md)
 - [Protect Zendesk](protect-zendesk.md)
+
+## SaaS Security Posture Management (SSPM)
+
+Defender for Cloud App's SaaS SSPM features provide visibility into your SaaS app security configurations and security posture.
+
+When a partner service with SSPM support is connected to Defender for Cloud Apps, the app's security configuration and posture is calculated into Microsoft Secure Score reports. Use the following procedures to connect apps with SSPM support and start seeing them included in Secure Score calculations and reports:
+
+- [Citrix](connect-citrix-sharefile.md)
+- [DocuSign](connect-docusign.md)
+- [GitHub Enterprise Cloud](connect-github-ec.md)
+- [Office 365](connect-office-365.md)
+- [Okta](connect-okta.md)
+- [ServiceNow](connect-servicenow.md)
+- [Salesforce](connect-salesforce.md)
+- [Zoom](connect-zoom.md)
+
+For more information, see [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score).
 
 ## Next steps
 
