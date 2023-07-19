@@ -39,7 +39,7 @@ For more information, see [Microsoft Defender for Cloud Apps open app connector 
 
 ### New app connectors for Asana and Miro
 
-Defender for Cloud Apps now supports built-in app connectors for Asana and Miro, which both may hold crticial data your organization and are therefore targets for malicious actors. Connect these apps to Defender for Cloud Apps for improved insights into your users' activities and threat detection with machine learning-based anomaly detections.
+Defender for Cloud Apps now supports built-in app connectors for Asana and Miro, which both may hold critical data your organization and are therefore targets for malicious actors. Connect these apps to Defender for Cloud Apps for improved insights into your users' activities and threat detection with machine learning-based anomaly detections.
 
 For more information, see:
 
