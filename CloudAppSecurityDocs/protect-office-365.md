@@ -1,23 +1,23 @@
 ---
-title: Protect your Office 365 environment
-description: Learn about the benefits of connecting your Office 365 app to Defender for Cloud Apps using the API connector for visibility and control over use.
+title: Protect your Microsoft 365 environment
+description: Learn about the benefits of connecting your Microsoft 365 app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 01/29/2023
 ms.topic: article
 ---
-# How Defender for Cloud Apps helps protect your Office 365 environment
+# How Defender for Cloud Apps helps protect your Microsoft 365 environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-As a major productivity suite providing cloud file storage, collaboration, BI, and CRM tools, Office 365 enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Office 365 may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents might occur due to malicious actor, or by an unaware employee. Office 365 also provides a large third-party app eco-system to help boost productivity. Using these apps can expose your organization to the risk of malicious apps or use of apps with excessive permissions.
+As a major productivity suite providing cloud file storage, collaboration, BI, and CRM tools, Microsoft 365 enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Microsoft 365 may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents might occur due to malicious actor, or by an unaware employee. Microsoft 365 also provides a large third-party app eco-system to help boost productivity. Using these apps can expose your organization to the risk of malicious apps or use of apps with excessive permissions.
 
-Connecting Office 365 to Defender for Cloud Apps gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
+Connecting Microsoft 365 to Defender for Cloud Apps gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
-Defender for Cloud Apps integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and provides protection for all supported services. For a list of supported services, see [Microsoft 365 services that support auditing](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#microsoft-365-services-that-support-auditing).
+Defender for Cloud Apps integrates directly with [Microsoft 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and provides protection for all supported services. For a list of supported services, see [Microsoft 365 services that support auditing](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#microsoft-365-services-that-support-auditing).
 
 [!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
 
 
-## File scanning improvements for Office 365 (New!)
+## File scanning improvements for Microsoft 365
 
 Defender for Cloud Apps has added new file scanning improvements for SharePoint and OneDrive:
 
@@ -48,7 +48,7 @@ Defender for Cloud Apps has added new file scanning improvements for SharePoint 
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## Control Office 365 with built-in policies and policy templates
+## Control Microsoft 365 with built-in policies and policy templates
 
 You can use the following built-in policy templates to detect and notify you about potential threats:
 
@@ -63,7 +63,7 @@ For more information about creating policies, see [Create a policy](control-clou
 
 ## Automate governance controls
 
-In addition to monitoring for potential threats, you can apply and automate the following Office 365 governance actions to remediate detected threats:
+In addition to monitoring for potential threats, you can apply and automate the following Microsoft 365 governance actions to remediate detected threats:
 
 | Type | Action |
 | ---- | ---- |
@@ -73,11 +73,11 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
-## Protect Office 365 in real time
+## Protect Microsoft 365 in real time
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect Office 365 to Microsoft Defender for Cloud Apps](./connect-office-365.md)
+> [How to connect Microsoft 365 to Microsoft Defender for Cloud Apps](./connect-office-365.md)
