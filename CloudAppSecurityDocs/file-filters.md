@@ -15,6 +15,7 @@ To provide data protection, Microsoft Defender for Cloud Apps gives you visibili
 > File monitoring should be enabled in Settings. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Information Protection**, select **Files**. Select **Enable file monitoring** and then select **Save**.  
 > If there are no active file policies, then seven days after the last file page engagement time file monitoring will become disabled.  
 > If there are no active file policies, then 35 days after the last file page engagement time Defender for Cloud Apps will begin deleting the data that Defender for Cloud Apps maintains about these stored files.
+> Starting Aug 20 2023, the filter 'last modified before (days) will be deprecated. Instead, we recommend the utilization of "file before (date) and continue the investigating by fixed date, you can also use 'manual' investigation by "modified before (date)" - in "policy page" or "files page". 
 
 ## File filter examples
 
