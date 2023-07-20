@@ -9,7 +9,7 @@ ms.topic: reference
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> This request is not available for Office 365 Cloud App Security.
+> This request is not available for Microsoft 365 Cloud App Security.
 
 Run the GET request to fetch the entity matching the specified primary key.
 

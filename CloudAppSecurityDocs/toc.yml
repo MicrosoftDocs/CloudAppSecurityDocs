@@ -15,7 +15,7 @@ items:
     href: preview-features.md
   - name: Compare
     items:
-    - name: Office 365 Cloud App Security
+    - name: Microsoft 365 Cloud App Security
       href: editions-cloud-app-security-o365.md
     - name: Azure AD Cloud App Discovery
       href: editions-cloud-app-security-aad.md
@@ -92,7 +92,7 @@ items:
       href: protect-google-workspace.md
     - name: Protect NetDocuments
       href: protect-netdocuments.md
-    - name: Protect Office 365
+    - name: Protect Microsoft 365
       href: protect-office-365.md
     - name: Protect Okta
       href: protect-okta.md
@@ -278,7 +278,7 @@ items:
       href: ./connect-miro.md
     - name: Connect NetDocuments
       href: connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
-    - name: Connect Office 365
+    - name: Connect Microsoft 365
       href: ./connect-office-365.md
     - name: Connect Okta
       href: ./connect-okta.md
@@ -669,7 +669,7 @@ items:
         href: classic-connect-google-workspace.md
       - name: Connect NetDocuments
         href: classic-connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
-      - name: Connect Office 365
+      - name: Connect Microsoft 365
         href: classic-connect-office-365.md
       - name: Connect Okta
         href: classic-connect-okta.md
@@ -831,7 +831,7 @@ items:
   items:
   - name: Microsoft 365 Defender
     href: /microsoft-365/security/defender/
-  - name: Microsoft Defender for Office 365
+  - name: Microsoft Defender for Microsoft 365
     href: /microsoft-365/security/office-365-security/
   - name: Microsoft Defender for Endpoint
     href: /microsoft-365/security/defender-endpoint/

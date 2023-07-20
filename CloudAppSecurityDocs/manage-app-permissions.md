@@ -8,9 +8,9 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users' grant gives you the necessary visibility and control to protect your users and your applications.
+Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Microsoft 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users' grant gives you the necessary visibility and control to protect your users and your applications.
 
-The Microsoft Defender for Cloud Apps app permissions enable you to see which user-installed OAuth applications have access to Office 365 data, Google Workspace data, and Salesforce data. Defender for Cloud Apps tells you what permissions the apps have and which users granted these apps access to their Office 365, Google Workspace, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
+The Microsoft Defender for Cloud Apps app permissions enable you to see which user-installed OAuth applications have access to Microsoft 365 data, Google Workspace data, and Salesforce data. Defender for Cloud Apps tells you what permissions the apps have and which users granted these apps access to their Microsoft 365, Google Workspace, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
 
 For more information on investigating OAuth apps, see [Investigate risky OAuth apps](investigate-risky-oauth.md).
 
@@ -20,7 +20,7 @@ For more information on investigating OAuth apps, see [Investigate risky OAuth a
 > 
 > - Defender for Cloud Apps only identifies apps that request "Delegated" permissions. For more information, see [Client app permissions](/azure/active-directory/develop/developer-glossary#permissions).
 >
-> - OAuth app management is available only after connecting one or more of the supported platforms - Office 365, Google Workspace, or Salesforce. Once connected, the **OAuth apps** menu option will appear under **Investigate**.
+> - OAuth app management is available only after connecting one or more of the supported platforms - Microsoft 365, Google Workspace, or Salesforce. Once connected, the **OAuth apps** menu option will appear under **Investigate**.
 
 ## Working with the OAuth apps page
 
@@ -36,17 +36,17 @@ The OAuth apps page provides the following information about each OAuth app that
 
 |Item|What it means|Applies to|
 |-------|-------|-------|
-|Basic icon in the app query bar  |Switch to query in the basic view.|Office 365, Google Workspace, Salesforce|
-|Advanced icon in the app query bar  |Switch to query in the Advanced view.|Office 365, Google Workspace, Salesforce|
+|Basic icon in the app query bar  |Switch to query in the basic view.|Microsoft 365, Google Workspace, Salesforce|
+|Advanced icon in the app query bar  |Switch to query in the Advanced view.|Microsoft 365, Google Workspace, Salesforce|
 |Open or close all details icon in the app list  |View more or less details about each app.|
-|Export icon in the app list  |Export a CSV file that contains a list of apps, number of users for each app, permissions associated with the app, permissions level, app state, and community use level.|Office 365, Google Workspace, Salesforce|
-|App|Name of the app. Select the name to view more information, including the description, publisher (for Office 365), app website, and ID.|Office 365, Google Workspace, Salesforce|
-|Authorized by|The number of users who authorized this app to access their app's account, and granted the app permissions. Select the number to view more information, including a list of user emails and whether an admin has consented the app previously.|Office 365, Google Workspace, Salesforce|
-|Permissions Level  |The permissions level icon and text indicating either High, Medium, or Low. The level indicates how much access this app has to app's data. For example, Low might indicate that the app only accesses user profile and name. Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](governance-actions.md).|Office 365, Google Workspace|
-|App state|An admin can mark an app as approved, banned, or leave is as undetermined.|Office 365, Google Workspace, Salesforce|
-|Community use|Shows you how popular the app is across all your users (common, uncommon, rare)|Office 365, Google Workspace, Salesforce|
-|Last authorized|The most recent date on which a user granted permissions to this app.|Office 365, Salesforce|
-|Publisher|The name of the vendor who provides the app.<br><br> Publisher verification - Publisher verification helps admins and end users understand the authenticity of application developers integrating with the Microsoft identity platform. For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview). |Office 365|
+|Export icon in the app list  |Export a CSV file that contains a list of apps, number of users for each app, permissions associated with the app, permissions level, app state, and community use level.|Microsoft 365, Google Workspace, Salesforce|
+|App|Name of the app. Select the name to view more information, including the description, publisher (for Microsoft 365), app website, and ID.|Microsoft 365, Google Workspace, Salesforce|
+|Authorized by|The number of users who authorized this app to access their app's account, and granted the app permissions. Select the number to view more information, including a list of user emails and whether an admin has consented the app previously.|Microsoft 365, Google Workspace, Salesforce|
+|Permissions Level  |The permissions level icon and text indicating either High, Medium, or Low. The level indicates how much access this app has to app's data. For example, Low might indicate that the app only accesses user profile and name. Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](governance-actions.md).|Microsoft 365, Google Workspace|
+|App state|An admin can mark an app as approved, banned, or leave is as undetermined.|Microsoft 365, Google Workspace, Salesforce|
+|Community use|Shows you how popular the app is across all your users (common, uncommon, rare)|Microsoft 365, Google Workspace, Salesforce|
+|Last authorized|The most recent date on which a user granted permissions to this app.|Microsoft 365, Salesforce|
+|Publisher|The name of the vendor who provides the app.<br><br> Publisher verification - Publisher verification helps admins and end users understand the authenticity of application developers integrating with the Microsoft identity platform. For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview). |Microsoft 365|
 |Last used|The most recent date on which this app was used by anyone in your organization.|Salesforce|
 
 ## Ban or approve an app

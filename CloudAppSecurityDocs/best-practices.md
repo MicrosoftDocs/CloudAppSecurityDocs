@@ -75,12 +75,12 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 
 ## Limit exposure of shared data and enforce collaboration policies
 
-**Best practice**: Connect Office 365  
-**Detail**: Connecting Office 365 to Defender for Cloud Apps gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
+**Best practice**: Connect Microsoft 365  
+**Detail**: Connecting Microsoft 365 to Defender for Cloud Apps gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Microsoft 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [Connect Office 365 to Microsoft Defender for Cloud Apps](./connect-office-365.md)
+* [Connect Microsoft 365 to Microsoft Defender for Cloud Apps](./connect-office-365.md)
 
 ---
 
@@ -94,7 +94,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 ---
 
 **Best practice**: Create policies to remove sharing with personal accounts  
-**Detail**: Connecting Office 365 to Defender for Cloud Apps gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
+**Detail**: Connecting Microsoft 365 to Defender for Cloud Apps gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Microsoft 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
 **For more information**:
 
 * [Governing connected apps](governance-actions.md)

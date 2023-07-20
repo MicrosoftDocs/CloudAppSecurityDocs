@@ -19,7 +19,7 @@ Remote work often leads to extensive use of cloud apps and cloud platforms for c
 
 Having the appropriate security tools in place to protect resources that might have not been properly protected is critical. Organizations must gain visibility to their cloud resources posture, have discovery capabilities to learn about the actual usage of each platform, be able to monitor suspicious activities, assess, and review configurations and compliance statuses, and be enabled to deploy real-time protection mechanisms.
 
-Cloud Security Posture Management (CSPM) also extends beyond IaaS and PaaS security posture, to cover SaaS configurations as well. For example, GitHub repository with a public access level, or OAuth apps that have access to my SaaS apps like Office 365, Google Workspace or Sales Force. The SaaS CSPM is a new and growing domain of CSPM, which is a native expansion of the Defender for Cloud Apps product.
+Cloud Security Posture Management (CSPM) also extends beyond IaaS and PaaS security posture, to cover SaaS configurations as well. For example, GitHub repository with a public access level, or OAuth apps that have access to my SaaS apps like Microsoft 365, Google Workspace or Sales Force. The SaaS CSPM is a new and growing domain of CSPM, which is a native expansion of the Defender for Cloud Apps product.
 
 ## Protecting multiple clouds from a single management portal
 

@@ -20,7 +20,7 @@ You may have users in Defender for Cloud Apps that you want to monitor but, due 
 
 To configure your user privacy groups, you must first [import user groups](user-groups.md) to Defender for Cloud Apps. By default, you'll see the following groups:
 
-- **Application** user group -  A built-in group that enables you to see activities performed by Office 365 and Azure AD applications.
+- **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Azure AD applications.
 
 - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
 

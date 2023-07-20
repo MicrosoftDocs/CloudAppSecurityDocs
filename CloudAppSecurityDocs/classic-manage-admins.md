@@ -9,18 +9,18 @@ ROBOTS: NOINDEX
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Defender for Cloud Apps supports role-based access control. This article provides instructions for setting access to the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference) and [Office 365](/microsoft-365/admin/add-users/assign-admin-roles).
+Microsoft Defender for Cloud Apps supports role-based access control. This article provides instructions for setting access to the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference) and [Microsoft 365](/microsoft-365/admin/add-users/assign-admin-roles).
 
 <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>
 
-## Office 365 and Azure AD roles with access to Defender for Cloud Apps
+## Microsoft 365 and Azure AD roles with access to Defender for Cloud Apps
 
 > [!NOTE]
 >
-> - Office 365 and Azure AD roles aren't listed in the Defender for Cloud Apps **Manage admin access** page. To assign roles in Office 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
+> - Microsoft 365 and Azure AD roles aren't listed in the Defender for Cloud Apps **Manage admin access** page. To assign roles in Microsoft 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
 > - Defender for Cloud Apps uses Azure Active Directory to determine the user's [directory level inactivity timeout setting](/azure/azure-portal/set-preferences#change-the-directory-timeout-setting-admin). If a user is configured in Azure Active Directory to never sign out when inactive, the same setting will apply in Defender for Cloud Apps as well.
 
-By default, the following Office 365 and [Azure AD](/azure/active-directory/roles/permissions-reference) admin roles have access to Defender for Cloud Apps:
+By default, the following Microsoft 365 and [Azure AD](/azure/active-directory/roles/permissions-reference) admin roles have access to Defender for Cloud Apps:
 
 - **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Defender for Cloud Apps. They can add admins, add policies and settings, upload logs and perform governance actions, access and manage SIEM agents.
 
@@ -174,7 +174,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
 
 ## Override admin permissions
 
-If you want to override an administrator's permission from Azure AD or Office 365, you can do so by manually adding the user to Defender for Cloud Apps and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure AD to have **Full access** in Defender for Cloud Apps, you can add her manually to Defender for Cloud Apps and assign her **Full access** to override her role and allow her the necessary permissions in Defender for Cloud Apps. Note that it is not possible to override Azure AD roles that grant Full access (Global administrator, Security administrator, and Cloud App Security administrator).
+If you want to override an administrator's permission from Azure AD or Microsoft 365, you can do so by manually adding the user to Defender for Cloud Apps and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure AD to have **Full access** in Defender for Cloud Apps, you can add her manually to Defender for Cloud Apps and assign her **Full access** to override her role and allow her the necessary permissions in Defender for Cloud Apps. Note that it is not possible to override Azure AD roles that grant Full access (Global administrator, Security administrator, and Cloud App Security administrator).
 
 ## Add additional admins
 

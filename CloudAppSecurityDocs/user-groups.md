@@ -8,18 +8,18 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-When you connect apps using API connectors, Microsoft Defender for Cloud Apps enables you to import user groups, for example from Office 365 and Azure Active Directory. There are two types of user groups:
+When you connect apps using API connectors, Microsoft Defender for Cloud Apps enables you to import user groups, for example from Microsoft 365 and Azure Active Directory. There are two types of user groups:
 
 - **Automatic groups:** Automatic groups are created by default by Microsoft Defender for Cloud Apps. For example, there's an automatic user group called **External** that combines all users from all apps who are external to your organization and have access to files or were in user activities in your tenant. The following automatic groups exist in Defender for Cloud Apps:
 
   - External
   - Dropbox administrator
-  - Office 365 administrator
+  - Microsoft 365 administrator
   - Google Workspace administrator
   - Box administrator
   - All Salesforce standard and custom profiles, for example, Salesforce System Administrator. See the full list [here](https://help.salesforce.com/s/articleView?id=sf.standard_profiles.htm).
 
-- **Imported groups:** You can import any group from your connected apps. For example, you can import user groups from Office 365 (Active Directory) and other connected apps. These groups enable you to look for threats in your org, not by looking at the whole org or at a specific user, but by looking at a specific group.
+- **Imported groups:** You can import any group from your connected apps. For example, you can import user groups from Microsoft 365 (Active Directory) and other connected apps. These groups enable you to look for threats in your org, not by looking at the whole org or at a specific user, but by looking at a specific group.
 
   Typical scenarios that use imported user groups include:
 

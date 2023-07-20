@@ -47,7 +47,7 @@ The activity score determines the probability of a specific user performing a sp
 
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
-1. Connect at least one app to Microsoft Defender for Cloud Apps using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](./connect-office-365.md).
+1. Connect at least one app to Microsoft Defender for Cloud Apps using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Microsoft 365](./connect-office-365.md).
 1. Connect additional apps using the [proxy to achieve conditional access app control](proxy-deployment-aad.md).
 
 ## Phase 2: Identify top risky users<a name="identify"></a>
