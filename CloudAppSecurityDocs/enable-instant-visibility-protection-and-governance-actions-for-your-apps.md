@@ -91,9 +91,9 @@ The following tables list, per cloud app, which abilities are supported with App
 | Egnyte | | | | |
 | GitHub            |                                      | ✔                         |                           | Preview                          |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
-| Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
+| Google  Workspace | ✔                                    | ✔                         | ✔                         |   Preview                       |
 | NetDocuments  |  |  |  |  |
-| Office 365        | ✔                                    | ✔                         | ✔                         | ✔                 |
+| Microsoft 365        | ✔                                    | ✔                         | ✔                         | ✔                 |
 | Okta              |                                      | Not applicable            | Not applicable            | Preview            |
 | OneLogin | |  |  |  |
 | Service  Now      |                                      |                           |                           | ✔ |
@@ -138,10 +138,12 @@ The following tables list, per cloud app, which abilities are supported with App
 
 ## Prerequisites
 
+- When working with the [Microsoft 365 connector](protect-office-365.md), you'll need a license for each service where you want to view security recommendations. For example, to view recommendations for Microsoft Forms, you'll need a license that supports Forms.
+
 - For some apps, it may be necessary to allow list IP addresses to enable Defender for Cloud Apps to collect logs and provide access for the Defender for Cloud Apps console. For more information, see [Network requirements](network-requirements.md).
 
-> [!NOTE]
-> To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+    > [!TIP]
+    > To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ### ExpressRoute
 
