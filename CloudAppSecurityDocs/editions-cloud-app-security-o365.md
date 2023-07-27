@@ -21,7 +21,7 @@ Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringin
 Microsoft 365 Cloud App Security is a subset of Microsoft Defender for Cloud Apps that provides enhanced visibility and control for Microsoft 365. Microsoft 365 Cloud App Security includes threat detection based on user activity logs, discovery of Shadow IT for apps that have similar functionality to Microsoft 365 offerings, control app permissions to Microsoft 365, and apply access and session controls. Microsoft 365 Cloud App Security has access to all of the features of Microsoft Defender for Cloud Apps, but supports only the Microsoft 365 app connector.
 
 > [!NOTE]
-> Microsoft 365 Cloud App Security is accessed through the same portal as Microsoft Defender for Cloud Apps. It is bundled with the [Microsoft 365 E5 subscription](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5). Depending on your license, you'll either have access to Microsoft 365 Cloud App Security or the entire Defender for Cloud Apps solution.
+> Microsoft 365 Cloud App Security is accessed through the same portal as Microsoft Defender for Cloud Apps. It is bundled with the [Office 365 E5 subscription](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5). Depending on your license, you'll either have access to Microsoft 365 Cloud App Security or the entire Defender for Cloud Apps solution.
 
 ### Feature support
 
