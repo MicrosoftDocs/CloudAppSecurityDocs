@@ -17,7 +17,7 @@ Defender for Cloud Apps integrates directly with [Microsoft 365's audit logs](/m
 [!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
 
 
-## File scanning improvements for Microsoft 365 (New!)
+## File scanning improvements for Microsoft 365
 
 Defender for Cloud Apps has added new file scanning improvements for SharePoint and OneDrive:
 

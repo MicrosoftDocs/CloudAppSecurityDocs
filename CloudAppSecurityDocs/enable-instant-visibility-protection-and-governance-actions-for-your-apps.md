@@ -91,7 +91,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Egnyte | | | | |
 | GitHub            |                                      | ✔                         |                           | Preview                          |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
-| Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
+| Google  Workspace | ✔                                    | ✔                         | ✔                         |   Preview                       |
 | NetDocuments  |  |  |  |  |
 | Microsoft 365        | ✔                                    | ✔                         | ✔                         | ✔                 |
 | Okta              |                                      | Not applicable            | Not applicable            | Preview            |
@@ -137,6 +137,8 @@ The following tables list, per cloud app, which abilities are supported with App
 | Zoom  |  |  |  |   |
 
 ## Prerequisites
+
+- When working with the [Microsoft 365 connector](protect-office-365.md), you'll need a license for each service where you want to view security recommendations. For example, to view recommendations for Microsoft Forms, you'll need a license that supports Forms.
 
 - For some apps, it may be necessary to allow list IP addresses to enable Defender for Cloud Apps to collect logs and provide access for the Defender for Cloud Apps console. For more information, see [Network requirements](network-requirements.md).
 
