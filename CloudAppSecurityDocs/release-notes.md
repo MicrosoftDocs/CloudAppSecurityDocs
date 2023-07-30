@@ -33,7 +33,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 The Google Workspace connector now supports:
 
-- SaaS Security Posture Management (SSPM) toolsm for increased visibility into SaaS apps' posture misconfigurations when compared to the ideal app configurations. SSPM features help you proactively reduce the risk of breaches and attacks without needing to be a security expert for each platform.
+- SaaS Security Posture Management (SSPM) tools for increased visibility into SaaS apps' posture misconfigurations when compared to the ideal app configurations. SSPM features help you proactively reduce the risk of breaches and attacks without needing to be a security expert for each platform.
 - The **Enable multi-factor authentication** control. To view related data, make sure that you've configured the Google Workspace connector. 
 
 For more information, see [Connect Google Workspace to Microsoft Defender for Cloud Apps](connect-google-workspace.md).
