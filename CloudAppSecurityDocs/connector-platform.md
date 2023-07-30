@@ -5,7 +5,7 @@ ms.date: 07/05/2023
 ms.topic: overview
 ---
 
-# Microsoft Defender for Cloud Apps open app connector platform
+# Microsoft Defender for Cloud Apps open app connector platform (Preview)
 
 Microsoft Defender for Cloud Apps' [app connectors](protect-connected-apps.md) are a vital bridge between your SaaS applications and Microsoft's powerful security operations. Connect the apps your organization creates to Defender for Cloud Apps to extend app security features across customer SaaS ecosystem, safeguarding data, mitigating risks, and reinforcing overall SaaS security posture.
 
@@ -13,6 +13,8 @@ This article describes how SaaS app vendors can use the Defender for Cloud Apps 
 
 > [!NOTE]
 > We recommend that SaaS vendors read this article thoroughly to understand the high-level app connector development process and partnership expectations.
+>
+> For more information, contact the team at [BuildSaaSConnector@microsoft.com](mailto:BuildSaaSConnector@microsoft.com).
 
 ## Sample scenarios
 
@@ -23,6 +25,15 @@ For example, you might create a connector for your app in one of the following s
 - **Security posture management for SaaS apps**: SaaS app configurations in customer organizations may not align with security best practices. Develop a connector so that Defender for Cloud Apps can provide customers with assessments about their SaaS app security configurations, ensuring that they're using the best configurations to prevent possible risks. For more information, see [Security posture management for SaaS apps](security-saas.md).
 
 - **Advanced threat protection for SaaS apps**: Customers need to have a deep understand of what's happening in their SaaS app environments to detect, investigate, and remediate any risks. Develop a connector for your app so that Defender for Cloud Apps can provide customers with multiple layers of post-breach threat protection capabilities, including built-in detections to for compromised users and apps, custom detection configuration capabilities, rich investigation capabilities, and response actions to mitigate threats. For more information, see [Investigate cloud app risks and suspicious activity](investigate.md).
+
+## Prerequisites
+
+To integrate with Defender for Cloud Apps on the open app connector platform, your SaaS app must meet one of the following requirements:
+
+- **Advanced threat protection**: The SaaS app must use REST APIs that facilitate Defender for Cloud Apps queries on user accounts and audit logs
+- **Security posture management**: The SaaS app must have REST APIs that facilitate Defender for Cloud Apps queries on SaaS security configurations
+
+All SaaS app REST APIs must support oAuth authentication.
 
 ## Develop your connector using the open app connector platform
 
@@ -45,20 +56,6 @@ The following steps provide more details about the open app connector platform p
 1. Work with Microsoft to run a joint validation of the new app connector in a test environment. We recommend that you nominate customers to preview the app connector before making it generally available.
 
 1. After the app connector's been successfully validated by you and any preview customers, Microsoft publishes the app connector to the Microsoft Defender Technology Partners catalog, where new customers can access Defender for Cloud app connectors.
-
-## Frequently Asked Questions (FAQs)
-
-1. What are the technical prerequisites for the SaaS app to support integration?
-   
-To enable seamless integration with Defender for Cloud Apps, the SaaS app must meet the following technical requirements.
-a. Advanced Threat Protection Scenario: The SaaS app should have REST APIs, facilitating the querying of user accounts and audit logs by Defender for Cloud Apps.
-b. Security Posture Management Scenario: The SaaS app needs to provide APIs, enabling queries regarding SaaS security configurations.
-c. Authentication Requirement: The REST APIs of the SaaS app should support authentication through the oAuth protocol.
-
-
-1. Who should I contact for inquiries about the Open App Connector platform?
-   
-If you have any questions regarding the Open App Connector platform, feel free to get in touch with '**[BuildSaaSConnector@microsoft.com](mailto:BuildSaaSConnector@microsoft.com)**'.
 
 ## Next steps
 
