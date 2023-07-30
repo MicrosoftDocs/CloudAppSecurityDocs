@@ -5,7 +5,7 @@ ms.date: 07/05/2023
 ms.topic: overview
 ---
 
-# Microsoft Defender for Cloud Apps open app connector platform
+# Microsoft Defender for Cloud Apps open app connector platform (Preview)
 
 Microsoft Defender for Cloud Apps' [app connectors](protect-connected-apps.md) are a vital bridge between your SaaS applications and Microsoft's powerful security operations. Connect the apps your organization creates to Defender for Cloud Apps to extend app security features across customer SaaS ecosystem, safeguarding data, mitigating risks, and reinforcing overall SaaS security posture.
 
