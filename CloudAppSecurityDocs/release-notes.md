@@ -38,7 +38,7 @@ The Google Workspace connector now supports:
 
 For more information, see [Connect Google Workspace to Microsoft Defender for Cloud Apps](connect-google-workspace.md).
 
-### Custom connectors with the open app connector platform
+### Custom connectors with the open app connector platform (Preview)
 
 Defender for Cloud Apps' new codeless, open app connector platform helps SaaS vendors create app connectors for their SaaS apps.
 
