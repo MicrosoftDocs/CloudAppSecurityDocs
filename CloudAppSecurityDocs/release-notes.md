@@ -29,6 +29,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## July 2023
 
+### ServiceNow connector now supports Utah version
+
+The Defender for Cloud Apps ServiceNow connector now supports the ServiceNow *Utah* version. For more information, see [Connect ServiceNow to Microsoft Defender for Cloud Apps](connect-servicenow.md)
+
 ### Google Workspace connector updates
 
 The Google Workspace connector now supports:
