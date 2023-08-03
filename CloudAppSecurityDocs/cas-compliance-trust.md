@@ -90,6 +90,7 @@ Customers who use App Governance will have data transferred and stored outside o
 
 |Customer provisioning location |Data storage location  |
 |---------|---------|
+| Customers whose tenants are provisioned in the United States | United States |
 | Customers whose tenants are provisioned in the European Union or the United Kingdom | Either the European Union or the United Kingdom |
 |Customers whose tenants are provisioned in the Asia Pacific | Either Asia Pacific or the United States |
 | Customers whose tenants are provisioned in Canada | Canada or the United States |
