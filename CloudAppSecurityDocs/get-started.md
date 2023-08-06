@@ -15,7 +15,7 @@ Defender for Cloud Apps can help you use the benefits of cloud applications whil
 
 ## Prerequisites
 
-To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Office 365.
+To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Microsoft 365.
 
 > [!NOTE]
 > Users with admin roles have the same admin permissions across any cloud apps your organization is subscribed to, regardless of where you've assigned the role.
@@ -27,10 +27,10 @@ To set up Defender for Cloud Apps, you must be a Global Administrator or a Secur
 
 1. Obtain a Defender for Cloud Apps user for each user you want protected by Defender for Cloud Apps. For more information, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
-    A Defender for Cloud Apps trial is available as part of an E5 trial. Purchase further licenses from the Microsoft 365 admin center > **Marketplace**. For more information, see [Try or buy Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) or [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
+     A Defender for Cloud Apps trial is available as part of an E5 trial. Purchase licenses from the Microsoft 365 admin center > **Marketplace**. For more information, see [Try or buy Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) or [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
 
     >[!NOTE]
-    >Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Office 365 productivity suite licenses. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md).
+    > Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Office 365 productivity suite licenses. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md).
 
 1. Access Defender for Cloud Apps on the **[Microsoft 365 Defender portal](https://security.microsoft.com)** under **Cloud Apps**. For example:
 
