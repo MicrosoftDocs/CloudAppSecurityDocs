@@ -173,7 +173,7 @@ The container is now ready.
 
 Run the **collector_config** command using the API token that you used during the creation of your log collector. For example:
 
-:::image type="content" source="media/log-collector-advanced-tasks/docker-3.png" alt-text="Screenshot of the Create log collector dialog.border="false":::
+:::image type="content" source="media/log-collector-advanced-tasks/docker-3.png" alt-text="Screenshot of the Create log collector dialog." border="false":::
 
 When you run the command, specify your own API token, such as `collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}`
 
