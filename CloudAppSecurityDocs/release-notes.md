@@ -33,9 +33,9 @@ For more information on what's new with other Microsoft Defender security produc
 
 Defender for Cloud Apps has released the Defender for Cloud Apps log collector version 0.255.0, including updates to the *amazon-corretto* and *openssl* dependencies.
 
-The new version filename is *columbus-0.255.0-signed.jar*, and the image name is *mcaspublic.azurecr.io/public/mcas/logcollector*, with the *latest/0.255.0* tag.
+The new version filename is `columbus-0.255.0-signed.jar`, and the image name is `mcaspublic.azurecr.io/public/mcas/logcollector`, with the `latest/0.255.0` tag.
 
-Any customers using the log collector must stop their log collectors, remove the current image, install the new one, and update the certificates.
+To update your log collector, make sure to stop the log collector in your environment, remove the current image, install the new one, and update the certificates.
 
 For more information, see [Advanced log collector management](log-collector-advanced-management.md).
 
