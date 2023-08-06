@@ -23,14 +23,14 @@ To set up Defender for Cloud Apps, you must be a Global Administrator or a Secur
 > For more information, see [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles) and [Assigning administrator roles in Azure Active Directory](/azure/active-directory/roles/permissions-reference).
 >
 
-## Access Defender for Cloud APps
+## Access Defender for Cloud Apps
 
 1. Obtain a Defender for Cloud Apps user for each user you want protected by Defender for Cloud Apps. For more information, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
      A Defender for Cloud Apps trial is available as part of an E5 trial. Purchase licenses from the Microsoft 365 admin center > **Marketplace**. For more information, see [Try or buy Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) or [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
 
     >[!NOTE]
-    > Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Office 365 productivity suite licenses. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md).
+    > Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Microsoft 365 productivity suite licenses. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?](editions-cloud-app-security-o365.md).
 
 1. Access Defender for Cloud Apps on the **[Microsoft 365 Defender portal](https://security.microsoft.com)** under **Cloud Apps**. For example:
 
