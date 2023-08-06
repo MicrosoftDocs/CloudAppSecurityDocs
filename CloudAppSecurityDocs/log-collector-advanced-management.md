@@ -8,49 +8,53 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides information about the following advanced configuration options for Defender for Cloud Apps Cloud Discovery log collectors:
+This article provides information about the following advanced configuration options for Defender for Cloud Apps Cloud Discovery log collectors.
 
-- [Modify the log collector FTP configuration](#modify-the-log-collector-ftp-configuration)
-- [Enable the log collector behind a proxy](#enable-the-log-collector-behind-a-proxy)
-- [Move the log collector to a different data partition on Linux](#move-the-log-collector-to-a-different-data-partition-on-linux)
-- [Inspect the log collector disk usage on Linux](#inspect-the-log-collector-disk-usage-on-linux)
-- [Move the log collector to an accessible host](#move-the-log-collector-to-an-accessible-host)
-- [Define custom ports for Syslog and FTP receivers for log collectors on Linux](#define-custom-ports-for-syslog-and-ftp-receivers-for-log-collectors-on-linux)
-- [Validate the traffic and log format received by log collector on Linux](#validate-the-traffic-and-log-format-received-by-log-collector-on-linux)
+## Verify the log collector version
+
+To verify the version of your log collector currently installed, run the following command in the Docker shell:
+
+``` bash
+cat /var/adallom/versions | grep columbus-
+```
+
 
 ## Modify the log collector FTP configuration
 
-Use these steps to modify the configuration for your Defender for Cloud Apps Cloud Discovery Docker.
+Use these steps in the following sections to modify the configuration for your Defender for Cloud Apps Cloud Discovery Docker.
 
-### Docker deployment
 
-You might need to modify the configuration for the Defender for Cloud Apps Cloud Discovery Docker.
+### Change the FTP password
 
-#### Changing the FTP password
+1. Connect to the log collector host and run:
 
-1. Connect to the log collector host.
+    ```bash
+    docker exec -it <collector name> pure-pw passwd <ftp user>
+    ```
 
-1. Run `docker exec -it <collector name> pure-pw passwd <ftp user>`
+    1. Enter your new password, and then enter it again to confirm.
 
-    1. Enter the new password.
-    1. Enter the new password again for confirmation.
+1. Run the following command to apply the change:
 
-1. Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
+    ```bash
+    docker exec -it <collector name> pure-pw mkdb
+    ```
 
-    ![change ftp password.](media/log-collector-advanced-tasks/ftp-connect.png)
+    For example:
 
-#### Customize certificate files
+    ![Screenshot of changing the FTP password.](media/log-collector-advanced-tasks/ftp-connect.png)
+
+### Customize certificate files
 
 Follow this procedure to customize the certificate files you use for secure connections to the Cloud Discovery Docker.
 
-1. Open an FTP client and connect to the log collector.
+1. Open an FTP client and connect to the log collector. For example:
 
-    ![Connect to ftp client.](media/log-collector-advanced-tasks/ftp-connect.png)
+    ![Screenshot of connecting to the FTP client.](media/log-collector-advanced-tasks/ftp-connect.png)
 
-1. Navigate to the `ssl_update` directory.
-1. Upload new certificate files to the `ssl_update` directory (the names are mandatory).
+1. Navigate to the `ssl_update` directory and upload the new certificate files. Names are mandatory. For example:
 
-    ![Upload certificate files.](media/log-collector-advanced-tasks/new-certs.png)
+    ![Screenshot of uploading certificate files.](media/log-collector-advanced-tasks/new-certs.png)
 
     The following files are required:
 
@@ -61,11 +65,21 @@ Follow this procedure to customize the certificate files you use for secure conn
 
     If any of the files are missing, the update won't take place.
 
-1. In a terminal window run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
+1. In a terminal window run: 
 
-    ![Update certificate files.](media/log-collector-advanced-tasks/update-certs.png)
+    ```bash
+    docker exec -t <collector name> update_certs
+    ```
 
-1. In a terminal window run: `docker exec <collector name> chmod -R 700 /etc/ssl/private/`.
+    The command should produce a similar output to what's seen in the following screenshot. For example:
+
+    ![Screenshot of updating certificate files output.](media/log-collector-advanced-tasks/update-certs.png)
+
+1. In a terminal window run: 
+
+    ```bash
+    docker exec <collector name> chmod -R 700 /etc/ssl/private/
+    ```
 
 ## Enable the log collector behind a proxy
 
@@ -81,17 +95,18 @@ Use these steps to enable your log collector behind a proxy.
 
 Make sure you performed the necessary steps run Docker on a Windows or Linux machine and successfully download the Defender for Cloud Apps Docker image on the machine. For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
 
-#### Validate Docker log collector container creation
+### Validate Docker log collector container creation
 
 In the shell, verify that the container was created and is running using the following command:
 
 ```bash
 docker ps
 ```
+For example:
 
 ![docker ps.](media/log-collector-advanced-tasks/docker-1.png)
 
-#### Copy proxy root CA certificate to the container
+### Copy the proxy root CA certificate to the container
 
 From your virtual machine, copy the CA certificate to the Defender for Cloud Apps container. In the following example, the container is named *Ubuntu-LogCollector* and the CA certificate is named *Proxy-CA.crt*.
 Run the command on the Ubuntu host. It copies the certificate to a folder in the running container:
@@ -100,7 +115,7 @@ Run the command on the Ubuntu host. It copies the certificate to a folder in the
 docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
 ```
 
-#### Set the configuration to work with the CA certificate
+### Set the configuration to work with the CA certificate
 
 1. Go into the container, using the following command. It will open bash in the log collector container:
 
@@ -131,7 +146,7 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
 
 You should see your imported proxy CA certificate.
 
-#### Restrict IP addresses sending syslog messages to the log collector on Linux
+### Restrict IP addresses sending syslog messages to the log collector on Linux
 
 To secure the docker image and ensure that only one IP address is allowed to send the syslog messages to the log collector, an IP table rule can be created on the host machine to allow input traffic over (TCP/601 or UDP/514 depending on the deployment) and drop the traffic coming over those ports.
 
@@ -141,7 +156,7 @@ This is an example of an IP table rule that can be added to the host machine to 
 iptables -I DOCKER-USER \! --src 1.2.3.4 -m tcp -p tcp --dport 601 -j DROP
 ```
 
-#### Set the log collector to run with the new configuration
+### Set the log collector to run with the new configuration
 
 The container is now ready.
 
@@ -164,7 +179,7 @@ The log collector is now able to communicate with Defender for Cloud Apps. After
 >[!NOTE]
 > If you have to update the configuration of the log collector, to add or remove a data source for example, you normally have to **delete** the container and perform the previous steps again. To avoid this, you can re-run the *collector_config* tool with the new API token generated in the Defender for Cloud Apps portal.
 
-### How to change the Java KeyStore password
+### Change the Java KeyStore password
 
 1. Stop the Java KeyStore server.
 1. Open a bash shell inside the container and go to the *appdata/conf* folder.
@@ -278,7 +293,7 @@ Start the process by [exporting the log collector image](#export-the-log-collect
 
 Use the steps relevant to the operating system of the Docker Hub where the log collector image is located.
 
-#### Exporting the image on Linux
+#### Export the image on Linux
 
 1. On a Linux computer that has access to the Docker Hub, run the following command. This will install Docker and download the log collector image.
 
@@ -300,7 +315,7 @@ Use the steps relevant to the operating system of the Docker Hub where the log c
 
     ![Download log collector to Windows computer.](media/log-collector-advanced-tasks/move-lc-to-accessible-host-download-linux-winscp.png)
 
-#### Exporting the image on Windows
+#### Export the image on Windows
 
 1. On a Windows 10 computer that has access to the Docker Hub, install [Docker Desktop](https://docs.docker.com/docker-for-windows/install/).
 
