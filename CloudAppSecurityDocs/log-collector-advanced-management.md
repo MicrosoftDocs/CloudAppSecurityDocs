@@ -32,7 +32,7 @@ Use these steps in the following sections to modify the configuration for your D
     docker exec -it <collector name> pure-pw passwd <ftp user>
     ```
 
-    1. Enter your new password, and then enter it again to confirm.
+1. Enter your new password, and then enter it again to confirm.
 
 1. Run the following command to apply the change:
 
@@ -93,7 +93,9 @@ Use these steps to enable your log collector behind a proxy.
 
 ### Set up the log collector behind a proxy
 
-Make sure you performed the necessary steps run Docker on a Windows or Linux machine and successfully download the Defender for Cloud Apps Docker image on the machine. For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
+Make sure you performed the necessary steps run Docker on a Windows or Linux machine and successfully download the Defender for Cloud Apps Docker image on the machine. 
+
+For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
 
 ### Validate Docker log collector container creation
 
@@ -104,7 +106,7 @@ docker ps
 ```
 For example:
 
-![docker ps.](media/log-collector-advanced-tasks/docker-1.png)
+![Screenshot of the Docker log collection validation.](media/log-collector-advanced-tasks/docker-1.png)
 
 ### Copy the proxy root CA certificate to the container
 
@@ -142,9 +144,9 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     ./keytool --list --keystore ../lib/security/cacerts | grep self
     ```
 
-    ![keytool.](media/log-collector-advanced-tasks/docker-2.png "keytool")
+You should see your imported proxy CA certificate. For example:
 
-You should see your imported proxy CA certificate.
+:::image type="content" source="media/log-collector-advanced-tasks/docker-2.png" alt-text="Screenshot of the keytool interface" lightbox="media/log-collector-advanced-tasks/docker-2.png":::
 
 ### Restrict IP addresses sending syslog messages to the log collector on Linux
 
@@ -162,7 +164,7 @@ The container is now ready.
 
 Run the **collector_config** command using the API token that you used during the creation of your log collector:
 
-![API token.](media/log-collector-advanced-tasks/docker-3.png "API token")
+![Screenshot of the Create log collector dialog.](media/log-collector-advanced-tasks/docker-3.png "API token")
 
 When you run the command, specify your own API token:
 
@@ -170,11 +172,14 @@ When you run the command, specify your own API token:
 collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 ```
 
-![Configuration update.](media/log-collector-advanced-tasks/docker-4.png "Configuration update")
+For example:
+
+:::image type="content" source="media/log-collector-advanced-tasks/docker-4.png" alt-text="Screenshot of a configuration update example." lightbox="media/log-collector-advanced-tasks/docker-4.png":::
+
 
 The log collector is now able to communicate with Defender for Cloud Apps. After sending data to it, the status will change from **Healthy** to **Connected** in the Defender for Cloud Apps portal.
 
-![Status.](media/log-collector-advanced-tasks/docker-5.png "Status")
+![Screenshot of the upload status.](media/log-collector-advanced-tasks/docker-5.png "Status")
 
 >[!NOTE]
 > If you have to update the configuration of the log collector, to add or remove a data source for example, you normally have to **delete** the container and perform the previous steps again. To avoid this, you can re-run the *collector_config* tool with the new API token generated in the Defender for Cloud Apps portal.
@@ -211,14 +216,16 @@ The log collector is now able to communicate with Defender for Cloud Apps. After
 
 Many companies have the requirement to move data to a separate partition. Use these steps to move your Defender for Cloud Apps Docker log collector images to a data partition on your Linux host.
 
-The following steps describe moving data to a partition called *datastore* and assumes you have already mounted the partition.
+The following steps describe moving data to a partition called *datastore* and assumes you have already mounted the partition. For example:
+
+![List of Linux partitions.](media/log-collector-advanced-tasks/move-lc-new-partition-linux-disk-list.png)
 
 > [!NOTE]
 > Adding and configuring a new partition on your Linux host is not in the scope of this guide.
 
-![List of Linux partitions.](media/log-collector-advanced-tasks/move-lc-new-partition-linux-disk-list.png)
+**To move your log collector to a different partition**:
 
-1. Stop the Docker service by using this command:
+1. Stop the Docker service by running:
 
     ```bash
     service docker stop
@@ -258,7 +265,9 @@ Use these steps to review your log collector disk usage and location.
     docker inspect <collector_name> | grep WorkDir
     ```
 
-    ![Identify log collector directory.](media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-directory.png)
+    For example:
+
+    :::image type="content" source="media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-directory.png" alt-text="Screenshot of how to identify the log collector directory." lightbox="media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-directory.png":::
 
 1. Get the size on disk of the log collector using the identified path without the "/work" suffix:
 
@@ -266,10 +275,11 @@ Use these steps to review your log collector disk usage and location.
     du -sh /var/lib/docker/overlay2/<log_collector_id>/
     ```
 
-    ![Get log collector size on disk.](media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-size.png)
+    :::image type="content" source="media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-size.png" alt-text="Screenshot of how to identify the log collector size on disk." lightbox="media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-size.png":::
+
 
     > [!NOTE]
-    > If you only need to know the size on disk, you can use this command: `docker ps -s`
+    > If you only need to know the size on disk, you can use the following command instead: `docker ps -s`
 
 ## Move the log collector to an accessible host
 
