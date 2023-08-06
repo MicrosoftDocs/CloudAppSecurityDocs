@@ -1,7 +1,7 @@
 ---
-title: Get started
+title: Get started | Microsoft Defender for Cloud Apps
 description: This quickstart outlines the process for getting Defender for Cloud Apps up and running so you have cloud app use, insight, and control.
-ms.date: 01/29/2023
+ms.date: 08/06/2023
 ms.topic: quickstart
 ---
 
@@ -9,36 +9,38 @@ ms.topic: quickstart
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This quickstart provides you with steps for getting up and running with Defender for Cloud Apps. Microsoft Defender for Cloud Apps can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity and helping to increase the protection of corporate data. In this article, we walk you through the steps you take to set up and work with Microsoft Defender for Cloud Apps.
+This quickstart describes how to start working with Microsoft Defender for Cloud Apps on the Microsoft 365 Defender portal. 
+
+Defender for Cloud Apps can help you use the benefits of cloud applications while maintaining control of your corporate resources. Defender for Cloud Apps improves your visibility into cloud activity and helps increase protection over your corporate data.
 
 ## Prerequisites
 
-- In order for your organization to be in compliance for licensing Microsoft Defender for Cloud Apps, you must obtain a license for every user protected by Microsoft Defender for Cloud Apps. For pricing details, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
+To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Microsoft 365.
 
-    For activation support, see [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support)
+> [!NOTE]
+> Users with admin roles have the same admin permissions across any cloud apps your organization is subscribed to, regardless of where you've assigned the role.
+> 
+> For more information, see [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles) and [Assigning administrator roles in Azure Active Directory](/azure/active-directory/roles/permissions-reference).
+>
+
+## Access Defender for Cloud Apps
+
+1. Obtain a Defender for Cloud Apps license for each user you want protected by Defender for Cloud Apps. For more information, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
+
+     A Defender for Cloud Apps trial is available as part of an Microsoft 365 E5 trial, and you can purchase licenses from the Microsoft 365 admin center > **Marketplace**. For more information, see [Try or buy Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) or [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
 
     >[!NOTE]
-    >Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Office 365 productivity suite licenses. For Office 365 Cloud App Security (Microsoft Defender for Cloud Apps only for Office 365), see [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md).
+    > Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Microsoft 365 productivity suite licenses. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?](editions-cloud-app-security-o365.md).
 
-- After you have a license for Defender for Cloud Apps, you'll receive an email with activation information and a link to the Defender for Cloud Apps portal.
+1. Access Defender for Cloud Apps on the **[Microsoft 365 Defender portal](https://security.microsoft.com)** under **Cloud Apps**. For example:
 
-- To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Microsoft 365 admin center, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true). For more information, see [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles) and [Assigning administrator roles in Azure Active Directory](/azure/active-directory/roles/permissions-reference).
-
-- To run the Defender for Cloud Apps portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest).
-
-## Access the portal
-
- You can access Defender for Cloud Apps through the **[Microsoft 365 Defender portal](https://security.microsoft.com)**, as follows:
-
-1. In the [Microsoft 365 Defender Portal](https://security.microsoft.com/),  under **Cloud Apps**, you'll find the various components of Defender for Cloud Apps:
-
-    :::image type="content" source="media/defender-for-cloud-apps-menu.png" alt-text="Defender for Cloud Apps menu." lightbox="media/defender-for-cloud-apps-menu.png":::
+    :::image type="content" source="media/get-started/defender-for-cloud-apps-intro.png" alt-text="Screenshot of the Defender for Cloud Apps Cloud Discovery page." lightbox="media/get-started/defender-for-cloud-apps-intro.png":::
 
 ## Step 1. Set instant visibility, protection, and governance actions for your apps
 
-How to page: [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
+**How to page**: [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 
-Required task: Connect apps
+**Required task**: Connect apps
 
 1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected Apps**, select **App Connectors**.
@@ -50,9 +52,9 @@ After you connect an app, you can gain deeper visibility so you can investigate 
 
 ## Step 2. Protect sensitive information with DLP policies
 
-How to page: [Protect sensitive information with DLP policies](policies-information-protection.md)
+**How to page**: [Protect sensitive information with DLP policies](policies-information-protection.md)
 
-Recommended task: Enable file monitoring and create file policies
+**Recommended task**: Enable file monitoring and create file policies
 
 1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Information Protection**, select **Files**.
@@ -72,9 +74,9 @@ We recommend using Defender for Cloud Apps sensitive information protection in p
 
 ## Step 3. Control cloud apps with policies
 
-How to page: [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+**How to page**: [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-Required task: Create policies
+**Required task**: Create policies
 
 ### To create policies
 
@@ -92,9 +94,9 @@ You can use policies to help you monitor trends, see security threats, and gener
 
 ## Step 4. Set up Cloud Discovery
 
-How to page: [Set up Cloud Discovery](set-up-cloud-discovery.md)
+**How to page**: [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
-Required task: Enable Defender for Cloud Apps to view your cloud app use
+**Required task**: Enable Defender for Cloud Apps to view your cloud app use
 
 1. [Integrate with Microsoft Defender for Endpoint](mde-integration.md) to automatically enable Defender for Cloud Apps to monitor your Windows 10 and Windows 11 devices inside and outside your corporation.
 1. If you use [Zscaler, integrate](zscaler-integration.md) it with Defender for Cloud Apps.
@@ -120,9 +122,9 @@ After your logs are analyzed, you can easily find which cloud apps are being use
 
 ## Step 5. Deploy Conditional Access App Control for catalog apps
 
-How to page: [Deploy Conditional Access App Control for catalog apps with Azure AD](proxy-deployment-aad.md)
+**How to page**: [Deploy Conditional Access App Control for catalog apps with Azure AD](proxy-deployment-aad.md)
 
-Recommended task: Deploy Conditional Access App Control for catalog apps
+**Recommended task**: Deploy Conditional Access App Control for catalog apps
 
 1. Configure your IdP to work with Defender for Cloud Apps. If you have Azure AD, you can leverage inline controls such as *Monitor only* and *Block downloads* which will work for any catalog app out of the box.
 1. Onboard apps onto access and session controls.
@@ -139,9 +141,9 @@ Using Conditional Access App Control in parallel with another CASB solution can 
 
 ## Step 6. Personalize your experience
 
-How to page: [Personalize your experience](mail-settings.md)
+**How to page**: [Personalize your experience](mail-settings.md)
 
-Recommended task: Add your organization details
+**Recommended task**: Add your organization details
 
 ### To enter email settings
 
@@ -172,9 +174,9 @@ Provide a better experience for your users with your own email templates. Decide
 
 ## Step 7. Organize the data according to your needs
 
-How to page: [Working with IP ranges and tags](ip-tags.md)
+**How to page**: [Working with IP ranges and tags](ip-tags.md)
 
-Recommended task: Configure important settings
+**Recommended task**: Configure important settings
 
 ### To create IP address tags
 
