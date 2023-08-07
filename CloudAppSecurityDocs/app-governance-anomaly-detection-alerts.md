@@ -5,7 +5,7 @@ ms.topic: conceptual
 description: Learn how to investigate threat detection alerts from app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
 ---
 
-# Investigate threat detection alerts
+# Investigate app governance threat detection alerts
 
 App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because threat detections are nondeterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
