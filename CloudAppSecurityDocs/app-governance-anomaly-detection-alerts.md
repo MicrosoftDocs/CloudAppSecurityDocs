@@ -20,7 +20,7 @@ This guide provides information about investigating and remediating app governan
 - [Initial Access](#initial-access-alerts)
 - Execution
 - [Persistence](#persistence-alerts)
-- Privilege Escalation
+- [Privilege Escalation](#privilege-escalation-alerts)
 - [Defense Evasion](#defense-evasion-alerts)
 - Credential Access
 - [Discovery](#discovery-alerts)
