@@ -1,13 +1,15 @@
 ---
 title: Investigate app governance threat detection alerts | Microsoft Defender for Cloud Apps
-ms.date: 05/28/2023
+ms.date: 08/06/2023
 ms.topic: conceptual
 description: Learn how to investigate threat detection alerts from app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
 ---
 
 # Investigate threat detection alerts
 
-App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because threat detections are nondeterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+App governance provides security detections and alerts for malicious activities. This article lists details for each alert that can aid your investigation and remediation, including the conditions for triggering alerts. Since threat detections are nondeterministic by nature, they're only triggered when there's behavior that deviates from the norm.
+
+For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md)
 
 ## MITRE ATT&CK
 
@@ -18,7 +20,7 @@ This guide provides information about investigating and remediating app governan
 - [Initial Access](#initial-access-alerts)
 - Execution
 - [Persistence](#persistence-alerts)
-- Privilege Escalation
+- [Privilege Escalation](#privilege-escalation-alerts)
 - [Defense Evasion](#defense-evasion-alerts)
 - Credential Access
 - [Discovery](#discovery-alerts)
@@ -503,6 +505,72 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 1. Review all activities performed by the app.
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
+
+
+### Suspicious OAuth app email activity through Graph API
+
+**Severity**: High 
+
+This detection generates alerts for multitenant OAuth apps, registered by users with a high risk sign in, that made calls to Microsoft Graph API to perform suspicious email activities within a short period of time.
+
+This detection verifies whether the API calls were made for mailbox rule creation, create reply email, forward email, reply, or new emails being sent. Apps that trigger this alert might be actively sending spam or malicious emails to other targets or exfiltrating confidential data and clearing tracks to evade detection.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the app creation and consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
+
+    **Recommended action**:
+
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
+
+    - Investigate app activity and check affected accounts for suspicious activity.
+
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts and remove the inbox rule. 
+
+    - Classify the alert as a true positive. 
+
+
+- **FP**: If, after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
+
+    **Recommended action**:  
+
+    - Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+    - Understand the scope of the breach:
+
+      Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts.
+
+### Suspicious OAuth app email activity through EWS API
+
+**Severity**: High
+
+This detection generates alerts for multitenant OAuth apps, registered by users with a high-risky sign in, that made calls to Microsoft Exchange Web Services (EWS) API to perform suspicious email activities within a short period of time. 
+
+This detection verifies whether the API calls were made to update inbox rules, move items, delete email, delete folder, or delete attachment. Apps that trigger this alert might be actively exfiltrating or deleting confidential data and clearing tracks to evade detection.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the app creation and consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
+
+    **Recommended action**:
+
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
+
+    - Investigate app activity and check affected accounts for suspicious activity.
+
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts and remove the inbox rule.
+
+    - Classify the alert as a true positive.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
+
+    **Recommended Action**:  
+
+    - Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+    - Understand the scope of the breach:
+
+      Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
 
 
 ## Privilege escalation alerts
