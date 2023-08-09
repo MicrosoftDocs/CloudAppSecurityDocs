@@ -74,8 +74,8 @@ After setting up your policy to watch for credit card information in the selecte
 
 ## Validate your policy
 
-1. To simulate an alert, go to your Box account and try to access a file in the folder **Customer data**.
-1. Go to the policy report. A file policy match should appear shortly.
+1. To simulate an alert, create a file with a simulated credit card number in the OneDrive for Business folder you'd defined in your policy. 
+1. Go to the policy report, where a new match should appear shortly.
 1. You can select the match to see which files were protected. The match itself will be masked to protect the sensitive data.
 
 >[!NOTE]
