@@ -4,6 +4,13 @@ description: This article describes the procedure for setting up a Defender for 
 ms.date: 03/27/2023
 ms.topic: how-to
 ---
+
+---
+title: Session policies
+description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
+ms.date: 03/27/2023
+ms.topic: how-to
+---
 # Session policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -92,10 +99,7 @@ To create a new session policy, follow this procedure:
         * **Protect (Apply sensitivity label to download and monitor all activities)**: This option is only available if you selected **Control file download (with inspection)** under **Session policy**. If your organization uses Microsoft Purview Information Protection, you can set an **Action** to apply a sensitivity label set in Microsoft Purview Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
 1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit. Select if you want the alert as an email.
-
-## <a name="monitor-session"></a>Monitor all activities
-
-When you create a session policy, each user session that matches the policy is redirected to session control rather than to the app directly. The user will see a monitoring notice to let them know that their sessions are being monitored.
+2. **Notify users**: When you create a session policy, each user session that matches the policy is redirected to session control rather than to the app directly. The user will see a monitoring notice to let them know that their sessions are being monitored.
 
 If you don't want to notify the user that they're being monitored, you can disable the notification message.
 
@@ -103,6 +107,7 @@ If you don't want to notify the user that they're being monitored, you can disab
 
 1. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
 
+3. **Monitor logs**
 To keep the user within the session, Conditional Access App Control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Defender for Cloud Apps URLs. For example, if the app returns a page with links whose domains end with myapp.com, Conditional Access App Control replaces the links with domains ending with something like `myapp.com.mcas.ms`. This way the entire session is monitored by Microsoft Defender for Cloud Apps.
 
 Conditional Access App Control records the traffic logs of every user session that is routed through it. The traffic logs include the time, IP, user agent, URLs visited, and the number of bytes uploaded and downloaded. These logs are analyzed and a continuous report, **Defender for Cloud Apps Conditional Access App Control**, is added to the list of Cloud Discovery reports in the Cloud Discovery dashboard.
@@ -121,6 +126,13 @@ To download the exported log:
 1. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and select **Download**.
 
     ![download button.](media/download-button.png)
+
+## <a name="monitor-session"></a>Monitor all
+**Monitor all** activity will monitor only one activity, "Login". 
+No alerts will be sent.
+In order to monitor all the activities, use the 'monitor all activities' template.
+The activities in this case will be monitored & logged, regardless of whether the policy matches or not
+There must be at least one block\test policy per activity for the 'Monitor all activities' policy to work 
 
 ## <a name="block-download"></a>Block all downloads
 
