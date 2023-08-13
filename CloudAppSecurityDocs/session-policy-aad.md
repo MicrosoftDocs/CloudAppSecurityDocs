@@ -109,25 +109,25 @@ Use the following steps to create a new session policy:
           - **Block (Block file download and monitor all activities)**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download).
           - **Protect (Apply sensitivity label to download and monitor all activities)**: This option is only available if you selected **Control file download (with inspection)** under **Session policy**. If your organization uses Microsoft Purview Information Protection, you can set an **Action** to apply a sensitivity label set in Microsoft Purview Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
-1. To have the alert sent as an email, select **Create an alert for each matching event with the policy's severity** and set an alert limit as follows:
+### Configure alerts to be sent as emails
 
-      1. **Notify users**: When you create a session policy, each user session that matches the policy is redirected to session control rather than to the app directly. 
-      
-        The user will see a monitoring notice to let them know that their sessions are being monitored.
+To have the alert sent as an email, select **Create an alert for each matching event with the policy's severity** and set an alert limit:
 
-        If you don't want to notify the user that they're being monitored, you can disable the notification message.
+1. **Notify users**: When you create a session policy, each user session that matches the policy is redirected to session control rather than to the app directly.
 
-      1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+    The user will see a monitoring notice to let them know that their sessions are being monitored. If you don't want to notify the user that they're being monitored, you can disable the notification message.
 
-      1. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
-      1. **Monitor logs**
-      
+1. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
+
+1. **Monitor logs**
+
 To keep the user within the session, Conditional Access App Control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Defender for Cloud Apps URLs. For example, if the app returns a page with links whose domains end with myapp.com, Conditional Access App Control replaces the links with domains ending with something like `myapp.com.mcas.ms`. This way, Defender for Cloud Apps monitors the entire session.
 
-Conditional Access App Control records the traffic logs of every user session that is routed through it. The traffic logs include the time, IP, user agent, URLs visited, and the number of bytes uploaded and downloaded. These logs are analyzed and a continuous report, **Defender for Cloud Apps Conditional Access App Control**, is added to the list of Cloud Discovery reports in the Cloud Discovery dashboard.
-
 ### Export Cloud discovery logs
+
+Conditional Access App Control records the traffic logs of every user session that is routed through it. The traffic logs include the time, IP, user agent, URLs visited, and the number of bytes uploaded and downloaded. These logs are analyzed and a continuous report, **Defender for Cloud Apps Conditional Access App Control**, is added to the list of Cloud Discovery reports in the Cloud Discovery dashboard.
 
 To export Cloud discovery logs from the Cloud Discovery dashboard:
 
