@@ -51,16 +51,16 @@ To create a new session policy, follow this procedure:
 
 1. In the **Session control type** field:
 
-   . Select **Monitor only** if you only want to monitor activities by users. This selection will create a Monitor only policy for the apps you selected where all sign-ins, heuristic downloads, and Activity types will be downloaded.
-   . Select **Control file download (with inspection)** if you want to monitor user activities. You can take additional actions like block or protect downloads for users.
-   . Select **Block activities** to block specific activities, which you can select using the **Activity type** filter. All activities from selected apps  will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
+   - Select **Monitor only** if you only want to monitor activities by users. This selection will create a Monitor only policy for the apps you selected where all sign-ins.
+   - Select **Control file download (with inspection)** if you want to monitor user activities. You can take additional actions like block or protect downloads for users.
+   - Select **Block activities** to block specific activities, which you can select using the **Activity type** filter. All activities from selected apps  will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
    1. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These filters can include the following options:
 
-   * **Device tags**: Use this filter to identify unmanaged devices.
-   * **Location**: Use this filter to identify unknown (and therefore risky) locations.
-   * **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags.
-   * **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or doesn't equal **Native client**. This filter should be tested against your mobile and desktop apps for each cloud app.
-   * **Activity type**: Use this filter to select specific activities to be controlled, such as:
+    * **Device tags**: Use this filter to identify unmanaged devices.
+    * **Location**: Use this filter to identify unknown (and therefore risky) locations.
+    * **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags.
+    * **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or doesn't equal **Native client**. This filter should be tested against your mobile and desktop apps for each cloud app.
+    * **Activity type**: Use this filter to select specific activities to be controlled, such as:
       * Print
       * Clipboard actions: Copy, Cut and Paste
       * Send items in apps such as Teams, Slack and Salesforce
@@ -68,9 +68,9 @@ To create a new session policy, follow this procedure:
       * Edit items in various apps
           > [!NOTE]
           > Session policies don't support mobile and desktop apps. Mobile apps and desktop apps can also be blocked or allowed by creating an access policy.
-      1. If you selected the option to **Control file download (with inspection)**:
+    1. If you selected the option to **Control file download (with inspection)**:
 
-   . Under **Activity source** in the **Files matching all of the following** section, select additional file filters to apply to the policy. These filters can include the following options:
+       - Under **Activity source** in the **Files matching all of the following** section, select additional file filters to apply to the policy. These filters can include the following options:
 
             * **Sensitivity label** - Use this filter if your organization uses Microsoft Purview Information Protection and your data has been protected by its sensitivity labels. You can filter files based on the sensitivity label you applied to them. For more information about integration with Microsoft Purview Information Protection, see [Microsoft Purview Information Protection integration](azip-integration.md).
                   * **File name** - Use this filter to apply the policy to specific files.
