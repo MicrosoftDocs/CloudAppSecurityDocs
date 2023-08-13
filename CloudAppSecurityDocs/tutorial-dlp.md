@@ -96,7 +96,7 @@ So now you can detect files with sensitive information, but what you really want
 
 1. **Session policy controls**: Uses reverse proxy capabilities to protect files, including:
     - Trigger alerts and send email notifications about the incident
-    - [Monitor all activities](session-policy-aad.md#monitor-session): Explicitly allows the download or upload of files and monitors all related activities.
+    - [Monitor all activities](session-policy-aad.md#monitor-all): Explicitly allows the download or upload of files and monitors all related activities.
     - [Block](session-policy-aad.md#block-download): Explicitly blocks the download or upload of files. Use this option to protect your organization's sensitive files from exfiltration or infiltration from any device, including unmanaged devices.
     - [Protect](session-policy-aad.md#protect-download): Automatically applies a sensitivity label to files that match the policy's file filters. Use this option to protect the download of sensitive files.
 

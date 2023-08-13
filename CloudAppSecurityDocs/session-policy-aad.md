@@ -17,7 +17,7 @@ For example, you might decide that you want to allow users to access an app from
 
 Session policies enable you to set user-session controls, configure access, and more:
 
-* [Monitor all activities](#monitor-session)
+* [Monitor all activities](#monitor-all)
 * [Block all downloads](#block-download)
 * [Block specific activities](#block-activities)
 * [Require step-up authentication (authentication context)](#require-step-up-authentication-authentication-context)
