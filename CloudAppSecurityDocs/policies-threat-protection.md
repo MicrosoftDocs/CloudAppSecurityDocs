@@ -167,7 +167,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 2. It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Defender for Cloud Apps identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
 > [!NOTE]
-> This applies to Office 365, Google Workspace, Box, and Dropbox.
+> This applies to Microsoft 365, Google Workspace, Box, and Dropbox.
 
 ## Detect malware in the cloud
 
@@ -175,7 +175,7 @@ Detect files containing malware in your cloud environments by utilizing the Defe
 
 ### Prerequisites
 
-- For Office 365 malware detection, you must have a valid license for Microsoft Defender for Office 365 P1.
+- For Microsoft 365 malware detection, you must have a valid license for Microsoft Defender for Microsoft 365 P1.
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps

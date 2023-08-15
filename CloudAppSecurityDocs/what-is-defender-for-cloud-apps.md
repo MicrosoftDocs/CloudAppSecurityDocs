@@ -7,7 +7,7 @@ ms.topic: overview
 # Microsoft Defender for Cloud Apps overview
 
 > [!TIP]
-> You might be looking for Office 365 Cloud App Security. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md)
+> You might be looking for Microsoft 365 Cloud App Security. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?](editions-cloud-app-security-o365.md)
 > 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -83,7 +83,7 @@ For more information, see [App governance in Microsoft Defender for Cloud Apps](
 
 For more information, see:
 
-- [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md)
+- [What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?](editions-cloud-app-security-o365.md)
 - [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans)
 - [Getting started with Defender for Cloud Apps](./get-started.md)
 

@@ -30,7 +30,7 @@ For portal access requirements, see [Portal access](network-requirements.md#port
 
 1. If you're integrating with Microsoft Purview Information Protection, see [Microsoft Purview Information Protection Integration](azip-integration.md) for information.
 
-    * To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
+    * To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Microsoft 365](./connect-office-365.md).
 
 > [!NOTE]
 > If you use ExpressRoute, Defender for Cloud Apps is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Defender for Cloud Apps apps APIs and traffic sent to Defender for Cloud Apps APIs, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security.

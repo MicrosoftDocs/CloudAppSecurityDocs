@@ -9,7 +9,7 @@ ms.topic: reference
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> This API is not available for Office 365 Cloud App Security.
+> This API is not available for Microsoft 365 Cloud App Security.
 
 The Entities API provides you with basic information about the users and accounts using your organization's cloud apps, allowing you to understand service use patterns.
 

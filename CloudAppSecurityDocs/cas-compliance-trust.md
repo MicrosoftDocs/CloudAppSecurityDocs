@@ -156,7 +156,7 @@ The following table show what data is surfaced for each product integration:
 | --- | --- | --- |
 | Microsoft 365 Defender | Alerts and user activities | Enabled automatically on Microsoft 365 Defender upon onboarding |
 | Microsoft Sentinel | Alerts and discovery data | [Enabled in Defender for Cloud Apps](siem-sentinel.md) and [configured in Microsoft Sentinel](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps) |
-| Microsoft Purview compliance portal | Alerts for Office 365 | Automatically streamed to Microsoft Purview compliance portal  |
+| Microsoft Purview compliance portal | Alerts for Microsoft 365 | Automatically streamed to Microsoft Purview compliance portal  |
 | Microsoft Defender for Cloud | Alerts for Azure | Enabled by default in Defender for Cloud Apps; can be disabled in Microsoft Defender for Cloud |
 | Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](/graph/api/resources/security-api-overview) |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Defender for Cloud Apps](flow-integration.md) |
@@ -190,7 +190,7 @@ Defender for Cloud Apps enables you to limit access of administrators to the por
 
 ### Permissions
 
-Defender for Cloud Apps supports role-based access control. Office 365 and Azure Active Directory Global admin and Security admin roles have full access to Defender for Cloud Apps, and Security readers have read access. [For more information](manage-admins.md).
+Defender for Cloud Apps supports role-based access control. Microsoft 365 and Azure Active Directory Global admin and Security admin roles have full access to Defender for Cloud Apps, and Security readers have read access. [For more information](manage-admins.md).
 
 ## Customer controls for organizational compliance
 

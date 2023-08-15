@@ -11,7 +11,7 @@ ROBOTS: NOINDEX
 
 To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges. IP address ranges allow you to tag, categorize, and customize the way logs and alerts are displayed and investigated. Each group of IP ranges can be categorized based on a preset list of IP categories. You're also able to create custom IP tags for your IP ranges. Additionally, you can override public geolocation information based on your internal network knowledge. Both IPv4 and IPv6 are supported.
 
-Defender for Cloud Apps comes preconfigured with built-in IP ranges for popular cloud providers such as Azure and Office 365. Additionally, we have built-in tagging based on Microsoft threat intelligence including anonymous proxy, Botnet, and Tor. You can see the full list in the drop-down on the IP address ranges page.
+Defender for Cloud Apps comes preconfigured with built-in IP ranges for popular cloud providers such as Azure and Microsoft 365. Additionally, we have built-in tagging based on Microsoft threat intelligence including anonymous proxy, Botnet, and Tor. You can see the full list in the drop-down on the IP address ranges page.
 
 > [!NOTE]
 >

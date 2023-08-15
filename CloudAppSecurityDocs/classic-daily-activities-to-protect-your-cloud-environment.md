@@ -32,7 +32,7 @@ Shows the number of apps protected by Conditional Access App Control as well as 
 Shows the number of API connected app instances and their status.
 - **Files infected with malware**  
 Shows the number of files infected with malware.
-- **Privileged Office 365 OAuth apps**  
+- **Privileged Microsoft 365 OAuth apps**  
 Shows the number of rarely used OAuth apps granted highly privileged permissions.
 - **Azure security configuration**  
 Shows the number and severity of Azure security configuration recommendations.

@@ -11,7 +11,7 @@ ROBOTS: NOINDEX
 
 In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, you can set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users.
 
-OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, Google Workspace, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned will disable the correlating Enterprise Application.
+OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Microsoft 365, Google Workspace, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned will disable the correlating Enterprise Application.
 
 ## Create a new OAuth app policy
 

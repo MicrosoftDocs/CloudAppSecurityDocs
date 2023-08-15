@@ -125,26 +125,26 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ## Detect risky OAuth apps
 
-Get visibility and control over [OAuth apps](investigate-risky-oauth.md) that are installed inside apps like Google Workspace, Office 365, and Salesforce. OAuth apps that request high permissions and have rare community use might be considered risky.
+Get visibility and control over [OAuth apps](investigate-risky-oauth.md) that are installed inside apps like Google Workspace, Microsoft 365, and Salesforce. OAuth apps that request high permissions and have rare community use might be considered risky.
 
 ### Prerequisites
 
-You must have the Google Workspace, Office 365, or Salesforce app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have the Google Workspace, Microsoft 365, or Salesforce app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
 1. On the **Policies** page, create a new **OAuth app policy**.
 
-2. Select the filter **App** and set the app the policy should cover, Google Workspace, Office 365, or Salesforce.
+2. Select the filter **App** and set the app the policy should cover, Google Workspace, Microsoft 365, or Salesforce.
 
-3. Select **Permission level** filter equals **High** (available for Google Workspace and Office 365).
+3. Select **Permission level** filter equals **High** (available for Google Workspace and Microsoft 365).
 
 4. Add the filter **Community use** equals **Rare**.
 
-5. Configure the actions to take when an alert is triggered. For example, for Office 365, check **Revoke app** for OAuth apps detected by the policy.
+5. Configure the actions to take when an alert is triggered. For example, for Microsoft 365, check **Revoke app** for OAuth apps detected by the policy.
 
 > [!NOTE]
-> Supported for Google Workspace, Office 365, and Salesforce app stores.
+> Supported for Google Workspace, Microsoft 365, and Salesforce app stores.
 
 ## Next steps
 

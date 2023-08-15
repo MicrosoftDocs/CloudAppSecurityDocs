@@ -43,7 +43,7 @@ The following table describes the supported filters:
 | location.organizations | string | eq, neq, isset, isnotset, contains | Filter activities originating from the specified organization |
 | ip.address | string | eq, startswith, doesnotstartwith, isset, isnotset, neq | Filter activities originating from the given IP address |
 | fileSelector | file | eq, neq | Filter activities containing the specified file/folder |
-| office365url | string | startswith, eq, endswith | Filter activities by Office 365 URLs |
+| office365url | string | startswith, eq, endswith | Filter activities by Microsoft 365 URLs |
 | fileId | string | eq | Find a file by ID |
 | ip.category | integer | eq, neq | Filter activities with the specified subnet categories. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
 | ip.tags | string | eq, neq | Filter activities by IP tag IDs |

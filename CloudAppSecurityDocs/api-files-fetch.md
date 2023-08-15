@@ -10,7 +10,7 @@ ms.topic: reference
 
 > [!NOTE]
 >
-> - This API is not available for Office 365 Cloud App Security.
+> - This API is not available for Microsoft 365 Cloud App Security.
 
 Run the GET request to fetch the file matching the specified primary key.
 

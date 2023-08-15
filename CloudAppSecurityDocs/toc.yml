@@ -15,7 +15,7 @@ items:
     href: preview-features.md
   - name: Compare
     items:
-    - name: Office 365 Cloud App Security
+    - name: Microsoft 365 Cloud App Security
       href: editions-cloud-app-security-o365.md
     - name: Azure AD Cloud App Discovery
       href: editions-cloud-app-security-aad.md

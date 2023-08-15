@@ -22,7 +22,7 @@ By integrating Microsoft Purview Information Protection into Defender for Cloud 
 > [!NOTE]
 > To enable this feature, you need both a Defender for Cloud Apps license and a license for Azure Information Protection Premium P1. As soon as both licenses are in place, Defender for Cloud Apps syncs the organization's labels from the Azure Information Protection service.
 
-- To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
+- To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Microsoft 365](./connect-office-365.md).
 
 For Defender for Cloud Apps to apply sensitivity labels, they must be published as part of a sensitivity label policy in the Microsoft Purview compliance portal.
 
@@ -68,7 +68,7 @@ You can see the sensitivity labels from Microsoft Purview Information Protection
 
 ### Enable Microsoft Purview Information Protection
 
-All you have to do to integrate Microsoft Purview Information Protection with Defender for Cloud Apps is select a single checkbox. By enabling automatic scan, you enable searching for sensitivity labels from Microsoft Purview Information Protection on your Office 365 files without the need to create a policy. After you enable it, if you have files in your cloud environment that are labeled with sensitivity labels from Microsoft Purview Information Protection, you'll see them in Defender for Cloud Apps.
+All you have to do to integrate Microsoft Purview Information Protection with Defender for Cloud Apps is select a single checkbox. By enabling automatic scan, you enable searching for sensitivity labels from Microsoft Purview Information Protection on your Microsoft 365 files without the need to create a policy. After you enable it, if you have files in your cloud environment that are labeled with sensitivity labels from Microsoft Purview Information Protection, you'll see them in Defender for Cloud Apps.
 
 To enable Defender for Cloud Apps to scan files with content inspection enabled for sensitivity labels:
 

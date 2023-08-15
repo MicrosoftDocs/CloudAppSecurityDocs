@@ -84,7 +84,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 - User – The user who performed the activity, which can be filtered into domain, group, name, or organization. In order to filter activities with no specific user, you can use the 'is not set' operator.
   - User domain - Search for a specific user domain.
   - User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users. This is only relevant for connected Google Workspace instances using organizational units.
-  - User group – Specific user groups that you can import from connected apps, for example, Office 365 administrators.
+  - User group – Specific user groups that you can import from connected apps, for example, Microsoft 365 administrators.
   - User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, select the name of the user group. Clicking will take you to the Accounts page, which lists all the users in the group. From there, you can drill down into the details of the accounts of specific users in the group.
   - The **User group** and **User name** filters can be further filtered by using the **As** filter and selecting the role of the user, which can be any of the following:
     - Activity object only - meaning that the user or user group selected didn't perform the activity in question; they were the object of the activity.
