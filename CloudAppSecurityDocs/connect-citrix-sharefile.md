@@ -33,9 +33,14 @@ The Citrix Share file user used for logging into Citrix Share file must have Acc
 
 1. Fill out the following fields:
 
-    - Application name: Microsoft Defender for Cloud Apps (you can also choose another name).
-    - Redirect URL:  `https://portal.cloudappsecurity.com/api/oauth/saga`.
-
+    - **Application name**: Microsoft Defender for Cloud Apps (you can also choose another name).
+    
+    - **Redirect URL**:  `https://portal.cloudappsecurity.com/api/oauth/saga`.
+    
+      For US Government GCC customers, enter `https://portal.cloudappsecuritygov.com/api/oauth/saga` as the redirect URL.
+  
+      For US Government GCC High customers, enter `https://portal.cloudappsecurity.us/api/oauth/saga` as the redirect URL.
+      
 1. Select **Generate API Key**.
 
 1. Copy the *Client ID* and *Client Secret*.
