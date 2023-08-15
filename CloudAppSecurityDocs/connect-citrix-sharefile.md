@@ -4,6 +4,7 @@ description: This article provides information about how to connect your Citrix 
 ms.date: 04/03/2023
 ms.topic: how-to
 ---
+
 # Connect Citrix ShareFile to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -32,9 +33,14 @@ The Citrix Share file user used for logging into Citrix Share file must have Acc
 
 1. Fill out the following fields:
 
-    - Application name: Microsoft Defender for Cloud Apps (you can also choose another name).
-    - Redirect URL:  `https://portal.cloudappsecurity.com/api/oauth/saga` (change to your domain).
-
+    - **Application name**: Microsoft Defender for Cloud Apps (you can also choose another name).
+    
+    - **Redirect URL**:  `https://portal.cloudappsecurity.com/api/oauth/saga`.
+    
+      For US Government GCC customers, enter `https://portal.cloudappsecuritygov.com/api/oauth/saga` as the redirect URL.
+  
+      For US Government GCC High customers, enter `https://portal.cloudappsecurity.us/api/oauth/saga` as the redirect URL.
+      
 1. Select **Generate API Key**.
 
 1. Copy the *Client ID* and *Client Secret*.
@@ -70,3 +76,4 @@ The default rate limit is 420 requests per minute.
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+

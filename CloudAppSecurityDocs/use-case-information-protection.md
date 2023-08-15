@@ -77,7 +77,8 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 >[!NOTE]
 >
 > - Defender for Cloud Apps currently supports automatic application of sensitivity labels on Box, GSuite, SharePoint and OneDrive for business.
-> - When a document is labeled by using Defender for Cloud Apps, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
+> - When a document is labeled by Defender for Cloud Apps, visual markings, such as headers, footers, or watermarks, are not applied. For more information, see [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
+>
 
 ## Next steps
 

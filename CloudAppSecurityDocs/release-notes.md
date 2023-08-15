@@ -29,16 +29,30 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## July 2023
 
+## Log collector version 0.255.0
+
+Defender for Cloud Apps has released the Defender for Cloud Apps log collector version 0.255.0, including updates to the *amazon-corretto* and *openssl* dependencies.
+
+The new version filename is `columbus-0.255.0-signed.jar`, and the image name is `mcaspublic.azurecr.io/public/mcas/logcollector`, with the `latest/0.255.0` tag.
+
+To update your log collector, make sure to stop the log collector in your environment, remove the current image, install the new one, and update the certificates.
+
+For more information, see [Advanced log collector management](log-collector-advanced-management.md).
+
+### ServiceNow connector now supports Utah version
+
+The Defender for Cloud Apps ServiceNow connector now supports the ServiceNow *Utah* version. For more information, see [Connect ServiceNow to Microsoft Defender for Cloud Apps](connect-servicenow.md)
+
 ### Google Workspace connector updates
 
 The Google Workspace connector now supports:
 
-- SaaS Security Posture Management (SSPM) toolsm for increased visibility into SaaS apps' posture misconfigurations when compared to the ideal app configurations. SSPM features help you proactively reduce the risk of breaches and attacks without needing to be a security expert for each platform.
+- SaaS Security Posture Management (SSPM) tools for increased visibility into SaaS apps' posture misconfigurations when compared to the ideal app configurations. SSPM features help you proactively reduce the risk of breaches and attacks without needing to be a security expert for each platform.
 - The **Enable multi-factor authentication** control. To view related data, make sure that you've configured the Google Workspace connector. 
 
 For more information, see [Connect Google Workspace to Microsoft Defender for Cloud Apps](connect-google-workspace.md).
 
-### Custom connectors with the open app connector platform
+### Custom connectors with the open app connector platform (Preview)
 
 Defender for Cloud Apps' new codeless, open app connector platform helps SaaS vendors create app connectors for their SaaS apps.
 
