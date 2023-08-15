@@ -55,7 +55,7 @@ Our approach to information protection can be split into the following phases th
     1. Go to **Control** > **Policies**, select **Create Policy**, and then select **File policy**.
     1. Under **Inspection method**, choose and configure one of the following classification services:
 
-        - **[Data Classification Services](dcs-inspection.md)**: Uses classification decisions you've made across Office 365, Microsoft Purview Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
+        - **[Data Classification Services](dcs-inspection.md)**: Uses classification decisions you've made across Microsoft 365, Microsoft Purview Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
         - **[Built-in DLP](content-inspection-built-in.md)**: Inspects files for sensitive information using our built-in DLP content inspection engine.
         - **[External DLP integration](icap-stunnel.md)**: For enterprises wishing to use their own third-party DLP solutions, Defender for Cloud Apps file policies can securely direct files for inspection to your external DLP solution via an ICAP server.
 
@@ -73,7 +73,7 @@ Our approach to information protection can be split into the following phases th
     1. Under **Session control type**, choose one of the options with DLP.
     1. Under **Inspection method**, choose and configure one of the following classification services:
 
-        - **[Data Classification Services](dcs-inspection.md)**: Uses classification decisions you've made across Office 365, Microsoft Purview Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
+        - **[Data Classification Services](dcs-inspection.md)**: Uses classification decisions you've made across Microsoft 365, Microsoft Purview Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
         - **[Built-in DLP](content-inspection-built-in.md)**: Inspects files for sensitive information using our built-in DLP content inspection engine.
 
     1. For highly sensitive files, select **Create an alert** and choose the alerts you require, so that you are informed when there are files with unprotected sensitive information in your organization.
@@ -90,7 +90,7 @@ So now you can detect files with sensitive information, but what you really want
     - Manage labels applied to a file to enforce native Microsoft Purview Information Protection controls
     - Change sharing access to a file
     - Quarantine a file
-    - Remove specific file or folder permissions in Office 365
+    - Remove specific file or folder permissions in Microsoft 365
     - Move a file to the trash folder
 
 1. **Session policy controls**: Uses reverse proxy capabilities to protect files, including:

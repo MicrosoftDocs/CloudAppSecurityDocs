@@ -81,7 +81,7 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
     - An ICAP third-party policy such as a policy that looks for Vontu
 
 1. Set a quarantine location:
-    1. For Office 365 SharePoint or OneDrive for Business, you can't put files in admin quarantine as part of a policy until you set it up:
+    1. For Microsoft 365 SharePoint or OneDrive for Business, you can't put files in admin quarantine as part of a policy until you set it up:
         ![quarantine warning.](media/quarantine-warning.png)
 
         To set admin quarantine settings, in the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Information Protection**, choose **Admin quarantine**. Provide a site for the quarantine folder location and a user notification that your user will receive when their file is quarantined.

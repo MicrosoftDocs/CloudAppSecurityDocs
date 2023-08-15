@@ -18,7 +18,7 @@ Cloud Discovery data can now be enriched with Azure Active Directory username da
 ## Prerequisites
 
 - Data source must provide username information
-- [Office 365 app connector](./connect-office-365.md) connected
+- [Microsoft 365 app connector](./connect-office-365.md) connected
 
 ## Enabling user data enrichment
 

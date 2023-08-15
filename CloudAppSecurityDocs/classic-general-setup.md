@@ -23,7 +23,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 * 13.72.19.4
 
 > [!NOTE]
-> To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+> To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Microsoft 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
 ## Set up the portal
 
@@ -43,7 +43,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 1. If you're integrating with Microsoft Purview Information Protection, see [Microsoft Purview Information Protection Integration](azip-integration.md) for information.
 
-    * To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
+    * To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Microsoft 365](./connect-office-365.md).
 
 1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](mdi-integration.md) for information.
 

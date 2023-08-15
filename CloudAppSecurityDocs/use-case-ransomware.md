@@ -15,7 +15,7 @@ In latest massive ransomware attack, WannaCry hit the cyber world hard, infectin
 Ransomware is a cyber attack in which the attacker sends you a file that can block you from accessing your computer and encrypt your own files. The files are sometimes held for ransom and aren't decrypted until you pay the attacker to restore access to your computer, files, or critical LOB apps. Ransomware attacks can affect any computer, home, office, network, or server. In fact, because large organizations are made up of many users who may inadvertently open a file that unleashes ransomware across your network, organizations are at even greater risk of being forced to pay the attacker to stop the ransomware and restore access to computers or files.
 
 >[!NOTE]
-> This use case applies to Office 365, Google Workspace, Box and Dropbox.
+> This use case applies to Microsoft 365, Google Workspace, Box and Dropbox.
 
 ## The threat
 
@@ -27,7 +27,7 @@ Detect potential ransomware on your cloud environment by creating a policy to up
 
 ## Out-of-the-box protection
 
-[Connect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) at least one cloud app (Office 365, Google Workspace, Box, and Dropbox) to Defender for Cloud Apps.
+[Connect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) at least one cloud app (Microsoft 365, Google Workspace, Box, and Dropbox) to Defender for Cloud Apps.
 
 1. By default, Defender for Cloud Apps scans your network to establish a baseline, wherein it learns patterns of what your users ordinarily do in your cloud, when they do it and what they commonly do.
 

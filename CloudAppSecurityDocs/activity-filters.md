@@ -4,6 +4,7 @@ description: This article provides a list of activities, filters, and match para
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Activities
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -11,7 +12,7 @@ ms.topic: how-to
 Microsoft Defender for Cloud Apps gives you visibility into all the activities from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps scans all the activities that happened - the retroactive scan period differs per app - and then it's updated constantly with new activities.
 
 > [!NOTE]
-> For a full list of Office 365 activities monitored by Defender for Cloud Apps, see [Search the audit log in the compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#audited-activities).
+> For a full list of Microsoft 365 activities monitored by Defender for Cloud Apps, see [Search the audit log in the compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#audited-activities).
 
 The **Activity log** can be filtered to enable you to find specific activities. You create policies based on the activities and then define what you want to be alerted about and act on. You can search for activities performed on certain files. The type of activities and the information we get for each activity depends on the app and what kind of data the app can provide.
 
@@ -90,22 +91,29 @@ To view IP address insights:
 
 1. Select the Activity itself in the **Activity log**.
 
-2. Then select the **IP address** tab.  
-This opens the Activity drawer **IP address** tab, which provides the following insights about the IP address:
+1. Then select the **IP address** tab.  
+
+    This opens the Activity drawer **IP address** tab, which provides the following insights about the IP address:
+
     - **Open alerts**: The number of open alerts that involved the IP address.
+
     - **Activities**: The number of activities performed by the IP address in the past 30 days.
+
     - **IP location**: The geographic locations from which the IP address connected in the past 30 days.
+
     - **Activities**: The number of activities performed from this IP address in the past 30 days.
-    - **Admin activities**: The number of administrative activities performed from this IP address in the past 30 days.
-    - You can perform the following IP address actions:
+
+    - **Admin activities**: The number of administrative activities performed from this IP address in the past 30 days. You can perform the following IP address actions:
+
         - Set as a Corporate IP and add to allowlist
         - Set as a VPN IP address and add to allowlist
-        - Set as a Risky IP and add to denylist
-
-   >[!NOTE]
-   > To avoid raising [impossible travel](anomaly-detection-policy.md#impossible-travel) alerts when employees connect from their home locations via the corporate VPN, it's recommended to tag the IP address as **VPN**.
+        - Set as a Risky IP and add to blocklist
 
 ![IP address insights in Defender for Cloud Apps.](media/ip-address-insights.png)
+
+> [!NOTE]
+>- Internal IPv4 or IPv6 IP addresses audited by the cloud applications connected with API, may indicate internal services communications within the network of the cloud application, and shouldn't be confused with internal IPs from the source network the device connected from, as the cloud application is not exposed to the internal IPs of the devices.
+>- To avoid raising [impossible travel](anomaly-detection-policy.md#impossible-travel) alerts when employees connect from their home locations via the corporate VPN, it's recommended to tag the IP address as **VPN**.
 
 ## Export activities
 
@@ -123,3 +131,4 @@ In the **Activity log**, select the **Export** button in the top-left corner.
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+

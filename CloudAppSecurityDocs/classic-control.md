@@ -66,7 +66,7 @@ Defender for Cloud Apps helps you roll out your migrations by letting you know w
 
 ### Migrate your users to a new app
 
-Imagine this scenario: you recently bought Office 365, and you want all the users in your organization to stop using all other cloud storage apps and start using OneDrive. Here's what you might want to do:
+Imagine this scenario: you recently bought Microsoft 365, and you want all the users in your organization to stop using all other cloud storage apps and start using OneDrive. Here's what you might want to do:
 
 1. Go to your **Cloud Discovery Dashboard** and under **App categories**, filter apps by **Cloud Storage**. Sort the results by **Users** or **IP addresses**, and check to see which app is most popular.
 

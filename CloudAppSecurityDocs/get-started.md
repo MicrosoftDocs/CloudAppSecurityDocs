@@ -15,13 +15,12 @@ Defender for Cloud Apps can help you use the benefits of cloud applications whil
 
 ## Prerequisites
 
-To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Microsoft 365.
+To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Microsoft 365.  
 
-> [!NOTE]
-> Users with admin roles have the same admin permissions across any cloud apps your organization is subscribed to, regardless of where you've assigned the role.
-> 
-> For more information, see [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles) and [Assigning administrator roles in Azure Active Directory](/azure/active-directory/roles/permissions-reference).
->
+Users with admin roles have the same admin permissions across any cloud apps your organization is subscribed to, regardless of where you've assigned the role. For more information, see [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles) and [Assigning administrator roles in Azure Active Directory](/azure/active-directory/roles/permissions-reference).
+
+Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Microsoft 365 productivity suite licenses. For Microsoft 365 Cloud App Security (Microsoft Defender for Cloud Apps only for Microsoft 365), see [What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?](editions-cloud-app-security-o365.md).
+
 
 ## Access Defender for Cloud Apps
 

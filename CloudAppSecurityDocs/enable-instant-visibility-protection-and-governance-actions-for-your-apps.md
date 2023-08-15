@@ -18,7 +18,7 @@ Microsoft Defender for Cloud Apps leverages the APIs provided by the cloud provi
 Defender for Cloud Apps supports multiple instances of the same connected app. For example, if you have more than one instance of Salesforce (one for sales, one for marketing) you can connect both to Defender for Cloud Apps. You can manage the different instances from the same console to create granular policies and deeper investigation. This support applies only to API connected apps, not to Cloud Discovered apps or Proxy connected apps.
 
 > [!NOTE]
-> Multi-instance is not supported for Office 365 and Azure.
+> Multi-instance is not supported for Microsoft 365 and Azure.
 
 ## How it works
 
@@ -64,7 +64,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | GCP               | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | ✔                                           | ✔                         |
 | Google  Workspace | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
 | NetDocuments  | ✔ |  | ✔ |  | ✔ | ✔ |
-| Office 365        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| Microsoft 365        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Okta              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
 | OneLogin | ✔ | | ✔ | ✔ | ✔ | ✔ |
 | Service  Now      | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Partial                                     | Partial                   |
@@ -123,7 +123,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | GCP               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | Google  Workspace | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
 | NetDocuments  |  |  |  |  |  |
-| Office 365        | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
+| Microsoft 365        | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | Okta              | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | OneLogin |  |  |  |  |  |
 | Service  Now      | ✔                         | ✔                                        | Not applicable            |                           |                                            |
@@ -142,8 +142,8 @@ The following tables list, per cloud app, which abilities are supported with App
 
 - For some apps, it may be necessary to allow list IP addresses to enable Defender for Cloud Apps to collect logs and provide access for the Defender for Cloud Apps console. For more information, see [Network requirements](network-requirements.md).
 
-    > [!TIP]
-    > To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+> [!NOTE]
+> To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ### ExpressRoute
 

@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Defender for Cloud Apps enables you to natively use the Microsoft Data Classification Service to classify the files in your cloud apps. Microsoft Data Classification Service provides a unified information protection experience across Office 365, Microsoft Information Protection, and Microsoft Defender for Cloud Apps. The classification service allows you to extend your data classification efforts to the third-party cloud apps protected by Microsoft Defender for Cloud Apps, using the decisions you already made across an even greater number of apps.
+Microsoft Defender for Cloud Apps enables you to natively use the Microsoft Data Classification Service to classify the files in your cloud apps. Microsoft Data Classification Service provides a unified information protection experience across Microsoft 365, Microsoft Information Protection, and Microsoft Defender for Cloud Apps. The classification service allows you to extend your data classification efforts to the third-party cloud apps protected by Microsoft Defender for Cloud Apps, using the decisions you already made across an even greater number of apps.
 
 >[!NOTE]
 > This feature is currently available in the US, Europe, Australia, India, Canada, Japan, and APAC.
@@ -25,7 +25,7 @@ You can set the **Inspection method** to use the **Microsoft Data Classification
 
     ![Choose data classification service inspection type.](media/dcs-sensitive-information-type.png)
 
-4. You can use the [default sensitive information types](/microsoft-365/compliance/sensitive-information-type-entity-definitions) to define what happens to files protected by Microsoft Defender for Cloud Apps. You can also reuse any of your [Office 365 custom sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type).
+4. You can use the [default sensitive information types](/microsoft-365/compliance/sensitive-information-type-entity-definitions) to define what happens to files protected by Microsoft Defender for Cloud Apps. You can also reuse any of your [Microsoft 365 custom sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type).
     > [!NOTE]
     > You can configure your policy to use advanced classification types such as [Fingerprints](/microsoft-365/compliance/document-fingerprinting?view=o365-worldwide&preserve-view=true), [Exact Data Match](/microsoft-365/compliance/sit-learn-about-exact-data-match-based-sits), and [trainable classifiers](/microsoft-365/compliance/classifier-get-started-with).
 
@@ -33,7 +33,7 @@ You can set the **Inspection method** to use the **Microsoft Data Classification
 
 6. Leveraging file policies, you can also set alerts and governance actions for the policy. For more information, see [file policies](data-protection-policies.md) and [governance actions](governance-actions.md). Leveraging session policies, you can also monitor and control actions in real-time when a file matches a DCS type. For more information, see [session policy](session-policy-aad.md).
 
-Setting these policies enables you to easily extend the strength of the Office 365 DLP capabilities to all your other sanctioned cloud apps and protect the data stored in them with the full toolset provided to you by Microsoft Defender for Cloud Apps – such as the ability to [automatically apply Microsoft Information Protection sensitivity labels](azip-integration.md) and the ability to control sharing permissions.
+Setting these policies enables you to easily extend the strength of the Microsoft 365 DLP capabilities to all your other sanctioned cloud apps and protect the data stored in them with the full toolset provided to you by Microsoft Defender for Cloud Apps – such as the ability to [automatically apply Microsoft Information Protection sensitivity labels](azip-integration.md) and the ability to control sharing permissions.
 
 ## Examine evidence (preview)
 
