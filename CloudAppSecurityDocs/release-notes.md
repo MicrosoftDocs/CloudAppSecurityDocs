@@ -4,6 +4,7 @@ description: This article is updated frequently to let you know what's new in th
 ms.date: 05/15/2023
 ms.topic: overview
 ---
+
 # What's new in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -29,7 +30,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## July 2023
 
-## Log collector version 0.255.0
+### Log collector version 0.255.0
 
 Defender for Cloud Apps has released the Defender for Cloud Apps log collector version 0.255.0, including updates to the *amazon-corretto* and *openssl* dependencies.
 
@@ -47,7 +48,7 @@ The Defender for Cloud Apps ServiceNow connector now supports the ServiceNow *Ut
 
 The Google Workspace connector now supports:
 
-- SaaS Security Posture Management (SSPM) tools for increased visibility into SaaS apps' posture misconfigurations when compared to the ideal app configurations. SSPM features help you proactively reduce the risk of breaches and attacks without needing to be a security expert for each platform.
+- (Preview) SaaS Security Posture Management (SSPM) tools for increased visibility into SaaS apps' posture misconfigurations when compared to the ideal app configurations. SSPM features help you proactively reduce the risk of breaches and attacks without needing to be a security expert for each platform.
 - The **Enable multi-factor authentication** control. To view related data, make sure that you've configured the Google Workspace connector. 
 
 For more information, see [Connect Google Workspace to Microsoft Defender for Cloud Apps](connect-google-workspace.md).
@@ -60,7 +61,7 @@ Create Defender for Cloud Apps connectors to extend app security features across
 
 For more information, see [Microsoft Defender for Cloud Apps open app connector platform](connector-platform.md).
 
-### New app connectors for Asana and Miro
+### New app connectors for Asana and Miro (Preview)
 
 Defender for Cloud Apps now supports built-in app connectors for Asana and Miro, which both may hold critical data your organization and are therefore targets for malicious actors. Connect these apps to Defender for Cloud Apps for improved insights into your users' activities and threat detection with machine learning-based anomaly detections.
 
@@ -268,3 +269,4 @@ Defender for Cloud Apps already includes the ability to explore policy file matc
 - For a description of releases prior to those listed here, see [Past releases of Microsoft Cloud App Security](release-note-archive.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
