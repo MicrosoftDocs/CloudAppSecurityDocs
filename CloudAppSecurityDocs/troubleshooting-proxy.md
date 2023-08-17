@@ -537,7 +537,7 @@ If the session is being proxied, use the following steps to verify the policy:
     1. If you don't see your policy, see [Creating access and session policies](#creating-access-and-session-policies).
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
         1. To change the default behavior, in the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
-        1. Go to the [Microsoft 365 admin portal]https://admin.microsoft.com/AdminPortal/Home?#/servicehealth) and monitor notifications about system downtime.
+        1. Go to the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home?#/servicehealth) and monitor notifications about system downtime.
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
 
 ### Downloads are not being protected
