@@ -32,7 +32,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ### New security recommendations in Secure Score (Preview)
 
-New Microsoft Defender for Cloud Apps recommendations have been added as Microsoft Secure Score improvement actions. For more information, see [What's new in Microsoft Secure Score](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score-whats-new?view=o365-worldwide) and [Microsoft Secure Score](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score?view=o365-worldwide).
+New Microsoft Defender for Cloud Apps recommendations have been added as Microsoft Secure Score improvement actions. For more information, see [What's new in Microsoft Secure Score](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score-whats-new?view=o365-worldwide) and [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score).
 
 ### Microsoft 365 connector updates
 We've made the following updates to Defender for Cloud Apps's Microsoft 365 connector:
