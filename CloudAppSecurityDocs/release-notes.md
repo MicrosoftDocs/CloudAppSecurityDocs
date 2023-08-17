@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 05/15/2023
+ms.date: 08/17/2023
 ms.topic: overview
 ---
 
@@ -27,6 +27,20 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## August 2023
+
+### New security recommendations in Secure Score (Preview)
+
+New Microsoft Defender for Cloud Apps recommendations have been added as Microsoft Secure Score improvement actions. For more information, see [What's new in Microsoft Secure Score](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score-whats-new?view=o365-worldwide) and [Microsoft Secure Score](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score?view=o365-worldwide).
+
+### Microsoft 365 connector updates
+We've made the following updates to Defender for Cloud Apps's Microsoft 365 connector:
+
+- (Preview) Updated SSPM support with new [CIS benchmark](https://www.cisecurity.org/cis-benchmarks) security recommendations.
+- Aligned the names of existing recommendations to match the CIS benchmark.
+  
+To view related data, make sure that you've configured the Microsoft 365 connector. For more information, see [Connect Microsoft 365 to Microsoft Defender for Cloud Apps](connect-office-365.md).
 
 ## July 2023
 
@@ -269,4 +283,5 @@ Defender for Cloud Apps already includes the ability to explore policy file matc
 - For a description of releases prior to those listed here, see [Past releases of Microsoft Cloud App Security](release-note-archive.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 
