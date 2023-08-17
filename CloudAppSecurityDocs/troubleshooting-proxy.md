@@ -537,7 +537,7 @@ If the session is being proxied, use the following steps to verify the policy:
     1. If you don't see your policy, see [Creating access and session policies](#creating-access-and-session-policies).
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
         1. To change the default behavior, in the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
-        1. Go to `https://status.cloudappsecurity.com/` and monitor notifications about system downtime.
+        1. Go to the [Microsoft 365 admin portal]https://admin.microsoft.com/AdminPortal/Home?#/servicehealth) and monitor notifications about system downtime.
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
 
 ### Downloads are not being protected
@@ -632,3 +632,4 @@ While troubleshooting apps, there are some additional things to consider.
     A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If you're confident the app doesn't use a nonce, you can disable this by editing the app in Defender for Cloud Apps and the issue will be resolved. For steps to disable nonce, see [Slow login](#slow-login).
 
     If the app uses a nonce and this feature cannot be disabled, the second login may be transparent to users, or they may be prompted to log in again.
+
