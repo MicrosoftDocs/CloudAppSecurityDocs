@@ -1,7 +1,7 @@
 ---
 title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 04/24/2023
+ms.date: 08/17/2023
 ms.topic: how-to
 ---
 
@@ -183,4 +183,5 @@ To re-enable connected apps:
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 
