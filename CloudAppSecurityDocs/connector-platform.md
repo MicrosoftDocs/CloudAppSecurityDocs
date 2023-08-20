@@ -49,7 +49,7 @@ The following steps provide more details about the open app connector platform p
 
 1. After the discovery call, sign a partnership agreement with Microsoft to build a new app connector.
 
-1. After the partnership agreement is signed, you'll get access to Microsoft's app connector manifest. The manifest is a no-code, vendor facing artifact for SaaS vendors for complete. Use the app connector manifest to provide Microsoft with any of your SaaS app's technical details that are needed to create the app connector.
+1. After the partnership agreement is signed, you'll get access to Microsoft's app connector manifest. The manifest is a no-code, vendor facing artifact for SaaS vendors to complete. Use the app connector manifest to provide Microsoft with any of your SaaS app's technical details that are needed to create the app connector.
 
 1. Microsoft validates the connector manifest. After it's successfully validated, Microsoft uses the manifest to generate the app connector.
 
