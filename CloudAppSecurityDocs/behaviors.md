@@ -2,7 +2,7 @@
 title: Investigate behaviors with advanced hunting (Preview) | Microsoft Defender for Cloud Apps
 description: Learn how to investigate Microsoft Defender for Cloud App behaviors with Microsoft 365 Defender advanced hunting.
 ms.date: 08/20/2023
-ms.topic: how-to
+ms.topic: conceptual
 ---
 
 # Investigate behaviors with advanced hunting (Preview)
@@ -152,33 +152,4 @@ BehaviorEntities
 - [Tutorial: Detect suspicious user activity with behavioral analytics](tutorial-suspicious-activity.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)].
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

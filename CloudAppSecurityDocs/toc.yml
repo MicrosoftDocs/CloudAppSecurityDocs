@@ -525,7 +525,13 @@ items:
     - name: Troubleshooting policies
       href: troubleshoot-policies.md
     - name: Troubleshooting access and session controls
-      href: troubleshooting-proxy.md
+      items:
+      - name: Admin issues
+        href: troubleshooting-proxy.md
+        displayName: Troubleshooting access and session controls
+      - name: End-user issues
+        href: troubleshooting-proxy-end-user.md
+        displayName: Troubleshooting access and session controls
     - name: Troubleshooting - What is cas.ms?
       href: troubleshooting-proxy-url.md
 - name: Resources
