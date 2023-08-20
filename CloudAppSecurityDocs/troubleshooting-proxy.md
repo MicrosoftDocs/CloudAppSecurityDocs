@@ -20,37 +20,37 @@ Before you start troubleshooting, make sure your environment meets the following
 |**Licensing**     |   Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans) for Microsoft Defender for Cloud Apps.      |
 |**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Azure Active Directory (Azure AD) using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
 |**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>Google Chrome<br>Mozilla Firefox<br>or Apple Safari      |
-|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. <br><br>To configure the default behavior during system downtime, in Microsoft 365 Defender, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
+|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, when the normal policy controls can't be enforced, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content. <br><br>To configure the default behavior during system downtime, in Microsoft 365 Defender, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
 
-## Reference of troubleshooting issues
+## Reference of troubleshooting issues for admins
 
 Use the following table to find the issue you're trying to troubleshoot:
 
 |Section|Issues|
 |---|---|
-|[Network conditions](#network-conditions)|- [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)<br />- [Slow login](#slow-login)<br />- [Additional considerations](#network-conditions-additional-considerations)|
-|[Device identification](#device-identification)|- [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)<br />- [Client certificates are not prompting when expected](#client-certificates-are-not-prompting-when-expected)<br />- [Client certificates are prompting at every login](#client-certificates-are-prompting-at-every-login)<br />- [Additional considerations](#device-identification-additional-considerations)|
-|[Onboarding an app](#onboarding-an-app)|- [App does not appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)<br />- [App status: Continue Setup](#app-status-continue-setup)<br />- [Cannot configure controls for native apps](#cannot-configure-controls-for-native-apps)<br />- [**App is not recognized** page appears](#something-went-wrong-page-appears)<br />- [**Request session control** option appears](#request-session-control-option-appears)<br />- [Additional considerations](#onboarding-apps-additional-considerations)|
-|[Creating access and session policies](#creating-access-and-session-policies)|- [In Conditional Access policies, you cannot see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)<br />- [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)<br />- [Cannot create session policies for an app](#cannot-create-session-policies-for-an-app)<br />- [Cannot choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)<br />- [Cannot choose **Action**: **Protect**](#cannot-choose-action-protect)<br />- [Additional considerations](#policies-additional-considerations)|
+|[Network conditions](#network-conditions)|- [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)<br />- [Slow sign-in](#slow-login)<br />- [Extra considerations](#network-conditions-additional-considerations)|
+|[Device identification](#device-identification)|- [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)<br />- [Client certificates aren't prompting when expected](#client-certificates-are-not-prompting-when-expected)<br />- [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-login)<br />- [Extra considerations](#device-identification-additional-considerations)|
+|[Onboarding an app](#onboarding-an-app)|- [App doesn't appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)<br />- [App status: Continue Setup](#app-status-continue-setup)<br />- [Can't configure controls for native apps](#cannot-configure-controls-for-native-apps)<br />- [**App is not recognized** page appears](#something-went-wrong-page-appears)<br />- [**Request session control** option appears](#request-session-control-option-appears)<br />- [Extra considerations](#onboarding-apps-additional-considerations)|
+|[Creating access and session policies](#creating-access-and-session-policies)|- [In Conditional Access policies, you can't see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)<br />- [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)<br />- [Can't create session policies for an app](#cannot-create-session-policies-for-an-app)<br />- [Can't choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)<br />- [Can't choose **Action**: **Protect**](#cannot-choose-action-protect)<br />- [Extra considerations](#policies-additional-considerations)|
 
 ## Network condition issues
 
 Common network condition issues you may encounter include:
 
 - [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)
-- [Slow login](#slow-login)
-- [Additional considerations](#network-conditions-additional-considerations)
+- [Slow sign-in](#slow-login)
+- [Extra considerations](#network-conditions-additional-considerations)
 
 ### Network errors when navigating to a browser page
 
-When you're first setting up Defender for Cloud Apps access and session controls for an app, common network errors that may arise include: "This site is not secure" and "There is no internet connection". These messages can indicate a general network configuration error.
+When you're first setting up Defender for Cloud Apps access and session controls for an app, common network errors that may arise include: *This site isn't secure* and *There's no internet connection*. These messages can indicate a general network configuration error.
 
 **Recommended steps**
 
 1. Configure your firewall to work with Defender for Cloud Apps using the Azure IP addresses and DNS names relevant to your environment.
     1. Add **outbound port 443** for the following IP addresses and DNS names for your [Defender for Cloud Apps data center](network-requirements.md#access-and-session-controls).
     1. Restart your device and your browser session
-    1. Verify that the login is working as expected
+    1. Verify that the sign-in is working as expected
 
 1. Enable TLS 1.2 in your browser's internet options. For example:
 
@@ -58,8 +58,8 @@ When you're first setting up Defender for Cloud Apps access and session controls
     |---|---|
     | **Microsoft Internet Explorer** | 1. Open Internet Explorer<br />2. Select **Tools** > **Internet Options** > **Advance** tab<br />3. Under **Security**, select **TLS 1.2**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app |
     | **Microsoft Edge / Edge Chromium** | 1. Open search from the taskbar and search for "Internet Options"<br />2. Select **Internet Options**<br />3. Under **Security**, select **TLS 1.2**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app |
-    | **Google Chrome** | 1. Open Google Chrome<br />2. At the top-right, click **More** (3 vertical dots) > **Settings**<br />3. At the bottom, click **Advanced**<br />4. Under **System**, click **Open proxy settings**<br />5. On the **Advanced** tab, under **Security**, select **TLS 1.2**<br />6. Click **OK**<br />7. Restart your browser and verify that you're able to access the app |
-    | **Mozilla Firefox** | 1. Open Mozilla Firefox<br />2. In the address bar and search for "about:config"<br />3. In the Search box, search for "TLS"<br />4. Double-click the entry for **security.tls.version.min**<br />5. Set the integer value to 3 to force TLS 1.2 as the minimum required version<br />6. Click **Save** (check mark to the right of the value box)<br />7. Restart your browser and verify that you're able to access the app |
+    | **Google Chrome** | 1. Open Google Chrome<br />2. At the top-right, select **More** (3 vertical dots) > **Settings**<br />3. At the bottom, select **Advanced**<br />4. Under **System**, select **Open proxy settings**<br />5. On the **Advanced** tab, under **Security**, select **TLS 1.2**<br />6. Select **OK**<br />7. Restart your browser and verify that you're able to access the app |
+    | **Mozilla Firefox** | 1. Open Mozilla Firefox<br />2. In the address bar and search for "about:config"<br />3. In the Search box, search for "TLS"<br />4. Double-click the entry for **security.tls.version.min**<br />5. Set the integer value to 3 to force TLS 1.2 as the minimum required version<br />6. Select **Save** (check mark to the right of the value box)<br />7. Restart your browser and verify that you're able to access the app |
     | **Safari** | If you're using Safari version 7 or greater, TLS 1.2 is automatically enabled |
 
 Defender for Cloud Apps uses Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption:
@@ -78,7 +78,7 @@ Proxy chaining and nonce-handling are some of the common issues that could resul
 
 **Recommended steps**
 
-Configure your environment to remove any factors that might be causing slowness during sign-in, such as firewalls or forward proxy chaining, which connects two or more proxy servers to navigate to the intended page. You may have other external factors affecting the slowness.
+Configure your environment to remove any factors that might be causing slowness during sign-in. For example, you might have firewalls or forward proxy chaining configured, which connects two or more proxy servers to navigate to the intended page. You may also have other external factors affecting the slowness.
 
 1. Identify whether proxy chaining is occurring in your environment.
 1. Remove any forward proxies where possible.
@@ -88,7 +88,7 @@ Some apps use a nonce hash during authentication to prevent replay attacks. By d
 1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**. 
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 1. In the list of apps, on the row in which the app you're configuring appears, select the three dots at the end of the row, and then select **Edit** for your app.
-1. Click **Nonce-handling** to expand the section and then clear **Enable nonce handling**.
+1. Select **Nonce-handling** to expand the section and then clear **Enable nonce handling**.
 1. Sign out of the app and close out all browser sessions.
 1. Restart your browser and sign-in to the app again. Verify that the sign-in is working as expected.
 
@@ -96,9 +96,9 @@ Some apps use a nonce hash during authentication to prevent replay attacks. By d
 
 ### More considerations for network conditions
 
-While troubleshooting network conditions, also consider the following about the Defender for Cloud Apps proxy:
+While troubleshooting network conditions, also consider the following notes about the Defender for Cloud Apps proxy:
 
-- **Verify whether your session is being routed to another data center**: Defender for Cloud Apps leverages Azure Data Centers around the world to optimize performance through geolocation. 
+- **Verify whether your session is being routed to another data center**: Defender for Cloud Apps uses Azure Data Centers around the world to optimize performance through geolocation. 
 
     This means that a user's session may be hosted outside of a region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
 
@@ -109,11 +109,11 @@ While troubleshooting network conditions, also consider the following about the 
   - Where the targeted resource resides
   - Specific requests on the page
 
-  In general, any proxy will add latency. The advantages of the Defender for Cloud Apps proxy are:
+  In general, any proxy adds latency. The advantages of the Defender for Cloud Apps proxy are:
 
-  - Leveraging the global availability of Azure domain controllers to geolocate users to the nearest node and reduce their round-trip distance. Azure domain controllers can do this on a scale that few services around the world have.
+  - Using the global availability of Azure domain controllers to geolocate users to the nearest node and reduce their round-trip distance. Azure domain controllers can geolocate on a scale that few services around the world have.
 
-  - Leveraging the integration with Azure AD Conditional Access to only route the sessions you want to proxy to our service, instead of all users in all situations.
+  - Using the integration with Azure AD Conditional Access to only route the sessions you want to proxy to our service, instead of all users in all situations.
 
 ## Device identification issues
 
@@ -128,13 +128,13 @@ For more information on device identification, see [Managed Device Identificatio
 Common device identification issues you may encounter include:
 
 - [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)
-- [Client certificates are not prompting when expected](#client-certificates-are-not-prompting-when-expected)
-- [Client certificates are prompting at every login](#client-certificates-are-prompting-at-every-login)
-- [Additional considerations](#device-identification-additional-considerations)
+- [Client certificates aren't prompting when expected](#client-certificates-are-not-prompting-when-expected)
+- [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-login)
+- [Extra considerations](#device-identification-additional-considerations)
 
 ### Misidentified Intune Compliant or Hybrid Azure AD joined devices
 
-Azure AD Conditional Access enables Intune-compliant and Hybrid Azure AD joined device information to be passed directly to Defender for Cloud Apps, where you can use the device state as a filter for access or session policies. 
+Azure AD Conditional Access enables Intune-compliant and Hybrid Azure AD joined device information to be passed directly to Defender for Cloud Apps. In Defender for Cloud Apps, use the device state as a filter for access or session policies. 
 
 For more information, see [Introduction to device management in Azure Active Directory](/azure/active-directory/devices/overview).
 
@@ -142,21 +142,21 @@ For more information, see [Introduction to device management in Azure Active Dir
 
 1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Defender for Cloud Apps.
-1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, click **View configuration** and verify that the services are set up. Services are automatically synced from Azure AD and Intune respectively.
+1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, select **View configuration** and verify that the services are set up. Services are automatically synced from Azure AD and Intune respectively.
 
 1. Create an access or session policy with the **Device Tag** filter equal to **Hybrid Azure AD joined**, **Intune compliant**, or both.
 1. In a browser, sign in to a device that is Hybrid Azure AD joined or Intune compliant based on your policy filter.
 1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Hybrid Azure AD joined**, **Intune compliant**, or both based on your policy filters.
-1. If activities are not populating in the Defender for Cloud Apps activity log, go to Azure AD and do the following:
+1. If activities aren't populating in the Defender for Cloud Apps activity log, go to Azure AD and do the following steps:
     1. Under **Monitoring** > **Sign-ins**, verify that there are sign-in activities in logs.
     1. Select the relevant log entry for the device you logged into.
     1. In the **Details** pane, on the **Device info** tab, verify that the device is **Managed** (Hybrid Azure AD joined) or **Compliant** (Intune compliant). 
 
         If you can't verify either state, try another log entry or ensure that your device data is configured correctly in Azure AD.
-    1. For Conditional Access, some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers).
+    1. For Conditional Access, some browsers may require extra configuration such as installing an extension. For more information, see [Conditional Access browser support](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers).
     1. If you still don't see the device information in the **Sign-ins** page, open a support ticket for Azure AD.
 
-### Client certificates are not prompting when expected
+### Client certificates aren't prompting when expected
 
 The device identification mechanism can request authentication from relevant devices using client certificates. You can upload an X.509 root or intermediate certificate authority (CA) certificate, formatted in the PEM certificate format.
 
@@ -185,7 +185,7 @@ Certificates must contain the CA's public key, which is then used to sign the cl
 
 1. Validate that the client certificate is prompted in your browser.
 
-    If it doesn't appear, try a different browser. Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
+    If it doesn't appear, try a different browser. Most major browsers support performing a client certificate check. However, mobile and desktop apps often use built-in browsers that may not support this check and therefore affect authentication for these apps.
 
 1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, add a [filter](activity-filters.md) on **Device Tag** equal to **Valid client certificate**.
 
@@ -193,9 +193,9 @@ Certificates must contain the CA's public key, which is then used to sign the cl
 
     - The details of the browser or native app where you experienced the problem
     - The operating system version, such as iOS/Android/Windows 10
-    - Mention if the prompt is working on Edge Chromium
+    - Mention if the prompt is working on Microsoft Edge Chromium
 
-### Client certificates are prompting at every login
+### Client certificates are prompting at every sign-in
 
 If you're experiencing the client certificate popping up after opening a new tab, this might be due to settings hidden within **Internet Options**. Verify your settings in your browser. For example:
 
@@ -203,23 +203,23 @@ If you're experiencing the client certificate popping up after opening a new tab
 
 1. Open Internet Explorer and select **Tools** > **Internet Options** > **Advanced** tab.
 1. Under **Security**, select **Don't prompt for Client Certificate selection when only one certificate exists** > Select **Apply** > **OK**. 
-1. Restart your browser and verify that you can access the app without the additional prompts.
+1. Restart your browser and verify that you can access the app without the extra prompts.
 
 **In Microsoft Edge / Edge Chromium**:
 
-1. Open search from the taskbar and search for "Internet Options".
+1. Open search from the taskbar and search for *Internet Options*.
 1. Select **Internet Options** > **Security** > **Local intranet** > **Custom level**.
 1. Under **Miscellaneous** > **Don't prompt for Client Certificate selection when only one certificate exists**, select **Disable**.
-1. Click **OK** > **Apply** > **OK**.
-1. Restart your browser and verify that you can access the app without the additional prompts.
+1. Select **OK** > **Apply** > **OK**.
+1. Restart your browser and verify that you can access the app without the extra prompts.
 
 <a name="device-identification-additional-considerations"></a>
 
-### Additional considerations for device identification
+### Extra considerations for device identification
 
-While troubleshooting device identification, note that you can require certificate revocation for Client Certificates.
+While troubleshooting device identification, you can require certificate revocation for Client Certificates.
 
-Certificates that have been revoked by the CA no longer be trusted. Selecting this option will require all certificates to pass the CRL protocol. If your client certificate doesn't contain a CRL endpoint, you won't be able to connect from the managed device.
+Certificates that are revoked by the CA are no longer trusted. Selecting this option requires all certificates to pass the CRL protocol. If your client certificate doesn't contain a CRL endpoint, you can't connect from the managed device.
 
 ## Issues when onboarding an app
 
@@ -236,20 +236,20 @@ For example:
 When onboarding an app, make sure that you've followed the proxy deployment guides carefully. For more information, see:
 
 1. [Deploy catalog apps with session controls](proxy-deployment-aad.md)
-1. [Deploy custom LOB apps, non-featured SaaS apps, and on-premises apps hosted via the Azure AD app proxy with session controls](proxy-deployment-any-app.md)
+1. [Deploy custom LOB apps, nonfeatured SaaS apps, and on-premises apps hosted via the Azure AD app proxy with session controls](proxy-deployment-any-app.md)
 
 Common scenarios you may encounter while onboarding an app include:
 
-- [App does not appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)
+- [App doesn't appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)
 - [App status: Continue Setup](#app-status-continue-setup)
-- [Cannot configure controls for native apps](#cannot-configure-controls-for-native-apps)
+- [Can't configure controls for native apps](#cannot-configure-controls-for-native-apps)
 - [**App is not recognized** page appears](#something-went-wrong-page-appears)
 - [**Request session control** option appears](#request-session-control-option-appears)
-- [Additional considerations](#onboarding-apps-additional-considerations)
+- [Extra considerations](#onboarding-apps-additional-considerations)
 
-### App does not appear on the Conditional Access App Control apps page
+### App doesn't appear on the Conditional Access App Control apps page
 
-When onboarding an app to Conditional Access App Control, the final deployment step is to have the end user navigate to the app. Do the steps below if the app isn't appearing as expected.
+When onboarding an app to Conditional Access App Control, the final deployment step is to have the end user navigate to the app. Do the steps in this section if the app isn't appearing as expected.
 
 **Recommended steps**
 
@@ -279,18 +279,18 @@ When onboarding an app to Conditional Access App Control, the final deployment s
 
 An app's status can vary, and can include **Continue Setup**, **Connected**, or **No Activities**.
 
-For apps connected via non-Microsoft identity providers (IdP), if the setup isn't complete, when accessing the app you will see a page with the status of **Continue Setup**. Use the following steps complete the setup.
+For apps connected via non-Microsoft identity providers (IdP), if the setup isn't complete, when accessing the app you'll see a page with the status of **Continue Setup**. Use the following steps complete the setup.
 
 **Recommended steps**
 
 1. Select **Continue Setup**.
 
-1. Go through the [deployment guide](proxy-deployment-any-app.md) and verify that you have completed all the steps. Pay particular attention to the following:
+1. Go through the [deployment guide](proxy-deployment-any-app.md) and verify that you have completed all the steps. Pay particular attention to the following notes:
 
-    1. Make sure you create a new custom SAML app. You need this to change the URLs and SAML attributes that might not be available in gallery apps.
+    1. Make sure you create a new custom SAML app. You need this app to change the URLs and SAML attributes that might not be available in gallery apps.
     1. If your identity provider doesn't allow the reuse of the same identifier, also known as Entity ID or Audience, change the identifier of the original app.
 
-### Cannot configure controls for native apps
+### Can't configure controls for native apps
 
 Native apps can be detected heuristically and you can use access policies to monitor or block them. Use the following steps to configure controls for native apps.
 
@@ -299,14 +299,14 @@ Native apps can be detected heuristically and you can use access policies to mon
 1. In an access policy, add a **Client app** filter, and set it equal to **Mobile and desktop**.
 
 1. Under **Actions**, select **Block**.
-1. Optionally, customize the blocking message that your users get when they're unable to download files. For example, customize this to *You must use a web browser to access this app*.
+1. Optionally, customize the blocking message that your users get when they're unable to download files. For example, customize this message to *You must use a web browser to access this app*.
 1. Test and validate that the control is working as expected.
 
-### *App is not recognized* page appears
+### *App isn't recognized* page appears
 
 Defender for Cloud Apps can recognize over 31,000 apps through the **Cloud App Catalog**.
 
-If you're using a custom app that is configured through Azure AD SSO, and is not one of the supported apps, you will come across an **App is not recognized** page. To resolve the issue, you must configure the app on  Conditional Access App Control.
+If you're using a custom app that is configured through Azure AD SSO, and isn't one of the supported apps, you'll come across an **App is not recognized** page. To resolve the issue, you must configure the app on  Conditional Access App Control.
 
 **Recommended steps**
 
@@ -314,7 +314,7 @@ If you're using a custom app that is configured through Azure AD SSO, and is not
 
 1. In the banner, select **View new apps**.
 
-1. In the list of new apps, locate the app that you are onboarding, select the **+** sign, and then select **Add**.
+1. In the list of new apps, locate the app that you're onboarding, select the **+** sign, and then select **Add**.
 
     1. Select whether the app is a **custom** or **standard** app.
     1. Continue through the wizard, make sure that specified **User-defined domains** are correct for the app you're configuring.
@@ -335,19 +335,19 @@ After adding an app, you may see the **Request session control** option. This oc
 
 1. Go to the app that you're deploying. The page you see depends on whether the app is recognized. Do one of the following, depending on the page you see:
 
-    - **Not recognized**. You'll see an *App not recognized* page that prompts you to configure your app. Do the following:
+    - **Not recognized**. You see an *App not recognized* page that prompts you to configure your app. Do the following steps:
 
         1. [Add the app to Conditional Access App Control](proxy-deployment-any-app.md).
         1. [Add the domains for the app](proxy-deployment-any-app.md), and then return to the app and refresh the page.
         1. [Install the certificates for the app](proxy-deployment-any-app.md).
 
-    - **Recognized**. If your app is recognized, you'll see an onboarding page prompting you to continue the app configuration process.  For more information, see [Deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
+    - **Recognized**. If your app is recognized, you see an onboarding page prompting you to continue the app configuration process.  For more information, see [Deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
 
-        Make sure the app is configured with all domains required for the app to function correctly. To configure additional domains, proceed to [Add the domains for the app](proxy-deployment-any-app.md), and then return to the app page.
+        Make sure the app is configured with all domains required for the app to function correctly. To configure extra domains, proceed to [Add the domains for the app](proxy-deployment-any-app.md), and then return to the app page.
 
 <a name="onboarding-apps-additional-considerations"></a>
 
-### Additional considerations for onboarding apps
+### Extra considerations for onboarding apps
 
 While troubleshooting onboarding apps, remember that apps in Conditional Access App Control don't align with Azure AD apps.
 
@@ -376,24 +376,24 @@ To use these policies in Defender for Cloud Apps, you must first configure a pol
 
 Common scenarios you may encounter while configuring these policies include:
 
-- [In Conditional Access policies, you cannot see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)
+- [In Conditional Access policies, you can't see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)
 - [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)
-- [Cannot create session policies for an app](#cannot-create-session-policies-for-an-app)
-- [Cannot choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)
-- [Cannot choose **Action**: **Protect**](#cannot-choose-action-protect)
-- [Additional considerations](#policies-additional-considerations)
+- [Can't create session policies for an app](#cannot-create-session-policies-for-an-app)
+- [Can't choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)
+- [Can't choose **Action**: **Protect**](#cannot-choose-action-protect)
+- [Extra considerations](#policies-additional-considerations)
 
-### In Conditional Access policies, you cannot see the Conditional Access App Control option
+### In Conditional Access policies, you can't see the Conditional Access App Control option
 
 To route sessions to Defender for Cloud Apps, Azure AD Conditional Access policies must be configured to include Conditional Access App Control session controls.
 
 **Recommended steps**
 
-If you don't see the **Conditional Access App Control** option in your Conditional Access policy, make sure that you have a valid license for Azure AD Premium P1 as well as a valid Defender for Cloud Apps license.
+If you don't see the **Conditional Access App Control** option in your Conditional Access policy, make sure that you have a valid license for Azure AD Premium P1 and a valid Defender for Cloud Apps license.
 
 ### Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control
 
-When creating an access or session policy, you may see the following error message: *You don't have any apps deployed with Conditional Access App Control*. This error indicates that the app has not been deployed.
+When creating an access or session policy, you may see the following error message: *You don't have any apps deployed with Conditional Access App Control*. This error indicates that the app hasn't been deployed.
 
 **Recommended steps**
 
@@ -402,11 +402,11 @@ When creating an access or session policy, you may see the following error messa
 1. If you see the message **No apps connected**, use the following guides to deploy apps:
 
     - [Deploy catalog apps that have session control enabled](proxy-deployment-aad.md)
-    - [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls
+    - [Deploy custom line-of-business apps, nonfeatured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls
 
 If you run into any issues while deploying the app, see [Onboarding an app](#onboarding-an-app).
 
-### Cannot create session policies for an app
+### Can't create session policies for an app
 
 After adding a custom app, in the **Conditional Access App Control apps** page, you may see the option: **Request session control**.
 
@@ -415,13 +415,13 @@ After adding a custom app, in the **Conditional Access App Control apps** page, 
 
 **Recommended steps**
 
-1. Deploy your app to session control. For more information, see [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
+1. Deploy your app to session control. For more information, see [Deploy custom line-of-business apps, nonfeatured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
 
 1. Create a session policy and select the **App** filter.
 
 1. Make sure that your app is now listed in the dropdown list.
 
-### Cannot choose Inspection Method: Data Classification Service
+### Can't choose Inspection Method: Data Classification Service
 
 In session policies, when using the **Control file download (with inspection)** session control type, you can use the **Data Classification Service** inspection method to scan your files in real time and detect sensitive content that matches any of the criteria you have configured. 
 
@@ -439,7 +439,7 @@ If the **Data Classification Service** inspection method isn't available, use th
     - If the feature isn't available in your region, use the **Built-in DLP** inspection method.
     - If the feature is available in your region but you still can't see the **Data Classification Service** inspection method, open a [support ticket](support-and-ts.md).
 
-### Cannot choose Action: Protect
+### Can't choose Action: Protect
 
 In session policies, when using the **Control file download (with inspection)** session control type, in addition to the **Monitor** and **Block** actions, you can specify the **Protect** action. This action enables you to permit file downloads with the option to encrypt or apply permissions to the file based on conditions, content inspection, or both. 
 
@@ -447,7 +447,7 @@ If the **Protect** action isn't available, use the following steps to investigat
 
 **Recommended steps**
 
-1. If the **Protect** action isn't available or is greyed out, verify that you have the Azure Information Protection (AIP) Premium P1 license. For more information, see [Microsoft Information Protection integration](azip-integration.md).
+1. If the **Protect** action isn't available or is greyed out, verify that you have the Azure Information Protection (AIP) Premium P1 license. For more information, see [Microsoft Purview Information Protection integration](azip-integration.md).
 
 1. If the **Protect** action is available, but aren't seeing the appropriate labels.
 
@@ -457,9 +457,9 @@ If the **Protect** action isn't available, use the following steps to investigat
 
 <a name="policies-additional-considerations"></a>
 
-### Additional considerations for onboarding apps
+### Extra considerations for onboarding apps
 
-While troubleshooting for onboarding apps, there are some additional things to consider.
+While troubleshooting for onboarding apps, there are some extra things to consider.
 
 - **Understand the difference between the Azure AD Conditional Access policy settings: "Monitor only", "Block downloads", and "Use custom policy"**
 
@@ -469,9 +469,9 @@ While troubleshooting for onboarding apps, there are some additional things to c
 
 - **Understand the "Mobile and desktop" client app filter option in access policies**
 
-    In Defender for Cloud Apps access policies, unless the **Client app** filter is specifically set to **Mobile and desktop**, the resulting access policy will only apply to browser sessions. 
+    In Defender for Cloud Apps access policies, unless the **Client app** filter is set to **Mobile and desktop**, the resulting access policy applies to browser sessions. 
 
-    The reason for this, is to prevent inadvertently proxying user sessions, which may be a byproduct of using this filter.
+    The reason for this is to prevent inadvertently proxying user sessions, which may be a byproduct of using this filter.
 
 ## Diagnose and troubleshoot with the Admin View toolbar
 
@@ -491,11 +491,11 @@ To enable the Admin View toolbar for specific admin users, you first must add ad
 
     ![Screenshot of the App onboarding/maintenance settings.](media/app-onboarding-maintenance.png)
 
-When those users next start a session of an application, the Admin View toolbar will be available.
+When those users next start a session of an application, the Admin View toolbar is available.
 
 ### Bypass proxy session
 
-If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It will appear for users who have the [Admin View toolbar](#admin-view-toolbar) enabled.
+If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It appears for users who have the [Admin View toolbar](#admin-view-toolbar) enabled.
 
 For example:
 
@@ -536,7 +536,7 @@ You can help the root cause analysis of problems by providing session recordings
 
 **To view your recorded sessions**: 
 
-After you've finished recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear. For example:
+After you've finished recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours appear. For example:
 
    ![Screenshot of session recordings.](media/troubleshooting-proxy/recording-list.png)
 
