@@ -145,8 +145,12 @@ To export Cloud discovery logs from the Cloud Discovery dashboard:
 
 ## Monitor all
 
-**Monitor all** activity monitors only one activity, "Login". No alerts are sent. In order to monitor all the activities, use the 'monitor all activities' template. The activities in this case are monitored and logged, regardless of whether the policy matches or not. There must be at least one block\test policy per activity for the 'Monitor all activities' policy to work.
+**Monitor only** activity monitors only the *Login* activity, and no alerts are sent.  
 
+To monitor other activities, select the *test* action, in which case, alerts are sent in accordance with your policy. The activities in the *test* action are monitored and logged, regardless of whether the policy matches or not. 
+
+> [!NOTE]
+> To monitor other activities besides downloads and uploads, there must be at least one block per activity policy in your monitor policy.
 ## <a name="block-download"></a>Block all downloads
 
 When **Block** is set as the **Action** you want to take in the Defender for Cloud Apps session policy, Conditional Access App Control prevents a user from downloading a file per the policy's file filters. Defender for Cloud Apps recognizes a download event for each app when a user starts a download. Conditional Access App Control intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, Conditional Access App Control returns a **Download restricted** message to the user and replaces the downloaded file with a text file. The text file's message to the user can be configured and customized from the session policy.
@@ -236,3 +240,4 @@ For more information, see:
 
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
