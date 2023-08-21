@@ -1,7 +1,7 @@
 ---
 title: Connect Microsoft 365
 description: This article provides information about how to connect your Microsoft 365 to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 04/03/2023
+ms.date: 08/17/2023
 ms.topic: how-to
 ---
 # Connect Microsoft 365 to Microsoft Defender for Cloud Apps
@@ -76,6 +76,8 @@ Defender for Cloud Apps integrates directly with [Microsoft 365's audit logs](/m
 
 1. After Microsoft 365 is displayed as successfully connected, select **Done**.
 1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+
+SaaS Security Posture Management (SSPM) data is shown in the Microsoft 365 Defender portal on the **Secure Score** page. For more information, see [Security posture management for SaaS apps](/defender-cloud-apps/security-saas).
 
 > [!NOTE]
 > After connecting Microsoft 365, you will see data from a week back including any third-party applications connected to Microsoft 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Microsoft 365 because Defender for Cloud Apps turns on any APIs that had been off by default.
