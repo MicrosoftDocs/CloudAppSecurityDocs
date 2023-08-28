@@ -112,6 +112,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
   - Security extensions - Only permissions for API token with user permissions
   - Governance actions - Only for the specific app/instance
   - Security recommendations for cloud platforms - No permissions
+  - IP ranges - No permissions
 
 - **User group admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific groups assigned to them. For example, if you assign a user admin permissions to the group "Germany - all users", the admin can view and edit information in Defender for Cloud Apps only for that user group. The User group admin has the following access:
 
@@ -126,6 +127,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
   - Security extensions - Only permissions for API token with users in the group
   - Governance actions - Only for the specific users in the group
   - Security recommendations for cloud platforms - No permissions
+  - IP ranges - No permissions
 
     > [!NOTE]
     >
