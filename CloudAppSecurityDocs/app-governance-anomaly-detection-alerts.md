@@ -298,6 +298,30 @@ This alert finds multitenant OAuth apps that have made numerous calls to Microso
 
 Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
 
+### Suspicious OAuth app used to send numerous emails
+
+**Severity**: Medium  
+
+This alert indicates an OAuth app that has made numerous calls to Microsoft Graph API to send emails within a short time period. The app's publisher tenant is known to spawn a high volume of OAuth apps that make similar Microsoft Graph API calls. An attacker might be actively using this app to send spam or malicious emails to their targets.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
+
+    **Recommended action**: 
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    - Investigate app activity and check affected accounts for suspicious activity. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
+    - Classify the alert as a true positive.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
+
+    **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+
 ## Persistence alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to maintain their foothold in your organization.
