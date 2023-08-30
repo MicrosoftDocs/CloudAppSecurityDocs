@@ -2,6 +2,7 @@
 title: Encrypt Defender for Cloud Apps data at rest with your own key
 description: This article provides instructions for using your own key to encrypt data at rest stored in Defender for Cloud Apps.
 ms.topic: conceptual
+ms.custom: has-azure-ad-ps-ref
 ms.date: 01/29/2023
 ---
 
