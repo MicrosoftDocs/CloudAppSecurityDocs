@@ -4,6 +4,7 @@ description: This article provides instructions for working with IP tags and IP 
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Working with IP ranges and tags
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -48,9 +49,10 @@ In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud A
 1. To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag, you can easily add it to additional IP ranges by choosing it from the list. You can add more than one IP tag for each range. IP tags can be used when building policies.  Along with IP tags you configure, Defender for Cloud Apps has built-in tags that aren't configurable. You can see the list of tags under the [IP tags filter](activity-filters.md#ip-address-insights).
 
     > [!NOTE]
-    >
-    > - IP tags are added to the activity without overriding data.
-
+    > 
+    >    - IP tags are added to the activity without overriding data.
+    >       - Multiple tags can be applied on the same IP range.
+    >       
 1. To **Override registered ISP** or **Override the location** or for these addresses, select the relevant checkbox. For example, if you have an IP address that is considered publicly to be in Ireland, but you know the IP is in the US. You'll override the location for that IP address range. Or if you don't want an IP address range to be associated with a registered ISP, you can override the registered ISP.
 
 1. When you're done, select **Create**.
@@ -63,3 +65,4 @@ In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud A
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
