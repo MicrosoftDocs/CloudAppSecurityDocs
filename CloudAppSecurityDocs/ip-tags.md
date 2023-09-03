@@ -51,7 +51,7 @@ In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud A
     > [!NOTE]
     > 
     >    - IP tags are added to the activity without overriding data.
-    >       - Multiple tags can be applied on the same IP range.
+    >    - Multiple tags can be applied on the same IP range.
     >       
 1. To **Override registered ISP** or **Override the location** or for these addresses, select the relevant checkbox. For example, if you have an IP address that is considered publicly to be in Ireland, but you know the IP is in the US. You'll override the location for that IP address range. Or if you don't want an IP address range to be associated with a registered ISP, you can override the registered ISP.
 
