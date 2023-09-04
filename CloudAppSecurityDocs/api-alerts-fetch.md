@@ -49,7 +49,6 @@ Returns the specified alert in JSON format. For detailed information on each pro
       "inst": 0,
       "label": "user1",
       "pa": "user1@contoso.com",
-      "saas": 11161,
       "type": "account"
     },
     {

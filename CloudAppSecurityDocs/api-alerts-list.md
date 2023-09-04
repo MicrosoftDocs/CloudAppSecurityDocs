@@ -66,7 +66,6 @@ Returns a list of alerts in JSON format. For detailed information on each proper
           "inst": 0,
           "label": "user1",
           "pa": "user1@contoso.com",
-          "saas": 11161,
           "type": "account"
         },
         {
