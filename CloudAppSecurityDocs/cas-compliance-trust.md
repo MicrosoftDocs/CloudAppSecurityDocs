@@ -129,7 +129,7 @@ You can learn more about Microsoft data practices by reading the [Online Service
 
 ## Data sharing
 
-Defender for Identity shares data, including customer data, among the following Microsoft products also licensed by the customer:
+Defender for Cloud Apps shares data, including customer data, among the following Microsoft products also licensed by the customer:
 
 - Microsoft Defender for Cloud
 - Microsoft Sentinel     
