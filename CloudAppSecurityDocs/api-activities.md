@@ -55,7 +55,7 @@ The following table describes the supported filters:
 | activityObject | string | eq, neq | Filter activities containing the specified ID |
 | fileLabels | string | eq, neq | Filter files containing the specified file labels (tags) IDs |
 | created || lte, gte, range, gt, lt, eq | Filter activities that were created in the specified time range |
-| entity | entity pk | eq, neq, isset, isnotset, startswith | Filter activities by the entity who performed the activity. Example: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
+| entity | entity pk | eq, neq, isset, isnotset, startswith | Filter activities by the entity who performed the activity. Example: `[{ "id": "entity-id", "inst": 0 }]` |
 | user.username | string | eq, neq, isset, isnotset, startswith | Filter activities by the user who performed the activity |
 | user.tags | string | eq, neq, isset, isnotset, startswith | Filter activities by tags belonging to the performing user. Requires group IDs |
 | user.domain | string | eq, neq, isset, isnotset | Filter activities by the performing user domain |
