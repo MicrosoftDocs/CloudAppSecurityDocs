@@ -29,7 +29,7 @@ The following table describes the supported filters:
 | --- | --- | --- | --- |
 | type| string | eq, neq | Filter entities by their type |
 | isAdmin | string | eq | Filter entities that are admins |
-| entity | entity pk | eq, neq | Filter entities with specific entities pks. If a user is selected, will also return all of its accounts. Example: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
+| entity | entity pk | eq, neq | Filter entities with specific entities pks. If a user is selected, will also return all of its accounts. Example: `[{ "id": "entity-id", "inst": 0 }]` |
 | userGroups |string | eq, neq | Filter entities by their associated group IDs |
 | app | integer | eq, neq | Filter entities using services with the specified SaaS ID for example: 11770 |
 | instance | integer | eq, neq | Filter entities using services with the specified Appstances (SaaS ID and Instance ID), for example: 11770, 1059065 |
