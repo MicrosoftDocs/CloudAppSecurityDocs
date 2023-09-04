@@ -63,7 +63,7 @@ The following table describes the supported filters:
 
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
-| entity.entity | entity pk | eq,neq | Filter alerts related to specified entities. Example: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
+| entity.entity | entity pk | eq,neq | Filter alerts related to specified entities. Example: `[{ "id": "entity-id", "inst": 0 }]` |
 | entity.ip | string | eq, neq | Filter alerts related to specified IP addresses |
 | entity.service | integer | eq, neq | Filter alerts related to the specified service appId, e.g: 11770 |
 | entity.instance | integer | eq, neq | Filter alerts related to the specified instances, e.g: 11770, 1059065 |
