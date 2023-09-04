@@ -35,7 +35,7 @@ The following table describes the supported filters:
 | filename | string | eq | Filter files by filename |
 | modifiedDate | timestamp | lte, gte, range, lte_ndays, gte_ndays | Filter files by the date they were last modified |
 | createdDate | timestamp | lte, gte, range | Filter files by the date they were created |
-| collaborators.entity | entity pk | eq, neq | Filter files shared with specified entities. Example: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
+| collaborators.entity | entity pk | eq, neq | Filter files shared with specified entities. Example: `[{ "id": "entity-id", "inst": 0 }]` |
 | collaborators.domains | string | eq, neq | Filter files shared with specified domains |
 | collaborators.groups | string | eq, neq | Filter files shared with specified groups |
 | collaborators.withDomain | string | eq, neq, deq | Filter files shared with specified domains |
