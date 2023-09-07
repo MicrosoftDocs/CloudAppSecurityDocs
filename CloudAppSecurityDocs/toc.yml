@@ -530,7 +530,7 @@ items:
         href: troubleshooting-proxy.md
         displayName: Troubleshooting access and session controls
       - name: End-user issues
-        href: troubleshooting-proxy-end-user.md
+        href: troubleshooting-proxy-end-users.md
         displayName: Troubleshooting access and session controls
     - name: Troubleshooting - What is cas.ms?
       href: troubleshooting-proxy-url.md

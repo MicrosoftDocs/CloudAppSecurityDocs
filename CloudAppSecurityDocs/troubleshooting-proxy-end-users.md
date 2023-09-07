@@ -81,7 +81,7 @@ Sometimes during a proxied session, the **Something Went Wrong** page may appear
 
 **Recommended steps**
 
-1. If the end user is trying to access an app that is configured using a non-Microsoft IdP, see [Not able to access app from a non-Microsoft IdP](#not-able-to-access-app-from-a-non-microsoft-identity-provider) and [App status: Continue Setup](#app-status-continue-setup).
+1. If the end user is trying to access an app that is configured using a non-Microsoft IdP, see [Not able to access app from a non-Microsoft IdP](#not-able-to-access-app-from-a-non-microsoft-identity-provider) and [App status: Continue Setup](troubleshooting-proxy.md#app-status-continue-setup).
 
 1. If the end user unexpectedly reached this page, do the following:
     1. Restart your browser session.
@@ -110,7 +110,7 @@ If the session is being proxied, use the following steps to verify the policy:
 
     1. On the activity drawer's **General** tab, click the matched policies link, to verify the policy you enforced is present.
 
-    1. If you don't see your policy, see [Creating access and session policies](#creating-access-and-session-policies).
+    1. If you don't see your policy, see [Creating access and session policies](troubleshooting-proxy.md#creating-access-and-session-policies).
 
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
 

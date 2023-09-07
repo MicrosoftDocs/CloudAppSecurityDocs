@@ -26,7 +26,7 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 
 - [Add applications for additional control and visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 - [Remove old user/group exclusions from Conditional Access policy](/azure/active-directory/governance/conditional-access-exclusion)
-- Update [SAML certificate for third-party identity provider](troubleshooting-proxy.md#not-able-to-access-app-from-a-non-microsoft-identity-provider) annually
+- Update [SAML certificate for third-party identity provider](troubleshooting-proxy-end-users.md#not-able-to-access-app-from-a-non-microsoft-identity-provider) annually
 - [Verify app onboarding members](proxy-deployment-any-app.md#add-admins-to-the-app-onboardingmaintenance-list)
 
 ## Policy management

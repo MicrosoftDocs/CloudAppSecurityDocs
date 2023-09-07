@@ -1,8 +1,9 @@
 ---
-title: Investigate behaviors with advanced hunting (Preview) | Microsoft Defender for Cloud Apps
+title: Investigate behaviors with advanced hunting | Microsoft Defender for Cloud Apps
 description: Learn how to investigate Microsoft Defender for Cloud App behaviors with Microsoft 365 Defender advanced hunting.
-ms.date: 08/20/2023
+ms.date: 09/07/2023
 ms.topic: conceptual
+#CustomerIntent: As a Defender for Cloud Apps customer, I want to understand how behaviors work so that I can investigate more effectively.
 ---
 
 # Investigate behaviors with advanced hunting (Preview)
