@@ -1,7 +1,7 @@
 ---
 title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 04/24/2023
+ms.date: 08/17/2023
 ms.topic: how-to
 ---
 
@@ -85,16 +85,16 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                                      | Not applicable            | Not applicable            |             |
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
-| Citrix Share file          |  |  | | Preview  |
-| DocuSign          |  |  | | Preview  |
+| Citrix Share file          |  |  | | ✔|
+| DocuSign          |  |  | | ✔|
 | Dropbox           |                                      |                           |                            |                            |
 | Egnyte | | | | |
-| GitHub            |                                      | ✔                         |                           | Preview                          |
+| GitHub            |                                      | ✔                         |                           | ✔|
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
-| Google  Workspace | ✔                                    | ✔                         | ✔                         |   Preview                       |
+| Google  Workspace | ✔                                    | ✔                         | ✔                         |Preview|
 | NetDocuments  |  |  |  |  |
 | Microsoft 365        | ✔                                    | ✔                         | ✔                         | ✔                 |
-| Okta              |                                      | Not applicable            | Not applicable            | Preview            |
+| Okta              |                                      | Not applicable            | Not applicable            | ✔|
 | OneLogin | |  |  |  |
 | Service  Now      |                                      |                           |                           | ✔ |
 | Salesforce        | ✔                                    | ✔                         | ✔                         | ✔ |
@@ -105,7 +105,6 @@ The following tables list, per cloud app, which abilities are supported with App
 |Workplace by Meta|||||
 | Zendesk  |  |  |  |  |
 | Zoom  |  |  |  | Preview  |
-
 
 ### Information protection
 
@@ -183,4 +182,5 @@ To re-enable connected apps:
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 
