@@ -28,6 +28,14 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
+## September 2023
+
+### New Cloud app catalog category for Generative AI
+
+The Defender for Cloud Apps App Catalog now supports the new **Generative AI** category for large language model (LLM) apps, like Microsoft Bing Chat, Google Bard, ChatGPT, and more. Together with this new category, Defender for Cloud Apps has added hundreds of generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
+
+For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
+
 ## August 2023
 
 ### New security recommendations in Secure Score (Preview)
