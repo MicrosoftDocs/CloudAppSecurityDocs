@@ -117,7 +117,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
 - **User group admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific groups assigned to them. For example, if you assign a user admin permissions to the group "Germany - all users", the admin can view and edit information in Defender for Cloud Apps only for that user group. The User group admin has the following access:
 
   - Activities page - Only activities about the users in the group
-  - Alerts - Only alerts relating to the users in the group. In some cases, data related to another users if the data is correlated with the specific users in the group. Visibility to alert data related to another users is limited, and there is no access to drill down for more details
+  - Alerts - Only alerts relating to the users in the group. In some cases, alert data related to another user if the data is correlated with the users in the group. Visibility to alert data related to another users is limited, and there is no access to drill down for more details.
   - Policies - Can view all policies and if assigned full permissions can edit or create only policies that deal exclusively with users in the group
   - Accounts page - Only accounts for the specific users in the group
   - App permissions – No permissions
