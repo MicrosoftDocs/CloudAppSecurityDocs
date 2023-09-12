@@ -174,6 +174,7 @@ The following table lists the cloud app catalog's supported categories:
 | **Health**                     | Cloud apps that provide health services such as fitness products, health insurance, doctors’ appointments scheduling, laboratory services and more.   |
 | **Hosting services**           | Cloud apps that provide hosting services such as servers and websites hosting. |
 | **Human-resource management**  | Cloud apps that are used to process and manage human resources and business processes related data. |
+| **Generative AI** | Cloud apps that can generate digital media content such text, images, videos etc using generative AI models. |
 | **IT services**                | Cloud apps that are used to manage organization IT procedures and operations.  |
 | **Internet of Things**         | Cloud apps that are used to collect and manage data of smart physical devices connected to the internet.  |
 | **Marketing**                  | Cloud apps that are used by businesses to manage product marketing strategy and operations. |
