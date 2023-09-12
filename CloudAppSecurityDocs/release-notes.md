@@ -36,6 +36,12 @@ The Defender for Cloud Apps App Catalog now supports the new **Generative AI** c
 
 For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
 
+### Continuous NRT frequency supported for CloudAPPEvents table (Preview)
+
+Defender for Cloud Apps now supports the [Continuous (NRT) frequency](/microsoft-365/security/defender/custom-detection-rules#continuous-nrt-frequency) for detection rules using the **CloudAppEvents** table. 
+
+Setting a custom detection to run in Continuous (NRT) frequency allows you to increase your organization's ability to identify threats faster. For more information, see [Create and manage custom detections rules](/microsoft-365/security/defender/custom-detection-rules).
+
 ## August 2023
 
 ### New security recommendations in Secure Score (Preview)

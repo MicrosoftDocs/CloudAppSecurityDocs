@@ -22,7 +22,11 @@ For portal access requirements, see [Portal access](network-requirements.md#port
 
 1. Provide an **Environment name** (tenant). This information is especially important if you manage more than one tenant.
 
-1. It's also possible to provide a **Logo** that is displayed in email notifications and web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.
+1. (Optional) Upload a **Logo** file to be displayed in email notifications and web pages sent from the system. The logo must be a .PNG file with a maximum size of 150 x 50 pixels, on a transparent background.
+
+   Logos are stored in publicly accessible storage. The source URL for your image is protected and stored internally. 
+
+   Providing this image is voluntary, it’s up to you to decide if you want to share this data with us. You can also choose to delete this image at anytime and it will be deleted from our storage. This decision does not affect the security of your organization or your users in any way.
 
 1. Make sure you add a list of your **Managed domains** to identify internal users. Adding managed domains is a crucial step. Defender for Cloud Apps uses the managed domains to determine which users are internal, external, and where files should and shouldn't be shared. This information is used for reports and alerts.
 
