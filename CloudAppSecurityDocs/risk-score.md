@@ -16,7 +16,7 @@ For example:
 Apps in the cloud app catalog are scored based on more than 90 risk factors. This article describes how to identify apps covered by the catalog, and how to use and customize the cloud app risk scores.
 
 >[!TIP]
-> By default, Defender for Cloud Apps cannot discover apps that aren't in the catalog. To see Defender for Cloud Apps data for an app that's not currently in the catalog, we recommend that you [check our roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Defender%20for%20Identity), suggest a new app, or [create a custom app](cloud-discovery-custom-apps.md).
+> By default, Defender for Cloud Apps cannot discover apps that aren't in the catalog. To see Defender for Cloud Apps data for an app that's not currently in the catalog, we recommend that you [check our roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Defender%20for%20Identity), [suggest a new app](suggest-a-change-to-the-cloud-app-catalog), or [create a custom app](cloud-discovery-custom-apps.md).
 
 ## Risk scoring process
 
