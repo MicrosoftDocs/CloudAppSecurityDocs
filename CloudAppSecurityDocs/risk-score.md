@@ -7,16 +7,16 @@ ms.topic: how-to
 ---
 # Find your cloud app and calculate risk scores
 
-The Microsoft Defender for Cloud Apps **Cloud app catalog** page provides a full list of over 30,000 discoverable cloud apps. Defender for Cloud Apps discovery analyzes your traffic logs against discoverable cloud apps to give you ongoing visibility into cloud use, Shadow IT, and risks posed to your organization. Use the **Cloud apps catalog** to identify the apps that fit into your organization's security requirements.
+The Microsoft Defender for Cloud Apps **Cloud app catalog** page provides a full list of over 31,000 discoverable cloud apps. Defender for Cloud Apps discovery analyzes your traffic logs against discoverable cloud apps to give you ongoing visibility into cloud use, Shadow IT, and risks posed to your organization. Use the **Cloud apps catalog** to identify the apps that fit into your organization's security requirements.
 
 For example:
 
 ![Screenshot showing the cloud app catalog.](media/cloud-app-catalog.png)
 
-Apps in the cloud app catalog are ranked and scored, based on more than 90 risk factors. This article describes how to identify apps covered by the catalog, and how to use and customize the cloud app risk scores.
+Apps in the cloud app catalog are scored based on more than 90 risk factors. This article describes how to identify apps covered by the catalog, and how to use and customize the cloud app risk scores.
 
 >[!TIP]
-> By default, Defender for Cloud Apps cannot discover apps that aren't in the catalog. To see Defender for Cloud Apps data for an app that's not currently in the catalog, we recommend that you [check our roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Defender%20for%20Identity) or [create a custom app](cloud-discovery-custom-apps.md).
+> By default, Defender for Cloud Apps cannot discover apps that aren't in the catalog. To see Defender for Cloud Apps data for an app that's not currently in the catalog, we recommend that you [check our roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Defender%20for%20Identity), suggest a new app, or [create a custom app](cloud-discovery-custom-apps.md).
 
 ## Risk scoring process
 
@@ -27,7 +27,7 @@ The total score of any given app is a weighted average of sub-scores for the fol
 |Risk category  |Description  |
 |---------|---------|
 |**General**     |  Basic facts about the company that produces the app, including its domain, founding year, and popularity. These fields are meant to show the company's stability on the most basic level.       |
-|**Security**     |   Accounts for all standards dealing with the physical security of the data used by the discovered app, and includes fields such as multi-factor authentication, encryption, data classification, and data ownership.      |
+|**Security**     |   Accounts for all standards dealing with the security of the data used by the discovered app, and includes fields such as multi-factor authentication, encryption, data classification, and data ownership.    |
 |**Compliance**     |   Accounts for the common best-practice compliance standards that are upheld by the company that produces the app. The list of specifications includes standards such as HIPAA, CSA, and PCI-DSS.      |
 |**Legal**     |   Accounts for the regulations and policies in-place to ensure data protection and privacy of the app's users such as GDPR, DMCA, and data retention policy.      |
 
