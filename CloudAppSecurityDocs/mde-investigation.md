@@ -17,6 +17,7 @@ After you integrate Defender for Endpoint with Defender for Cloud Apps, you can 
 1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Dashboard** tab.
 2. In the top-right corner, select **Win10 endpoint users**.
   ![Defender for Endpoint report.](media/win10-dashboard-report.png)
+  This stream contains data from the operating systems mentioned in the [prerequisites](https://learn.microsoft.com/en-us/defender-cloud-apps/mde-integration#prerequisites)
 3. Across the top, you'll see the number of discovered devices added after the integration.
 4. Select the **Devices** tab.
 5. You can drill down into each device that's listed, and use the tabs to view the investigation data. Find correlations between the devices, the users, IP addresses, and apps that were involved in incidents:
