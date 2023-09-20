@@ -76,7 +76,7 @@ Use the following steps to gain more granular visibility on app-related network 
 
 1. Run the query and investigate network events for this app.
 
-    ![Screenshot showing Microsoft 365 Defender advanced hunting.](media/mde-advanced-hunting.png)
+    ![Screenshot showing Microsoft 365 Defender Advanced hunting.](media/mde-advanced-hunting.png)
 
 ## Investigate unsanctioned apps in Microsoft 365 Defender
 
