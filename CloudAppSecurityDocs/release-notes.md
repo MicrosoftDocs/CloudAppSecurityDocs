@@ -1,7 +1,7 @@
 ---
-title: What's new 
+title: What's new | Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 08/17/2023
+ms.date: 09/21/2023
 ms.topic: overview
 ---
 
@@ -27,6 +27,19 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## October 2023
+
+### Defender for Cloud Apps discovery on MacOS
+
+Defender for Cloud Apps now supports cloud app discovery on MacOS devices together with the Microsoft Defender for Endpoint integration. Defender for Cloud Apps and Defender for Endpoint together provide a seamless Shadow IT visibility and control solution.
+
+Together with this enhancement, the **Win10 Endpoint Users** option on the **Cloud Discovery** page has been renamed to **Defender-managed endpoints**.
+
+For more information, see:
+
+- [Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps](mde-integration.md)
+- [Investigate apps discovered by Microsoft Defender for Endpoint](mde-investigation.md)
 
 ## September 2023
 

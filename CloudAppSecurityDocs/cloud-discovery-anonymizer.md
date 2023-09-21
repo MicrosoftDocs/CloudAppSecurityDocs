@@ -31,9 +31,7 @@ Key points:
 
         1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
-        1. Under **Cloud Discovery**, select **Anonymization**. To anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Win10 Endpoint Users' report**.
-
-        ![Anonymization settings page.](media/anonymizer1.png)
+        1. Under **Cloud Discovery**, select **Anonymization**. To anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Defender-managed endpoints' report**. 
 
 1. When anonymization is selected, Defender for Cloud Apps parses the traffic log and extracts specific data attributes.
 1. Defender for Cloud Apps replaces the username with an encrypted username.
