@@ -15,12 +15,16 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 After you integrate Defender for Endpoint with Defender for Cloud Apps, you can investigate discovered device data in the Cloud Discovery dashboard.
 
 1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Dashboard** tab.
-2. In the top-right corner, select **Win10 endpoint users**.
-  ![Defender for Endpoint report.](media/win10-dashboard-report.png)
-  This stream contains data from the operating systems mentioned in the [prerequisites](mde-integration.md#prerequisites)
-3. Across the top, you'll see the number of discovered devices added after the integration.
-4. Select the **Devices** tab.
-5. You can drill down into each device that's listed, and use the tabs to view the investigation data. Find correlations between the devices, the users, IP addresses, and apps that were involved in incidents:
+
+1. In the top-right corner, select **Win10 endpoint users**.  This stream contains data from any operating systems mentioned in Defender for Cloud Apps [prerequisites](mde-integration.md#prerequisites). For example:
+
+    ![Defender for Endpoint report.](media/win10-dashboard-report.png)
+
+   Across the top, you'll see the number of discovered devices added after the integration.
+   
+1. Select the **Devices** tab.
+
+1. Drill down into each device that's listed, and use the tabs to view the investigation data. Find correlations between the devices, the users, IP addresses, and apps that were involved in incidents:
 
     - **Overview**
         - **Device risk level**: Shows how risky the device's profile is relative to other devices in your organization, as indicated by the severity (high, medium, low, informational). Defender for Cloud Apps uses device profiles from Defender for Endpoint for each device based on advanced analytics. Activity that is anomalous to a device's baseline is evaluated and determines the device's risk level. Use the device risk level to determine which devices to investigate first.
