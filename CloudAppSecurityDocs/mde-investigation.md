@@ -1,7 +1,7 @@
 ---
 title: Investigate apps discovered by Microsoft Defender for Endpoint
 description: This article describes how to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
-ms.date: 01/29/2023
+ms.date: 09/26/2023
 ms.topic: how-to
 ---
 # Investigate apps discovered by Microsoft Defender for Endpoint
@@ -15,11 +15,16 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 After you integrate Defender for Endpoint with Defender for Cloud Apps, you can investigate discovered device data in the Cloud Discovery dashboard.
 
 1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Dashboard** tab.
-2. In the top-right corner, select **Win10 endpoint users**.
-  ![Defender for Endpoint report.](media/win10-dashboard-report.png)
-3. Across the top, you'll see the number of discovered devices added after the integration.
-4. Select the **Devices** tab.
-5. You can drill down into each device that's listed, and use the tabs to view the investigation data. Find correlations between the devices, the users, IP addresses, and apps that were involved in incidents:
+
+1. In the top-right corner, select **Win10 endpoint users**.  This stream contains data from any operating systems mentioned in Defender for Cloud Apps [prerequisites](mde-integration.md#prerequisites). For example:
+
+    ![Defender for Endpoint report.](media/win10-dashboard-report.png)
+
+   Across the top, you'll see the number of discovered devices added after the integration.
+   
+1. Select the **Devices** tab.
+
+1. Drill down into each device that's listed, and use the tabs to view the investigation data. Find correlations between the devices, the users, IP addresses, and apps that were involved in incidents:
 
     - **Overview**
         - **Device risk level**: Shows how risky the device's profile is relative to other devices in your organization, as indicated by the severity (high, medium, low, informational). Defender for Cloud Apps uses device profiles from Defender for Endpoint for each device based on advanced analytics. Activity that is anomalous to a device's baseline is evaluated and determines the device's risk level. Use the device risk level to determine which devices to investigate first.
@@ -41,7 +46,15 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 >
 > - Defender for Endpoint forwards data to Defender for Cloud Apps in chunks of ~4 MB (~4000 endpoint transactions)
 > - If the 4 MB limit isn't reached within 1 hour, Defender for Endpoint reports all the transactions performed over the last hour.
-> - If the endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoint and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Defender for Cloud Apps using the **Automated log upload** in order to get complete visibility. For an alternative way to view this traffic and investigate accessed URLs by devices, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/mdatp-monitoring-network-connection-behind-forward-proxy-public/ba-p/758274).
+
+### Proxy support (Preview)
+
+As a preview feature, Defender for Cloud Apps can discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy. For example, if your Windows 10 endpoint device is in the same environment as ZScalar, Defender for Cloud Apps can discover Shadow IT applications via the **Win10 Endpoint Users** stream.
+
+However, if you're not using preview features, and your endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoint and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Defender for Cloud Apps using the **Automated log upload** in order to get complete visibility.
+
+For an alternative way to view this traffic and investigate accessed URLs by devices, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/mdatp-monitoring-network-connection-behind-forward-proxy-public/ba-p/758274).
+
 
 ## Investigate device network events in Microsoft 365 Defender
 
