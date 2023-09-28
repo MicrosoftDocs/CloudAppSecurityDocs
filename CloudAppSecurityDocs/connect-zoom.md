@@ -45,10 +45,7 @@ Before connecting Zoom to Defender for Cloud Apps, make sure that you have the f
 1. In the Microsoft 365 Defender pop-up, select **Done**.
 
    > [!NOTE]
-   >
-   > - The first connection can take up to 4 hours to get all users and their activities.
-   > - The activities that will show are the activities that were generated in the last 7 days before the connection.
-   > - After the connector's **Status** is marked as **Connected**, the connector is live and works.
+   > After the connector's **Status** is marked as **Connected**, the connector is live and works.
 
 ## Rate limits
 

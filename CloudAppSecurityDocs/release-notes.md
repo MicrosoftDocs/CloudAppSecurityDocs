@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 08/17/2023
+ms.date: 09/26/2023
 ms.topic: overview
 ---
 
@@ -27,6 +27,20 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## September 2023
+
+### More discovery for Shadow IT events (Preview)
+
+Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy.
+
+For more information, see [Proxy support (Preview)](mde-investigation.md#proxy-support-preview) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
+
+### Continuous NRT frequency supported for CloudAPPEvents table (Preview)
+
+Defender for Cloud Apps now supports the [Continuous (NRT) frequency](/microsoft-365/security/defender/custom-detection-rules#continuous-nrt-frequency) for detection rules using the **CloudAppEvents** table. 
+
+Setting a custom detection to run in Continuous (NRT) frequency allows you to increase your organization's ability to identify threats faster. For more information, see [Create and manage custom detections rules](/microsoft-365/security/defender/custom-detection-rules).
 
 ## August 2023
 

@@ -86,7 +86,7 @@ If Defender for Cloud Apps uses another Microsoft online service, such as Azure 
 
 ### App governance data storage locations
 
-Customers who use App Governance will have data transferred and stored outside of the geographic region of customer’s who use Microsoft Defender for Cloud Apps without App Governance. In such cases, customer data collected by the service is stored at rest as follows:
+Customer data collected by the service is stored at rest as follows:
 
 |Customer provisioning location |Data storage location  |
 |---------|---------|
@@ -99,6 +99,7 @@ Customers who use App Governance will have data transferred and stored outside o
 
 If App governance uses another Microsoft online service, such as Azure Active Directory or Azure CDN to process such data, the data geo location is defined by the data storage rules of that other online service.
 
+App governance is now part of Microsoft Defender for Cloud Apps. For existing customers, by June 2024, we will be moving your data to match your Microsoft Defender for Cloud Apps data residency. There is no work required on your side and there won’t be any service disruptions. For more information, see [Defender for Cloud Apps data storage locations](#defender-for-cloud-apps-data-storage-locations).
 
 ## Transparency
 
