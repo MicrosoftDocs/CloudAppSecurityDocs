@@ -26,19 +26,20 @@ Before you start troubleshooting, make sure your environment meets the following
 
 Use the following table to find the issue you're trying to troubleshoot:
 
-|Section|Issues|
-|---|---|
-|[Network conditions](#network-conditions)|- [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)<br />- [Slow sign-in](#slow-login)<br />- [Extra considerations](#network-conditions-additional-considerations)|
-|[Device identification](#device-identification)|- [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)<br />- [Client certificates aren't prompting when expected](#client-certificates-are-not-prompting-when-expected)<br />- [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-login)<br />- [Extra considerations](#device-identification-additional-considerations)|
-|[Onboarding an app](#onboarding-an-app)|- [App doesn't appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)<br />- [App status: Continue Setup](#app-status-continue-setup)<br />- [Can't configure controls for native apps](#cannot-configure-controls-for-native-apps)<br />- [**App is not recognized** page appears](#something-went-wrong-page-appears)<br />- [**Request session control** option appears](#request-session-control-option-appears)<br />- [Extra considerations](#onboarding-apps-additional-considerations)|
-|[Creating access and session policies](#creating-access-and-session-policies)|- [In Conditional Access policies, you can't see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)<br />- [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)<br />- [Can't create session policies for an app](#cannot-create-session-policies-for-an-app)<br />- [Can't choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)<br />- [Can't choose **Action**: **Protect**](#cannot-choose-action-protect)<br />- [Extra considerations](#policies-additional-considerations)|
+|Issue type  |Issues  |
+|---------|---------|
+|[Network condition issues](#network-condition-issues)     |  [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page) <br><br>[Slow sign-ins](#slow-sign-ins) <br><br> [More considerations for network conditions](#more-considerations-for-network-conditions)       |
+|[Device identification issues](#device-identification-issues)    | [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices) <br><br>[Client certificates aren't prompting when expected](#client-certificates-arent-prompting-when-expected)  <br><br> [Client certificates aren't prompting when expected](#client-certificates-arent-prompting-when-expected) <br> [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-sign-in) <br><br>[More considerations for device identification](#more-considerations-for-device-identification)      |
+|[Issues when onboarding an app](#issues-when-onboarding-an-app)     |  [App doesn't appear on the Conditional Access App Control apps page](#app-doesnt-appear-on-the-conditional-access-app-control-apps-page) <br><br> [App status: Continue Setup](#app-status-continue-setup)   [Can't configure controls for native apps](#cant-configure-controls-for-native-apps) <br><br> [*App isn't recognized* page appears](#app-isnt-recognized-page-appears) <br><br> [Request session control option appears](#request-session-control-option-appears)<br><br> [More considerations for onboarding apps](#more-considerations-for-onboarding-apps)    |
+|[Issues when creating access and session policies](#issues-when-creating-access-and-session-policies)     | [In Conditional Access policies, you can't see the Conditional Access App Control option](#in-conditional-access-policies-you-cant-see-the-conditional-access-app-control-option) <br><br> [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control) <br><br> [Can't create session policies for an app](#cant-create-session-policies-for-an-app) <br><br>[Can't choose Inspection Method: Data Classification Service](#cant-choose-inspection-method-data-classification-service) <br><br> [Can't choose Action: Protect](#cant-choose-action-protect) <br><br> [More considerations for onboarding apps](#more-considerations-for-onboarding-apps)        |
+| [Diagnose and troubleshoot with the Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar) | [Bypass proxy session](#bypass-proxy-session) <br><br> [Record a session](#record-a-session) |
 
 ## Network condition issues
 
 Common network condition issues you may encounter include:
 
 - [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)
-- [Slow sign-in](#slow-login)
+- [Slow sign-in](#slow-sign-ins)
 - [Extra considerations](#network-conditions-additional-considerations)
 
 ### Network errors when navigating to a browser page
@@ -128,8 +129,8 @@ For more information on device identification, see [Managed Device Identificatio
 Common device identification issues you may encounter include:
 
 - [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)
-- [Client certificates aren't prompting when expected](#client-certificates-are-not-prompting-when-expected)
-- [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-login)
+- [Client certificates aren't prompting when expected](#client-certificates-arent-prompting-when-expected)
+- [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-sign-in)
 - [Extra considerations](#device-identification-additional-considerations)
 
 ### Misidentified Intune Compliant or Hybrid Azure AD joined devices
@@ -215,7 +216,7 @@ If you're experiencing the client certificate popping up after opening a new tab
 
 <a name="device-identification-additional-considerations"></a>
 
-### Extra considerations for device identification
+### More considerations for device identification
 
 While troubleshooting device identification, you can require certificate revocation for Client Certificates.
 
@@ -240,10 +241,10 @@ When onboarding an app, make sure that you've followed the proxy deployment guid
 
 Common scenarios you may encounter while onboarding an app include:
 
-- [App doesn't appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)
+- [App doesn't appear on the **Conditional Access App Control apps** page](#app-doesnt-appear-on-the-conditional-access-app-control-apps-page)
 - [App status: Continue Setup](#app-status-continue-setup)
-- [Can't configure controls for native apps](#cannot-configure-controls-for-native-apps)
-- [**App is not recognized** page appears](#something-went-wrong-page-appears)
+- [Can't configure controls for native apps](#cant-configure-controls-for-native-apps)
+- [*App isn't recognized* page appears](#app-isnt-recognized-page-appears)
 - [**Request session control** option appears](#request-session-control-option-appears)
 - [Extra considerations](#onboarding-apps-additional-considerations)
 
@@ -347,7 +348,7 @@ After adding an app, you may see the **Request session control** option. This oc
 
 <a name="onboarding-apps-additional-considerations"></a>
 
-### Extra considerations for onboarding apps
+### More considerations for onboarding apps
 
 While troubleshooting onboarding apps, remember that apps in Conditional Access App Control don't align with Azure AD apps.
 
@@ -376,11 +377,11 @@ To use these policies in Defender for Cloud Apps, you must first configure a pol
 
 Common scenarios you may encounter while configuring these policies include:
 
-- [In Conditional Access policies, you can't see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)
+- [In Conditional Access policies, you can't see the Conditional Access App Control option](#in-conditional-access-policies-you-cant-see-the-conditional-access-app-control-option)
 - [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)
-- [Can't create session policies for an app](#cannot-create-session-policies-for-an-app)
-- [Can't choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)
-- [Can't choose **Action**: **Protect**](#cannot-choose-action-protect)
+- [Can't create session policies for an app](#cant-create-session-policies-for-an-app)
+- [Can't choose **Inspection Method**: **Data Classification Service**](#cant-choose-inspection-method-data-classification-service)
+- [Can't choose **Action**: **Protect**](#cant-choose-action-protect)
 - [Extra considerations](#policies-additional-considerations)
 
 ### In Conditional Access policies, you can't see the Conditional Access App Control option
@@ -404,7 +405,7 @@ When creating an access or session policy, you may see the following error messa
     - [Deploy catalog apps that have session control enabled](proxy-deployment-aad.md)
     - [Deploy custom line-of-business apps, nonfeatured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls
 
-If you run into any issues while deploying the app, see [Onboarding an app](#onboarding-an-app).
+If you run into any issues while deploying the app, see [Issues when onboarding an app](#issues-when-onboarding-an-app).
 
 ### Can't create session policies for an app
 
@@ -457,7 +458,7 @@ If the **Protect** action isn't available, use the following steps to investigat
 
 <a name="policies-additional-considerations"></a>
 
-### Extra considerations for onboarding apps
+### More considerations for onboarding apps
 
 While troubleshooting for onboarding apps, there are some extra things to consider.
 
@@ -495,7 +496,7 @@ When those users next start a session of an application, the Admin View toolbar 
 
 ### Bypass proxy session
 
-If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It appears for users who have the [Admin View toolbar](#admin-view-toolbar) enabled.
+If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It appears for users who have the [Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar) enabled.
 
 For example:
 
@@ -507,7 +508,7 @@ In the next session of the application, the Conditional Access proxy will be use
 
 ### Record a session
 
-You can help the root cause analysis of problems by providing session recordings to Microsoft support engineers. To record a session, you must enable the [Admin View toolbar](#admin-view-toolbar).
+You can help the root cause analysis of problems by providing session recordings to Microsoft support engineers. To record a session, you must enable the [Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar).
 
 > [!NOTE]
 > All personal data is removed from the recordings.
