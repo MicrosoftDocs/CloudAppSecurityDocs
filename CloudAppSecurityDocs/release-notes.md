@@ -34,7 +34,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy.
 
-For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy-Preview) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
+For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy-preview) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
 
 ### Continuous NRT frequency supported for CloudAPPEvents table (Preview)
 
