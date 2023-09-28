@@ -68,7 +68,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Okta              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
 | OneLogin | ✔ | | ✔ | ✔ | ✔ | ✔ |
 | Service  Now      | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Partial                                     | Partial                   |
-| Salesforce        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Supported with Salesforce Shield            | ✔                         |
+| Salesforce        | Supported with Salesforce Shield                                        |Supported with Salesforce Shield                                       | Supported with Salesforce Shield                                   | Supported with Salesforce Shield                                    | Supported with Salesforce Shield            | Supported with Salesforce Shield                             |
 | Slack | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | Smartsheet | ✔ | | ✔ |  | ✔ | ✔ |
 | Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           |  Not supported by provider |
