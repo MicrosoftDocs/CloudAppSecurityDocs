@@ -56,15 +56,16 @@ You can see the sensitivity labels from Microsoft Purview Information Protection
 
 ### Integration limits
 
-Note the following limits when using Microsoft Purview labels with Defender for Cloud Apps. 
+Note the following limits when using Microsoft Purview labels with Defender for Cloud Apps.
 
 | Limit | Description |
 |------|--------------|
-| **Files with labels or protection applied outside of Defender for Cloud Apps** | 	Unprotected labels applied outside of Defender for Cloud Apps can be overridden by Defender for Cloud Apps but can’t be removed.  <br><br>Defender for Cloud Apps cannot remove labels with protection from files that were labeled outside of Defender for Cloud Apps. <br><br>To scan files with protection applied outside of Defender for Cloud apps, [grant permissions to inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).|
+| **Files with labels or protection applied outside of Defender for Cloud Apps** | Unprotected labels applied outside of Defender for Cloud Apps can be overridden by Defender for Cloud Apps but can’t be removed.  </br></br>Defender for Cloud Apps cannot remove labels with protection from files that were labeled outside of Defender for Cloud Apps. </br></br>To scan files with protection applied outside of Defender for Cloud apps, [grant permissions to inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).|
 | **Files labeled by Defender for Cloud Apps** | Defender for Cloud Apps cannot override labels on files that have already been labeled by Defender for Cloud Apps.|
 | **Password protected files** |Defender for Cloud Apps cannot read labels on password-protected files. |
-| **Empty files**	| Empty files are not labeled by Defender for Cloud Apps |
-| **Libraries that require checkout** |	Defender for Cloud Apps cannot labels files located in libraries that are [configured to require checkout](https://support.microsoft.com/office/set-up-a-library-to-require-check-out-of-files-0c73792b-f727-4e19-a1f9-3173899e695b). |
+| **Empty files** | Empty files are not labeled by Defender for Cloud Apps |
+| **Libraries that require checkout** | Defender for Cloud Apps cannot labels files located in libraries that are [configured to require checkout](https://support.microsoft.com/office/set-up-a-library-to-require-check-out-of-files-0c73792b-f727-4e19-a1f9-3173899e695b). |
+| **Scope Requirements** | In order for Defender for Cloud Apps to recognize a sensitivity label, the label scope in Purview must be configured as at least Files and Emails. |
 
 > [!NOTE]
 > Microsoft Purview is Microsoft’s principal solution for labeling services. For more information, see the [Microsoft Purview documentation](/purview/apply-sensitivity-label-automatically).
