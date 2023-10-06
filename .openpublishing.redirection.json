@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "CloudAppSecurityDocs/app-governance-feedback.md",
+            "redirect_url": "/microsoft-365/security/defender/feedback",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "CloudAppSecurityDocs/security-baseline.md",
             "redirect_url": "/security/benchmark/azure/baselines/cloud-app-security-security-baseline",
             "redirect_document_id": false
