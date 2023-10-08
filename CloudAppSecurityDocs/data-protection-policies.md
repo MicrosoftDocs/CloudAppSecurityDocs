@@ -11,6 +11,9 @@ ms.topic: how-to
 
 File Policies allow you to enforce a wide range of automated processes using the cloud provider's APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases. Defender for Cloud Apps can monitor any file type based on more than 20 metadata filters (for example, access level, file type).
 
+   > [!NOTE]
+   > For a list of file filters that can be applied see [File filters in Microsoft Defender for Cloud Apps](file-filters.md).
+
 ## Supported file types
 
 The Defender for Cloud Apps engines perform content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML, and more.
@@ -102,13 +105,13 @@ To create a new file policy, follow this procedure:
 
 1. Consolidate several file policies for the same service (such as SharePoint, OneDrive, Box, and so on) to a single policy.
 
-1. When enabling file monitoring (from the **Settings** page), create at least one file policy. When no file policy exists, or is disabled for seven consecutive days, file monitoring will be autodisabled.
+1. When enabling file monitoring (from the **Settings** page), create at least one file policy. When no file policy exists, or is disabled for seven consecutive days, file monitoring is autodisabled.
 
 ## File policy reference
 
 This section provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.
 
-A **File policy** is an API-based policy that enables you to control your organization's content in the cloud, taking into account over 20 file metadata filters (including owner and sharing level) and content inspection results. Based on the policy results, governance actions can be applied. The content inspection engine can be extended via 3rd-party DLP engines as well as anti-malware solutions.
+A **File policy** is an API-based policy that enables you to control your organization's content in the cloud, taking into account over 20 file metadata filters (including owner and sharing level) and content inspection results. Based on the policy results, governance actions can be applied. The content inspection engine can be extended via 3rd-party DLP engines and anti-malware solutions.
 
 Each policy is composed of the following parts:
 
@@ -124,7 +127,7 @@ Each policy is composed of the following parts:
 
 To make investigation even simpler, you can now create custom queries and save them for later use.
 
-1. In the **Files** page, use the filters as described above to drill down into your apps as necessary.
+1. In the **Files** page, use the filters as described previously to drill down into your apps as necessary.
 
 1. After you've finished building your query, select the **Save as** button above the filters.
 
