@@ -39,26 +39,21 @@ All SaaS app REST APIs must support oAuth authentication.
 
 As a SaaS vendor, use the steps shown in the following image to build a connector together with Microsoft, using the open app connector platform:
 
-:::image type="content" source="media/app-connector-platform/app-connector-platform-process.png" alt-text="Diagram of the process of creating an app connector with the open app connector platform." border="false" :::
+![User's image](media/connector-platform/image.png)
 
-The following steps provide more details about the open app connector platform process:
- 
+The following steps provide more details about the open app connector platform process (Please note: an NDA and partnership agreement are required as part of this process):
+
 1. Email Microsoft at [buildSaaSConnector@microsoft.com](mailto:buildSaaSConnector@microsoft.com), expressing your intent for partnership. In your email, describe your SaaS app and any integration scenarios of interest, and provide any relevant links.
-
 1. Microsoft will set up a vendor discovery call. Use this call to learn more about the open app connector platform, integration opportunities, mutual customer benefits, and how to build a connector.
-
-1. After the discovery call, sign a partnership agreement with Microsoft to build a new app connector.
-
-1. After the partnership agreement is signed, you'll get access to Microsoft's app connector manifest. The manifest is a no-code, vendor facing artifact for SaaS vendors to complete. Use the app connector manifest to provide Microsoft with any of your SaaS app's technical details that are needed to create the app connector.
-
+1. After the discovery call, you'll get access to Microsoft's app connector manifest. The manifest is a no-code, vendor facing artifact for SaaS vendors to complete. 
+1. Use the app connector manifest to provide Microsoft with any of your SaaS app's technical details that are needed to create the app connector.
 1. Microsoft validates the connector manifest. After it's successfully validated, Microsoft uses the manifest to generate the app connector.
-
 1. Work with Microsoft to run a joint validation of the new app connector in a test environment. We recommend that you nominate customers to preview the app connector before making it generally available.
-
-1. After the app connector's been successfully validated by you and any preview customers, Microsoft publishes the app connector to the Microsoft Defender Technology Partners catalog, where new customers can access Defender for Cloud app connectors.
+1. After the app connector has been successfully validated by you and any preview customers, Microsoft publishes the app connector to the Microsoft Defender Technology Partners catalog, where new customers can access Defender for Cloud app connectors.
 
 ## Next steps
 
 For more information, see [Protect connected apps using cloud service provider APIs](protect-connected-apps.md).
+
 
 
