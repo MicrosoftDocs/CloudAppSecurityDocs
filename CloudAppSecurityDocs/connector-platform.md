@@ -7,7 +7,7 @@ ms.topic: overview
 
 # Microsoft Defender for Cloud Apps open app connector platform (Preview)
 
-Microsoft Defender for Cloud Apps' [app connectors](protect-connected-apps.md) are a vital bridge between your SaaS applications and Microsoft's powerful security operations. Connect the apps your organization creates to Defender for Cloud Apps to extend app security features across customer SaaS ecosystem, safeguarding data, mitigating risks, and reinforcing overall SaaS security posture.
+Microsoft Defender for Cloud Apps' [app connectors](protect-connected-apps.md) are a vital bridge between your SaaS applications and Microsoft's powerful security operations. Connect the apps your organization creates to Defender for Cloud Apps to extend app security features across the customer SaaS ecosystem, safeguarding data, mitigating risks, and reinforcing overall SaaS security posture.
 
 This article describes how SaaS app vendors can use the Defender for Cloud Apps open app connector platform to build connectors for their own apps. The codeless open app connector platform helps simplify connector development by avoiding extra coding and reducing integration time.
 
@@ -22,8 +22,7 @@ As a SaaS vendor, building a Defender for Cloud Apps connector for your app enha
 
 For example, you might create a connector for your app in one of the following scenarios:
 
-- **Security posture management for SaaS apps**: SaaS app configurations in customer organizations may not align with security best practices. Develop a connector so that Defender for Cloud Apps can provide customers with assessments about their SaaS app security configurations, ensuring that they're using the best configurations to prevent possible risks. For more information, see [Security posture management for SaaS apps](security-saas.md).
-
+- **Security posture management for SaaS apps**: SaaS app configurations in customer organizations might not align with security best practices. Develop a connector so that Defender for Cloud Apps can provide customers with assessments about their SaaS app security configurations, ensuring that they're using the best configurations to prevent possible risks. For more information, see [Security posture management for SaaS apps](security-saas.md).
 - **Advanced threat protection for SaaS apps**: Customers need to have a deep understand of what's happening in their SaaS app environments to detect, investigate, and remediate any risks. Develop a connector for your app so that Defender for Cloud Apps can provide customers with multiple layers of post-breach threat protection capabilities, including built-in detections to for compromised users and apps, custom detection configuration capabilities, rich investigation capabilities, and response actions to mitigate threats. For more information, see [Investigate cloud app risks and suspicious activity](investigate.md).
 
 ## Prerequisites
@@ -39,9 +38,11 @@ All SaaS app REST APIs must support oAuth authentication.
 
 As a SaaS vendor, use the steps shown in the following image to build a connector together with Microsoft, using the open app connector platform:
 
-![User's image](media/connector-platform/image.png)
+![]()
 
-The following steps provide more details about the open app connector platform process (Please note: an NDA and partnership agreement are required as part of this process):
+![A diagram of the app connector platform process.](media/connector-platform/app-connector-platform-process.png)
+
+The following steps provide more details about the open app connector platform process (Note that: a partnership agreement is required as part of this process):
 
 1. Email Microsoft at [buildSaaSConnector@microsoft.com](mailto:buildSaaSConnector@microsoft.com), expressing your intent for partnership. In your email, describe your SaaS app and any integration scenarios of interest, and provide any relevant links.
 1. Microsoft will set up a vendor discovery call. Use this call to learn more about the open app connector platform, integration opportunities, mutual customer benefits, and how to build a connector.
@@ -54,6 +55,7 @@ The following steps provide more details about the open app connector platform p
 ## Next steps
 
 For more information, see [Protect connected apps using cloud service provider APIs](protect-connected-apps.md).
+
 
 
 
