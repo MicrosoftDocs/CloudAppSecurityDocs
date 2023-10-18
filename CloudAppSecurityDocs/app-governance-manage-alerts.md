@@ -77,7 +77,7 @@ Based on app alert patterns, you can update the appropriate app policy and chang
 
 > [!Note]
 > This section is only relevant for Salesforce and Google Workspace applications.
-For Google Workspace and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Azure AD.
+For Google Workspace and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Microsoft Entra ID.
 
 1. On the **Google apps** or **Salesforce apps** tabs, select the three dots at the end of the app row and select **Notify user**. By default, the user is notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: [https://security.google.com/settings/security/permissions?hl=en&pli=1](https://security.google.com/settings/security/permissions?hl=en&pli=1) Select the app and select 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 1. You can also revoke permissions to use the app for the user. Select the icon at the end of the app row in the table and selecting **Revoke app**.

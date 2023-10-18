@@ -17,25 +17,25 @@ For a summary of apps in your tenant, in Microsoft 365, go to **Cloud app > App 
 
 For example:
 
-:::image type="content" source="media/app-governance-visibility-insights-view-apps/appg-cc-apps.png" alt-text="Screenshot of the Azure AD apps tab on the App governance page.":::
+:::image type="content" source="media/app-governance-visibility-insights-view-apps/appg-cc-apps.png" alt-text="Screenshot of the Microsoft Entra apps tab on the App governance page.":::
 
 
 >[!NOTE]
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#roles) to view any app governance data.
 >
 
-On the **Azure AD apps** tab, the apps in your tenant are listed with the following details:
+On the **Microsoft Entra apps** tab, the apps in your tenant are listed with the following details:
 
 |Column name  |Description  |
 |---------|---------|
-|**App name** | The display name of the app as registered on Azure AD |
+|**App name** | The display name of the app as registered on Microsoft Entra ID |
 |**App status** | Shows whether the app is enabled or disabled, and if disabled by whom |
 | **Graph API access**| Shows whether the app has at least one Graph API permission |
 | **Permission type**| Shows whether the app has application (app only), delegated, or mixed permissions |
 | **Consent type**| Shows whether the app consent has been given at the user or the admin level, and the number of users whose data is accessible to the app |
 | **Publisher**| Publisher of the app and their verification status |
-| **Last modified**| Date and time when registration information was last updated on Azure AD |
-| **Added on**| Shows the date and time when the app was registered to Azure AD and assigned a service principal |
+| **Last modified**| Date and time when registration information was last updated on Microsoft Entra ID |
+| **Added on**| Shows the date and time when the app was registered to Microsoft Entra ID and assigned a service principal |
 | **Permission usage**| Shows whether the app has any unused Graph API permissions in the last 90 days |
 | **Data usage**| Total data downloaded or uploaded by the app in the last 30 days |
 | **Privilege level**  | The app's privilege level |
@@ -55,9 +55,9 @@ You can also select **Search** to search for an app by name.
 
 Select a specific app in the grid to view more details on an apps details pane on the right. For example:
 
-:::image type="content" source="media/app-governance-visibility-insights-view-apps/image2.png" alt-text="Screenshot of an app details pane on the Azure AD tab.":::
+:::image type="content" source="media/app-governance-visibility-insights-view-apps/image2.png" alt-text="Screenshot of an app details pane on the Microsoft Entra ID tab.":::
 
-The **Summary** tab also shows more data about the app, such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**.
+The **Summary** tab also shows more data about the app, such as the date first consented and the App ID. To see the properties of the app as registered in Microsoft Entra ID, select **View app in Microsoft Entra ID**.
 
 In the details pane, select any of the following tabs to view more details:
 

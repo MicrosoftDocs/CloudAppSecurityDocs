@@ -13,21 +13,23 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 
 - Enforce the app compliance policies for your organization.
 
-Use app governance to create OAuth policies for apps connected to Azure AD, Google Workspace, and Salesforce.
+Use app governance to create OAuth policies for apps connected to Microsoft Entra ID, Google Workspace, and Salesforce.
 
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YU37]
 
-## Create OAuth app policies for Azure AD
+<a name='create-oauth-app-policies-for-azure-ad'></a>
 
-For apps connected to Azure AD, create app policies from provided templates that can be customized, or create your own custom app policy.
+## Create OAuth app policies for Microsoft Entra ID
 
-1. To create a new app policy for Azure AD apps, go to **Microsoft 365 Defender > App governance > Policies > Azure AD**.
+For apps connected to Microsoft Entra ID, create app policies from provided templates that can be customized, or create your own custom app policy.
+
+1. To create a new app policy for Microsoft Entra apps, go to **Microsoft 365 Defender > App governance > Policies > Microsoft Entra ID**.
 
     For example:
 
-    :::image type="content" source="media/app-governance-app-policies-create/azure-ad-policies.jpg" alt-text="Screenshot of the Azure AD tab.":::
+    :::image type="content" source="media/app-governance-app-policies-create/azure-ad-policies.jpg" alt-text="Screenshot of the Microsoft Entra ID tab.":::
 
 1. Select the **Create New Policy** option, and then do one of the following steps:
 
@@ -103,7 +105,7 @@ Use a custom app policy when you need to do something not already done by one of
 
     | Condition                            | Condition values accepted                                    | Description                                                  | More information                                             |
     | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-    | **Registration age**                     | Within last X days                                           | Apps that were registered to Azure AD within a specified period from the current date |                                                              |
+    | **Registration age**                     | Within last X days                                           | Apps that were registered to Microsoft Entra ID within a specified period from the current date |                                                              |
     | **Certification**                        | No certification, Publisher attested, Microsoft 365 Certified | Apps that are Microsoft 365 Certified, have a publisher attestation report, or neither | [Microsoft 365 Certification](/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
     | **Publisher verified**                   | Yes or No                                                    | Apps that have verified publishers                           | [Publisher Verification](/azure/active-directory/develop/publisher-verification-overview) |
     | **Application permissions** (Graph only) | Select one or more API permissions from list                 | Apps with specific Graph API permissions that have been granted directly | [Microsoft Graph permissions reference](/graph/permissions-reference) |
@@ -119,7 +121,7 @@ Use a custom app policy when you need to do something not already done by one of
     | **Increase in consenting users**         | X % increase in users in the last 90 days                    | Apps whose number of consenting users have increased by over a specified percentage in the last 90 days |                                                              |
     | **Priority account consent given**       | Yes or No                                                    | Apps that have been given consent by priority users          | A user with a [priority account](/microsoft-365/admin/setup/priority-accounts). |
     | **Names of consenting users**            | Select users from list                                       | Apps that have been given consent by specific users          |                                                              |
-    | **Roles of consenting users**            | Select roles from list                                       | Apps that have been given consent by users with specific roles | Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list. |
+    | **Roles of consenting users**            | Select roles from list                                       | Apps that have been given consent by users with specific roles | Multiple selections allowed. <p> Any Microsoft Entra role with assigned member should be made available in this list. |
     | **Sensitivity labels accessed**          | Select one or more sensitivity labels from the list          | Apps that accessed data with specific sensitivity labels in the last 30 days. |                                                              |
     | **Services accessed** (Graph only)       | Exchange and/or OneDrive and/or SharePoint and/or Teams      | Apps that have accessed OneDrive, SharePoint, or Exchange Online using Graph API | Multiple selections allowed.                                 |
     | **Error rate** (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last seven days are greater than a specified percentage |                                                              |
@@ -185,7 +187,7 @@ In addition to Oauth app policies that you can create, Defender for Cloud apps p
 This section is only relevant for Salesforce and Google Workspace applications.
 
 > [!Note]
-> Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+> Anomaly detection policies are only available for OAuth apps that are authorized in your Microsoft Entra ID.
 > The severity of OAuth app anomaly detection policies cannot be modified.
 
 The following table describes the out-of-the-box anomaly detection policies provided by Defender for Cloud Apps:
@@ -200,4 +202,3 @@ The following table describes the out-of-the-box anomaly detection policies prov
 ## Next step
 
 [Manage your app policies](app-governance-app-policies-manage.md)
-

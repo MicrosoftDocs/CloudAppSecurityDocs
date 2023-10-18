@@ -53,7 +53,7 @@ For more information, see [Hunt for threats in app activities](app-activity-thre
 
 ### App hygiene feature update
 
-Starting on June 1, 2023, management of unused apps, unused credentials, and expiring credentials is only available to app governance customers with Microsoft Entra Workload Identities Premium.
+Starting on June 1, 2023, management of unused apps, unused credentials, and expiring credentials is only available to app governance customers with Microsoft Entra Workload ID Premium.
 
 For more information, see [Secure apps with app hygiene features](app-governance-secure-apps-app-hygiene-features.md) and [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview).
 
@@ -69,7 +69,7 @@ For more information, see [Secure apps with app hygiene features](app-governance
 ## App governance October 2022 release
 
 - **Added insights and remediation for sensitive content**: App governance provides insights and automated remediation capabilities through predefined and custom policies for apps that access content with Microsoft Purview Information Protection labels. Enterprise admins now have visibility into the workloads that these apps access and whether they access sensitive data in these workloads. With predefined and custom policies, admins are alerted about apps that have attempted to access sensitive data. Moreover, app governance can automatically deactivate noncompliant apps.
-- **Expanded coverage to include all non-Graph API apps** - App governance has expanded coverage to secure more apps in your tenant. In addition to OAuth apps that use Microsoft Graph API, app governance now provides visibility and protection for all OAuth apps registered on Azure Active Directory. [Learn more about app governance coverage.](/defender-cloud-apps/app-governance-secure-apps-access-non-graph-api)
+- **Expanded coverage to include all non-Graph API apps** - App governance has expanded coverage to secure more apps in your tenant. In addition to OAuth apps that use Microsoft Graph API, app governance now provides visibility and protection for all OAuth apps registered on Microsoft Entra ID. [Learn more about app governance coverage.](/defender-cloud-apps/app-governance-secure-apps-access-non-graph-api)
 
 ## App governance July 2022 release
 
@@ -85,6 +85,3 @@ For more information, see [Secure apps with app hygiene features](app-governance
 - **Predefined policies GA**: App governance released a set of out of the box policies to detect anomalous app behaviors. These policies are activated by default, but you can deactivate them if you choose to. [Learn more here](app-governance-predefined-policies.md)
 - **Teams workload GA**: App governance added insights, policy capabilities, and governance for the Teams workload. You can see data usage, permissions usage, and create policies on Teams permissions and usage.
 - **App governance alerts unified in the M365D alerts and incidents queues**: The app governance alerts queue has been unified with the Microsoft 365 Defender alerts experience and are aggregated into incidents.
-
-
-

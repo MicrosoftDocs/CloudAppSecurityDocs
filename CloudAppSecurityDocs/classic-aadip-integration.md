@@ -1,15 +1,15 @@
 ---
-title: Classic portal -  Azure Active Directory Identity Protection integration
+title: Classic portal -  Microsoft Entra ID Protection integration
 description: Classic portal -  This article provides information about how to leverage Identity Protection alerts in Defender for Cloud Apps for hybrid risk detection.
 ms.date: 01/19/2023
 ms.topic: how-to
 ROBOTS: NOINDEX
 ---
-# Classic portal: Azure Active Directory Identity Protection integration
+# Classic portal: Microsoft Entra ID Protection integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Defender for Cloud Apps integrates with Azure Active Directory Identity Protection to provide user entity behavioral analytics (UEBA) across a hybrid environment. For more information about the machine learning and behavioral analytics provided by Identity Protection, see [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection).
+Microsoft Defender for Cloud Apps integrates with Microsoft Entra ID Protection to provide user entity behavioral analytics (UEBA) across a hybrid environment. For more information about the machine learning and behavioral analytics provided by Identity Protection, see [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection).
 
 ## Prerequisites
 
@@ -26,11 +26,11 @@ To enable Defender for Cloud Apps integration with Identity Protection:
 
     ![Settings menu.](media/classic-azip-system-settings.png)
 
-1. Under **Threat Protection**, select **Azure AD Identity Protection**.
+1. Under **Threat Protection**, select **Microsoft Entra ID Protection**.
 
     ![enable azure advanced threat protection.](media/classic-aadip-integration.png)
 
-1. Select **Enable Azure AD Identity Protection alert integration** and then select **Save**.
+1. Select **Enable Microsoft Entra ID Protection alert integration** and then select **Save**.
 
 After enabling Identity Protection integration, you'll be able to see alerts for all the users in your organization.
 
@@ -40,14 +40,14 @@ To disable Defender for Cloud Apps integration with Identity Protection:
 
 1. In Defender for Cloud Apps, under the settings cog, select **Settings**.
 
-1. Under **Threat Protection**, select **Azure AD Identity Protection**.
+1. Under **Threat Protection**, select **Microsoft Entra ID Protection**.
 
-1. Clear **Enable Azure AD Identity Protection alert integration** and then select **Save**.
+1. Clear **Enable Microsoft Entra ID Protection alert integration** and then select **Save**.
 
 > [!NOTE]
 >
 > - When the integration is disabled, existing Identity Protection alerts are kept in accordance with Defender for Cloud Apps retention policies.
-> - Since Defender for Cloud Apps only consumes interactive logins from Azure AD, some alerts may not show related activities. You can investigate such activities in the Azure AD portal.
+> - Since Defender for Cloud Apps only consumes interactive logins from Microsoft Entra ID, some alerts may not show related activities. You can investigate such activities in the Microsoft Entra admin center.
 
 ## Configure Identity Protection Policies
 

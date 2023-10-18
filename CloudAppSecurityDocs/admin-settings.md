@@ -19,7 +19,7 @@ Microsoft Defender for Cloud Apps allows you to customize your admin notificatio
 
     > [!NOTE]
     >
-    > - Notifications are not sent for Azure Active Directory IPC events.
+    > - Notifications are not sent for Microsoft Entra IPC events.
 
     ![notification settings.](media/notification-settings.png)
 

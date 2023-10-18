@@ -7,7 +7,7 @@ description: Get started learning about app governance policies with Microsoft D
 
 # Get started with app policies
 
-Policies for app governance are a way to implement proactive and reactive alerts and automatic remediation for your specific needs for app compliance in your organization. You can create policies in app governance to manage OAuth apps in Azure AD, Google and Salesforce.
+Policies for app governance are a way to implement proactive and reactive alerts and automatic remediation for your specific needs for app compliance in your organization. You can create policies in app governance to manage OAuth apps in Microsoft Entra ID, Google and Salesforce.
 
 There are two types of policies in app governance:
 
@@ -96,4 +96,3 @@ You can also:
 ## Next step
 
 [Create an app policy](app-governance-app-policies-create.md)
-
