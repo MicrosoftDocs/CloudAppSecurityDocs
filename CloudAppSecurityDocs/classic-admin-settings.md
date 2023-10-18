@@ -23,7 +23,7 @@ To set up your preferences as an admin of Microsoft Defender for Cloud Apps, sel
 
     > [!NOTE]
     >
-    > - Notifications are not sent for Azure Active Directory IPC events.
+    > - Notifications are not sent for Microsoft Entra IPC events.
 
     ![notification settings.](media/classic-notification-settings.png)
 
