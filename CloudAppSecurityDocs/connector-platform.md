@@ -38,8 +38,6 @@ All SaaS app REST APIs must support oAuth authentication.
 
 As a SaaS vendor, use the steps shown in the following image to build a connector together with Microsoft, using the open app connector platform:
 
-![]()
-
 ![A diagram of the app connector platform process.](media/connector-platform/app-connector-platform-process.png)
 
 The following steps provide more details about the open app connector platform process (Note that: a partnership agreement is required as part of this process):
