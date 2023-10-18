@@ -16,7 +16,7 @@ You may not want to use Microsoft Defender for Cloud Apps for all the users in y
 
 - To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Defender for Cloud Apps. By default, you'll see the following groups:
 
-  - **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Azure AD applications.
+  - **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Microsoft Entra applications.
 
   - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
 

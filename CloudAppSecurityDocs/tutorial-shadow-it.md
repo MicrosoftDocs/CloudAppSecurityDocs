@@ -72,9 +72,9 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
 - **Manage cloud apps**: Defender for Cloud Apps helps you with the process for managing app use in your organization. After you identified the different patterns and behaviors used in your organization, you can create new custom app tags in order to classify each app according to its business status or justification. These tags can be then used for specific monitoring purposes, for example, identify high traffic that is going to apps that are tagged as risky cloud storage apps. App tags can be managed under **Settings** > **Cloud Apps** > **Cloud Discovery** > **App tags**. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
 
-- **Manage discovered apps using Azure Active Directory (Azure AD) Gallery**: Defender for Cloud Apps also uses its native integration with Azure AD to enable you to manage your discovered apps in Azure AD Gallery. For apps that already appear in the Azure AD Gallery, you can apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
+- **Manage discovered apps using Microsoft Entra Gallery**: Defender for Cloud Apps also uses its native integration with Microsoft Entra ID to enable you to manage your discovered apps in Microsoft Entra Gallery. For apps that already appear in the Microsoft Entra Gallery, you can apply single sign-on and manage the app with Microsoft Entra ID. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Microsoft Entra ID**.
 
-    :::image type="content" source="media/manage-app-in-azure-ad-gallery.png" alt-text="Manage app in Azure AD gallery." lightbox="media/manage-app-in-azure-ad-gallery.png":::
+    :::image type="content" source="media/manage-app-in-azure-ad-gallery.png" alt-text="Manage app in Microsoft Entra gallery." lightbox="media/manage-app-in-azure-ad-gallery.png":::
 
 - **Continuous monitoring**: Now that you've thoroughly investigated the apps, you might want to set policies that monitor the apps and provide control where needed.
 

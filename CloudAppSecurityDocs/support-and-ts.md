@@ -15,7 +15,7 @@ This article describes the available support and troubleshooting options for Def
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Defender for Cloud Apps. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available
 in additional languages.
 
-As an admin, you can use the **Help + Support** option to file an online support request for Defender for Cloud Apps from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+As an admin, you can use the **Help + Support** option to file an online support request for Defender for Cloud Apps from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Microsoft Entra ID](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
 * Global administrator
 

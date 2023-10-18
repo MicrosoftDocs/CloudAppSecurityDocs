@@ -95,7 +95,7 @@ The following table describes each field in the **McasShadowItReporting** schema
 | **DownloadedBytes** | Integer | Amount of downloaded data | 2,552,911 |
 | **IpAddress** | String | Source IP address | 127.0.0.0 |
 | **UserName** | String | User name | `Raegan@contoso.com` |
-| **EnrichedUserName** | String | Enriched user name with Azure AD username | `Raegan@contoso.com` |
+| **EnrichedUserName** | String | Enriched user name with Microsoft Entra username | `Raegan@contoso.com` |
 | **AppName** | String | Name of cloud app | Microsoft OneDrive for Business |
 | **AppId** | Integer | Cloud app identifier | 15600 |
 | **AppCategory** | String | Category of cloud app | Cloud storage |

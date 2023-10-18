@@ -16,8 +16,8 @@ This article is an archive that describes updates made in past releases of Defen
 
 December 25, 2022
 
-- **Azure AD identity protection**  
-Azure AD identity protection alerts will arrive directly to Microsoft 365 Defender. The Microsoft Defender for Cloud Apps policies won't affect the alerts in the Microsoft 365 Defender portal. Azure AD identity protection policies will be removed gradually from the cloud apps policies list in the Microsoft 365 Defender portal. To configure alerts from these policies, see [Configure Azure AD IP alert service](/microsoft-365/security/defender/investigate-alerts#configure-aad-ip-alert-service).
+- **Microsoft Entra ID Protection**  
+Microsoft Entra ID Protection alerts will arrive directly to Microsoft 365 Defender. The Microsoft Defender for Cloud Apps policies won't affect the alerts in the Microsoft 365 Defender portal. Microsoft Entra ID Protection policies will be removed gradually from the cloud apps policies list in the Microsoft 365 Defender portal. To configure alerts from these policies, see [Configure Microsoft Entra IP alert service](/microsoft-365/security/defender/investigate-alerts#configure-aad-ip-alert-service).
 
 ### Defender for Cloud Apps release 237, 238 and 239
 
@@ -67,7 +67,7 @@ We've released a new log collector version with the latest vulnerabilities fixes
   1. After selecting **Onboard with session control**, you're presented with an **Edit this app** form.
   1. To onboard the application to session controls, you must select the **Use the app with session controls** option.
   
-  For more information, see [Deploy Conditional Access App Control for catalog apps with Azure AD](proxy-deployment-aad.md).
+  For more information, see [Deploy Conditional Access App Control for catalog apps with Microsoft Entra ID](proxy-deployment-aad.md).
 
 
 ### Defender for Cloud Apps release 234
@@ -293,8 +293,8 @@ June 13, 2021
 - **Expose verified publisher indicating in O365 OAuth apps**  
 Cloud App Security now surfaces whether a publisher of an Microsoft 365 OAuth app has been verified by Microsoft to enable higher app trust. This feature is in a gradual rollout. For more information, see [Working with the OAuth app page](manage-app-permissions.md#working-with-the-oauth-apps-page).
 
-- **Azure Active Directory Cloud App Security admin**  
-A Cloud App Security admin role has been added to Azure Active Directory (Azure AD), allowing the assignment of global admin capabilities to Cloud App Security alone via Azure AD. For more information, see [Microsoft 365 and Azure AD roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security).
+- **Microsoft Entra Cloud App Security admin**  
+A Cloud App Security admin role has been added to Microsoft Entra ID, allowing the assignment of global admin capabilities to Cloud App Security alone via Microsoft Entra ID. For more information, see [Microsoft 365 and Microsoft Entra roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security).
 
 - **Export custom tag and app domains per discovered app**  
   **Export to CSV** in the discovered apps page now include the application's custom app tags and associated web domains. For more information, see [Working with discovered apps](discovered-apps.md).
@@ -309,7 +309,7 @@ A Cloud App Security admin role has been added to Azure Active Directory (Azure 
 May 30, 2021
 
 - **Authentication Context (Step-Up Authentication) in public preview**  
-We've added the ability to protect users working with proprietary and privileged assets by requiring Azure AD Conditional Access policies to be reassessed in the session. For example, if a change in IP address is detected because an employee in a highly sensitive session has moved from the office to the coffee shop downstairs, step-up can be configured to reauthenticate that user. For more information, see [Require step-up authentication (authentication context) upon risky action](tutorial-step-up-authentication.md).
+We've added the ability to protect users working with proprietary and privileged assets by requiring Microsoft Entra Conditional Access policies to be reassessed in the session. For example, if a change in IP address is detected because an employee in a highly sensitive session has moved from the office to the coffee shop downstairs, step-up can be configured to reauthenticate that user. For more information, see [Require step-up authentication (authentication context) upon risky action](tutorial-step-up-authentication.md).
 
 
 ### Cloud App Security release 199
@@ -336,8 +336,8 @@ We've expanded the available events in Cloud App Security. Microsoft 365 Defende
 
 Released April 4, 2021
 
-- **Exclusion of Azure Active Directory groups entities from discovery**  
-We've added the ability to exclude discovered entities based on imported Azure Active Directory groups. Excluding Azure AD groups will hide all discovery-related data for any users in these groups. For more information, see [Exclude entities](discovered-apps.md#exclude-entities).
+- **Exclusion of Microsoft Entra groups entities from discovery**  
+We've added the ability to exclude discovered entities based on imported Microsoft Entra groups. Excluding Microsoft Entra groups will hide all discovery-related data for any users in these groups. For more information, see [Exclude entities](discovered-apps.md#exclude-entities).
 
 - **API connector support for ServiceNow Orlando and Paris versions**  
 We have added support for the ServiceNow API connector to the Orlando and Paris versions. For more information, see [Connect ServiceNow to Microsoft Cloud App Security](./connect-servicenow.md).
@@ -484,8 +484,8 @@ Released August 9, 2020
 - **New Cloud Discovery Menlo Security log parser**  
 Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support the Menlo Security CEF format. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-- **Azure Active Directory (AD) Cloud App Discovery name displays in portal**  
-For Azure AD P1 and P2 licenses, we've updated the product name in the portal to **Cloud App Discovery**. Learn more about [Cloud App Discovery](editions-cloud-app-security-aad.md).
+- **Microsoft Entra Cloud App Discovery name displays in portal**  
+For Microsoft Entra ID P1 and P2 licenses, we've updated the product name in the portal to **Cloud App Discovery**. Learn more about [Cloud App Discovery](editions-cloud-app-security-aad.md).
 
 
 ### Cloud App Security release 179 and 180
@@ -563,8 +563,8 @@ Released May 31, 2020
 - **New activity privacy feature**  
 We've enhanced your ability to granularly determine which users you want to monitor with the ability to make activities private. This new feature enables you to specify users based on group membership whose activities will be hidden by default. Only authorized admins have the option to choose to view these private activities, with each instance being audited in the governance log. For more information, see [Activity privacy](activity-privacy.md).
 
-- **New integration with Azure Active Directory (Azure AD) Gallery**  
-We've leveraged our native integration with Azure AD to give you the ability to navigate directly from an app in the Cloud App Catalog to its corresponding Azure AD Gallery app, and manage it in the gallery. For more information, see [Manage apps with Azure AD Gallery](tutorial-shadow-it.md).
+- **New integration with Microsoft Entra Gallery**  
+We've leveraged our native integration with Microsoft Entra ID to give you the ability to navigate directly from an app in the Cloud App Catalog to its corresponding Microsoft Entra Gallery app, and manage it in the gallery. For more information, see [Manage apps with Microsoft Entra Gallery](tutorial-shadow-it.md).
 
 - **New feedback option available in selected policies**  
 We're interested in receiving your feedback and learning how we can help. So now a new feedback dialog gives you the opportunity to help improve Cloud App Security, when creating, modifying, or deleting a file, anomaly detection, or session policy.
@@ -636,8 +636,8 @@ Cloud App Security now provides the following new activity policy templates enab
   - **External user added (Teams):** Alerts when an external user is added to a team.
   - **Mass deletion (Teams):** Alerts when a user deletes a large number of teams.
 
-- **Azure Active Directory (Azure AD) Identity Protection Integration**  
-You can now control the severity of Azure AD Identity Protection alerts that are ingested into Cloud App Security. Additionally, if you haven't already enabled the **Azure AD Risky sign-in** detection, the detection will be automatically enabled to ingest high severity alerts. For more information, see [Azure Active Directory Identity Protection integration](aadip-integration.md).
+- **Microsoft Entra ID Protection Integration**  
+You can now control the severity of Microsoft Entra ID Protection alerts that are ingested into Cloud App Security. Additionally, if you haven't already enabled the **Microsoft Entra Risky sign-in** detection, the detection will be automatically enabled to ingest high severity alerts. For more information, see [Microsoft Entra ID Protection integration](aadip-integration.md).
 
 #### Cloud App Security release 169
 
@@ -810,7 +810,7 @@ Cloud App Security now provides you with greater visibility into unclassified ac
 Cloud App Security provides the ability to identify risky users on the **Users and accounts** page by specific groups, apps, and even roles. Now you can also investigate the users in your organization by their **Investigation priority** score. For more information, see [Understand the investigation priority score](tutorial-ueba.md#risk-score).
 
 - **Activity policy enhancements**  
-You can now create activity policy alerts based on activity objects. For example, this capability allows you to create alerts on changes to Azure Active Directory administrative roles. For more information about activity objects, see [Activity filters](activity-filters-queries.md#activity-filters).
+You can now create activity policy alerts based on activity objects. For example, this capability allows you to create alerts on changes to Microsoft Entra administrative roles. For more information about activity objects, see [Activity filters](activity-filters-queries.md#activity-filters).
 
 ### Cloud App Security release 155
 
@@ -823,7 +823,7 @@ Cloud App Security now includes new built-in Activity policy templates for AWS s
 Microsoft is moving all its online services to Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption. Therefore, as of September 8, 2019 Cloud App Security will no longer support TLS 1.0 and 1.1 and connections using these protocols will not be supported. For more information about how the change affects you, see [our blog post](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/end-of-support-for-tls-1-0-and-1-1-in-microsoft-cloud-app/ba-p/770507).
 
 - **Enhanced logic for interactive sign-in activities (gradual rollout)**  
-We are gradually rolling out new logic to identify if an Azure Active Directory sign-in activity is interactive. The new logic enhances Cloud App Security's ability to only surface sign-in activities that are initiated by a user.
+We are gradually rolling out new logic to identify if a Microsoft Entra sign-in activity is interactive. The new logic enhances Cloud App Security's ability to only surface sign-in activities that are initiated by a user.
 
 ### Cloud App Security release 154
 
@@ -886,7 +886,7 @@ Cloud App Security now supports the **Trash** governance action for Google Drive
 - **New permission for App admin and Group admin roles**  
 *App/instance admin* and *User group admin* roles now support read-only access.
 - **Legacy authentication sign-in activities (gradual rollout)**  
-Cloud App Security now surfaces Azure Active Directory sign-in activities that use legacy protocols such as ActiveSync. These sign-in activities can be viewed in the activity log and can be used when configuring policies.
+Cloud App Security now surfaces Microsoft Entra sign-in activities that use legacy protocols such as ActiveSync. These sign-in activities can be viewed in the activity log and can be used when configuring policies.
 
 ### Cloud App Security release 150
 
@@ -940,7 +940,7 @@ The Cloud Discovery log parser support for generic CEF format was enhanced to su
 - **Scoped access to Cloud Discovery reports**  
 In addition to the Discovery Admin role, you can now scope access to specific Discovery reports. This enhancement enables you to configure privileges to data of specific sites and business units.
 - **New role support: Global reader**  
-Microsoft Cloud App Security now supports the Azure AD Global Reader role. The Global reader has full read-only access to all aspects of Microsoft Cloud App Security, but cannot change any settings or take any actions.
+Microsoft Cloud App Security now supports the Microsoft Entra Global Reader role. The Global reader has full read-only access to all aspects of Microsoft Cloud App Security, but cannot change any settings or take any actions.
 
 ### Cloud App Security release 145
 
@@ -956,7 +956,7 @@ Cloud App Security added real-time monitoring and control for Dynamics 365 CRM, 
 Released March 3, 2019
 
 - **Unified SecOps Investigation for Hybrid Environments**  
-Because many organizations have hybrid environments, attacks start in the cloud and then pivot to on-premises, meaning SecOps teams need to investigate these attacks from multiple places. By combining signals from cloud and on-premises sources including Microsoft Cloud App Security, Azure ATP, and Azure AD Identity Protection, Microsoft empowers security analysts by providing unified identity and user information, in a single console, ending the need to toggle between security solutions. This gives your SecOps teams more time and the right information to make better decisions, and actively remediate the real identity threats and risks. For more information, see [Unified SecOps Investigation for Hybrid Environments](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/unified-secops-investigation-for-hybrid-environments/ba-p/360850)
+Because many organizations have hybrid environments, attacks start in the cloud and then pivot to on-premises, meaning SecOps teams need to investigate these attacks from multiple places. By combining signals from cloud and on-premises sources including Microsoft Cloud App Security, Azure ATP, and Microsoft Entra ID Protection, Microsoft empowers security analysts by providing unified identity and user information, in a single console, ending the need to toggle between security solutions. This gives your SecOps teams more time and the right information to make better decisions, and actively remediate the real identity threats and risks. For more information, see [Unified SecOps Investigation for Hybrid Environments](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/unified-secops-investigation-for-hybrid-environments/ba-p/360850)
 
 - **Sandboxing capabilities for malware detection** (gradual rollout)  
 Cloud App Security's malware detection capabilities are being expanded to include the ability to identify zero-day malware through advanced Sandboxing technology.  
@@ -990,8 +990,8 @@ The **Alert** page now groups related entities that were involved in an alert to
 
 Released February 3, 2019
 
-- **Session policy configuration in Azure AD**  
-You can now configure session policies to monitor users or block downloads in real-time, directly in Azure AD conditional access. You can still configure advanced session policies directly in Cloud App Security. To walk through this deployment, see [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md).
+- **Session policy configuration in Microsoft Entra ID**  
+You can now configure session policies to monitor users or block downloads in real-time, directly in Microsoft Entra Conditional Access. You can still configure advanced session policies directly in Cloud App Security. To walk through this deployment, see [Deploy Conditional Access App Control for Microsoft Entra apps](proxy-deployment-aad.md).
 
 - **Suggested and Saved queries for OAuth apps**  
 Suggested queries have been added to the OAuth apps page provide out-of-the-box investigation templates to filter your OAuth apps. Suggested queries include custom filters to identify risky apps such as apps authorized by administrators. Saved queries enable you to save custom queries for future use, similar to saved queries available today in the Activity log and Discovery pages.
@@ -1091,9 +1091,9 @@ Suspicious inbox manipulation rules: This policy profiles your environment and t
 - **Support for groups in app permission policies**  
 Cloud App Security now gives you the ability to define app permission policies more granularly, based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the administrators group.
 
-- **Conditional Access App Control now integrates with your on-prem apps via Azure Active Directory Application Proxy**  
-  - The [Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy) provides single sign-on and secure remote access for your web apps hosted on-prem.
-  - These on-prem web apps can now be routed to Microsoft Cloud App Security via Azure AD conditional access to provide real-time monitoring and controls, via [access](access-policy-aad.md) and [session](session-policy-aad.md) policies.
+- **Conditional Access App Control now integrates with your on-prem apps via Microsoft Entra application proxy**  
+  - The [Microsoft Entra application proxy](/azure/active-directory/app-proxy/application-proxy) provides single sign-on and secure remote access for your web apps hosted on-prem.
+  - These on-prem web apps can now be routed to Microsoft Cloud App Security via Microsoft Entra Conditional Access to provide real-time monitoring and controls, via [access](access-policy-aad.md) and [session](session-policy-aad.md) policies.
 
 ### Cloud App Security release 133, 134, 135
 
@@ -1114,7 +1114,7 @@ Released October, 2018
 Released September 25, 2018
 
 - **Conditional Access App Control for Microsoft 365 is now in Public Preview**  
-  - Conditional Access App Control now also supports Microsoft 365 and any app that is configured with Open ID Connect.
+  - Conditional Access App Control now also supports Microsoft 365 and any app that is configured with OpenID Connect.
   - Provide feedback from within a session: This new tool enables you to provide feedback to the Cloud App Security team about the performance of an application under session control, directly from within the session.
 
 - **Native integration with Microsoft Defender ATP for Shadow IT Discovery beyond your corp**  
@@ -1192,7 +1192,7 @@ Released July 8, 2018
 Released June 24, 2018
 
 - **Conditional Access App Control GA**  
-Microsoft Cloud App Security's Conditional Access App Control (reverse proxy) is now generally available for any SAML applications. Conditional Access App Control integrates directly with your Azure AD conditional access policies to **monitor and control your users' sessions in real time**, while enabling them to be productive. Since first previewing the feature, many features and improvements have been made, including:
+Microsoft Cloud App Security's Conditional Access App Control (reverse proxy) is now generally available for any SAML applications. Conditional Access App Control integrates directly with your Microsoft Entra Conditional Access policies to **monitor and control your users' sessions in real time**, while enabling them to be productive. Since first previewing the feature, many features and improvements have been made, including:
   - The ability to create an [access policy](access-policy-aad.md) to manage access to the same apps from native clients, in addition to creating a session policy for browser traffic.
   - The app onboarding process was streamlined to support custom SAML applications in your organization.
   - As part of the Azure worldwide network, the integration and interface have been improved for a seamless experience for users located anywhere in the world.
@@ -1287,7 +1287,7 @@ Released April 29, 2018
 
 Released April 22, 2018
 
-- The public preview of **Conditional Access App Control (formerly known as Cloud App Security Proxy)** has been enhanced with capabilities that facilitate deeper visibility into, and control over various applications. You can now create a Session Policy with an *Activity type* filter, to monitor, and block a variety of app-specific activities. This new filter augments the existing file download control features, to provide you with comprehensive control of the applications in your organization and works hand-in-hand with Azure Active Directory conditional access, to provide real-time visibility and control of risky user sessions — for example, sessions with B2B collaboration users or users coming from an unmanaged device. For more information, see [Session policies](session-policy-aad.md).
+- The public preview of **Conditional Access App Control (formerly known as Cloud App Security Proxy)** has been enhanced with capabilities that facilitate deeper visibility into, and control over various applications. You can now create a Session Policy with an *Activity type* filter, to monitor, and block a variety of app-specific activities. This new filter augments the existing file download control features, to provide you with comprehensive control of the applications in your organization and works hand-in-hand with Microsoft Entra Conditional Access, to provide real-time visibility and control of risky user sessions — for example, sessions with B2B collaboration users or users coming from an unmanaged device. For more information, see [Session policies](session-policy-aad.md).
 
 - Gradual rollout: Cloud App Security's **anomaly detection policies have been improved** to include two new types of threat detection: Ransomware activity and Terminated user activity. Cloud App Security extended its ransomware detection capabilities with anomaly detection to ensure a more comprehensive coverage against sophisticated Ransomware attacks. Using our security research expertise to identify behavioral patterns that reflect ransomware activity, Cloud App Security ensures holistic and robust protection. Terminated user activity enables you to monitor the accounts of terminated users, who may have been de-provisioned from corporate apps, but in many cases they still retain access to certain corporate resources. For more information, see [Get instantaneous behavioral analytics and anomaly detection](anomaly-detection-policy.md).
 
@@ -1295,7 +1295,7 @@ Released April 22, 2018
 
 Released April 8, 2018
 
-- For Microsoft 365 and Azure AD, we are now gradually rolling out the ability to detect internal applications as user account activities performed by the Microsoft 365 and Azure AD applications (both internal and external). This enables you to create policies that will alert you if an application performs unexpected and unauthorized activities.
+- For Microsoft 365 and Microsoft Entra ID, we are now gradually rolling out the ability to detect internal applications as user account activities performed by the Microsoft 365 and Microsoft Entra applications (both internal and external). This enables you to create policies that will alert you if an application performs unexpected and unauthorized activities.
 
 - When exporting an app permissions list to csv, additional fields such as publisher, permissions level, and community usage are included to assist with the compliance and investigation process.
 
@@ -1448,7 +1448,7 @@ Released August 13, 2017
 
 - Cloud App Security added Azure Information Protection native protection support for the following Office files .docm, .docx, .dotm, .dotx, .xlam, .xlsb, .xlsm, .xlsx, .xltx, .xps, .potm, .potx, .ppsx, .ppsm, .pptm, .pptx, .thmx, .vsdx, .vsdm, .vssx, .vssm, .vstx, .vstm (in place of generic protection).
 
-- Any Azure Active Directory Compliance administrator will automatically be granted similar permissions in Cloud App Security. Permissions include the ability to read only and manage alerts, create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
+- Any Microsoft Entra Compliance administrator will automatically be granted similar permissions in Cloud App Security. Permissions include the ability to read only and manage alerts, create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
 
 - We extended the DLP violation context from 40 to 100 characters to help you better understand the context of the violation.
 
@@ -1523,15 +1523,15 @@ Released June 18, 2017
 
 **New Features**
 
-- You can now require users to sign in again to all Microsoft 365 and Azure AD apps. Require sign in again as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option.
+- You can now require users to sign in again to all Microsoft 365 and Microsoft Entra apps. Require sign in again as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option.
 - You can now filter for **Add impersonation role assignment** activities in the Activity log. This activity enables you to detect when an admin has granted an **Application Impersonation** role to any user or system account, using the cmdlet **New-ManagementRoleAssignment**. This role allows the impersonator to perform operations by using the permissions associated with the impersonated account, instead of the permissions associated with the impersonator's account.
 
 **Cloud Discovery Improvements:**
 
-- Cloud Discovery data can now be enriched with Azure Active Directory username data. When you enable this feature, the username received in the discovery traffic logs will be matched and replaced by the Azure AD username. Enriching enables the following new features:
-  - You can investigate Shadow IT usage by Azure Active Directory user.
+- Cloud Discovery data can now be enriched with Microsoft Entra username data. When you enable this feature, the username received in the discovery traffic logs will be matched and replaced by the Microsoft Entra username. Enriching enables the following new features:
+  - You can investigate Shadow IT usage by Microsoft Entra user.
   - You can correlate the discovered cloud app use with the API collected activities.
-  - You can then create custom logs based on Azure AD user groups. For example, a Shadow IT report for a specific Marketing department.
+  - You can then create custom logs based on Microsoft Entra user groups. For example, a Shadow IT report for a specific Marketing department.
 - Improvements were made to the Juniper syslog parser. It now supports the welf and sd-syslog formats.
 - Improvements were made to the Palo Alto parser for better application discovery.
 - To verify that logs are being successfully uploaded, you can now see the status of your log collectors in the Cloud App Security portal.
@@ -1549,11 +1549,11 @@ Released June 4, 2017
 - Users can now perform advanced filtering on discovered apps. Filtering enables you to perform deep investigation. For example, filtering apps based on usage. Wow much upload traffic from discovered apps of certain types? How many users used certain categories of discovered apps? You can also perform multi-selection in the left panel to select multiple categories.
 - Started roll out of new templates for Cloud Discovery that are based on popular searches such as "non-compliant cloud storage app". These basic filters can be used as templates to perform analysis on your discovered apps.
 - For ease of use, you can now do actions such as sanction and unsanction across multiple apps in one action.
-- We're now rolling out the ability to create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, then create a custom report for this group.
+- We're now rolling out the ability to create custom discovery reports based on Microsoft Entra user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, then create a custom report for this group.
 
 **New features:**
 
-- RBAC for Security Readers completed roll out. This feature enables you to manage the permissions you grant to your admins inside the Cloud App Security console. By default, all Azure Active Directory admins, Microsoft 365 Global admins, and Security admins have full permissions in the portal. All Security readers in Azure Active Directory and Microsoft 365 have read-only access in Cloud App Security. You can add additional admins or override permissions using the "Manage Access" option. For more information, see [Managing admin permissions](manage-admins.md).
+- RBAC for Security Readers completed roll out. This feature enables you to manage the permissions you grant to your admins inside the Cloud App Security console. By default, all Microsoft Entra admins, Microsoft 365 Global admins, and Security admins have full permissions in the portal. All Security readers in Microsoft Entra ID and Microsoft 365 have read-only access in Cloud App Security. You can add additional admins or override permissions using the "Manage Access" option. For more information, see [Managing admin permissions](manage-admins.md).
 - We're now rolling out detailed threat intelligence reports for risky IP addresses detected by Microsoft intelligent security graph. When an activity is performed by a botnet, you'll see the name of the botnet (if available) with a link to a detailed report about the specific botnet.
 
 ### Cloud App Security release 97
@@ -1570,7 +1570,7 @@ Released May 24, 2017
 - Cloud Discovery support for Cisco Meraki logs has been improved.
 - The option to suggest an improvement to Cloud Discovery now enables you to suggest new risk factor.
 - The custom log parser was improved to support log formats by separating the setting of time and date and to give you the option to set timestamp.
-- Starting to roll out the ability to create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature, and then create a custom report for this group.
+- Starting to roll out the ability to create custom discovery reports based on Microsoft Entra user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature, and then create a custom report for this group.
 
 **Other updates:**
 
@@ -1587,7 +1587,7 @@ Released May 8, 2017
 
 **New features:**
 
-- Continuing the gradual roll out of the Security Reader permission, which enables you to manage the permissions you grant to your admins inside the Cloud App Security console. By default, all Azure Active Directory and Microsoft 365 Global admins and Security admins have full permissions in the portal. All Security readers in Azure Active Directory and Microsoft 365 will have read-only access in Cloud App Security. For more information, see [Managing admin permissions](manage-admins.md).
+- Continuing the gradual roll out of the Security Reader permission, which enables you to manage the permissions you grant to your admins inside the Cloud App Security console. By default, all Microsoft Entra ID and Microsoft 365 Global admins and Security admins have full permissions in the portal. All Security readers in Microsoft Entra ID and Microsoft 365 will have read-only access in Cloud App Security. For more information, see [Managing admin permissions](manage-admins.md).
 - Completed roll out of Cloud Discovery support for user-defined log parsers for CSV-based logs. Cloud App Security enables you to configure a parser for your previously unsupported appliances by providing you with the tools to delineate which columns correlate to specific data. For more information, see [Custom log parser](custom-log-parser.md).
 
 **Improvements:**
@@ -1614,7 +1614,7 @@ Released April 24, 2017
 
 - The **Accounts** page has been updated with improvements that make detecting risks easier. You can now more easily filter for internal and external accounts. See at a glance whether a user has admin permissions. You can perform actions on each account per-app such as remove permissions, remove user's collaborations, suspend user. Additionally, imported [user groups](user-groups.md) for each account will be displayed.
 
-- For Microsoft work accounts (Microsoft 365 and Azure Active Directory), Cloud App Security groups different user identifiers such as proxy addresses, aliases, SID, and more under a single account. All aliases related to an account will appear under the primary email address. Based on the list of user identifiers, for activities whose actor is a user identifier, the actor will be displayed as the primary user name UPN (User Principal Name). Based on the UPN, groups will be assigned and policies applied. This change will improve investigation of activities and fuse all related activities to the same session for anomalies and group-based policies. This feature will be gradually rolled out over the next month.
+- For Microsoft work accounts (Microsoft 365 and Microsoft Entra ID), Cloud App Security groups different user identifiers such as proxy addresses, aliases, SID, and more under a single account. All aliases related to an account will appear under the primary email address. Based on the list of user identifiers, for activities whose actor is a user identifier, the actor will be displayed as the primary user name UPN (User Principal Name). Based on the UPN, groups will be assigned and policies applied. This change will improve investigation of activities and fuse all related activities to the same session for anomalies and group-based policies. This feature will be gradually rolled out over the next month.
 
 - The Robot tag was added as a possible risk factor in the Browser Use built-in report. Now, in addition to browser use being tagged as outdated, you can see when browser use was performed by a robot.
 - When creating a content inspection file policy, you can now set the filter to include only files with at least 50 matches.
@@ -1640,7 +1640,7 @@ Released March 20, 2017
 
 - You can now apply policies to include or exclude imported user groups.
 - Cloud App Security Anonymization now enables you to configure a custom encryption key. For more information, see [Cloud Discovery anonymization](cloud-discovery-anonymizer.md).
-- In order to have more control over user and account management, you now have direct access to Azure AD account settings for each user and account from within the **Account** page. Just click the cog next to each user. This change enables easier access to advanced user management features group management, configuration of MFA, details about user sign-ins, and the ability to block sign-in.
+- In order to have more control over user and account management, you now have direct access to Microsoft Entra account settings for each user and account from within the **Account** page. Just click the cog next to each user. This change enables easier access to advanced user management features group management, configuration of MFA, details about user sign-ins, and the ability to block sign-in.
 - You can now export a blocking script for unsanctioned apps via the Cloud App Security API. Learn about our APIs in the Cloud App Security portal by clicking the question mark in the menu bar, followed by **API documentation**.
 - The Cloud App Security app connector for ServiceNow was expanded to include support for OAuth tokens (as introduced in Geneva, Helsinki, Istanbul). This change provides a more robust API connection to ServiceNow that doesn't rely on the deploying user. For more information, see [Connect ServiceNow to Microsoft Cloud App Security](./connect-servicenow.md). Existing customers can update their settings in the ServiceNow App connector page.
 - If you configured additional third-party DLP scanners, DLP scan status will now show the status of each connector independently to improve visibility.
@@ -1670,7 +1670,7 @@ Cloud App Security is now officially certified with Microsoft Compliance for ISO
 
 **New features:**
 
-- **Import user groups (preview)**   When you connect apps using API connectors, Cloud App Security now enables you to import user groups, from Microsoft 365 and Azure Active Directory. Typical scenarios that leverage imported user groups include: investigating which docs the HR people look at, or you can check if there's something unusual happening in the executive group, or if someone from the admin group performed an activity outside the US. For details and instructions, see [Importing user groups](user-groups.md).
+- **Import user groups (preview)**   When you connect apps using API connectors, Cloud App Security now enables you to import user groups, from Microsoft 365 and Microsoft Entra ID. Typical scenarios that leverage imported user groups include: investigating which docs the HR people look at, or you can check if there's something unusual happening in the executive group, or if someone from the admin group performed an activity outside the US. For details and instructions, see [Importing user groups](user-groups.md).
 
 - In the Activity log, you can now filter users and users in groups to show which activities were performed by a specific user, and which were performed on a specific user. For example, you can investigate activities in which the user impersonated others, and activities in which others impersonated this user. For more information, see [Activities](activity-filters.md).
 
@@ -1763,7 +1763,7 @@ Released December 13, 2016
 **Minor improvements:**
 
 - New Microsoft 365 (Exchange) mailbox-related events having to do with forwarding rules and adding and removing delegate mailbox permissions.
-- New event that audits the granting of consent to new apps in Azure Active Directory.
+- New event that audits the granting of consent to new apps in Microsoft Entra ID.
 
 ### Cloud App Security release 85
 
