@@ -17,7 +17,7 @@ If you work with both Defender for Cloud Apps and Zscaler, you can integrate the
 
 ## Prerequisites
 
-- A valid license for Microsoft Defender for Cloud Apps, or a valid license for Azure Active Directory Premium P1
+- A valid license for Microsoft Defender for Cloud Apps, or a valid license for Microsoft Entra ID P1
 - A valid license for Zscaler Cloud 5.6
 - An active Zscaler NSS subscription
 

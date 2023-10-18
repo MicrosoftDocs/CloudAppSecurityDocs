@@ -16,7 +16,7 @@ Before you continue, make sure your environment meets the following minimum gene
 
 - **Licensing**: Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans).
 - **Single Sign-On (SSO)**: Apps must be configured with one of the supported SSO solutions.
-  - Azure Active Directory (Azure AD) using SAML 2.0 or OpenID Connect 2.0
+  - Microsoft Entra ID using SAML 2.0 or OpenID Connect 2.0
   - Non-Microsoft IdP using SAML 2.0
 - **Browser support**: Session controls are available for browser-based sessions on these supported browsers: Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest)
 - **Downtime**: Defender for Cloud Apps allows you to define the default behavior to apply if there is a service disruption, such as a component not functioning correctly. You can choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. This default behavior during system downtime can be configured in the Defender for Cloud Apps portal, as follows: **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.
@@ -28,7 +28,7 @@ This section is for admins configuring access and session controls with Defender
 |Section|Issues|
 |---|---|
 |[Network conditions](#network-conditions)|- [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)<br />- [Slow login](#slow-login)<br />- [Additional considerations](#network-conditions-additional-considerations)|
-|[Device identification](#device-identification)|- [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)<br />- [Client certificates are not prompting when expected](#client-certificates-are-not-prompting-when-expected)<br />- [Client certificates are prompting at every login](#client-certificates-are-prompting-at-every-login)<br />- [Additional considerations](#device-identification-additional-considerations)|
+|[Device identification](#device-identification)|- [Misidentified Intune Compliant or Microsoft Entra hybrid joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)<br />- [Client certificates are not prompting when expected](#client-certificates-are-not-prompting-when-expected)<br />- [Client certificates are prompting at every login](#client-certificates-are-prompting-at-every-login)<br />- [Additional considerations](#device-identification-additional-considerations)|
 |[Onboarding an app](#onboarding-an-app)|- [App does not appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)<br />- [App status: Continue Setup](#app-status-continue-setup)<br />- [Cannot configure controls for native apps](#cannot-configure-controls-for-native-apps)<br />- [**App is not recognized** page appears](#something-went-wrong-page-appears)<br />- [**Request session control** option appears](#request-session-control-option-appears)<br />- [Additional considerations](#onboarding-apps-additional-considerations)|
 |[Creating access and session policies](#creating-access-and-session-policies)|- [In Conditional Access policies, you cannot see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)<br />- [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)<br />- [Cannot create session policies for an app](#cannot-create-session-policies-for-an-app)<br />- [Cannot choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)<br />- [Cannot choose **Action**: **Protect**](#cannot-choose-action-protect)<br />- [Additional considerations](#policies-additional-considerations)|
 
@@ -108,47 +108,49 @@ While troubleshooting network conditions, there are some additional things to co
   In general, any proxy will add latency. The advantages of the Defender for Cloud Apps proxy are:
 
   - Leveraging the global availability of Azure domain controllers to geolocate users to the nearest node and reduce their round-trip distance, on a scale that few services around the world have.
-  - Leveraging the integration with Azure AD Conditional Access to only route the sessions you want to proxy to our service, instead of all users in all situations.
+  - Leveraging the integration with Microsoft Entra Conditional Access to only route the sessions you want to proxy to our service, instead of all users in all situations.
 
 ### Device identification
 
 Defender for Cloud Apps provides the following options for identifying a device's management state.
 
 1. Microsoft Intune compliance
-1. Hybrid Azure AD Domain joined
+1. Hybrid Microsoft Entra Domain joined
 1. Client certificates
 
 For more information on device identification, see [Managed Device Identification](proxy-intro-aad.md#managed-device-identification).
 
 Common device identification issues you may encounter include
 
-- [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)
+- [Misidentified Intune Compliant or Microsoft Entra hybrid joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)
 - [Client certificates are not prompting when expected](#client-certificates-are-not-prompting-when-expected)
 - [Client certificates are prompting at every login](#client-certificates-are-prompting-at-every-login)
 - [Additional considerations](#device-identification-additional-considerations)
 
-#### Misidentified Intune Compliant or Hybrid Azure AD joined devices
+<a name='misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices'></a>
 
-Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD joined device information to be passed directly to Defender for Cloud Apps, where the device state can be used as a filter for access or session policies. For more information, see [Introduction to device management in Azure Active Directory](/azure/active-directory/devices/overview).
+#### Misidentified Intune Compliant or Microsoft Entra hybrid joined devices
+
+Microsoft Entra Conditional Access enables Intune compliant and Microsoft Entra hybrid joined device information to be passed directly to Defender for Cloud Apps, where the device state can be used as a filter for access or session policies. For more information, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/devices/overview).
 
 **Recommended steps**
 
 1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Settings**.
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Defender for Cloud Apps.
-1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, click **View configuration** and verify that the services are set up.
+1. For **Intune compliant device identification** and **Microsoft Entra hybrid joined identification** respectively, click **View configuration** and verify that the services are set up.
 
    > [!NOTE]
-   > These are automatically synced from Azure AD and Intune respectively.
+   > These are automatically synced from Microsoft Entra ID and Intune respectively.
 
-1. Create an access or session policy with the **Device Tag** filter equal to **Hybrid Azure AD joined**, **Intune compliant**, or both.
-1. In a browser, log in to a device that is Hybrid Azure AD joined or Intune compliant based on your policy filter.
-1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Hybrid Azure AD joined**, **Intune compliant**, or both based on your policy filters.
-1. If activities are not populating in the Defender for Cloud Apps activity log, go to Azure AD and do the following:
+1. Create an access or session policy with the **Device Tag** filter equal to **Microsoft Entra hybrid joined**, **Intune compliant**, or both.
+1. In a browser, log in to a device that is Microsoft Entra hybrid joined or Intune compliant based on your policy filter.
+1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Microsoft Entra hybrid joined**, **Intune compliant**, or both based on your policy filters.
+1. If activities are not populating in the Defender for Cloud Apps activity log, go to Microsoft Entra ID and do the following:
     1. Under **Monitoring** > **Sign-ins**, verify that there are sign-in activities in logs.
     1. Select the relevant log entry for the device you logged into.
-    1. In the **Details** pane, on the **Device info** tab, verify that the device is **Managed** (Hybrid Azure AD joined) or **Compliant** (Intune compliant). If you cannot verify either state, try another log entry or ensure that your device data is configured correctly in Azure AD.
+    1. In the **Details** pane, on the **Device info** tab, verify that the device is **Managed** (Microsoft Entra hybrid joined) or **Compliant** (Intune compliant). If you cannot verify either state, try another log entry or ensure that your device data is configured correctly in Microsoft Entra ID.
     1. For Conditional Access, some browsers may require additional configuration such as installing an extension. Use the information in the [Conditional Access browser support](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers) guide to configure your browser.
-    1. If you still do not see the device information in the **Sign-ins** page, open a support ticket for Azure AD.
+    1. If you still do not see the device information in the **Sign-ins** page, open a support ticket for Microsoft Entra ID.
 
 #### Client certificates are not prompting when expected
 
@@ -208,7 +210,7 @@ You can onboard the following types of apps for access and session controls:
 When onboarding an app, it is crucial to make sure that you follow each step in the proxy deployment guides:
 
 1. [Deploy catalog apps with session controls](proxy-deployment-aad.md)
-1. [Deploy custom LOB apps, non-featured SaaS apps, and on-premises apps hosted via the Azure AD app proxy with session controls](proxy-deployment-any-app.md)
+1. [Deploy custom LOB apps, non-featured SaaS apps, and on-premises apps hosted via the Microsoft Entra application proxy with session controls](proxy-deployment-any-app.md)
 
 Common scenarios you may encounter while onboarding an app include:
 
@@ -229,10 +231,10 @@ When onboarding an app to Conditional Access App Control, the final step in the 
 
 | Identity provider | Validations |
 |---|---|
-| Azure AD | 1. Make sure you have a valid license for Azure AD Premium P1 in addition to a Defender for Cloud Apps license<br />2. Make sure that the app uses the SAML 2.0  or the OpenID Connect protocol<br />3. Make sure that the app SSO in Azure AD |
+| Microsoft Entra ID | 1. Make sure you have a valid license for Microsoft Entra ID P1 in addition to a Defender for Cloud Apps license<br />2. Make sure that the app uses the SAML 2.0  or the OpenID Connect protocol<br />3. Make sure that the app SSO in Microsoft Entra ID |
 | Non-Microsoft | 1. Make sure you have a valid Defender for Cloud Apps license<br />2. Create a duplicate app<br />3. Make sure that the app uses the SAML protocol<br />4. Validate that you have fully onboarded the app and the status of the app is **Connected** |
 
-1. In your Azure AD policy, under the **Session**, make sure that the session is forced to route to Defender for Cloud Apps, which will in turn allow the app to appear in on the **Conditional Access App Control apps** page, as follows:
+1. In your Microsoft Entra policy, under the **Session**, make sure that the session is forced to route to Defender for Cloud Apps, which will in turn allow the app to appear in on the **Conditional Access App Control apps** page, as follows:
     1. Conditional Access App Control is selected
     1. In the built-in policies drop-down, make sure **Monitor only** is selected
 1. Make sure to navigate to the app in a new browser session by using a new incognito mode or by signing in again.
@@ -263,7 +265,7 @@ Native apps can be detected heuristically and you can use access policies to mon
 
 #### App is not recognized page appears
 
-Defender for Cloud Apps can recognize over 31,000 apps through the Cloud App Catalog (**Discover** -> **Cloud app catalog**). If you are using a custom app that is configured through Azure AD SSO that is NOT one of the 31,000 apps, you will come across an **App is not recognized** page. To resolve the issue, you must configure the app on the Conditional Access App Control.
+Defender for Cloud Apps can recognize over 31,000 apps through the Cloud App Catalog (**Discover** -> **Cloud app catalog**). If you are using a custom app that is configured through Microsoft Entra SSO that is NOT one of the 31,000 apps, you will come across an **App is not recognized** page. To resolve the issue, you must configure the app on the Conditional Access App Control.
 
 **Recommended steps**
 
@@ -296,11 +298,11 @@ After adding an app, you may see the **Request session control** option. This oc
 
 While troubleshooting onboarding apps, there are some additional things to consider.
 
-- **Apps in Conditional Access App Control do not align with Azure AD apps**
+- **Apps in Conditional Access App Control do not align with Microsoft Entra apps**
 
-    The app names in Azure AD and Defender for Cloud Apps might differ based on the ways the products identify apps. Defender for Cloud Apps identifies apps using the app's domains and adds them to the [cloud app catalog](risk-score.md#the-cloud-app-catalog), where we have over 31,000 apps. Within each app, there you can view or add to the subset of domains. In contrast, Azure AD identifies apps using service principals. For more information, see [app and service principal objects in Azure AD](/azure/active-directory/develop/app-objects-and-service-principals).
+    The app names in Microsoft Entra ID and Defender for Cloud Apps might differ based on the ways the products identify apps. Defender for Cloud Apps identifies apps using the app's domains and adds them to the [cloud app catalog](risk-score.md#the-cloud-app-catalog), where we have over 31,000 apps. Within each app, there you can view or add to the subset of domains. In contrast, Microsoft Entra ID identifies apps using service principals. For more information, see [app and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals).
 
-    In practice, it means that selecting **SharePoint Online** in Azure AD is equivalent to selecting apps, such as Word Online and Teams, in Defender for Cloud Apps because the apps use the `sharepoint.com` domain.
+    In practice, it means that selecting **SharePoint Online** in Microsoft Entra ID is equivalent to selecting apps, such as Word Online and Teams, in Defender for Cloud Apps because the apps use the `sharepoint.com` domain.
 
 ### Creating access and session policies
 
@@ -309,7 +311,7 @@ Defender for Cloud Apps provides the following configurable policies:
 1. [Access policies](access-policy-aad.md): To monitor or block access to browser, mobile, and/or desktop apps
 1. [Session policies](session-policy-aad.md). To monitor, block, and perform specific actions to prevent data infiltration and exfiltration scenarios in the browser
 
-To use these policies in Defender for Cloud Apps, you must first configure a policy in Azure AD Conditional Access to extend session controls, as follows: In the Azure AD policy, under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then click **Select**.
+To use these policies in Defender for Cloud Apps, you must first configure a policy in Microsoft Entra Conditional Access to extend session controls, as follows: In the Microsoft Entra policy, under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then click **Select**.
 
 Common scenarios you may encounter while configuring these policies include:
 
@@ -322,11 +324,11 @@ Common scenarios you may encounter while configuring these policies include:
 
 #### In Conditional Access policies, you cannot see the Conditional Access App Control option
 
-To route sessions to Defender for Cloud Apps, Azure AD Conditional Access policies must be configured to include Conditional Access App Control session controls.
+To route sessions to Defender for Cloud Apps, Microsoft Entra Conditional Access policies must be configured to include Conditional Access App Control session controls.
 
 **Recommended steps**
 
-- If you do not see the **Conditional Access App Control** option in your Conditional Access policy, make sure that you have a valid license for Azure AD Premium P1 as well as a valid Defender for Cloud Apps license.
+- If you do not see the **Conditional Access App Control** option in your Conditional Access policy, make sure that you have a valid license for Microsoft Entra ID P1 as well as a valid Defender for Cloud Apps license.
 
 #### Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control
 
@@ -338,7 +340,7 @@ When creating an access or session policy, you may see the following error messa
 1. If you see the message **No apps connected**, use the following guide to deploy apps:
 
     - [Deploy catalog apps that have session control enabled](proxy-deployment-aad.md)
-    - [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls
+    - [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Microsoft Entra application proxy with session controls
 1. If you run into any issues while deploying the app, see [Onboarding an app](#onboarding-an-app).
 
 #### Cannot create session policies for an app
@@ -350,7 +352,7 @@ After adding a custom app, in the **Conditional Access App Control apps** page, 
 
 **Recommended steps**
 
-1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
+1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Microsoft Entra application proxy with session controls.
 1. Create a session policy, select the **App** filter, make sure that your app is now listed in the dropdown list.
 
 #### Cannot choose Inspection Method: Data Classification Service
@@ -385,9 +387,9 @@ In session policies, when using the **Control file download (with inspection)** 
 
 While troubleshooting onboarding apps, there are some additional things to consider.
 
-- **Understanding the difference between the Azure AD Conditional Access policy settings: "Monitor only", "Block downloads", and "Use custom policy"**
+- **Understanding the difference between the Microsoft Entra Conditional Access policy settings: "Monitor only", "Block downloads", and "Use custom policy"**
 
-    In Azure AD Conditional Access policies, you can configure the following built-in Defender for Cloud Apps controls: **Monitor only** and **Block downloads**. This applies and enforces the Defender for Cloud Apps proxy feature for cloud apps and conditions configured in Azure AD. For more complex policies, select **Use custom policy**, which allows you to configure access and session policies in Defender for Cloud Apps.
+    In Microsoft Entra Conditional Access policies, you can configure the following built-in Defender for Cloud Apps controls: **Monitor only** and **Block downloads**. This applies and enforces the Defender for Cloud Apps proxy feature for cloud apps and conditions configured in Microsoft Entra ID. For more complex policies, select **Use custom policy**, which allows you to configure access and session policies in Defender for Cloud Apps.
 
 - **Understanding the "Mobile and desktop" client app filter option in access policies**
 
