@@ -15,7 +15,7 @@ If you work with both Defender for Cloud Apps and Menlo Security, you can integr
 
 ## Prerequisites
 
-- A valid license for Microsoft Defender for Cloud Apps, or a valid license for Azure Active Directory Premium P1
+- A valid license for Microsoft Defender for Cloud Apps, or a valid license for Microsoft Entra ID P1
 - A valid license for Menlo Security
 
 ## Deployment
