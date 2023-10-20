@@ -26,7 +26,7 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
 > [!NOTE]
-> As of August 28 2022, users who were assigned a Microsoft Entra ID **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to a Microsoft Entra ID **Security Operator**.
+> As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
 ## September 2023
 
@@ -175,7 +175,7 @@ For more information, see [Hunt for threats in app activities](app-activity-thre
 
 ### App hygiene update with  Microsoft Entra
 
-Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload ID Premium.
+Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium.
 
 For more information, see [Secure apps with app hygiene features](app-governance-secure-apps-app-hygiene-features.md) and [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview).
 
@@ -206,7 +206,7 @@ April 30, 2023
 
     The capabilities on the following pages are fully integrated into Microsoft 365 Defender, and therefore don't have their own standalone experience in Microsoft 365 Defender:
   
-    - [Settings > Microsoft Entra ID Protection](/microsoft-365/security/defender/investigate-alerts)
+    - [Settings > Azure AD Identity Protection](/microsoft-365/security/defender/investigate-alerts)
     - [Settings > App Governance](app-governance-get-started.md)
     - [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity)
   
@@ -297,3 +297,5 @@ Defender for Cloud Apps already includes the ability to explore policy file matc
 - For a description of releases prior to those listed here, see [Past releases of Microsoft Cloud App Security](release-note-archive.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
+
