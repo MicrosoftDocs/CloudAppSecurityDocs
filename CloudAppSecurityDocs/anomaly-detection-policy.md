@@ -67,10 +67,16 @@ The following anomaly detection policies are available:
 * Google Workspace
 * Microsoft 365 (requires a valid license for Microsoft Defender for Microsoft 365 P1)
 
->[!NOTE]
->Malware detected in Microsoft 365 apps is automatically blocked by the app and the user can't reach the file. Only the app's admin has access.
->In Box, Dropbox, and Google Workspace, Defender for Cloud Apps doesn't block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
+> [!NOTE]
+> * Malware detected in Microsoft 365 apps is automatically blocked by the app and the user can't reach the file. Only the app's admin has access.
+> 
 
+> * In Box, Dropbox, and Google Workspace, Defender for Cloud Apps doesn't block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
+> 
+
+> 
+>    * In case you are not sure whether a file detected is a true malware or a false positive, you can go to the Microsoft Security Intelligence page at [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) to submit the file for farther analysis.
+>    
 ### Activity from anonymous IP addresses
 
 * This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device's IP address, and may be used for malicious intent. This detection uses a machine-learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
@@ -210,4 +216,5 @@ You can triage the various alerts triggered by the new anomaly detection policie
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 
