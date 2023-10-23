@@ -34,6 +34,8 @@ For more information on what's new with other Microsoft Defender security produc
 
 Now, all customers are automatically redirected to Microsoft 365 Defender from the classic Microsoft Defender for Cloud Apps portal, as the redirect is in general availability. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
 
+Integrating Defender for Cloud Apps inside Microsoft 365 Defender streamlines the process of detecting, investigating, and mitigating threats to your users, apps, and data – so that you can review many alerts and incidents from a single pane of glass, in one XDR system.
+
 For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps#redirection-from-the-classic-microsoft-defender-for-cloud-apps-portal-to-microsoft-365-defender).
 
 ## September 2023
