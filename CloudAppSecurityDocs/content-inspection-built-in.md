@@ -39,7 +39,7 @@ After a file is scanned, the following actions occur:
 
 2. If there's a policy that requires content inspection and the file qualifies for content inspection, the content is queued for inspection. The queue length depends on the size of the tenant and the number of files that require scan.
 
-3. At this point, you can view the status of the content inspection by going to **Investigate** > **Files** and clicking on a file. In the file drawer that opens with the details of the file, the **Content Inspection status** displays either **Completed**, **Pending**, **Not applicable** (if the file type isn't supported or no policy requires content inspection for this file), or a failure message. For information about content scan failure messages, see [Troubleshooting content inspection](troubleshooting-content-inspection.md).
+3. At this point, you can view the status of the content inspection by going to **Investigate** > **Files** and clicking on a file. In the file drawer that opens with the details of the file, the **Content Inspection status** displays either **Completed**, **Pending**, **Not applicable** (if the file type isn't supported, or if no policy requires content inspection for this file), or a failure message. For information about content scan failure messages, see [Troubleshooting content inspection](troubleshooting-content-inspection.md).
 
 > [!NOTE]
 > If you see a dash in the scan status, this means that the file is not queued to be scanned. See [File policies](data-protection-policies.md) for information on setting content inspection policies.
