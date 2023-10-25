@@ -65,7 +65,7 @@ Note the following limits when using Microsoft Purview labels with Defender for 
 | **Password protected files** |Defender for Cloud Apps can't read labels on password-protected files. |
 | **Empty files** | Empty files aren't labeled by Defender for Cloud Apps. |
 | **Libraries that require checkout** | Defender for Cloud Apps can't label files located in libraries that are [configured to require checkout](https://support.microsoft.com/office/set-up-a-library-to-require-check-out-of-files-0c73792b-f727-4e19-a1f9-3173899e695b). |
-| **Scope Requirements** | In order for Defender for Cloud Apps to recognize a sensitivity label, the label scope in Purview must be configured as at least Files and Emails. |
+| **Scope requirements** | In order for Defender for Cloud Apps to recognize a sensitivity label, the label scope in Purview must be configured for at least Files and Emails. |
 
 > [!NOTE]
 > Microsoft Purview is Microsoft’s principal solution for labeling services. For more information, see the [Microsoft Purview documentation](/purview/apply-sensitivity-label-automatically).
