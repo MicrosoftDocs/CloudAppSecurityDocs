@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Purview Information Protection 
 description: This article provides information about how to use sensitivity labels from Microsoft Purview Information Protection in Defender for Cloud Apps for added control of your organization's cloud app use.
-ms.date: 01/29/2023
+ms.date: 10/26/2023
 ms.topic: how-to
 ---
 # Integrate Microsoft Purview Information Protection
@@ -130,7 +130,7 @@ Follow these instructions to create the file policy:
 
 > [!NOTE]
 >
-> - The ability to apply a sensitivity label is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, open a support ticket.
+> - The ability to apply a sensitivity label is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC).
 > - When a policy is disabled, all pending labeling tasks for that policy are suspended.
 > - In the label configuration, permissions must be assigned to any authenticated user, or all users in your organization, for Defender for Cloud Apps to read label information.
 
