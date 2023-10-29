@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 08/17/2023
+ms.date: 10/29/2023
 ms.topic: overview
 ---
 
@@ -28,13 +28,31 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
-## September 2023
+## November 2023
 
 ### New Cloud app catalog category for Generative AI
 
 The Defender for Cloud Apps App Catalog now supports the new **Generative AI** category for large language model (LLM) apps, like Microsoft Bing Chat, Google Bard, ChatGPT, and more. Together with this new category, Defender for Cloud Apps has added hundreds of generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
 
 For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
+
+## October 2023
+
+### Automatic redirect to Microsoft 365 Defender general availability 
+
+Now, all customers are automatically redirected to Microsoft 365 Defender from the classic Microsoft Defender for Cloud Apps portal, as the redirect is in general availability. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
+
+Integrating Defender for Cloud Apps inside Microsoft 365 Defender streamlines the process of detecting, investigating, and mitigating threats to your users, apps, and data – so that you can review many alerts and incidents from a single pane of glass, in one XDR system.
+
+For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps#redirection-from-the-classic-microsoft-defender-for-cloud-apps-portal-to-microsoft-365-defender).
+
+## September 2023
+
+### More discovery for Shadow IT events (Preview)
+
+Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy.
+
+For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy-preview) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
 
 ### Continuous NRT frequency supported for CloudAPPEvents table (Preview)
 

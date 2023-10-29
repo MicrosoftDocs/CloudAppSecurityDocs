@@ -235,15 +235,15 @@ This detection identifies OAuth apps created recently in relatively new publishe
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-    **Recommended action**: 
-    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
-    - Investigate app activity and check affected accounts for suspicious activity. 
+    **Recommended action**:
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
+    - Investigate app activity and check affected accounts for suspicious activity.
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.
 
-- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization. 
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
     **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
 
@@ -259,9 +259,9 @@ This alert identifies OAuth apps registered recently in a relatively new publish
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-    **Recommended action**: 
+    **Recommended action**:
     - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
     - Investigate app activity and check affected accounts for suspicious activity. 
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
@@ -283,10 +283,10 @@ This alert finds multitenant OAuth apps that have made numerous calls to Microso
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-    **Recommended action**: 
-    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    **Recommended action**:
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
     - Investigate app activity and check affected accounts for suspicious activity. 
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.
@@ -297,7 +297,7 @@ This alert finds multitenant OAuth apps that have made numerous calls to Microso
 
 **Understand the scope of the breach**
 
-Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts.
 
 ### Suspicious OAuth app used to send numerous emails
 
@@ -307,11 +307,11 @@ This alert indicates an OAuth app that has made numerous calls to Microsoft Grap
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-    **Recommended action**: 
-    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
-    - Investigate app activity and check affected accounts for suspicious activity. 
+    **Recommended action**:
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
+    - Investigate app activity and check affected accounts for suspicious activity.
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.
 
@@ -321,7 +321,7 @@ This alert indicates an OAuth app that has made numerous calls to Microsoft Grap
 
 **Understand the scope of the breach**
 
-Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts.
 
 ## Persistence alerts
 
@@ -491,7 +491,7 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
    **Recommended action**: 
     - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
-    - Search the *CloudAppEvents* advanced hunting table to understand app activity and determine if the observed behavior is expected.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and determine if the observed behavior is expected.
     - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
@@ -515,10 +515,10 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 
 - **TP**: If you are able to confirm that the OAuth app is delivered from an unknown source and is performing unusual activities.
 
-   **Recommended action**: 
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details.
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
-    - Search the *CloudAppEvents* advanced hunting table to understand app activity and determine if the observed behavior is expected.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and determine if the observed behavior is expected.
     - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
@@ -531,10 +531,9 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
 
-
 ### Suspicious OAuth app email activity through Graph API
 
-**Severity**: High 
+**Severity**: High
 
 This detection generates alerts for multitenant OAuth apps, registered by users with a high risk sign in, that made calls to Microsoft Graph API to perform suspicious email activities within a short period of time.
 
@@ -550,9 +549,9 @@ This detection verifies whether the API calls were made for mailbox rule creatio
 
     - Investigate app activity and check affected accounts for suspicious activity.
 
-    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts and remove the inbox rule. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts and remove the inbox rule.
 
-    - Classify the alert as a true positive. 
+    - Classify the alert as a true positive.
 
 
 - **FP**: If, after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
@@ -569,7 +568,7 @@ This detection verifies whether the API calls were made for mailbox rule creatio
 
 **Severity**: High
 
-This detection generates alerts for multitenant OAuth apps, registered by users with a high-risky sign in, that made calls to Microsoft Exchange Web Services (EWS) API to perform suspicious email activities within a short period of time. 
+This detection generates alerts for multitenant OAuth apps, registered by users with a high-risky sign in, that made calls to Microsoft Exchange Web Services (EWS) API to perform suspicious email activities within a short period of time.
 
 This detection verifies whether the API calls were made to update inbox rules, move items, delete email, delete folder, or delete attachment. Apps that trigger this alert might be actively exfiltrating or deleting confidential data and clearing tracks to evade detection.
 
@@ -595,8 +594,7 @@ This detection verifies whether the API calls were made to update inbox rules, m
 
     - Understand the scope of the breach:
 
-      Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
-
+      Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts.
 
 ## Privilege escalation alerts
 
@@ -662,8 +660,8 @@ This detection generates alerts for non-Microsoft OAuth apps with publisher doma
 
 - **TP**: If you can confirm that the publisher domain or redirect URL of the app is typosquatted and doesn't relate to the true identity of the app.
 
-  **Recommended action**: 
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+  **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details.
     - Check the app for other signs of spoofing or impersonation and any suspicious activity.
     - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
@@ -738,8 +736,8 @@ This alert finds OAuth apps registered recently in a relatively new publisher te
 
 - **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-  **Recommended action**: 
-    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+  **Recommended action**:
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
     - Investigate app activity and check affected accounts for suspicious activity. 
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.  
@@ -1036,10 +1034,10 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 
 - **TP**: If you can confirm that the app has created mailbox rules or made a large number of unusual Graph API calls to the Exchange workload.
 
-   **Recommended action**: 
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details.
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
-    - Search the *CloudAppEvents* advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
     - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
@@ -1051,7 +1049,6 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 1. Review all activities performed by the app.
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
-
 
 ## Next steps
 
