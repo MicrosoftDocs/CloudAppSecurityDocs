@@ -354,7 +354,7 @@ While troubleshooting onboarding apps, remember that apps in Conditional Access 
 
 The app names in Azure AD and Defender for Cloud Apps might differ based on the ways the products identify apps. 
 
-- Defender for Cloud Apps identifies apps using the app's domains and adds them to the [cloud app catalog](risk-score.md#the-cloud-app-catalog), where we have over 31,000 apps. Within each app, there you can view or add to the subset of domains. 
+- Defender for Cloud Apps identifies apps using the app's domains and adds them to the [cloud app catalog](risk-score.md), where we have over 31,000 apps. Within each app, there you can view or add to the subset of domains. 
 
 - In contrast, Azure AD identifies apps using service principals. For more information, see [app and service principal objects in Azure AD](/azure/active-directory/develop/app-objects-and-service-principals).
 
