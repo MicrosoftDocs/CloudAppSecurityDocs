@@ -22,16 +22,16 @@ Apps in the cloud app catalog are scored based on more than 90 risk factors. Thi
 
 Defender for Cloud Apps rates risks based on regulatory certification, industry standards, and best practices. The score represents the Defender for Cloud Apps assessment of this particular app's maturity of use for enterprises.
 
-The total score of any given app is a weighted average of sub-scores for the following risk categories, which Defender for Cloud Apps considers when assessing reliability:
+The total score of any given app is a weighted average of subscores for the following risk categories, which Defender for Cloud Apps considers when assessing reliability:
 
 |Risk category  |Description  |
 |---------|---------|
 |**General**     |  Basic facts about the company that produces the app, including its domain, founding year, and popularity. These fields are meant to show the company's stability on the most basic level.       |
-|**Security**     |   Accounts for all standards dealing with the security of the data used by the discovered app, and includes fields such as multi-factor authentication, encryption, data classification, and data ownership.    |
+|**Security**     |   Accounts for all standards dealing with the security of the data used by the discovered app, and includes fields such as multifactor authentication, encryption, data classification, and data ownership.    |
 |**Compliance**     |   Accounts for the common best-practice compliance standards that are upheld by the company that produces the app. The list of specifications includes standards such as HIPAA, CSA, and PCI-DSS.      |
-|**Legal**     |   Accounts for the regulations and policies in-place to ensure data protection and privacy of the app's users such as GDPR, DMCA, and data retention policy.      |
+|**Legal**     |   Accounts for the regulations and policies in-place to ensure data protection and privacy of the app's users, such as DMCA, and data retention policy.      |
 
-Each sub-score includes many more properties. Each property receives a preliminary score between 0 and 10, depending on the value. 
+Each subscore includes many more properties. Each property receives a preliminary score between 0 and 10, depending on the value. 
 
 - *True*/*False* values receive 10 or 0 accordingly.
 - *Continuous properties*, such as domain age, receive a certain value within the spectrum. 
@@ -85,7 +85,7 @@ For example:
 
 ## Override the risk score
 
-You may want to override the risk score for a specific app without changing the way that it's weighted so that you can get immediate results for your organization. For example, if you have an app where the risk score is 8, but the app is sanctioned and encouraged by your organization, you might want to change the risk score to 10 for the selected app only.
+You might want to override the risk score for a specific app without changing the way that it's weighted so that you can get immediate results for your organization. For example, if you have an app where the risk score is 8, but the app is sanctioned and encouraged by your organization, you might want to change the risk score to 10 for the selected app only.
 
 **To override the risk score for a specific app**:
 
@@ -103,7 +103,7 @@ You might want to request a review by the Defender for Cloud Apps security analy
 
 **To request a risk score change**:
 
-1. Sign into Microsoft 365 Defender and select **Cloud apps** > **Cloud app catalog**, and locate the app your want to update.
+1. Sign into Microsoft 365 Defender and select **Cloud apps** > **Cloud app catalog**, and locate the app you want to update.
 
 1. In the **Cloud App Catalog** page, in the app row you want to update, select the three dots at the end of the row and choose **Request score update**. For example:
 
@@ -139,12 +139,12 @@ Advanced filters include the following:
 |---------|---------|
 |**App tags**     |    Select **Sanctioned**, **Unsanctioned**, or create custom tags to use in a customized filter.  |
 |**Apps and domains**     |    Filter for specific apps or apps used in specific domains.     |
-|**Categories**     |  Filter for according to app categories, listed on the left of the **Cloud app catalog** page. For more information, see [Supported Cloud app catalog categories](#supported-cloud-app-catalog-categories).       |
-|**Compliance risk factor**     |   Filter for specific standards, certifications, and compliance your app may comply with. For example: HIPAA, ISO 27001, SOC 2, and PCI-DSS.      |
+|**Categories**     |  Filter according to app categories, listed on the left of the **Cloud app catalog** page. For more information, see [Supported Cloud app catalog categories](#supported-cloud-app-catalog-categories).       |
+|**Compliance risk factor**     |   Filter for specific standards, certifications, and compliance your app might comply with. For example: HIPAA, ISO 27001, SOC 2, and PCI-DSS.      |
 |**General risk factor**     |   Filter for general risk factors such as consumer popularity, data center locale, and more.      |
-|**Legal risk factor**     |  Filter based on all legal regulations and policies to ensure data protection your user privacy. For example, GDPR, DMCA, and data retention policies.      |
+|**Legal risk factor**     |  Filter based on all legal regulations and policies to ensure data protection your user privacy. For example, DMCA, and data retention policies.      |
 | **Risk score**     |  Filter by a specific risk score, such as to view only risky apps.       |
-|**Security risk factor**     |   Filter based on specific security measures, such as encryption at rest, multi-factor authentication, and others.      |
+|**Security risk factor**     |   Filter based on specific security measures, such as encryption at rest, multifactor authentication, and others.      |
 
 
 ### Supported cloud app catalog categories
@@ -155,7 +155,7 @@ The following table lists the cloud app catalog's supported categories:
 | -------------------------- | --------------------- |
 | **Accounting and finance**     | Cloud apps that provide financial services, such as insurance services, banking, stocks and more. |
 | **Advertising**                | Cloud apps that provide advertising tools and advertising platforms. |
-| **Business intelligence**      | Cloud apps that help organizations to make data-driven business decisions, as well as creating data-based reports and dashboards.     |
+| **Business intelligence**      | Cloud apps that help organizations to make data-driven business decisions and create data-based reports and dashboards.     |
 | **Business management**        | Cloud apps that provide business management solutions based on enterprise resource planning (ERP).           |
 | **CRM**                        | Cloud apps that provide customer relationship management tools, helping organizations to build stronger relationships with their customers, boost conversations and improve revenues.             |
 | **Cloud computing platform**   | Cloud apps that provide cloud computing platforms used for cloud storage, virtual computing, networking, analytics, etc.  |
@@ -169,19 +169,19 @@ The following table lists the cloud app catalog's supported categories:
 | **Data analytics**             | Cloud apps that provide tools for manipulating and transforming data, as well as running complex algorithms and logic on top of it. |
 | **Development tools**          | Cloud apps that provide tools helping individuals to create new apps, websites and online services. |
 | **E-commerce**                 | Cloud apps that provide e-commerce platforms and tools, for either purchasing or selling products. |
-| **Education**                  | Cloud apps that provide education tools and platforms, such as training, test, knowledge base, quizzes and management of the studying process for individuals and organizations.  |
+| **Education**                  | Cloud apps that provide education tools and platforms, such as training, test, knowledge base, knowledge checks, and management of the studying process for individuals and organizations.  |
 | **Forums**                     | Cloud apps that provide forums and blogs, helping sharing knowledge and maintaining communities. |
 | **Health**                     | Cloud apps that provide health services such as fitness products, health insurance, doctors’ appointments scheduling, laboratory services and more.   |
 | **Hosting services**           | Cloud apps that provide hosting services such as servers and websites hosting. |
 | **Human-resource management**  | Cloud apps that are used to process and manage human resources and business processes related data. |
-| **Generative AI** | Cloud apps that can generate digital media content such text, images, videos etc using generative AI models. |
+| **Generative AI** | Cloud apps that can generate digital media content such text, images, videos, and so on, using generative AI models. |
 | **IT services**                | Cloud apps that are used to manage organization IT procedures and operations.  |
 | **Internet of Things**         | Cloud apps that are used to collect and manage data of smart physical devices connected to the internet.  |
 | **Marketing**                  | Cloud apps that are used by businesses to manage product marketing strategy and operations. |
 | **News and entertainment**     | Cloud apps that provide news and entertainment information. |
 | **Online meetings**            | Cloud apps that are used for online audio and video conferencing.  |
 | **Operations management**      | Cloud apps that are used to manage business practices of organization’s internal flows and procedures. |
-| **Personal instant messaging** | Cloud apps that provide non-business real-time text correspondence using an online chat. |
+| **Personal instant messaging** | Cloud apps that provide nonbusiness real-time text correspondence using an online chat. |
 | **Product design**             | Cloud apps that provide product sketching and prototyping tools. |
 | **Productivity**               | Cloud apps that are used for creating, producing and modifying information and media. |
 | **Project management**         | Cloud apps that are used for project planning, project scheduling and project resource management. |
@@ -192,7 +192,7 @@ The following table lists the cloud app catalog's supported categories:
 | **Supply chain and logistics** | Cloud apps that are used to execute supply chain operations and manage supplier relationships. |
 | **Transportation and travel**  | Cloud apps that are used to create, track and manage personal or business travel and transportation inquiries and orders. |
 | **Vendor management system**   | Cloud apps that allow business to manage and procure staffing and placement services, as well as outside contracting or contingent labor. |
-| **Web analytics**              | Cloud apps that are used to analyze the use patterns and behavior of visitors to a website. Such apps allow to optimize and gain insight to attract more visitors and improve website experience. |
+| **Web analytics**              | Cloud apps that are used to analyze the use patterns and behavior of visitors to a website. Such apps allow you to optimize and gain insight to attract more visitors and improve website experience. |
 | **Webmail**                    | Cloud apps that are used to access email via a web browser.         |
 | **Website monitoring**         | Cloud apps that are used to track website visitors, performance and operations, as well as that the website performs as expected and any issue is being handled and resolved  |
 

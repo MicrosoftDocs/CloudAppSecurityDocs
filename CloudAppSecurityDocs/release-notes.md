@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 10/29/2023
+ms.date: 10/31/2023
 ms.topic: overview
 ---
 
@@ -32,7 +32,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ### New Cloud app catalog category for Generative AI
 
-The Defender for Cloud Apps App Catalog now supports the new **Generative AI** category for large language model (LLM) apps, like Microsoft Bing Chat, Google Bard, ChatGPT, and more. Together with this new category, Defender for Cloud Apps has added hundreds of generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
+The Defender for Cloud Apps app catalog now supports the new **Generative AI** category for large language model (LLM) apps, like Microsoft Bing Chat, Google Bard, ChatGPT, and more. Together with this new category, Defender for Cloud Apps has added hundreds of generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
 
 For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
 
@@ -109,7 +109,7 @@ For more information, see [Microsoft Defender for Cloud Apps open app connector 
 
 ### New app connectors for Asana and Miro (Preview)
 
-Defender for Cloud Apps now supports built-in app connectors for Asana and Miro, which both may hold critical data your organization and are therefore targets for malicious actors. Connect these apps to Defender for Cloud Apps for improved insights into your users' activities and threat detection with machine learning-based anomaly detections.
+Defender for Cloud Apps now supports built-in app connectors for Asana and Miro, which both might hold critical data your organization and are therefore targets for malicious actors. Connect these apps to Defender for Cloud Apps for improved insights into your users' activities and threat detection with machine learning-based anomaly detections.
 
 For more information, see:
 
@@ -173,7 +173,7 @@ For more information, see:
 
 ### App governance OAuth convergence
 
-For customers who've enabled app governance, we've consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. 
+For customers who have enabled app governance, we have consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. 
 
 In the Microsoft 365 Defender portal, we've merged all capabilities originally under **Cloud apps > OAuth apps under  App governance**, where you can manage all OAuth apps under a single pane of glass.
 
@@ -199,7 +199,7 @@ For more information, see [Secure apps with app hygiene features](app-governance
 
 ## May 2023
 
-- **Behavior-generating policies no longer generate alerts** (Preview). Starting May 28, 2023, policies that generate *behaviors* in Microsoft 365 Defender advanced hunting do not generate alerts. The policies will continue generating *behaviors* regardless of being enabled or disabled in the tenant's configuration.
+- **Behavior-generating policies no longer generate alerts** (Preview). Starting May 28, 2023, policies that generate *behaviors* in Microsoft 365 Defender advanced hunting don't generate alerts. The policies continue generating *behaviors* regardless of being enabled or disabled in the tenant's configuration.
 
     For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 
@@ -245,7 +245,7 @@ April 24, 2023
 April 2, 2023
 
 - New "behaviors" data type in Microsoft 365 Defender advanced hunting (Preview)  
-To enhance our threat protection and reduce alert fatigue, we've added a new data layer called "behaviors" to the Microsoft Defender for Cloud Apps experience in Microsoft 365 Defender advanced hunting. This feature is intended to provide relevant information for investigations by identifying anomalies or other activities that may be related to security scenarios, but don't necessarily indicate malicious activity or a security incident. In this first stage, some of the Microsoft Defender for Cloud App anomaly detections will also be presented as behaviors. In future phases, these detections will only generate behaviors and not alerts. For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
+To enhance our threat protection and reduce alert fatigue, we've added a new data layer called "behaviors" to the Microsoft Defender for Cloud Apps experience in Microsoft 365 Defender advanced hunting. This feature is intended to provide relevant information for investigations by identifying anomalies or other activities that might be related to security scenarios, but don't necessarily indicate malicious activity or a security incident. In this first stage, some of the Microsoft Defender for Cloud App anomaly detections will also be presented as behaviors. In future phases, these detections will only generate behaviors and not alerts. For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 
 ## March 2023
 ### Defender for Cloud Apps release 249
@@ -253,7 +253,7 @@ To enhance our threat protection and reduce alert fatigue, we've added a new dat
 March 19, 2023
 
 - **Automatic redirection from Microsoft Defender for Cloud Apps to the Microsoft 365 Defender portal (Preview)**  
-A new automatic redirection toggle will allow you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft 365 Defender. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft 365 Defender portal. The toggle default value is set to **Off**, and admins will need explicitly to opt in to the automatic redirection and start using the Microsoft 365 Defender exclusively. You still have an option to opt out from the Microsoft 365 Defender experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+A new automatic redirection toggle allows you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft 365 Defender. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft 365 Defender portal. The toggle default value is set to **Off**, and admins need explicitly to opt in to the automatic redirection and start using the Microsoft 365 Defender exclusively. You still have an option to opt out from the Microsoft 365 Defender experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
 
 ### Defender for Cloud Apps release 248
 
@@ -273,7 +273,7 @@ The Defender for Cloud Apps connector for ServiceNow now supports the ServiceNow
 February 19, 2023
 
 - **SaaS Security Posture Management (SSPM) capabilities update announcements (GA and Public preview)**  
-We have made important improvements to our governance and protection of third-party software-as-a-service (SaaS) applications. These improvements include assessments to identify risky security configurations using Microsoft Defender for Cloud Apps, as well as smoother integration into the Microsoft Secure Score experience. We have now released Salesforce and ServiceNow to general availability, while Okta, GitHub, Citrix ShareFile, and DocuSign are currently in public preview. For more information, see [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+We have made important improvements to our governance and protection of third-party software-as-a-service (SaaS) applications. These improvements include assessments to identify risky security configurations using Microsoft Defender for Cloud Apps, and smoother integration into the Microsoft Secure Score experience. Salesforce and ServiceNow support is now in general availability, while Okta, GitHub, Citrix ShareFile, and DocuSign are currently in public preview. For more information, see [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 - **Malware detection policy governance actions now available (preview)**  
 Automatic actions for files detected by the malware detection policy are now available as part of the policy configuration. The actions differ from app to app. For more information, see [Malware governance actions (Preview)](governance-actions.md#malware-governance-actions-preview).
@@ -295,7 +295,7 @@ Automatic actions for files detected by the malware detection policy are now ava
     | fasterxml.jackson.core.version | 2.13.3               | 2.14.1               | 2.14  was released in Nov 2022                               |
     | org.jacoco                     | 0.7.9                | 0.8.8                | Version  0.8.8 from Apr 05, 2022                             |
 
-    To begin using the new version, you'll need to stop your log collectors, remove the current image, and install the new one.
+    To begin using the new version, you need to stop your log collectors, remove the current image, and install the new one.
 
     To verify the new version is running, run the following command inside the Docker container:
 
