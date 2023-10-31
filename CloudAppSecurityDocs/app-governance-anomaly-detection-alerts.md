@@ -2,7 +2,7 @@
 title: Investigate app governance threat detection alerts | Microsoft Defender for Cloud Apps
 ms.date: 08/06/2023
 ms.topic: conceptual
-ms.custom: has-azure-ad-ps-ref
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 description: Learn how to investigate threat detection alerts from app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
 ---
 
@@ -701,17 +701,17 @@ This detection identifies an OAuth app that was detected by Machine Learning mod
 1. Review the scopes granted by the app.
 1. Review the user activity associated with this app.
 
-### Suspicious enumeration activities performed using Azure Active Directory PowerShell
+### Suspicious enumeration activities performed using Microsoft Graph PowerShell
 
 **Severity**: Medium
 
 **MITRE ID**: T1087
 
-This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an Azure AD PowerShell application.
+This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) application.
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that suspicious/unusual enumeration activities were performed by the Azure AD PowerShell application.
+- **TP**: If you’re able to confirm that suspicious/unusual enumeration activities were performed by the Microsoft Graph PowerShell application.
 
   **Recommended action**: Disable and remove the application and reset the password.
 
