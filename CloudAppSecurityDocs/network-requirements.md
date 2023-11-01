@@ -175,7 +175,7 @@ To enable Defender for Cloud Apps to send data through your stunnel to your ICAP
 > - By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
 > - You may see these IP addresses in activity logs from the vendor because Defender for Cloud Apps performs governance actions and scans from these IP addresses.
 
-To connect to third-party apps and integrate with external DLP solutions, enable Defender for Cloud Apps to connect from these IP addresses:
+To connect to third-party apps, enable Defender for Cloud Apps to connect from these IP addresses:
 
 |Data center|IP addresses|
 |----|----|----|

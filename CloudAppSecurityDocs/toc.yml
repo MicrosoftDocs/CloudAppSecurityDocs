@@ -396,8 +396,6 @@ items:
       items:
       - name: Generic SIEM integration
         href: siem.md
-      - name: External DLP integration
-        href: icap-stunnel.md
       - name: Additional integrations
         href: additional-integrations.md
     - name: Automate processes using Microsoft Power Automate
