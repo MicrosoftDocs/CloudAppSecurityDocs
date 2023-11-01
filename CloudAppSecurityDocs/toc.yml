@@ -62,8 +62,6 @@ items:
   items:
   - name: Working with the app page
     href: working-with-app-page.md
-  - name: Working with App risk scores
-    href: risk-score.md
   - name: Working with discovered apps
     href: discovered-apps.md
   - name: Working with connected apps
@@ -202,7 +200,7 @@ items:
           href: app-activity-threat-hunting.md
     - name: What's new archive for app governance
       href: app-governance-whats-new.md
-  - name: Cloud Discovery
+  - name: Cloud discovery
     items:
     - name: Set up
       items:
@@ -234,13 +232,15 @@ items:
         href: log-collector-advanced-management.md
       - name: Use the custom log parser
         href: custom-log-parser.md
-    - name: Cloud Discovery enrichment
+    - name: Enrich cloud discovery
       href: cloud-discovery-aad-enrichment.md
-    - name: Anonymize Cloud Discovery data
+    - name: Find your cloud app and calculate risk scores
+      href: risk-score.md
+    - name: Anonymize cloud discovery data
       href: cloud-discovery-anonymizer.md
-    - name: Add custom apps to Cloud Discovery
+    - name: Add custom apps to cloud discovery
       href: cloud-discovery-custom-apps.md
-    - name: Discovered app filters and queries
+    - name: Filter and query discovered apps
       href: discovered-app-queries.md
   - name: Connect apps
     items:

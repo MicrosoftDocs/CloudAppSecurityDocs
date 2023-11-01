@@ -30,9 +30,11 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## November 2023
 
-### New Cloud app catalog category for Generative AI
+### New cloud app catalog category for Generative AI
 
 The Defender for Cloud Apps app catalog now supports the new **Generative AI** category for large language model (LLM) apps, like Microsoft Bing Chat, Google Bard, ChatGPT, and more. Together with this new category, Defender for Cloud Apps has added hundreds of generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
+
+For example, you may want to use Defender for Cloud Apps' [integration with Defender for Endpoint](mde-integration.md) to approve or block the usage of specific LLM apps based on a policy.
 
 For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
 
