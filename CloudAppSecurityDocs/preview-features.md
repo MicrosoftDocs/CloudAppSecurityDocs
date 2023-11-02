@@ -13,7 +13,7 @@ Learn about new features in the Defender for Cloud Apps preview release and be a
 For more information on new capabilities that are generally available, see [What's new in Microsoft Defender for Cloud Apps](release-notes.md).
 
 > [!NOTE]
-> This feature is currently available in preview, and is partially available to customers. 
+> This feature is currently available to a limited number of customers, in preview.
 
 ## What you need to know
 
