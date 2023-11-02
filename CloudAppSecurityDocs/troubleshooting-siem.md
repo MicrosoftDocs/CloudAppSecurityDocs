@@ -112,10 +112,10 @@ Newer versions of Java can cause problems with the SIEM agent. If you've install
     keytool -importcert -file "$env:temp\azuretls02.crt" -keystore ..\lib\security\cacerts -alias azuretls02crt -storepass changeit
     keytool -importcert -file "$env:temp\azuretls05.crt" -keystore ..\lib\security\cacerts -alias azuretls05crt -storepass changeit
     keytool -importcert -file "$env:temp\azuretls06.crt" -keystore ..\lib\security\cacerts -alias azuretls06crt -storepass changeit
-    keytool -importcert -file "$env:temp\azuretls03.crt" -keystore..\lib\security\cacerts -alias azuretls03crt -storepass changeit
-    keytool -importcert -file "$env:temp\azuretls04.crt" -keystore..\lib\security\cacerts -alias azuretls04crt -storepass changeit
-    keytool -importcert -file "$env:temp\azuretls07.crt" -keystore..\lib\security\cacerts -alias azuretls07crt -storepass changeit
-    keytool -importcert -file "$env:temp\azuretls08.crt" -keystore..\lib\security\cacerts -alias azuretls08crt -storepass changeit
+    keytool -importcert -file "$env:temp\azuretls03.crt" -keystore ..\lib\security\cacerts -alias azuretls03crt -storepass changeit
+    keytool -importcert -file "$env:temp\azuretls04.crt" -keystore ..\lib\security\cacerts -alias azuretls04crt -storepass changeit
+    keytool -importcert -file "$env:temp\azuretls07.crt" -keystore ..\lib\security\cacerts -alias azuretls07crt -storepass changeit
+    keytool -importcert -file "$env:temp\azuretls08.crt" -keystore ..\lib\security\cacerts -alias azuretls08crt -storepass changeit
     ```
 
 1. To verify, view the Java keystore for Azure TLS issuing CA certificate aliases listed above.
