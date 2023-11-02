@@ -94,7 +94,7 @@ Newer versions of Java can cause problems with the SIEM agent. If you've install
 
 1. Download each of the four Azure TLS Issuing CA certificates.
     
-```powershell
+    ```powershell
     Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt" -OutFile "$env:temp\azuretls01.crt"
     Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt" -OutFile "$env:temp\azuretls02.crt"
     Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt" -OutFile "$env:temp\azuretls05.crt"
