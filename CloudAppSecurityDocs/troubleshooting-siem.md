@@ -107,7 +107,7 @@ Newer versions of Java can cause problems with the SIEM agent. If you've install
 
 1. Import each CA certificate CRT file to the Java keystore, using the default keystore password *changeit*.
     
-```powershell
+    ```powershell
     keytool -importcert -file "$env:temp\azuretls01.crt" -keystore ..\lib\security\cacerts -alias azuretls01crt -storepass changeit
     keytool -importcert -file "$env:temp\azuretls02.crt" -keystore ..\lib\security\cacerts -alias azuretls02crt -storepass changeit
     keytool -importcert -file "$env:temp\azuretls05.crt" -keystore ..\lib\security\cacerts -alias azuretls05crt -storepass changeit
