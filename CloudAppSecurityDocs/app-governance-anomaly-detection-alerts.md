@@ -707,7 +707,7 @@ This detection identifies an OAuth app that was detected by Machine Learning mod
 
 **MITRE ID**: T1087
 
-This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) application.
+This detection identifies a large volume of suspicious enumeration activities performed within a short time span through a [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) application.
 
 **TP or FP?**
 
