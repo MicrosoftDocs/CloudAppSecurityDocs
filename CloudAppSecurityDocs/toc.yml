@@ -737,12 +737,6 @@ items:
           href: classic-security-config.md
         - name: Security configuration for SaaS applications
           href: classic-security-saas.md
-        - name: Security configuration for Azure
-          href: classic-security-config-azure.md
-        - name: Security configuration for AWS
-          href: classic-security-config-aws.md
-        - name: Security configuration for GCP
-          href: classic-security-config-gcp.md
       - name: Monitor alerts
         href: classic-monitor-alerts.md
         items:
