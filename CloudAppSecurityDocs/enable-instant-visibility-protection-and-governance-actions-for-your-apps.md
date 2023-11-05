@@ -57,7 +57,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |  ✔                                          |                        |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Citrix share file  |  |  |  |   |
-| DocuSign          | ✔ |  |  | ✔ | ✔ | ✔ |
+| DocuSign          | Supported with DocuSign Monitor|  |  | Supported with DocuSign Monitor | Supported with DocuSign Monitor | Supported with DocuSign Monitor |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Egnyte  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | GitHub            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
