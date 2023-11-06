@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 09/26/2023
+ms.date: 11/06/2023
 ms.topic: overview
 ---
 
@@ -27,6 +27,18 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## November 2023
+
+### Test mode for admin users
+
+As an admin user, you might want to test upcoming proxy bug fixes before the latest release is fully rolled out to all tenants.To help you do this, Defender for Cloud Apps now provides a test mode, available from the Admin View toolbar.  
+
+When in test mode, only the admin users are exposed to any changes provided in the bug fixes. There is no affect on other users. We encourage you to send feedback about the new fixes to the Microsoft support team to help speed up release cycles.
+
+<!--image tbd-->
+
+For more information, see [Diagnose and troubleshoot with the Admin View toolbar](troubleshooting-proxy.md#diagnose-and-troubleshoot-with-the-admin-view-toolbar) and [Test mode](troubleshooting-proxy.md#test-mode).
 
 ## October 2023
 

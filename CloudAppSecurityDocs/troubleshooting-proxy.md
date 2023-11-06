@@ -492,11 +492,24 @@ To enable the Admin View toolbar for specific admin users, you first must add ad
 
     ![Screenshot of the App onboarding/maintenance settings.](media/app-onboarding-maintenance.png)
 
-When those users next start a session of an application, the Admin View toolbar is available.
+When those users next start a session of an application, the Admin View toolbar is available at the bottom of the screen. 
+
+<!--For example: image tbd-->
+
+### Test mode
+
+As an admin user, you might want to test upcoming proxy bug fixes before the latest release is fully rolled out to all tenants. Provide your feedback about the bug fix to the Microsoft support team to help speed up release cycles.
+
+When in test mode, only the admin users are exposed to any changes provided in the bug fixes. There is no affect on other users.
+
+- To turn on test mode, select **Test Mode** in the admin toolbar.
+- When you've finished your testing, select **End Test Mode** to return to the regular functionality.
+
+<!--For example: image tbd-->
 
 ### Bypass proxy session
 
-If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It appears for users who have the [Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar) enabled.
+If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass experiance** button in the Admin View toolbar. It appears for users who have the [Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar) enabled.
 
 For example:
 
