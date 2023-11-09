@@ -112,7 +112,7 @@ For **US Government GCC High** customers:
 ||IP addresses|DNS name|
 |----|----|----|
 |**Session controls**|US Gov Arizona: 52.244.144.65, 52.244.43.90, 52.244.43.225, 52.244.215.117<br /><br />US Gov Virginia: 13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222|\*.mcas-gov.us<br/>\*.admin-mcas-gov.us|
-|**Access controls**|US Gov Arizona: 52.244.215.83, 52.244.212.197, 52.127.2.97<br /><br />US Gov Virginia: 13.72.27.216, 13.72.27.215, 52.127.50.130, 52.235.179.123, 52.245.252.18, 52.245.252.131, 52.245.252.191, 52.245.253.12, 52.245.253.58, 52.245.253.229, 52.245.254.39, 52.245.254.51, 52.245.254.212, 52.245.254.245|\*.access.mcas-gov.us<br/>\*.access.cloudappsecurity.us|
+|**Access controls**|US Gov Arizona: 52.244.215.83, 52.244.212.197, 52.127.2.97, 52.126.54.254 <br /><br />US Gov Virginia: 13.72.27.216, 13.72.27.215, 52.127.50.130, 52.235.179.123, 52.245.252.18, 52.245.252.131, 52.245.252.191, 52.245.253.12, 52.245.253.58, 52.245.253.229, 52.245.254.39, 52.245.254.51, 52.245.254.212, 52.245.254.245|\*.access.mcas-gov.us<br/>\*.access.cloudappsecurity.us|
 |**SAML proxy**|US Gov Arizona: 20.140.49.129<br /><br />US Gov Virginia: 52.227.216.80|\*.saml.cloudappsecurity.us|
 
 For **US Government GCC** customers:
