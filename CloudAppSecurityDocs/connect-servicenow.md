@@ -4,6 +4,7 @@ description: This article provides information about how to connect your Service
 ms.date: 04/03/2023
 ms.topic: how-to
 ---
+
 # Connect ServiceNow to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -61,15 +62,8 @@ For more information, see the [ServiceNow product documentation](https://docs.se
 1. In the **Filter navigator** search bar, type **OAuth** and select **Application Registry**.
 
 1. In the **Application Registries** menu bar, select **New** to create a new OAuth profile.
-
-    ![ServiceNow new OAuth profile.](media/servicenow-app-registry.png)
-
 1. Under **What kind of OAuth application?**, select **Create an OAuth API endpoint for external clients**.
-
-    ![ServiceNow OAuth type.](media/servicenow-oauth-app-type.png)
-
 1. Under **Application Registries New record** fill in the following fields:
-
     - **Name** field, name the new OAuth profile, for example, CloudAppSecurity.
 
     - The **Client ID** is generated automatically. Copy this ID, you need to paste it into Defender for Cloud Apps to complete connection.
@@ -78,10 +72,7 @@ For more information, see the [ServiceNow product documentation](https://docs.se
 
     - Increase the **Access Token Lifespan** to at least 3,600.
 
-    - Select **Submit**.
-
-    ![ServiceNow profile IDs.](media/servicenow-profile-ids.png)
-
+   - Select **Submit**.
 1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, and then **ServiceNow**.
@@ -93,11 +84,11 @@ For more information, see the [ServiceNow product documentation](https://docs.se
 
 1. In the **Basic Details** page, add your ServiceNow user ID, password, and instance URL in the appropriate boxes. Select **Next**.
 
-    ![ServiceNow connect to CAS.](media/servicenow-portal-connect.png "ServiceNow connect in portal")
+    ![Screenshot of the ServiceNow App Connector Details Dialog.](media/servicenow-app-connector-details-screenshot.png)
 
-    - To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
+   - To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
 
-        ![ServiceNow user ID.](media/servicenow-userid.png)
+     ![ServiceNow user ID.](media/servicenow-userid.png)
 
 1. In the **OAuth Details** page, enter your **Client ID** and **Client Secret**. Select **Next**.
 
@@ -131,7 +122,6 @@ To connect ServiceNow with Defender for Cloud Apps, you must have admin-level pe
     ![ServiceNow update password.](media/servicenow-update-password.png "ServiceNow update password")
 
 1. Select **Connect**.
-
 1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 After connecting ServiceNow, you'll receive events for seven days prior to connection.
 
@@ -143,3 +133,4 @@ If you have any problems connecting the app, see [Troubleshooting App Connectors
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
