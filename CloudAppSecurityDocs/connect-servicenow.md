@@ -84,7 +84,7 @@ For more information, see the [ServiceNow product documentation](https://docs.se
 
 1. In the **Basic Details** page, add your ServiceNow user ID, password, and instance URL in the appropriate boxes. Select **Next**.
 
-    ![Screenshot of the ServiceNow App Connector Details Dialog.](media/connect-servicenow/servicenow-app-connector-details-screenshot1.png)
+    ![Screenshot of the ServiceNow App Connector Details Dialog.](media/servicenow-app-connector-details-screenshot.png)
 
    - To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
 
