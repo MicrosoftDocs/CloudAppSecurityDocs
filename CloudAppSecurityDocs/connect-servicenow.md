@@ -83,13 +83,12 @@ For more information, see the [ServiceNow product documentation](https://docs.se
 1. In the **Enter details** page, select **Connect using OAuth token (recommended)**. Select **Next**.
 
 1. In the **Basic Details** page, add your ServiceNow user ID, password, and instance URL in the appropriate boxes. Select **Next**.
-1.  
 
-![Servicenow App Connector Details Screenshot.](media/connect-servicenow/servicenow-app-connector-details-screenshot1.png)
+    ![Screenshot of the ServiceNow App Connector Details Dialog.](media/connect-servicenow/servicenow-app-connector-details-screenshot1.png)
 
    - To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
 
-        ![ServiceNow user ID.](media/servicenow-userid.png)
+     ![ServiceNow user ID.](media/servicenow-userid.png)
 
 1. In the **OAuth Details** page, enter your **Client ID** and **Client Secret**. Select **Next**.
 
