@@ -28,6 +28,14 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
+## November 2023
+
+### General availability for more discovery Shadow IT events with Defender for Endpoint
+
+Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy, in general availability.
+
+For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
+
 ## October 2023
 
 ### Automatic redirect to Microsoft 365 Defender general availability 
@@ -44,7 +52,7 @@ For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 De
 
 Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy.
 
-For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy-preview) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
+For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
 
 ### Continuous NRT frequency supported for CloudAPPEvents table (Preview)
 
