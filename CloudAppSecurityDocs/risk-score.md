@@ -5,13 +5,14 @@ ms.date: 09/07/2023
 ms.topic: how-to
 #CustomerIntent: As a Defender for Cloud Apps user, I want to understand how to use the Cloud app catalog and my cloud app risk scores.
 ---
+
 # Find your cloud app and calculate risk scores
 
 The Microsoft Defender for Cloud Apps **Cloud app catalog** page provides a full list of over 31,000 discoverable cloud apps. Defender for Cloud Apps discovery analyzes your traffic logs against discoverable cloud apps to give you ongoing visibility into cloud use, Shadow IT, and risks posed to your organization. Use the **Cloud apps catalog** to identify the apps that fit into your organization's security requirements.
 
 For example:
 
-![Screenshot showing the cloud app catalog.](media/cloud-app-catalog.png)
+:::image type="content" source="media/cloud-app-catalog.png" alt-text="Screenshot showing the cloud app catalog." lightbox="media/cloud-app-catalog.png":::
 
 Apps in the cloud app catalog are scored based on more than 90 risk factors. This article describes how to identify apps covered by the catalog, and how to use and customize the cloud app risk scores.
 
@@ -69,7 +70,7 @@ Check the cloud app catalog to ensure that the apps used by organization fit int
 
     We recommend that you review the weights given to risk factors and risk categories when scoring a specific app. In the expanded app details, scroll down and hover an **i** button next to each risk factor name to learn more. For example:
 
-    ![Screenshot showing a risk calculation.](media/cac-weight.png)
+    :::image type="content" source="media/cac-weight.png" alt-text="Screenshot showing a risk calculation." lightbox="media/cac-weight.png":::
 
 ## Customize the risk score
 
@@ -107,7 +108,7 @@ You might want to request a review by the Defender for Cloud Apps security analy
 
 1. In the **Cloud App Catalog** page, in the app row you want to update, select the three dots at the end of the row and choose **Request score update**. For example:
 
-    ![Screenshot of how to request a risk score update.](media/request-score-update.png)
+    :::image type="content" source="media/request-score-update.png" alt-text="Screenshot of how to request a risk score update." lightbox="media/request-score-update.png":::
 
 1. In the **Suggest an improvement** dialog, select whether you want to request a score update, suggest a new risk factor, or update app data.
 
@@ -121,7 +122,7 @@ If you find a new app in your environment that hasn't been scored by Defender fo
 
 1. On the **Cloud Discovery** page, on the **Discovered apps** tab, select **Actions** and then choose **Suggest new app**.
 
-    ![Screenshot showing the **Suggest an app** menu item in Defender for Cloud Apps.](media/suggest-new-app.png)
+    :::image type="content" source="media/suggest-new-app.png" alt-text="Screenshot showing the **Suggest an app** menu item in Defender for Cloud Apps." lightbox="media/suggest-new-app.png":::
 
 2. In the **Suggest new cloud app** pop-up, fill in details about the new app. Include the name and domain of the app.
 
