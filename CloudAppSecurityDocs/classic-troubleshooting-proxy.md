@@ -27,17 +27,17 @@ This section is for admins configuring access and session controls with Defender
 
 |Section|Issues|
 |---|---|
-|[Network conditions](#network-conditions)|- [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)<br />- [Slow sign-in](#slow-login)<br />- [Extra considerations](#network-conditions-additional-considerations)|
-|[Device identification](#device-identification)|- [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)<br />- [Client certificates aren't prompting when expected](#client-certificates-are-not-prompting-when-expected)<br />- [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-login)<br />- [Extra considerations](#device-identification-additional-considerations)|
-|[Onboarding an app](#onboarding-an-app)|- [App doesn't appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)<br />- [App status: Continue Setup](#app-status-continue-setup)<br />- [Can't configure controls for native apps](#cannot-configure-controls-for-native-apps)<br />- [**App is not recognized** page appears](#something-went-wrong-page-appears)<br />- [**Request session control** option appears](#request-session-control-option-appears)<br />- [Extra considerations](#onboarding-apps-additional-considerations)|
-|[Creating access and session policies](#creating-access-and-session-policies)|- [In Conditional Access policies, you can't see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)<br />- [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)<br />- [Can't create session policies for an app](#cannot-create-session-policies-for-an-app)<br />- [Can't choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)<br />- [Can't choose **Action**: **Protect**](#cannot-choose-action-protect)<br />- [Extra considerations](#policies-additional-considerations)|
+|[Network conditions](#network-conditions)|- [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)<br />- [Slow sign-in](#slow-sign-in)<br />- [Extra considerations](#network-conditions-additional-considerations)|
+|[Device identification](#device-identification)|- [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)<br />- [Client certificates aren't prompting when expected](#client-certificates-arent-prompting-when-expected)<br />- [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-sign-in)<br />- [Extra considerations](#device-identification-additional-considerations)|
+|[Onboarding an app](#onboarding-an-app)|- [App doesn't appear on the **Conditional Access App Control apps** page](#app-doesnt-appear-on-the-conditional-access-app-control-apps-page)<br />- [App status: Continue Setup](#app-status-continue-setup)<br />- [Can't configure controls for native apps](#cant-configure-controls-for-native-apps)<br />- [**App is not recognized** page appears](#something-went-wrong-page-appears)<br />- [**Request session control** option appears](#request-session-control-option-appears)<br />- [Extra considerations](#onboarding-apps-additional-considerations)|
+|[Creating access and session policies](#creating-access-and-session-policies)|- [In Conditional Access policies, you can't see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cant-see-the-conditional-access-app-control-option)<br />- [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)<br />- [Can't create session policies for an app](#cant-create-session-policies-for-an-app)<br />- [Can't choose **Inspection Method**: **Data Classification Service**](#cant-choose-inspection-method-data-classification-service)<br />- [Can't choose **Action**: **Protect**](#cant-choose-action-protect)<br />- [Extra considerations](#policies-additional-considerations)|
 
 ### Network conditions
 
 Common network condition issues you might encounter include:
 
 - [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)
-- [Slow sign-in](#slow-login)
+- [Slow sign-in](#slow-sign-in)
 - [Extra considerations](#network-conditions-additional-considerations)
 
 #### Network errors when navigating to a browser page
@@ -123,8 +123,8 @@ For more information on device identification, see [Managed Device Identificatio
 Common device identification issues you might encounter include
 
 - [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)
-- [Client certificates aren't prompting when expected](#client-certificates-are-not-prompting-when-expected)
-- [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-login)
+- [Client certificates aren't prompting when expected](#client-certificates-arent-prompting-when-expected)
+- [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-sign-in)
 - [Extra considerations](#device-identification-additional-considerations)
 
 #### Misidentified Intune Compliant or Hybrid Azure AD joined devices
@@ -212,9 +212,9 @@ When onboarding an app, it's crucial to make sure that you follow each step in t
 
 Common scenarios you might encounter while onboarding an app include:
 
-- [App doesn't appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)
+- [App doesn't appear on the **Conditional Access App Control apps** page](#app-doesnt-appear-on-the-conditional-access-app-control-apps-page)
 - [App status: Continue Setup](#app-status-continue-setup)
-- [Can't configure controls for native apps](#cannot-configure-controls-for-native-apps)
+- [Can't configure controls for native apps](#cant-configure-controls-for-native-apps)
 - [**App is not recognized** page appears](#something-went-wrong-page-appears)
 - [**Request session control** option appears](#request-session-control-option-appears)
 - [Extra considerations](#onboarding-apps-additional-considerations)
@@ -313,11 +313,11 @@ To use these policies in Defender for Cloud Apps, you must first configure a pol
 
 Common scenarios you might encounter while configuring these policies include:
 
-- [In Conditional Access policies, you can't see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)
+- [In Conditional Access policies, you can't see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cant-see-the-conditional-access-app-control-option)
 - [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)
-- [Can't create session policies for an app](#cannot-create-session-policies-for-an-app)
-- [Can't choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)
-- [Can't choose **Action**: **Protect**](#cannot-choose-action-protect)
+- [Can't create session policies for an app](#cant-create-session-policies-for-an-app)
+- [Can't choose **Inspection Method**: **Data Classification Service**](#cant-choose-inspection-method-data-classification-service)
+- [Can't choose **Action**: **Protect**](#cant-choose-action-protect)
 - [Extra considerations](#policies-additional-considerations)
 
 #### In Conditional Access policies, you can't see the Conditional Access App Control option
@@ -458,11 +458,11 @@ To record a session, follow these steps:
 
 This section is for end users using apps protected by Defender for Cloud Apps and helps identify common situations that might arise in the following areas:
 
-- [User monitoring page isn't appearing](#user-monitoring-page-is-not-appearing)
+- [User monitoring page isn't appearing](#user-monitoring-page-isnt-appearing)
 - [Not able to access app from a non-Microsoft Identity Provider](#not-able-to-access-app-from-a-non-microsoft-identity-provider)
 - [**Something Went Wrong** page appears](#something-went-wrong-page-appears)
-- [Clipboard actions or file controls aren't being blocked](#clipboard-actions-or-file-controls-are-not-being-blocked)
-- [Downloads aren't being protected](#downloads-are-not-being-protected)
+- [Clipboard actions or file controls aren't being blocked](#clipboard-actions-or-file-controls-arent-being-blocked)
+- [Downloads aren't being protected](#downloads-arent-being-protected)
 - [Navigating to a particular URL of a suffixed app and landing on a generic page](#navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page)
 - [Blocking downloads cause PDF previews to be blocked](#blocking-downloads-cause-pdf-previews-to-be-blocked)
 - [Similar site warning appears](#similar-site-warning-appears)
@@ -626,6 +626,6 @@ While troubleshooting apps, there are some extra things to consider.
 
 - **Double login**
 
-    A double sign-in occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If you're confident the app doesn't use a nonce, you can disable this by editing the app in Defender for Cloud Apps and the issue will be resolved. For steps to disable nonce, see [Slow sign-in](#slow-login).
+    A double sign-in occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If you're confident the app doesn't use a nonce, you can disable this by editing the app in Defender for Cloud Apps and the issue will be resolved. For steps to disable nonce, see [Slow sign-in](#slow-sign-in).
 
     If the app uses a nonce and this feature can't be disabled, the second sign-in might be transparent to users, or they might be prompted to sign-in again.
