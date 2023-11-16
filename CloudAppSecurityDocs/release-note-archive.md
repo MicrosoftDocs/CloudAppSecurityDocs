@@ -9,6 +9,7 @@ ms.topic: conceptual
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article is an archive that describes updates made in past releases of Defender for Cloud Apps. To see the latest what's new list, see [What's new in Defender for Cloud Apps](release-notes.md).
+
 ## April 2023
 
 ### Defender for Cloud Apps release 251-252
@@ -51,6 +52,7 @@ April 2, 2023
 To enhance our threat protection and reduce alert fatigue, we've added a new data layer called "behaviors" to the Microsoft Defender for Cloud Apps experience in Microsoft 365 Defender advanced hunting. This feature is intended to provide relevant information for investigations by identifying anomalies or other activities that may be related to security scenarios, but don't necessarily indicate malicious activity or a security incident. In this first stage, some of the Microsoft Defender for Cloud App anomaly detections will also be presented as behaviors. In future phases, these detections will only generate behaviors and not alerts. For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 
 ## March 2023
+
 ### Defender for Cloud Apps release 249
 
 March 19, 2023
@@ -105,6 +107,7 @@ Automatic actions for files detected by the malware detection policy are now ava
     `cat /var/adallom/versions | grep columbus-`
 
 ## January 2023
+
 ### Defender for Cloud Apps release 244 and 245
 
 January 22, 2023
@@ -113,6 +116,9 @@ January 22, 2023
 Defender for Cloud Apps already includes the ability to explore policy file matches that contain sensitive information types (SITs). Now, Defender for Cloud Apps also allows you to differentiate between multiple SITs in the same file match. This feature, known as short evidence, lets Defender for Cloud Apps better manage and protect your organization's sensitive data. For more information, see [Examine evidence (preview)](dcs-inspection.md#examine-evidence-preview).
 
 ## Updates made in 2022
+
+> [!NOTE]
+> As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
 ### Defender for Cloud Apps release 240, 241, 242, and 243
 
@@ -393,7 +399,7 @@ New app connectors are now available for Slack and OneLogin in public preview. Y
 June 13, 2021
 
 - **Expose verified publisher indicating in O365 OAuth apps**  
-Cloud App Security now surfaces whether a publisher of an Microsoft 365 OAuth app has been verified by Microsoft to enable higher app trust. This feature is in a gradual rollout. For more information, see [Working with the OAuth app page](manage-app-permissions.md#working-with-the-oauth-apps-page).
+Cloud App Security now surfaces whether a publisher of a Microsoft 365 OAuth app has been verified by Microsoft to enable higher app trust. This feature is in a gradual rollout. For more information, see [Working with the OAuth app page](manage-app-permissions.md#working-with-the-oauth-apps-page).
 
 - **Azure Active Directory Cloud App Security admin**  
 A Cloud App Security admin role has been added to Azure Active Directory (Azure AD), allowing the assignment of global admin capabilities to Cloud App Security alone via Azure AD. For more information, see [Microsoft 365 and Azure AD roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security).
@@ -526,6 +532,11 @@ We've updated the auditing for [Shadow IT](tutorial-shadow-it.md) activities to 
 
 ## Updates made in 2020
 
+> [!NOTE]
+>
+> Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
+
+
 ### Cloud App Security release 187 and 188
 
 Released November 22, 2020
@@ -556,7 +567,7 @@ As part of our ongoing improvements to monitoring and managing alerts, the Cloud
 We've added the ability to set the global severity setting for signals sent to Microsoft Defender for Endpoint. For more information, see [How to integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md#).
 
 - **New security recommendations report**  
-Cloud App Security provides you with security configuration assessments for your Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) giving you insights into security configuration gaps in your multi-cloud environment. Now you can export detailed security recommendation reports to help you monitor, understand, and customize your cloud environments to better protect your organization. For more information about exporting the report, see [Security recommendations report](security-config.md#security-recommendations-report).
+Cloud App Security provides you with security configuration assessments for your Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) giving you insights into security configuration gaps in your multicloud environment. Now you can export detailed security recommendation reports to help you monitor, understand, and customize your cloud environments to better protect your organization. For more information about exporting the report, see [Security recommendations report](security-config.md#security-recommendations-report).
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
 On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allowlist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
@@ -565,7 +576,7 @@ On June 7, 2020, we started gradually rolling out our enhanced proxy session con
 We've made the following updates to our Cloud App Catalog:
 
   - Teams Admin Center has been updated as a standalone app
-  - Microsoft Microsoft 365 Admin Center has been renamed to Office Portal
+  - Microsoft 365 Admin Center has been renamed to Office Portal
 
 - **Terminology update**  
 We've updated the term **machine** to **device** as part of the general Microsoft effort to align terminology across products.
@@ -618,7 +629,7 @@ We've added entity tags to Identity Security Posture reports providing additiona
 Released June 28, 2020
 
 - **New security configurations for Google Cloud Platform (gradual rollout)**  
-We've expanded our multi-cloud security configurations to provide security recommendations for Google Cloud Platform, based on the GCP CIS benchmark. With this new capability, Cloud App Security provides organizations with a single view for monitoring the compliance status across all cloud platforms, including [Azure subscriptions](security-config-azure.md), [AWS accounts](security-config-aws.md), and now [GCP projects](security-config-gcp.md).
+We've expanded our multicloud security configurations to provide security recommendations for Google Cloud Platform, based on the GCP CIS benchmark. With this new capability, Cloud App Security provides organizations with a single view for monitoring the compliance status across all cloud platforms, including [Azure subscriptions](security-config-azure.md), [AWS accounts](security-config-aws.md), and now [GCP projects](security-config-gcp.md).
 
 - **New app connectors GA**  
 We've added the following app connectors to our portfolio of generally available API connectors, giving you more visibility into and control over how your apps are used in your organization:
@@ -836,7 +847,7 @@ Cloud App Security now includes new built-in Activity policy templates for Googl
 Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery's built-in log parser supports the Ironport WSA 10.5.1 log format.
 
 - **Customizable user landing page for session controls**  
-We've launched the ability for admins to personalize the landing page that your users see when navigating to a app that a Session policy is applied to. You can now display your organization's logo and customize the message shown. To start customizing, go to the **Settings** page, and under **Cloud Access App Control**, select **User monitoring**.
+We've launched the ability for admins to personalize the landing page that your users see when navigating to an app that a Session policy is applied to. You can now display your organization's logo and customize the message shown. To start customizing, go to the **Settings** page, and under **Cloud Access App Control**, select **User monitoring**.
 
 - **New detections**  
 
@@ -1193,9 +1204,9 @@ Suspicious inbox manipulation rules: This policy profiles your environment and t
 - **Support for groups in app permission policies**  
 Cloud App Security now gives you the ability to define app permission policies more granularly, based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the administrators group.
 
-- **Conditional Access App Control now integrates with your on-prem apps via Azure Active Directory Application Proxy**  
-  - The [Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy) provides single sign-on and secure remote access for your web apps hosted on-prem.
-  - These on-prem web apps can now be routed to Microsoft Cloud App Security via Azure AD conditional access to provide real-time monitoring and controls, via [access](access-policy-aad.md) and [session](session-policy-aad.md) policies.
+- **Conditional Access App Control now integrates with your on-premises apps via Azure Active Directory Application Proxy**  
+  - The [Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy) provides single sign-on and secure remote access for your web apps hosted on-premises.
+  - These on-premises web apps can now be routed to Microsoft Cloud App Security via Azure AD conditional access to provide real-time monitoring and controls, via [access](access-policy-aad.md) and [session](session-policy-aad.md) policies.
 
 ### Cloud App Security release 133, 134, 135
 
