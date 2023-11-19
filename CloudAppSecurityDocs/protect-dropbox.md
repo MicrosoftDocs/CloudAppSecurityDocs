@@ -4,7 +4,6 @@ description: This article provides information about the benefits of connecting 
 ms.date: 01/29/2023
 ms.topic: article
 ---
-
 # How Defender for Cloud Apps helps protect your Dropbox environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
