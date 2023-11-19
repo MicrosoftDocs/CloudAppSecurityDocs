@@ -4,6 +4,7 @@ description: This article provides information about the benefits of connecting 
 ms.date: 01/29/2023
 ms.topic: article
 ---
+
 # How Defender for Cloud Apps helps protect your Dropbox environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -11,6 +12,9 @@ ms.topic: article
 As a cloud file storage and collaboration tool, Dropbox enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Dropbox may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees.
 
 Connecting Dropbox to Defender for Cloud Apps gives you improved insights into your users' activities, provide threat detection using machine learning based anomaly detections, information protection detections such as detecting external information sharing, and enabling automated remediation controls.
+
+> [!NOTE]
+    > Dropbox have made changes to the way shared folders are stored. These new "Teams Spaces" are currently not fully scanned, and will be updated in due course.
 
 ## Main threats
 
