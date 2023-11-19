@@ -35,13 +35,17 @@ For example, you may want to use Defender for Cloud Apps' [integration with Defe
 
 For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
 
-## November 2023
-
 ### General availability for more discovery Shadow IT events with Defender for Endpoint
 
 Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy, in general availability.
 
 For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
+
+### Defender for Cloud Apps application certificate rotation
+
+Defender for Cloud Apps plans to rotate its application certificate. If you'd trusted the legacy certificate and currently have SIEM agents running on newer versions of the Java Development Kit (JDK), you must trust the new certificate to ensure continued service. In such cases, we recommend that you already trust the new certificates to prevent issues once the certificates are fully rotated.
+
+For more information, see our [Issue with new versions of Java](troubleshooting-siem.md#issue-with-new-versions-of-java) troubleshooting guide.
 
 ## October 2023
 
