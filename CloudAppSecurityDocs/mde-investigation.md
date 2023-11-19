@@ -4,6 +4,7 @@ description: This article describes how to investigate Microsoft Defender for En
 ms.date: 09/26/2023
 ms.topic: how-to
 ---
+
 # Investigate apps discovered by Microsoft Defender for Endpoint
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -47,12 +48,9 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 > - Defender for Endpoint forwards data to Defender for Cloud Apps in chunks of ~4 MB (~4000 endpoint transactions)
 > - If the 4 MB limit isn't reached within 1 hour, Defender for Endpoint reports all the transactions performed over the last hour.
 
-### Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)
+### Discover apps via Defender for Endpoint when the endpoint is behind a network proxy
 
 As a preview feature, Defender for Cloud Apps can discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy. For example, if your Windows 10 endpoint device is in the same environment as ZScalar, Defender for Cloud Apps can discover Shadow IT applications via the **Win10 Endpoint Users** stream.
-
-However, if you're not using preview features, and your endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoint and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Defender for Cloud Apps using the **Automated log upload** in order to get complete visibility.
-
 
 ## Investigate device network events in Microsoft 365 Defender
 
