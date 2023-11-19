@@ -14,7 +14,7 @@ As a cloud file storage and collaboration tool, Dropbox enables your users to sh
 Connecting Dropbox to Defender for Cloud Apps gives you improved insights into your users' activities, provide threat detection using machine learning based anomaly detections, information protection detections such as detecting external information sharing, and enabling automated remediation controls.
 
 > [!NOTE]
-    > Dropbox have made changes to the way shared folders are stored. These new "Teams Spaces" are currently not fully scanned, and will be updated in due course.
+    > Dropbox have made changes to the way that shared folders are stored. The scan will be updated in due course to include these "Teams Spaces"
 
 ## Main threats
 
