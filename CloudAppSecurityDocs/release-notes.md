@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 11/06/2023
+ms.date: 11/20/2023
 ms.topic: overview
 ---
 
@@ -15,18 +15,13 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://aka.ms/mda/rss`
 
-> [!NOTE]
->
-> Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
-
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
-> [!NOTE]
-> As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## November 2023
 
@@ -41,6 +36,22 @@ When you're finished testing the new fix, turn test mode off to return to regula
 :::image type="content" source="media/release-notes/test-mode-new.png" alt-text="Screenshot of the new Test Mode button." lightbox="media/release-notes/test-mode-new.png":::
 
 For more information, see [Diagnose and troubleshoot with the Admin View toolbar](troubleshooting-proxy.md#diagnose-and-troubleshoot-with-the-admin-view-toolbar) and [Test mode](troubleshooting-proxy.md#test-mode).
+
+### New cloud app catalog category for Generative AI
+
+The Defender for Cloud Apps app catalog now supports the new **Generative AI** category for large language model (LLM) apps, like Microsoft Bing Chat, Google Bard, ChatGPT, and more. Together with this new category, Defender for Cloud Apps has added hundreds of generative AI-related apps to the catalog, providing visibility into how generative AI apps are used in your organization and helping you manage them securely.
+
+:::image type="content" source="media/release-notes/generative-ai.png" alt-text="Screenshot of the new Generative AI category." lightbox="media/release-notes/generative-ai.png":::
+
+For example, you may want to use Defender for Cloud Apps' [integration with Defender for Endpoint](mde-integration.md) to approve or block the usage of specific LLM apps based on a policy.
+
+For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
+
+### General availability for more discovery Shadow IT events with Defender for Endpoint
+
+Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy, in general availability.
+
+For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
 
 ## October 2023
 
@@ -58,7 +69,7 @@ For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 De
 
 Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy.
 
-For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy-preview) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
+For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
 
 ### Continuous NRT frequency supported for CloudAPPEvents table (Preview)
 
@@ -115,7 +126,7 @@ For more information, see [Microsoft Defender for Cloud Apps open app connector 
 
 ### New app connectors for Asana and Miro (Preview)
 
-Defender for Cloud Apps now supports built-in app connectors for Asana and Miro, which both may hold critical data your organization and are therefore targets for malicious actors. Connect these apps to Defender for Cloud Apps for improved insights into your users' activities and threat detection with machine learning-based anomaly detections.
+Defender for Cloud Apps now supports built-in app connectors for Asana and Miro, which both might hold critical data your organization and are therefore targets for malicious actors. Connect these apps to Defender for Cloud Apps for improved insights into your users' activities and threat detection with machine learning-based anomaly detections.
 
 For more information, see:
 
@@ -179,7 +190,7 @@ For more information, see:
 
 ### App governance OAuth convergence
 
-For customers who've enabled app governance, we've consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. 
+For customers who have enabled app governance, we have consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. 
 
 In the Microsoft 365 Defender portal, we've merged all capabilities originally under **Cloud apps > OAuth apps under  App governance**, where you can manage all OAuth apps under a single pane of glass.
 
@@ -205,13 +216,12 @@ For more information, see [Secure apps with app hygiene features](app-governance
 
 ## May 2023
 
-- **Behavior-generating policies no longer generate alerts** (Preview). Starting May 28, 2023, policies that generate *behaviors* in Microsoft 365 Defender advanced hunting do not generate alerts. The policies will continue generating *behaviors* regardless of being enabled or disabled in the tenant's configuration.
+- **Behavior-generating policies no longer generate alerts** (Preview). Starting May 28, 2023, policies that generate *behaviors* in Microsoft 365 Defender advanced hunting don't generate alerts. The policies continue generating *behaviors* regardless of being enabled or disabled in the tenant's configuration.
 
     For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 
 - **Non-blockable applications** (Preview): To prevent users from accidentally causing downtime, Defender for Cloud Apps now prevents you from blocking business-critical Microsoft services.
     For more information, see [Govern discovered apps](governance-discovery.md#non-blockable-applications).
-
 
 
 ## Next steps
