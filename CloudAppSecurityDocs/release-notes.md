@@ -35,8 +35,6 @@ For example, you may want to use Defender for Cloud Apps' [integration with Defe
 
 For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
 
-## November 2023
-
 ### General availability for more discovery Shadow IT events with Defender for Endpoint
 
 Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy, in general availability.
