@@ -35,6 +35,14 @@ For example, you may want to use Defender for Cloud Apps' [integration with Defe
 
 For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
 
+## November 2023
+
+### General availability for more discovery Shadow IT events with Defender for Endpoint
+
+Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy, in general availability.
+
+For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
+
 ## October 2023
 
 ### Automatic redirect to Microsoft 365 Defender general availability 
@@ -51,7 +59,7 @@ For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 De
 
 Defender for Cloud Apps can now discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy.
 
-For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy-preview) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
+For more information, see [Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)](mde-investigation.md#discover-apps-via-defender-for-endpoint-when-the-endpoint-is-behind-a-network-proxy) and [Integrate Microsoft Defender for Endpoint](mde-integration.md).
 
 ### Continuous NRT frequency supported for CloudAPPEvents table (Preview)
 
