@@ -25,17 +25,19 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## November 2023
 
-### Test mode for admin users
+### Test mode for admin users (Preview)
 
-As an admin user, you might want to test upcoming proxy bug fixes before the latest release is fully rolled out to all tenants. To help you do this, Defender for Cloud Apps now provides a test mode, available from the **Admin View** toolbar.  
+As an admin user, you might want to test upcoming proxy bug fixes before the latest Defender for Cloud Apps release is fully rolled out to all tenants. To help you do this, Defender for Cloud Apps now provides a test mode, available from the **Admin View** toolbar.  
 
-When in test mode, only the admin users are exposed to any changes provided in the bug fixes. There is no affect on other users. We encourage you to send feedback about the new fixes to the Microsoft support team to help speed up release cycles.
+When in test mode, only admin users are exposed to any changes provided in the bug fixes. There is no affect on other users. We encourage you to send feedback about the new fixes to the Microsoft support team to help speed up release cycles.
 
-When you're finished testing the new fix, turn test mode off to return to regular functionality. For example:
+When you're finished testing the new fix, turn test mode off to return to regular functionality. 
+
+For example, the following image shows the new **Test Mode** button in the **Admin View** toolbar, laid over OneNote being used in a browser.
 
 :::image type="content" source="media/release-notes/test-mode-new.png" alt-text="Screenshot of the new Test Mode button." lightbox="media/release-notes/test-mode-new.png":::
 
-For more information, see [Diagnose and troubleshoot with the Admin View toolbar](troubleshooting-proxy.md#diagnose-and-troubleshoot-with-the-admin-view-toolbar) and [Test mode](troubleshooting-proxy.md#test-mode).
+For more information, see [Diagnose and troubleshoot with the Admin View toolbar](troubleshooting-proxy.md#diagnose-and-troubleshoot-with-the-admin-view-toolbar) and [Test mode](troubleshooting-proxy.md#test-mode-preview).
 
 ### New cloud app catalog category for Generative AI
 

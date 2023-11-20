@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot access and session controls for admins | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by admins with Microsoft Defender for Cloud Apps.
-ms.date: 08/20/2023
+ms.date: 11/20/2023
 ms.topic: troubleshooting
 ---
 
@@ -492,15 +492,17 @@ To view the **Admin View** toolbar, you must make sure to add specific admin use
 
     For example:
 
-    ![Screenshot of the App onboarding/maintenance settings.](media/app-onboarding-maintenance.png)
+    :::image type="content" source="media/app-onboarding-maintenance.png" alt-text="Screenshot of the App onboarding / maintenance settings." lightbox="media/app-onboarding-maintenance.png":::
 
-The next time the added user starts a new Microsoft 365 Defender session, the **Admin View** toolbar is shown at the bottom of the browser, whenever the user is in an app where they're an admin. For example:
+The next time that one of the listed users starts a new session in a supported app where they're an admin, the **Admin View** toolbar is shown at the bottom of the browser. 
+
+For example, the following image shows the **Admin View** toolbar showing at the bottom of a browser window, when using OneNote in the browser:
 
 :::image type="content" source="media/troubleshooting-proxy/admin-view.png" alt-text="Screenshot of the Admin View toolbar." lightbox="media/troubleshooting-proxy/admin-view.png":::
 
 The following sections describe how to use the **Admin View** toolbar to test and troubleshoot.
 
-### Test mode
+### Test mode (Preview)
 
 As an admin user, you might want to test upcoming proxy bug fixes before the latest release is fully rolled out to all tenants. Provide your feedback about the bug fix to the Microsoft support team to help speed up release cycles.
 
@@ -528,25 +530,21 @@ You may want to help the root cause analysis of a problem by sending a session r
 
 1. In the **Admin View** toolbar, select **Record session**. When prompted, select **Continue** to accept the terms. For example:
 
-    ![Screenshot of the session recording privacy statement dialog.](media/accept-continue.png)
+    :::image type="content" source="media/accept-continue.png" alt-text="Screenshot of the session recording privacy statement dialog." lightbox="media/accept-continue.png":::
+    
+1. Sign into your app if needed to begin simulating the session.
 
-1. Sign into your app and then select **Record session** when prompted. For example:
-
-    ![Screenshot of selecting to record a session when signing into an app.](media/app-monitored.png)
-
-1. Sign in to the application to begin the scenario simulation.
-
-1. When you finish recording the scenario, make sure to select **Stop recording** in the **Admin View** toolbar. 
+1. When you finish recording the scenario, make sure to select **Stop recording** in the **Admin View** toolbar.
 
 **To view your recorded sessions**: 
 
 After you've finished recording, view the recorded sessions by selecting **Session recordings** from the **Admin View** toolbar. A list of recorded sessions from the previous 48 hours appear. For example:
 
-   ![Screenshot of session recordings.](media/troubleshooting-proxy/recording-list.png)
+:::image type="content" source="media/troubleshooting-proxy/recording-list.png" alt-text="Screenshot of session recordings." lightbox="media/troubleshooting-proxy/recording-list.png":::
 
-Download or delete each recording as needed by selecting the **Delete** or **Download** button. For example:
+To manage your recordings, select a file and then select **Delete** or **Download** as needed. For example:
 
-![Screenshot of downloading or deleting a recording.](media/download-delete-recording.png)
+:::image type="content" source="media/download-delete-recording.png" alt-text="Screenshot of downloading or deleting a recording." lightbox="media/download-delete-recording.png":::
 
 ## Next steps
 
