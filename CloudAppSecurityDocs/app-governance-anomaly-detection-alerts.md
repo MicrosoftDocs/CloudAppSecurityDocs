@@ -28,7 +28,7 @@ This guide provides information about investigating and remediating app governan
 - Lateral Movement
 - [Collection](#collection-alerts)
 - [Exfiltration](#exfiltration-alerts)
-- Impact
+- [Impact](#impact-alerts)
 
 ## Security alert classifications
 
