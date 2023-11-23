@@ -4,6 +4,7 @@ description: This article provides information on policy templates included in M
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Policy templates
 
 We recommend that you simplify policy creation by starting with existing templates whenever possible. This article lists several policy templates available with Microsoft Defender for Cloud Apps. 
@@ -58,5 +59,6 @@ To see the full list of policy templates, in the Microsoft 365 Defender portal, 
 
 > [!div class="nextstepaction"]
 > [Best practices for protecting your organization](best-practices.md)
+
 
 [!INCLUDE [Open support ticket](includes/support.md)]
