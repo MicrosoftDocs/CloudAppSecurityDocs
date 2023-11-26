@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot access and session controls for admins | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by admins with Microsoft Defender for Cloud Apps.
-ms.date: 08/20/2023
+ms.date: 11/20/2023
 ms.topic: troubleshooting
 ---
 
@@ -476,74 +476,75 @@ While troubleshooting for onboarding apps, there are some extra things to consid
 
 ## Diagnose and troubleshoot with the Admin View toolbar
 
-The Admin View toolbar provides tools for an admin to diagnose and troubleshoot issues with Conditional Access App Control.
+The **Admin View** toolbar sits at the bottom of your screen and provides tools for admin users to diagnose and troubleshoot issues with Conditional Access App Control.
 
-To enable the Admin View toolbar for specific admin users, you first must add admins to the app onboarding/maintenance list.
+To view the **Admin View** toolbar, you must make sure to add specific admin user accounts to the **App onboarding / maintenance** list in the Microsoft 365 Defender settings. 
+
+**To add a user to the App onboarding / maintenance list**:
 
 1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
 
-1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
+1. Scroll down, and under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
-1. Enter the user principal name or email address for the admin users that will be onboarding the app.
+1. Enter the principal name or email address for the admin user you want to add.
 
-1. Check the box for **Enable these users to bypass Conditional Access App Control from inside a proxied session** and select **Save**.
+1. Select the **Enable these users to bypass Conditional Access App Control from inside a proxied session** option, and then select **Save**.
 
     For example:
 
-    ![Screenshot of the App onboarding/maintenance settings.](media/app-onboarding-maintenance.png)
+    :::image type="content" source="media/app-onboarding-maintenance.png" alt-text="Screenshot of the App onboarding / maintenance settings." lightbox="media/app-onboarding-maintenance.png":::
 
-When those users next start a session of an application, the Admin View toolbar is available.
+The next time that one of the listed users starts a new session in a supported app where they're an admin, the **Admin View** toolbar is shown at the bottom of the browser. 
+
+For example, the following image shows the **Admin View** toolbar showing at the bottom of a browser window, when using OneNote in the browser:
+
+:::image type="content" source="media/troubleshooting-proxy/admin-view.png" alt-text="Screenshot of the Admin View toolbar." lightbox="media/troubleshooting-proxy/admin-view.png":::
+
+The following sections describe how to use the **Admin View** toolbar to test and troubleshoot.
+
+### Test mode (Preview)
+
+As an admin user, you might want to test upcoming proxy bug fixes before the latest release is fully rolled out to all tenants. Provide your feedback about the bug fix to the Microsoft support team to help speed up release cycles.
+
+When in test mode, only the admin users are exposed to any changes provided in the bug fixes. There is no effect on other users.
+
+- To turn on test mode, in the **Admin View** toolbar, select **Test Mode**.
+- When you've finished your testing, select **End Test Mode** to return to the regular functionality.
 
 ### Bypass proxy session
 
-If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It appears for users who have the [Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar) enabled.
+If you have difficulty accessing or loading your application, you may want to verify whether the issue is with the conditional access proxy by running the application without the proxy. 
 
-For example:
+To bypass the proxy, in the **Admin View** toolbar, select **Bypass experience**. Confirm that the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
 
-![Screenshot of the Bypass option in the Admin View toolbar.](media/troubleshooting-proxy/proxy-admin-toolbar-bypass.png)
-
-Once you select **Bypass**, the application runs without the Conditional Access proxy. Confirm that the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
-
-In the next session of the application, the Conditional Access proxy will be used.
+The conditional access proxy is used again in your next session.
 
 ### Record a session
 
-You can help the root cause analysis of problems by providing session recordings to Microsoft support engineers. To record a session, you must enable the [Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar).
+You may want to help the root cause analysis of a problem by sending a session recording to Microsoft support engineers. Use the **Admin View** toolbar to record your session.
 
 > [!NOTE]
 > All personal data is removed from the recordings.
 
-**To record a session from the Admin View toolbar**:
+**To record a session**:
 
-1. From the Admin View toolbar, select **Record session**. For example:
+1. In the **Admin View** toolbar, select **Record session**. When prompted, select **Continue** to accept the terms. For example:
 
-   ![Screenshot of the Record session button.](media/troubleshooting-proxy/proxy-admin-toolbar-record.png)
+    :::image type="content" source="media/accept-continue.png" alt-text="Screenshot of the session recording privacy statement dialog." lightbox="media/accept-continue.png":::
+    
+1. Sign into your app if needed to begin simulating the session.
 
-1. After selecting **Record session**, accept the terms by selecting **Continue** in the next window. For example:
-
-    ![Screenshot of the session recording privacy statement dialog.](media/accept-continue.png)
-
-**To record a session when signing into an app**:
-
-1. To start recording when signing in to the application, select **Record session** when prompted. For example:
-
-    ![Screenshot of selecting to record a session when signing into an app.](media/app-monitored.png)
-
-1. Sign in to the application to begin the scenario simulation.
-
-1. When you finish the scenario simulation, select **Stop recording** in the Admin View toolbar. For example:
-
-    ![Screenshot of selecting to Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
+1. When you finish recording the scenario, make sure to select **Stop recording** in the **Admin View** toolbar.
 
 **To view your recorded sessions**: 
 
-After you've finished recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours appear. For example:
+After you've finished recording, view the recorded sessions by selecting **Session recordings** from the **Admin View** toolbar. A list of recorded sessions from the previous 48 hours appear. For example:
 
-   ![Screenshot of session recordings.](media/troubleshooting-proxy/recording-list.png)
+:::image type="content" source="media/troubleshooting-proxy/recording-list.png" alt-text="Screenshot of session recordings." lightbox="media/troubleshooting-proxy/recording-list.png":::
 
-Each recorded session can be downloaded or deleted. For each session listing, select the delete icon to delete the recording, or the download icon to download the recording. For example:
+To manage your recordings, select a file and then select **Delete** or **Download** as needed. For example:
 
-![Screenshot of downloading or deleting a recording.](media/download-delete-recording.png)
+:::image type="content" source="media/download-delete-recording.png" alt-text="Screenshot of downloading or deleting a recording." lightbox="media/download-delete-recording.png":::
 
 ## Next steps
 
