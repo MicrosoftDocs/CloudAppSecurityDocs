@@ -68,8 +68,6 @@ Configure your firewall for reverse proxy using the settings relevant to your en
 
 For commercial customers, to enable Defender for Cloud Apps reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
-
-
 ```ini
 *.cas.ms
 *.mcas.ms
