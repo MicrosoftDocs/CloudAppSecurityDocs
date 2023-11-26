@@ -29,7 +29,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 As an admin user, you might want to test upcoming proxy bug fixes before the latest Defender for Cloud Apps release is fully rolled out to all tenants. To help you do this, Defender for Cloud Apps now provides a test mode, available from the **Admin View** toolbar.  
 
-When in test mode, only admin users are exposed to any changes provided in the bug fixes. There is no affect on other users. We encourage you to send feedback about the new fixes to the Microsoft support team to help speed up release cycles.
+When in test mode, only admin users are exposed to any changes provided in the bug fixes. There is no effect on other users. We encourage you to send feedback about the new fixes to the Microsoft support team to help speed up release cycles.
 
 When you're finished testing the new fix, turn test mode off to return to regular functionality. 
 

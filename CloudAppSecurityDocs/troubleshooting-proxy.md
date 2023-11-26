@@ -506,7 +506,7 @@ The following sections describe how to use the **Admin View** toolbar to test an
 
 As an admin user, you might want to test upcoming proxy bug fixes before the latest release is fully rolled out to all tenants. Provide your feedback about the bug fix to the Microsoft support team to help speed up release cycles.
 
-When in test mode, only the admin users are exposed to any changes provided in the bug fixes. There is no affect on other users.
+When in test mode, only the admin users are exposed to any changes provided in the bug fixes. There is no effect on other users.
 
 - To turn on test mode, in the **Admin View** toolbar, select **Test Mode**.
 - When you've finished your testing, select **End Test Mode** to return to the regular functionality.
