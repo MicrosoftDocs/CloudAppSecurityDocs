@@ -61,7 +61,7 @@ Note the following limits when using Microsoft Purview labels with Defender for 
 | Limit | Description |
 |------|--------------|
 | **Files with labels or protection applied outside of Defender for Cloud Apps** | Unprotected labels applied outside of Defender for Cloud Apps can be overridden by Defender for Cloud Apps but can’t be removed.  </br></br>Defender for Cloud Apps can't remove labels with protection from files that were labeled outside of Defender for Cloud Apps. </br></br>To scan files with protection applied outside of Defender for Cloud apps, [grant permissions to inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).|
-| **Files labeled by Defender for Cloud Apps** | Defender for Cloud Apps can't override labels on files that have already been labeled by Defender for Cloud Apps.|
+| **Files labeled by Defender for Cloud Apps** | Defender for Cloud Apps doesn't override labels on files that have already been labeled by Defender for Cloud Apps.|
 | **Password protected files** |Defender for Cloud Apps can't read labels on password-protected files. |
 | **Empty files** | Empty files aren't labeled by Defender for Cloud Apps. |
 | **Libraries that require checkout** | Defender for Cloud Apps can't label files located in libraries that are [configured to require checkout](https://support.microsoft.com/office/set-up-a-library-to-require-check-out-of-files-0c73792b-f727-4e19-a1f9-3173899e695b). |
