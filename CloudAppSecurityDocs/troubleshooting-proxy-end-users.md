@@ -224,21 +224,32 @@ For example, in Chrome:
 
 If you receive a message like this, contact Microsoft’s support, who will address it with the relevant browser vendor.
 
+### Second sign-in (AKA 'second login')
+
+Some applications have more than one deep link to login, and unless the customer defines it in the app settings, when the end user will sign-in =, it might be redirected to unrecognized page and the experience will be broken
+
+The integration between IDP companies as Azure AD is based on intercepting an app sign-in and redirecting it. This means that browser sign in cannot be directly controlled without triggering a second sign-in. To trigger a second sign-in, we need to employ second sign-in URL that will be used for that purpose
+
+If the app uses a nonce, the second sign-in may be transparent to users, or they be prompted to login again
+
+If it is not transparent to the end user, the second sign-in URL should be added to the app settings:
+
+1. Go to 'settings'\'Cloud apps'\'connected apps'\'Conditional Access App Control Apps'
+
+1. Choose the relevant pp and then click on the three dots
+
+1. Click on 'Edit app'\'Advanced login configuration'
+
+1. Add the second sign-in URL as mentioned in the error page
+
+If you are confident the app does not use a nonce, you can disable this by editing the apps settings as described in [Slow sign-ins](troubleshooting-proxy.md#slow-sign-ins).
+
 ### Additional considerations for troubleshooting apps
 
 While troubleshooting apps, there are some additional things to consider:
 
 - **Session controls support for modern browsers**
-
-    Defender for Cloud Apps session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
-
-- **Double login**
-
-    A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce.
-
-    If you're confident the app doesn't use a nonce, you can disable this by editing the app in Defender for Cloud Apps and the issue will be resolved. For steps to disable nonce, see [Slow sign-ins](troubleshooting-proxy.md#slow-sign-ins).
-
-    If the app uses a nonce and this feature cannot be disabled, the second login may be transparent to users, or they may be prompted to log in again.
+  Defender for Cloud Apps session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
 
 ## Next steps
 
