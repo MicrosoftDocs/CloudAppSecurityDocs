@@ -1,6 +1,21 @@
 {
     "redirections": [
         {
+            "source_path": "CloudAppSecurityDocs/classic-security-config-aws.md",
+            "redirect_url": "/defender-cloud-apps/classic-security-config",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/classic-security-config-azure.md",
+            "redirect_url": "/defender-cloud-apps/classic-security-config",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/classic-security-config-gcp.md",
+            "redirect_url": "/defender-cloud-apps/classic-security-config",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "CloudAppSecurityDocs/icap-stunnel.md",
             "redirect_url": "/defender-cloud-apps/dcs-inspection",
             "redirect_document_id": false
