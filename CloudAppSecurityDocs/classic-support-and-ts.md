@@ -1,7 +1,7 @@
 ---
-title: Support and troubleshooting information
-description: This article describes your support and troubleshooting options for Microsoft Defender for Cloud Apps
-ms.date: 01/29/2023
+title: Classic portal -  Support and troubleshooting information
+description: Classic portal -  This article describes your support and troubleshooting options for Microsoft Defender for Cloud Apps
+ms.date: 11/28/2023
 ms.topic: conceptual
 ---
 # Support and troubleshooting information for Microsoft Defender for Cloud Apps
@@ -10,10 +10,9 @@ This article describes the available support and troubleshooting options for Def
 
 ## Manage support requests for Defender for Cloud Apps
 
-Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Defender for Cloud Apps. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available
-in additional languages.
+Microsoft provides global technical, presales, billing, and subscription support for Microsoft Defender for Cloud Apps. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in more languages.
 
-As an admin, you can use the **Help + Support** option to file an online support request for Defender for Cloud Apps from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+As an admin, you can use the **Help + Support** option to file an online support request for Defender for Cloud Apps from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Microsoft Entra ID](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
 * Global administrator
 
@@ -43,13 +42,15 @@ Select **support request** to create a new support request that opens to the **B
 
     * **Problem subtype**: Choose the problem subtype from the drop-down menu
 
-    * **Subject**: Briefly describe the issue that you are having
+    * **Subject**: Briefly describe the issue that you're having
 
-4. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then click **Next: Review + create**.
+4. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then select **Next: Review + create**.
 
-5. Review the information, verify that it is correct, and then choose **Create** to submit your support request.
+5. Review the information, verify that it's correct, and then choose **Create** to submit your support request.
 
-**Note:** If you have a billing or subscription question, you can open a case to get support through the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/).
+> [!NOTE]
+> If you have a billing or subscription question, you can open a case to get support through the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/).
+>
 
 ### View open support requests
 
@@ -57,13 +58,13 @@ You can view a support request from within the Azure portal. To do so:
 
 1. Sign in to Azure [https://portal.azure.com](https://portal.azure.com/) with your admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
-2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
+2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view more details.
 
 ## Troubleshooting Microsoft Defender for Cloud Apps status
 
 Check the [current status of Microsoft Defender for Cloud Apps](https://portal.microsoft.com/Adminportal/Home#/servicehealth).
 
-## Additional resources
+## More resources
 
 * [Talk to a community of peers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/bd-p/MicrosoftDefenderCloudApps)
 
@@ -81,7 +82,7 @@ The Defender for Cloud Apps team is always eager to hear your thoughts about our
 
 * **Product feedback**: Send feedback to [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com).
 
-* **Documentation feedback**: Our new feedback system is built on GitHub Issues. To provide feedback on documentation you must first create a GitHub account. Read about this change in [our blog post](/teamblog/a-new-feedback-system-is-coming-to-docs).
+* **Documentation feedback**: Our feedback system is built on GitHub Issues. To provide feedback on documentation, you must first create a GitHub account. Read about this change in [our blog post](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 ## Next steps
 
