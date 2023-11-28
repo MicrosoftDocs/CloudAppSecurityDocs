@@ -40,6 +40,12 @@ The request is sent to Microsoft Support Team. The team will respond to your ser
 
 ## Related topics
 
-- [Troubleshoot service issues](troubleshoot-mdatp.md)
 - [Check service health](/microsoft-365/enterprise/view-service-health)
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+- [Troubleshooting Cloud Discovery errors](troubleshooting-cloud-discovery.md)
+- [Troubleshooting content inspection errors](troubleshooting-content-inspection.md)
+- [Troubleshooting App Connector error messages](troubleshooting-api-connectors-using-error-messages.md)
+- [Troubleshooting Microsoft Defender for Cloud Apps policies](troubleshoot-policies.md)
+- [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md)
+- [Troubleshooting access and session controls for end-users](troubleshooting-proxy-end-users.md)
+- [Troubleshooting - What is `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`?](troubleshooting-proxy-url.md)
+- [Troubleshooting SIEM integration](troubleshooting-siem.md)
