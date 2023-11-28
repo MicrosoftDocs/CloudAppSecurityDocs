@@ -1,88 +1,49 @@
 ---
-title: Support and troubleshooting information
-description: This article describes your support and troubleshooting options for Microsoft Defender for Cloud Apps
-ms.date: 01/29/2023
+title: Contact Microsoft Defender for Cloud Apps support | Microsoft Defender for Cloud Apps
+description: Learn how to contact Microsoft Defender for Cloud Apps  support
 ms.topic: conceptual
+ms.date: 11/28/2023
 ---
-# Support and troubleshooting information for Microsoft Defender for Cloud Apps
 
-This article describes the available support and troubleshooting options for Defender for Cloud Apps when using the legacy classic portal.
+# Contact Microsoft Defender for Cloud Apps support
 
-## Manage support requests for Defender for Cloud Apps
+This article describes how to access Microsoft Defender for Cloud Apps support from the Microsoft 365 Defender portal. The support widget in Microsoft 365 Defender helps you find solutions to common problems or submit a support case to the Microsoft support team.
 
-Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Defender for Cloud Apps. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available
-in additional languages.
+## Prerequisites
 
-As an admin, you can use the **Help + Support** option to file an online support request for Defender for Cloud Apps from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+To open support cases, you must have access to Microsoft 365 Defender as a **Service Support Administrator** or a **Helpdesk Administrator**. Any roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
 
-* Global administrator
+For more information, see [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator) and [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
-* Service administrator
+## Find solutions to common problems
 
-Select **support request** to create a new support request that opens to the **Basics** tab of the Azure *Help + support* page by following the protocol below.
+Access the Microsoft 365 Defender support widget by selecting the **?** icon at the top of the page. Then, enter text in the search box to find self-help solutions. For example:
 
->[!NOTE]
-> For technical support with third-party products that work with Microsoft Defender for Cloud Apps (for example, Box, Salesforce, and Google Workspace) contact the supplier of that product first.
+:::image type="content" source="media/support-and-ts/access-support.png" alt-text="Screenshot of how to access support in Microsoft 365 Defender.":::
 
-### Create an online support request
+Select an item from the self-help options shown to see more information. If the suggest content isn't sufficient, open a service request. For example:
 
-1. Sign in to the Azure portal [https://portal.azure.com](https://portal.azure.com/) with your admin
-    credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+## Open a service request
 
-2. On the Azure **Help + support** page, select **Create a support request**.
+Look through the available self-help options before opening a service request. If you need to contact support, do so from a self-help article using either the **Contact support** button or the :::image type="icon" source="media/support-and-ts/contact-support.png" border="false"::: button. For example:
 
-3. On the **Basics** tab, for most support issues, choose the following options:
+:::image type="content" source="media/support-and-ts/contact-support-buttons.png" alt-text="Screenshot of the support widget showing contact support buttons.":::
 
-    * **Issue type**: **Technical**
+> [!NOTE]
+> If you have a premier support contract with Microsoft, you'll see the premier tag on the widget. If not, contact your Microsoft account manager.
 
-    * **Subscription**: \<*your subscription*\>
+In the **Contact support** form, enter the following details:
 
-    * **Service**: **Microsoft Defender for Cloud Apps**
+1. Enter a title and description for the issue you are facing, and the phone number and email address where we may reach you.
+1. Select whether you consent to record service calls, and confirm your preferred contact method. 
+1. (Optional) Include up to five attachments that are relevant to the issue to provide additional context for the support case.
+1. Expand the **Regional settings** area to select your time zone and an alternative language, if applicable.
+1. Expand the **Accessibility settings** area to indicate if you have any accessibility needs, and then add a description.
 
-    * **Problem type**: Choose your problem type from the drop-down menu
+The request is sent to Microsoft Support Team. The team will respond to your service request shortly.
 
-    * **Problem subtype**: Choose the problem subtype from the drop-down menu
+## Related topics
 
-    * **Subject**: Briefly describe the issue that you are having
-
-4. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then click **Next: Review + create**.
-
-5. Review the information, verify that it is correct, and then choose **Create** to submit your support request.
-
-**Note:** If you have a billing or subscription question, you can open a case to get support through the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/).
-
-### View open support requests
-
-You can view a support request from within the Azure portal. To do so:
-
-1. Sign in to Azure [https://portal.azure.com](https://portal.azure.com/) with your admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
-
-2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
-
-## Troubleshooting Microsoft Defender for Cloud Apps status
-
-Check the [current status of Microsoft Defender for Cloud Apps](https://portal.microsoft.com/Adminportal/Home#/servicehealth).
-
-## Additional resources
-
-* [Talk to a community of peers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/bd-p/MicrosoftDefenderCloudApps)
-
-* [Start a trial today](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
-
-* [Stay up to date with our blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/bg-p/MicrosoftSecurityandCompliance/label-name/Microsoft%20Defender%20for%20Cloud%20Apps)
-
-* Download [the Defender for Cloud Apps datasheet](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
-
-<a name="feedback"></a>
-
-## How to provide feedback
-
-The Defender for Cloud Apps team is always eager to hear your thoughts about our product. Provide feedback using one of the following options:
-
-* **Product feedback**: Send feedback to [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com).
-
-* **Documentation feedback**: Our new feedback system is built on GitHub Issues. To provide feedback on documentation you must first create a GitHub account. Read about this change in [our blog post](/teamblog/a-new-feedback-system-is-coming-to-docs).
-
-## Next steps
-
-Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md)
+- [Troubleshoot service issues](troubleshoot-mdatp.md)
+- [Check service health](/microsoft-365/enterprise/view-service-health)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
