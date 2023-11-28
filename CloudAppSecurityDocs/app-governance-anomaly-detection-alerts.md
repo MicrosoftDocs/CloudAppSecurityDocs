@@ -1060,7 +1060,7 @@ This section describes alerts indicating that a malicious actor may be attemptin
 
 **MITRE ID**: T1496
 
-This detection identifies a single tenant new OAuth application that creating bulk of Azure Virtual Machines in your tenant using the Azure Resource Manager API.
+This detection identifies a single tenant new OAuth application that's creating bulk of Azure Virtual Machines in your tenant using the Azure Resource Manager API.
 
 **TP or FP?**
 
