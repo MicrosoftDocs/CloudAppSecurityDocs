@@ -29,7 +29,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
         | EU1| `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp` |
         | EU2 | `uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-        Your data center details are shown in the Defender for Cloud Apps **About** page in the **Settings** area. For more information, see [View your data center](network-requirements.md#view-your-data-center).
+        Your data center details are shown in the Defender for Cloud Apps **About** page in the **Settings** area. For more information, see [View your data center](network-requirements.md#view-your-data-center).
 
 1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
