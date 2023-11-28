@@ -32,13 +32,9 @@ Look through the available self-help options before opening a service request. I
 > [!NOTE]
 > If you have a premier support contract with Microsoft, you'll see the premier tag on the widget. If not, contact your Microsoft account manager.
 
-In the **Contact support** form, enter the following details:
+Use the **Contact support** form to enter details about your support request, including a description of the issue, related attachments, and your preferred contact options. 
 
-1. Enter a title and description for the issue you are facing, and the phone number and email address where we may reach you.
-1. Select whether you consent to record service calls, and confirm your preferred contact method. 
-1. (Optional) Include up to five attachments that are relevant to the issue to provide additional context for the support case.
-1. Expand the **Regional settings** area to select your time zone and an alternative language, if applicable.
-1. Expand the **Accessibility settings** area to indicate if you have any accessibility needs, and then add a description.
+Expand areas for regional and accessibility settings to indicate more details about yourself to help us make the process smoother.
 
 The request is sent to Microsoft Support Team. The team will respond to your service request shortly.
 
