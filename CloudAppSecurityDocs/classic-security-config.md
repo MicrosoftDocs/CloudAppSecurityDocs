@@ -11,7 +11,7 @@ ROBOTS: NOINDEX
 
 [!INCLUDE [cspm-banner](includes/cspm-banner.md)]
 
-Microsoft Defender for Cloud Apps provides you with security configuration assessments for your your SaaS applications. This multi-cloud view of all cloud platform security configuration recommendations enables security admins to investigate all security configuration gaps in Defender for Cloud Apps.
+Microsoft Defender for Cloud Apps provides you with security configuration assessments for your SaaS applications. This multicloud view of all cloud platform security configuration recommendations enables security admins to investigate all security configuration gaps in Defender for Cloud Apps.
 
 For more information, see [Security posture management for SaaS apps](security-saas.md).
 
