@@ -17,27 +17,19 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. If you restrict application permission access, follow this step. Otherwise, skip to step 2.
 
-    1. Sign in with an Admin account to your Box account.
-    1. Select **Apps** > **Custom apps** > **Settings**.
+    1.  Sign into your Box account as an Admin user.
+    1.  Go to the custom app settings. For more information, see [Managing custom apps – Box Support](https://support.box.com/hc/en-us/articles/360044196653-Managing-custom-apps#:~:text=Open%20your%20Admin%20Console.%20In%20the%20left%20sidebar%2C,you%20want%20to%20enforce%2C%20click%20the%20slider%20button.)
+    1.  If your settings are configured to disable unpublished apps by default, enter the Defender for Cloud Apps API key for your data center, as listed in the following table, and save your changes.
 
-         ![box apps.](media/box-apps.png "box apps")
+        | **Data center**<br> | **Defender for Cloud Apps API key**<br> |
+        | --- | --- |
+        | US1 | `nduj1o3yavu30dii7e03c3n7p49cj2qh` |
+        | US2 | `w0ouf1apiii9z8o0r6kpr4nu1pvyec75` |
+        | US3 | `dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
+        | EU1| `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp` |
+        | EU2 | `uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-    1. If **Disable unpublished apps by default** is selected, in the **Except for** text box, add the Defender for Cloud Apps API key:
-
-         |Data center|Defender for Cloud Apps API key|
-         |----|----|
-         |US1|`nduj1o3yavu30dii7e03c3n7p49cj2qh`|
-         |US2|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
-         |US3|`dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
-         |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
-         |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
-
-        Then select **Save**. For information on how to see which Defender for Cloud Apps data center you're connected to, see [View your data center](network-requirements.md#view-your-data-center).
-
-        ![box settings except for.](media/box-settings-except-for.png)
-
-        > [!NOTE]
-        > If you are an existing Adallom customer, and your console URL is for Adallom and not Defender for Cloud Apps, use this app serial number: `bwahmilhdlpbqy2ongkl119o3lrkoshc`.
+        Your data center details are shown in the Defender for Cloud Apps **About** page in the **Settings** area. For more information, see [View your data center](network-requirements#view-your-data-center.md).
 
 1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
