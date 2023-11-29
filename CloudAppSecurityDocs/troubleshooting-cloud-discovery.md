@@ -10,6 +10,8 @@ ms.topic: conceptual
 
 This article provides a list of Cloud Discovery errors and resolution recommendations for each.
 
+Even after Discovery is set up, customers might continue hardening the Operating System in order to meet compliance standards. However, this action might cause interference with the containerization service itself.
+
 ## Microsoft Defender for Endpoint integration
 
 If you integrated Microsoft Defender for Endpoint with Defender for Cloud Apps, and you don't see the results of the integration.
@@ -51,8 +53,6 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 |Discovery data was uploaded and parsed successfully but the Cloud Discovery dashboard looks empty|The Dashboard might be filtered on data your logs don't have so there's no data to show. Try changing the filters in the Cloud Discovery dashboard to show different types of data to see the results.|
 
 ## Miscellaneous errors
-
-Even after Discovery is set up, customers might continue hardening the Operating System in order to meet compliance standards. However, this action might cause interference with the containerization service itself. <!--….. and anything else to add?-->
 
 ## Next steps
 
