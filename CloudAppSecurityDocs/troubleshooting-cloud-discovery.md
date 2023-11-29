@@ -52,8 +52,6 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 |----|----|
 |Discovery data was uploaded and parsed successfully but the Cloud Discovery dashboard looks empty|The Dashboard might be filtered on data your logs don't have so there's no data to show. Try changing the filters in the Cloud Discovery dashboard to show different types of data to see the results.|
 
-## Miscellaneous errors
-
 ## Next steps
 
 > [!div class="nextstepaction"]
