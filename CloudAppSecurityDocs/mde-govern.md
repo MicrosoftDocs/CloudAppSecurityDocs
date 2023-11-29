@@ -81,7 +81,7 @@ To block usage for specific device groups, do the following steps:
 
     - **Exclude**: The excluded set of entities won't be affected by the access enforcement. For example, the profile *myContoso* has **Exclude** for device groups A and B. Blocking app Y with the profile *myContoso* will block app access for the entire organization except for groups A and B.
 
-1. Select the relevant device groups for the profile.
+1. Select the relevant device groups for the profile. Device groups listed are pulled from Microsoft Defender for Endpoint. For more information, see [Create a device group](/microsoft-365/security/defender-endpoint/machine-groups#create-a-device-group).
 
 1. Select **Save**.
 

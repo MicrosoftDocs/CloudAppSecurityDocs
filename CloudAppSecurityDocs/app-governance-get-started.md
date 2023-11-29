@@ -66,6 +66,7 @@ App governance is available to organizations with a valid Defender for Cloud App
 - Microsoft 365 E5/A5/F5
 - Microsoft Purview E5/A5/F5
 - Microsoft 365 F5 Security & Compliance
+- Microsoft 365 Audit Platform
 
 ## Roles
 
