@@ -28,7 +28,7 @@ This guide provides information about investigating and remediating app governan
 - Lateral Movement
 - [Collection](#collection-alerts)
 - [Exfiltration](#exfiltration-alerts)
-- Impact
+- [Impact](#impact-alerts)
 
 ## Security alert classifications
 
@@ -1049,6 +1049,58 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 1. Review all activities performed by the app.
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
+
+## Impact alerts
+
+This section describes alerts indicating that a malicious actor may be attempting to  manipulate, interrupt, or destroy your systems and data from your organization.
+
+### Entra Line-of-Business app initiating an anomalous spike in virtual machine creation
+
+**Severity**: Medium
+
+**MITRE ID**: T1496
+
+This detection identifies a single tenant new OAuth application that's creating bulk of Azure Virtual Machines in your tenant using the Azure Resource Manager API.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth app has recently been created and is creating large numbers of Virtual Machines in your tenant, then a true positive is indicated.
+
+  **Recommended actions**: Review the Virtual machines created and any recent changes made to the application. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**:
+
+1. Review the apps that are created recently and VMs created.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and Role granted to it in your subscription.
+
+### OAuth app with high scope privileges in Microsoft Graph was observed initiating virtual machine creation
+
+**Severity**: Medium
+
+**MITRE ID**: T1496
+
+This detection identifies OAuth application that creating bulk of Azure Virtual Machines in your tenant using the Azure Resource Manager API while having high privilege in the tenant via MS Graph API prior to the activity.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth app having high privlege scopes has been created and is creating large numbers of Virtual Machines in your tenant, then a true positive is indicated.
+
+  **Recommended actions**: Review the Virtual machines created and any recent changes made to the application. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**:
+
+1. Review the apps that are created recently and VMs created.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and Role granted to it in your subscription.
 
 ## Next steps
 
