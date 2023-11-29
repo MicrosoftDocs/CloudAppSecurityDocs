@@ -36,7 +36,7 @@ Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically syn
 
 Use the following steps to enable access control for cloud apps:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**, and then select **Enforce app access**. The device groups displayed are taken from Microsoft Defender for Endpoint. To create The device groups displayed are taken from Microsoft Defender for Endpoint. To create <!--[– this has been described in this section, hasn’t it?]--> or edit the device groups list, see [Create a device group](/microsoft-365/security/defender-endpoint/machine-groups#create-a-device-group). <!--Choose …. [are there screen choices on the page to indicate?]-->
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**, and then select **Enforce app access**. 
 
     ![Screenshot showing how to enable blocking with Defender for Endpoint.](media/mde-integration.png)
 
@@ -69,7 +69,7 @@ Use the following steps to enable access control for cloud apps:
 
 To block usage for specific device groups, do the following steps:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.  Then under **Cloud discovery**, select **Apps tags** and go to the **Scoped profiles** tab.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.  Then under **Cloud discovery**, select **Apps tags** and go to the **Scoped profiles** tab. The device groups displayed are taken from Microsoft Defender for Endpoint. To create The device groups displayed are taken from Microsoft Defender for Endpoint. To create <!--[– this has been described in this section, hasn’t it?]--> or edit the device groups list, see [Create a device group](/microsoft-365/security/defender-endpoint/machine-groups#create-a-device-group). <!--Choose …. [are there screen choices on the page to indicate?]-->
 
 1. Select **Add profile**. The profile sets the entities scoped for blocking/unblocking apps.
 
