@@ -36,7 +36,7 @@ Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically syn
 
 Use the following steps to enable access control for cloud apps:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**, and then select **Enforce app access**. 
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**, and then select **Enforce app access**.
 
     ![Screenshot showing how to enable blocking with Defender for Endpoint.](media/mde-integration.png)
 
@@ -69,7 +69,7 @@ Use the following steps to enable access control for cloud apps:
 
 To block usage for specific device groups, do the following steps:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.  Then under **Cloud discovery**, select **Apps tags** and go to the **Scoped profiles** tab. The device groups displayed are taken from Microsoft Defender for Endpoint. To create The device groups displayed are taken from Microsoft Defender for Endpoint. To create <!--[– this has been described in this section, hasn’t it?]--> or edit the device groups list, see [Create a device group](/microsoft-365/security/defender-endpoint/machine-groups#create-a-device-group). <!--Choose …. [are there screen choices on the page to indicate?]-->
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.  Then under **Cloud discovery**, select **Apps tags** and go to the **Scoped profiles** tab.
 
 1. Select **Add profile**. The profile sets the entities scoped for blocking/unblocking apps.
 
@@ -81,7 +81,7 @@ To block usage for specific device groups, do the following steps:
 
     - **Exclude**: The excluded set of entities won't be affected by the access enforcement. For example, the profile *myContoso* has **Exclude** for device groups A and B. Blocking app Y with the profile *myContoso* will block app access for the entire organization except for groups A and B.
 
-1. Select the relevant device groups for the profile.
+1. Select the relevant device groups for the profile. Device groups listed are pulled from Microsoft Defender for Endpoint. For more information, see [Create a device group](/microsoft-365/security/defender-endpoint/machine-groups#create-a-device-group).
 
 1. Select **Save**.
 
