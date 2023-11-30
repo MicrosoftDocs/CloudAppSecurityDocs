@@ -2,7 +2,7 @@
 title: Contact Microsoft Defender for Cloud Apps support | Microsoft Defender for Cloud Apps
 description: Learn how to contact Microsoft Defender for Cloud Apps  support
 ms.topic: conceptual
-ms.date: 11/28/2023
+ms.date: 11/30/2023
 ---
 
 # Contact Microsoft Defender for Cloud Apps support
@@ -21,7 +21,7 @@ Access the Microsoft 365 Defender support widget by selecting the **?** icon at 
 
 :::image type="content" source="media/support-and-ts/access-support.png" alt-text="Screenshot of how to access support in Microsoft 365 Defender.":::
 
-Select an item from the self-help options shown to see more information. If the suggest content isn't sufficient, open a service request. For example:
+Select an item from the self-help options shown to see more information. If the suggest content isn't sufficient, [open a service request](#open-a-service-request).
 
 ## Open a service request
 
