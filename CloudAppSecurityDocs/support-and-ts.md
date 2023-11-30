@@ -17,17 +17,13 @@ For more information, see [Security Administrator permissions](/azure/active-dir
 
 ## Find solutions to common problems
 
-Access the Microsoft 365 Defender support widget by selecting the **?** icon at the top of the page. Then, enter text in the search box to find self-help solutions. For example:
-
-:::image type="content" source="media/support-and-ts/access-support.png" alt-text="Screenshot of how to access support in Microsoft 365 Defender.":::
+Access the Microsoft 365 Defender support widget by selecting the **?** icon at the top of the page. Then, enter text in the search box to find self-help solutions.
 
 Select an item from the self-help options shown to see more information. If the suggest content isn't sufficient, [open a service request](#open-a-service-request).
 
 ## Open a service request
 
-Look through the available self-help options before opening a service request. If you need to contact support, do so from a self-help article using either the **Contact support** button or the :::image type="icon" source="media/support-and-ts/contact-support.png" border="false"::: button. For example:
-
-:::image type="content" source="media/support-and-ts/contact-support-buttons.png" alt-text="Screenshot of the support widget showing contact support buttons.":::
+Look through the available self-help options before opening a service request. If you need to contact support, do so from a self-help article using either the **Contact support** button or the :::image type="icon" source="media/support-and-ts/contact-support.png" border="false"::: button. 
 
 > [!NOTE]
 > If you have a premier support contract with Microsoft, you'll see the premier tag on the widget. If not, contact your Microsoft account manager.
