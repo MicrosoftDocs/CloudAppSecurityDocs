@@ -25,6 +25,30 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## November 2023
 
+### Defender for Cloud Apps application certificate rotation
+
+Defender for Cloud Apps plans to rotate its application certificate. If you'd trusted the legacy certificate and currently have SIEM agents running on newer versions of the Java Development Kit (JDK), you must trust the new certificate to ensure continued service. In such cases, we recommend that you already trust the new certificates to prevent issues once the certificates are fully rotated.
+
+For more information, see our [Issue with new versions of Java](troubleshooting-siem.md#issue-with-new-versions-of-java) troubleshooting guide.
+
+### CSPM support in Microsoft Defender for Cloud
+
+With the continual Microsoft Defender for Cloud Apps convergence into Microsoft 365 Defender, cloud security posture management (CSPM) connections are fully supported via Microsoft Defender for Cloud.
+
+We recommend that you connect your Azure, AWS, and Google Cloud Platform (GCP) environments to Microsoft Defender for Cloud to get the latest CSPM capabilities.
+
+For more information, see:
+
+- [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction)
+- [Cloud Security Posture Management (CSPM)](/azure/defender-for-cloud/concept-cloud-security-posture-management) in Defender for Cloud
+- [Connect your Azure subscriptions](/azure/defender-for-cloud/connect-azure-subscription) to Microsoft Defender for Cloud
+- [Connect your AWS account to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws)
+- [Connect your GCP project to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-gcp)
+
+> [!NOTE]
+> Customers still using the [classic Defender for Cloud Apps portal](classic-cas-compliance-trust.md) no longer see [security configuration assessments](classic-security-config.md) for Azure, AWS, and GCP environments.
+>
+
 ### Test mode for admin users (Preview)
 
 As an admin user, you might want to test upcoming proxy bug fixes before the latest Defender for Cloud Apps release is fully rolled out to all tenants. To help you do this, Defender for Cloud Apps now provides a test mode, available from the **Admin View** toolbar.  
