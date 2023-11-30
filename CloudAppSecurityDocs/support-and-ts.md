@@ -23,7 +23,11 @@ Select an item from the self-help options shown to see more information. If the 
 
 ## Open a service request
 
-Look through the available self-help options before opening a service request. If you need to contact support, do so from a self-help article using either the **Contact support** button or the :::image type="icon" source="media/support-and-ts/contact-support.png" border="false"::: button. 
+Look through the available self-help options before opening a service request. If you need to contact support, do so from a self-help article using either the **Contact support** button or the :::image type="icon" source="media/support-and-ts/contact-support.png" border="false"::: button.
+
+For example:
+
+:::image type="content" source="media/support-and-ts/contact-support-buttons.png" alt-text="Screenshot of the Contact support buttons."::: 
 
 > [!NOTE]
 > If you have a premier support contract with Microsoft, you'll see the premier tag on the widget. If not, contact your Microsoft account manager.
