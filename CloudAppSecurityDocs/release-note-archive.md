@@ -183,7 +183,7 @@ We've released a new log collector version with the latest vulnerabilities fixes
 August 21, 2022
 
 - **Feature parity between commercial and government offerings**  
-We've consolidated the flow that allows Microsoft Defender for Cloud Apps data to be consumed through Microsoft Defender XDR. To consume this data in Microsoft Defender for Cloud, Microsoft Defender XDR should be used. For more information, see [Microsoft Defender XDR delivers unified XDR experience to GCC, GCC High and DoD customers](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-defender-xdr-delivers-unified-xdr-experience-to-gcc/ba-p/3263702) and [Connect Microsoft Defender XDR data to Microsoft Sentinel](/azure/sentinel/connect-microsoft-defender-xdr?tabs=MDE#connect-to-microsoft-defender-xdr).
+We've consolidated the flow that allows Microsoft Defender for Cloud Apps data to be consumed through Microsoft Defender XDR. To consume this data in Microsoft Defender for Cloud, Microsoft Defender XDR should be used. For more information, see [Microsoft Defender XDR delivers unified XDR experience to GCC, GCC High and DoD customers](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702) and [Connect Microsoft Defender XDR data to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE#connect-to-microsoft-defender-xdr).
 
 - **Protecting apps that use non-standard ports with session controls**  
 This feature allows Microsoft Defender for Cloud Apps to enforce session policies for applications that use port numbers other than 443.
