@@ -59,7 +59,7 @@ sections:
         answer: |
           App governance is integrated with Microsoft Defender XDR for a unified alert experience. The Microsoft Defender XDR connector for Microsoft Sentinel (preview) sends all Microsoft Defender XDR incidents and alerts information to Microsoft Sentinel and keeps the incidents synchronized.  
 
-          The Microsoft Defender XDR connector enables you to automatically detect, triage, investigate and remediate app governance incidents and alerts on Microsoft Sentinel. For more information, see [Microsoft Defender XDR integration with Microsoft Sentinel](/microsoft-365/security/defender/microsoft-defender-xdr-integration-with-azure-sentinel) and [Connect data from Microsoft Defender XDR to Microsoft Sentinel](/azure/sentinel/connect-microsoft-defender-xdr)
+          The Microsoft Defender XDR connector enables you to automatically detect, triage, investigate and remediate app governance incidents and alerts on Microsoft Sentinel. For more information, see [Microsoft Defender XDR integration with Microsoft Sentinel](/microsoft-365/security/defender/microsoft-365-defender-integration-with-azure-sentinel) and [Connect data from Microsoft Defender XDR to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
 
       - question: Where can I get more information about app governance?
         answer: |
