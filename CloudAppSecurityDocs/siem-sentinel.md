@@ -40,7 +40,7 @@ We recommend that GCC, GCC High, and DoD customers who are interested in seeing 
 
 For more information, see:
 
-- [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-defender-xdr-sentinel-integration)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
 - [Microsoft Defender for Cloud Apps for US Government offerings](editions-cloud-app-security-gcc.md)
 
 ### Integrating with Microsoft Sentinel
