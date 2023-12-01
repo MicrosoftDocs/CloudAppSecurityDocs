@@ -17,7 +17,7 @@ Some of the requirements below depend on which data center you're connected to.
 
 To see which data center you're connecting to, do the following steps:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **About**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **About**.
 
 2. In the **About** screen, you can see the region and the data center.
 
@@ -25,7 +25,7 @@ To see which data center you're connecting to, do the following steps:
 
 ## Portal access
 
-To use Defender for Cloud Apps in the Microsoft 365 Defender portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
+To use Defender for Cloud Apps in the Microsoft Defender Portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
 ```ini
 adaproddiscovery.azureedge.net

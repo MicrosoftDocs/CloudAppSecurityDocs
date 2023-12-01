@@ -16,17 +16,17 @@ This article is an archive that describes updates made in past releases of Defen
 
 April 30, 2023
 
-- **The Microsoft Defender for Cloud Apps integration into Microsoft 365 Defender is Generally Available (GA)**. For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+- **The Microsoft Defender for Cloud Apps integration into Microsoft Defender XDR is Generally Available (GA)**. For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
-- **The automatic redirection option is Generally Available (GA)**. Admins can use this option to redirect users from the standalone Defender for Cloud Apps portal to Microsoft 365 Defender. 
+- **The automatic redirection option is Generally Available (GA)**. Admins can use this option to redirect users from the standalone Defender for Cloud Apps portal to Microsoft Defender XDR. 
 
-    By default, this option is set to **Off**. Admins must explicitly opt in by switching the toggle to **On** to exclusively use the Microsoft 365 Defender experience. 
+    By default, this option is set to **Off**. Admins must explicitly opt in by switching the toggle to **On** to exclusively use the Microsoft Defender XDR experience. 
     
-    For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+    For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
 
 - **Settings pages updates**:
 
-    The capabilities on the following pages are fully integrated into Microsoft 365 Defender, and therefore don't have their own standalone experience in Microsoft 365 Defender:
+    The capabilities on the following pages are fully integrated into Microsoft Defender XDR, and therefore don't have their own standalone experience in Microsoft Defender XDR:
   
     - [Settings > Azure AD Identity Protection](/microsoft-365/security/defender/investigate-alerts)
     - [Settings > App Governance](app-governance-get-started.md)
@@ -48,8 +48,8 @@ April 24, 2023
 
 April 2, 2023
 
-- New "behaviors" data type in Microsoft 365 Defender advanced hunting (Preview)  
-To enhance our threat protection and reduce alert fatigue, we've added a new data layer called "behaviors" to the Microsoft Defender for Cloud Apps experience in Microsoft 365 Defender advanced hunting. This feature is intended to provide relevant information for investigations by identifying anomalies or other activities that may be related to security scenarios, but don't necessarily indicate malicious activity or a security incident. In this first stage, some of the Microsoft Defender for Cloud App anomaly detections will also be presented as behaviors. In future phases, these detections will only generate behaviors and not alerts. For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
+- New "behaviors" data type in Microsoft Defender XDR advanced hunting (Preview)  
+To enhance our threat protection and reduce alert fatigue, we've added a new data layer called "behaviors" to the Microsoft Defender for Cloud Apps experience in Microsoft Defender XDR advanced hunting. This feature is intended to provide relevant information for investigations by identifying anomalies or other activities that may be related to security scenarios, but don't necessarily indicate malicious activity or a security incident. In this first stage, some of the Microsoft Defender for Cloud App anomaly detections will also be presented as behaviors. In future phases, these detections will only generate behaviors and not alerts. For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 
 ## March 2023
 
@@ -57,8 +57,8 @@ To enhance our threat protection and reduce alert fatigue, we've added a new dat
 
 March 19, 2023
 
-- **Automatic redirection from Microsoft Defender for Cloud Apps to the Microsoft 365 Defender portal (Preview)**  
-A new automatic redirection toggle will allow you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft 365 Defender. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft 365 Defender portal. The toggle default value is set to **Off**, and admins will need explicitly to opt in to the automatic redirection and start using the Microsoft 365 Defender exclusively. You still have an option to opt out from the Microsoft 365 Defender experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+- **Automatic redirection from Microsoft Defender for Cloud Apps to the Microsoft Defender Portal (Preview)**  
+A new automatic redirection toggle will allow you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft Defender XDR. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft Defender Portal. The toggle default value is set to **Off**, and admins will need explicitly to opt in to the automatic redirection and start using the Microsoft Defender XDR exclusively. You still have an option to opt out from the Microsoft Defender XDR experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
 
 ### Defender for Cloud Apps release 248
 
@@ -125,14 +125,14 @@ Defender for Cloud Apps already includes the ability to explore policy file matc
 December 25, 2022
 
 - **Azure AD identity protection**  
-Azure AD identity protection alerts will arrive directly to Microsoft 365 Defender. The Microsoft Defender for Cloud Apps policies won't affect the alerts in the Microsoft 365 Defender portal. Azure AD identity protection policies will be removed gradually from the cloud apps policies list in the Microsoft 365 Defender portal. To configure alerts from these policies, see [Configure Azure AD IP alert service](/microsoft-365/security/defender/investigate-alerts#configure-aad-ip-alert-service).
+Azure AD identity protection alerts will arrive directly to Microsoft Defender XDR. The Microsoft Defender for Cloud Apps policies won't affect the alerts in the Microsoft Defender Portal. Azure AD identity protection policies will be removed gradually from the cloud apps policies list in the Microsoft Defender Portal. To configure alerts from these policies, see [Configure Azure AD IP alert service](/microsoft-365/security/defender/investigate-alerts#configure-aad-ip-alert-service).
 
 ### Defender for Cloud Apps release 237, 238 and 239
 
 October 30, 2022
 
-- **Native Integration of Microsoft Defender for Cloud Apps in Microsoft 365 Defender is now in public preview**  
-  The entire Defender for Cloud Apps experience in Microsoft 365 Defender is now available for public preview.
+- **Native Integration of Microsoft Defender for Cloud Apps in Microsoft Defender XDR is now in public preview**  
+  The entire Defender for Cloud Apps experience in Microsoft Defender XDR is now available for public preview.
 
   SecOps and security admins will experience these major benefits:
 
@@ -141,7 +141,7 @@ October 30, 2022
   - Additional data and signals in advanced hunting
   - Integrated protection across all security workloads
 
-  For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+  For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
 ### Defender for Cloud Apps release 236
 
@@ -183,7 +183,7 @@ We've released a new log collector version with the latest vulnerabilities fixes
 August 21, 2022
 
 - **Feature parity between commercial and government offerings**  
-We've consolidated the flow that allows Microsoft Defender for Cloud Apps data to be consumed through Microsoft 365 Defender. To consume this data in Microsoft Defender for Cloud, Microsoft 365 Defender should be used. For more information, see [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702) and [Connect Microsoft 365 Defender data to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE#connect-to-microsoft-365-defender).
+We've consolidated the flow that allows Microsoft Defender for Cloud Apps data to be consumed through Microsoft Defender XDR. To consume this data in Microsoft Defender for Cloud, Microsoft Defender XDR should be used. For more information, see [Microsoft Defender XDR delivers unified XDR experience to GCC, GCC High and DoD customers](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-defender-xdr-delivers-unified-xdr-experience-to-gcc/ba-p/3263702) and [Connect Microsoft Defender XDR data to Microsoft Sentinel](/azure/sentinel/connect-microsoft-defender-xdr?tabs=MDE#connect-to-microsoft-defender-xdr).
 
 - **Protecting apps that use non-standard ports with session controls**  
 This feature allows Microsoft Defender for Cloud Apps to enforce session policies for applications that use port numbers other than 443.
@@ -195,7 +195,7 @@ There's no configuration requirement for this feature.  The feature is currently
 August 7, 2022
 
 - **MITRE techniques**  
-The Defender for Cloud Apps threat protection anomaly detections will now include MITRE techniques and sub-techniques where relevant, in addition to the MITRE tactic that already exists. This data will also be available in the alert's side pane in Microsoft 365 Defender. For more information, see [How to investigate anomaly detection alerts](investigate-anomaly-alerts.md).
+The Defender for Cloud Apps threat protection anomaly detections will now include MITRE techniques and sub-techniques where relevant, in addition to the MITRE tactic that already exists. This data will also be available in the alert's side pane in Microsoft Defender XDR. For more information, see [How to investigate anomaly detection alerts](investigate-anomaly-alerts.md).
 
 > [!IMPORTANT]
 > **Deprecation of old proxy suffix domains for session controls (gradual rollout)**  
@@ -294,7 +294,7 @@ A new app connector for Atlassian is available in public preview. You can now co
 December 26, 2021
 
 - **Non-Microsoft activities in advanced hunting**  
-Non-Microsoft apps activities are now included the [CloudAppEvent table](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table) in Microsoft 365 Defender [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview). For more information, see [the Microsoft 365 Defender Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/cloudappevents-in-advanced-hunting-now-includes-non-microsoft/ba-p/3036692).
+Non-Microsoft apps activities are now included the [CloudAppEvent table](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table) in Microsoft Defender XDR [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview). For more information, see [the Microsoft Defender XDR Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/cloudappevents-in-advanced-hunting-now-includes-non-microsoft/ba-p/3036692).
 
 - **NetDocuments API connector is now in general availability**  
 The NetDocuments API connector is in general availability, giving you more visibility into, and control over, how your NetDocument app is used in your organization. For more information, see [How Cloud App Security helps protect your NetDocuments](protect-netdocuments.md)
@@ -438,7 +438,7 @@ New near real-time file scanning is available in Dropbox, ServiceNow and Salesfo
 Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [How to integrate Microsoft Purview Information Protection with Defender for Cloud Apps](azip-integration.md#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps).
 
 - **Extended Advanced Hunting events**  
-We've expanded the available events in Cloud App Security. Microsoft 365 Defender Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Microsoft 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).
+We've expanded the available events in Cloud App Security. Microsoft Defender XDR Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Microsoft 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).
 
 ### Cloud App Security release 198
 

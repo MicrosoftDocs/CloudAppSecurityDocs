@@ -22,7 +22,7 @@ If you received a system alert regarding an issue with activity delivery through
 
 ### Step 1 – Configure a new SIEM Agent in parallel to your existing agent
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **System**, select **SIEM Agent**. Then select [add a new SIEM agent](siem.md), and use the wizard to configure the connection details to your SIEM. For example, you can create a new SIEM agent with the following configuration:
     - **Protocol**: TCP
     - **Remote host**: Any device where you can listen to a port. For example, a simple solution would be to use the same device as the agent and set the remote host IP address to 127.0.0.1

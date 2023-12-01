@@ -20,7 +20,7 @@ Before you start troubleshooting, make sure your environment meets the following
 |**Licensing**     |   Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans) for Microsoft Defender for Cloud Apps.      |
 |**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Azure Active Directory (Azure AD) using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
 |**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>Google Chrome<br>Mozilla Firefox<br>or Apple Safari      |
-|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, when the normal policy controls can't be enforced, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content. <br><br>To configure the default behavior during system downtime, in Microsoft 365 Defender, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
+|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, when the normal policy controls can't be enforced, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content. <br><br>To configure the default behavior during system downtime, in Microsoft Defender XDR, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
 
 ## Reference of troubleshooting issues for admins
 
@@ -86,7 +86,7 @@ Configure your environment to remove any factors that might be causing slowness 
 
 Some apps use a nonce hash during authentication to prevent replay attacks. By default, Defender for Cloud Apps assumes that an app uses a nonce. If the app you're working with doesn't use nonce, disable nonce-handling for this app in Defender for Cloud Apps:
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**. 
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**. 
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 1. In the list of apps, on the row in which the app you're configuring appears, select the three dots at the end of the row, and then select **Edit** for your app.
 1. Select **Nonce-handling** to expand the section and then clear **Enable nonce handling**.
@@ -141,7 +141,7 @@ For more information, see [Introduction to device management in Azure Active Dir
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**.
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Defender for Cloud Apps.
 1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, select **View configuration** and verify that the services are set up. Services are automatically synced from Azure AD and Intune respectively.
 
@@ -165,7 +165,7 @@ Certificates must contain the CA's public key, which is then used to sign the cl
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**.
 
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available with Defender for Cloud Apps.
 
@@ -311,7 +311,7 @@ If you're using a custom app that is configured through Azure AD SSO, and isn't 
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
 
 1. In the banner, select **View new apps**.
 
@@ -328,7 +328,7 @@ After adding an app, you might see the **Request session control** option. This 
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
@@ -398,7 +398,7 @@ When creating an access or session policy, you might see the following error mes
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
 
 1. If you see the message **No apps connected**, use the following guides to deploy apps:
 
@@ -478,11 +478,11 @@ While troubleshooting for onboarding apps, there are some extra things to consid
 
 The **Admin View** toolbar sits at the bottom of your screen and provides tools for admin users to diagnose and troubleshoot issues with Conditional Access App Control.
 
-To view the **Admin View** toolbar, you must make sure to add specific admin user accounts to the **App onboarding / maintenance** list in the Microsoft 365 Defender settings. 
+To view the **Admin View** toolbar, you must make sure to add specific admin user accounts to the **App onboarding / maintenance** list in the Microsoft Defender XDR settings. 
 
 **To add a user to the App onboarding / maintenance list**:
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**.
 
 1. Scroll down, and under **Conditional Access App Control**, select **App onboarding/maintenance**.
 

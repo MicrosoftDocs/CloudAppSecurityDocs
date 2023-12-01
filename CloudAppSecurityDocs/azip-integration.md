@@ -78,7 +78,7 @@ All you have to do to integrate Microsoft Purview Information Protection with De
 
 To enable Defender for Cloud Apps to scan files with content inspection enabled for sensitivity labels:
 
-In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.  Then go to **Information Protection** -> **Microsoft Information Protection**.
+In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.  Then go to **Information Protection** -> **Microsoft Information Protection**.
 
 1. Under **Microsoft Information Protection settings**, select **Automatically scan new files for sensitivity labels from Microsoft Purview Information Protection and content inspection warnings**.
 
@@ -93,13 +93,13 @@ After enabling Microsoft Purview Information Protection, you'll be able to see f
 
 By default, Defender for Cloud Apps scans sensitivity labels that were defined in your organization and external ones defined by other organizations.
 
-To ignore sensitivity labels set external to your organization, go to the Microsoft 365 Defender portal and select **Settings**. Then choose **Cloud Apps**.  Under **Information Protection**, select **Microsoft Purview Information Protection**. Then select **Only scan files for sensitivity labels from Microsoft Purview Information Protection and content inspection warnings from this tenant**.
+To ignore sensitivity labels set external to your organization, go to the Microsoft Defender Portal and select **Settings**. Then choose **Cloud Apps**.  Under **Information Protection**, select **Microsoft Purview Information Protection**. Then select **Only scan files for sensitivity labels from Microsoft Purview Information Protection and content inspection warnings from this tenant**.
 
 ![Ignore labels.](media/azip-ignore.png)
 
 ### Apply labels directly to files
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, choose **Files**. Then select the file you want to protect. Select the three dots at the end of the file's row and then choose **Apply sensitivity label**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, choose **Files**. Then select the file you want to protect. Select the three dots at the end of the file's row and then choose **Apply sensitivity label**.
 
     ![Apply sensitivity label.](media/protect-app.png)
 

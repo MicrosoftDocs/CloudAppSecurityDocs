@@ -2,7 +2,7 @@
 title: View your app details with app governance | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: how-to
-description: Learn how to view app details with app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
+description: Learn how to view app details with app governance in Microsoft Defender XDR with Microsoft Defender for Cloud Apps.
 ---
 
 # View your app details with app governance
