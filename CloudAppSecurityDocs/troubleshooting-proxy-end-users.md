@@ -251,6 +251,8 @@ While troubleshooting apps, there are some additional things to consider:
 - **Session controls support for modern browsers**
   Defender for Cloud Apps session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
 
+- **Session controls protect limitation**
+Co-Auth labeling under **"protect"** action is not supported by Defender for Cloud Apps session controls
 ## Next steps
 
 For more information, see [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md).

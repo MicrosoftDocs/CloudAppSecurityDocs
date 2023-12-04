@@ -27,7 +27,25 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ### Defender for Cloud Apps application certificate rotation
 
-Defender for Cloud Apps plans to rotate its application certificate. If you'd trusted the legacy certificate and currently have SIEM agents running on newer versions of the Java Development Kit (JDK), you must trust the new certificate to ensure continued service. In such cases, we recommend that you already trust the new certificates to prevent issues once the certificates are fully rotated.
+Defender for Cloud Apps plans to rotate its application certificate. If you’ve previously explicitly trusted the legacy certificate and currently have SIEM agents running on newer versions of the Java Development Kit (JDK), you must trust the new certificate to ensure continued SIEM agent service. While it’s likely no action is needed, we recommend running the following commands to validate:
+1. In a command line window, switch to the bin folder of your Java installation, for example:
+
+    ```powershell
+    cd "C:\Program Files (x86)\Java\jre1.8.0_291\bin"
+    ```
+1. Run the following command:
+    
+    ```powershell
+    keytool -list -keystore ..\lib\security\cacerts
+
+1. If you see the following 4 aliases, that means you have previously explicitly trusted our certificate and need to take action. If those aliases are not present, no action should be needed.
+    - *azuretls01crt*
+    - *azuretls02crt*
+    - *azuretls05crt*
+    - *azuretls06crt*
+
+
+If you are in need of action, we recommend that you already trust the new certificates to prevent issues once the certificates are fully rotated.
 
 For more information, see our [Issue with new versions of Java](troubleshooting-siem.md#issue-with-new-versions-of-java) troubleshooting guide.
 

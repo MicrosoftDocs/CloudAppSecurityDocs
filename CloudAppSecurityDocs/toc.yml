@@ -825,7 +825,9 @@ items:
         href: classic-troubleshooting-proxy.md
       - name: Troubleshooting SIEM integration
         href: classic-troubleshooting-siem.md
-- name: Microsoft Defender XDR Docs
+      - name: Support and troubleshooting for the classic portal
+        href: classic-support-and-ts.md
+- name: Microsoft 365 Defender Docs
   items:
   - name: Microsoft Defender XDR
     href: /microsoft-365/security/defender/
