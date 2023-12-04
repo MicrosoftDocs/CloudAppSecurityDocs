@@ -7,6 +7,8 @@ ms.topic: how-to
 
 # Connect Asana to Microsoft Defender for Cloud Apps (Preview)
 
+<!--migrated-->
+
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Asana account using the App Connector APIs. This connection gives you visibility into and control over your organization's Asana use.

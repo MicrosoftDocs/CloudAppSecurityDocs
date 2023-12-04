@@ -1,8 +1,8 @@
 ---
-title: Protect your Atlassian environment
-description: This article provides information about the benefits of connecting your Atlassian environment to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/29/2023
-ms.topic: article
+title: Protect your Atlassian environment | Microsoft Defender for Cloud Apps
+description: Learn about connecting your Atlassian environment to Microsoft Defender for Cloud Apps.
+ms.date: 11/30/2023
+ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your Atlassian environment
 
@@ -12,7 +12,7 @@ Atlassian is an online collaborative and software development platform (includin
 
 Connecting Atlassian to Defender for Cloud Apps gives you improved insights into your users' activities and provides threat detection for anomalous behavior. The connector will cover all users in your organization that use the Atlassian platform, and will show activities from Confluence, Jira, and specific Bitbucket activities.
 
-## Main threats
+Main threats include:
 
 - Compromised accounts and insider threats
 
@@ -20,14 +20,9 @@ Connecting Atlassian to Defender for Cloud Apps gives you improved insights into
 
 - Unmanaged bring your own device (BYOD)
 
-## How Defender for Cloud Apps helps to protect your environment
-
-- [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
-
-- [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
-
 ## Control Atlassian with policies
 
+<!--needs intro-->
 | **Type**                           | **Name**                                                     |
 | ---------------------------------- | ------------------------------------------------------------ |
 | Built-in  anomaly detection policy | [Activity from   anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)  <br /> [Activity from   infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country) <br /> [Activity from   suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)  <br /> [Impossible travel](anomaly-detection-policy.md#impossible-travel)  <br /> [Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br/> [Unusual administrative activities](anomaly-detection-policy.md#unusual-activities-by-user)<br/> [Unusual impersonated activities](anomaly-detection-policy.md#unusual-activities-by-user) |
@@ -53,3 +48,15 @@ Review our best practices for [securing and collaborating with external users](b
 
 > [!div class="nextstepaction"]
 > [Connect Atlassian to Microsoft Defender for Cloud Apps (Preview)](connect-atlassian.md)
+
+## Related content
+
+## How Defender for Cloud Apps helps to protect your environment
+
+- [Secure collaboration with external users by enforcing real-time session controls](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)
+
+- 
+
+- [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
+
+- [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
