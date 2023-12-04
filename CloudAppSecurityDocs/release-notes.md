@@ -28,7 +28,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 ### Defender for Cloud Apps application certificate rotation
 
 Defender for Cloud Apps plans to rotate its application certificate. If you’ve previously explicitly trusted the legacy certificate and currently have SIEM agents running on newer versions of the Java Development Kit (JDK), you must trust the new certificate to ensure continued SIEM agent service. While it’s likely no action is needed, we recommend running the following commands to validate:
-1. In PowerShell prompt, switch to the bin folder of your Java installation:
+1. In a command line window, switch to the bin folder of your Java installation, for example:
 
     ```powershell
     cd "C:\Program Files (x86)\Java\jre1.8.0_291\bin"
