@@ -64,7 +64,7 @@ Use the following steps to create a new session policy:
 
    - Select **Control file download (with inspection)** if you want to monitor user activities. You can take more actions like block or protect downloads for users.
 
-   - Select **Block activities** to block specific activities, which you can select using the **Activity type** filter. All activities from selected apps are monitored (and reported in the Activity log). The specific activities you select are blocked if you select the **Block** action. The specific activities you select raise alerts if you select the **Test** action and have alerts turned on.
+   - Select **Block activities** to block specific activities, which you can select using the **Activity type** filter. All activities from selected apps are monitored (and reported in the Activity log). The specific activities you select are blocked if you select the **Block** action. The specific activities you select raise alerts if you select the **Audit** action and have alerts turned on.
 
 1. Under **Activity source** in the **Activities matching all of the following** section, select more activity filters to apply to the policy. These filters can include the following options:
 
@@ -105,7 +105,7 @@ Use the following steps to create a new session policy:
 
       - Under **Actions**, select one of the following items:
 
-          - **Test (Monitor all activities)**: Set this action to explicitly allow download according to the policy filters you set.
+          - **Audit (Monitor all activities)**: Set this action to explicitly allow download according to the policy filters you set.
           - **Block (Block file download and monitor all activities)**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download).
           - **Protect (Apply sensitivity label to download and monitor all activities)**: This option is only available if you selected **Control file download (with inspection)** under **Session policy**. If your organization uses Microsoft Purview Information Protection, you can set an **Action** to apply a sensitivity label set in Microsoft Purview Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
@@ -147,7 +147,7 @@ To export Cloud discovery logs from the Cloud Discovery dashboard:
 
 **Monitor only** activity monitors only the *Login* activity, and no alerts are sent.  
 
-To monitor other activities, select the *test* action, in which case, alerts are sent in accordance with your policy. The activities in the *test* action are monitored and logged, regardless of whether the policy matches or not. 
+To monitor other activities, select the *Audit* action, in which case, alerts are sent in accordance with your policy. The activities in the *Audit* action are monitored and logged, regardless of whether the policy matches or not. 
 
 > [!NOTE]
 > To monitor other activities besides downloads and uploads, there must be at least one block per activity policy in your monitor policy.
@@ -161,7 +161,7 @@ When **Session control type** is set to **Block activities, Control file downloa
 
 ## <a name="block-activities"></a>Block specific activities
 
-When **Block activities** is set as the **Activity type**, you can select specific activities to block in specific apps. All activities from selected apps are monitored and reported in the Activity log. The specific activities you select are blocked if you select the **Block** action. The specific activities you selected raise alerts if you select the **Test** action and have alerts turned on.
+When **Block activities** is set as the **Activity type**, you can select specific activities to block in specific apps. All activities from selected apps are monitored and reported in the Activity log. The specific activities you select are blocked if you select the **Block** action. The specific activities you selected raise alerts if you select the **Audit** action and have alerts turned on.
 
 Examples of blocked activities include:
 
@@ -173,7 +173,7 @@ Examples of blocked activities include:
 
 ## <a name="protect-download"></a>Protect files on download
 
-Select **Block activities** to block specific activities, which you can find using the **Activity type** filter. All activities from selected apps are monitored (and reported in the Activity log). The specific activities you select are blocked if you select the **Block** action. The specific activities you selected raise alerts if you select the **Test** action and have alerts turned on.
+Select **Block activities** to block specific activities, which you can find using the **Activity type** filter. All activities from selected apps are monitored (and reported in the Activity log). The specific activities you select are blocked if you select the **Block** action. The specific activities you selected raise alerts if you select the **Audit** action and have alerts turned on.
 
 When **Protect** is set as the **Action** to be taken in the Defender for Cloud Apps session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file per the policy's file filters. Labels are configured in the Microsoft Purview compliance portal and the label must be configured to apply encryption for it to appear as an option in the Defender for Cloud Apps policy. 
 
