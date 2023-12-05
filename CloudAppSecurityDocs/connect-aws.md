@@ -6,6 +6,7 @@ ms.topic: how-to
 ---
 # Connect Amazon Web Services  to Microsoft Defender for Cloud Apps
 
+<!--migrated, remove-->
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting your existing Amazon Web Services (AWS) account to Microsoft Defender for Cloud Apps using the connector APIs. For information about how Defender for Cloud Apps protects AWS, see [Protect AWS](protect-aws.md).

@@ -7,6 +7,7 @@ ms.topic: how-to
 
 # Connect DocuSign to Microsoft Defender for Cloud Apps
 
+<!--migrated, removed-->
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing DocuSign environment using the App Connector APIs. This connection gives you visibility into and control over your organization’s DocuSign use.

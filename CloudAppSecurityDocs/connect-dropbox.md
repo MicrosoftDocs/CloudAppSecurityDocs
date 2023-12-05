@@ -6,6 +6,7 @@ ms.topic: how-to
 ---
 # Connect Dropbox to Microsoft Defender for Cloud Apps
 
+<!--migrated, remove-->
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Dropbox account using the connector APIs. This connection gives you visibility into and control over Dropbox use. For information about how Defender for Cloud Apps protects Dropbox, see [Protect Dropbox](protect-dropbox.md).

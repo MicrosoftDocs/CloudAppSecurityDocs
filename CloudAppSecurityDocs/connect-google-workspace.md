@@ -7,6 +7,7 @@ ms.topic: how-to
 
 # Connect Google Workspace to Microsoft Defender for Cloud Apps
 
+<!--migrated, removed-->
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Google Workspace account using the connector APIs. This connection gives you visibility into and control over Google Workspace use. For information about how Defender for Cloud Apps protects Google Workspace, see [Protect Google Workspace](protect-google-workspace.md).
