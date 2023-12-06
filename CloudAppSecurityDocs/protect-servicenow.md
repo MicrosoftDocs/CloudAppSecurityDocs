@@ -31,6 +31,21 @@ Connecting ServiceNow to Defender for Cloud Apps gives you improved insights int
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
+## SaaS security posture management
+
+[Connect ServiceNow](#connect-servicenow-to-microsoft-defender-for-cloud-apps) to automatically get security recommendations for ServiceNow in Microsoft Secure Score.
+
+In Secure Score, select **Recommended actions** and filter by **Product** = **ServiceNow**. For example, recommendations for ServiceNow include:
+
+- *Enable MFA*
+- *Activate the explicit role plugin*
+- *Enable high security plugin*
+- *Enable script request authorization*
+
+For more information, see:
+-	[Security posture management for SaaS apps](security-saas.md)
+-	[Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
+
 ## Control ServiceNow with built-in policies and policy templates
 
 You can use the following built-in policy templates to detect and notify you about potential threats:

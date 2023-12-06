@@ -27,6 +27,25 @@ Connecting GitHub Enterprise Cloud to Defender for Cloud Apps gives you improved
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
+## SaaS security posture management
+
+To see security posture recommendations for GitHub in Microsoft Secure Score, create an API connector via the **Connectors** tab, with *Owner* and *Enterprise* permissions. In Secure Score, select **Recommended actions** and filter by **Product** = **GitHub**.
+
+For example, recommendations for GitHub include:
+
+- *Enable multi-factor authentication (MFA)*
+- *Enable single sign on (SSO)*
+- *Disable 'Allow members to change repository visibilities for this organization'*
+- *Disable 'members with admin permissions for repositories can delete or transfer repositories'*
+
+If a connector already exists and you don't see GitHub recommendations yet, refresh the connection by disconnecting the API connector, and then reconnecting it with the *Owner* and *Enterprise* permissions.
+
+For more information, see:
+
+- [Connect GitHub Enterprise Cloud to Microsoft Defender for Cloud Apps](#connect-github-enterprise-cloud-to-microsoft-defender-for-cloud-apps)
+- [Security posture management for SaaS apps](security-saas.md)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
+
 ## Protect GitHub in real time
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls).

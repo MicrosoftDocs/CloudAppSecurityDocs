@@ -29,6 +29,18 @@ Connecting your DocuSign environment to Defender for Cloud Apps gives you improv
 
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
+## SaaS security posture management
+
+To see security posture recommendations for DocuSign in Microsoft Secure Score, create an API connector via the **Connectors** tab. If a connector already exists and you don't see GitHub recommendations yet, refresh the connection by disconnecting the API connector, and then reconnecting it.
+
+In Secure Score, select **Recommended actions** and filter by **Product** = **DocuSign**. DocuSign supports security recommendations for session timeout and password requirements.
+
+For more information, see:
+
+- [Connect DocuSign to Microsoft Defender for Cloud Apps](#connect-docusign-to-microsoft-defender-for-cloud-apps)
+- [Security posture management for SaaS apps](security-saas.md)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
+
 ## Control DocuSign with policies
 
 | **Type**                           | **Name**                                                     |

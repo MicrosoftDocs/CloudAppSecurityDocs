@@ -31,9 +31,9 @@ Connecting Google Workspace to Defender for Cloud Apps gives you improved insigh
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## SaaS security posture management (preview)
+## SaaS security posture management (Preview)
 
-Connect Google Workspace to automatically get security recommendations in Microsoft Secure Score. In Secure Score, select **Recommended actions** and filter by **Product** = **Google Workspace**.
+[Connect Google Workspace](#connect-google-workspace-to-microsoft-defender-for-cloud-apps) to automatically get security recommendations in Microsoft Secure Score. In Secure Score, select **Recommended actions** and filter by **Product** = **Google Workspace**.
 
 Google Workspace supports security recommendations to *Enable MFA enforcement*.
 

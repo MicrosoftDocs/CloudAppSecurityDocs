@@ -24,6 +24,21 @@ Connecting Okta to Defender for Cloud Apps gives you improved insights into your
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
+## SaaS security posture management
+
+[Connect Okta](#connect-okta-to-microsoft-defender-for-cloud-apps) to automatically get security recommendations for Okta in Microsoft Secure Score.
+
+In Secure Score, select **Recommended actions** and filter by **Product** = **Okta**. For example, recommendations for Okta include:
+
+- *Enable multi-factor authentication*
+- *Enable session timeout for web users*
+- *Enhance password requirements*
+
+For more information, see:
+-	[Security posture management for SaaS apps](security-saas.md)
+-	[Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
+
+
 ## Control Okta with built-in policies and policy templates
 
 You can use the following built-in policy templates to detect and notify you about potential threats:
