@@ -6,6 +6,7 @@ ms.topic: how-to
 ---
 # Connect OneLogin to Microsoft Defender for Cloud Apps
 
+<!--migrated, remove-->
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing OneLogin app using the App Connector APIs. This connection gives you visibility into and control over your organization's OneLogin use.

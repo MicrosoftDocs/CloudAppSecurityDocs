@@ -6,6 +6,7 @@ ms.topic: how-to
 ---
 # Connect Workday to Microsoft Defender for Cloud Apps
 
+<!--migrated, remove-->
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use. For information about how Defender for Cloud Apps protects Workday, see [Protect Workday](protect-workday.md).

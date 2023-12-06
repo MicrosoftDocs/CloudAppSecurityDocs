@@ -7,6 +7,7 @@ ms.topic: how-to
 
 # Connect Miro to Microsoft Defender for Cloud Apps (Preview)
 
+<!--migrated, remove-->
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Miro account using the App Connector APIs. This connection gives you visibility into and control over Miro usage. 
