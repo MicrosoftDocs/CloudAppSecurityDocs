@@ -40,7 +40,8 @@ So even though Fabrikam does not actually use Defender for Cloud Apps, they see 
 
 ## Here's why you see `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms` in your URL
 
-First of all, you have not been phished! This kind of URL is expected and indicates that your organization applies additional security controls to protect business-critical data.
+This kind of URL is expected and indicates that your organization applies additional security controls to protect business-critical data.
+In case you do not recognize the remaining portion of the URL (e.g.: **myurl.com**.mcas.ms) as associated with any of your business apps, it is recommended that you investigate the issue further and consider blocking the URL to avoid any potential security risks.
 
 They do this by using Defender for Cloud Apps, a solution for protecting your organization's cloud environment, to replace all relevant URLs and cookies relating to cloud apps that you use.
 
