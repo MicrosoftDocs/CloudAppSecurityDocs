@@ -63,6 +63,4 @@ For more information, see [Turn on app governance for Microsoft Defender for Clo
 
 - [Microsoft Mechanics Video on app governance](https://www.youtube.com/watch?v=KmE8LW_tJ1M).
 
-- [App Governance segment in the Security Summit video](https://mssecuritysummit.event.microsoft.com/Home/Security) starts at 11:50 mark. You need to register to view.
-
 - [App Governance is a Key Part of a Customers' Zero Trust Journey - YouTube](https://www.youtube.com/watch?v=XuGZu8ja134)

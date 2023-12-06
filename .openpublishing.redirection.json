@@ -41,12 +41,12 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "CloudAppSecurityDocs/connect-github.md",
+            "source_path": "CloudAppSecurityDocs/connect-github-ec.md",
             "redirect_url": "/defender-cloud-apps/protect-github#connect-github-to-microsoft-cloud-app-security",
             "redirect_document_id": false
         },
         {
-            "source_path": "CloudAppSecurityDocs/connect-gcp.md",
+            "source_path": "CloudAppSecurityDocs/connect-google-gcp.md",
             "redirect_url": "/defender-cloud-apps/protect-gcp#connect-gcp-to-microsoft-cloud-app-security",
             "redirect_document_id": false
         },
@@ -61,7 +61,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "CloudAppSecurityDocs/connect-netdocuments.md",
+            "source_path": "CloudAppSecurityDocs/connect-netdocuments-to-microsoft-defender-for-cloud-apps.md",
             "redirect_url": "/defender-cloud-apps/protect-netdocuments#connect-netdocuments-to-microsoft-cloud-app-security",
             "redirect_document_id": false
         },
@@ -217,12 +217,12 @@
         },
         {
             "source_path": "CloudAppSecurityDocs/connect-github-ec-to-microsoft-cloud-app-security.md",
-            "redirect_url": "/defender-cloud-apps/connect-github-ec",
+            "redirect_url": "/defender-cloud-apps/protect-github##connect-github-enterprise-cloud-to-microsoft-defender-for-cloud-apps",
             "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/connect-google-gcp-to-microsoft-cloud-app-security.md",
-            "redirect_url": "/defender-cloud-apps/connect-google-gcp",
+            "redirect_url": "/defender-cloud-apps/protect-google-gcp##connect-google-cloud-platform-to-microsoft-defender-for-cloud-apps",
             "redirect_document_id": true
         },
         {

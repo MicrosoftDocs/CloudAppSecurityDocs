@@ -1,7 +1,7 @@
 ---
 title:       Protect your Workplace environment | Microsoft Defender for Cloud Apps
 description: Learn how about connecting your Workplace app to Defender for Cloud Apps using the API connector.
-ms.topic:    how-t
+ms.topic:    how-to
 ms.date: 12/06/2023
 ---
 

@@ -43,12 +43,12 @@ Defender for Cloud App's SaaS SSPM features provide visibility into your SaaS ap
 When a partner service with SSPM support is connected to Defender for Cloud Apps, the app's security configuration and posture is calculated into Microsoft Secure Score reports. Use the following procedures to connect apps with SSPM support and start seeing them included in Secure Score calculations and reports:
 
 - [Citrix](connect-citrix-sharefile.md)
-- [DocuSign](connect-docusign.md)
-- [GitHub Enterprise Cloud](connect-github-ec.md)
-- [Microsoft 365](connect-office-365.md)
-- [Okta](connect-okta.md)
-- [ServiceNow](connect-servicenow.md)
-- [Salesforce](connect-salesforce.md)
+- [DocuSign](protect-docusign.md)
+- [GitHub Enterprise Cloud](protect-github.md)
+- [Microsoft 365](protect-office-365.md)
+- [Okta](protect-okta.md)
+- [ServiceNow](protect-servicenow.md)
+- [Salesforce](protect-salesforce.md)
 - [Zoom](connect-zoom.md)
 
 For more information, see [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score).

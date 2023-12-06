@@ -1,6 +1,6 @@
 ---
 title: Protect your Slack Enterprise
-description: Learn how about connecting your ServiceNow app to Defender for Cloud Apps using the API connector.
+description: Learn how about connecting your Slack Enterprise app to Defender for Cloud Apps using the API connector.
 ms.date: 12/06/2023
 ms.topic: how-to
 ---
