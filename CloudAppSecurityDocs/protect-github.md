@@ -56,14 +56,12 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 [!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
 
-## Prerequisites
+### Prerequisites
 
 - Your organization must have a GitHub Enterprise Cloud license.
 - The GitHub account used for connecting to Defender for Cloud Apps must have Owner permissions for your organization.
 - For SSPM capabilities, the provided account must be the owner of the enterprise account.
 - To verify owners of your organization, browse to your organization's page, select **People**, and then filter by *Owner*.
-
-## How to connect GitHub Enterprise Cloud to Defender for Cloud Apps
 
 ### Verify your GitHub domains
 

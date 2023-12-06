@@ -71,7 +71,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 [!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
 
 
-## Prerequisites
+### Prerequisites
 
 - **DocuSign Enterprise Pro account plan with Monitor API enabled.**
   - For more information about DocuSign Monitor API, see [How to get monitoring data | DocuSign](https://developers.docusign.com/docs/monitor-api/how-to/get-monitoring-data/) and [Enable DocuSign Monitor for your organization | DocuSign](https://developers.docusign.com/docs/monitor-api/how-to/enable-monitor/).

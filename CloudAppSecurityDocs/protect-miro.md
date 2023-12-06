@@ -44,7 +44,7 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
-## Connect Miro to Microsoft Defender for Cloud Apps (Preview)
+## Connect Miro to Microsoft Defender for Cloud Apps
 
 This section provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Miro account using the App Connector APIs. This connection gives you visibility into and control over Miro usage. 
 
