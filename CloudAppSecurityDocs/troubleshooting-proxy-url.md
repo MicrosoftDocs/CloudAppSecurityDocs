@@ -47,10 +47,6 @@ They do this by using Defender for Cloud Apps, a solution for protecting your or
 
 So when you try accessing a cloud app such as Salesforce, SharePoint Online, or AWS, you'll notice that its URL is suffixed with `.mcas.ms`, `.mcas-gov.us`, or `.mcas-gov.ms`. For example, when using the XYZ app, the URL you're used to seeing changes from `XYZ.com` to `XYZ.com.mcas.ms`.
 
-If the URL doesn't exactly match one of the replacement patterns (for example, `<app_site>.com` isn't replaced with `<app_site>.com.mcas.ms`), or if you have other concerns, contact your IT department.
-
-If you don't recognize the remaining portion of the URL (for example, __myurl.com__.mcas.ms) as associated with any of your business apps, it's recommended that you investigate the issue further and consider blocking the URL to avoid any potential security risks.
-
 If the URL does not exactly match one of the replacement patterns (for example, `<app_site>.com` is not replaced with `<app_site>.com.mcas.ms`), or if you have additional concerns, contact your IT department.
 
 If you don't recognize the remaining portion of the URL (for example, **myurl.com**.mcas.ms) as associated with any of your business apps, it's recommended that you investigate the issue further and consider blocking the URL to avoid any potential security risks.
