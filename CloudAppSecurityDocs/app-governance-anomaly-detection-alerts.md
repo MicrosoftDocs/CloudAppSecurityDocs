@@ -13,7 +13,12 @@ App governance provides security detections and alerts for malicious activities.
 For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md)
 
 > [!NOTE]
-> App governance threat detections are based on counting activities on data that is transient and may not be stored, therefore alerts may provide the number of activities or indications of spikes, but not necessarily all the relevant data. Specifically for OAuth apps Graph API activities, the activities themselves can be audited by the tenant using Log Analytics and Sentinel. For more information see the following: [Access Microsoft Graph activity logs (preview) - Microsoft Graph | Microsoft Learn](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fgraph%2Fmicrosoft-graph-activity-logs-overview&data=05%7C02%7Cassafyatziv%40microsoft.com%7C1d0b979b46c94dae204608dbf702c3d9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638375363518127912%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=3b98VvxaghS0W4aJqYZgxhDRLg6NxejXwjtx548qED8%3D&reserved=0"Original URL: https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview. Click or tap if you trust this link.") , [Analyze activity logs using Log Analytics - Microsoft Entra ID | Microsoft Learn](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fentra%2Fidentity%2Fmonitoring-health%2Fhowto-analyze-activity-logs-log-analytics&data=05%7C02%7Cassafyatziv%40microsoft.com%7C1d0b979b46c94dae204608dbf702c3d9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638375363518136618%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=6K4olxP145fuNNIoesvVQ9H1Oi5rGAV8bkvhE27YDdo%3D&reserved=0"Original URL: https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-analyze-activity-logs-log-analytics. Click or tap if you trust this link.").
+> App governance threat detections are based on counting activities on data that is transient and may not be stored, therefore alerts may provide the number of activities or indications of spikes, but not necessarily all the relevant data. Specifically for OAuth apps Graph API activities, the activities themselves can be audited by the tenant using Log Analytics and Sentinel.
+> 
+> For more information see: 
+>
+> - [Access Microsoft Graph activity logs](/graph/microsoft-graph-activity-logs-overview)
+> - [Analyze activity logs using Log Analytics](/entra/identity/monitoring-health/howto-analyze-activity-logs-log-analytics)
 > 
 ## MITRE ATT&CK
 
