@@ -49,5 +49,8 @@ So when you try accessing a cloud app such as Salesforce, SharePoint Online, or 
 
 If the URL doesn't exactly match one of the replacement patterns (for example, `<app_site>.com` isn't replaced with `<app_site>.com.mcas.ms`), or if you have other concerns, contact your IT department.
 
-In case you do not recognize the remaining portion of the URL (e.g.: __myurl.com__.mcas.ms) as associated with any of your business apps, it's recommended that you investigate the issue further and consider blocking the URL to avoid any potential security risks.
+If you don't recognize the remaining portion of the URL (for example, __myurl.com__.mcas.ms) as associated with any of your business apps, it's recommended that you investigate the issue further and consider blocking the URL to avoid any potential security risks.
 
+If the URL does not exactly match one of the replacement patterns (for example, `<app_site>.com` is not replaced with `<app_site>.com.mcas.ms`), or if you have additional concerns, contact your IT department.
+
+If you don't recognize the remaining portion of the URL (for example, **myurl.com**.mcas.ms) as associated with any of your business apps, it's recommended that you investigate the issue further and consider blocking the URL to avoid any potential security risks.
