@@ -186,7 +186,7 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 > - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers and Global Readers groups.
 > - Only Azure AD Global Administrators or Security Administrators can edit the **Manage admin access** page and grant other users access to Defender for Cloud Apps.
 
-1. In the Microsoft 365 Defender portal, in the left-hand menu, select **Permissions**.
+1. In the Microsoft Defender Portal, in the left-hand menu, select **Permissions**.
 
 1. Under **Cloud Apps**, choose **Roles**.
 
@@ -219,7 +219,7 @@ Defender for Cloud Apps enables you to invite external admins (MSSPs) as adminis
 
 By default, MSSPs access their Defender for Cloud Apps tenant through the following URL: `https://security.microsoft.com`.
 
-MSSPs however, will need to access the MSSP customer Microsoft 365 Defender portal using a tenant-specific URL in the following format: `https://security.microsoft.com/?tid=<tenant_id>`.
+MSSPs however, will need to access the MSSP customer Microsoft Defender Portal using a tenant-specific URL in the following format: `https://security.microsoft.com/?tid=<tenant_id>`.
 
 MSSPs can use the following steps to obtain the MSSP customer portal tenant ID and then use the ID to access the tenant-specific URL:
 
@@ -235,7 +235,7 @@ Defender for Cloud Apps lets you export a log of admin sign-in activities and an
 
 To export a log, perform the following steps:
 
-1. In the Microsoft 365 Defender portal, in the left-hand menu, select **Permissions**.
+1. In the Microsoft Defender Portal, in the left-hand menu, select **Permissions**.
 
 1. Under **Cloud Apps**, choose **Roles**.
 

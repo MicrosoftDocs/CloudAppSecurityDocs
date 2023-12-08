@@ -47,7 +47,7 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
 1. **Identify the risk levels of your apps**: Use the Defender for Cloud Apps catalog to dive deeper into the risks that are involved with each discovered app. The Defender for Cloud App Catalog includes over 31,000 apps that are assessed using over 90 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
 
-    - In the [Microsoft 365 Defender portal](https://security.microsoft.com/), under **Cloud Apps**, select **Cloud Discovery**. Then go to the **Discovered apps** tab. Filter the list of apps discovered in your organization by the risk factors you're concerned about. For example, you can use **Advanced filters** to find all apps with a risk score lower than 8.
+    - In the [Microsoft Defender Portal](https://security.microsoft.com/), under **Cloud Apps**, select **Cloud Discovery**. Then go to the **Discovered apps** tab. Filter the list of apps discovered in your organization by the risk factors you're concerned about. For example, you can use **Advanced filters** to find all apps with a risk score lower than 8.
 
     - You can drill down into the app to understand more about its compliance by selecting the app name and then selecting the **Info** tab to see details about the app's security risk factors.
 
@@ -55,14 +55,14 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
 1. **Evaluate compliance**: Check whether the apps are certified as compliant with your organization's standards, such as HIPAA or SOC2.
 
-    - In the [Microsoft 365 Defender portal](https://security.microsoft.com/), under **Cloud Apps**, select **Cloud Discovery**. Then go to the **Discovered apps** tab. Filter the list of apps discovered in your organization by the compliance risk factors you're concerned about. For example, use the suggested query to filter out non-compliant apps.
+    - In the [Microsoft Defender Portal](https://security.microsoft.com/), under **Cloud Apps**, select **Cloud Discovery**. Then go to the **Discovered apps** tab. Filter the list of apps discovered in your organization by the compliance risk factors you're concerned about. For example, use the suggested query to filter out non-compliant apps.
 
     - You can drill down into the app to understand more about its compliance by selecting the app name and then selecting the **Info** tab to see details about the app's compliance risk factors.
 
 
 1. **Analyze usage**: Now that you know whether or not you want the app to be used in your organization, you want to investigate how and who is using it. If it's only used in a limited way in your organization maybe it's ok, but maybe if the use is growing you want to be notified about it so you can decide if you want to block the app.
 
-    - In the [Microsoft 365 Defender portal](https://security.microsoft.com/), under **Cloud Apps**, select **Cloud Discovery**. Then go to the **Discovered apps** tab, and then drill down by selecting the specific app you want to investigate. The **Usage** tab lets you know how many active users are using the app and how much traffic it's generating. This can already give you a good picture of what's happening with the app. Then, if you want to see who, specifically, is using the app, you can drill down further by selecting **Total active users**. This important step can give you pertinent information, for example, if you discover that all the users of a specific app are from the Marketing department, it's possible that there's a business need for this app, and if it's risky you should talk to them about an alternative before blocking it.
+    - In the [Microsoft Defender Portal](https://security.microsoft.com/), under **Cloud Apps**, select **Cloud Discovery**. Then go to the **Discovered apps** tab, and then drill down by selecting the specific app you want to investigate. The **Usage** tab lets you know how many active users are using the app and how much traffic it's generating. This can already give you a good picture of what's happening with the app. Then, if you want to see who, specifically, is using the app, you can drill down further by selecting **Total active users**. This important step can give you pertinent information, for example, if you discover that all the users of a specific app are from the Marketing department, it's possible that there's a business need for this app, and if it's risky you should talk to them about an alternative before blocking it.
 
     - Dive even deeper when investigating use of discovered apps. View subdomains and resources to learn about specific activities, data access, and resource usage in your cloud services. For more information, see [Deep dive into Discovered apps](discovered-apps.md#deep-dive-into-discovered-apps) and [Discover resources and custom apps](discovered-apps.md#discover-resources-and-custom-apps).
 

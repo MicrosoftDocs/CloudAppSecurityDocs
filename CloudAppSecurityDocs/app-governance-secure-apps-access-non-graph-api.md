@@ -2,7 +2,7 @@
 title: Secure apps accessing non-Graph APIs using app governance | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: how-to
-description: Learn how to secure apps accessing non-Graph APIs using app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps
+description: Learn how to secure apps accessing non-Graph APIs using app governance in Microsoft Defender XDR with Microsoft Defender for Cloud Apps
 ---
 
 # Secure apps accessing non-Graph APIs using app governance

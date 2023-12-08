@@ -9,7 +9,7 @@ ms.topic: how-to
 
 We recommend that you simplify policy creation by starting with existing templates whenever possible. This article lists several policy templates available with Microsoft Defender for Cloud Apps. 
 
-For the full list of templates, check the Microsoft 365 Defender portal.
+For the full list of templates, check the Microsoft Defender Portal.
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -51,7 +51,7 @@ For the full list of templates, check the Microsoft 365 Defender portal.
 
 ## View the full list of policy templates
 
-To see the full list of policy templates, in the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy templates**. For example:
+To see the full list of policy templates, in the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy templates**. For example:
 
 :::image type="content" source="media/policy-templates.png" alt-text="Policy templates." lightbox="media/policy-templates.png":::
 

@@ -68,7 +68,7 @@ For example, from Defender for Cloud Apps you can monitor activity such as if a 
 
 To view discovered resources:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud discovery**. Then choose the  **Discovered resources** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Cloud discovery**. Then choose the  **Discovered resources** tab.
 
     ![Discovered resources menu.](media/discovered-resources-menu.png)
 
@@ -95,7 +95,7 @@ If you have system users, IP addresses, or devices that are noisy but uninterest
 
 To create an exclusion:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select the **Exclude entities** tab.
 
@@ -118,7 +118,7 @@ Custom continuous reports provide you more granularity when monitoring your orga
 
 To create a new continuous report:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select **Continuous report**.
 
@@ -147,7 +147,7 @@ There are a number of reasons why you may want to delete your Cloud Discovery da
 
 To delete Cloud Discovery data:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select the **Delete data** tab.
 

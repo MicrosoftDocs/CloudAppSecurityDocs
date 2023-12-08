@@ -50,7 +50,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Cloud Discovery**, select **Automatic log upload**.  Then select the **Data sources** tab.
 
 1. For each firewall or proxy from which you want to upload logs, create a matching data source.
@@ -227,7 +227,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 ---
 
-1. In the Microsoft 365 Defender portal,  in the **Create log collector** window, copy the command to import the collector configuration on the hosting machine:
+1. In the Microsoft Defender Portal,  in the **Create log collector** window, copy the command to import the collector configuration on the hosting machine:
 
     ![Copy command to import collector configuration on hosting machine.](media/create-log-connector.png)
 
@@ -270,7 +270,7 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 Verify that the logs are being uploaded to Defender for Cloud Apps and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Cloud Discovery**, select **Continuous reports**.
 1. Click the **Create report** button and fill in the fields.
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
