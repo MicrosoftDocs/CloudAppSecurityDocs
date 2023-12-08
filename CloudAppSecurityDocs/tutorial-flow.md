@@ -37,7 +37,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 > [!NOTE]
 > If you have previously created a workflow using a Defender for Cloud Apps connector, Power Automate automatically reuses the token and you can skip this step.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **System**, choose **API tokens**.
 1. Select **+Add token** to generate a new API token.
 1. In the **Generate new token** pop-up, enter the token name (for example, "Flow-Token"), and then select **Generate**.
@@ -93,7 +93,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 ## Phase 4: Configure a policy to run the flow<a name="configure-policy"></a>
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**.
 
 1. In the list of policies, on the row where the relevant policy appears, choose the three dots at the end of the row, and then choose **Edit policy**.
 

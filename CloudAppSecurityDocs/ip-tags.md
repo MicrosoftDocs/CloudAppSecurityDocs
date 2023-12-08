@@ -24,7 +24,7 @@ Built-in IP address tags and custom IP tags are considered hierarchically. Custo
 
 ## Create an IP address range
 
-In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **IP address ranges**. Select **Add IP address range** to add IP address ranges and set the following fields:
+In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **IP address ranges**. Select **Add IP address range** to add IP address ranges and set the following fields:
 
 1. **Name** your IP range. The name doesn't appear in the activities log. It's only used to manage your IP range.
 

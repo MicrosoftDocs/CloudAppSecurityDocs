@@ -30,9 +30,9 @@ Before you start, verify that you satisfy the following prerequisites:
 
 ## Turn on app governance
 
-If your organization satisfies the [prerequisites](#prerequisites), go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and select **Use app governance**. For example:
+If your organization satisfies the [prerequisites](#prerequisites), go to [Microsoft Defender XDR > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and select **Use app governance**. For example:
 
-:::image type="content" source="media/app-governance-get-started/app-governance-service-status1.png" alt-text="Screenshot of the App governance toggle in Microsoft 365 Defender." lightbox="media/app-governance-get-started/app-governance-service-status1.png":::
+:::image type="content" source="media/app-governance-get-started/app-governance-service-status1.png" alt-text="Screenshot of the App governance toggle in Microsoft Defender XDR." lightbox="media/app-governance-get-started/app-governance-service-status1.png":::
 
 After you've signed up for app governance, you'll need to wait up to 10 hours to see and use the product.
 
@@ -52,7 +52,7 @@ For example:
 
 ## Current trial customers
 
-If you're currently running a free trial of app governance and want to use it without interruption, go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and switch on the app governance toggle before **July 31, 2023**. 
+If you're currently running a free trial of app governance and want to use it without interruption, go to [Microsoft Defender XDR > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and switch on the app governance toggle before **July 31, 2023**. 
 
 If you want to opt out of app governance, no action is needed, and app governance will automatically turn off after **July 31, 2023**. Your data will be deleted permanently in accordance with our data retention policies. To keep a copy of your app and policy data, make sure to export them manually from the app governance pages before July 31, 2023.
 
@@ -109,7 +109,7 @@ The following table lists the app governance capabilities for each role.
 For more information about each role, see [Administrator role permissions](/azure/active-directory/roles/permissions-reference).
 
 > [!NOTE]
-> App governance alerts will not flow to Microsoft 365 Defender or show up in app governance until you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
+> App governance alerts will not flow to Microsoft Defender XDR or show up in app governance until you have provisioned both Defender for Cloud Apps and Microsoft Defender XDR by accessing their respective portals at least once.
 
 ## Next steps
 

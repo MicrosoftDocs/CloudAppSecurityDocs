@@ -36,14 +36,14 @@ Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically syn
 
 Use the following steps to enable access control for cloud apps:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**, and then select **Enforce app access**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**, and then select **Enforce app access**.
 
     ![Screenshot showing how to enable blocking with Defender for Endpoint.](media/mde-integration.png)
 
     > [!NOTE]
     > It can take up to 30 minutes for this setting to take effect.
 
-1. In Microsoft 365 Defender, go to **Settings** > **Endpoints** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/microsoft-365/security/defender-endpoint/indicator-ip-domain).
+1. In Microsoft Defender XDR, go to **Settings** > **Endpoints** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/microsoft-365/security/defender-endpoint/indicator-ip-domain).
 
     This allows you to leverage Microsoft Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Defender for Cloud Apps, either by manually assigning [app tags](governance-discovery.md#sanctioningunsanctioning-an-app) to specific apps or automatically using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
@@ -69,7 +69,7 @@ Use the following steps to enable access control for cloud apps:
 
 To block usage for specific device groups, do the following steps:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.  Then under **Cloud discovery**, select **Apps tags** and go to the **Scoped profiles** tab.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.  Then under **Cloud discovery**, select **Apps tags** and go to the **Scoped profiles** tab.
 
 1. Select **Add profile**. The profile sets the entities scoped for blocking/unblocking apps.
 
@@ -89,7 +89,7 @@ To block usage for specific device groups, do the following steps:
 
 To block an app, do the following steps:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Cloud Discovery** and go to the **Discovered apps** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Cloud Discovery** and go to the **Discovered apps** tab.
 
 1. Select the app that should be blocked.
 
@@ -126,7 +126,7 @@ Apps marked as **Monitored** are automatically synced to Defender for Endpoint's
 
 Use the following steps to configure a custom URL pointing to a company web page where you can educate employees on why they've been warned and provide a list of alternative approved apps that adhere to your organization's risk acceptance or are already managed by the organization.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**.
 1. In the **Notification URL** box, enter your URL.
 
     ![Screenshot showing how to configure notification URL.](media/mde-educate-config-notification-url.png)
@@ -135,7 +135,7 @@ Use the following steps to configure a custom URL pointing to a company web page
 
 Since users can bypass the warning message, you can use the following steps to configure the duration of the bypass apply. Once the duration has elapsed, users are prompted with the warning message the next time they access the monitored app.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**.
 1. In the **Bypass duration** box, enter the duration (hours) of the user bypass.
 
     ![Screenshot showing how to configure bypass duration.](media/mde-educate-config-bypass-duration.png)
@@ -144,7 +144,7 @@ Since users can bypass the warning message, you can use the following steps to c
 
 Once controls are applied, you can monitor app usage patterns by the applied controls (access, block, bypass) using the following steps.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Cloud Discovery** and then go to the **Discovered apps** tab. Use the [filters](discovered-app-queries.md) to find the relevant monitored app.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Cloud Discovery** and then go to the **Discovered apps** tab. Use the [filters](discovered-app-queries.md) to find the relevant monitored app.
 1. Select the app's name to view applied app controls on the app's overview page.
 
 ## Next steps
