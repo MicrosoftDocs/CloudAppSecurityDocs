@@ -12,7 +12,7 @@ ms.topic: how-to
 To provide data protection, Microsoft Defender for Cloud Apps gives you visibility into all the files from your connected apps. After you connect Microsoft Defender for Cloud Apps to an app using the App connector, Microsoft Defender for Cloud Apps scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Defender for Cloud Apps rescans each file every time it's modified – the modification can be to content, metadata, or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps.
 
 > [!NOTE]
-> File monitoring should be enabled in Settings. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Information Protection**, select **Files**. Select **Enable file monitoring** and then select **Save**.  
+> File monitoring should be enabled in Settings. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Information Protection**, select **Files**. Select **Enable file monitoring** and then select **Save**.  
 > If there are no active file policies, then seven days after the last file page engagement time file monitoring will become disabled.  
 > If there are no active file policies, then 35 days after the last file page engagement time Defender for Cloud Apps will begin deleting the data that Defender for Cloud Apps maintains about these stored files.
 > Starting Aug 20 2023, the filter 'last modified before (days) will be deprecated. Instead, we recommend the utilization of "file before (date) and continue the investigating by fixed date, you can also use 'manual' investigation by "modified before (date)" - in "policy page" or "files page". 
@@ -154,7 +154,7 @@ After Defender for Cloud Apps has identified files as posing a malware or DLP ri
 
 ### To authorize files
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Policies** -> **Policy management**. Select the **Information protection** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Policies** -> **Policy management**. Select the **Information protection** tab.
 1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, select the **matches** link.
 
     > [!TIP]

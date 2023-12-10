@@ -49,7 +49,7 @@ The Citrix Share file user used for logging into Citrix Share file must have Acc
 
 ## Configure Defender for Cloud Apps
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, followed by **Citrix ShareFile**.
 
@@ -66,7 +66,7 @@ The Citrix Share file user used for logging into Citrix Share file must have Acc
 
 1. Select **Connect** in Citrix ShareFile.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 ## Rate limits
 

@@ -49,7 +49,7 @@ Before you start, make sure that you have the following prerequisites:
 
 Use the following steps to create a new session policy:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Conditional access** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Conditional access** tab.
 
 1. Select **Create policy** and select **Session policy**. For example:
 
@@ -115,7 +115,7 @@ Use the following steps to create a new session policy:
 
     The user will see a monitoring notice to let them know that their sessions are being monitored. If you don't want to notify the user that they're being monitored, you can disable the notification message.
 
-    1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+    1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
     1. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
 
@@ -127,7 +127,7 @@ Conditional Access App Control records the traffic logs of every user session th
 
 To export Cloud discovery logs from the Cloud Discovery dashboard:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control**.
 
 1. Above the table, select the export button. For example:
 
@@ -136,7 +136,7 @@ To export Cloud discovery logs from the Cloud Discovery dashboard:
 
 1. Select the range of the report and select **Export**. This process may take some time.
 
-1. To download the exported log after the report is ready, in the Microsoft 365 Defender portal go to **Reports** -> **Cloud Apps** and then **Exported reports**.
+1. To download the exported log after the report is ready, in the Microsoft Defender Portal go to **Reports** -> **Cloud Apps** and then **Exported reports**.
 
 1. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and select **Download**. For example:
 

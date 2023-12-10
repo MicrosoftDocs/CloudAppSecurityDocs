@@ -53,7 +53,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 ### Step 2: Create a session policy
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), under **Cloud Apps**, go to **Policies**, then select **Policy management**.
+1. In the [Microsoft Defender Portal](https://security.microsoft.com), under **Cloud Apps**, go to **Policies**, then select **Policy management**.
 
 1. In the **Policies** page, select **Create policy** followed by **Session policy**.
 
@@ -101,7 +101,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. The file should be blocked and you should receive the message you set under **Customize block messages**.
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), under **Cloud Apps**, go to **Policies**, then select **Policy management**. Then select the policy you've created to view the policy report. A session policy match should appear shortly.
+1. In the [Microsoft Defender Portal](https://security.microsoft.com), under **Cloud Apps**, go to **Policies**, then select **Policy management**. Then select the policy you've created to view the policy report. A session policy match should appear shortly.
 
 1. In the policy report, you can see which logins were redirected to Microsoft Defender for Cloud Apps for session control, and which files were downloaded or blocked from the monitored sessions.
 
