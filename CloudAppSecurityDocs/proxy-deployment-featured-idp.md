@@ -142,7 +142,7 @@ The preceding instructions helped you create a built-in Defender for Cloud Apps 
 1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 
-1. In the apps table, look at the **Available controls** column and verify that both **Access control** or **Microsoft Entra Conditional Access**, and **Session control** appear for your apps.
+1. In the apps table, look at the **Available controls** column and verify that both **Access control** or **Azure AD Conditional Access**, and **Session control** appear for your apps.
 
    > [!NOTE]
    > If the app isn't enabled for session control, you can add it by selecting **Onboard with session control** and checking **Use this app with session controls**.
