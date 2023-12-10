@@ -17,7 +17,7 @@ This article describes how you can simplify app-based threat hunting using app g
 
 ## Step 1: Find the app in app governance
 
-The Defender for Cloud Apps **App governance** page lists [all Azure AD OAuth apps](https://security.microsoft.com/cloudapps/app-governance?viewid=allApps).
+The Defender for Cloud Apps **App governance** page lists [all Microsoft Entra ID OAuth apps](https://security.microsoft.com/cloudapps/app-governance?viewid=allApps).
 
 If you're looking to get more details on the data accessed by a specific app, search for that app on the app list in app governance. Alternatively, use the **Data usage** or **Services accessed** filters to view apps that have accessed data on one or more of the supported Microsoft 365 services.
 

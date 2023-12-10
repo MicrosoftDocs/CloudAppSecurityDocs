@@ -17,7 +17,7 @@ Defender for Cloud Apps takes your security and privacy seriously. Therefore, on
 
 ## Prerequisites
 
-You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your tenant's Azure Active Directory (Azure AD) associated with your Defender for Cloud Apps tenant.
+You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your tenant's Microsoft Entra ID associated with your Defender for Cloud Apps tenant.
 
 ### To register the app
 

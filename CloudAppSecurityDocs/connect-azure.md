@@ -14,7 +14,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 > [!NOTE]
 >
-> - User must be a Global or Security administrator in Azure AD to connect Azure to Microsoft Defender for Cloud Apps.
+> - User must be a Global or Security administrator in Microsoft Entra ID to connect Azure to Microsoft Defender for Cloud Apps.
 > - Defender for Cloud Apps displays activities from **all** subscriptions.
 > - User account information is populated in Defender for Cloud Apps as users perform activities in Azure.
 > - Currently, Defender for Cloud Apps monitors only ARM activities.

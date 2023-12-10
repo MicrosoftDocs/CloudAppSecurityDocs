@@ -29,11 +29,13 @@ Defender for Cloud Apps integrates directly with [Microsoft 365's audit logs](/m
 
 - [Multi-geo deployments](/microsoft-365/enterprise/microsoft-365-multi-geo) are only supported for OneDrive
 
-### Azure Active Directory integration
+<a name='azure-active-directory-integration'></a>
 
-- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment override the Azure AD settings and use of the **Suspend user** governance action is reverted.
+### Microsoft Entra integration
 
-- For Azure AD sign-in activities, Defender for Cloud Apps only surfaces interactive sign-in activities and sign-in activities from legacy protocols such as ActiveSync. Non-interactive sign-in activities may be viewed in the Azure AD audit log.
+- If your Microsoft Entra ID is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment override the Microsoft Entra settings and use of the **Suspend user** governance action is reverted.
+
+- For Microsoft Entra sign-in activities, Defender for Cloud Apps only surfaces interactive sign-in activities and sign-in activities from legacy protocols such as ActiveSync. Non-interactive sign-in activities may be viewed in the Microsoft Entra audit log.
 
 - If Office apps are enabled, groups that are part of Microsoft 365 are also imported to Defender for Cloud Apps from the specific Office apps, for example, if SharePoint is enabled, Microsoft 365 groups are imported as SharePoint groups as well.
 

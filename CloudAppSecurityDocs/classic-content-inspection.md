@@ -25,7 +25,7 @@ In order to give Defender for Cloud Apps the necessary permissions:
 
 1. Go to **Settings** and then **Microsoft Purview Information Protection**.
 2. Enable **Inspect protected files.**
-3. Follow the prompt to allow the required permissions in Azure Active Directory.
+3. Follow the prompt to allow the required permissions in Microsoft Entra ID.
 4. You can configure the settings per file policy to determine which policies will scan protected files.
 
 ## Next steps
