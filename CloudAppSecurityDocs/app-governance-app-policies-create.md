@@ -25,7 +25,7 @@ Use app governance to create OAuth policies for apps connected to Microsoft Entr
 
 For apps connected to Microsoft Entra ID, create app policies from provided templates that can be customized, or create your own custom app policy.
 
-1. To create a new app policy for Azure AD apps, go to **Microsoft 365 Defender > App governance > Policies > Azure AD**.
+1. To create a new app policy for Azure AD apps, go to **Microsoft Defender XDR > App governance > Policies > Azure AD**.
 
     For example:
 
@@ -143,7 +143,7 @@ Use a custom app policy when you need to do something not already done by one of
 
 Now that your app policy is created, you should monitor it on the **Policies** page to ensure it's registering an expected number of active alerts and total alerts during testing.
 
-:::image type="content" source="media\app-governance\mapg-cc-policies-policy.png" alt-text="Screenshot of the app governance policies summary page in Microsoft 365 Defender, with a highlighted policy." lightbox="media\app-governance\mapg-cc-policies-policy.png":::
+:::image type="content" source="media\app-governance\mapg-cc-policies-policy.png" alt-text="Screenshot of the app governance policies summary page in Microsoft Defender XDR, with a highlighted policy." lightbox="media\app-governance\mapg-cc-policies-policy.png":::
 
 If the number of alerts is an unexpectedly low value, edit the settings of the app policy to ensure you've configured it correctly before setting its status.
 
@@ -164,7 +164,7 @@ Policies for OAuth apps trigger alerts only on policies that are authorized by u
 
 **To create a new app policy for Salesforce, Google and other apps**:
 
-1. Go to **Microsoft 365 Defender > App governance > Policies > Other apps**. For example:
+1. Go to **Microsoft Defender XDR > App governance > Policies > Other apps**. For example:
 
     ![Other apps-policy creation](media/app-governance-app-policies-create/other-apps-policy-creation.jpg)
 

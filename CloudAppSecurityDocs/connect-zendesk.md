@@ -51,7 +51,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 >[!NOTE]
 >The Zendesk user that is configuring the integration must always remain a Zendesk admin, even after the connector is installed.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, followed by **Zendesk**.
 
@@ -66,7 +66,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     - **Client endpoint**: Zendesk URL. It should be `<account_name>.zendesk.com`.
 
 1. In the **External link** page, select **Connect Zendesk**.
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
 1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
 

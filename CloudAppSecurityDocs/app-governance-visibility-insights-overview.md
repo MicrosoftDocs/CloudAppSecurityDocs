@@ -2,7 +2,7 @@
 title: App governance visibility and insights | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: conceptual
-description: Learn about visibility and insights available for app governance with Microsoft Defender for Cloud Apps in Microsoft 365 Defender.
+description: Learn about visibility and insights available for app governance with Microsoft Defender for Cloud Apps in Microsoft Defender XDR.
 ---
 
 # App governance visibility and insights

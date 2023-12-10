@@ -35,7 +35,7 @@ These policies will appear on the Defender for Cloud Apps policies page and can 
 
 ## Anomaly detection policies
 
-You can see the anomaly detection policies in the Microsoft 365 Defender portal, by going to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
+You can see the anomaly detection policies in the Microsoft Defender Portal, by going to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
 
  ![new anomaly detection policies.](media/new-anomaly-detection-policies.png)
 
@@ -110,7 +110,7 @@ The detection looks for users whose accounts were deleted in Microsoft Entra ID,
 * This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user's mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
 
 > [!NOTE]
-> Defender for Cloud Apps integrates with Microsoft 365 Defender to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Microsoft 365 is enabled, you'll start seeing alerts in the Defender for Cloud Apps activity log.
+> Defender for Cloud Apps integrates with Microsoft Defender XDR to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Microsoft 365 is enabled, you'll start seeing alerts in the Defender for Cloud Apps activity log.
 
 ### Suspicious OAuth app file download activities
 
@@ -185,7 +185,7 @@ For example, you can set the Activity from infrequent county detection to ignore
 
 To scope an anomaly detection policy:
 
-1. In the Microsoft 365 Defender portal, go to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
+1. In the Microsoft Defender Portal, go to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
 1. Select the policy you want to scope.
 1. Under **Scope**, change the drop-down from the default setting of **All users and groups**, to **Specific users and groups**.
 1. Select **Include** to specify the users and groups for who this policy will apply. Any user or group not selected here won't be considered a threat and won't generate an alert.

@@ -26,7 +26,7 @@ Microsoft Defender for Cloud Apps access policies enable real-time monitoring an
 
 To create a new access policy, follow this procedure:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Conditional access** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Conditional access** tab.
 
 1. Select **Create policy** and then select **Access policy**.
 

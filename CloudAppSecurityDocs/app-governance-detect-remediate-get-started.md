@@ -2,14 +2,14 @@
 title: Get started with app governance threat detection and remediation | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: overview
-description: Get started with app governance threat detection and remediation in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
+description: Get started with app governance threat detection and remediation in Microsoft Defender XDR with Microsoft Defender for Cloud Apps.
 ---
 
 # Get started with app threat detection and remediation
 
 App governance generates alerts using various mechanisms. Threat detection alerts use built-in, machine-learning-driven detection rules to find malicious app attributes and activities. Policy-based alerts are triggered either by predefined policies or user-defined policies.
 
-To view the latest incidents associated with these alerts, go to the **App governance** >  **Overview** tab in [Microsoft 365 Defender](https://aka.ms/appgovernance).
+To view the latest incidents associated with these alerts, go to the **App governance** >  **Overview** tab in [Microsoft Defender XDR](https://aka.ms/appgovernance).
 
 For example:
 
@@ -21,11 +21,11 @@ To see all of the alerts, select the **Alerts** tab.
 
 ## Alerts page
 
-App governance alerts are now listed with all other Microsoft 365 Defender alerts. To find them, filter for "App governance" as the service source.
+App governance alerts are now listed with all other Microsoft Defender XDR alerts. To find them, filter for "App governance" as the service source.
 
 For example:
 
-:::image type="content" source="media/app-governance/appg-alerts.png" alt-text="Screenshot of the app governance alerts filtered in the Microsoft 365 Defender alerts." lightbox="media/app-governance/appg-alerts.png":::
+:::image type="content" source="media/app-governance/appg-alerts.png" alt-text="Screenshot of the app governance alerts filtered in the Microsoft Defender XDR alerts." lightbox="media/app-governance/appg-alerts.png":::
 
 ## Next step
 

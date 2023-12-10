@@ -4,6 +4,7 @@ description: This article provides information about the benefits of connecting 
 ms.date: 01/29/2023
 ms.topic: article
 ---
+
 # How Defender for Cloud Apps helps protect your DocuSign environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -32,7 +33,7 @@ Connecting your DocuSign environment to Defender for Cloud Apps gives you improv
 
 | **Type**                           | **Name**                                                     |
 | ---------------------------------- | ------------------------------------------------------------ |
-| Built-in  anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses) <br> [Activity from infrequent countries/regions](anomaly-detection-policy.md#activity-from-infrequent-country) <br> [Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses) <br> [Impossible travel](anomaly-detection-policy.md#impossible-travel) <br> [Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires Azure Active Directory as IdP) <br> [Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts) <br> [Unusual administrative activities](anomaly-detection-policy.md#unusual-activities-by-user) <br> [Unusual impersonated activities](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Built-in  anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses) <br> [Activity from infrequent countries/regions](anomaly-detection-policy.md#activity-from-infrequent-country) <br> [Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses) <br> [Impossible travel](anomaly-detection-policy.md#impossible-travel) <br> [Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires Azure Active Directory as IdP) <br> [Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts) <br>|
 | Activity  policy                   | Build a customized policy by the DocuSign audit log           |
 
 For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
@@ -55,3 +56,4 @@ Review our best practices for [securing and collaborating with external users](b
 
 > [!div class="nextstepaction"]
 > [Connect DocuSign to Microsoft Defender for Cloud Apps](./connect-docusign.md)
+
