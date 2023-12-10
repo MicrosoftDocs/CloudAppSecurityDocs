@@ -82,7 +82,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 1. In the **HTTP with Azure AD** pop-up, for both the **Base Resource URL** and **Azure AD Resource URI** fields, enter `https://graph.microsoft.com`, and then select **Sign in** and enter the admin credentials you want to use with the HTTP with Azure AD connector.
 
-    ![Screenshot of the HTTP with Microsoft Entra window, showing the Resource fields and sign-in button.](media/classic-tutorial-flow-templates-azure.png)
+    ![Screenshot of the HTTP with Microsoft Azure AD window, showing the Resource fields and sign-in button.](media/classic-tutorial-flow-templates-azure.png)
 
 1. Select **Continue**.
 
