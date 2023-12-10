@@ -26,7 +26,7 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 ## To configure session controls for your app using AD FS as the IdP
 
-Use the following steps to route your web app sessions from AD FS to Defender for Cloud Apps. For Azure AD configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
+Use the following steps to route your web app sessions from AD FS to Defender for Cloud Apps. For Microsoft Entra configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md).
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by AD FS using one of the following methods:

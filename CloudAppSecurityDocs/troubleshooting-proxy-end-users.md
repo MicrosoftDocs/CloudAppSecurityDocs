@@ -17,7 +17,7 @@ Before you start troubleshooting, make sure your environment meets the following
 |Requirement  |Description  |
 |---------|---------|
 |**Licensing**     |   Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans) for Microsoft Defender for Cloud Apps.      |
-|**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Azure Active Directory (Azure AD) using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
+|**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Microsoft Entra ID using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
 |**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>Google Chrome<br>Mozilla Firefox<br>or Apple Safari      |
 |**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. <br><br>To configure the default behavior during system downtime, in Microsoft Defender XDR, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
 

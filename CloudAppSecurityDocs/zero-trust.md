@@ -23,7 +23,7 @@ When monitoring for Zero Trust, use Defender for Cloud Apps to [discover and sec
 
 Respond to threats with Defender for Cloud Apps's user and entity behavioral analytics (UEBA) and anomaly detection, malware protection, OAuth app protection, incident investigation, and remediation. Monitor for [security anomaly alerts](./investigate-anomaly-alerts.md), such as for impossible travel, suspicious inbox rules, and ransomware. Focus on identifying app usage patterns, assessing risk levels and business readiness of apps, preventing data leaks to noncompliant apps, and limiting access to regulated data.
 
-Use Defender for Cloud Apps to inform Azure AD about what happened to the user after they authenticated and received a token. If the user pattern starts to look suspicious, such as if a user starts to download gigabytes of data from OneDrive or starts to send spam emails in Exchange Online, notify Azure AD that the user seems to be compromised or high risk. On the next access request from this user, Azure AD can correctly take action to verify the user or block them.
+Use Defender for Cloud Apps to inform Microsoft Entra ID about what happened to the user after they authenticated and received a token. If the user pattern starts to look suspicious, such as if a user starts to download gigabytes of data from OneDrive or starts to send spam emails in Exchange Online, notify Microsoft Entra ID that the user seems to be compromised or high risk. On the next access request from this user, Microsoft Entra ID can correctly take action to verify the user or block them.
 
 ### IaaS and PaaS security
 

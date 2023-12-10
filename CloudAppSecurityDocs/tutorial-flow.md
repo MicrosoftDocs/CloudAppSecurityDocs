@@ -30,7 +30,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 - You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing/)
 - You must have a valid Microsoft Defender for Endpoint plan
-- The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
+- The Power Automate environment must be Microsoft Entra ID synced, Defender for Endpoint monitored, and domain-joined
 
 ## Phase 1: Generate a Defender for Cloud Apps API token<a name="generate-token"></a>
 
@@ -67,7 +67,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 ## Phase 3: Configure the flow<a name="configure-flow"></a>
 
 > [!NOTE]
-> If you have previously created a flow using an Azure AD connector, Power Automate automatically reuses the token and you can skip this step.
+> If you have previously created a flow using a Microsoft Entra connector, Power Automate automatically reuses the token and you can skip this step.
 
 1. In the list of apps, on the row in which **Defender for Cloud Apps** appears, select **Create**.
 
