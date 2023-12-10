@@ -70,7 +70,7 @@ Defender for Cloud Apps integrates directly with [Microsoft 365's audit logs](/m
     > [!NOTE]
     >
     > - For best protection, we recommend selecting all Microsoft 365 components.
-    > - The **Microsoft Entra ID files** component, requires the **Microsoft Entra activities** component and Defender for Cloud Apps file monitoring (**Settings** > **Cloud Apps** > **Files** > **Enable file monitoring**).
+    > - The **Azure AD files** component, requires the **Azure AD activities** component and Defender for Cloud Apps file monitoring (**Settings** > **Cloud Apps** > **Files** > **Enable file monitoring**).
 
     ![connect O365 components.](media/connect-o365-components.png)
 
