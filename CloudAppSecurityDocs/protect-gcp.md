@@ -140,7 +140,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 This procedure describes how to add the GCP connection details to connect Google Cloud Platform auditing to Defender for Cloud Apps.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, to provide the GCP connector credentials, do one of the following:
 
@@ -175,7 +175,7 @@ This procedure describes how to add the GCP connection details to connect Google
 
         ![Connect GCP app security auditing for existing connector.](media/connect-gcp-app-audit.png)
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
     > [!NOTE]
     > Defender for Cloud Apps will create an aggregated export sink (organization level), a Pub/Sub topic and Pub/Sub subscription using the integration service account in the integration project.

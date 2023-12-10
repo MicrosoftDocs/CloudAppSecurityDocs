@@ -129,7 +129,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 **To connect Microsoft 365 to Defender for Cloud Apps**:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 1. In the **App connectors** page, select **+Connect an app**, and then select **Microsoft 365**.
 
     ![Connect O365 menu option.](media/connect-o365.png)
@@ -146,9 +146,9 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 1. On the **Follow the link** page, select **Connect Microsoft 365**.
 
 1. After Microsoft 365 is displayed as successfully connected, select **Done**.
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
-SaaS Security Posture Management (SSPM) data is shown in the Microsoft 365 Defender portal on the **Secure Score** page. For more information, see [Security posture management for SaaS apps](/defender-cloud-apps/security-saas).
+SaaS Security Posture Management (SSPM) data is shown in the Microsoft Defender Portal on the **Secure Score** page. For more information, see [Security posture management for SaaS apps](/defender-cloud-apps/security-saas).
 
 > [!NOTE]
 > After connecting Microsoft 365, you will see data from a week back including any third-party applications connected to Microsoft 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Microsoft 365 because Defender for Cloud Apps turns on any APIs that had been off by default.

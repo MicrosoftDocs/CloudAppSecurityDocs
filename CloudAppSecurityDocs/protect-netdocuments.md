@@ -89,7 +89,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 ### Configure Defender for Cloud Apps
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, followed by **NetDocuments**.
 
@@ -104,7 +104,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Select **Next**.
 1. Select **Connect NetDocuments**.
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 ## Rate limits and limitations
 

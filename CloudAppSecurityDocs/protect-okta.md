@@ -93,7 +93,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
          ![Okta token value.](media/okta-token-value.png "Okta token value")
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors page**, select **+Connect an app**, and then **Okta**.
 
@@ -104,7 +104,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Select **Submit** to create the token for Okta in Defender for Cloud Apps.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting Okta, you'll receive events for 60 days prior to connection.
 

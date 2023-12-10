@@ -81,7 +81,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
         Your data center details are shown in the Defender for Cloud Apps **About** page in the **Settings** area. For more information, see [View your data center](network-requirements.md#view-your-data-center).
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, and then select **Box**.
 
@@ -95,9 +95,9 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Box asks you if you want to allow Defender for Cloud Apps access to your team information, activity log, and perform activities as a team member. To proceed, select **Allow**.
 
-1. Back in the Microsoft 365 Defender portal, you should receive a message saying that Box was successfully connected.
+1. Back in the Microsoft Defender Portal, you should receive a message saying that Box was successfully connected.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 **After connecting Box**:
 

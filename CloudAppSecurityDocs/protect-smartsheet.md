@@ -118,7 +118,7 @@ This section describes how to connect Microsoft Defender for Cloud Apps to your 
 >[!NOTE]
 >The Smartsheet user configuring the integration must always remain a Smartsheet admin, even after the connector is installed.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. On the **App connectors** tab, select **+Connect an app**, and then select **Smartsheet**.
 
@@ -132,7 +132,7 @@ This section describes how to connect Microsoft Defender for Cloud Apps to your 
     - **Client Secret**: The app secret that you saved earlier.
 
 1. On the **External Link** page, select **Connect Smartsheet**.
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
 1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
 

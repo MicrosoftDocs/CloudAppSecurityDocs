@@ -138,7 +138,7 @@ You can connect AWS **Security auditing** to Defender for Cloud Apps connections
 
 ### Step 2: Connect Amazon Web Services auditing to Defender for Cloud Apps
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
@@ -168,7 +168,7 @@ You can connect AWS **Security auditing** to Defender for Cloud Apps connections
 
         ![Connect AWS app security auditing for existing connector.](media/aws-connect-app-audit.png "Connect AWS app security auditing")
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 ## Next steps
 

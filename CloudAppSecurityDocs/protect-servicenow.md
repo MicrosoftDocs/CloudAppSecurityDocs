@@ -139,7 +139,7 @@ For more information, see the [ServiceNow product documentation](https://docs.se
     - Increase the **Access Token Lifespan** to at least 3,600.
 
    - Select **Submit**.
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, and then **ServiceNow**.
 
@@ -158,7 +158,7 @@ For more information, see the [ServiceNow product documentation](https://docs.se
 
 1. In the **OAuth Details** page, enter your **Client ID** and **Client Secret**. Select **Next**.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting ServiceNow, you'll receive events for seven days prior to connection.
 
@@ -174,7 +174,7 @@ To connect ServiceNow with Defender for Cloud Apps, you must have admin-level pe
 
     ![ServiceNow account.](media/servicenow-account.png "ServiceNow account")
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, and then **ServiceNow**.
 
@@ -188,7 +188,7 @@ To connect ServiceNow with Defender for Cloud Apps, you must have admin-level pe
     ![ServiceNow update password.](media/servicenow-update-password.png "ServiceNow update password")
 
 1. Select **Connect**.
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 After connecting ServiceNow, you'll receive events for seven days prior to connection.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
