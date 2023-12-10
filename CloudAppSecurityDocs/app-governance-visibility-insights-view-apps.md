@@ -17,14 +17,14 @@ For a summary of apps in your tenant, in Microsoft 365, go to **Cloud app > App 
 
 For example:
 
-:::image type="content" source="media/app-governance-visibility-insights-view-apps/appg-cc-apps.png" alt-text="Screenshot of the Microsoft Entra apps tab on the App governance page.":::
+:::image type="content" source="media/app-governance-visibility-insights-view-apps/appg-cc-apps.png" alt-text="Screenshot of the Azure AD apps tab on the App governance page.":::
 
 
 >[!NOTE]
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#roles) to view any app governance data.
 >
 
-On the **Microsoft Entra apps** tab, the apps in your tenant are listed with the following details:
+On the **Azure AD apps** tab, the apps in your tenant are listed with the following details:
 
 |Column name  |Description  |
 |---------|---------|
@@ -55,9 +55,9 @@ You can also select **Search** to search for an app by name.
 
 Select a specific app in the grid to view more details on an apps details pane on the right. For example:
 
-:::image type="content" source="media/app-governance-visibility-insights-view-apps/image2.png" alt-text="Screenshot of an app details pane on the Microsoft Entra ID tab.":::
+:::image type="content" source="media/app-governance-visibility-insights-view-apps/image2.png" alt-text="Screenshot of an app details pane on the Azure AD tab.":::
 
-The **Summary** tab also shows more data about the app, such as the date first consented and the App ID. To see the properties of the app as registered in Microsoft Entra ID, select **View app in Microsoft Entra ID**.
+The **Summary** tab also shows more data about the app, such as the date first consented and the App ID. To see the properties of the app as registered in Microsoft Entra ID, select **View app in Azure AD**.
 
 In the details pane, select any of the following tabs to view more details:
 

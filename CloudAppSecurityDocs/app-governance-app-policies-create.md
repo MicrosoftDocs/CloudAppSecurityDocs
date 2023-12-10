@@ -25,11 +25,11 @@ Use app governance to create OAuth policies for apps connected to Microsoft Entr
 
 For apps connected to Microsoft Entra ID, create app policies from provided templates that can be customized, or create your own custom app policy.
 
-1. To create a new app policy for Microsoft Entra apps, go to **Microsoft 365 Defender > App governance > Policies > Microsoft Entra ID**.
+1. To create a new app policy for Azure AD apps, go to **Microsoft 365 Defender > App governance > Policies > Azure AD**.
 
     For example:
 
-    :::image type="content" source="media/app-governance-app-policies-create/azure-ad-policies.jpg" alt-text="Screenshot of the Microsoft Entra ID tab.":::
+    :::image type="content" source="media/app-governance-app-policies-create/azure-ad-policies.jpg" alt-text="Screenshot of the Azure AD tab.":::
 
 1. Select the **Create New Policy** option, and then do one of the following steps:
 

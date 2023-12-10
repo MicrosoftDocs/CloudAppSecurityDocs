@@ -26,11 +26,11 @@ To enable Defender for Cloud Apps integration with Identity Protection:
 
     ![Settings menu.](media/classic-azip-system-settings.png)
 
-1. Under **Threat Protection**, select **Microsoft Entra ID Protection**.
+1. Under **Threat Protection**, select **Azure AD Identity Protection**.
 
     ![enable azure advanced threat protection.](media/classic-aadip-integration.png)
 
-1. Select **Enable Microsoft Entra ID Protection alert integration** and then select **Save**.
+1. Select **Enable Azure AD Identity Protection alert integration** and then select **Save**.
 
 After enabling Identity Protection integration, you'll be able to see alerts for all the users in your organization.
 
@@ -40,9 +40,9 @@ To disable Defender for Cloud Apps integration with Identity Protection:
 
 1. In Defender for Cloud Apps, under the settings cog, select **Settings**.
 
-1. Under **Threat Protection**, select **Microsoft Entra ID Protection**.
+1. Under **Threat Protection**, select **Azure AD Identity Protection**.
 
-1. Clear **Enable Microsoft Entra ID Protection alert integration** and then select **Save**.
+1. Clear **Enable Azure AD Identity Protection alert integration** and then select **Save**.
 
 > [!NOTE]
 >
