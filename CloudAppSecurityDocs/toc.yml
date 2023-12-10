@@ -198,57 +198,57 @@ items:
       href: ./connector-platform.md
     - name: Protect connected apps
       href: protect-connected-apps.md
-    - name: Protect Asana (Preview)
+    - name: Asana (Preview)
       href: protect-asana.md
-    - name: Protect Atlassian
+    - name: Atlassian
       href: protect-atlassian.md
-    - name: Protect AWS
+    - name: AWS
       href: protect-aws.md
-    - name: Protect Azure
+    - name: Azure
       href: protect-azure.md
-    - name: Protect Box
+    - name: Box
       href: protect-box.md
-    - name: Protect Citrix ShareFile
+    - name: Citrix ShareFile
       href: ./connect-citrix-sharefile.md
-    - name: Protect DocuSign
+    - name: DocuSign
       href: protect-docusign.md
-    - name: Protect Dropbox
+    - name: Dropbox
       href: protect-dropbox.md
-    - name: Protect Egnyte
+    - name: Egnyte
       href: protect-egnyte.md
-    - name: Protect GitHub
+    - name: GitHub
       href: protect-github.md
-    - name: Protect GCP
+    - name: GCP
       href: protect-gcp.md
-    - name: Protect Google Workspace
+    - name: Google Workspace
       href: protect-google-workspace.md
-    - name: Protect Miro (Preview)
+    - name: Miro (Preview)
       href: protect-miro.md
-    - name: Protect NetDocuments
+    - name: NetDocuments
       href: protect-netdocuments.md
-    - name: Protect Microsoft 365
+    - name: Microsoft 365
       href: protect-office-365.md
-    - name: Protect Okta
+    - name: Okta
       href: protect-okta.md
-    - name: Protect OneLogin
+    - name: OneLogin
       href: protect-onelogin.md
-    - name: Protect Salesforce
+    - name: Salesforce
       href: protect-salesforce.md
-    - name: Protect ServiceNow
+    - name: ServiceNow
       href: protect-servicenow.md
-    - name: Protect Slack
+    - name: Slack
       href: protect-slack.md
-    - name: Protect Smartsheet
+    - name: Smartsheet
       href: protect-smartsheet.md
-    - name: Protect Webex
+    - name: Webex
       href: protect-webex.md
-    - name: Protect Workday
+    - name: Workday
       href: protect-workday.md
-    - name: Protect Workplace (Preview)
+    - name: Workplace (Preview)
       href: protect-workplace.md
-    - name: Protect Zendesk
+    - name: Zendesk
       href: protect-zendesk.md
-    - name: Protect Zoom
+    - name: Zoom
       href: connect-zoom.md
   - name: Conditional Access App Control
     items:
