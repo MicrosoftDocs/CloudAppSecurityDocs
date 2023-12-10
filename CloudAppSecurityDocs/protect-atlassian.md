@@ -41,7 +41,7 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 | **Type**        | **Action**                                                   |
 | --------------- | ------------------------------------------------------------ |
-| User governance | Notify user on  alert (via Azure AD)<br />  Require user to sign in again (via Azure AD)   <br /> Suspend user (via Azure AD) |
+| User governance | Notify user on  alert (via Microsoft Entra ID)<br />  Require user to sign in again (via Microsoft Entra ID)   <br /> Suspend user (via Microsoft Entra ID) |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
