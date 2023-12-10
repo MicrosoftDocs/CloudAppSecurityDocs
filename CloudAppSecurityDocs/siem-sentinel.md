@@ -34,18 +34,18 @@ To integrate with Microsoft Sentinel:
 
 The direct Defender for Cloud Apps - Microsoft Sentinel integration is available to commercial customers only.
 
-However, all Defender for Cloud Apps data is available in Microsoft 365 Defender, and therefore available in Microsoft Sentinel via the Microsoft 365 Defender connector.
+However, all Defender for Cloud Apps data is available in Microsoft Defender XDR, and therefore available in Microsoft Sentinel via the Microsoft Defender XDR connector.
 
-We recommend that GCC, GCC High, and DoD customers who are interested in seeing Defender for Cloud Apps data in Microsoft Sentinel install the Microsoft 365 Defender solution.
+We recommend that GCC, GCC High, and DoD customers who are interested in seeing Defender for Cloud Apps data in Microsoft Sentinel install the Microsoft Defender XDR solution.
 
 For more information, see:
 
-- [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
 - [Microsoft Defender for Cloud Apps for US Government offerings](editions-cloud-app-security-gcc.md)
 
 ### Integrating with Microsoft Sentinel
 
-1. In the Microsoft 365 Defender portal, select **Settings > Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings > Cloud Apps**.
 
 1. Under **System**, select **SIEM agents > Add SIEM agent > Sentinel**. For example:
 

@@ -34,7 +34,7 @@ Our approach to information protection can be split into the following phases th
     - **Use an app connector**: Our app connectors use the APIs supplied by app providers. They provide greater visibility into and control over the apps used in your organization. Scans are performed periodically (every 12 hours) and in real time (triggered each time a change is detected). For more information and instructions on how to add apps, see [Connecting apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
     - **Use Conditional Access App Control**: Our Conditional Access App Control solution uses a reverse proxy architecture that is uniquely integrated with Microsoft Entra Conditional Access. Once configured in Microsoft Entra ID, users will be routed to Defender for Cloud Apps where access and session policies are enforced to protect the data apps attempt to use. This connection method allows you to apply controls to [any app](proxy-deployment-any-app.md). For more information, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md).
 
-1. **Investigate**: After you connect an app to Defender for Cloud Apps using its API connector, Defender for Cloud Apps scans all the files it uses. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Files** to get an overview of the files shared by your cloud apps, their accessibility, and their status. For more information, see [Investigate files](file-filters.md).
+1. **Investigate**: After you connect an app to Defender for Cloud Apps using its API connector, Defender for Cloud Apps scans all the files it uses. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Files** to get an overview of the files shared by your cloud apps, their accessibility, and their status. For more information, see [Investigate files](file-filters.md).
 
 ### Phase 2: Classify sensitive information
 
@@ -42,7 +42,7 @@ Our approach to information protection can be split into the following phases th
 
     For those of you that have already done the hard work of identifying sensitive information and applying the appropriate sensitivity labels, you can use those labels in your policies without having to scan the contents again.
 1. **Enable Microsoft Information Protection integration**
-    1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+    1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
     1. Under **Information Protection**,  go to **Microsoft Information Protection**. Select **Automatically scan new files for Microsoft Information Protection sensitivity labels and content inspection warnings**.
 
     For more information, see [Microsoft Purview Information Protection integration](azip-integration.md).
@@ -51,7 +51,7 @@ Our approach to information protection can be split into the following phases th
     **File policy**  
     Use this type of policy to scan the content of files stored in your API connected cloud apps in near real-time and data at rest. Files are scanned using one of our supported inspection methods including **Microsoft Purview Information Protection encrypted content** thanks to its **native integration** with Defender for Cloud Apps.
 
-    1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Policies** -> **Policy management**.
+    1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Policies** -> **Policy management**.
     1. Select **Create Policy**, and then select **File policy**.
     1. Under **Inspection method**, choose and configure one of the following classification services:
 
@@ -69,7 +69,7 @@ Our approach to information protection can be split into the following phases th
     - **Protect files on download**: Require documents to be labeled and protected with Microsoft Purview Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
     - **Prevent the upload of unlabeled files**: Require a file to have the right label and protection before a sensitive file is uploaded, distributed, and used by others. With this action, you can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
 
-    1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Policies** -> **Policy management**.
+    1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Policies** -> **Policy management**.
     1. Select **Create Policy**, and then select **Session policy**.
     1. Under **Session control type**, choose one of the options with DLP.
     1. Under **Inspection method**, choose and configure one of the following classification services:

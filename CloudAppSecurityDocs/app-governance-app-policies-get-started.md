@@ -2,12 +2,12 @@
 title: Get started with app governance policies | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: how-to
-description: Get started learning about app governance policies with Microsoft Defender for Cloud Apps in Microsoft 365 Defender
+description: Get started learning about app governance policies with Microsoft Defender for Cloud Apps in Microsoft Defender XDR
 ---
 
 # Get started with app policies
 
-Policies for app governance are a way to implement proactive and reactive alerts and automatic remediation for your specific needs for app compliance in your organization. You can create policies in app governance to manage OAuth apps in Azure AD, Google and Salesforce.
+Policies for app governance are a way to implement proactive and reactive alerts and automatic remediation for your specific needs for app compliance in your organization. You can create policies in app governance to manage OAuth apps in Microsoft Entra ID, Google and Salesforce.
 
 There are two types of policies in app governance:
 
@@ -19,11 +19,11 @@ There are two types of policies in app governance:
 
     In addition to predefined policies, admins can also use the available conditions to create their custom policies or pick from the available recommended policies.
 
-To see your list of current app policies, go to the **Microsoft 365 Defender > App governance** page and select **Policies**. This shows you a list of all your policies in app governance. 
+To see your list of current app policies, go to the **Microsoft Defender XDR > App governance** page and select **Policies**. This shows you a list of all your policies in app governance. 
 
 For example:
 
-![Screenshot of the app governance policies summary page in Microsoft 365 Defender.](media/app-governance-app-policies-get-started/azure-ad-policies.jpg)
+![Screenshot of the app governance policies summary page in Microsoft Defender XDR.](media/app-governance-app-policies-get-started/azure-ad-policies.jpg)
 
 > [!NOTE]
 > Built-in threat detection policies aren't listed on the **Policies** tab. For more information, see [Investigate threat detection alerts](app-governance-anomaly-detection-alerts.md).
@@ -96,4 +96,3 @@ You can also:
 ## Next step
 
 [Create an app policy](app-governance-app-policies-create.md)
-

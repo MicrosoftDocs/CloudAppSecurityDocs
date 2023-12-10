@@ -57,7 +57,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |  ✔                                          |                        |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Citrix share file  |  |  |  |   |
-| DocuSign          | ✔ |  |  | ✔ | ✔ | ✔ |
+| DocuSign          | Supported with DocuSign Monitor|  |  | Supported with DocuSign Monitor | Supported with DocuSign Monitor | Supported with DocuSign Monitor |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Egnyte  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | GitHub            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
@@ -154,7 +154,6 @@ For more information about  Microsoft Peering, see [ExpressRoute circuits and ro
 > [!NOTE]
 >
 > - Before disabling an app connector, make sure you have the connection details available as you will need them if you want to re-enable the connector.
-> - Once an Azure connector is disabled, it can't be re-enabled. If the connector is disabled by accident, contact Microsoft support.
 > - These steps cannot be used to disable Conditional Access App Control apps and Security configuration apps.
 
 To disable connected apps:
@@ -182,5 +181,6 @@ To re-enable connected apps:
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 
 

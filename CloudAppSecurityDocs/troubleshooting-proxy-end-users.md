@@ -19,7 +19,7 @@ Before you start troubleshooting, make sure your environment meets the following
 |**Licensing**     |   Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans) for Microsoft Defender for Cloud Apps.      |
 |**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Microsoft Entra ID using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
 |**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>Google Chrome<br>Mozilla Firefox<br>or Apple Safari      |
-|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. <br><br>To configure the default behavior during system downtime, in Microsoft 365 Defender, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
+|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. <br><br>To configure the default behavior during system downtime, in Microsoft Defender XDR, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
 
 ## User monitoring page is not appearing
 
@@ -29,7 +29,7 @@ This section describes the troubleshooting steps recommended to take if the user
 
 **Recommended steps**
 
-1. In the Microsoft 365 Defender portal, select **Settings** > **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings** > **Cloud Apps**.
 1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps. For exmaple:
 
     ![Screenshot of the user monitoring options.](media/proxy-user-monitoring.png)
@@ -53,7 +53,7 @@ If an end user receives a general failure after signing into an app from a non-M
 
 **Recommended steps**
 
-1. In the Microsoft 365 Defender portal, select **Settings** > **Cloud Apps**. 
+1. In the Microsoft Defender Portal, select **Settings** > **Cloud Apps**. 
 
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 
@@ -100,7 +100,7 @@ This ability enables companies to balance security and productivity for end user
 
 If the session is being proxied, use the following steps to verify the policy:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Activity log**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Activity log**.
 
 1. Use the advanced filter, select **Applied action** and set its value equal to **Blocked**.
 
@@ -114,7 +114,7 @@ If the session is being proxied, use the following steps to verify the policy:
 
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
 
-        1. To change the default behavior, in the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
+        1. To change the default behavior, in the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
 
         1. Go to the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home?#/servicehealth) and monitor notifications about system downtime.
 
@@ -128,7 +128,7 @@ If the end user can't successfully encrypt the document, use the following steps
 
 **Recommended steps**
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Activity log**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Activity log**.
 
 1. Use the advanced filter, select **Applied action** and set its value equal to **Protected**.
 
@@ -142,7 +142,7 @@ If the end user can't successfully encrypt the document, use the following steps
 
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
 
-        1. To change the default behavior, in the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
+        1. To change the default behavior, in the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
  
        1. Go to the [Microsoft 365 Service Health Dashboard](/microsoft-365/admin/manage/health-dashboard-overview) and monitor notifications about system downtime.
 
@@ -224,22 +224,35 @@ For example, in Chrome:
 
 If you receive a message like this, contact Microsoft’s support, who will address it with the relevant browser vendor.
 
+### Second sign-in (AKA 'second login')
+
+Some applications have more than one deep link to login, and unless the customer defines it in the app settings, when the end user will sign-in =, it might be redirected to unrecognized page and the experience will be broken
+
+The integration between IDP companies as Azure AD is based on intercepting an app sign-in and redirecting it. This means that browser sign in cannot be directly controlled without triggering a second sign-in. To trigger a second sign-in, we need to employ second sign-in URL that will be used for that purpose
+
+If the app uses a nonce, the second sign-in may be transparent to users, or they be prompted to login again
+
+If it is not transparent to the end user, the second sign-in URL should be added to the app settings:
+
+1. Go to 'settings'\'Cloud apps'\'connected apps'\'Conditional Access App Control Apps'
+
+1. Choose the relevant pp and then click on the three dots
+
+1. Click on 'Edit app'\'Advanced login configuration'
+
+1. Add the second sign-in URL as mentioned in the error page
+
+If you are confident the app does not use a nonce, you can disable this by editing the apps settings as described in [Slow sign-ins](troubleshooting-proxy.md#slow-sign-ins).
+
 ### Additional considerations for troubleshooting apps
 
 While troubleshooting apps, there are some additional things to consider:
 
 - **Session controls support for modern browsers**
+  Defender for Cloud Apps session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
 
-    Defender for Cloud Apps session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
-
-- **Double login**
-
-    A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce.
-
-    If you're confident the app doesn't use a nonce, you can disable this by editing the app in Defender for Cloud Apps and the issue will be resolved. For steps to disable nonce, see [Slow sign-ins](troubleshooting-proxy.md#slow-sign-ins).
-
-    If the app uses a nonce and this feature cannot be disabled, the second login may be transparent to users, or they may be prompted to log in again.
-
+- **Session controls protect limitation**
+Co-Auth labeling under **"protect"** action is not supported by Defender for Cloud Apps session controls
 ## Next steps
 
 For more information, see [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md).

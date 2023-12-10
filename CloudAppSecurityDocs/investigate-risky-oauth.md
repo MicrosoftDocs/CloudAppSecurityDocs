@@ -50,7 +50,7 @@ You can set policies to automatically send you notifications when an OAuth app m
 
 ### Detect risky apps by hunting
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **OAuth apps**. Use the filters and queries to review what's happening in your environment:
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **OAuth apps**. Use the filters and queries to review what's happening in your environment:
 
     - Set the filter to **Permission level high severity** and **Community use not common**. Using this filter, you can focus on apps that are potentially very risky, where users may have underestimated the risk.
     - Under **Permissions** select all the options that are particularly risky in a specific context. For example, you can select all the filters that provide permission to email access, such as **Full access to all mailboxes** and then review the list of apps to make sure that they all really need mail-related access. This can help you investigate within a specific context, and find apps that seem legitimate, but contain unnecessary permissions. These apps are more likely to be risky.

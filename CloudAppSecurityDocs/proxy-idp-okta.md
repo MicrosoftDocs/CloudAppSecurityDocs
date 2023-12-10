@@ -70,7 +70,7 @@ Use the following steps to route your web app sessions from Okta to Defender for
 
 ## Step 2: Configure Defender for Cloud Apps with your app's SAML information
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 1. Select **+Add**, and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
 1. On the **APP INFORMATION** page, select **Fill in data manually**, in the **Assertion consumer service URL** enter the Salesforce **Login URL** you noted earlier, and then click **Next**.

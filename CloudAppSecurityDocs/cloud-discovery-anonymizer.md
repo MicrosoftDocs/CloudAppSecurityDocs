@@ -29,7 +29,7 @@ Key points:
 
     - You can set the default in Defender for Cloud Apps to anonymize all data from both snapshot reports from uploaded log files and continuous reports from log collectors as follows:
 
-        1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+        1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
         1. Under **Cloud Discovery**, select **Anonymization**. To anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Win10 Endpoint Users' report**.
 
@@ -61,7 +61,7 @@ Key points:
 
     The following alternative way to resolve single usernames can also be used to look up the encrypted username of a known username.
 
-    1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+    1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
     1. Under **Cloud Discovery**, select **Anonymization**. Then, under **Anonymize and resolve usernames**  enter a justification for why you're doing the resolution.
     1. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Select **Resolve**.

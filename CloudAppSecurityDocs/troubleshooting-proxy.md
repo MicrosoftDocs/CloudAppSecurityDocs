@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot access and session controls for admins | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by admins with Microsoft Defender for Cloud Apps.
-ms.date: 08/20/2023
+ms.date: 11/20/2023
 ms.topic: troubleshooting
 ---
 
@@ -20,7 +20,7 @@ Before you start troubleshooting, make sure your environment meets the following
 |**Licensing**     |   Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans) for Microsoft Defender for Cloud Apps.      |
 |**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Microsoft Entra ID using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
 |**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>Google Chrome<br>Mozilla Firefox<br>or Apple Safari      |
-|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, when the normal policy controls can't be enforced, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content. <br><br>To configure the default behavior during system downtime, in Microsoft 365 Defender, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
+|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, when the normal policy controls can't be enforced, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content. <br><br>To configure the default behavior during system downtime, in Microsoft Defender XDR, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
 
 ## Reference of troubleshooting issues for admins
 
@@ -36,7 +36,7 @@ Use the following table to find the issue you're trying to troubleshoot:
 
 ## Network condition issues
 
-Common network condition issues you may encounter include:
+Common network condition issues you might encounter include:
 
 - [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)
 - [Slow sign-in](#slow-sign-ins)
@@ -44,7 +44,7 @@ Common network condition issues you may encounter include:
 
 ### Network errors when navigating to a browser page
 
-When you're first setting up Defender for Cloud Apps access and session controls for an app, common network errors that may arise include: *This site isn't secure* and *There's no internet connection*. These messages can indicate a general network configuration error.
+When you're first setting up Defender for Cloud Apps access and session controls for an app, common network errors that might arise include: *This site isn't secure* and *There's no internet connection*. These messages can indicate a general network configuration error.
 
 **Recommended steps**
 
@@ -69,7 +69,7 @@ Defender for Cloud Apps uses Transport Layer Security (TLS) protocols 1.2+ to pr
 - SaaS apps that use TLS 1.1 or lower appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
 
 > [!TIP]
-> While session controls are built to work with any browser on any major platform on any operating system, we support the latest versions of Microsoft Edge, Google Chrome, Mozilla Firefox, or Apple Safari. You may want to block or allow access specifically to mobile or desktop apps.
+> While session controls are built to work with any browser on any major platform on any operating system, we support the latest versions of Microsoft Edge, Google Chrome, Mozilla Firefox, or Apple Safari. You might want to block or allow access specifically to mobile or desktop apps.
 >
 
 
@@ -79,14 +79,14 @@ Proxy chaining and nonce-handling are some of the common issues that could resul
 
 **Recommended steps**
 
-Configure your environment to remove any factors that might be causing slowness during sign-in. For example, you might have firewalls or forward proxy chaining configured, which connects two or more proxy servers to navigate to the intended page. You may also have other external factors affecting the slowness.
+Configure your environment to remove any factors that might be causing slowness during sign-in. For example, you might have firewalls or forward proxy chaining configured, which connects two or more proxy servers to navigate to the intended page. You might also have other external factors affecting the slowness.
 
 1. Identify whether proxy chaining is occurring in your environment.
 1. Remove any forward proxies where possible.
 
 Some apps use a nonce hash during authentication to prevent replay attacks. By default, Defender for Cloud Apps assumes that an app uses a nonce. If the app you're working with doesn't use nonce, disable nonce-handling for this app in Defender for Cloud Apps:
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**. 
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**. 
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 1. In the list of apps, on the row in which the app you're configuring appears, select the three dots at the end of the row, and then select **Edit** for your app.
 1. Select **Nonce-handling** to expand the section and then clear **Enable nonce handling**.
@@ -101,7 +101,7 @@ While troubleshooting network conditions, also consider the following notes abou
 
 - **Verify whether your session is being routed to another data center**: Defender for Cloud Apps uses Azure Data Centers around the world to optimize performance through geolocation. 
 
-    This means that a user's session may be hosted outside of a region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
+    This means that a user's session might be hosted outside of a region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
 
 - **Proxy performance**: Deriving a performance baseline depends on many factors outside of the Defender for Cloud Apps proxy, such as:
 
@@ -126,7 +126,7 @@ Defender for Cloud Apps provides the following options for identifying a device'
 
 For more information on device identification, see [Managed Device Identification](proxy-intro-aad.md#managed-device-identification).
 
-Common device identification issues you may encounter include:
+Common device identification issues you might encounter include:
 
 - [Misidentified Intune Compliant or Microsoft Entra hybrid joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)
 - [Client certificates aren't prompting when expected](#client-certificates-arent-prompting-when-expected)
@@ -143,7 +143,7 @@ For more information, see [Introduction to device management in Microsoft Entra 
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**.
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Defender for Cloud Apps.
 1. For **Intune compliant device identification** and **Microsoft Entra hybrid joined identification** respectively, select **View configuration** and verify that the services are set up. Services are automatically synced from Microsoft Entra ID and Intune respectively.
 
@@ -159,6 +159,7 @@ For more information, see [Introduction to device management in Microsoft Entra 
     1. For Conditional Access, some browsers may require extra configuration such as installing an extension. For more information, see [Conditional Access browser support](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers).
     1. If you still don't see the device information in the **Sign-ins** page, open a support ticket for Microsoft Entra ID.
 
+
 ### Client certificates aren't prompting when expected
 
 The device identification mechanism can request authentication from relevant devices using client certificates. You can upload an X.509 root or intermediate certificate authority (CA) certificate, formatted in the PEM certificate format.
@@ -167,7 +168,7 @@ Certificates must contain the CA's public key, which is then used to sign the cl
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**.
 
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available with Defender for Cloud Apps.
 
@@ -188,7 +189,7 @@ Certificates must contain the CA's public key, which is then used to sign the cl
 
 1. Validate that the client certificate is prompted in your browser.
 
-    If it doesn't appear, try a different browser. Most major browsers support performing a client certificate check. However, mobile and desktop apps often use built-in browsers that may not support this check and therefore affect authentication for these apps.
+    If it doesn't appear, try a different browser. Most major browsers support performing a client certificate check. However, mobile and desktop apps often use built-in browsers that might not support this check and therefore affect authentication for these apps.
 
 1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, add a [filter](activity-filters.md) on **Device Tag** equal to **Valid client certificate**.
 
@@ -241,7 +242,7 @@ When onboarding an app, make sure that you've followed the proxy deployment guid
 1. [Deploy catalog apps with session controls](proxy-deployment-aad.md)
 1. [Deploy custom LOB apps, nonfeatured SaaS apps, and on-premises apps hosted via the Microsoft Entra application proxy with session controls](proxy-deployment-any-app.md)
 
-Common scenarios you may encounter while onboarding an app include:
+Common scenarios you might encounter while onboarding an app include:
 
 - [App doesn't appear on the **Conditional Access App Control apps** page](#app-doesnt-appear-on-the-conditional-access-app-control-apps-page)
 - [App status: Continue Setup](#app-status-continue-setup)
@@ -282,7 +283,7 @@ When onboarding an app to Conditional Access App Control, the final deployment s
 
 An app's status can vary, and can include **Continue Setup**, **Connected**, or **No Activities**.
 
-For apps connected via non-Microsoft identity providers (IdP), if the setup isn't complete, when accessing the app you'll see a page with the status of **Continue Setup**. Use the following steps complete the setup.
+For apps connected via non-Microsoft identity providers (IdP), if the setup isn't complete, when accessing the app you see a page with the status of **Continue Setup**. Use the following steps complete the setup.
 
 **Recommended steps**
 
@@ -309,11 +310,11 @@ Native apps can be detected heuristically and you can use access policies to mon
 
 Defender for Cloud Apps can recognize over 31,000 apps through the **Cloud App Catalog**.
 
-If you're using a custom app that is configured through Microsoft Entra SSO, and isn't one of the supported apps, you'll come across an **App is not recognized** page. To resolve the issue, you must configure the app on  Conditional Access App Control.
+If you're using a custom app that is configured through Microsoft Entra SSO, and isn't one of the supported apps, you come across an **App is not recognized** page. To resolve the issue, you must configure the app on  Conditional Access App Control.
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
 
 1. In the banner, select **View new apps**.
 
@@ -326,11 +327,11 @@ If you're using a custom app that is configured through Microsoft Entra SSO, and
 
 ### Request session control option appears
 
-After adding an app, you may see the **Request session control** option. This occurs because only catalog apps have out-of-the-box session controls. For any other app, you must go through a self-onboarding process.
+After adding an app, you might see the **Request session control** option. This occurs because only catalog apps have out-of-the-box session controls. For any other app, you must go through a self-onboarding process.
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
@@ -356,7 +357,7 @@ While troubleshooting onboarding apps, remember that apps in Conditional Access 
 
 The app names in Microsoft Entra ID and Defender for Cloud Apps might differ based on the ways the products identify apps. 
 
-- Defender for Cloud Apps identifies apps using the app's domains and adds them to the [cloud app catalog](risk-score.md#the-cloud-app-catalog), where we have over 31,000 apps. Within each app, there you can view or add to the subset of domains. 
+- Defender for Cloud Apps identifies apps using the app's domains and adds them to the [cloud app catalog](risk-score.md), where we have over 31,000 apps. Within each app, there you can view or add to the subset of domains. 
 
 - In contrast, Microsoft Entra ID identifies apps using service principals. For more information, see [app and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals).
 
@@ -377,7 +378,7 @@ To use these policies in Defender for Cloud Apps, you must first configure a pol
 
 1. Select **Select** to continue.
 
-Common scenarios you may encounter while configuring these policies include:
+Common scenarios you might encounter while configuring these policies include:
 
 - [In Conditional Access policies, you can't see the Conditional Access App Control option](#in-conditional-access-policies-you-cant-see-the-conditional-access-app-control-option)
 - [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)
@@ -396,11 +397,11 @@ If you don't see the **Conditional Access App Control** option in your Condition
 
 ### Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control
 
-When creating an access or session policy, you may see the following error message: *You don't have any apps deployed with Conditional Access App Control*. This error indicates that the app hasn't been deployed.
+When creating an access or session policy, you might see the following error message: *You don't have any apps deployed with Conditional Access App Control*. This error indicates that the app hasn't been deployed.
 
 **Recommended steps**
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
 
 1. If you see the message **No apps connected**, use the following guides to deploy apps:
 
@@ -411,7 +412,7 @@ If you run into any issues while deploying the app, see [Issues when onboarding 
 
 ### Can't create session policies for an app
 
-After adding a custom app, in the **Conditional Access App Control apps** page, you may see the option: **Request session control**.
+After adding a custom app, in the **Conditional Access App Control apps** page, you might see the option: **Request session control**.
 
 > [!NOTE]
 > [Catalog apps](proxy-intro-aad.md#session-controls) have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process.
@@ -474,78 +475,79 @@ While troubleshooting for onboarding apps, there are some extra things to consid
 
     In Defender for Cloud Apps access policies, unless the **Client app** filter is set to **Mobile and desktop**, the resulting access policy applies to browser sessions. 
 
-    The reason for this is to prevent inadvertently proxying user sessions, which may be a byproduct of using this filter.
+    The reason for this is to prevent inadvertently proxying user sessions, which might be a byproduct of using this filter.
 
 ## Diagnose and troubleshoot with the Admin View toolbar
 
-The Admin View toolbar provides tools for an admin to diagnose and troubleshoot issues with Conditional Access App Control.
+The **Admin View** toolbar sits at the bottom of your screen and provides tools for admin users to diagnose and troubleshoot issues with Conditional Access App Control.
 
-To enable the Admin View toolbar for specific admin users, you first must add admins to the app onboarding/maintenance list.
+To view the **Admin View** toolbar, you must make sure to add specific admin user accounts to the **App onboarding / maintenance** list in the Microsoft Defender XDR settings. 
 
-1. In Microsoft 365 Defender, select **Settings** > **Cloud Apps**.
+**To add a user to the App onboarding / maintenance list**:
 
-1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps**.
 
-1. Enter the user principal name or email address for the admin users that will be onboarding the app.
+1. Scroll down, and under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
-1. Check the box for **Enable these users to bypass Conditional Access App Control from inside a proxied session** and select **Save**.
+1. Enter the principal name or email address for the admin user you want to add.
+
+1. Select the **Enable these users to bypass Conditional Access App Control from inside a proxied session** option, and then select **Save**.
 
     For example:
 
-    ![Screenshot of the App onboarding/maintenance settings.](media/app-onboarding-maintenance.png)
+    :::image type="content" source="media/app-onboarding-maintenance.png" alt-text="Screenshot of the App onboarding / maintenance settings." lightbox="media/app-onboarding-maintenance.png":::
 
-When those users next start a session of an application, the Admin View toolbar is available.
+The next time that one of the listed users starts a new session in a supported app where they're an admin, the **Admin View** toolbar is shown at the bottom of the browser. 
+
+For example, the following image shows the **Admin View** toolbar showing at the bottom of a browser window, when using OneNote in the browser:
+
+:::image type="content" source="media/troubleshooting-proxy/admin-view.png" alt-text="Screenshot of the Admin View toolbar." lightbox="media/troubleshooting-proxy/admin-view.png":::
+
+The following sections describe how to use the **Admin View** toolbar to test and troubleshoot.
+
+### Test mode (Preview)
+
+As an admin user, you might want to test upcoming proxy bug fixes before the latest release is fully rolled out to all tenants. Provide your feedback about the bug fix to the Microsoft support team to help speed up release cycles.
+
+When in test mode, only the admin users are exposed to any changes provided in the bug fixes. There is no effect on other users.
+
+- To turn on test mode, in the **Admin View** toolbar, select **Test Mode**.
+- When you've finished your testing, select **End Test Mode** to return to the regular functionality.
 
 ### Bypass proxy session
 
-If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It appears for users who have the [Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar) enabled.
+If you have difficulty accessing or loading your application, you may want to verify whether the issue is with the conditional access proxy by running the application without the proxy. 
 
-For example:
+To bypass the proxy, in the **Admin View** toolbar, select **Bypass experience**. Confirm that the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
 
-![Screenshot of the Bypass option in the Admin View toolbar.](media/troubleshooting-proxy/proxy-admin-toolbar-bypass.png)
-
-Once you select **Bypass**, the application runs without the Conditional Access proxy. Confirm that the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
-
-In the next session of the application, the Conditional Access proxy will be used.
+The conditional access proxy is used again in your next session.
 
 ### Record a session
 
-You can help the root cause analysis of problems by providing session recordings to Microsoft support engineers. To record a session, you must enable the [Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar).
+You may want to help the root cause analysis of a problem by sending a session recording to Microsoft support engineers. Use the **Admin View** toolbar to record your session.
 
 > [!NOTE]
 > All personal data is removed from the recordings.
 
-**To record a session from the Admin View toolbar**:
+**To record a session**:
 
-1. From the Admin View toolbar, select **Record session**. For example:
+1. In the **Admin View** toolbar, select **Record session**. When prompted, select **Continue** to accept the terms. For example:
 
-   ![Screenshot of the Record session button.](media/troubleshooting-proxy/proxy-admin-toolbar-record.png)
+    :::image type="content" source="media/accept-continue.png" alt-text="Screenshot of the session recording privacy statement dialog." lightbox="media/accept-continue.png":::
+    
+1. Sign into your app if needed to begin simulating the session.
 
-1. After selecting **Record session**, accept the terms by selecting **Continue** in the next window. For example:
-
-    ![Screenshot of the session recording privacy statement dialog.](media/accept-continue.png)
-
-**To record a session when signing into an app**:
-
-1. To start recording when signing in to the application, select **Record session** when prompted. For example:
-
-    ![Screenshot of selecting to record a session when signing into an app.](media/app-monitored.png)
-
-1. Sign in to the application to begin the scenario simulation.
-
-1. When you finish the scenario simulation, select **Stop recording** in the Admin View toolbar. For example:
-
-    ![Screenshot of selecting to Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
+1. When you finish recording the scenario, make sure to select **Stop recording** in the **Admin View** toolbar.
 
 **To view your recorded sessions**: 
 
-After you've finished recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours appear. For example:
+After you've finished recording, view the recorded sessions by selecting **Session recordings** from the **Admin View** toolbar. A list of recorded sessions from the previous 48 hours appear. For example:
 
-   ![Screenshot of session recordings.](media/troubleshooting-proxy/recording-list.png)
+:::image type="content" source="media/troubleshooting-proxy/recording-list.png" alt-text="Screenshot of session recordings." lightbox="media/troubleshooting-proxy/recording-list.png":::
 
-Each recorded session can be downloaded or deleted. For each session listing, select the delete icon to delete the recording, or the download icon to download the recording. For example:
+To manage your recordings, select a file and then select **Delete** or **Download** as needed. For example:
 
-![Screenshot of downloading or deleting a recording.](media/download-delete-recording.png)
+:::image type="content" source="media/download-delete-recording.png" alt-text="Screenshot of downloading or deleting a recording." lightbox="media/download-delete-recording.png":::
 
 ## Next steps
 

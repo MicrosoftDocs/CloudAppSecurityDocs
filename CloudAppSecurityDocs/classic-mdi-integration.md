@@ -22,7 +22,7 @@ Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Identit
 For complete user investigation across a hybrid environment, you must have:
 
 - A valid license for Microsoft Defender for Identity connected to your Active Directory instance
-- You must be an Azure Active Directory global admin to enable integration between Defender for Identity and Defender for Cloud Apps
+- You must be a Microsoft Entra global admin to enable integration between Defender for Identity and Defender for Cloud Apps
 
 > [!NOTE]
 >

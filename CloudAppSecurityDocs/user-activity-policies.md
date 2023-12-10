@@ -29,7 +29,7 @@ You can set activity alerts to be sent to yourself or to the user when these eve
 
 To create a new activity policy, follow this procedure:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Threat detections** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Threat detections** tab.
 
 1. Click **Create policy** and select **Activity policy**.
 

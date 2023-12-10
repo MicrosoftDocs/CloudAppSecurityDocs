@@ -62,8 +62,6 @@ items:
   items:
   - name: Working with the app page
     href: working-with-app-page.md
-  - name: Working with App risk scores
-    href: risk-score.md
   - name: Working with discovered apps
     href: discovered-apps.md
   - name: Working with connected apps
@@ -202,7 +200,7 @@ items:
           href: app-activity-threat-hunting.md
     - name: What's new archive for app governance
       href: app-governance-whats-new.md
-  - name: Cloud Discovery
+  - name: Cloud discovery
     items:
     - name: Set up
       items:
@@ -234,13 +232,15 @@ items:
         href: log-collector-advanced-management.md
       - name: Use the custom log parser
         href: custom-log-parser.md
-    - name: Cloud Discovery enrichment
+    - name: Enrich cloud discovery
       href: cloud-discovery-aad-enrichment.md
-    - name: Anonymize Cloud Discovery data
+    - name: Find your cloud app and calculate risk scores
+      href: risk-score.md
+    - name: Anonymize cloud discovery data
       href: cloud-discovery-anonymizer.md
-    - name: Add custom apps to Cloud Discovery
+    - name: Add custom apps to cloud discovery
       href: cloud-discovery-custom-apps.md
-    - name: Discovered app filters and queries
+    - name: Filter and query discovered apps
       href: discovered-app-queries.md
   - name: Connect apps
     items:
@@ -396,8 +396,6 @@ items:
       items:
       - name: Generic SIEM integration
         href: siem.md
-      - name: External DLP integration
-        href: icap-stunnel.md
       - name: Additional integrations
         href: additional-integrations.md
     - name: Automate processes using Microsoft Power Automate
@@ -548,7 +546,7 @@ items:
     href: https://aka.ms/M365EnterprisePlans
   - name: Support and troubleshooting
     href: support-and-ts.md
-  - name: Microsoft 365 Defender portal
+  - name: Microsoft Defender Portal
     href: https://security.microsoft.com
   - name: How to buy Defender for Cloud Apps
     href: https://www.microsoft.com/security/business/cloud-apps-defender
@@ -739,12 +737,6 @@ items:
           href: classic-security-config.md
         - name: Security configuration for SaaS applications
           href: classic-security-saas.md
-        - name: Security configuration for Azure
-          href: classic-security-config-azure.md
-        - name: Security configuration for AWS
-          href: classic-security-config-aws.md
-        - name: Security configuration for GCP
-          href: classic-security-config-gcp.md
       - name: Monitor alerts
         href: classic-monitor-alerts.md
         items:
@@ -833,9 +825,11 @@ items:
         href: classic-troubleshooting-proxy.md
       - name: Troubleshooting SIEM integration
         href: classic-troubleshooting-siem.md
+      - name: Support and troubleshooting for the classic portal
+        href: classic-support-and-ts.md
 - name: Microsoft 365 Defender Docs
   items:
-  - name: Microsoft 365 Defender
+  - name: Microsoft Defender XDR
     href: /microsoft-365/security/defender/
   - name: Microsoft Defender for Microsoft 365
     href: /microsoft-365/security/office-365-security/

@@ -90,7 +90,7 @@ When a client certificate check is performed, Defender for Cloud Apps checks for
 
 To configure a policy to leverage device management via client certificates:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Conditional Access App Control**, select **Device identification**.
 1. Upload as many root or intermediate certificates as you require.
