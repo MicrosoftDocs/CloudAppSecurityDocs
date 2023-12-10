@@ -230,7 +230,7 @@ To determine if the alert is a true positive (TP) or a false positive (FP), revi
 
 - **TP**: Apply this recommended action if you have confirmed that the app or the detected activity is irregular or potentially malicious.
 
-  **Recommended action**: Prevent the app from accessing any resources by deactivating it from Azure Active Directory.
+  **Recommended action**: Prevent the app from accessing any resources by deactivating it from Microsoft Entra ID.
 
 - **FP**: Apply this recommended action if you have confirmed that the app has legitimate business use in the organization and the detected activity was expected.
 

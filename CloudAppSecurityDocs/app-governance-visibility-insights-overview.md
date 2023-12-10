@@ -9,7 +9,7 @@ description: Learn about visibility and insights available for app governance wi
 
 Use app governance to gain visibility and meaningful insights on your app ecosystem.
 
-For example, view a list of the OAuth-enabled apps registered to Azure Active Directory in your tenant, and react or respond to a rich view on app activities.
+For example, view a list of the OAuth-enabled apps registered to Microsoft Entra ID in your tenant, and react or respond to a rich view on app activities.
 
 ## Required administrator roles
 
