@@ -2,14 +2,14 @@
 title: Monitor and respond to apps with unusual data usage with app governance | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: conceptual
-description: Monitor and respond to apps with unusual data usage using app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
+description: Monitor and respond to apps with unusual data usage using app governance in Microsoft Defender XDR with Microsoft Defender for Cloud Apps.
 ---
 
 # Monitor and respond to apps with unusual data usage
 
 App governance provides data usage information that can help you identify unwanted and potentially malicious app activity.
 
-This article describes the data usage elements available on the **App governance** page in Microsoft 365 Defender.
+This article describes the data usage elements available on the **App governance** page in Microsoft Defender XDR.
 
 ## Data usage card
 

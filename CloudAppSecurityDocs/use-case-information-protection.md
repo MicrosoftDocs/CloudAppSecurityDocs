@@ -41,7 +41,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
 1. Start protecting the data you store in OneDrive for Business by setting up a policy that will encrypt any sensitive data stored in a specific OneDrive for Business folder:
 
-    1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select [**Policies**](control-cloud-apps-with-policies.md) -> **Policy management**.
+    1. In the Microsoft Defender Portal, under **Cloud Apps**, select [**Policies**](control-cloud-apps-with-policies.md) -> **Policy management**.
 
     1. Select **Create policy** > **File policy**.
 
@@ -68,7 +68,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
 After setting up your policy to watch for credit card information in the selected folder, do the following to investigate any matches found:
 
-1. In the Microsoft 365 Defender **Cloud apps** navigation menu, select **Policies > Policy management**. 
+1. In the Microsoft Defender XDR **Cloud apps** navigation menu, select **Policies > Policy management**. 
 1. Select the policy you'd created [earlier](#set-up-data-protection) and then select **View policy matches**.
 1. Review the matches that were triggered for the policy. Select any specific file to expand for more details, including any other policies matched by the selected file.
 

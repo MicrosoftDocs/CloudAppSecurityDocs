@@ -1,8 +1,8 @@
 ---
-title: Get started with app governance in Microsoft Defender for Cloud Apps in Microsoft 365 Defender.
+title: Get started with app governance in Microsoft Defender for Cloud Apps in Microsoft Defender XDR.
 ms.date: 05/21/2023
 ms.topic: quickstart
-description: Step-by-step guide to help you quickly get started with app governance in Microsoft Defender for Cloud Apps and Microsoft 365 Defender.
+description: Step-by-step guide to help you quickly get started with app governance in Microsoft Defender for Cloud Apps and Microsoft Defender XDR.
 ---
 
 # Get started with app governance in Defender for Cloud Apps
@@ -19,13 +19,13 @@ This article describes how to get started using app governance features in Micro
 
 - Your sign-in account must have a supported [app governance administrator role](app-governance-get-started.md#roles) to view any app governance data.
 
-- To use full functionality for app governance alerts, you must have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
+- To use full functionality for app governance alerts, you must have provisioned both Defender for Cloud Apps and Microsoft Defender XDR by accessing their respective portals at least once.
 
 ## Step 1: Get visibility and insights
 
 Start by using the following steps to get visibility and insights about your apps:
 
-1. **Sign in**: In your browser, go to the **Microsoft 365 Defender > Cloud Apps > [App governance](https://aka.ms/appgovernance)** page.
+1. **Sign in**: In your browser, go to the **Microsoft Defender XDR > Cloud Apps > [App governance](https://aka.ms/appgovernance)** page.
 
 1. **[Determine compliance posture](app-governance-visibility-insights-compliance-posture.md)**: Use the data on the **App governance > Overview** tab to assess the compliance posture of your apps and incidents in your tenant. View details like how many overprivileged apps are in your tenant, the number of active incidents, the total Graph API data access, and more.
 
@@ -56,7 +56,7 @@ App governance supports the following types of policies:
 |**Predefined policies**     |  App governance is equipped with a set of predefined policies tailored to your environment. Predefined policies allow you to start monitoring your apps even before you set up any policies. Use predefined policies to ensure that you're notified of any app anomalies early on.         |
 |**User defined policies**     |     In addition to predefined policies, admins can also use the available conditions to create their custom policies or pick from the available recommended policies.    |
 
-To see your list of current app governance policies, go to the **Microsoft 365 Defender > Cloud apps > App governance > Policies** tab.
+To see your list of current app governance policies, go to the **Microsoft Defender XDR > Cloud apps > App governance > Policies** tab.
 
 > [!NOTE]
 > Built-in threat detection policies are *not* listed on the **App governance** page. For more information, see [Investigate threat detection alerts](app-governance-anomaly-detection-alerts.md).
@@ -100,7 +100,7 @@ You can also remediate alerts, manually after investigation, or automatically th
 
 - **[Investigate anomaly detection alerts:](app-governance-anomaly-detection-alerts.md)** App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks.
 
-- [**Remediate app threats:**](app-governance-manage-alerts.md) You remediate harmful app and app activity identified by app governance alerts in Microsoft 365 Defender.
+- [**Remediate app threats:**](app-governance-manage-alerts.md) You remediate harmful app and app activity identified by app governance alerts in Microsoft Defender XDR.
 
 For more information, see [Learn about app threat detection and remediation](app-governance-detect-remediate-overview.md).
 

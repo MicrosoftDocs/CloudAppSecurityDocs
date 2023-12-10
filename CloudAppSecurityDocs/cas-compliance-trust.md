@@ -155,7 +155,7 @@ The following table show what data is surfaced for each product integration:
 
 | Product | Exposed data | Configuration |
 | --- | --- | --- |
-| Microsoft 365 Defender | Alerts and user activities | Enabled automatically on Microsoft 365 Defender upon onboarding |
+| Microsoft Defender XDR | Alerts and user activities | Enabled automatically on Microsoft Defender XDR upon onboarding |
 | Microsoft Sentinel | Alerts and discovery data | [Enabled in Defender for Cloud Apps](siem-sentinel.md) and [configured in Microsoft Sentinel](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps) |
 | Microsoft Purview compliance portal | Alerts for Microsoft 365 | Automatically streamed to Microsoft Purview compliance portal  |
 | Microsoft Defender for Cloud | Alerts for Azure | Enabled by default in Defender for Cloud Apps; can be disabled in Microsoft Defender for Cloud |

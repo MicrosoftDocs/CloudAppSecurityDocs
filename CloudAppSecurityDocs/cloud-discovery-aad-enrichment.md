@@ -21,7 +21,7 @@ Cloud Discovery data can now be enriched with Microsoft Entra username data. Whe
 
 ## Enabling user data enrichment
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select **User enrichment**.
 

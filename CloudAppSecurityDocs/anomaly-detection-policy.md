@@ -35,7 +35,7 @@ These policies will appear on the Defender for Cloud Apps policies page and can 
 
 ## Anomaly detection policies
 
-You can see the anomaly detection policies in the Microsoft 365 Defender portal, by going to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
+You can see the anomaly detection policies in the Microsoft Defender Portal, by going to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
 
  ![new anomaly detection policies.](media/new-anomaly-detection-policies.png)
 
@@ -56,20 +56,24 @@ The following anomaly detection policies are available:
 
 ### Malware detection
 
-* This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files that match risks heuristics such as file type and sharing level are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Files that are found potentially risky according to other heuristics will also be sandbox scanned. After malicious files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
+This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files that match risks heuristics such as file type and sharing level are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Files that are found potentially risky according to other heuristics will also be sandbox scanned. After malicious files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
 
-  You can use this detection in real time using session policies to control file uploads and downloads.
+Use this detection to control file uploads and downloads in real time with session policies.
 
-  Defender for Cloud Apps supports malware detection for the following apps:
+Defender for Cloud Apps supports malware detection for the following apps:
 
 * Box
 * Dropbox
 * Google Workspace
 * Microsoft 365 (requires a valid license for Microsoft Defender for Microsoft 365 P1)
 
->[!NOTE]
->Malware detected in Microsoft 365 apps is automatically blocked by the app and the user can't reach the file. Only the app's admin has access.
->In Box, Dropbox, and Google Workspace, Defender for Cloud Apps doesn't block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
+> [!NOTE]
+> * Malware detected in *Microsoft 365 apps* is automatically blocked by the app. Users cannot reach blocked files, and only the app's admin has access.
+> 
+> * In *Box*, *Dropbox*, and *Google Workspace*, Defender for Cloud Apps doesn't automatically block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
+> 
+> * If you're unsure about whether a detected file is truly malware or a false positive, go to the Microsoft Security Intelligence page at [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) and submit the file for further analysis.
+>
 
 ### Activity from anonymous IP addresses
 
@@ -106,7 +110,7 @@ The detection looks for users whose accounts were deleted in Azure AD, but still
 * This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user's mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
 
 > [!NOTE]
-> Defender for Cloud Apps integrates with Microsoft 365 Defender to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Microsoft 365 is enabled, you'll start seeing alerts in the Defender for Cloud Apps activity log.
+> Defender for Cloud Apps integrates with Microsoft Defender XDR to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Microsoft 365 is enabled, you'll start seeing alerts in the Defender for Cloud Apps activity log.
 
 ### Suspicious OAuth app file download activities
 
@@ -181,7 +185,7 @@ For example, you can set the Activity from infrequent county detection to ignore
 
 To scope an anomaly detection policy:
 
-1. In the Microsoft 365 Defender portal, go to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
+1. In the Microsoft Defender Portal, go to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
 1. Select the policy you want to scope.
 1. Under **Scope**, change the drop-down from the default setting of **All users and groups**, to **Specific users and groups**.
 1. Select **Include** to specify the users and groups for who this policy will apply. Any user or group not selected here won't be considered a threat and won't generate an alert.
@@ -210,4 +214,5 @@ You can triage the various alerts triggered by the new anomaly detection policie
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 

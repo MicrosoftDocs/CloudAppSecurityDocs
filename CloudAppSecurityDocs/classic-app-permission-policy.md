@@ -47,7 +47,7 @@ In addition to OAuth app policies you can create, there are the following out-of
 
 > [!NOTE]
 >
-> - Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+> - Anomaly detection policies are only available for OAuth apps that are authorized in your Microsoft Entra ID.
 > - The severity of OAuth app anomaly detection policies cannot be modified.
 
 ## Next steps

@@ -56,7 +56,7 @@ Integrating with your SIEM is accomplished in three steps:
 
 ### Step 1: Set it up in the Defender for Cloud Apps portal
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **System**, choose **SIEM agents**. Select **Add SIEM agent**, and then choose **Generic SIEM**.
 

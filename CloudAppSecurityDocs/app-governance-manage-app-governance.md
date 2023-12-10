@@ -1,8 +1,8 @@
 ---
-title: App governance in Microsoft Defender for Cloud Apps and Microsoft 365 Defender
+title: App governance in Microsoft Defender for Cloud Apps and Microsoft Defender XDR
 ms.date: 05/28/2023
 ms.topic: conceptual
-description: Implement Microsoft app governance capabilities over Microsoft Defender for Cloud Apps and Microsoft 365 Defender to govern your apps.
+description: Implement Microsoft app governance capabilities over Microsoft Defender for Cloud Apps and Microsoft Defender XDR to govern your apps.
 ---
 
 # App governance in Microsoft Defender for Cloud Apps
@@ -37,13 +37,13 @@ For example:
 
 - On the app governance **OAuth apps** page, view aggregated sign-in activity for each app. From there, select links to go to the Azure Active Directory admin center for the details of sign-in events.
 
-- On other **Cloud apps** pages in Microsoft 365 Defender, view API usage levels and aggregate data transfer. From there, select links to go to the app governance **OAuth apps** page for more details.
+- On other **Cloud apps** pages in Microsoft Defender XDR, view API usage levels and aggregate data transfer. From there, select links to go to the app governance **OAuth apps** page for more details.
 
-App governance alerts show up in the Microsoft 365 Defender alerts list as alerts with the **Detection source** field set to *App Governance*.
+App governance alerts show up in the Microsoft Defender XDR alerts list as alerts with the **Detection source** field set to *App Governance*.
 
 ## Next steps
 
-View the **App governance > Overview** tab in the [Microsoft 365 Defender portal](https://aka.ms/appgovernance). Your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
+View the **App governance > Overview** tab in the [Microsoft Defender Portal](https://aka.ms/appgovernance). Your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
 For more information, see [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md).
 
@@ -55,7 +55,7 @@ For more information, see [Turn on app governance for Microsoft Defender for Clo
 
 - [Microsoft shifts to a comprehensive SaaS security solution - Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2023/02/15/microsoft-shifts-to-a-comprehensive-saas-security-solution/)
 
-- [Improve your app posture and hygiene using Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/improve-your-app-posture-and-hygiene-using-microsoft-defender/ba-p/3742361)
+- [Improve your app posture and hygiene using Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/improve-your-app-posture-and-hygiene-using-microsoft-defender/ba-p/3742361)
 
 **Videos**:
 

@@ -4,6 +4,7 @@ description: This article describes how to investigate Microsoft Defender for En
 ms.date: 09/26/2023
 ms.topic: how-to
 ---
+
 # Investigate apps discovered by Microsoft Defender for Endpoint
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -14,7 +15,7 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 
 After you integrate Defender for Endpoint with Defender for Cloud Apps, you can investigate discovered device data in the Cloud Discovery dashboard.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Dashboard** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Dashboard** tab.
 
 1. In the top-right corner, select **Win10 endpoint users**.  This stream contains data from any operating systems mentioned in Defender for Cloud Apps [prerequisites](mde-integration.md#prerequisites). For example:
 
@@ -47,36 +48,33 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 > - Defender for Endpoint forwards data to Defender for Cloud Apps in chunks of ~4 MB (~4000 endpoint transactions)
 > - If the 4 MB limit isn't reached within 1 hour, Defender for Endpoint reports all the transactions performed over the last hour.
 
-### Discover apps via Defender for Endpoint when the endpoint is behind a network proxy (Preview)
+### Discover apps via Defender for Endpoint when the endpoint is behind a network proxy
 
 As a preview feature, Defender for Cloud Apps can discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy. For example, if your Windows 10 endpoint device is in the same environment as ZScalar, Defender for Cloud Apps can discover Shadow IT applications via the **Win10 Endpoint Users** stream.
 
-However, if you're not using preview features, and your endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoint and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Defender for Cloud Apps using the **Automated log upload** in order to get complete visibility.
-
-
-## Investigate device network events in Microsoft 365 Defender
+## Investigate device network events in Microsoft Defender XDR
 
 >[!NOTE]
 >Network events should be used to investigate discovered apps and not used to debug missing data.
 
 Use the following steps to gain more granular visibility on device's network activity in Microsoft Defender for Endpoint:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Devices** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Devices** tab.
 1. Select the machine you want to investigate and then in the top-left select **View in Microsoft Defender for Endpoint**.
-1. In Microsoft 365 Defender, under **Assets** -> **Devices** > {selected device}, select **Timeline**.
+1. In Microsoft Defender XDR, under **Assets** -> **Devices** > {selected device}, select **Timeline**.
 1. Under **Filters**, select **Network events**.
 1. Investigate the device's network events as required.
 
-![Screenshot showing device timeline in Microsoft 365 Defender.](media/mde-selected-device.png)
+![Screenshot showing device timeline in Microsoft Defender XDR.](media/mde-selected-device.png)
 
-## Investigate app usage in Microsoft 365 Defender with advanced hunting
+## Investigate app usage in Microsoft Defender XDR with advanced hunting
 
 Use the following steps to gain more granular visibility on app-related network events in Defender for Endpoint:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Discovered apps** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Discovered apps** tab.
 1. Select the app you want to investigate to open its drawer.
 1. Select the app's **Domain** list and then copy the list of domains.
-1. In Microsoft 365 Defender, under **Hunting**, select **Advanced hunting**.
+1. In Microsoft Defender XDR, under **Hunting**, select **Advanced hunting**.
 1. Paste the following query and replace `<DOMAIN_LIST>` with the list of domains you copied earlier.
 
     ```kusto
@@ -87,13 +85,13 @@ Use the following steps to gain more granular visibility on app-related network 
 
 1. Run the query and investigate network events for this app.
 
-    ![Screenshot showing Microsoft 365 Defender Advanced hunting.](media/mde-advanced-hunting.png)
+    ![Screenshot showing Microsoft Defender XDR Advanced hunting.](media/mde-advanced-hunting.png)
 
-## Investigate unsanctioned apps in Microsoft 365 Defender
+## Investigate unsanctioned apps in Microsoft Defender XDR
 
-Every attempt to access an unsanctioned app triggers an alert in Microsoft 365 Defender with in-depth details about the entire session. This enables you to perform deeper investigations into attempts to access unsanctioned apps, as well as providing additional relevant information for use in endpoint device investigation.
+Every attempt to access an unsanctioned app triggers an alert in Microsoft Defender XDR with in-depth details about the entire session. This enables you to perform deeper investigations into attempts to access unsanctioned apps, as well as providing additional relevant information for use in endpoint device investigation.
 
-Sometimes, access to an unsanctioned app isn't blocked, either because the endpoint device isn't configured correctly or if the enforcement policy hasn't yet propagated to the endpoint. In this instance, Defender for Endpoint administrators will receive an alert in Microsoft 365 Defender that the unsanctioned app wasn't blocked.
+Sometimes, access to an unsanctioned app isn't blocked, either because the endpoint device isn't configured correctly or if the enforcement policy hasn't yet propagated to the endpoint. In this instance, Defender for Endpoint administrators will receive an alert in Microsoft Defender XDR that the unsanctioned app wasn't blocked.
 
 ![Screenshot showing Defender for Endpoint unsanctioned app alert.](media/mde-unsanctioned-app-alert.png)
 
