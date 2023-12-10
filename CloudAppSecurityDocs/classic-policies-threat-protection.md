@@ -55,15 +55,15 @@ Detect when a user, who is on unpaid leave and should not be active on any organ
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Create a security group in Azure Active Directory for the users on unpaid leave and add all the users you want to monitor.
+- Create a security group in Microsoft Entra ID for the users on unpaid leave and add all the users you want to monitor.
 
 ### Steps
 
-1. On the [User groups](user-groups.md) screen, select **Create user group** and import the relevant Azure AD group.
+1. On the [User groups](user-groups.md) screen, select **Create user group** and import the relevant Microsoft Entra group.
 
 2. On the **Policies** page, create a new **Activity policy**.
 
-3. Set the filter **User group** equals to the name of the user groups you created in Azure AD for the unpaid leave users.
+3. Set the filter **User group** equals to the name of the user groups you created in Microsoft Entra ID for the unpaid leave users.
 
 4. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. You can choose **Suspend user**.
 
