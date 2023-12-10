@@ -84,7 +84,7 @@ Policy templates help you set the correct filters and configurations necessary t
 
 To create a policy from **Policy templates**, perform the following steps:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy templates**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy templates**.
 
     ![Create the policy from a template.](media/create-policy-from-template.png)
 
@@ -104,7 +104,7 @@ For example, you might want to create one if you're looking at the **Activity lo
 
 To create a policy based on investigation results, do the following steps:
 
-1. In the Microsoft 365 Defender portal, go to one of these:
+1. In the Microsoft Defender Portal, go to one of these:
 
     - **Cloud Apps** -> **Activity log**
     - **Cloud Apps** -> **Files**
@@ -173,7 +173,7 @@ To export a log, perform the following steps:
 
 To download the exported report:
 
-1. After the report is ready, i n the Microsoft 365 Defender portal, go to **Reports** and then **Cloud Apps** -> **Exported reports**.
+1. After the report is ready, i n the Microsoft Defender Portal, go to **Reports** and then **Cloud Apps** -> **Exported reports**.
 
 1. In the table, select the relevant report, and then select download.
 

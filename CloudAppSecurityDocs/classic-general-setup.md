@@ -39,7 +39,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
     * Users in domains that aren't configured as internal are marked as external. External users aren't scanned for activities or files.
 
-1. Under **Auto sign out**, specify the amount of time a session can remain inactive before the session is automatically signed out. Note that Defender for Cloud Apps also uses Azure Active Directory to determine the user's directory level inactivity timeout setting. If a user is configured in Azure Active Directory to never sign out when inactive, the same setting will apply in Defender for Cloud Apps as well.
+1. Under **Auto sign out**, specify the amount of time a session can remain inactive before the session is automatically signed out. Note that Defender for Cloud Apps also uses Microsoft Entra ID to determine the user's directory level inactivity timeout setting. If a user is configured in Microsoft Entra ID to never sign out when inactive, the same setting will apply in Defender for Cloud Apps as well.
 
 1. If you're integrating with Microsoft Purview Information Protection, see [Microsoft Purview Information Protection Integration](azip-integration.md) for information.
 

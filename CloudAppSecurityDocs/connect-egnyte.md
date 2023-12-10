@@ -21,7 +21,7 @@ This article describes how to connect Microsoft Defender for Cloud Apps to your 
 
 ### Configure Defender for Cloud Apps
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, and then select **Egnyte**.
 
@@ -31,7 +31,7 @@ This article describes how to connect Microsoft Defender for Cloud Apps to your 
 1. Select **Next**.
 1. Select **Connect Egnyte**.
 1. In the redirected page, select **Allow**.
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 >[!NOTE]
 >Microsoft recommends using a short lived access token. Egnyte doesn't currently support short lived tokens. We recommend our customers to refresh the access token every 6 months as a security best practice.

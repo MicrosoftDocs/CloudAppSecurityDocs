@@ -86,7 +86,7 @@ The following governance actions can be taken for connected apps either on a spe
 > [!NOTE]
 > In SharePoint and OneDrive, Defender for Cloud Apps supports user quarantine only for files in Shared Documents libraries (SharePoint Online) and files in the Documents library (OneDrive for Business).
 > 
-> Microsoft Defender for Microsoft 365 customers can control detected malware files in SharePoint and OneDrive via the [Microsoft 365 Defender **Quarantine** page](https://security.microsoft.com/quarantine?viewid=Files). For example, supported activities include recovering files, deleting files, and downloading files in password-protected ZIP files. These activities are limited to files that were not already quarantined by Microsoft Defender for Cloud Apps.
+> Microsoft Defender for Microsoft 365 customers can control detected malware files in SharePoint and OneDrive via the [Microsoft Defender XDR **Quarantine** page](https://security.microsoft.com/quarantine?viewid=Files). For example, supported activities include recovering files, deleting files, and downloading files in password-protected ZIP files. These activities are limited to files that were not already quarantined by Microsoft Defender for Cloud Apps.
 > In SharePoint, Defender for Cloud Apps supports quarantine tasks only for files with Shared Documents in path in English.
 > 
 > Actions will only show for connected apps.
@@ -142,7 +142,7 @@ After creating multiple policies, a situation may arise in which the governance 
 
 The Governance log provides a status record of each task that you set Defender for Cloud Apps to run, including both manual and automatic tasks. These tasks include those you set in policies, governance actions that you set on files and users, and any other action you set Defender for Cloud Apps to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log.
 
-To view the governance log, in the Microsoft 365 Defender portal, under **Cloud Apps**, select **Governance log**.
+To view the governance log, in the Microsoft Defender Portal, under **Cloud Apps**, select **Governance log**.
 
 The following table is the full list of actions the Defender for Cloud Apps portal enables you to take. These actions are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
 For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md).

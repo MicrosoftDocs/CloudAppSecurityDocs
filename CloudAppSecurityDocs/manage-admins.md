@@ -102,7 +102,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
 - **App/instance admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
   - Activities page - Only activities about the specific app
-  - Alerts - Only alerts relating to the specific app. In some cases, alert data related to another app if the data is correlated with the specific app. Visibility to alert data related to another app is limited, and there is no access to drill down for more details.
+  - Alerts - Only alerts relating to the specific app. In some cases, alert data related to another app if the data is correlated with the specific app. Visibility to alert data related to another app is limited, and there is no access to drill down for more details
   - Policies - Can view all policies and if assigned full permissions can edit or create only policies that deal exclusively with the app/instance
   - Accounts page - Only accounts for the specific app/instance
   - App permissions - Only permissions for the specific app/instance
@@ -117,7 +117,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
 - **User group admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific groups assigned to them. For example, if you assign a user admin permissions to the group "Germany - all users", the admin can view and edit information in Defender for Cloud Apps only for that user group. The User group admin has the following access:
 
   - Activities page - Only activities about the users in the group
-  - Alerts - Only alerts relating to the users in the group. In some cases, alert data related to another users if the data is correlated with the users in the group. Visibility to alert data related to another users is limited, and there is no access to drill down for more details.
+  - Alerts - Only alerts relating to the users in the group. In some cases, alert data related to another user if the data is correlated with the users in the group. Visibility to alert data related to another users is limited, and there is no access to drill down for more details.
   - Policies - Can view all policies and if assigned full permissions can edit or create only policies that deal exclusively with users in the group
   - Accounts page - Only accounts for the specific users in the group
   - App permissions – No permissions
@@ -186,7 +186,7 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 > - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers and Global Readers groups.
 > - Only Azure AD Global Administrators or Security Administrators can edit the **Manage admin access** page and grant other users access to Defender for Cloud Apps.
 
-1. In the Microsoft 365 Defender portal, in the left-hand menu, select **Permissions**.
+1. In the Microsoft Defender Portal, in the left-hand menu, select **Permissions**.
 
 1. Under **Cloud Apps**, choose **Roles**.
 
@@ -219,7 +219,7 @@ Defender for Cloud Apps enables you to invite external admins (MSSPs) as adminis
 
 By default, MSSPs access their Defender for Cloud Apps tenant through the following URL: `https://security.microsoft.com`.
 
-MSSPs however, will need to access the MSSP customer Microsoft 365 Defender portal using a tenant-specific URL in the following format: `https://security.microsoft.com/?tid=<tenant_id>`.
+MSSPs however, will need to access the MSSP customer Microsoft Defender Portal using a tenant-specific URL in the following format: `https://security.microsoft.com/?tid=<tenant_id>`.
 
 MSSPs can use the following steps to obtain the MSSP customer portal tenant ID and then use the ID to access the tenant-specific URL:
 
@@ -235,7 +235,7 @@ Defender for Cloud Apps lets you export a log of admin sign-in activities and an
 
 To export a log, perform the following steps:
 
-1. In the Microsoft 365 Defender portal, in the left-hand menu, select **Permissions**.
+1. In the Microsoft Defender Portal, in the left-hand menu, select **Permissions**.
 
 1. Under **Cloud Apps**, choose **Roles**.
 

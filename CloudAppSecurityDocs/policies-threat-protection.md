@@ -60,7 +60,7 @@ Detect when a user, who is on unpaid leave and should not be active on any organ
 
 1. On the [User groups](user-groups.md) screen, select **Create user group** and import the relevant Microsoft Entra group.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
 1. Set the filter **User group** equals to the name of the user groups you created in Microsoft Entra ID for the unpaid leave users.
 
@@ -78,7 +78,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
 
 1. Set the filter **User agent tag** equals to **Outdated browser** and **Outdated operating system**.
 
@@ -98,7 +98,7 @@ Detect admin activities performed from and IP address that is considered a risky
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
 
 1. Set **Act on** to **Single activity**.
 
@@ -123,7 +123,7 @@ Detect service account activities originating from a non-internal IP addresses. 
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
 1. Set the filter **User** to **Name** and then **Starts with** and enter your naming convention, such as svc.
 
@@ -143,7 +143,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
 1. Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure**. This will exclude non-interactive device-based activities.
 
@@ -192,7 +192,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
 1. Set **Act on** to **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy..
 
