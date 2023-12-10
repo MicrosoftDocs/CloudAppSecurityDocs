@@ -153,7 +153,7 @@ For more information, see [Introduction to device management in Microsoft Entra 
 1. If activities aren't populating in the Defender for Cloud Apps activity log, go to Microsoft Entra ID and do the following steps:
     1. Under **Monitoring** > **Sign-ins**, verify that there are sign-in activities in logs.
     1. Select the relevant log entry for the device you logged into.
-    1. In the **Details** pane, on the **Device info** tab, verify that the device is **Managed** (Microsoft Entra hybrid joined) or **Compliant** (Intune compliant). 
+    1. In the **Details** pane, on the **Device info** tab, verify that the device is **Managed** (Hybrid Azure AD joined) or **Compliant** (Intune compliant). 
 
         If you can't verify either state, try another log entry or ensure that your device data is configured correctly in Microsoft Entra ID.
     1. For Conditional Access, some browsers may require extra configuration such as installing an extension. For more information, see [Conditional Access browser support](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers).
