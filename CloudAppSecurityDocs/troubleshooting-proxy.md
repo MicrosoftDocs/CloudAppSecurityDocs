@@ -147,9 +147,9 @@ For more information, see [Introduction to device management in Microsoft Entra 
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Defender for Cloud Apps.
 1. For **Intune compliant device identification** and **Microsoft Entra hybrid joined identification** respectively, select **View configuration** and verify that the services are set up. Services are automatically synced from Microsoft Entra ID and Intune respectively.
 
-1. Create an access or session policy with the **Device Tag** filter equal to **Microsoft Entra hybrid joined**, **Intune compliant**, or both.
+1. Create an access or session policy with the **Device Tag** filter equal to **Hybrid Azure AD joined**, **Intune compliant**, or both.
 1. In a browser, sign in to a device that is Microsoft Entra hybrid joined or Intune compliant based on your policy filter.
-1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Microsoft Entra hybrid joined**, **Intune compliant**, or both based on your policy filters.
+1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Hybrid Azure AD joined**, **Intune compliant**, or both based on your policy filters.
 1. If activities aren't populating in the Defender for Cloud Apps activity log, go to Microsoft Entra ID and do the following steps:
     1. Under **Monitoring** > **Sign-ins**, verify that there are sign-in activities in logs.
     1. Select the relevant log entry for the device you logged into.
