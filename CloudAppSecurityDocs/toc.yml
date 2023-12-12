@@ -209,7 +209,7 @@ items:
     - name: Box
       href: protect-box.md
     - name: Citrix ShareFile
-      href: ./connect-citrix-sharefile.md
+      href: ./protect-citrix-sharefile.md
     - name: DocuSign
       href: protect-docusign.md
     - name: Dropbox
@@ -249,7 +249,7 @@ items:
     - name: Zendesk
       href: protect-zendesk.md
     - name: Zoom
-      href: connect-zoom.md
+      href: protect-zoom.md
   - name: Conditional Access App Control
     items:
     - name: Protect apps with Conditional Access App Control

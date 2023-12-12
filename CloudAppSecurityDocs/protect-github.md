@@ -42,7 +42,6 @@ If a connector already exists and you don't see GitHub recommendations yet, refr
 
 For more information, see:
 
-- [Connect GitHub Enterprise Cloud to Microsoft Defender for Cloud Apps](#connect-github-enterprise-cloud-to-microsoft-defender-for-cloud-apps)
 - [Security posture management for SaaS apps](security-saas.md)
 - [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
 

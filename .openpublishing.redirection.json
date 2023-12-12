@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "CloudAppSecurityDocs/connect-zoom.md",
+            "redirect_url": "/defender-cloud-apps/protect-zoom",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "CloudAppSecurityDocs/connect-citrix-sharefile.md",
+            "redirect_url": "/defender-cloud-apps/protect-citrix-sharefile",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "CloudAppSecurityDocs/connect-asana.md",
             "redirect_url": "/defender-cloud-apps/protect-asana#connect-asana-to-microsoft-cloud-app-security",
             "redirect_document_id": false

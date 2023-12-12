@@ -1,25 +1,57 @@
 ---
 title: Connect Citrix ShareFile | Microsoft Defender for Cloud Apps
 description: This article provides information about how to connect your Citrix ShareFile app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 04/03/2023
+ms.date: 12/12/2023
 ms.topic: how-to
 ---
 
 # Connect Citrix ShareFile to Microsoft Defender for Cloud Apps
 
-<!--add missing protect information-->
-
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Citrix ShareFile account using the App Connector APIs. This connection gives you visibility into and control over Citrix ShareFile use.
+Citrix ShareFile is a secure content collaboration, file sharing and sync solution that supports all the document-centric tasks and workflow needs of small and large businesses. Citrix ShareFile holds critical data of your organization, and this makes it a target for malicious actors.
+
+Connecting Citrix ShareFile to Defender for Cloud Apps gives you improved insights into your users' activities and provides threat detection using machine learning based anomaly detections.
 
 [!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
 
-## Prerequisites
+## Main threats
+
+- Compromised accounts and insider threats 
+- Data leakage 
+- Insufficient security awareness 
+- Unmanaged bring your own device (BYOD) 
+
+## How Defender for Cloud Apps helps to protect your environment
+
+- [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
+
+- [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+ 
+## SaaS security posture management  
+
+To see security posture recommendations for Citrix Share File in Microsoft Secure Score, create an API connector via the **Connectors** tab, with **Owner** and **Enterprise** permissions. In Secure Score, select **Recommended actions** and filter by **Product** = **CitrixSF**.
+
+For example, recommendations for Citrix Share File include:
+
+- *Enable multi-factor authentication (MFA)*
+- *Enable single sign on (SSO)*
+- *Enable session timeout for web users*
+
+If a connector already exists and you don't see Citrix Share File recommendations yet, refresh the connection by disconnecting the API connector, and then reconnecting it with the *Access Company account* permissions.
+
+For more information, see:
+
+- [Security posture management for SaaS apps](security-saas.md)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
+
+## Connect Citrix ShareFile to Defender for Cloud Apps
+
+### Prerequisites
 
 The Citrix Share file user used for logging into Citrix Share file must have Access Company account permissions.
 
-## Create API keys
+### Create API keys
 
 1. Go to [ShareFile API Documentation](https://api.sharefile.com/), and sign in to your organization account.
 
@@ -47,7 +79,7 @@ The Citrix Share file user used for logging into Citrix Share file must have Acc
 
 1. Copy the *Client ID* and *Client Secret*.
 
-## Configure Defender for Cloud Apps
+### Configure Defender for Cloud Apps
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
