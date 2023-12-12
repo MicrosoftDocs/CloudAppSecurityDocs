@@ -14,6 +14,7 @@ Once an app is connected using one or more of these methods, you get instant out
 
 The breadth of support for each app relies on the richness of its APIs. Use the following links to learn about how Defender for Cloud Apps protects connected apps and what risks those apps expose. For each app, review the list of available built-in anomaly detections, explore ready-to-use policy templates for monitoring and alerting on risky activities, use SSPM tools to view security misconfigurations, and discover which automated governance actions can be applied.
 
+<!--
 - [Protect Atlassian (Preview)](protect-atlassian.md)
 - [Protect AWS](protect-aws.md)
 - [Protect Azure](protect-azure.md)
@@ -36,6 +37,7 @@ The breadth of support for each app relies on the richness of its APIs. Use the 
 - [Protect Workday](protect-workday.md)
 - [Protect Zendesk](protect-zendesk.md)
 
+-->
 ## SaaS Security Posture Management (SSPM)
 
 Defender for Cloud App's SaaS SSPM features provide visibility into your SaaS app security configurations and security posture.
