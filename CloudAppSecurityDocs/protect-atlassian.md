@@ -1,7 +1,7 @@
 ---
 title: Protect your Atlassian environment | Microsoft Defender for Cloud Apps
 description: Learn about connecting your Atlassian environment to Microsoft Defender for Cloud Apps.
-ms.date: 12/05/2023
+ms.date: 12/12/2023
 ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your Atlassian environment
@@ -22,7 +22,6 @@ Main threats include:
 
 ## Control Atlassian with policies
 
-<!--needs intro-->
 | **Type**                           | **Name**                                                     |
 | ---------------------------------- | ------------------------------------------------------------ |
 | Built-in  anomaly detection policy | [Activity from   anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)  <br /> [Activity from   infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country) <br /> [Activity from   suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)  <br /> [Impossible travel](anomaly-detection-policy.md#impossible-travel)  <br /> [Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br/> [Unusual administrative activities](anomaly-detection-policy.md#unusual-activities-by-user)<br/> [Unusual impersonated activities](anomaly-detection-policy.md#unusual-activities-by-user) |
@@ -44,21 +43,25 @@ For more information about remediating threats from apps, see [Governing connect
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
-## Rate limits and limitations
+## SaaS security posture management (Preview)
 
-- **Rate limits** include 1000 requests per minute (per API key/connector instance).
+[Connect Atlassian](#connect-atlassian-to-microsoft-defender-for-cloud-apps) to get security posture recommendations for Atlassian in Microsoft Secure Score. To see security recommendations for Atlassian in Microsoft Secure Score:
 
-    For more information about the Atlassian API limitation, see [Atlassian admin REST APIs](https://developer.atlassian.com/cloud/admin/about/#about-the-cloud-admin-rest-apis).
+1. Refresh your policies by opening and saving each policy in the Atlassian portal.
+1. In Microsoft Secure Score, select **Recommended actions** and filter by **Product** = **Atlassian**. 
 
-- **Limitations** include:
+For example, recommendations for Atlassian include: 
 
-    - Activities will be shown in Defender for Cloud Apps only for users with a verified domain.
+- *Enable multi-factor authentication*
+- *Enable session timeout for web users*
+- *Enhance password requirements*
+- *Atlassian mobile app security*
+- *App data protection*
 
-    - The API key has a maximum expiration period of one year. After one year, you'll need to create another API key from the Atlassian Admin portal and replace it for the old API Key in the Defender for Cloud Apps console.
+For more information, see:
 
-    - You won't be able to see in Defender for Cloud Apps whether a user is an admin or not.
-
-    - System activities are shown with the **Atlassian Internal System** account name.
+- [Security posture management for SaaS apps](security-saas.md)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
 
 ## Connect Atlassian to Microsoft Defender for Cloud Apps
 
@@ -141,6 +144,23 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+
+
+## Rate limits and limitations
+
+- **Rate limits** include 1000 requests per minute (per API key/connector instance).
+
+    For more information about the Atlassian API limitation, see [Atlassian admin REST APIs](https://developer.atlassian.com/cloud/admin/about/#about-the-cloud-admin-rest-apis).
+
+- **Limitations** include:
+
+    - Activities will be shown in Defender for Cloud Apps only for users with a verified domain.
+
+    - The API key has a maximum expiration period of one year. After one year, you'll need to create another API key from the Atlassian Admin portal and replace it for the old API Key in the Defender for Cloud Apps console.
+
+    - You won't be able to see in Defender for Cloud Apps whether a user is an admin or not.
+
+    - System activities are shown with the **Atlassian Internal System** account name.
 
 ## Next steps
 

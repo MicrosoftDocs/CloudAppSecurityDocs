@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 11/20/2023
+ms.date: 12/12/2023
 ms.topic: overview
 ---
 
@@ -22,6 +22,22 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
+
+## December 2023
+
+### SSPM support for more connected apps
+
+Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to make sure you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application.
+
+Defender for Cloud Apps has now enhanced its SSPM support by including the following apps:
+
+- [Atlassian](protect-atlassian.md)
+- [Dropbox](protect-dropbox.md)
+- [NetDocuments](protect-netdocuments.md)
+- [Workplace](protect-workplace.md)
+- [Zendesk](protect-zendesk.md)
+
+For more information, see [SaaS security posture management (SSPM)](security-saas.md) and [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility).
 
 ## November 2023
 

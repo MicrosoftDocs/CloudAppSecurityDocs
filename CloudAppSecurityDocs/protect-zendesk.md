@@ -51,6 +51,19 @@ For more information about remediating threats from apps, see [Governing connect
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
+## SaaS security posture management (Preview)
+
+[Connect Zendesk](#connect-zendesk-to-microsoft-defender-for-cloud-apps) to automatically get security posture recommendations for Zendesk in Microsoft Secure Score. In Secure Score, select **Recommended actions** and filter by **Product** = **Zendesk**. For example, recommendations for Zendesk include:
+
+- *Enable multi-factor authentication (MFA)*
+- *Enable session timeout for users*
+- *Enable IP restrictions*
+- *Block admins to set passwords.*
+
+For more information, see:
+
+- [Security posture management for SaaS apps](security-saas.md)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
 
 ## Connect Zendesk to Microsoft Defender for Cloud Apps
 

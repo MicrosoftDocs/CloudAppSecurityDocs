@@ -59,6 +59,15 @@ For more information about remediating threats from apps, see [Governing connect
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
+## SaaS security posture management (Preview)
+
+[Connect Dropbox](#connect-dropbox-to-microsoft-defender-for-cloud-apps) to automatically get security posture recommendations for Dropbox in Microsoft Secure Score. In Secure Score, select **Recommended actions** and filter by **Product** = **Dropbox**. Dropbox supports security recommendations to *Enable web session timeout for web users*.
+
+For more information, see:
+
+- [Security posture management for SaaS apps](security-saas.md)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
+
 ## Connect Dropbox to Microsoft Defender for Cloud Apps
 
 This section provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Dropbox account using the connector APIs. This connection gives you visibility into and control over Dropbox use. For information about how Defender for Cloud Apps protects Dropbox, see [Protect Dropbox](protect-dropbox.md).

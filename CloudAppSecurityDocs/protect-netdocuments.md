@@ -1,7 +1,7 @@
 ---
 title: Protect your NetDocuments environment | Microsoft Defender for Cloud Apps
 description: This article provides information about the benefits of connecting your NetDocuments app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 12/06/2023
+ms.date: 12/12/2023
 ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your NetDocuments environment
@@ -53,6 +53,15 @@ For more information about remediating threats from apps, see [Governing connect
 ## Protect NetDocuments in real time
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
+
+## SaaS security posture management (Preview)
+
+[Connect NetDocument](#connect-netdocuments-to-microsoft-defender-for-cloud-apps) to automatically get security posture recommendations for NetDocument in Microsoft Secure Score. In Secure Score, select **Recommended actions** and filter by **Product** = **NetDocument**. NetDocument supports security recommendations to *Adopt SSO (Single sign on) in NetDocument*.
+
+For more information, see:
+
+- [Security posture management for SaaS apps](security-saas.md)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
 
 ## Connect NetDocuments to Microsoft Defender for Cloud Apps
 
