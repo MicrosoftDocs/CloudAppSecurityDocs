@@ -50,7 +50,7 @@ Following is a list of the account filters that can be applied. Most filters sup
 
 From the **Users and account** page, you can take governance actions such as suspend an app or go to the account settings page. For a full list of governance actions, see the [governance log](governance-actions.md).
 
-For example, if you identify a user that is compromised, you can apply the **Confirm user compromised** action to set the user risk level to high, causing the relevant policy actions defined in Azure Active Directory to be enforced. The action can be applied manually or using relevant [policies that support governance actions](governance-actions.md).
+For example, if you identify a user that is compromised, you can apply the **Confirm user compromised** action to set the user risk level to high, causing the relevant policy actions defined in Microsoft Entra ID to be enforced. The action can be applied manually or using relevant [policies that support governance actions](governance-actions.md).
 
 ### To manually apply a user or account governance action
 

@@ -44,7 +44,7 @@ To create a new activity policy, follow this procedure:
     >
     >   ![Screenshot of filter settings, showing location field is set.](media/classic-activity-example-location-isset.png)
     >
-    > - When a filter is set to "does not equal" and the attribute does not exist on the event, the event will not be filtered out. For example, filtering on **Device Tag does not equal "Hybrid Azure AD joined"** will not filter out events that do not contain **Device tag**, even if the device is Azure AD joined.
+    > - When a filter is set to "does not equal" and the attribute does not exist on the event, the event will not be filtered out. For example, filtering on **Device Tag does not equal "Microsoft Entra hybrid joined"** will not filter out events that do not contain **Device tag**, even if the device is Microsoft Entra joined.
 
 1. Under **Activity match parameters**, select when a policy violation will be triggered. Choose to trigger when a single activity matches the filters or only when a specified number of **Repeated activities** are detected.
     - If you choose **Repeated activity**, you can set **In a single app**. This setting will trigger a policy match only when the repeated activities occur in the same app. For example, five downloads in 30 minutes from Box trigger a policy match.
