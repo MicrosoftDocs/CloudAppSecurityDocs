@@ -7,17 +7,17 @@ ms.date: 11/30/2023
 
 # Contact Microsoft Defender for Cloud Apps support
 
-This article describes how to access Microsoft Defender for Cloud Apps support from the Microsoft 365 Defender portal. The support widget in Microsoft 365 Defender helps you find solutions to common problems or submit a support case to the Microsoft support team.
+This article describes how to access Microsoft Defender for Cloud Apps support from the Microsoft Defender XDR portal. The support widget in Microsoft Defender XDR helps you find solutions to common problems or submit a support case to the Microsoft support team.
 
 ## Prerequisites
 
-To open support cases, you must have access to Microsoft 365 Defender as a **Service Support Administrator** or a **Helpdesk Administrator**. Any roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
+To open support cases, you must have access to Microsoft Defender XDR as a **Service Support Administrator** or a **Helpdesk Administrator**. Any roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
 
 For more information, see [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator) and [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
 ## Find solutions to common problems
 
-Access the Microsoft 365 Defender support widget by selecting the **?** icon at the top of the page. Then, enter text in the search box to find self-help solutions.
+Access the Microsoft Defender XDR support widget by selecting the **?** icon at the top of the page. Then, enter text in the search box to find self-help solutions.
 
 Select an item from the self-help options shown to see more information. If the suggest content isn't sufficient, [open a service request](#open-a-service-request).
 

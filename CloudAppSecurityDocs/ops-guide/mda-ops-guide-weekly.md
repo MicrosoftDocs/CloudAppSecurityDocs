@@ -7,59 +7,60 @@ ms.topic: reference
 
 # Weekly operational guide - Microsoft Defender for Cloud Apps
 
-This article lists weekly operational activities that we recommend you perform with Defender for Cloud Apps.
+This article lists weekly operational activities that we recommend you perform with Microsoft Defender for Cloud Apps.
 
 ## Review SaaS security posture management
 
-Where: M365 Defender portal > Secure Score 
-Why Important: SaaS Security Posture Management capabilities in Microsoft Defender for Cloud 
-Apps enable you to get deeper visibility and automatically identify SaaS apps misconfigurations, and 
-help you remediate them to improve your organizational security. This experience is integrated into 
-the Microsoft 365 Defender dashboard to enable security teams to see their holistic security posture 
-across the enterprise with Microsoft Secure Score.
-Persona: Security & Compliance Administrator, SOC Analyst 
-Tip: For best high level overview of list of actions per product, go to Secure Score and select 
-Recommended actions and select group by in the right corner and select Product
+**Where**: In the Microsoft Defender XDR Portal, select **Secure Score**.
+
+**Persona**: Security and Compliance administrators, SOC analystss
+
+SaaS Security Posture Management (SSPM) capabilities in Microsoft Defender for Cloud Apps enable you to get deeper visibility, automatically identify SaaS app misconfigurations, and and help you remediate those misconfigurations to improve your organizational security. 
+
+Defender for Cloud Apps' SSPM features are integrated into Microsoft Defender XDR so that security teams can see their holistic security posture across the enterprise with Microsoft Secure Score.
+
+To view Secure Score recommendations per product, go to **Secure Score**, select **Recommended actions**, and group the list by **Product**.
 
 ## Check app connectors, log collectors, and SIEM agent health
 
 <!--in the overview this is in daily?-->
-Where: M365 Defender portal > Settings > Cloud apps 
-Persona: Security & Compliance Administrator, SOC Analyst 
-Why Important: System alerts are special type of alerts raised when connector, agent or log collector 
-fails, it’s not possible to send a notification to an administrator in MDA portal. It’s important to check 
-health of your app connectors, log collectors and SIEM agents 
-If SIEM agent is used, System alerts can be injected go to M365D settings > System >SIEM Agents and
-Configure SIEM agent. In Data Types section select Alerts, make sure Alert type filter contain system 
-alerts. 
-It’s recommended to review status of:
-• App connectors
-o Settings > Cloud apps > Connected apps > App Connectors
-• Conditional Access App control Apps
-o Settings > Cloud apps > Connected apps > CAAP
-• Automatic log upload 
-o Settings > Cloud apps > Cloud Discovery > Automatic log upload 
-• API tokens 
-o Settings > Cloud apps > System > API tokens
+**Where**: In the Microsoft Defender XDR Portal, select **Settings > Cloud apps**.
 
+**Persona**: Security and Compliance administrators, SOC analysts
 
-## Track new changes in Microsoft 365 Defender
+System alerts are raised when a connector, agent, or log collector fails and it's impossible to send a notification to a Defender for Cloud Apps administrator. We recommend checking for system alerts regularly to monitor the health of your app connectors, log collectors, and SIEM agents.
 
-Where: M365 admin center > Health > Message center 
-Why Important: Message center helps you to keep track of upcoming changes, including new 
-features, planned maintenance, or other important announcements that may affect your MDA 
-environment. 
-Persona: Security administrator 
-More information: Track new and changed features in the Microsoft 365 Message center.
+If you're using a SIEM agent, system alerts can be sent directly to your SIEM system. In Microsoft Defender XDR, select **Settings > System > SIEM Agents**, and configure your SIEM agent. In the **Data Types** section, select **Alerts**, and make sure the **Alert type filter** contains system alerts.
+
+We also recommend reviewing the following settings to ensure that they're correct and up to date:
+
+|Status to check  |Where to check in Microsoft Defender XDR  |
+|---------|---------|
+|**App connectors**     |  **Settings > Cloud apps > Connected apps > App Connectors**       |
+|**Conditional Access App Control apps**     |  **Settings > Cloud apps > Connected apps > CAAP**       |
+|**Automatic log upload**     | **Settings > Cloud apps > Cloud Discovery > Automatic log upload**        |
+|**API tokens**     |  **Settings > Cloud apps > System > API tokens**       |
+
+## Track new changes in Microsoft Defender XDR
+
+**Where**: In the Microsoft 365 admin center, select **Health > Message center**
+
+**Persona**: Security administrators
+
+The Microsoft 365 **Message center** helps you to keep track of upcoming changes, including new features, planned maintenance, or other important announcements that may affect your Defender for Cloud Apps environment.
+
+<!--For more information, see XREF. <!--add xref-->
 
 ## Review the governance log
 
-Why Important: The Governance log provides a status record of each task that you set Defender for 
-Cloud Apps to run, including both manual and automatic tasks. These tasks include those you set in 
-policies, governance actions that you set on files and users, and any other action you set Defender 
-for Cloud Apps to take. 
-Where: M365 Defender portal > Cloud apps > Governance log
-Persona: Security and Compliance administrator 
-More information: Full list of Governance log
+**Where**: In the Microsoft Defender XDR Portal, select Cloud apps > Governance log
+
+**Persona**: Security and Compliance administrators 
+
+The Governance log provides a status record of each task that you set Defender for Cloud Apps to run, including both manual and automatic tasks. These tasks include those you set in policies, governance actions that you set on files and users, and any other action you set Defender for Cloud Apps to take.
+
+<!--For more information, see XREF. Full list of Governance log<!--add xref-->
 
 ## Related content
+
+[Microsoft Defender for Cloud Apps operational guide](mda-ops-guide.md)
