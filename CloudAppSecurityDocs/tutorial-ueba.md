@@ -35,7 +35,7 @@ The investigation priority score is based on security alerts, abnormal activitie
 
 If you select the score value for an alert or an activity, you can view the evidence that explains how Defender for Cloud Apps scored the activity.
 
-Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Defender for Cloud Apps. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they're compromised, exfiltrating data, or acting as insider threats.
+Every Microsoft Entra user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Defender for Cloud Apps. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they're compromised, exfiltrating data, or acting as insider threats.
 
 Defender for Cloud Apps uses the following to measure risk:
 
@@ -54,7 +54,7 @@ The activity score determines the probability of a specific user performing a sp
 
 To identify who your riskiest users are in Defender for Cloud Apps:
 
-1. In the Microsoft 365 Defender portal, under **Assets**, select **Identities**. Sort the table by **Investigation priority**. Then one by one go to their user page to investigate them.  
+1. In the Microsoft Defender Portal, under **Assets**, select **Identities**. Sort the table by **Investigation priority**. Then one by one go to their user page to investigate them.  
 The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week.
 
    ![Top users dashboard.](media/dashboard-top-users.png)
@@ -81,7 +81,7 @@ The User page helps you answer the questions:
 
 If the user was investigated and no suspicion for compromise was found, or for any reason you prefer to reset the user's investigation priority score, you can manually reset the score.
 
-1. In the Microsoft 365 Defender portal, under **Assets**, select **Identities**.
+1. In the Microsoft Defender Portal, under **Assets**, select **Identities**.
 
 1. Select the three dots to the right of the investigated user, and choose **Reset investigation priority score**. You can also select **View user page** and then select **Reset investigation priority score** from the three dots in the User page.
 
@@ -110,7 +110,7 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 
 - Contact the user – Using the user contact information integrated with Defender for Cloud Apps from Active Directory, you can drill down into each alert and activity to resolve the user identity. Make sure the user is familiar with the activities.
 
-- Directly from the Microsoft 365 Defender portal, in the **Identities** page, select the three dots by the investigated user and choose whether to require the user to sign in again, suspend the user, or confirm the user as compromised.
+- Directly from the Microsoft Defender Portal, in the **Identities** page, select the three dots by the investigated user and choose whether to require the user to sign in again, suspend the user, or confirm the user as compromised.
 
 - In the case of a compromised identity, you can ask the user to reset their password, making sure the password meets best practice guidelines for length and complexity.
 - If you drill down into an alert and determine that the activity shouldn't have triggered an alert, in the [Activity drawer](activity-filters.md), select the **Send us feedback** link so that we can be sure to fine-tune our alerting system with your organization in mind.

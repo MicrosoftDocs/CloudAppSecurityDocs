@@ -28,7 +28,7 @@ When working with features in public preview, these features:
 
 ## Required permissions
 
-Accounts assigned the following Azure Active Directory (Azure AD) roles can turn on Defender for Cloud Apps features:
+Accounts assigned the following Microsoft Entra roles can turn on Defender for Cloud Apps features:
 
 - Global administrator
 - Security administrator

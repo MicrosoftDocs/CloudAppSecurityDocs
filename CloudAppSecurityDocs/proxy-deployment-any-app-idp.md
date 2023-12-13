@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Session controls in Microsoft Defender for Cloud Apps can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls. It provides steps to route app sessions from other IdP solutions to Defender for Cloud Apps. For Azure AD, see [Deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
+Session controls in Microsoft Defender for Cloud Apps can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps hosted via the Microsoft Entra application proxy with session controls. It provides steps to route app sessions from other IdP solutions to Defender for Cloud Apps. For Microsoft Entra ID, see [Deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md).
 
 For a list of apps that are featured by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#pre-onboarded-apps).
 
@@ -16,7 +16,7 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
 
 ### Add admins to the app onboarding/maintenance list
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
@@ -51,7 +51,7 @@ Follow these steps to configure any app to be controlled by Defender for Cloud A
 1. **[Enable the app for use in your organization](#enable-app)**
 
 > [!NOTE]
-> To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure Active Directory Premium P1 or higher](/azure/active-directory/license-users-groups) as well as a Defender for Cloud Apps license.
+> To deploy Conditional Access App Control for Microsoft Entra apps, you need a valid [license for Microsoft Entra ID P1 or higher](/azure/active-directory/license-users-groups) as well as a Defender for Cloud Apps license.
 
 ## Step 1: Configure your IdP to work with Defender for Cloud Apps
 
@@ -62,7 +62,7 @@ Follow these steps to configure any app to be controlled by Defender for Cloud A
 > - [Configure your AD FS IdP](proxy-idp-adfs.md)
 > - [Configure your Okta IdP](proxy-idp-okta.md)
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 
 1. Select **+Add**, and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
@@ -139,7 +139,7 @@ Follow these steps to configure any app to be controlled by Defender for Cloud A
 
 Applications in the app catalog are automatically populated into the table under Connected Apps. Check that the app you want to deploy is recognized by navigating there.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps** to access a table of applications that can be configured with access and session policies.
 
     ![Conditional access app control apps.](media/conditional-access-app-control-apps.png)
@@ -161,7 +161,7 @@ Applications in the app catalog are automatically populated into the table under
     > [!NOTE]
     > If an app does not appear in the Defender for Cloud Apps app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
 
-    ![Conditional access app control discovered Azure AD apps.](media/caac-discovered-aad-apps.png)
+    ![Conditional access app control discovered Microsoft Entra apps.](media/caac-discovered-aad-apps.png)
 
 ### To add domains for an app<a name="add-domains"></a>
 
@@ -177,7 +177,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
     > [!NOTE]
     > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then select **Edit app**.
     > [!TIP]
@@ -222,7 +222,7 @@ If you encounter errors or issues, use the admin toolbar to gather resources suc
 
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use the app with session controls** and then select **Save**.

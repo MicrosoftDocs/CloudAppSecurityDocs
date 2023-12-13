@@ -2,18 +2,18 @@
 title: Get started with app governance visibility and insights | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: how-to
-description: Get started with app governance visibility and insights in Microsoft 365 Defender for Microsoft Defender for Cloud Apps.
+description: Get started with app governance visibility and insights in Microsoft Defender XDR for Microsoft Defender for Cloud Apps.
 ---
 
 # Get started with visibility and insights
 
-Start by viewing the [app governance dashboard](https://aka.ms/appgovernance) on the **App governance > Overview** tab in the Microsoft 365 Defender portal.
+Start by viewing the [app governance dashboard](https://aka.ms/appgovernance) on the **App governance > Overview** tab in the Microsoft Defender Portal.
 
 Your sign-in account must have one of the [required app governance administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
 For example:
 
-:::image type="content" source="media/app-governance-visibility-insights-get-started/overview.png" alt-text="Screenshot of the App governance overview page in Microsoft 365 Defender.":::
+:::image type="content" source="media/app-governance-visibility-insights-get-started/overview.png" alt-text="Screenshot of the App governance overview page in Microsoft Defender XDR.":::
 
 ## What’s available on the Overview tab
 

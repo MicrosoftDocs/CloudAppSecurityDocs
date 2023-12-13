@@ -16,7 +16,7 @@ You may not want to use Microsoft Defender for Cloud Apps for all the users in y
 
 - To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Defender for Cloud Apps. By default, you'll see the following groups:
 
-  - **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Azure AD applications.
+  - **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Microsoft Entra applications.
 
   - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
 
@@ -24,7 +24,7 @@ You may not want to use Microsoft Defender for Cloud Apps for all the users in y
 
 - Excluded user groups override included user groups. Meaning that if you include the user group "UK-employees" but exclude "Marketing", marketing members from the UK won't be monitored even if they're members of the group **UK-employees**.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Scoped deployment and privacy**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Scoped deployment and privacy**.
 
 1. To scope your deployment to include or exclude specific groups, you must first [import user groups](user-groups.md) into Microsoft Defender for Cloud Apps.
 

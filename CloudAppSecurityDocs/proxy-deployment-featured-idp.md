@@ -22,7 +22,7 @@ Access and session controls in Microsoft Defender for Cloud Apps work with appli
 
     |IdP|Protocols|
     |---|---|
-    |Azure AD|SAML 2.0 or OpenID Connect|
+    |Microsoft Entra ID|SAML 2.0 or OpenID Connect|
     |Other|SAML 2.0|
 
 ## To deploy catalog apps
@@ -43,7 +43,7 @@ Follow these steps to configure catalog apps to be controlled by Microsoft Defen
 
 ### Configure integration with other IdP solutions
 
-Use the following steps to route app sessions from other IdP solutions to Defender for Cloud Apps. For Azure AD, see [Configure integration with Azure AD](proxy-deployment-aad.md).
+Use the following steps to route app sessions from other IdP solutions to Defender for Cloud Apps. For Microsoft Entra ID, see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md).
 
 > [!NOTE]
 > For examples of how to configure IdP solutions, see:
@@ -52,7 +52,7 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 > - [Configure your AD FS IdP](proxy-idp-adfs.md)
 > - [Configure your Okta IdP](proxy-idp-okta.md)
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 
 1. Select **+ Add**, and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
@@ -137,9 +137,9 @@ Defender for Cloud Apps will sync your policy details to its servers for each ne
 
 ## Step 3: Verify the apps are configured to use access and session controls<a name="portal"></a>
 
-The preceding instructions helped you create a built-in Defender for Cloud Apps policy for catalog apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
+The preceding instructions helped you create a built-in Defender for Cloud Apps policy for catalog apps directly in Microsoft Entra ID. In this step, verify that the access and session controls are configured for these apps.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 
 1. In the apps table, look at the **Available controls** column and verify that both **Access control** or **Azure AD Conditional Access**, and **Session control** appear for your apps.
@@ -152,7 +152,7 @@ The preceding instructions helped you create a built-in Defender for Cloud Apps 
 
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use the app with session controls** and then select **Save**.
 
@@ -160,12 +160,12 @@ Once you're ready to enable the app for use in your organization's production en
 
 ## Step 5: Test the deployment<a name="test"></a>
 
-1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Azure AD, or for a SAML app configured with your identity provider.
+1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Microsoft Entra ID, or for a SAML app configured with your identity provider.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Activity log**, and make sure the login activities are captured for each app.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Activity log**, and make sure the login activities are captured for each app.
 1. You can filter by selecting **Advanced**, and then filtering using **Source equals Access control**.
 
-    ![Filter using Azure AD conditional access.](media/sso-logon.png)
+    ![Filter using Microsoft Entra Conditional Access.](media/sso-logon.png)
 
 1. It's recommended that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.  
 To verify that the activity is properly captured, select a single sign-on login activity so that it opens the activity drawer. Make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).

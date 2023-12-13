@@ -3,7 +3,7 @@ title: Investigate app governance threat detection alerts | Microsoft Defender f
 ms.date: 08/06/2023
 ms.topic: conceptual
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
-description: Learn how to investigate threat detection alerts from app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
+description: Learn how to investigate threat detection alerts from app governance in Microsoft Defender XDR with Microsoft Defender for Cloud Apps.
 ---
 
 # Investigate threat detection alerts
@@ -365,7 +365,7 @@ This detection identifies an OAuth App that was flagged high-risk by Machine Lea
 
   **Recommended action**: Disable and remove the app, reset the password, and remove the inbox rule.
 
-Follow the tutorial on how to Reset a password using Azure Active Directory and follow the tutorial on how to remove the inbox rule.
+Follow the tutorial on how to Reset a password using Microsoft Entra ID and follow the tutorial on how to remove the inbox rule.
 
 - **FP**: If you can confirm that app created an inbox rule to a new or personal external email account for legitimate reasons.
 
@@ -391,7 +391,7 @@ This detection identifies an OAuth App that consented to suspicious scopes, crea
 
   **Recommended action**:  Disable and remove the app, reset the password, and remove the inbox rule.
 
-  Follow the tutorial on how to Reset a password using Azure Active Directory and follow the tutorial on how to remove the inbox rule.
+  Follow the tutorial on how to Reset a password using Microsoft Entra ID and follow the tutorial on how to remove the inbox rule.
 
 - **FP**: If you can confirm that app created an inbox rule to a new or personal external email account for legitimate reasons.
 
@@ -489,10 +489,10 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 - **TP**: If you are able to confirm that the OAuth app is delivered from an unknown source and is performing unusual activities.
 
    **Recommended action**: 
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details. 
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
     - Search the *CloudAppEvents* Advanced hunting table to understand app activity and determine if the observed behavior is expected.
-    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
 
@@ -516,10 +516,10 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 - **TP**: If you are able to confirm that the OAuth app is delivered from an unknown source and is performing unusual activities.
 
    **Recommended action**:
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details.
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
     - Search the *CloudAppEvents* Advanced hunting table to understand app activity and determine if the observed behavior is expected.
-    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
 
@@ -661,7 +661,7 @@ This detection generates alerts for non-Microsoft OAuth apps with publisher doma
 - **TP**: If you can confirm that the publisher domain or redirect URL of the app is typosquatted and doesn't relate to the true identity of the app.
 
   **Recommended action**:
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details.
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
     - Check the app for other signs of spoofing or impersonation and any suspicious activity.
     - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
@@ -841,7 +841,7 @@ This detection identifies when Line of Business (LOB) OAuth App accesses an unus
 
 - **TP**: If you can confirm that the unusual graph activity was performed by the Line of Business (LOB) OAuth App, then a true positive is indicated.
 
-  **Recommended actions**: Temporarily disable the app and reset the password and then re-enable the app. Follow the tutorial on how to Reset a password using Azure Active Directory.
+  **Recommended actions**: Temporarily disable the app and reset the password and then re-enable the app. Follow the tutorial on how to Reset a password using Microsoft Entra ID.
 
 - **FP**: If you can confirm that the app is intended to do unusually high volume of graph calls.
 
@@ -1035,10 +1035,10 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 - **TP**: If you can confirm that the app has created mailbox rules or made a large number of unusual Graph API calls to the Exchange workload.
 
    **Recommended action**:
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details.
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
     - Search the *CloudAppEvents* Advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
-    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
 

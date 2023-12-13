@@ -2,7 +2,7 @@
 title: Learn about app policies with app governance | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: overview
-description: Learn about app governance policies with Microsoft Defender for Cloud Apps in Microsoft 365 Defender.
+description: Learn about app governance policies with Microsoft Defender for Cloud Apps in Microsoft Defender XDR.
 ---
 
 # Learn about app policies

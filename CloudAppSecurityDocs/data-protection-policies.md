@@ -53,7 +53,7 @@ The following are examples of file policies that can be created:
 
 To create a new file policy, follow this procedure:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Select the **Information Protection** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Select the **Information Protection** tab.
 
 1. Select **Create policy** and select **File policy**.
 
@@ -138,7 +138,7 @@ To make investigation even simpler, you can now create custom queries and save t
 
 You can go to the Policy center to review file policy violations.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**, and then select the **Information protection** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**, and then select the **Information protection** tab.
 1. For each file policy, you can see the file policy violations by selecting the **matches**.  
    ![PCI matches.](media/pci-matches.png "pci matches")
 

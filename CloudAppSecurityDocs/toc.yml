@@ -17,7 +17,7 @@ items:
     items:
     - name: Microsoft 365 Cloud App Security
       href: editions-cloud-app-security-o365.md
-    - name: Azure AD Cloud App Discovery
+    - name: Microsoft Entra Cloud App Discovery
       href: editions-cloud-app-security-aad.md
   - name: US Government offerings
     items:
@@ -304,11 +304,11 @@ items:
     items:
     - name: Protect apps with Conditional Access App Control
       href: proxy-intro-aad.md
-    - name: Deploy for catalog apps with Azure Active Directory
+    - name: Deploy for catalog apps with Microsoft Entra ID
       href: proxy-deployment-aad.md
     - name: Deploy for catalog apps with non-Microsoft IdP
       href: proxy-deployment-featured-idp.md
-    - name: Deploy for custom apps with Azure Active Directory
+    - name: Deploy for custom apps with Microsoft Entra ID
       href: proxy-deployment-any-app.md
     - name: Deploy for custom apps with non-Microsoft IdP
       href: proxy-deployment-any-app-idp.md
@@ -546,7 +546,7 @@ items:
     href: https://aka.ms/M365EnterprisePlans
   - name: Support and troubleshooting
     href: support-and-ts.md
-  - name: Microsoft 365 Defender portal
+  - name: Microsoft Defender Portal
     href: https://security.microsoft.com
   - name: How to buy Defender for Cloud Apps
     href: https://www.microsoft.com/security/business/cloud-apps-defender
@@ -701,11 +701,11 @@ items:
       items:
       - name: Protect apps with Conditional Access App Control
         href: classic-proxy-intro-aad.md
-      - name: Deploy for catalog apps with Azure Active Directory
+      - name: Deploy for catalog apps with Microsoft Entra ID
         href: classic-proxy-deployment-aad.md
       - name: Deploy for catalog apps with non-Microsoft IdP
         href: classic-proxy-deployment-featured-idp.md
-      - name: Deploy for custom apps with Azure Active Directory
+      - name: Deploy for custom apps with Microsoft Entra ID
         href: classic-proxy-deployment-any-app.md
       - name: Deploy for custom apps with non-Microsoft IdP
         href: classic-proxy-deployment-any-app-idp.md
@@ -737,12 +737,6 @@ items:
           href: classic-security-config.md
         - name: Security configuration for SaaS applications
           href: classic-security-saas.md
-        - name: Security configuration for Azure
-          href: classic-security-config-azure.md
-        - name: Security configuration for AWS
-          href: classic-security-config-aws.md
-        - name: Security configuration for GCP
-          href: classic-security-config-gcp.md
       - name: Monitor alerts
         href: classic-monitor-alerts.md
         items:
@@ -793,7 +787,7 @@ items:
         href: classic-mde-govern.md
       - name: Microsoft Defender for Identity integration
         href: classic-mdi-integration.md
-      - name: Azure AD Identity Protection integration
+      - name: Microsoft Entra ID Protection integration
         href: classic-aadip-integration.md
       - name: Microsoft Information Protection integration
         href: classic-azip-integration.md
@@ -831,9 +825,11 @@ items:
         href: classic-troubleshooting-proxy.md
       - name: Troubleshooting SIEM integration
         href: classic-troubleshooting-siem.md
+      - name: Support and troubleshooting for the classic portal
+        href: classic-support-and-ts.md
 - name: Microsoft 365 Defender Docs
   items:
-  - name: Microsoft 365 Defender
+  - name: Microsoft Defender XDR
     href: /microsoft-365/security/defender/
   - name: Microsoft Defender for Microsoft 365
     href: /microsoft-365/security/office-365-security/

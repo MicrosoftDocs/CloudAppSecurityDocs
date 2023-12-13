@@ -50,7 +50,7 @@ Risk scores are kept up to date using the following sources:
 
 Check the cloud app catalog to ensure that the apps used by organization fit into your organization's security requirements. For example, you might want to periodically check that CRM apps used in your organization are adequately secure. In this case, you'd use the following steps to identify your apps:
 
-1. Sign into Microsoft 365 Defender and select **Cloud apps** > **Cloud app catalog**.
+1. Sign into Microsoft Defender XDR and select **Cloud apps** > **Cloud app catalog**.
 
 1. In the **Browse by category** list, select **CRM**. Use the search box to find a category if needed.
 
@@ -78,7 +78,7 @@ By default, all the various parameters evaluated are given equal weight. If ther
 
 For example:
 
-1. Sign into Microsoft 365 Defender and select **Settings** > **Cloud Apps** > **Cloud Discovery** > **Score metrics**.
+1. Sign into Microsoft Defender XDR and select **Settings** > **Cloud Apps** > **Cloud Discovery** > **Score metrics**.
 
 1. For each field or risk category slide the **Importance** slide to change the weight of the field or the risk category. Importance can be set to **Ignored**, **Low**, **Medium**, **High**, or **Very High**.
 
@@ -90,7 +90,7 @@ You might want to override the risk score for a specific app without changing th
 
 **To override the risk score for a specific app**:
 
-1. Sign into Microsoft 365 Defender. In the **Cloud discovery** or **Cloud app catalog** page, locate the app you want to override.
+1. Sign into Microsoft Defender XDR. In the **Cloud discovery** or **Cloud app catalog** page, locate the app you want to override.
 
 1. Select the three dot menu and then select **Override app score**. 
 
@@ -104,7 +104,7 @@ You might want to request a review by the Defender for Cloud Apps security analy
 
 **To request a risk score change**:
 
-1. Sign into Microsoft 365 Defender and select **Cloud apps** > **Cloud app catalog**, and locate the app you want to update.
+1. Sign into Microsoft Defender XDR and select **Cloud apps** > **Cloud app catalog**, and locate the app you want to update.
 
 1. In the **Cloud App Catalog** page, in the app row you want to update, select the three dots at the end of the row and choose **Request score update**. For example:
 

@@ -1,6 +1,6 @@
 ---
 title: Discovery capability differences for Defender for Cloud Apps and Cloud App Discovery
-description: This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery (part of Azure Active Directory).
+description: This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery (part of Microsoft Entra ID).
 ms.date: 02/15/2023
 ms.topic: overview
 ---
@@ -21,7 +21,7 @@ Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringin
 
 Cloud App Discovery comes at no additional cost as part of:
 
-1. Azure Active Directory P1.
+1. Microsoft Entra ID P1.
 1. Enterprise Mobility + Security E3  (EMS E3).
 1. Microsoft 365 E3.
     
@@ -60,4 +60,3 @@ The following table is a comparison of the discovery capabilities in Defender fo
 - Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-

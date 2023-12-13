@@ -17,13 +17,55 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 For more information on what's new with other Microsoft Defender security products, see:
 
-- [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
+- [What's new in Microsoft Defender XDR](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## November 2023
+
+### Defender for Cloud Apps application certificate rotation
+
+Defender for Cloud Apps plans to rotate its application certificate. If you’ve previously explicitly trusted the legacy certificate and currently have SIEM agents running on newer versions of the Java Development Kit (JDK), you must trust the new certificate to ensure continued SIEM agent service. While it’s likely no action is needed, we recommend running the following commands to validate:
+1. In a command line window, switch to the bin folder of your Java installation, for example:
+
+    ```powershell
+    cd "C:\Program Files (x86)\Java\jre1.8.0_291\bin"
+    ```
+1. Run the following command:
+    
+    ```powershell
+    keytool -list -keystore ..\lib\security\cacerts
+
+1. If you see the following 4 aliases, that means you have previously explicitly trusted our certificate and need to take action. If those aliases are not present, no action should be needed.
+    - *azuretls01crt*
+    - *azuretls02crt*
+    - *azuretls05crt*
+    - *azuretls06crt*
+
+
+If you are in need of action, we recommend that you already trust the new certificates to prevent issues once the certificates are fully rotated.
+
+For more information, see our [Issue with new versions of Java](troubleshooting-siem.md#issue-with-new-versions-of-java) troubleshooting guide.
+
+### CSPM support in Microsoft Defender for Cloud
+
+With the continual Microsoft Defender for Cloud Apps convergence into Microsoft Defender XDR, cloud security posture management (CSPM) connections are fully supported via Microsoft Defender for Cloud.
+
+We recommend that you connect your Azure, AWS, and Google Cloud Platform (GCP) environments to Microsoft Defender for Cloud to get the latest CSPM capabilities.
+
+For more information, see:
+
+- [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction)
+- [Cloud Security Posture Management (CSPM)](/azure/defender-for-cloud/concept-cloud-security-posture-management) in Defender for Cloud
+- [Connect your Azure subscriptions](/azure/defender-for-cloud/connect-azure-subscription) to Microsoft Defender for Cloud
+- [Connect your AWS account to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws)
+- [Connect your GCP project to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-gcp)
+
+> [!NOTE]
+> Customers still using the [classic Defender for Cloud Apps portal](classic-cas-compliance-trust.md) no longer see [security configuration assessments](classic-security-config.md) for Azure, AWS, and GCP environments.
+>
 
 ### Test mode for admin users (Preview)
 
@@ -57,13 +99,13 @@ For more information, see [Discover apps via Defender for Endpoint when the endp
 
 ## October 2023
 
-### Automatic redirect to Microsoft 365 Defender general availability 
+### Automatic redirect to Microsoft Defender XDR general availability 
 
-Now, all customers are automatically redirected to Microsoft 365 Defender from the classic Microsoft Defender for Cloud Apps portal, as the redirect is in general availability. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
+Now, all customers are automatically redirected to Microsoft Defender XDR from the classic Microsoft Defender for Cloud Apps portal, as the redirect is in general availability. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
 
-Integrating Defender for Cloud Apps inside Microsoft 365 Defender streamlines the process of detecting, investigating, and mitigating threats to your users, apps, and data – so that you can review many alerts and incidents from a single pane of glass, in one XDR system.
+Integrating Defender for Cloud Apps inside Microsoft Defender XDR streamlines the process of detecting, investigating, and mitigating threats to your users, apps, and data – so that you can review many alerts and incidents from a single pane of glass, in one XDR system.
 
-For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps#redirection-from-the-classic-microsoft-defender-for-cloud-apps-portal-to-microsoft-365-defender).
+For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps#redirection-from-the-classic-microsoft-defender-for-cloud-apps-portal-to-microsoft-defender-xdr).
 
 ## September 2023
 
@@ -145,11 +187,11 @@ For more information, see:
 - [Access policies in Microsoft Defender for Cloud Apps](/defender-cloud-apps/access-policy-aad)
 - [Session policies](/defender-cloud-apps/session-policy-aad)
 
-### Automatic redirect to Microsoft 365 Defender (Preview)
+### Automatic redirect to Microsoft Defender XDR (Preview)
 
-Customers using preview features are now automatically redirected to Microsoft 365 Defender from the classic Microsoft Defender for Cloud Apps portal. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
+Customers using preview features are now automatically redirected to Microsoft Defender XDR from the classic Microsoft Defender for Cloud Apps portal. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
 
-For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
 
 ## June 2023
 
@@ -181,20 +223,20 @@ For more information, see [Network requirements](network-requirements.md).
 
 App governance is now included as part of the [Microsoft Defender for Cloud Apps licenses](app-governance-get-started.md#licensing) and no longer requires an add-on license.
 
-In the Microsoft 365 Defender portal, go to **Settings > Cloud apps > App governance > Service status** to either enable app governance if available, or sign up for the waitlist. 
+In the Microsoft Defender Portal, go to **Settings > Cloud apps > App governance > Service status** to either enable app governance if available, or sign up for the waitlist. 
 
 Existing holders of trial licenses for the app governance add-on have until **July 31, 2023** to enable the toggle and retain their app governance access. 
 
 For more information, see:
 
-- [App governance Defender for Cloud Apps in Microsoft 365 Defender](app-governance-manage-app-governance.md)
+- [App governance Defender for Cloud Apps in Microsoft Defender XDR](app-governance-manage-app-governance.md)
 - [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md).
 
 ### App governance OAuth convergence
 
 For customers who have enabled app governance, we have consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. 
 
-In the Microsoft 365 Defender portal, we've merged all capabilities originally under **Cloud apps > OAuth apps under  App governance**, where you can manage all OAuth apps under a single pane of glass.
+In the Microsoft Defender Portal, we've merged all capabilities originally under **Cloud apps > OAuth apps under  App governance**, where you can manage all OAuth apps under a single pane of glass.
 
 For more information, see [View your apps](app-governance-visibility-insights-view-apps.md).
 
@@ -218,7 +260,7 @@ For more information, see [Secure apps with app hygiene features](app-governance
 
 ## May 2023
 
-- **Behavior-generating policies no longer generate alerts** (Preview). Starting May 28, 2023, policies that generate *behaviors* in Microsoft 365 Defender advanced hunting don't generate alerts. The policies continue generating *behaviors* regardless of being enabled or disabled in the tenant's configuration.
+- **Behavior-generating policies no longer generate alerts** (Preview). Starting May 28, 2023, policies that generate *behaviors* in Microsoft Defender XDR advanced hunting don't generate alerts. The policies continue generating *behaviors* regardless of being enabled or disabled in the tenant's configuration.
 
     For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 

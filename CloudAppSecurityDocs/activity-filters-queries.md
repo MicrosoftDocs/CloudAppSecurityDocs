@@ -42,7 +42,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Date – The date when the activity occurred. Filter supports before/after dates and a date range.
 
-- Device tag - Search by **Intune compliant**, **Hybrid Azure AD joined** or **Valid client certificate**.
+- Device tag - Search by **Intune compliant**, **Microsoft Entra hybrid joined** or **Valid client certificate**.
 
 - Device type - Search only for activities that were done using a specific device type. For example, search all activities from mobile devices, PCs, or Tablets.
 
@@ -159,4 +159,3 @@ From there you can define the filters as is normally done with the **Activity Lo
 
 > [!div class="nextstepaction"]
 > [Best practices for protecting your organization](best-practices.md)
-

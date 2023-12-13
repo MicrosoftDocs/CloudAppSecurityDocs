@@ -26,16 +26,16 @@ Anomalies are detected by scanning user activity. The risk is evaluated by looki
 
 Based on the policy results, security alerts are triggered. Defender for Cloud Apps looks at every user session on your cloud and alerts you when something happens that is different from the baseline of your organization or from the user's regular activity.
 
-In addition to native Defender for Cloud Apps alerts, you'll also get the following detection alerts based on information received from Azure Active Directory (AD) Identity Protection:
+In addition to native Defender for Cloud Apps alerts, you'll also get the following detection alerts based on information received from Microsoft Entra ID Protection:
 
-* Leaked credentials: Triggered when a user's valid credentials have been leaked. For more information, see [Azure AD's Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
-* Risky sign-in: Combines a number of Azure AD Identity Protection sign-in detections into a single detection. For more information, see [Azure AD's Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
+* Leaked credentials: Triggered when a user's valid credentials have been leaked. For more information, see [Microsoft Entra ID's Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
+* Risky sign-in: Combines a number of Microsoft Entra ID Protection sign-in detections into a single detection. For more information, see [Microsoft Entra ID's Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
 These policies will appear on the Defender for Cloud Apps policies page and can be enabled or disabled.
 
 ## Anomaly detection policies
 
-You can see the anomaly detection policies in the Microsoft 365 Defender portal, by going to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
+You can see the anomaly detection policies in the Microsoft Defender Portal, by going to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
 
  ![new anomaly detection policies.](media/new-anomaly-detection-policies.png)
 
@@ -86,9 +86,9 @@ Defender for Cloud Apps supports malware detection for the following apps:
 ### Activity performed by terminated user
 
 * This detection enables you to able to identify when a terminated employee continues to perform actions on your SaaS apps. Because data shows that the greatest risk of insider threat comes from employees who left on bad terms, it's important to keep an eye on the activity on accounts from terminated employees. Sometimes, when employees leave a company, their accounts are de-provisioned from corporate apps, but in many cases they still retain access to certain corporate resources. This is even more important when considering privileged accounts, as the potential damage a former admin can do is inherently greater.
-This detection takes advantage of the Defender for Cloud Apps ability to monitor user behavior across apps, allowing identification of the regular activity of the user, the fact that the account was deleted, and actual activity on other apps. For example, an employee whose Azure AD account was deleted, but still has access to the corporate AWS infrastructure, has the potential to cause large-scale damage.
+This detection takes advantage of the Defender for Cloud Apps ability to monitor user behavior across apps, allowing identification of the regular activity of the user, the fact that the account was deleted, and actual activity on other apps. For example, an employee whose Microsoft Entra account was deleted, but still has access to the corporate AWS infrastructure, has the potential to cause large-scale damage.
 
-The detection looks for users whose accounts were deleted in Azure AD, but still perform activities in other platforms such as AWS or Salesforce. This is especially relevant for users who use another account (not their primary single sign-on account) to manage resources, since these accounts are often not deleted when a user leaves the company.
+The detection looks for users whose accounts were deleted in Microsoft Entra ID, but still perform activities in other platforms such as AWS or Salesforce. This is especially relevant for users who use another account (not their primary single sign-on account) to manage resources, since these accounts are often not deleted when a user leaves the company.
 
 ### Activity from suspicious IP addresses
 
@@ -110,7 +110,7 @@ The detection looks for users whose accounts were deleted in Azure AD, but still
 * This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user's mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
 
 > [!NOTE]
-> Defender for Cloud Apps integrates with Microsoft 365 Defender to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Microsoft 365 is enabled, you'll start seeing alerts in the Defender for Cloud Apps activity log.
+> Defender for Cloud Apps integrates with Microsoft Defender XDR to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Microsoft 365 is enabled, you'll start seeing alerts in the Defender for Cloud Apps activity log.
 
 ### Suspicious OAuth app file download activities
 
@@ -185,7 +185,7 @@ For example, you can set the Activity from infrequent county detection to ignore
 
 To scope an anomaly detection policy:
 
-1. In the Microsoft 365 Defender portal, go to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
+1. In the Microsoft Defender Portal, go to **Cloud Apps** -> **Policies** -> **Policy management**. Then choose **Anomaly detection policy** for the policy type.
 1. Select the policy you want to scope.
 1. Under **Scope**, change the drop-down from the default setting of **All users and groups**, to **Specific users and groups**.
 1. Select **Include** to specify the users and groups for who this policy will apply. Any user or group not selected here won't be considered a threat and won't generate an alert.
@@ -214,5 +214,3 @@ You can triage the various alerts triggered by the new anomaly detection policie
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
-

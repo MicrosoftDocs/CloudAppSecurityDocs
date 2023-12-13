@@ -16,7 +16,8 @@ For more information on investigating OAuth apps, see [Investigate risky OAuth a
 
 > [!NOTE]
 >
-> - App Governance is a set of security and policy management capabilities designed for OAuth-enabled apps registered on Azure Active Directory (Azure AD), Google, and Salesforce. For more information, see [App governance add-on to Defender for Cloud Apps in Microsoft 365 Defender](app-governance-manage-app-governance.md).
+> - App Governance is a set of security and policy management capabilities designed for OAuth-enabled apps registered on Microsoft Entra ID, Google, and Salesforce. For more information, see [App governance add-on to Defender for Cloud Apps in Microsoft Defender XDR](app-governance-manage-app-governance.md).
+
 > 
 > - Defender for Cloud Apps only identifies apps that request "Delegated" permissions. For more information, see [Client app permissions](/azure/active-directory/develop/developer-glossary#permissions).
 >
@@ -28,7 +29,7 @@ The **OAuth** page displays information about app permissions in your connected 
 
 To access the OAuth tab:
 
-In the Microsoft 365 Defender portal, under **Cloud Apps** select **OAuth apps**.
+In the Microsoft Defender Portal, under **Cloud Apps** select **OAuth apps**.
 
 ![app permissions.](media/app-permissions.png)
 

@@ -80,9 +80,9 @@ Customer data collected by the service is stored at rest as follows:
 |Customer provisioning location |Data storage location  |
 |---------|---------|
 |Customers whose tenants are provisioned in the European Union or the United Kingdom     |   Either the European Union or the United Kingdom      |
-|All other customers     |    The Geo that is nearest to the location of where the customer's Azure Active Directory tenant has been provisioned     |
+|All other customers     |    The Geo that is nearest to the location of where the customer's Microsoft Entra tenant has been provisioned     |
 
-If Defender for Cloud Apps uses another Microsoft online service, such as Azure Active Directory or Azure CDN to process such data, the data geo location is defined by the data storage rules of that other online service.
+If Defender for Cloud Apps uses another Microsoft online service, such as Microsoft Entra ID or Azure CDN to process such data, the data geo location is defined by the data storage rules of that other online service.
 
 ### App governance data storage locations
 
@@ -95,9 +95,9 @@ Customer data collected by the service is stored at rest as follows:
 |Customers whose tenants are provisioned in the Asia Pacific | Either Asia Pacific or the United States |
 | Customers whose tenants are provisioned in Canada | Canada or the United States |
 | Customers whose tenants are provisioned in India | Either India or the United States |
-| Customers whose tenants are provisioned in any other region | The United States or a data center in the Geo that is nearest to the location of where the customer's Azure Active Directory tenant has been provisioned |
+| Customers whose tenants are provisioned in any other region | The United States or a data center in the Geo that is nearest to the location of where the customer's Microsoft Entra tenant has been provisioned |
 
-If App governance uses another Microsoft online service, such as Azure Active Directory or Azure CDN to process such data, the data geo location is defined by the data storage rules of that other online service.
+If App governance uses another Microsoft online service, such as Microsoft Entra ID or Azure CDN to process such data, the data geo location is defined by the data storage rules of that other online service.
 
 App governance is now part of Microsoft Defender for Cloud Apps. For existing customers, by June 2024, we will be moving your data to match your Microsoft Defender for Cloud Apps data residency. There is no work required on your side and there won’t be any service disruptions. For more information, see [Defender for Cloud Apps data storage locations](#defender-for-cloud-apps-data-storage-locations).
 
@@ -155,15 +155,15 @@ The following table show what data is surfaced for each product integration:
 
 | Product | Exposed data | Configuration |
 | --- | --- | --- |
-| Microsoft 365 Defender | Alerts and user activities | Enabled automatically on Microsoft 365 Defender upon onboarding |
+| Microsoft Defender XDR | Alerts and user activities | Enabled automatically on Microsoft Defender XDR upon onboarding |
 | Microsoft Sentinel | Alerts and discovery data | [Enabled in Defender for Cloud Apps](siem-sentinel.md) and [configured in Microsoft Sentinel](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps) |
 | Microsoft Purview compliance portal | Alerts for Microsoft 365 | Automatically streamed to Microsoft Purview compliance portal  |
 | Microsoft Defender for Cloud | Alerts for Azure | Enabled by default in Defender for Cloud Apps; can be disabled in Microsoft Defender for Cloud |
 | Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](/graph/api/resources/security-api-overview) |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Defender for Cloud Apps](flow-integration.md) |
 | Microsoft Threat Experts | Alerts | Automatically streamed to Microsoft Threat Experts |
-| Azure Active Directory Identity Protection | Alerts | Automatically streamed to Azure Active Directory Identity Protection | 
-| Microsoft Azure AD Identity Protection | Subset of alerts for identity risk model | Enabled automatically on Azure AD Identity Protection upon onboarding |
+| Microsoft Entra ID Protection | Alerts | Automatically streamed to Microsoft Entra ID Protection | 
+| Microsoft Entra ID Protection | Subset of alerts for identity risk model | Enabled automatically on Microsoft Entra ID Protection upon onboarding |
 
 #### Third-party products
 
@@ -187,11 +187,11 @@ Microsoft uses encryption technology to protect your data while at rest in a Mic
 
 ### Identity and access management
 
-Defender for Cloud Apps enables you to limit access of administrators to the portal based on geolocation using Azure Active Directory. It's possible to require multi-factor authentication to access the Defender for Cloud Apps portal by using Azure Active Directory.
+Defender for Cloud Apps enables you to limit access of administrators to the portal based on geolocation using Microsoft Entra ID. It's possible to require multi-factor authentication to access the Defender for Cloud Apps portal by using Microsoft Entra ID.
 
 ### Permissions
 
-Defender for Cloud Apps supports role-based access control. Microsoft 365 and Azure Active Directory Global admin and Security admin roles have full access to Defender for Cloud Apps, and Security readers have read access. [For more information](manage-admins.md).
+Defender for Cloud Apps supports role-based access control. Microsoft 365 and Microsoft Entra Global admin and Security admin roles have full access to Defender for Cloud Apps, and Security readers have read access. [For more information](manage-admins.md).
 
 ## Customer controls for organizational compliance
 
