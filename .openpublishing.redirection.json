@@ -237,7 +237,7 @@
         },
         {
             "source_path": "CloudAppSecurityDocs/connect-google-gcp-to-microsoft-cloud-app-security.md",
-            "redirect_url": "/defender-cloud-apps/protect-google-gcp#connect-google-cloud-platform-to-microsoft-defender-for-cloud-apps",
+            "redirect_url": "/defender-cloud-apps/protect-gcp#connect-google-cloud-platform-to-microsoft-defender-for-cloud-apps",
             "redirect_document_id": true
         },
         {
