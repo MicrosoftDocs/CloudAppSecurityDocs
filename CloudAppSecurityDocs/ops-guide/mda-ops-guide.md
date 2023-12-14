@@ -11,13 +11,12 @@ This section of the Microsoft Defender for Cloud Apps documentation helps securi
 
 ## Prerequisites
 
-The activities in this article assume that you've deployed Defender for Cloud Apps. For more information, see [Basic setup for Defender for Cloud Apps](general-setup.md).
+The activities in this article assume that you've deployed Defender for Cloud Apps. For more information, see [Basic setup for Defender for Cloud Apps](general-setup.md) and the [Defender for Cloud Apps Ninja training](http://aka.ms/MDCANinjaTraining).
 
 ## Activity reference
 
 The following table lists activities that we recommend you perform regularly with Defender for Cloud Apps:
 
-<!--add links when ready-->
 |Frequency  |Activities  |
 |---------|---------|
 |**Daily**     | - [Review alerts and incidents](mda-ops-guide-daily.md#review-alerts-and-incidents) <br>  - [Review threat detection data](mda-ops-guide-daily.md#review-threat-detection-data) <br>  - [Review application governance](mda-ops-guide-daily.md#review-application-governance) <br>  - [Review conditional access app control](mda-ops-guide-daily.md#review-conditional-access-app-control)<br>  - [Review shadow IT - cloud discovery](mda-ops-guide-daily.md#review-shadow-it---cloud-discovery)<br>  - [Review the cloud discovery dashboard](mda-ops-guide-daily.md#review-the-cloud-discovery-dashboard)<br>  - [Review information protection](mda-ops-guide-daily.md#review-information-protection)     |

@@ -11,13 +11,19 @@ This article lists daily operational activities that we recommend you perform wi
 
 ## Review alerts and incidents
 
-Alerts and incidents are two of the most important items your security operations (SOC) team should be reviewing on a daily basis. Triage them regularly from the incidents queue in Microsoft Defender XDR, prioritizing high and medium severity alerts. 
+Alerts and incidents are two of the most important items your security operations (SOC) team should be reviewing on a daily basis.
+
+- Triage incidents and alerts regularly from the [incidents queue](https://security.microsoft.com/incidents-queue) in Microsoft Defender XDR, prioritizing high and medium severity alerts.
+
+- If you're working with a SIEM system, your SIEM system is usually the first stop for triage. SIEM systems provide more context with extra logs and SOAR functionality. Then, use Microsoft Defender XDR for a deeper understanding of an alert or incident timeline.
+
+### Triage your incidents from Microsoft Defender XDR
+
+**Where**: In Microsoft Defender XDR, select **Incidents and alerts**
 
 **Persona**: SOC analysts
 
-**Where**: Microsoft Defender XDR > Incidents and alerts
-
-When triaging incidents:
+**When triaging incidents**:
 
 1. In the incident dashboard, filter for the following items:
 
@@ -27,52 +33,54 @@ When triaging incidents:
     |**Severity**     |  High, Medium, Low       |
     |**Service source**     |  Keep all service sources checked. This should list alerts with the most fidelity, with correlation across other Microsoft XDR workloads. Select **Defender for Cloud Apps** to view items that come specifically from Defender for Cloud Apps.       |
 
-Activities to be performed when triaging incidents:
-1. View the incident dashboard, filter on: 
-• Status: New, In progress
-• Severity: High, Medium, Low
-• Service source: Keep all service sources checked which should be the most 
-fidelity alerts with correlation across different XDR workloads. Select MDA, 
-App Governance to see explicitly what comes from MDA. 
-2. Select each incident:
-• Review all tabs
-• Use Activity log and Advanced Hunting > In Evidence and Response tab
-select each evidence, in the burger menu ( three dots) select Investigate in 
-Activity log / Go hunt 
-3. Select Manage incident
-1. under Classification select “True positive”, “False positive” or “Informational, 
-expected activity”. For true alerts, specify the threat type. Note: This 
-classification helps your security team see threat patterns and defend your 
-organization from them.
-2. When actively investigated Assign Incident to a person and change status to 
-In Progress. 
-4. Set an Incident / Alert to In Progress 
-5
-5. Once the remediated, resolve the incident. Resolving the incident resolves all linked 
-and related active alerts.
-Incidents: For more information about the Incidents queue, see Prioritize incidents in Microsoft 365 
-Defender and how to response to the Incidents see Incident response playbooks
-*MDI: If MDI integration is enabled, MDI alerts still need to be triaged in the MDA Portal, please 
-access here for more information.
-SIEM: If SIEM integration is enabled, the SIEM solution is normally used first for triaging. 
-It’s adding more context via additional logs and offering additional SOAR 
-functionality. Then Microsoft Defender XDR is used if deep understanding of alerts and incident 
-timeline is required. 
-**Persona**: Security Administrator
-Prerequisites: Microsoft Sentinel integration , Generic SIEM integration, Enabling the Microsoft 365 
-Defender connector
-For bi-directional incidents sync it’s recommended enable Microsoft Defender XDR and select 
-Microsoft Defender for Cloud Apps option. Microsoft Sentinel's Microsoft Defender XDR incident 
-integration allows you to stream all Microsoft Defender XDR incidents into Microsoft Sentinel and 
-keep them synchronized between both portals. Incidents from Microsoft Defender XDR include all 
-associated alerts, entities, and relevant information, providing you with enough context to perform 
-triage and preliminary investigation in Microsoft Sentinel. Once in Sentinel, incidents will remain bidirectionally synced with Microsoft Defender XDR, allowing you to take advantage of the benefits of 
-both portals in your incident investigation.
-Consider using streaming API - It can be used to send data to an EventHub and then can be 
-consumed through a vendor SIEM connector for instance has an EventHub connector (or placed in 
-Azure Storage).
+1. Select each incident to review all details. Review all tabs in the incident, the activity log, and advanced hunting.
+
+    In the incident's **Evidence and response** tab, select each evidence item. Select the options menu > **Investigate** and then select **Activity log** or **Go hunt** as needed.
+
+1. Triage your incidents. For each incident, select **Manage incident** and then select one of the following options:
+
+    - **True positive**
+    - **False positive**
+    - **Informational, expected activity**
+
+    For true alerts, specify the treat type to help your security team see threat patterns and defend your organization from risk.
+
+1. When you're ready to start your active investigation, assign the incident to a user and update the incident status to **In progress**.
+
+1. When the incident is remediated, resolve it to resolve all linked and related active alerts.
+
+For more information, see:
+
+- [Prioritize incidents in Microsoft Defender XDR](/microsoft-365/security/defender/incident-queue)
+- [Incident response playbooks](/security/operations/incident-response-playbooks)
+- [How to investigate anomaly detection alerts](../investigate-anomaly-alerts.md)
+- [Manage app governance alerts](../app-governance-manage-alerts.md)
+- [Investigate threat detection alerts](../app-governance-anomaly-detection-alerts.md)
+
+### Triage your incidents from your SIEM system
+
+**Persona**: SOC analysts
+
+**Prerequisites**: You must be connected to a SIEM system, and we recommend integrating with Microsoft Sentinel. For more information, see:
+
+- [Microsoft Sentinel integration (Preview)](../siem-sentinel.md)
+- [Connect data from Microsoft Defender XDR to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
+- [Generic SIEM integration](../siem.md)
+
+Integrating Microsoft Defender XDR with Microsoft Sentinel allows you to stream all Microsoft Defender XDR incidents into Microsoft Sentinel and keep them synchronized between both portals. Incidents from Microsoft Defender XDR include all associated alerts, entities, and relevant information, providing you with enough context to triage and run a preliminary investigation in Microsoft Sentinel.
+
+Once in Microsoft Sentinel, incidents remain synchronized with Microsoft Defender XDR so that you can use the features from both portals in your investigation.
+
+When installing Microsoft Sentinel's data connector for Microsoft Defender XDR, make sure to include the Microsoft Defender for Cloud Apps option.
+
+
+
+Consider using a streaming API to send data to an EventHub, where it can be consumed through any partner SIEM with an EventHub connector, or placed in Azure Storage.
+
+For more information, see:
+
 Additional information: Working with Microsoft Defender XDR incidents in Microsoft Sentinel and bidirectional sync, Streaming API
-**Persona**: SOC analysts 
+
 More information: 
 Navigate and triage incidents in Microsoft Sentinel
 Create custom analytics rules to detect threats
