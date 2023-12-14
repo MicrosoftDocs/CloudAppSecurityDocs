@@ -25,7 +25,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## December 2023
 
-### SSPM support for more connected apps
+### SSPM support for more connected apps (Preview)
 
 Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to make sure you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application.
 
