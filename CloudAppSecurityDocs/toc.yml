@@ -196,8 +196,6 @@ items:
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Custom connectors with the open app connector platform
       href: ./connector-platform.md
-    - name: Protect connected apps
-      href: protect-connected-apps.md
     - name: Asana (Preview)
       href: protect-asana.md
     - name: Atlassian
