@@ -1,7 +1,7 @@
 ---
 title: Protect connected apps using cloud service provider APIs - Microsoft Defender for Cloud Apps
 description: This article describes how Defender for Cloud Apps protects your connected apps.
-ms.date: 07/04/2023
+ms.date: 12/14/2023
 ms.topic: conceptual
 ---
 # Protect connected apps using cloud service provider APIs
@@ -10,7 +10,9 @@ ms.topic: conceptual
 
 Defender for Cloud Apps provides end-to-end protection for connected apps using Cloud-to-Cloud integration, [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md), and real-time access and session [controls leveraging our Conditional](proxy-intro-aad.md) App Access Controls.
 
-Once an app is connected using one or more of these methods, you get instant out-of-the-box protection with our built-in anomaly detection engine. Additionally, you gain deep visibility into the app's user and device activities, control over data shared by the app, and can build detection policies with governance to mitigate any risky activities or sensitive-data sharing by the app.
+Once an app is connected, Defender for Cloud Apps provides deep visibility into the app's user and device activities, and control over any data shared by the app. Build detection policies with governance to mitigate any risky activities or sensitive-data sharing by the app.
+
+Defender for Cloud Apps also provides related app content for threat protection, SaaS security posture management (SSPM), and app-to-app data in use, depending on the support available for each app. For more information, see [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) and individual articles for each app.
 
 ## Reference of connected apps
 

@@ -5,8 +5,8 @@ ms.date: 06/18/2023
 ms.topic: how-to
 ---
 
-# Connect Zoom to Microsoft Defender for Cloud Apps
-<!--add missing protect information-->
+# Connect Zoom to Microsoft Defender for Cloud Apps (Preview)
+
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Zoom is an online video conferencing and collaboration tool. Zoom holds critical data of your organization, and this makes it a target for malicious actors.
@@ -15,7 +15,7 @@ Connecting Zoom to Defender for Cloud Apps gives you improved insights into your
 
 [!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
 
-## SaaS security posture management (Preview)
+## SaaS security posture management
 
 To see security posture recommendations for Zoom in Microsoft Secure Score, create an API connector via the **Connectors** tab, with `“account:read:admin`, `chat_channel:read:admin` and `user:read:admin”` permissions. In Secure Score, select **Recommended actions** and filter by **Product** = **Zoom**.
 
@@ -25,10 +25,7 @@ For example, recommendations for Zoom include:
 - *Enable session timeout for web users*
 - *Enforce end to end encryption in all Zoom meetings*
 
-If a connector already exists and you don't see Zoom recommendations yet, refresh the connection by disconnecting the API connector, and then reconnecting it with the `“account:read:admin``, `chat_channel:read:admin` and `user:read:admin”`` permissions. 
-
-
-If a connector already exists for Zoom, refresh the connection by disconnecting the API connector, and then reconnecting it with the “account:read:admin, chat_channel:read:admin and user:read:admin” permissions. 
+If a connector already exists and you don't see Zoom recommendations yet, refresh the connection by disconnecting the API connector, and then reconnecting it with the `“account:read:admin`, `chat_channel:read:admin` and `user:read:admin”` permissions.
 
 For more information, see: 
 
