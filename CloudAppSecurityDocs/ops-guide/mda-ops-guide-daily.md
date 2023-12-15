@@ -52,6 +52,7 @@ Alerts and incidents are two of the most important items your security operation
 For more information, see:
 
 - [Prioritize incidents in Microsoft Defender XDR](/microsoft-365/security/defender/incident-queue)
+- [Investigate alerts in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-alerts)
 - [Incident response playbooks](/security/operations/incident-response-playbooks)
 - [How to investigate anomaly detection alerts](../investigate-anomaly-alerts.md)
 - [Manage app governance alerts](../app-governance-manage-alerts.md)
@@ -67,25 +68,18 @@ For more information, see:
 - [Connect data from Microsoft Defender XDR to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
 - [Generic SIEM integration](../siem.md)
 
-Integrating Microsoft Defender XDR with Microsoft Sentinel allows you to stream all Microsoft Defender XDR incidents into Microsoft Sentinel and keep them synchronized between both portals. Incidents from Microsoft Defender XDR include all associated alerts, entities, and relevant information, providing you with enough context to triage and run a preliminary investigation in Microsoft Sentinel.
+Integrating Microsoft Defender XDR with Microsoft Sentinel allows you to stream all Microsoft Defender XDR incidents into Microsoft Sentinel and keep them synchronized between both portals. Microsoft Defender XDR incidents in Microsoft Sentinel includes all associated alerts, entities, and relevant information, providing enough context to triage and run a preliminary investigation.
 
 Once in Microsoft Sentinel, incidents remain synchronized with Microsoft Defender XDR so that you can use the features from both portals in your investigation.
 
-When installing Microsoft Sentinel's data connector for Microsoft Defender XDR, make sure to include the Microsoft Defender for Cloud Apps option.
-
-
-
-Consider using a streaming API to send data to an EventHub, where it can be consumed through any partner SIEM with an EventHub connector, or placed in Azure Storage.
+- When installing Microsoft Sentinel's data connector for Microsoft Defender XDR, make sure to include the Microsoft Defender for Cloud Apps option.
+- Consider using a [streaming API](/microsoft-365/security/defender/streaming-api) to send data to an EventHub, where it can be consumed through any partner SIEM with an EventHub connector, or placed in Azure Storage.
 
 For more information, see:
 
-Additional information: Working with Microsoft Defender XDR incidents in Microsoft Sentinel and bidirectional sync, Streaming API
-
-More information: 
-Navigate and triage incidents in Microsoft Sentinel
-Create custom analytics rules to detect threats
-
-For more information, see [Investigate alerts in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-alerts?view=o365-worldwide).
+- [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents)
+- [Create custom analytics rules to detect threats](/azure/sentinel/detect-threats-custom)
 
 ## Review threat detection data
 
@@ -192,26 +186,28 @@ Best practices:
 
 ## Review shadow IT - cloud discovery
 
-**Where**: In the Microsoft Defender XDR Portal, select Incidents & Alerts 
-In the Microsoft Defender XDR Portal, select Cloud apps > Cloud discovery / Cloud app catalog 
-In the Microsoft Defender XDR Portal, select Cloud apps > Policies > Policy Management > Shadow IT
-Cloud Discovery analyses your traffic logs against the Microsoft Defender for Cloud 
-Apps catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk 
-factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses 
-into your organization.
-Alerts related to Cloud Discovery are available in M365D and should be triaged as part of the process 
-described above. 
-**Persona**: Security Administrator 
-Default Cloud Discovery anomaly detection policies have been depreciated. Security administrators 
-need to create app discovery policies to start alerting / tagging newly discovered apps based on 
-certain conditions, risk score, category etc and also app behaviour like daily traffic, downloaded data 
-etc. 
-Full list of conditions and criteria and details how to create cloud discovery policies can be found 
-here: Create Cloud Discovery policies
-Examples of detection Cloud Discovery policies and prerequisites can be found here: 
-Cloud Discovery policies
-Prerequisites: Set up Cloud Discovery
-MDE Integration: We are recommending enabling Microsoft Defender for Endpoint integration to
+**Where**: In the Microsoft Defender XDR Portal, select:
+
+- **Incidents & alerts**
+- **Cloud apps > Cloud discovery / Cloud app catalog**
+- **Cloud apps > Policies > Policy Management > Shadow IT**
+
+<!--all 3? isn't this confusing?-->
+**Persona**: Security administrators
+
+Defender for cloud apps analyzes your traffic logs against the cloud apps catalog of over 31,000 cloud apps. Apps are ranked and scored based on more than 90 risk factors to provide ongoing visibility into cloud use, Shadow IT, and the risks that Shadow IT poses into your organization.
+
+Alerts related to cloud discovery are available in Microsoft Defender XDR and should be [triaged regularly](#review-alerts-and-incidents).
+
+Create app discovery policies to start alerting and tagging newly discovered apps based on certain conditions, like risk scores, categories, and app behaviors like daily traffic and downloaded data.
+
+For more information, see:
+
+- [Cloud Discovery policies](../policies-cloud-discovery.md)
+- [Create Cloud Discovery policies](../cloud-discovery-policies.md)
+- [Set up Cloud Discovery](../set-up-cloud-discovery.md)
+
+### MDE Integration: We are recommending enabling Microsoft Defender for Endpoint integration to
 allow you to use Cloud Discovery beyond your corporate network or secure gateways and ability to 
 apply governance actions seamlessly on the endpoints (see govern discovered apps chapter). 
 Best practices: MDE Integration and MDA Shadow IT Discovery
@@ -222,67 +218,62 @@ numbers of discovered apps.
 
 ## Review the cloud discovery dashboard
 
-**Where**: In the Microsoft Defender XDR Portal, select Cloud apps > Cloud discovery > Dashboard 
-In addition to alerts Cloud discovery dashboard should be reviewed on daily basis. It 
-is designed to give you more insight into how cloud apps are being used in your organization. It 
-provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk 
-levels of apps in your organization.
-**Persona**: Security and Compliance administrators, SOC analysts 
-1. First look at the overall cloud app use in your organization in the High-level usage overview.
-2. Use filtering to generate specific views depending on your interest
-3. Then, dive one level deeper to see which are the top categories used in your org for each of 
-the different use parameters. You can see how much of this usage is by Sanction apps.
-4. Go even deeper and see all the apps in a specific category in the Discovered apps tab.
-5. You can see the top users and source IP addresses to identify which users are the most 
-dominant users of cloud apps in your organization.
-6. Check how the discovered apps spread according to geographic location (according to their 
-HQ) in the App Headquarters map.
-7. Review the risk score of the discovered app in the App risk overview. 
-8. Check the discovery alerts status to see how many open alerts should you investigate.
-Full information: Working with discovery data
- Working with discovered apps
+**Where**: In the Microsoft Defender XDR Portal, select **Cloud apps > Cloud discovery > Dashboard**.
 
-### Govern discovered apps
+**Persona**: Security and Compliance administrators, SOC analysts
 
-**Where**: In the Microsoft Defender XDR Portal, select Cloud apps > Cloud discovery > Dashboard 
-In addition to alerts Cloud discovery dashboard should be reviewed on daily basis. It 
-is designed to give you more insight into how cloud apps are being used in your organization. It 
-provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk 
-levels of apps in your organization.
-**Persona**: Security and Compliance administrators, SOC analysts 
-1. First look at the overall cloud app use in your organization in the High-level usage overview.
-2. Use filtering to generate specific views depending on your interest
-3. Then, dive one level deeper to see which are the top categories used in your org for each of 
-the different use parameters. You can see how much of this usage is by Sanction apps.
-4. Go even deeper and see all the apps in a specific category in the Discovered apps tab.
-5. You can see the top users and source IP addresses to identify which users are the most 
-dominant users of cloud apps in your organization.
-6. Check how the discovered apps spread according to geographic location (according to their 
-HQ) in the App Headquarters map.
-7. Review the risk score of the discovered app in the App risk overview. 
-8. Check the discovery alerts status to see how many open alerts should you investigate.
-Full information: Working with discovery data
- Working with discovered apps
+We recommend reviewing your cloud discovery dashboard on a daily basis. The cloud discovery dashboard is designed to give you more insight into how cloud apps are used in your organization, with an at-a-glance overview of the kids of apps being used, your open alerts, and the risk levels of apps in your organization.
+
+**On the cloud discovery dashboard**:
+
+1. Use the widgets at the top of the page to understand your overall cloud app usage.
+1. Filter the dashboard graphs to generate specific views, depending on your interest. For example:
+
+    - Understand top categories of apps used in your org, especially for sanctioned apps.
+    - Review risk scores for your discovered apps.
+    - Filter views to see your top apps in specific categories.
+    - View top users and IP addresses to identify the users who are the most dominant users of cloud apps in your organization.
+    - View app data on a world map to understand how discovered apps spread by geographic location.
+
+<!--1. Check the discovery alerts status to see how many open alerts should you investigate. WHERE DO YOU SEE THIS?-->
+
+After reviewing the list of discovered apps in your environment, we recommend that you secure your environment by approving safe apps (*Sanctioned* apps), prohibiting unwanted apps (*Unsanctioned* apps), or applying custom tags.
+
+You might also want to proactively review and apply tags to the apps available in the cloud app catalog before they're discovered in your environment. To help you govern those applications, create relevant cloud discovery policies, triggered by specific tags. 
+
+For more information, see:
+
+- [Working with discovery data](../working-with-cloud-discovery-data.md)
+- [Working with discovered apps](../discovered-apps.md)
+
+> [!TIP]
+> Depending on your environment configuration, you might benefit from the seamless and automated blocking, or even the *warn and educate* features provided by Microsoft Defender for Endpoint. For more information, see [Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps](../mde-integration.md).
+
 
 ## Review information protection
 
-**Where**: In the Microsoft Defender XDR Portal, select Incidents & Alerts 
-In the Microsoft Defender XDR Portal, select Cloud apps > Files
- In the Microsoft Defender XDR Portal, select Cloud apps > Policies > Policy Management > Information Protection
-Defender for Cloud Apps file policies and alerts allow you to enforce a wide range of 
-automated processes. Policies can be set to provide information protection, including continuous 
-compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly. Alerts should 
-be triaged as per process described earlier in the Alerts section. 
-**Persona**: Security and Compliance administrators, SOC analysts 
-In addition to acting on existing File Policies alerts, SOC teams can perform additional pro active 
-actions and run queries in the Files section to check the following:
-• How many files are shared publicly so that anyone can access them without a link?
-• With which partners are you sharing files (outbound sharing)?
-• Do any files have a sensitive name?
-• Are any of the files being shared with someone's personal account?
-Based on the results existing file policies can be adjusted or new policies deployed. 
-Examples of Detections with Information Protection policies: Information protection policies
+**Where**: In the Microsoft Defender XDR Portal, select:
 
+- **Incidents & alerts**
+- **Cloud apps > Files**
+- **Cloud apps > Policies > Policy Management > Information Protection**
+
+<!--why all 3? not sure this is so clear-->
+
+**Persona**: Security and Compliance administrators, SOC analysts
+
+Defender for Cloud Apps file policies and alerts allow you to enforce a wide range of automated processes. Create policies to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and data loss protection (DLP) for sensitive content shared publicly.
+
+In addition to [triaging alerts and incidents](#review-alerts-and-incidents), we recommend that your SOC teams run extra, proactive actions and queries. In the **Cloud apps > Files** page, check for the following questions:
+
+- How many files are shared publicly so that anyone can access them without a link?
+- Which partners are you sharing files to using outbound sharing?
+- Do any files have sensitive names?
+- Are any of the files being shared with someone's personal account?
+
+Use the results of these queries to adjust existing file policies or create new policies.
+
+For more information, see [Information protection policies](../policies-information-protection.md).
 
 ## Related content
 
