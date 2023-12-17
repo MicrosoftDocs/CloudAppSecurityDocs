@@ -1,11 +1,11 @@
 ---
-title: Monthly operational guide - Microsoft Defender for Cloud Apps
-description: This article provides monthly operational recommendations to help security operations teams to plan and run security activities.
-ms.date: 11/28/2023
+title: Ad-hoc operational guide - Microsoft Defender for Cloud Apps
+description: This article provides ad-hoc operational recommendations to help security operations teams to plan and run security activities.
+ms.date: 12/17/2023
 ms.topic: reference
 ---
 
-# Monthly operational guide - Microsoft Defender for Cloud Apps
+# Ad-hoc operational guide - Microsoft Defender for Cloud Apps
 
 This article lists monthly operational activities that we recommend you perform with Microsoft Defender for Cloud Apps.
 

@@ -405,15 +405,15 @@ items:
   - name: Operations guide
     items:
     - name: Operations guide overview
-      href: mda-ops-guide.md
+      href: ops-guide/mda-ops-guide.md
     - name: Monthly activities
-      href: mda-ops-guide-monthly.md
+      href: ops-guide/mda-ops-guide-monthly.md
     - name: Weekly activities
-      href: mda-ops-guide-weekly.md
+      href: ops-guide/mda-ops-guide-weekly.md
     - name: Daily activities
-      href: mda-ops-guide-daily.md
+      href: ops-guide/mda-ops-guide-daily.md
     - name: Ad-hoc activities
-      href: mda-ops-guide-ad-hoc.md
+      href: ops-guide/mda-ops-guide-ad-hoc.md
   - name: Attest your app
     href: attest-your-app.md
   - name: Common policies
