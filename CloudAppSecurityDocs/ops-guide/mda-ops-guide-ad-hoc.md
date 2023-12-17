@@ -21,8 +21,6 @@ Monthly activities can be performed more frequently or as needed, depending on y
 
 If you're experiencing issues with a cloud service, we recommend checking service health updates to determine whether it's a known issue, with a resolution in progress, before you call support or spend time troubleshooting.
 
-<!--why do this proactively monthly? i think we're missing something here-->
-
 ## Run advanced hunting queries
 
 **Where**: In the Microsoft Defender XDR Portal, select **Hunting > Advanced hunting** and query for Defender for Cloud Apps data.
@@ -35,8 +33,7 @@ Advanced hunting is a unified tool that allows you to hunt for threats across Mi
 
 The following sample queries are useful when querying for Defender for Cloud Apps data:
 
-<!-- we need better headings-->
-## Search for *Office - FileDownloaded Events* records
+### Search for *Office - FileDownloaded Events* records
 
 ```kusto
 CloudAppEvents
@@ -45,7 +42,7 @@ CloudAppEvents
 | project Timestamp,AccountObjectId,ActionType,Application,FileName,Site,FileLabel,SiteLabel
 ```
 
-## Search for *Office - MailItemsAccessed Details* records
+### Search for *Office - MailItemsAccessed Details* records
 
 ```kusto
 CloudAppEvents
@@ -59,7 +56,7 @@ CloudAppEvents
 | sort by Timestamp desc
 ```
 
-## Search for *Extract activity objects* records
+### Search for *Extract activity objects* records
 
 ```kusto
 CloudAppEvents
@@ -68,7 +65,7 @@ CloudAppEvents
 | evaluate bag_unpack(ActivityObjects)
 ```
 
-## Search for *AAD - Add to Role* records
+### Search for *AAD - Add to Role* records
 
 ```kusto
 CloudAppEvents
@@ -78,7 +75,7 @@ CloudAppEvents
 | project Timestamp,Type,ActionType,RoleName,UserAddedName,UserAddedId,AccountId,Account DisplayName
 ```
 
-## Search for *AAD - Group Adds* records
+### Search for *AAD - Group Adds* records
 
 
 ```kusto
@@ -141,8 +138,6 @@ We recommend using a Cloud Discovery executive report to get an overview of Shad
 For more information, see [Generate Cloud Discovery executive report](../discovered-apps.md#generate-cloud-discovery-executive-report).
 
 ## Generate a cloud discovery snapshot report
-
-<!-- why is this in the operations guide? also i think we need more exact instructions?-->
 
 **Where**: In the Microsoft Defender XDR Portal, select **Cloud apps > Cloud discovery > Dashboard > Actions**
 

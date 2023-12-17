@@ -406,12 +406,12 @@ items:
     items:
     - name: Operations guide overview
       href: ops-guide/mda-ops-guide.md
-    - name: Monthly activities
-      href: ops-guide/mda-ops-guide-monthly.md
-    - name: Weekly activities
-      href: ops-guide/mda-ops-guide-weekly.md
     - name: Daily activities
       href: ops-guide/mda-ops-guide-daily.md
+    - name: Weekly activities
+      href: ops-guide/mda-ops-guide-weekly.md
+    - name: Monthly activities
+      href: ops-guide/mda-ops-guide-monthly.md
     - name: Ad-hoc activities
       href: ops-guide/mda-ops-guide-ad-hoc.md
   - name: Attest your app
