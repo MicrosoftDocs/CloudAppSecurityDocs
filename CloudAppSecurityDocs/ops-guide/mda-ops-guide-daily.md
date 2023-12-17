@@ -19,7 +19,7 @@ Alerts and incidents are two of the most important items your security operation
 
 ### Triage your incidents from Microsoft Defender XDR
 
-**Where**: In Microsoft Defender XDR, select **Incidents and alerts**
+**Where**: In Microsoft Defender XDR, select **Incidents & alerts**
 
 **Persona**: SOC analysts
 

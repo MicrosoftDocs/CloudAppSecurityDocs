@@ -13,7 +13,7 @@ Monthly activities can be performed more frequently or as needed, depending on y
 
 ## Review policy assessments
 
-**Where**: In the Microsoft Defender XDR Portal, select **Cloud apps > Policy management**
+**Where**: In the Microsoft Defender XDR Portal, select **Cloud apps > Policies > Policy management**
 
 **Persona**: Security and Compliance administrators
 
@@ -29,6 +29,8 @@ Review the policies and make any necessary updates to ensure they are still appr
     1. Verify why each alert displayed isn't addressed.
     1. If alerts are benign, dismiss them and adjust policies as needed.
 
+For more information, see [Control cloud apps with policies](../control-cloud-apps-with-policies.md).
+
 ## Review activity logs
 
 **Where**: In the Microsoft Defender XDR Portal, select **Cloud apps > Activity log**
@@ -37,9 +39,11 @@ Review the policies and make any necessary updates to ensure they are still appr
 
 You'll frequently review activity logs in relation to alerts and as part of threat investigations. We recommend revisiting the Activity log monthly to check for repeated activities by the same entity, such as multiple searches or sign-ins by the same user.
 
-1. Pivot results by activity type, such as failed sign-ins, or deleting or assigning privileges. 
+1. Pivot results by activity type, such as failed sign-ins, or deleting or assigning privileges.
 1. Narrow down activity to an app or a user.
 1. Use the results to create a new policy to help you monitor more closely and respond to potential threats.
+
+For more information, see [Activity queries](../activity-filters-queries.md#activity-queries).
 
 ## Related content
 
