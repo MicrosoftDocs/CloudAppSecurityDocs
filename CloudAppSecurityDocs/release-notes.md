@@ -25,11 +25,11 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## December 2023
 
-### SSPM support for more connected apps (Preview)
+### SSPM support for more connected apps
 
-Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to make sure you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application.
+Defender for Cloud Apps provides you with security recommendations for your SaaS applications to help you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application.
 
-Defender for Cloud Apps has now enhanced its SSPM support by including the following apps:
+Defender for Cloud Apps has now enhanced its SSPM support by including the following apps: (Preview)
 
 - [Atlassian](protect-atlassian.md)
 - [Dropbox](protect-dropbox.md)
@@ -37,7 +37,16 @@ Defender for Cloud Apps has now enhanced its SSPM support by including the follo
 - [Workplace](protect-workplace.md)
 - [Zendesk](protect-zendesk.md)
 
-For more information, see [SaaS security posture management (SSPM)](security-saas.md) and [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility).
+SSPM is also now supported for [Google Workspace](protect-google-workspace.md) in General Availability.
+
+> [!IMPORTANT]
+> Depending on your configurations, Microsoft Defender XDR might take automatic actions based on Secure score recommendations.
+
+For more information, see:
+
+- [SaaS security posture management (SSPM)](security-saas.md)
+- [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
 
 ## November 2023
 

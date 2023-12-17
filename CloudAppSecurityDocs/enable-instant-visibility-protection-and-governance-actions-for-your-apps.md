@@ -91,7 +91,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | [Egnyte](protect-egnyte.md) | | | | |
 | [GitHub](protect-github.md)              |                                      | ✔                         |                           | ✔|
 | [GCP](protect-gcp.md)                 | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
-| [Google  Workspace](protect-google-workspace.md) | ✔                                    | ✔                         | ✔                         |Preview|
+| [Google  Workspace](protect-google-workspace.md) | ✔                                    | ✔                         | ✔                         |✔|
 | [NetDocuments](protect-netdocuments.md)  |  |  |  | Preview |
 | [Microsoft 365](protect-office-365.md)      | ✔                                    | ✔                         | ✔                         | ✔                 |
 | [Okta](protect-okta.md)              |                                      | Not applicable            | Not applicable            | ✔|
