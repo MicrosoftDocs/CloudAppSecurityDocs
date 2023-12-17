@@ -128,13 +128,10 @@ For more information, see:
 
 ### Check app governance overview page 
 
-<!--didn't this move?-->
-
 **Where**: In the Microsoft Defender XDR Portal, select:
 
 - **Incidents & alerts**
-
-- **Cloud apps > App governance > Overview tab**
+- **Cloud apps > App governance > Overview**
 
 **Persona**: SOC analysts and Security administrator
 
@@ -149,17 +146,24 @@ We recommend that you run a quick, daily assessment of the compliance posture of
 
 Based on the data you review, you might want to create new or adjust app governance policies.
 
+For more information, see:
+
+- [View and manage incidents and alerts](/microsoft-365/security/defender/mto-incidents-alerts)
+- [View your app details with app governance](../app-governance-visibility-insights-view-apps.md)
+- [Create app policies in app governance](../app-governance-app-policies-create.md).
+
 ### Review OAuth app data
 
 **Where**: In the Microsoft Defender XDR Portal, select:
 
 - **Incidents & alerts**
-- **Cloud apps > App governance > Apps**
+- **Cloud apps > App governance > Apps** <!--should this be Azure AD?-->
 
 We recommend that you check your list of OAuth-enabled apps daily, together with relevant app metadata and usage data. Select an app to view deeper insights and information.
 
 For more information, see:
 
+- [View and manage incidents and alerts](/microsoft-365/security/defender/mto-incidents-alerts)
 - [View your app details with app governance](../app-governance-visibility-insights-view-apps.md)
 - [Getting detailed information on an app](../app-governance-visibility-insights-view-apps.md#getting-detailed-information-on-an-app)
 
@@ -195,6 +199,7 @@ By default, there is no CAAP access or session policies deployed, and therefore 
 
 For more information, see:
 
+- [View and manage incidents and alerts](/microsoft-365/security/defender/mto-incidents-alerts)
 - [Pre-onboarded apps](../proxy-intro-aad.md#pre-onboarded-apps)
 - [Access policies](../access-policy-aad.md)
 - [Session policies](../session-policy-aad.md)
@@ -207,8 +212,6 @@ We recommend that you review conditional access app control alerts daily, as wel
 
 For more information, see [Review alerts and incidents](#review-alerts-and-incidents)
 
-<!--needs more links for activity logs, also validate-->
-
 ## Review shadow IT - cloud discovery
 
 **Where**: In the Microsoft Defender XDR Portal, select:
@@ -217,7 +220,6 @@ For more information, see [Review alerts and incidents](#review-alerts-and-incid
 - **Cloud apps > Cloud discovery / Cloud app catalog**
 - **Cloud apps > Policies > Policy Management > Shadow IT**
 
-<!--all 3? isn't this confusing?-->
 **Persona**: Security administrators
 
 Defender for cloud apps analyzes your traffic logs against the cloud apps catalog of over 31,000 cloud apps. Apps are ranked and scored based on more than 90 risk factors to provide ongoing visibility into cloud use, Shadow IT, and the risks that Shadow IT poses into your organization.
@@ -231,6 +233,7 @@ Create app discovery policies to start alerting and tagging newly discovered app
 
 For more information, see:
 
+- [View and manage incidents and alerts](/microsoft-365/security/defender/mto-incidents-alerts)
 - [Cloud Discovery policies](../policies-cloud-discovery.md)
 - [Create Cloud Discovery policies](../cloud-discovery-policies.md)
 - [Set up Cloud Discovery](../set-up-cloud-discovery.md)
@@ -282,9 +285,7 @@ For more information, see:
 
 - **Incidents & alerts**
 - **Cloud apps > Files**
-- **Cloud apps > Policies > Policy Management > Information Protection**
-
-<!--why all 3? not sure this is so clear-->
+- **Cloud apps > Policies > Policy Management > Information protection**
 
 **Persona**: Security and Compliance administrators, SOC analysts
 
@@ -299,7 +300,10 @@ In addition to [triaging alerts and incidents](#review-alerts-and-incidents), we
 
 Use the results of these queries to adjust existing file policies or create new policies.
 
-For more information, see [Information protection policies](../policies-information-protection.md).
+For more information, see:
+
+- [View and manage incidents and alerts](/microsoft-365/security/defender/mto-incidents-alerts)
+- [Information protection policies](../policies-information-protection.md).
 
 ## Related content
 

@@ -16,8 +16,8 @@ Monthly activities can be performed more frequently or as needed, depending on y
 **Where**: Check the following locations:
 
 - In the Microsoft 365 admin center, select **Health > Service health**
-- Microsoft 365 Service health status (office365.com) <!--was this a link?-->
-- Twitter: @MSFT365status
+- [Microsoft 365 Service health status](https://status.office365.com/)
+- X: [https://twitter.com/MSFT365status](https://twitter.com/MSFT365status)
 
 If you're experiencing issues with a cloud service, we recommend checking service health updates to determine whether it's a known issue, with a resolution in progress, before you call support or spend time troubleshooting.
 
@@ -25,11 +25,11 @@ If you're experiencing issues with a cloud service, we recommend checking servic
 
 ## Run advanced hunting queries
 
-**Where**: In the Microsoft Defender XDR Portal, select **Hunting > Advanced hunting** and query for ``
+**Where**: In the Microsoft Defender XDR Portal, select **Hunting > Advanced hunting** and query for Defender for Cloud Apps data.
 
-**Persona**: SOC analysts 
+**Persona**: SOC analysts
 
-Similar to reviewing activity logs, advanced hunting can be used as a scheduled activity, using custom detections or ad-hoc queries to proactively hunt for threats. 
+Similar to reviewing activity logs, advanced hunting can be used as a scheduled activity, using custom detections or ad-hoc queries to proactively hunt for threats.
 
 Advanced hunting is a unified tool that allows you to hunt for threats across Microsoft Defender XDR. We recommend that you save frequently used queries for faster manual threat hunting and remediation. 
 
@@ -93,7 +93,7 @@ AccountDisplayName,GroupName
 
 ## Review file quarantines
 
-**Where**: In the Microsoft Defender XDR Portal, select **Cloud apps > Files**. Query for items where **Quarrantined** = **True**.
+**Where**: In the Microsoft Defender XDR Portal, select **Cloud apps > Files**. Query for items where **Quarantined** = **True**.
 
 **Persona**: Compliance administrators
 
@@ -101,7 +101,7 @@ Use Defender for Cloud Apps to detect unwanted files that are stored in your clo
 
 Files in Admin quarantine might be reviewed as part of an alert investigation, and you might be required to manage quarantined files for governance and compliance reasons.
 
-<!--More information: Understand how quarantine works-->
+For more information, see [Understand how quarantine works](../use-case-admin-quarantine.md#understand-how-quarantine-works).
 
 ## Review app risk scores
 
@@ -113,7 +113,7 @@ The cloud app catalog rates risk for your cloud apps based on regulatory certifi
 
 After checking an app's risk score, you might want to submit a request to change the score, or customize the risk score in **Cloud Discovery > Score metrics**.
 
-<!--More information: Working with the risk score-->
+For more information, see [Find your cloud app and calculate risk scores](../risk-score.md).
 
 ## Delete cloud discovery data
 
@@ -127,7 +127,7 @@ We recommend deleting cloud discovery data in the following scenarios:
 - When you want a new custom data view to include events in all log file data, including older files. Custom data views only apply to new data available from that point onward, so we recommend deleting any old data and uploading it again to include it in custom data views.
 - When many users or IP addresses started working again after being offline for some time, delete old data to prevent the new activity from being identified as anomalous, with false positive violations.
 
-<!--More information: Deleting Cloud Discovery data-->
+For more information, see [Deleting Cloud Discovery data](../discovered-apps.md#deleting-cloud-discovery-data).
 
 
 ## Generate a cloud discovery executive report
@@ -138,7 +138,7 @@ We recommend deleting cloud discovery data in the following scenarios:
 
 We recommend using a Cloud Discovery executive report to get an overview of Shadow IT used across your organization. Cloud Discovery executive reports identify the top potential risks and help you plan a workflow to mitigate and manage risks until they're resolved.
 
-<!--More information: Generate Cloud Discovery executive report-->
+For more information, see [Generate Cloud Discovery executive report](../discovered-apps.md#generate-cloud-discovery-executive-report).
 
 ## Generate a cloud discovery snapshot report
 
@@ -150,9 +150,8 @@ We recommend using a Cloud Discovery executive report to get an overview of Shad
 
 If you don't have a log yet and want to see a sample of what one might look like, download a sample log file.
 
-<!--More information: Create snapshot Cloud Discovery report-->
+For more information, see [Create snapshot Cloud Discovery reports](../create-snapshot-cloud-discovery-reports.md).
 
 ## Related content
 
 [Microsoft Defender for Cloud Apps operational guide](mda-ops-guide.md)
-

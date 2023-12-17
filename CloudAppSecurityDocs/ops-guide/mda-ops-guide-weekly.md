@@ -41,6 +41,13 @@ We also recommend reviewing the following settings to ensure that they're correc
 |**Automatic log upload**     | **Settings > Cloud apps > Cloud Discovery > Automatic log upload**        |
 |**API tokens**     |  **Settings > Cloud apps > System > API tokens**       |
 
+For more information, see:
+
+- [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](../enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
+- [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](../proxy-intro-aad.md)
+- [Configure automatic log upload for continuous reports](../discovery-docker.md)
+- [Managing API tokens](../api-authentication.md)
+
 ## Track new changes in Microsoft Defender XDR
 
 **Where**: In the Microsoft 365 admin center, select **Health > Message center**
