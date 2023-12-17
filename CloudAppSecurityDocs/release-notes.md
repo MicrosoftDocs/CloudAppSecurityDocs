@@ -37,10 +37,10 @@ Defender for Cloud Apps has now enhanced its SSPM support by including the follo
 - [Workplace](protect-workplace.md)
 - [Zendesk](protect-zendesk.md)
 
-> [!NOTE]
-> If you already have a connector to one of these apps, your score in Secure score is updated accordingly.
-
 SSPM is also now supported for [Google Workspace](protect-google-workspace.md) in General Availability.
+
+> [!NOTE]
+> If you already have a connector to one of these apps, your score in Secure score might automatically update accordingly.
 
 For more information, see:
 
