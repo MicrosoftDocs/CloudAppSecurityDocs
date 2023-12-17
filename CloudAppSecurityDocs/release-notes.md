@@ -37,10 +37,10 @@ Defender for Cloud Apps has now enhanced its SSPM support by including the follo
 - [Workplace](protect-workplace.md)
 - [Zendesk](protect-zendesk.md)
 
-SSPM is also now supported for [Google Workspace](protect-google-workspace.md) in General Availability.
+> [!NOTE]
+> If you already have a connector to one of these apps, your score in Secure score is updated accordingly.
 
-> [!IMPORTANT]
-> Depending on your configurations, Microsoft Defender XDR might take automatic actions based on Secure score recommendations.
+SSPM is also now supported for [Google Workspace](protect-google-workspace.md) in General Availability.
 
 For more information, see:
 
