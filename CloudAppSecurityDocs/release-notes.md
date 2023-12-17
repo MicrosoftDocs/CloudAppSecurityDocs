@@ -23,6 +23,17 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## January 2024
+
+### Automatic redirection for the classic Defender for Cloud APps portal (Preview)
+
+The classic Microsoft Defender for Cloud Apps portal experience and functionality have been converged into the Microsoft Defender XDR Portal. As of January 9th, 2024, customers using the classic Defender for Cloud Apps portal with Preview features are automatically redirected to Microsoft Defender XDR, with no option to revert back to the classic portal.
+
+For more information, see:
+
+- [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps)
+- [Preview features in Microsoft Defender for Cloud Apps](preview-features.md)
+
 ## November 2023
 
 ### Defender for Cloud Apps application certificate rotation
