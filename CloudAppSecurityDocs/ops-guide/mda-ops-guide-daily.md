@@ -1,7 +1,7 @@
 ---
 title: Daily operational guide - Microsoft Defender for Cloud Apps
 description: This article provides daily operational recommendations to help security operations teams to plan and run security activities.
-ms.date: 12/13/2023
+ms.date: 12/17/2023
 ms.topic: reference
 ---
 
@@ -83,106 +83,131 @@ For more information, see:
 
 ## Review threat detection data
 
-Cloud apps threat detection is one of the main MDA pillars, it’s where SOC analystss 
-focus their daily activities, identifying high-risk users showing abnormal behavior. MDA Threat 
-Detection benefits from Microsoft threat intelligence and security research data. The alerts are 
-available in M365D and should be triaged as part of the established process based on 
-recommendations in “Incidents and Alerts” chapter above. 
-**Persona**: Security administrators and SOC analystss 
-**Where**: In the Microsoft Defender XDR Portal, select Incidents & Alerts 
-In the Microsoft Defender XDR Portal, select Cloud apps > Policies > Policy management > Threat Detection
-In the Microsoft Defender XDR Portal, select Cloud apps > Oauth apps 
-There are three main types of Threat Detection policies in MDA Security admins and SOC analystss 
-when dealing with alerts will deal with:
-• Activity policies
-• Anomaly detection policies
-• OAuth Policies and App governance policies (depicted in the next chapter) 
-**Persona**: Security administrator 
-Creation and prerequisites of Threat protection policies
+**Where**: In the Microsoft Defender XDR Portal, select:
+
+- **Incidents & alerts**
+- **Cloud apps > Policies > Policy management > Threat Detection**
+- **Cloud apps > Oauth apps**
+
+**Persona**: Security administrators and SOC analysts
+
+Cloud app threat detection is where many SOC analysts focus their daily activities, identifying high-risk users who showing abnormal behavior.
+
+Defender for Cloud Apps threat detection uses Microsoft threat intelligence and security research data. Alerts are available in Microsoft Defender XDR and should be [triaged regularly](#review-alerts-and-incidents).
+
+Whe dealing with alerts, security administrators and SOC analysts handle the following main types of threat detection policies:
+
+- [Activity policies](../user-activity-policies.md)
+- [Anomaly detection policies](../anomaly-detection-policy.md)
+- [OAuth Policies](../app-permission-policy.md) and [App governance policies](../app-governance-manage-app-governance.md) 
+
+**Persona**: Security administrator
+
+Make sure to create the threat protection policies needed by your organization, including handling any prerequisites.
 
 ## Review application governance
 
-**Where**: In the Microsoft Defender XDR Portal, select Incidents & Alerts 
-In the Microsoft Defender XDR Portal, select Incidents & Alerts / App governance
-App governance offers in-depth visibility and control over OAuth apps registered on 
-Azure Active Directory and helps to combat increasingly sophisticated campaigns that exploit the 
-apps deployed on-premises and cloud infrastructures, establishing a starting point for privilege 
-escalation, lateral movement, and exfiltration of data. 
-App governance is part of MDA and alerts are also part of M365D Incidents and alerts and should be 
-reviewed as described in the Alerts section. It uses machine learning-based detection algorithms to 
-detect anomalous app behaviour in your Microsoft 365 tenant and generates alerts that you can see, 
-investigate, and resolve. Beyond this built-in detection capability, you can use a set of default policy 
-templates or create your own app policies that generate other alerts. 
-7
+**Where**: In the Microsoft Defender XDR Portal, select:
+
+- **Incidents & alerts**
+- **Incidents & alerts / App governance**
+
 **Persona**: SOC analysts
-Investigate threat detection alerts and corresponding MITRE ATT&CK tactics
-How to Investigate pre-defined app policy alerts
-Investigate and remediate risky OAuth apps
+
+App governance offers in-depth visibility and control over OAuth apps. App governance helps to combat increasingly sophisticated campaigns that exploit the apps deployed on-premises and in cloud infrastructures, establishing a starting point for privilege escalation, lateral movement, and data exfiltration.
+
+App governance is provided together with Defender for Cloud Apps. Alerts are also available in Microsoft Defender XDR, and should be [triaged regularly](#review-alerts-and-incidents). 
+
+For more information, see:
+
+- [Discovery alerts](../app-governance-anomaly-detection-alerts.md#discovery-alerts)
+- [Investigate predefined app policy alerts](../app-governance-investigate-predefined-policies.md)
+- [Investigate and remediate risky OAuth apps](../investigate-risky-oauth.md)
+
+<!--App governance uses machine learning-based detection algorithms to detect anomalous app behavior in your Microsoft 365 tenant and generates alerts that you can see, investigate, and resolve. Beyond this built-in detection capability, you can use a set of default policy templates or create your own app policies that generate other alerts. ISN'T THIS TRUE FOR ALL OF THEM?--> 
 
 ### Check app governance overview page 
 
 <!--didn't this move?-->
 
-**Where**: In the Microsoft Defender XDR Portal, select Incidents & Alerts 
-In the Microsoft Defender XDR Portal, select Cloud apps > App governance > Overview tab 
-Quick assess the compliance posture of the apps and incidents in the tenant.
-**Persona**: SOC analysts and Security administrator 
-List of checks: 
-• number of overprivileged, highly privileged apps
-• apps with unverified publisher 
-• data usage for various services and resources that were accessed using Graph API
-• number of apps that accessed data with the most common sensitivity labels
-• number of apps that accessed data with and without sensitivity labels across Microsoft 365 
-services
-• overview of app governance related incidents 
-Based on reviewed data create new or adjust app governance policies if required. 
+**Where**: In the Microsoft Defender XDR Portal, select:
+
+- **Incidents & alerts**
+
+- **Cloud apps > App governance > Overview tab**
+
+**Persona**: SOC analysts and Security administrator
+
+We recommend that you run a quick, daily assessment of the compliance posture of your apps and incidents. For example, check the following details:
+
+- The number of over-privileged or highly privileged apps
+- Apps with an unverified publisher
+- Data usage for services and resources that were accessed using Graph API
+- The number of apps that accessed data with the most common sensitivity labels
+- The number of apps that accessed data with and without sensitivity labels across Microsoft 365 services
+- An overview of app governance-related incidents
+
+Based on the data you review, you might want to create new or adjust app governance policies.
 
 ### Review OAuth app data
 
-**Where**: In the Microsoft Defender XDR Portal, select Incidents & Alerts 
-In the Microsoft Defender XDR Portal, select Cloud apps > App governance > Apps
-Quickly gain deep insights into the Microsoft 365 OAuth apps in your tenant. 
-Examples:
-• A list of OAuth-enabled apps in the tenant, together with relevant app metadata and usage 
-data.
-• App details with deeper insights and information by selecting an app in the list.
-For more information please go to: 
-8
-View your apps
-Obtain detailed information on an app
+**Where**: In the Microsoft Defender XDR Portal, select:
+
+- **Incidents & alerts**
+- **Cloud apps > App governance > Apps**
+
+We recommend that you check your list of OAuth-enabled apps daily, together with relevant app metadata and usage data. Select an app to view deeper insights and information.
+
+For more information, see:
+
+- [View your app details with app governance](../app-governance-visibility-insights-view-apps.md)
+- [Getting detailed information on an app](../app-governance-visibility-insights-view-apps.md#getting-detailed-information-on-an-app)
 
 ### Create and manage app governance policies
 
-**Where**: In the Microsoft Defender XDR Portal, select Cloud apps > App governance > Policies 
-Get in-depth visibility and control over OAuth apps registered on Azure Active 
-Directory. Generate alerts based on machine learning algorithms
-**Persona**: Security administrator
-Create app policies in app governance
-Manage app policies
+**Where**: In the Microsoft Defender XDR Portal, select **Cloud apps > App governance > Policies**
+
+**Persona**: Security administrators
+
+We recommend that you check your OAuth apps daily for regular in-depth visibility and control. Generate alerts based on machine learning algorithms, and create app policies for app governance.
+
+For more information, see:
+
+- [Create app policies in app governance](../app-governance-app-policies-create.md)
+- [Manage app policies](../app-governance-app-policies-manage.md)
 
 ## Review conditional access app control
 
-**Where**: In the Microsoft Defender XDR Portal, select Incidents & Alerts 
-In the Microsoft Defender XDR Portal, select Cloud apps > Policies > Policy Management > Conditional access
-Config: M365 Defender portal> Settings > Cloud apps > Conditional Access App Control 
-Conditional Access App Control (CAAP) enables user app access and sessions to be 
-monitored and controlled in real time based on access and session policies. Generated alerts are
-available in M365D portal and should be triaged as described in the alerts section.
-**Persona**: Security administrator 
-Out of the box there is no CAAP access nor session policies deployed therefore no related alerts 
-available. Any web app can be onboarded to work with access and session controls, there are 
-number of popular apps that are pre-onboarded, once onboarding completed and first traffic 
-generate, you should be able to create first session and access policies suitable for your environment. 
-• Access policies
-• Session policies
-Best practices: 
-• Block and protect download of sensitive data to unmanaged or risky devices
-• Secure collaboration with external users by enforcing real-time session controls
-**Persona**: SOC administrator 
-9
-• Review alerts in M365D
-• Review Activity log – filter out by source, Access control and Session control 
+**Where**: In the Microsoft Defender XDR Portal, select:
 
+- **Incidents & alerts**
+- **Cloud apps > Policies > Policy Management > Conditional access**
+
+To configure conditional access app control, select **Settings > Cloud apps > Conditional Access App Control**
+
+**Persona**: Security administrator 
+
+Conditional access app control (CAAP) provides you with the ability to monitor and control user app access and sessions in real time, based on access and session policies. 
+
+Generated alerts are available in Microsoft Defender XDR and should be [triaged regularly](#review-alerts-and-incidents).
+
+By default, there is no CAAP access or session policies deployed, and therefore no related alerts available. You can onboard any web app to work with access and session controls, and a number of popular apps that are pre-onboarded. We recommend that you create session and access policies as needed for your organization.
+
+For more information, see:
+
+- [Pre-onboarded apps](../proxy-intro-aad.md#pre-onboarded-apps)
+- [Access policies](../access-policy-aad.md)
+- [Session policies](../session-policy-aad.md)
+- [Block and protect download of sensitive data to unmanaged or risky devices](../best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)
+- [Secure collaboration with external users by enforcing real-time session controls](../best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)
+
+**Persona**: SOC administrator
+
+We recommend that you review conditional access app control alerts daily, as well as the activity log. Filter activity logs by source, access control, and session control.
+
+For more information, see [Review alerts and incidents](#review-alerts-and-incidents)
+
+<!--needs more links for activity logs, also validate-->
 
 ## Review shadow IT - cloud discovery
 
@@ -201,20 +226,21 @@ Alerts related to cloud discovery are available in Microsoft Defender XDR and sh
 
 Create app discovery policies to start alerting and tagging newly discovered apps based on certain conditions, like risk scores, categories, and app behaviors like daily traffic and downloaded data.
 
+> [!TIP]
+> We recommend that you integrate Defender for Cloud Apps with Microsoft Defender for Endpoint to discover cloud apps beyond your corporate network or secure gateways and apply governance actions on your endpoints.
+
 For more information, see:
 
 - [Cloud Discovery policies](../policies-cloud-discovery.md)
 - [Create Cloud Discovery policies](../cloud-discovery-policies.md)
 - [Set up Cloud Discovery](../set-up-cloud-discovery.md)
+- [Discover and assess cloud apps](../best-practices.md#discover-and-assess-cloud-apps)
 
-### MDE Integration: We are recommending enabling Microsoft Defender for Endpoint integration to
-allow you to use Cloud Discovery beyond your corporate network or secure gateways and ability to 
-apply governance actions seamlessly on the endpoints (see govern discovered apps chapter). 
-Best practices: MDE Integration and MDA Shadow IT Discovery
-**Persona**: Security and Compliance administrators, SOC analysts 
-Examples: How to use discovered App Filters and App Queries
-Discovered app filters and queries in Microsoft Defender for Cloud Apps - useful when there are large 
-numbers of discovered apps. 
+**Persona**: Security and Compliance administrators, SOC analysts
+
+When you have large numbers of discovered apps, you might want to use the filtering options to learn more about your discovered apps. 
+
+For more information, see [Discovered app filters and queries in Microsoft Defender for Cloud Apps](../discovered-app-queries.md).
 
 ## Review the cloud discovery dashboard
 
