@@ -5,8 +5,7 @@ ms.date: 07/17/2023
 ms.topic: article
 ---
 
-# How Defender for Cloud Apps helps protect your Asana environment (Preview)
-
+# How Defender for Cloud Apps helps protect your Asana environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
