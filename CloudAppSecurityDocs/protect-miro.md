@@ -5,7 +5,7 @@ ms.date: 07/17/2023
 ms.topic: article
 ---
 
-# How Defender for Cloud Apps helps protect your Miro environment (Preview)
+# How Defender for Cloud Apps helps protect your Miro environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
