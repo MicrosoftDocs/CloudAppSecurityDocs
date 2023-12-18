@@ -196,7 +196,7 @@ items:
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Custom connectors with the open app connector platform
       href: ./connector-platform.md
-    - name: Asana (Preview)
+    - name: Asana
       href: protect-asana.md
     - name: Atlassian
       href: protect-atlassian.md
@@ -220,7 +220,7 @@ items:
       href: protect-gcp.md
     - name: Google Workspace
       href: protect-google-workspace.md
-    - name: Miro (Preview)
+    - name: Miro
       href: protect-miro.md
     - name: NetDocuments
       href: protect-netdocuments.md
