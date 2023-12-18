@@ -68,6 +68,8 @@ items:
     items:
     - name: Protect connected apps
       href: protect-connected-apps.md
+    - name: Protect Asana
+      href: protect-asana.md
     - name: Protect Atlassian
       href: protect-atlassian.md
     - name: Protect AWS
@@ -92,6 +94,8 @@ items:
       href: protect-netdocuments.md
     - name: Protect Microsoft 365
       href: protect-office-365.md
+    - name: Protect Miro
+      href: protect-miro.md
     - name: Protect Okta
       href: protect-okta.md
     - name: Protect OneLogin
@@ -100,12 +104,8 @@ items:
       href: protect-salesforce.md
     - name: Protect ServiceNow
       href: protect-servicenow.md
-    - name: Protect Asana (Preview)
-      href: protect-asana.md
     - name: Protect Slack
       href: protect-slack.md
-    - name: Protect Miro (Preview)
-      href: protect-miro.md
     - name: Protect Workplace (Preview)
       href: protect-workplace.md
     - name: Protect Smartsheet
@@ -248,7 +248,7 @@ items:
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Custom connectors with the open app connector platform
       href: ./connector-platform.md
-    - name: Connect Asana (Preview)
+    - name: Connect Asana
       href: ./connect-asana.md
     - name: Connect Atlassian
       href: connect-atlassian.md

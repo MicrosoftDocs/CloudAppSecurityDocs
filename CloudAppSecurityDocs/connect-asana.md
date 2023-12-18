@@ -5,7 +5,7 @@ ms.date: 07/17/2023
 ms.topic: how-to
 ---
 
-# Connect Asana to Microsoft Defender for Cloud Apps (Preview)
+# Connect Asana to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
