@@ -18,7 +18,7 @@ The breadth of support for each app relies on the richness of its APIs. Use the 
 - [Protect AWS](protect-aws.md)
 - [Protect Azure](protect-azure.md)
 - [Protect Box](protect-box.md)
-- [Protect DocuSign (Preview)](protect-docusign.md)
+- [Protect DocuSign](protect-docusign.md)
 - [Protect Dropbox](protect-dropbox.md)
 - [Protect Egnyte](protect-egnyte.md)
 - [Protect GCP](protect-gcp.md)
