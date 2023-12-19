@@ -103,7 +103,7 @@ Newer versions of Java can cause problems with the SIEM agent. If you've install
     Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2004%20-%20xsign.crt" -OutFile "$env:temp\azuretls04.crt"
     Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2007%20-%20xsign.crt" -OutFile "$env:temp\azuretls07.crt"
     Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2008%20-%20xsign.crt" -OutFile "$env:temp\azuretls08.crt"
-    ```
+```
 
 
 ```bash
