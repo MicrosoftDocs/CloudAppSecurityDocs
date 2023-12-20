@@ -10,6 +10,8 @@ ms.topic: how-to
 
 This article describes how to configure advanced options for Defender for Cloud Apps cloud discovery log collectors.
 
+Defender for Cloud Apps cloud discovery continues to focus on base firewall formats. Changes to the logs being forwarded at the firewall level may not continue to work, or may cause issues with parsing. If you find errors of this sort, we recommend that you continue to use the base firewall format, or use options with the custom log collector. For more information, see [Use a custom log parser](custom-log-parser.md).
+
 
 ## Modify the log collector FTP configuration
 
