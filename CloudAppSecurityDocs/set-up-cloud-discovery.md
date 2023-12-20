@@ -1,7 +1,7 @@
 ---
-title: Set up Cloud Discovery 
-description: This article describes the setup procedure for getting Cloud Discovery working.
-ms.date: 01/29/2023
+title: Set up cloud discovery | Microsoft Defender for Cloud Apps
+description: This article describes the setup procedure for Microsoft Defender for Cloud Apps cloud discovery.
+ms.date: 12/20/2023
 ms.topic: how-to
 ---
 # Set up Cloud Discovery
@@ -93,7 +93,7 @@ The process of generating a risk assessment consists of the following steps. The
 If your log isn't supported, or if you're using a newly released log format from one of the supported data sources and the upload is failing, select **Other** as the **Data source** and specify the appliance and log you're trying to upload. Your log will be reviewed by the Defender for Cloud Apps cloud analyst team and you'll be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
 
 > [!NOTE]
-> The following list of supported appliances may not work with newly released log formats. If you are using a newly released format and the upload is failing, [use a custom log parser](custom-log-parser.md) and if required, open a support case.
+> The following list of supported appliances may not work with newly released log formats. If you are using a newly released format and the upload is failing, [use a custom log parser](custom-log-parser.md) and if required, open a support case. If you open a support case, make sure to provide the relevant firewall documentation with your case.
 
 Data attributes (according to vendor documentation):
 
