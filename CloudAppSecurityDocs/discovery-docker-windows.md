@@ -14,19 +14,27 @@ You can configure automatic log upload for continuous reports in Defender for Cl
 
 - **Architecture specifications**:
 
-    |Specification  |Details  |
-    |---------|---------|
-    |**Operating system**     |  One of the following: <br>- Windows 10 (Fall creators update) <br>- Windows Sever version 1709+ (SAC) <br>- Windows Server 2019 (LTSC)      |
-    |**Disk space**     |   250 GB      |
-    |**CPU cores**     |   2      |
-    |**CPU architecture**     | Intel 64 and AMD 64        |
-    |**RAM**     |  4 GB       |
+    - **Operating system**: One of the following: 
 
-For a list of supported Docker architectures, see [Docker installation documentation](https://docs.docker.com/engine/install/).
+        - Windows 10 (Fall creators update)
 
-- Set your firewall as described in [Network requirements](network-requirements.md#log-collector)
+        - Windows Sever version 1709+ (SAC)
 
-- Virtualization on the operating system must be enabled with Hyper-V
+        - Windows Server 2019 (LTSC)
+
+    - **Disk space**: 250 GB 
+
+    - **CPU cores**:  2  
+
+    - **CPU architecture**:Intel 64 and AMD 64    
+
+    - **RAM**: 4 GB 
+
+    For a list of supported Docker architectures, see [Docker installation documentation](https://docs.docker.com/engine/install/).
+
+- **Set your firewall** as described in [Network requirements](network-requirements.md#log-collector)
+
+- **Virtualization** on the operating system must be enabled with Hyper-V
 
 > [!IMPORTANT]
 >
