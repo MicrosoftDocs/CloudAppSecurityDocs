@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 11/20/2023
+ms.date: 12/21/2023
 ms.topic: overview
 ---
 
@@ -22,6 +22,14 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
+
+## December 2023
+
+### Podman operating systems supported for automatic log collection
+
+Configure automatic log collection for continuous reporting with Defender for Cloud Apps. Automatic log collection is supported using a Docker container on various operating systems, which now include [Podman](https://docs.podman.io/en/latest/).
+
+For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md)<!-- and <xref to new procedure-->.
 
 ## November 2023
 
