@@ -68,6 +68,9 @@ Configure your firewall for reverse proxy using the settings relevant to your en
 
 For commercial customers, to enable Defender for Cloud Apps reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
+
+
+
 ```ini
 *.cas.ms
 *.mcas.ms
@@ -92,10 +95,12 @@ Additionally, the following IP addresses, used by our reverse proxy regions, sho
 
 For US Government GCC High customers, to enable Defender for Cloud Apps reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allowlist:
 
+
+
+
 ```ini
 *.mcas-gov.us
 *.admin-mcas-gov.us
-mcasproxy.azureedge.net
 ```
 
 Additionally, the following IP addresses, used by our reverse proxy regions, should be allowed for both inbound and outbound connections:
