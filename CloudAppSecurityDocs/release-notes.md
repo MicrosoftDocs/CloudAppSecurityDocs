@@ -25,11 +25,11 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## December 2023
 
-### Podman operating systems supported for automatic log collection
+### Podman supported for automatic log collection
 
-Configure automatic log collection for continuous reporting with Defender for Cloud Apps. Automatic log collection is supported using a Docker container on various operating systems, which now include [Podman](https://docs.podman.io/en/latest/).
+Configure automatic log collection for continuous reporting with Defender for Cloud Apps. Automatic log collection is supported using a Docker container on various operating systems, which now include [Podman](https://docs.podman.io/en/latest/) over Linux.
 
-For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md)<!-- and <xref to new procedure-->.
+For more information, see [Configure automatic log upload using Podman](discovery-docker-podman.md).
 
 ## November 2023
 

@@ -1,7 +1,7 @@
 ---
-title: Configure automatic log upload using on-premises Docker on Linux
+title: Configure automatic log upload using on-premises Docker on Linux | Microsoft Defender for Cloud Apps
 description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Linux in an on-premises server.
-ms.date: 01/29/2023
+ms.date: 12/21/2023
 ms.topic: how-to
 ---
 # Configure automatic log upload using on-premises Docker on Linux
@@ -14,7 +14,7 @@ You can configure automatic log upload for continuous reports in Defender for Cl
 
 * OS:
   * Ubuntu 14.04, 16.04, 18.04 and 20.04
-  * RHEL 7.2 or higher
+  * RHEL 7.2 - 8. Customers using RHEL 8 and higher must use [Podman](discovery-docker-podman.md) for automatic log collection.
   * CentOS 7.2 or higher
 
 * Disk space: 250 GB
