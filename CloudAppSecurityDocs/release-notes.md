@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 12/12/2023
+ms.date: 12/26/2023
 ms.topic: overview
 ---
 
@@ -24,6 +24,17 @@ For more information on what's new with other Microsoft Defender security produc
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## December 2023
+
+### Backlog period alignments for initial scans
+
+We've aligned the backlog period for initial scans after connecting a new app to Defender for Cloud Apps. The following app connectors all have an initial scan backlog period of seven days:
+
+- [Dropbox](protect-dropbox.md)
+- [Salesforce](protect-salesforce.md)
+- [ServiceNow ](protect-servicenow.md)
+- [Okta](protect-okta.md)
+
+For more information, see [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### SSPM support for more connected apps
 
