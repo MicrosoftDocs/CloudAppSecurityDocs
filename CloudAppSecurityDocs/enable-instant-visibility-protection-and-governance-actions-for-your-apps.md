@@ -103,7 +103,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | [Webex](protect-webex.md)             |                                      | Not applicable            | Not applicable            |             |
 | [Workday](protect-workday.md)           | Not supported by provider            | Not applicable            | Not applicable            |             |
 |[Workplace by Meta](protect-workplace.md)||||Preview|
-| [Zendesk](protect-zendesk.md)  |  |  |  |  |
+| [Zendesk](protect-zendesk.md)  |  |  |  | Preview |
 |  [Zoom](protect-zoom.md)   |  |  |  | Preview  |
 
 ### Information protection
