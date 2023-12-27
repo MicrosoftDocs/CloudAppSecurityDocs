@@ -1,7 +1,7 @@
 ---
 title: Protect your Okta environment | Microsoft Defender for Cloud Apps
 description: Learn how about connecting your Okta app to Defender for Cloud Apps using the API connector.
-ms.date: 12/06/2023
+ms.date: 12/26/2023
 ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your Okta environment
@@ -106,7 +106,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
-After connecting Okta, you'll receive events for 60 days prior to connection.
+After connecting Okta, you'll receive events for seven days prior to connection.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
