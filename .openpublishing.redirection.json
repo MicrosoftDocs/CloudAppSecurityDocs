@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "CloudAppSecurityDocs/working-with-cloud-discovery-data.md",
+            "redirect_url": "/defender-cloud-apps/discovered-apps",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "CloudAppSecurityDocs/use-case-ransomware.md",
+            "redirect_url": "/defender-cloud-apps/best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware",            ",
+            "redirect_document_id": false 
+        }, 
+        {
             "source_path": "CloudAppSecurityDocs/protect-connected-apps.md",
             "redirect_url": "/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps",
             "redirect_document_id": false
