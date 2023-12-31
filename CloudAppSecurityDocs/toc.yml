@@ -166,6 +166,8 @@ items:
         href: menlo-integration.md
       - name: Integrate with Open Systems
         href: open-systems-integration.md
+      - name: Work with discovery data
+        href: working-with-cloud-discovery-data.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
