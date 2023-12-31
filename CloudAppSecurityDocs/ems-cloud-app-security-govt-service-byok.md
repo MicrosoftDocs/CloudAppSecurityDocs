@@ -2,8 +2,8 @@
 title: Encrypt Defender for Cloud Apps data at rest with your own key
 description: This article provides instructions for using your own key to encrypt data at rest stored in Defender for Cloud Apps.
 ms.topic: conceptual
-ms.custom: has-azure-ad-ps-ref
-ms.date: 01/29/2023
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done 
+ms.date: 12/31/2023
 ---
 
 # Encrypt Defender for Cloud Apps data at rest with your own key (BYOK)
@@ -26,12 +26,12 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
 1. Open a PowerShell terminal and run the following commands:
 
     ``` Powershell
-    Connect-AzureAD
-    New-AzureADServicePrincipal -AppId 6a12de16-95c8-4e42-a451-7dbbc34634cd
-    Set-AzureADServicePrincipal -ObjectId <object_id> -AccountEnabled true
+    Connect-MgGraph
+    New-MgServicePrincipal -AppId 6a12de16-95c8-4e42-a451-7dbbc34634cd
+    Update-MgServicePrincipal -ObjectId <object_id> -AccountEnabled true
     ```
 
-    Where *<object_id>* is the object ID returned by the previous command (`New-AzureADServicePrincipal`).
+    Where *<object_id>* is the object ID returned by the previous command (`New-MgServicePrincipal`).
 
 > [!NOTE]
 >
