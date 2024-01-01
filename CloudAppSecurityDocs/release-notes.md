@@ -25,7 +25,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## January 2024
 
-### Automatic redirection for the classic Defender for Cloud APps portal (Preview)
+### Automatic redirection for the classic Defender for Cloud Apps portal (Preview)
 
 The classic Microsoft Defender for Cloud Apps portal experience and functionality have been converged into the Microsoft Defender XDR Portal. As of January 9th, 2024, customers using the classic Defender for Cloud Apps portal with Preview features are automatically redirected to Microsoft Defender XDR, with no option to revert back to the classic portal.
 
