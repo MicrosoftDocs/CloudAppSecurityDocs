@@ -32,9 +32,8 @@ You can expand the basic filter by selecting **Advanced filters**to drill down i
 > [!NOTE]
 > 
 > - The Legacy tag is added to any activity policy that uses the older "user" filter. This filter will continue to work as usual. If you want to remove the Legacy tag, you can remove the filter and add the filter again using the new **User name** filter.
-
 > 
->    - In some rare cases, the count of the events presented in the activity log may show a slightly higher number than the real number of events that apply for the filter and being presented.
+> - In some rare cases, the count of the events presented in the activity log may show a slightly higher number than the real number of events that apply for the filter and being presented.
 
 ## The Activity drawer
 
