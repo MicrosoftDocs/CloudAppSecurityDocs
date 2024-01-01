@@ -12,6 +12,14 @@ App governance provides security detections and alerts for malicious activities.
 
 For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md)
 
+> [!NOTE]
+> App governance threat detections are based on counting activities on data that is transient and may not be stored, therefore alerts may provide the number of activities or indications of spikes, but not necessarily all the relevant data. Specifically for OAuth apps Graph API activities, the activities themselves can be audited by the tenant using Log Analytics and Sentinel.
+> 
+> For more information see: 
+>
+> - [Access Microsoft Graph activity logs](/graph/microsoft-graph-activity-logs-overview)
+> - [Analyze activity logs using Log Analytics](/entra/identity/monitoring-health/howto-analyze-activity-logs-log-analytics)
+> 
 ## MITRE ATT&CK
 
 To make it easier to map the relationship between app governance alerts and the familiar MITRE ATT&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT&CK tactic. This extra reference makes it easier to understand the suspected attacks technique potentially in use when app governance alert is triggered.
