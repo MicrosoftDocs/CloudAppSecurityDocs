@@ -117,7 +117,7 @@ April 24, 2023
 
 - Zoom App connector for SSPM (Public preview)
 
-    Defender for Cloud apps now supports a new Zoom App connector for SSPM. For more information, see [Connect Zoom to Microsoft Defender for Cloud Apps](connect-zoom.md).  
+    Defender for Cloud apps now supports a new Zoom App connector for SSPM. For more information, see [Connect Zoom to Microsoft Defender for Cloud Apps](protect-zoom.md).  
 
 
 April 2, 2023
@@ -378,8 +378,8 @@ The NetDocuments API connector is in general availability, giving you more visib
 November 28, 2021
 
 - **NetDocuments app connector available in public preview**  
-A new app connector for NetDocuments is available in public preview. You can now connect Microsoft Defender for Cloud Apps to NetDocuments to monitor and protect users and activities. For more information, see [Connect NetDocuments to Microsoft Defender for Cloud Apps](connect-netdocuments-to-microsoft-defender-for-cloud-apps.md).
-
+A new app connector for NetDocuments is available in public preview. You can now connect Microsoft Defender for Cloud Apps to NetDocuments to monitor and protect users and activities. For more information, see 
+[Connect NetDocuments to Microsoft Defender for Cloud Apps](protect-netdocuments.md#connect-netdocuments-to-microsoft-defender-for-cloud-apps).
 
 ### Cloud App Security release 212 and 213
 
@@ -912,7 +912,7 @@ Cloud App Security is extending its IaaS monitoring capabilities beyond Amazon W
 
   - All GCP activities are covered by our anomaly detection engine and will automatically alert on any suspicious behavior, such as impossible travel, suspicious mass activities, and activity from a new country/region.
 
-  For more information, see [Connect Google Cloud Platform to Microsoft Cloud App Security](./connect-google-gcp.md).
+  For more information, see [Connect Google Workspace to Microsoft Defender for Cloud Apps](protect-google-workspace.md#connect-google-workspace-to-microsoft-defender-for-cloud-apps).
 
 - **New policy templates**  
 Cloud App Security now includes new built-in Activity policy templates for Google Cloud Platform security best practices.

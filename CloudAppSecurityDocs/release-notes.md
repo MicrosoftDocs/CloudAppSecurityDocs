@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 12/17/2023
+ms.date: 12/26/2023
 ms.topic: overview
 ---
 
@@ -23,6 +23,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+
 ## January 2024
 
 ### Automatic redirection for the classic Defender for Cloud Apps portal (Preview)
@@ -33,6 +34,49 @@ For more information, see:
 
 - [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps)
 - [Preview features in Microsoft Defender for Cloud Apps](preview-features.md)
+
+## December 2023
+
+### New IP addresses for portal access and SIEM agent connection
+
+The IP addresses used for portal access and SIEM agent connections have been updated. Make sure to add the new IPs to your firewall's allowlist accordingly to keep the service fully functional. For more information, see:
+
+- [Portal access network requirements](network-requirements.md#portal-access)
+- [SIEM agent connection network requirements](network-requirements.md#siem-agent-connection)
+
+### Backlog period alignments for initial scans
+
+We've aligned the backlog period for initial scans after connecting a new app to Defender for Cloud Apps. The following app connectors all have an initial scan backlog period of seven days:
+
+- [Dropbox](protect-dropbox.md)
+- [Salesforce](protect-salesforce.md)
+- [ServiceNow ](protect-servicenow.md)
+- [Okta](protect-okta.md)
+
+For more information, see [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+### SSPM support for more connected apps
+
+Defender for Cloud Apps provides you with security recommendations for your SaaS applications to help you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application.
+
+Defender for Cloud Apps has now enhanced its SSPM support by including the following apps: (Preview)
+
+- [Atlassian](protect-atlassian.md)
+- [Dropbox](protect-dropbox.md)
+- [NetDocuments](protect-netdocuments.md)
+- [Workplace](protect-workplace.md)
+- [Zendesk](protect-zendesk.md)
+
+SSPM is also now supported for [Google Workspace](protect-google-workspace.md) in General Availability.
+
+> [!NOTE]
+> If you already have a connector to one of these apps, your score in Secure score might automatically update accordingly.
+
+For more information, see:
+
+- [SaaS security posture management (SSPM)](security-saas.md)
+- [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
 
 ## November 2023
 

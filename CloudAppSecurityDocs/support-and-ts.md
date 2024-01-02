@@ -7,7 +7,7 @@ ms.date: 11/30/2023
 
 # Contact Microsoft Defender for Cloud Apps support
 
-This article describes how to access Microsoft Defender for Cloud Apps support from the Microsoft 365 Defender portal. The support widget in Microsoft 365 Defender helps you find solutions to common problems or submit a support case to the Microsoft support team.
+This article describes how to access Microsoft Defender for Cloud Apps support from the Microsoft Defender Portal. The support widget in Microsoft 365 Defender helps you find solutions to common problems or submit a support case to the Microsoft support team.
 
 ## Prerequisites
 

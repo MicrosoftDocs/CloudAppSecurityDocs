@@ -1,18 +1,36 @@
 ---
-title: Connect Zoom
+title: Connect Zoom | Microsoft Defender for Cloud Apps
 description: This article provides information about how to connect your Zoom environment  to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 06/18/2023
 ms.topic: how-to
 ---
 
-# Connect Zoom to Microsoft Defender for Cloud Apps
+# Connect Zoom to Microsoft Defender for Cloud Apps (Preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Zoom environment using the app connector API. This connection gives you visibility into and control over Zoom use.
+Zoom is an online video conferencing and collaboration tool. Zoom holds critical data of your organization, and this makes it a target for malicious actors.
+
+Connecting Zoom to Defender for Cloud Apps gives you improved insights into your users' activities and provides threat detection using machine learning based anomaly detections.
 
 [!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
 
+## SaaS security posture management
+
+To see security posture recommendations for Zoom in Microsoft Secure Score, create an API connector via the **Connectors** tab, with `“account:read:admin`, `chat_channel:read:admin` and `user:read:admin”` permissions. In Secure Score, select **Recommended actions** and filter by **Product** = **Zoom**.
+
+For example, recommendations for Zoom include: 
+
+- *Enable multi-factor authentication (MFA)*
+- *Enable session timeout for web users*
+- *Enforce end to end encryption in all Zoom meetings*
+
+If a connector already exists and you don't see Zoom recommendations yet, refresh the connection by disconnecting the API connector, and then reconnecting it with the `“account:read:admin`, `chat_channel:read:admin` and `user:read:admin”` permissions.
+
+For more information, see: 
+
+- [Security posture management for SaaS apps](security-saas.md)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
 
 ## Prerequisites
 
