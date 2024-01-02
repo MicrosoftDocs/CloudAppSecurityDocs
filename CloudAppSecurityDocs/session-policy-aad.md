@@ -188,8 +188,8 @@ Defender for Cloud Apps currently supports applying [sensitivity labels from Mic
 * PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 * PDF
 > [!NOTE]
-> For PDF, you must use unified labels.
-> It is not possible to overwrite files that already have an existing label using Protect option in session policies.
+> - For PDF, you must use unified labels.
+> - It is not possible to overwrite files that already have an existing label using Protect option in session policies.
 ## <a name="protect-upload"></a>Protect uploads of sensitive files
 
 When **Control file upload (with inspection)** is set as the **Session Control type** in the Defender for Cloud Apps session policy, Conditional Access App Control prevents a user from uploading a file per the policy's file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and doesn't have a proper label, the file upload is blocked.
