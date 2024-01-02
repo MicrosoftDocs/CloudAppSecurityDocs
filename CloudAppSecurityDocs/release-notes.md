@@ -25,6 +25,13 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## December 2023
 
+### New IP addresses for portal access and SIEM agent connection
+
+The IP addresses used for portal access and SIEM agent connections have been updated. Make sure to add the new IPs to your firewall's allowlist accordingly to keep the service fully functional. For more information, see:
+
+- [Portal access network requirements](network-requirements.md#portal-access)
+- [SIEM agent connection network requirements](network-requirements.md#siem-agent-connection)
+
 ### Backlog period alignments for initial scans
 
 We've aligned the backlog period for initial scans after connecting a new app to Defender for Cloud Apps. The following app connectors all have an initial scan backlog period of seven days:
