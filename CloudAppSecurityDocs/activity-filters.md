@@ -25,7 +25,7 @@ The basic filter provides great tools to start filtering your activities.
 
 ![basic activity log filter.](media/activity-log-filter-basic.png)
 
-You can expand the basic filter by selecting **Advanced filters**to drill down into more specific activities.
+You can expand the basic filter by selecting **Advanced filters** to drill down into more specific activities.
 
 ![advanced activity log filter.](media/activity-log-filter-advanced.png)
 
