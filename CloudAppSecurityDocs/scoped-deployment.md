@@ -4,11 +4,15 @@ description: This article provides information about how to scope your Defender 
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Scoped deployment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Defender for Cloud Apps enables you to scope your deployment. Scoping allows you to select certain user groups to be monitored for apps or excluded from monitoring.
+
+>[!NOTE]
+> Scoped Deployment **does not** reduce the number of files that are scanned by File-policies.
 
 ## Include or exclude user groups
 
