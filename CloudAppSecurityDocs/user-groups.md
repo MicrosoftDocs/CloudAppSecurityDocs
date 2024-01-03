@@ -4,6 +4,7 @@ description: This article provides instructions for importing your user groups f
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Import user groups from connected apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -49,6 +50,7 @@ Importing groups enables you to select those groups as filters when investigatin
 > - There may be a short delay until imported user groups are available in filters.
 > - Only activities performed after importing a user group will be tagged as having been performed by a member of the user group.
 > - After the initial sync, groups are usually updated every hour. However, due to various factors there could be times where this might take several hours.
+> - When user groups are imported, only enabled or active users are included, which may result in a mismatch in the total user count when compared with the original application source.
 
 For more information on using the User group filters, see [Activities](activity-filters.md).
 
