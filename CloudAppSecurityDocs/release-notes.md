@@ -25,7 +25,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## January 2023
 
-### Limitation removed for the number of files that can be controlled for uploading in
+### Limitation removed for the number of files that can be controlled for uploading in session policies (Preview)
 
 Session policies now support control over uploading folders with more than 100 files, with no limit to the number of files that can be included in the upload.
 
