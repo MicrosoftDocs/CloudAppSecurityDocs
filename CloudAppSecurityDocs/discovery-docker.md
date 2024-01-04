@@ -52,9 +52,9 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 The Log Collector supports the **Container** deployment mode. For more information, see:
 
 - [Configure automatic log upload using on-premises Docker on Windows](discovery-docker-windows.md)
+- [Configure automatic log upload using Podman](discovery-linux-podman.md)
 - [Configure automatic log upload using on-premises Docker on Linux](discovery-docker-ubuntu.md)
 - [Configure automatic log upload using Docker in Azure](discovery-docker-ubuntu-azure.md)
-- [Configure automatic log upload using Podman](discovery-linux-podman.md)
 
 ## Next steps
 
