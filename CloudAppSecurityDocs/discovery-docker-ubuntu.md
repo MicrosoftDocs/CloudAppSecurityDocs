@@ -19,7 +19,7 @@ Essential information required for user success
 
 * OS:
   * Ubuntu 14.04, 16.04, 18.04 and 20.04
-  * RHEL 7.2 - 8.
+  * RHEL 7.2 - 7.9
   * CentOS 7.2 or higher
 
 * Disk space: 250 GB
