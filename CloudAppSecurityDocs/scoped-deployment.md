@@ -11,9 +11,8 @@ ms.topic: how-to
 
 Microsoft Defender for Cloud Apps enables you to scope your deployment. Scoping allows you to select certain user groups to be monitored for apps or excluded from monitoring.
 
->[!NOTE]
-> Scoped Deployment **does not** reduce the number of files that are scanned by File-policies.
-
+> [!NOTE]
+> Scoped Deployment **does not** reduce the number of files that are scanned from the configured App connectors.
 ## Include or exclude user groups
 
 You may not want to use Microsoft Defender for Cloud Apps for all the users in your organization. Scoping is especially useful when you want to limit your deployment because of license restrictions. You may also need to limit because of compliance regulations requiring you not monitor users from certain countries/regions. For example, use scoped deployment to only monitor US-based employees. Alternatively, you can avoid showing any activities for your users based in Germany.
