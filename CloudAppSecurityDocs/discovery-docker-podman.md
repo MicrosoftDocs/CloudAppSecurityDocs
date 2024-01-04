@@ -5,7 +5,7 @@ ms.date: 12/21/2023
 ms.topic: how-to
 ---
 
-# Configure automatic log upload using Podman
+# Configure automatic log upload using Podman (Preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -50,16 +50,22 @@ Also, since Docker and Podman can't coexist on the same machine, make sure to un
     ```
 
 > [!NOTE]
-> Restarting the Podman host machine requires you to start the container again too.
- 
-Known Issues:  
-1.	Podman container will not start upon host server reboot – 
-a.	Issue: https://linuxhandbook.com/autostart-podman-containers/ 
-b.	Podman’s architecture was not built to restart container’s at server boot. As a result you need to continue and setup a new command on Systemd in order to start on boot.  
-2.	Podman container when deployed does not continue to get firewall logs. Logs do not seem to continue and get sent up to the Defender for Cloud Apps portal.  
-a.	Verify that rsyslog is continuing to rotate on the log collector first. If it is, wait a couple of hours and see if anything changes. 
-i.	podman logs <container name>  
-b.	if the logs do not continue to get sent, make sure that the deployment of the container itself continued to utilize the --privileged flag. Failure to do so will not see the container continue to gather uploaded logs to the host machine.  
+> Podman containers do not start automatically when the host server is rebooted. Restarting the Podman host machine requires you to start the container again too.
+
+## Troubleshooting
+
+If you're not getting firewall logs from your Podman container, check the following:
+
+1. Make sure that rsyslog rotates on the log collector.
+1. If you've made changes, wait a couple of hours and run the following command to see if anything's changed:
+
+    ```bash
+    podman logs <container name>
+    ```
+
+    where `<container name>` is the name of the container you're using.
+
+1. If the logs are still not sent, make sure that the container is deployed using the `--privileged` flag. If you haven't deployed your container with the `--privileged` flag, the container won't gather uploaded files to the host machine. <!--is this needed? what does this mean?-->
 
 ## Related content
 

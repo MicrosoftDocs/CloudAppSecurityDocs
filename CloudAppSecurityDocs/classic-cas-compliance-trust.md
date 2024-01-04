@@ -9,8 +9,6 @@ ROBOTS: NOINDEX
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
-
 Microsoft Defender for Cloud Apps is a critical component of the Microsoft Cloud Security stack. It's a comprehensive solution that helps your organization take full advantage of the promise of cloud applications. Defender for Cloud Apps keeps you in control through comprehensive visibility, auditing, and granular controls over your sensitive data.
 
 Defender for Cloud Apps has tools that help uncover shadow IT and assess risk while enabling you to enforce policies and investigate activities. It helps you control access in real time and stop threats so your organization can more safely move to the cloud.

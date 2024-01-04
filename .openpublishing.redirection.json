@@ -1,6 +1,151 @@
 {
     "redirections": [
         {
+            "source_path": "CloudAppSecurityDocs/working-with-cloud-discovery-data.md",
+            "redirect_url": "/defender-cloud-apps/discovered-apps",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "CloudAppSecurityDocs/use-case-ransomware.md",
+            "redirect_url": "/defender-cloud-apps/best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware",
+            "redirect_document_id": false 
+        }, 
+        {
+            "source_path": "CloudAppSecurityDocs/protect-connected-apps.md",
+            "redirect_url": "/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "CloudAppSecurityDocs/connect-zoom.md",
+            "redirect_url": "/defender-cloud-apps/protect-zoom",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "CloudAppSecurityDocs/connect-citrix-sharefile.md",
+            "redirect_url": "/defender-cloud-apps/protect-citrix-sharefile",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "CloudAppSecurityDocs/connect-asana.md",
+            "redirect_url": "/defender-cloud-apps/protect-asana#connect-asana-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-atlassian.md",
+            "redirect_url": "/defender-cloud-apps/protect-atlassian#connect-atlassian-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-aws.md",
+            "redirect_url": "/defender-cloud-apps/protect-aws#connect-aws-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-azure.md",
+            "redirect_url": "/defender-cloud-apps/protect-azure#connect-azure-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-box.md",
+            "redirect_url": "/defender-cloud-apps/protect-box#connect-box-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-docusign.md",
+            "redirect_url": "/defender-cloud-apps/protect-docusign#connect-docusign-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-dropbox.md",
+            "redirect_url": "/defender-cloud-apps/protect-dropbox#connect-dropbox-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-egnyte.md",
+            "redirect_url": "/defender-cloud-apps/protect-egnyte#connect-egnyte-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-github-ec.md",
+            "redirect_url": "/defender-cloud-apps/protect-github#connect-github-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-google-gcp.md",
+            "redirect_url": "/defender-cloud-apps/protect-gcp#connect-gcp-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-google-workspace.md",
+            "redirect_url": "/defender-cloud-apps/protect-google-workspace#connect-google-workspace-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-miro.md",
+            "redirect_url": "/defender-cloud-apps/protect-miro#connect-miro-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-netdocuments-to-microsoft-defender-for-cloud-apps.md",
+            "redirect_url": "/defender-cloud-apps/protect-netdocuments#connect-netdocuments-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-office-365.md",
+            "redirect_url": "/defender-cloud-apps/protect-office-365#connect-office-365-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-okta.md",
+            "redirect_url": "/defender-cloud-apps/protect-okta#connect-okta-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-onelogin.md",
+            "redirect_url": "/defender-cloud-apps/protect-onelogin#connect-onelogin-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-salesforce.md",
+            "redirect_url": "/defender-cloud-apps/protect-salesforce#connect-salesforce-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-servicenow.md",
+            "redirect_url": "/defender-cloud-apps/protect-servicenow#connect-servicenow-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-slack.md",
+            "redirect_url": "/defender-cloud-apps/protect-slack#connect-slack-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-smartsheet.md",
+            "redirect_url": "/defender-cloud-apps/protect-smartsheet#connect-smartsheet-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-webex.md",
+            "redirect_url": "/defender-cloud-apps/protect-webex#connect-webex-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-workday.md",
+            "redirect_url": "/defender-cloud-apps/protect-workday#connect-workday-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-workplace.md",
+            "redirect_url": "/defender-cloud-apps/protect-workplace#connect-workplace-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-zendesk.md",
+            "redirect_url": "/defender-cloud-apps/protect-zendesk#connect-zendesk-to-microsoft-cloud-app-security",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "CloudAppSecurityDocs/classic-security-config-aws.md",
             "redirect_url": "/defender-cloud-apps/classic-security-config",
             "redirect_document_id": false
@@ -97,12 +242,12 @@
         },
         {
             "source_path": "CloudAppSecurityDocs/connect-github-ec-to-microsoft-cloud-app-security.md",
-            "redirect_url": "/defender-cloud-apps/connect-github-ec",
+            "redirect_url": "/defender-cloud-apps/protect-github##connect-github-enterprise-cloud-to-microsoft-defender-for-cloud-apps",
             "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/connect-google-gcp-to-microsoft-cloud-app-security.md",
-            "redirect_url": "/defender-cloud-apps/connect-google-gcp",
+            "redirect_url": "/defender-cloud-apps/protect-gcp#connect-google-cloud-platform-to-microsoft-defender-for-cloud-apps",
             "redirect_document_id": true
         },
         {

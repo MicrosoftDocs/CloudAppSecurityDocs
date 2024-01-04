@@ -60,7 +60,6 @@ The following table describes the actions supported:
 |---|---|---|
 |Activities|GET or POST|/api/v1/activities/|
 |Alerts|GET or POST|/api/v1/alerts/|
-|Cloud Discovery|GET, POST, or PUT|/api/v1/discovery/|
 |Data Enrichment|GET, POST, or DELETE|/api/subnet/|
 |Entities|GET or POST|/api/v1/entities/|
 |Files|GET or POST|/api/v1/files/|

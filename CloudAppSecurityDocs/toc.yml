@@ -64,58 +64,6 @@ items:
     href: working-with-app-page.md
   - name: Working with discovered apps
     href: discovered-apps.md
-  - name: Working with connected apps
-    items:
-    - name: Protect connected apps
-      href: protect-connected-apps.md
-    - name: Protect Asana
-      href: protect-asana.md
-    - name: Protect Atlassian
-      href: protect-atlassian.md
-    - name: Protect AWS
-      href: protect-aws.md
-    - name: Protect Azure
-      href: protect-azure.md
-    - name: Protect Box
-      href: protect-box.md
-    - name: Protect DocuSign
-      href: protect-docusign.md
-    - name: Protect Dropbox
-      href: protect-dropbox.md
-    - name: Protect Egnyte
-      href: protect-egnyte.md
-    - name: Protect GitHub
-      href: protect-github.md
-    - name: Protect GCP
-      href: protect-gcp.md
-    - name: Protect Google Workspace
-      href: protect-google-workspace.md
-    - name: Protect NetDocuments
-      href: protect-netdocuments.md
-    - name: Protect Microsoft 365
-      href: protect-office-365.md
-    - name: Protect Miro
-      href: protect-miro.md
-    - name: Protect Okta
-      href: protect-okta.md
-    - name: Protect OneLogin
-      href: protect-onelogin.md
-    - name: Protect Salesforce
-      href: protect-salesforce.md
-    - name: Protect ServiceNow
-      href: protect-servicenow.md
-    - name: Protect Slack
-      href: protect-slack.md
-    - name: Protect Workplace (Preview)
-      href: protect-workplace.md
-    - name: Protect Smartsheet
-      href: protect-smartsheet.md
-    - name: Protect Webex
-      href: protect-webex.md
-    - name: Protect Workday
-      href: protect-workday.md
-    - name: Protect Zendesk
-      href: protect-zendesk.md
   - name: Security
     items:
     - name: Security baseline
@@ -218,6 +166,8 @@ items:
         href: menlo-integration.md
       - name: Integrate with Open Systems
         href: open-systems-integration.md
+      - name: Work with discovery data
+        href: working-with-cloud-discovery-data.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
@@ -250,58 +200,58 @@ items:
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Custom connectors with the open app connector platform
       href: ./connector-platform.md
-    - name: Connect Asana
-      href: ./connect-asana.md
-    - name: Connect Atlassian
-      href: connect-atlassian.md
-    - name: Connect AWS
-      href: ./connect-aws.md
-    - name: Connect Azure
-      href: ./connect-azure.md
-    - name: Connect Box
-      href: ./connect-box.md
-    - name: Connect Citrix ShareFile
-      href: ./connect-citrix-sharefile.md
-    - name: Connect DocuSign
-      href: ./connect-docusign.md
-    - name: Connect Dropbox
-      href: ./connect-dropbox.md
-    - name: Connect Egnyte
-      href: ./connect-egnyte.md
-    - name: Connect GitHub
-      href: ./connect-github-ec.md
-    - name: Connect Google Cloud Platform
-      href: ./connect-google-gcp.md
-    - name: Connect Google Workspace
-      href: ./connect-google-workspace.md
-    - name: Connect Miro (Preview)
-      href: ./connect-miro.md
-    - name: Connect NetDocuments
-      href: connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
-    - name: Connect Microsoft 365
-      href: ./connect-office-365.md
-    - name: Connect Okta
-      href: ./connect-okta.md
-    - name: Connect OneLogin 
-      href: ./connect-onelogin.md
-    - name: Connect Salesforce
-      href: ./connect-salesforce.md
-    - name: Connect ServiceNow
-      href: ./connect-servicenow.md
-    - name: Connect Slack
-      href: ./connect-slack.md
-    - name: Connect Smartsheet
-      href: ./connect-smartsheet.md
-    - name: Connect Webex
-      href: ./connect-webex.md
-    - name: Connect Workday
-      href: ./connect-workday.md
-    - name: Connect Workplace (Preview)
-      href: connect-workplace.md
-    - name: Connect Zendesk
-      href: ./connect-zendesk.md
-    - name: Connect Zoom
-      href: connect-zoom.md
+    - name: Asana
+      href: protect-asana.md
+    - name: Atlassian
+      href: protect-atlassian.md
+    - name: AWS
+      href: protect-aws.md
+    - name: Azure
+      href: protect-azure.md
+    - name: Box
+      href: protect-box.md
+    - name: Citrix ShareFile
+      href: ./protect-citrix-sharefile.md
+    - name: DocuSign
+      href: protect-docusign.md
+    - name: Dropbox
+      href: protect-dropbox.md
+    - name: Egnyte
+      href: protect-egnyte.md
+    - name: GitHub
+      href: protect-github.md
+    - name: GCP
+      href: protect-gcp.md
+    - name: Google Workspace
+      href: protect-google-workspace.md
+    - name: Microsoft 365
+      href: protect-office-365.md
+    - name: Miro
+      href: protect-miro.md
+    - name: NetDocuments
+      href: protect-netdocuments.md
+    - name: Okta
+      href: protect-okta.md
+    - name: OneLogin
+      href: protect-onelogin.md
+    - name: Salesforce
+      href: protect-salesforce.md
+    - name: ServiceNow
+      href: protect-servicenow.md
+    - name: Slack
+      href: protect-slack.md
+    - name: Smartsheet
+      href: protect-smartsheet.md
+    - name: Webex
+      href: protect-webex.md
+    - name: Workday
+      href: protect-workday.md
+    - name: Workplace (Preview)
+      href: protect-workplace.md
+    - name: Zendesk
+      href: protect-zendesk.md
+    - name: Zoom
+      href: protect-zoom.md
   - name: Conditional Access App Control
     items:
     - name: Protect apps with Conditional Access App Control

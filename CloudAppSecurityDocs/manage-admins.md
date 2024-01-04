@@ -1,7 +1,7 @@
 ---
-title: Manage admin access
+title: Manage admin access | Microsoft Defender for Cloud APps
 description: This article provides instructions for setting access to the Defender for Cloud Apps portal for your admins.
-ms.date: 01/29/2023
+ms.date: 12/21/2023
 ms.topic: how-to
 ---
 # Manage admin access
@@ -30,9 +30,6 @@ By default, the following Microsoft 365 and [Microsoft Entra ID](/azure/active-d
 - **Compliance administrator**: Has read-only permissions and can manage alerts. Can't access Security recommendations for cloud platforms. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
 
 - **Compliance data administrator**: Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports. Can't access Security recommendations for cloud platforms.
-
-> [!NOTE]
-> As of August 28 2022, users who were assigned a Microsoft Entra ID **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to a Microsoft Entra ID **Security Operator**.
 
 - **Security operator**: Has read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
 
@@ -63,6 +60,9 @@ By default, the following Microsoft 365 and [Microsoft Entra ID](/azure/active-d
   - Accessing and viewing SIEM agents
   
 - **Global reader**: Has full read-only access to all aspects of Defender for Cloud Apps. Can't change any settings or take any actions.
+
+> [!NOTE]
+> App governance features are controlled by Microsoft Entra ID roles only. For more information, see [App governance roles](app-governance-get-started.md#roles).
 
 ### Roles and permissions
 
