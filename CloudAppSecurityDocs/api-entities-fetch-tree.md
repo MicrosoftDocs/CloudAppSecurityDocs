@@ -32,7 +32,7 @@ GET /api/v1/entities/<pk>/retrieve_tree/
 Here is an example of the request.
 
 ```rest
-curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/<pk>/retrieve_tree/"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/entities/<pk>/retrieve_tree/"
 ```
 
 ### Response
