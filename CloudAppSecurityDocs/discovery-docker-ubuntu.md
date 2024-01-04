@@ -10,11 +10,16 @@ ms.topic: how-to
 
 You can configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on an on-premises Ubuntu, Red Hat Enterprise Linux (RHEL), or CentOS server.
 
+> [!IMPORTANT]
+> If you're using RHEL version 8 or higher, you must use Podman for automatic log collection instead of Docker. For more information, see [Configure automatic log upload using Podman (Preview)](discovery-linux-podman.md).
+
+Essential information required for user success
+
 ## Prerequisites
 
 * OS:
   * Ubuntu 14.04, 16.04, 18.04 and 20.04
-  * RHEL 7.2 - 8. Customers using RHEL 8 and higher must use [Podman](discovery-docker-podman.md) for automatic log collection.
+  * RHEL 7.2 - 8.
   * CentOS 7.2 or higher
 
 * Disk space: 250 GB

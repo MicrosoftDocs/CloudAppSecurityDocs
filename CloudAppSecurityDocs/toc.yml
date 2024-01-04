@@ -179,7 +179,7 @@ items:
       - name: Docker on Linux in Azure
         href: discovery-docker-ubuntu-azure.md
       - name: Podman on Linux on-premises
-        href: discovery-docker-podman.md
+        href: discovery-linux-podman.md
       - name: Advanced log collector management
         href: log-collector-advanced-management.md
       - name: Use the custom log parser
