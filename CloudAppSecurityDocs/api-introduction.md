@@ -28,7 +28,7 @@ To obtain the Defender for Cloud Apps API URL for your tenant, do the following 
 
     ![View your data center.](media/api-url.png)
 
-Once you have the API url, add the `/api` suffix to it to obtain your API URL. For example, if your portal's URL is `https://mytenant.us2.contoso.com`, then your API URL is `https://mytenant.us2.contoso.com/api`.
+Once you have the API url, add the `/api` suffix to it to obtain your API URL. For example, if your portal's URL is `https://mytenant.us2.contoso.com`, then your API URL is `https://mytenant.us2.portal.cloudappsecurity.com/api`.
 
 ## API tokens
 
@@ -45,7 +45,7 @@ For more information about API tokens, see [Managing API tokens](api-authenticat
 ### API tokens - example
 
 ```rest
-curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/example-endpoint"
 ```
 
 ## What actions are supported?
@@ -106,7 +106,7 @@ Most filters support multiple values to provide you with powerful queries. When 
 ### Filters - example
 
 ```rest
-curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/example-endpoint" -d '{
   "filters": {
     "some.field": {
       "eq": ["value1", "value2"],
