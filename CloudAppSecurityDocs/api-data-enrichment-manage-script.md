@@ -50,7 +50,7 @@ import requests
 import json
  
 OPTION_DELETE_ENABLED = False
-IP_RANGES_BASE_URL = 'https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/'
+IP_RANGES_BASE_URL = 'https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/subnet/'
 IP_RANGES_UPDATE_SUFFIX = 'update_rule/'
 IP_RANGES_CREATE_SUFFIX = 'create_rule/'
 CSV_ABSOLUTE_PATH = 'rules.csv'
