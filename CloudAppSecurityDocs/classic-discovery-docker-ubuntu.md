@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Configure automatic log upload using on-premises Docker on Linux
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 You can configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on an on-premises Ubuntu, Red Hat Enterprise Linux (RHEL), or CentOS server.
 
@@ -274,4 +274,4 @@ Verify that the logs are being uploaded to Defender for Cloud Apps and that repo
 > [!div class="nextstepaction"]
 > [Modify the log collector FTP configuration](log-collector-advanced-management.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 In today's workplace, it's often not enough to know what's happening in your cloud environment after the fact. You want to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It's important to enable users in your organization to make the most of the services and tools available to them in cloud apps and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Microsoft Defender for Cloud Apps integrates with any identity provider (IdP) to deliver these capabilities with access and session controls. If you're using Microsoft Entra ID as your IdP, these controls are integrated and streamlined for a simpler and more tailored deployment built on Microsoft Entra ID's [Conditional Access tool](/azure/active-directory/conditional-access/overview).
 
@@ -245,4 +245,4 @@ For instructions on how to onboard your apps, see the appropriate document below
 - [Deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md)
 - [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](proxy-deployment-any-app-idp.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Email notification preferences
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps to your users when a breach is detected.
 
@@ -114,4 +114,4 @@ Below is a sample email template:
 > [!div class="nextstepaction"]
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

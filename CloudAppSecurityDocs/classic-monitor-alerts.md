@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Monitor alerts in Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Alerts are the entry points to understanding your cloud environment more deeply. This article provides a list and description of all alerts.
 
@@ -85,4 +85,4 @@ The following alerts types will be displayed.
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

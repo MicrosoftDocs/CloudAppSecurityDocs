@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Enrich Cloud Discovery data with Microsoft Entra usernames
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Cloud Discovery data can now be enriched with Microsoft Entra username data. When you enable this feature, the username, received in discovery traffic logs, is matched and replaced by the Microsoft Entra username. Cloud Discovery enrichment enables the following features:
 
@@ -35,4 +35,4 @@ Cloud Discovery data can now be enriched with Microsoft Entra username data. Whe
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]
