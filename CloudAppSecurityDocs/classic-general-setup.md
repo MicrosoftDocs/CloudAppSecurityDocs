@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Basic setup for Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 The following procedure gives you instructions for customizing the Microsoft Defender for Cloud Apps portal.
 
@@ -59,4 +59,4 @@ For US Government GCC High customers, it's also necessary to add the following I
 > [!div class="nextstepaction"]
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

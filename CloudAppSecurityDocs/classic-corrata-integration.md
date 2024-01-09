@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Integrate Defender for Cloud Apps with Corrata
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 If you work with both Defender for Cloud Apps and Corrata, you can integrate the two products to enhance your security Cloud Discovery experience for mobile app use. Corrata, as a local Mobile gateway, monitors your organization's traffic from mobile devices enabling you to set policies for blocking transactions. Together, Defender for Cloud Apps and Corrata provide the following capabilities:
 
@@ -45,4 +45,4 @@ If you work with both Defender for Cloud Apps and Corrata, you can integrate the
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

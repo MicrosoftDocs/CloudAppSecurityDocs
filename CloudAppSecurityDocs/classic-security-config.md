@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Security configuration overview for public cloud platforms
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 [!INCLUDE [cspm-banner](includes/cspm-banner.md)]
 
@@ -31,4 +31,4 @@ To export a security recommendations list, perform the following steps:
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

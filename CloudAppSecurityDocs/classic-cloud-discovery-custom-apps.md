@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Add custom apps to Cloud Discovery
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Cloud Discovery analyzes your traffic logs against the Defender for Cloud Apps catalog. Over 31,000 cloud apps are in the Cloud App Catalog. The catalog contains publicly available cloud apps only, for which Defender for Cloud Apps provides visibility and risk information.
 
@@ -47,4 +47,4 @@ In order to view all your custom apps, set the **App tag** filter to be equal to
 > [!div class="nextstepaction"]
 > [User activity policies](user-activity-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

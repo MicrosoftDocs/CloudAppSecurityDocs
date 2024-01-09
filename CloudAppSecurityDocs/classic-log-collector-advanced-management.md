@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Advanced log collector management
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article provides information about the following advanced configuration options for Defender for Cloud Apps Cloud Discovery log collectors:
 
@@ -470,4 +470,4 @@ Use these steps to validate the traffic received by log collectors.
 > [!div class="nextstepaction"]
 > [User activity policies](user-activity-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

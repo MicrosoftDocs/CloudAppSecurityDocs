@@ -8,7 +8,7 @@ ROBOTS: NOINDEX
 
 # Classic portal: Governing connected apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Governance enables you to control what your users do across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Defender for Cloud Apps. Governance actions control what your users do across connected apps. For information about where you can use governance actions, see [Apply governance actions](control.md#apply-governance-actions).
 
@@ -160,4 +160,4 @@ For information about how governance actions are treated when there are policy c
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

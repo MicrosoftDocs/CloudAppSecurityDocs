@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Working with the dashboard
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article describes what you should do with Defender for Cloud Apps daily.  
 
@@ -46,4 +46,4 @@ Shows a graph of DLP alerts over the last 30 days.
 > [!div class="nextstepaction"]
 > [Investigate alerts](investigate.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]
