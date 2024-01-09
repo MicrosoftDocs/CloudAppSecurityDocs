@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Investigate apps discovered by Microsoft Defender for Endpoint
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for Endpoint](mde-integration.md) provides a seamless Shadow IT visibility and control solution. Our integration enables Defender for Cloud Apps administrators to investigate discovered devices, network events, and app usage.
 
@@ -110,4 +110,4 @@ Sometimes, access to an unsanctioned app isn't blocked, either because the endpo
 
 - [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

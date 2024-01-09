@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Investigate cloud app risks and suspicious activity
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 After Microsoft Defender for Cloud Apps runs in your cloud environment, you'll need a stage of learning and investigating. Learn to use the Microsoft Defender for Cloud Apps tools to gain a deeper understanding of what's happening in your cloud environment. Based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk. This article describes how to do an investigation to get a better understanding of your cloud environment.
 
@@ -147,4 +147,4 @@ Now that you have the policy in place, you're surprised to see that you get an a
 
 To learn how to control your organization's cloud app, see [Control](control.md).
 
-[!INCLUDE [Open support ticket](includes/support.md)].
+[!INCLUDE [Open support ticket](includes/classic-support.md)].

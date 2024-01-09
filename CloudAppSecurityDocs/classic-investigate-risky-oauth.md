@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Investigate and remediate risky OAuth apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 >[!NOTE]
 >Try the new app governance add-on to Microsoft Defender for Cloud Apps to get deeper protection, app usage insights, governance, and remediation capabilities for apps that directly access M365 app customer data. For more information, see [App governance add-on to Microsoft Defender for Cloud Apps (in preview)](/microsoft-365/compliance/app-governance-manage-app-governance).
@@ -100,4 +100,4 @@ You can easily [ban revoke an app from the OAuth apps page](manage-app-permissio
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

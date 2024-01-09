@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Cloud Discovery anomaly detection policy
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article gives you reference details about policies. Explanations for each policy type and fields that can be configured for each policy are listed.
 
@@ -82,4 +82,4 @@ For each policy, set the following parameters:
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

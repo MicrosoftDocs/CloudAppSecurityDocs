@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Activity privacy
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Microsoft Defender for Cloud Apps provides enterprises with the ability to granularly determine which users they want to monitor based on group membership. Activity privacy adds the ability to follow your organization's compliance regulations without compromising user privacy. This is achieved by enabling you to monitor users while maintaining their privacy by hiding their activities in the activity log. Only authorized admins have the option to choose to view these private activities, with each instance being audited in the governance log.
 
@@ -66,4 +66,4 @@ Once an admin has been granted the appropriate permission to view private activi
 
 1. In the **Show private activities** dialog, select **OK** to confirm that you understand that the action is being audited. Once confirmed, the private activities are shown in the activity log and the action is recorded in the governance log.
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

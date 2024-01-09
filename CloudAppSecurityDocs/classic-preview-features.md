@@ -58,4 +58,4 @@ You'll know you have preview features turned on when you see that the **Enable p
 > [!div class="nextstepaction"]
 > [Defender for Cloud Apps best practices](best-practices.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

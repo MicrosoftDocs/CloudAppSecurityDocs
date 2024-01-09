@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Tutorial: Manage cloud platform security
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 [!INCLUDE [CSPM banner](includes/cspm-banner.md)]
 
@@ -113,4 +113,4 @@ Protect your organization's resources from data leaks and theft in real time by 
 > [!div class="nextstepaction"]
 > [Protect your GCP environment](protect-gcp.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

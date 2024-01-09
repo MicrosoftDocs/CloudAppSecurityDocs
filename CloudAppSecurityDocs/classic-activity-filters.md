@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Activities
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Microsoft Defender for Cloud Apps gives you visibility into all the activities from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps scans all the activities that happened - the retroactive scan time period differs per app - and then it's updated constantly with new activities.
 
@@ -116,11 +116,12 @@ In the **Activity log**, in the top-right corner, select the **Export** button.
 
 ![export button.](media/classic-export-button.png)
 
-[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
+>[!Note] 
+> This article provides steps for how to delete personal data from the device or service and can be used to support your obligations under the GDPR. If you’re looking for general info about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

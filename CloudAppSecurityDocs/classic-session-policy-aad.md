@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Session policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Microsoft Defender for Cloud Apps session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of [allowing or blocking access completely](access-policy-aad.md), with session control you can allow access while monitoring the session and/or limit specific session activities using the reverse proxy capabilities of Conditional Access App Control.
 
@@ -194,4 +194,4 @@ For example, if a user uploads a file without a sensitivity label, a message can
 > [!div class="nextstepaction"]
 > [Blocking downloads on unmanaged devices using Microsoft Entra Conditional Access App Control](use-case-proxy-block-session-aad.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]
