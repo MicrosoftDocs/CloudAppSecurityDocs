@@ -222,7 +222,6 @@ Here are some examples:
 - **File upload limitation**
 
   If a session policy to block or monitor the upload of sensitive files is applied, then in these scenarios the user's attempts to upload files or folders using **drag & drop** will block the entire list of files and folders:
-  - a folder that contains 100 or more files
   - a folder that contains at least one file and at least one subfolder
   - a folder that contains multiple subfolders
   - a selection of at least one file and at least one folder

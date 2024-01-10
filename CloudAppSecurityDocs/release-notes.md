@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 12/26/2023
+ms.date: 01/03/2024
 ms.topic: overview
 ---
 
@@ -23,8 +23,13 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## January 2023
 
-## January 2024
+### Limitation removed for the number of files that can be controlled for uploading in session policies (Preview)
+
+Session policies now support control over uploading folders with more than 100 files, with no limit to the number of files that can be included in the upload.
+
+For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md).
 
 ### Automatic redirection for the classic Defender for Cloud Apps portal (Preview)
 
