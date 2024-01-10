@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Working with the app page
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Cloud applications have become pivotal entities inside organizations, increasing productivity and enabling remote work. As adoption of these applications rises, Security and Compliance admins must deal with the risks that usage of cloud applications might expose the organization to.
 

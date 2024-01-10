@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Managing internal tokens (legacy)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 In order to access the Defender for Cloud Apps API, you have to create an API token and use it in your software to connect to the API. This token will be included in the header when Defender for Cloud Apps makes API requests.
 
@@ -50,4 +50,4 @@ After a token is revoked, it's removed from the table, and the software that was
 > - SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and do not appear in this table.
 > - Deprovisioned users API tokens are retained in Defender for Cloud Apps but cannot be used. Any attempt to use them will result in a permission denied response. However, we recommend that such tokens are revoked on the **API tokens** page.
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]
