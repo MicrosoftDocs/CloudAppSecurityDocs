@@ -24,8 +24,7 @@ Before you start, verify that you satisfy the following prerequisites:
 
 - You must have [one of the appropriate roles](#roles) to turn on app governance and access it.
 
-- Your organization's billing address must be in a region **other than** Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.
-
+- Your organization's billing address must be in a region **other than** Brazil, South Korea, Switzerland, Norway, South Africa, Sweden or United Arab Emirates.
 - Your organization must use the commercial cloud, and not a government cloud. App governance isn't yet available in government clouds.
 
 ## Turn on app governance
