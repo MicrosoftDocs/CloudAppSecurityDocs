@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Turn on and manage SaaS security posture management (SSPM)
 
-Your SaaS application environments may be configured in a risky posture. Microsoft Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to help you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application.
+Your SaaS application environments may be configured in a risky posture. Microsoft Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to help you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application. For example:
 
 ![Screenshot of the SalesForce recommendations in Secure Score.](media/security-saas-sspm-in-secure-score-salesforce-filter.png)
 
@@ -27,17 +27,19 @@ This procedure describes how to ensure that your connector is set to show data i
 
 1. Use the filter to locate the app where you want to turn on Secure Score recommendations. If you have multiple instances of the same app and also have [Defender for Cloud Preview features turned on](preview-features.md), you'll have an instance drawer for each instance of the app.
 
-1. Open the instance drawer and note whether Secure Score insights are turned on or off. For example: <!--replace screenshot-->
-
+1. Open the instance drawer and note whether Secure Score insights are turned on or off. <!--replace screenshotFor example: -->
+    <!--
     ![Screenshot of the Secure Score instance in Defender for Cloud Apps.](media/security-saas-secure-score-main-instance-drawer.png)
-
-    If the instance is currently set to **Off**, select the **...** options menu and then select **Turn on Secure Score recommendations**. <!--new screenshot>
-
+    -->
+    If the instance is currently set to **Off**, select the **...** options menu and then select **Turn on Secure Score recommendations**. <!--new screenshot>.For example:-->
+    
+    <!--
     ![Select Secure Score instance in Defender for Cloud Apps.](media/security-saas-choose-secure-score-main-instance.png)
 
+    --> 
 Security recommendations are shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score). Recommendations are based on Microsoft benchmarks, and may take up to 24 hours to update.
 
-Filter the **Recommended actions** tab by product to view any recommended actions. Select a recommendation and then select the **Implementation** tab in the details pane for a step-by-step remediation guide.
+In Microsoft Secure Score, filter the **Recommended actions** tab by product to view any recommended actions. Select a recommendation and then select the **Implementation** tab in the details pane for a step-by-step remediation guide.
 
 For more information, see [Assess your security posture with Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions).
 
