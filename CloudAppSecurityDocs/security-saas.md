@@ -29,11 +29,11 @@ This procedure describes how to ensure that your connector is set to show data i
 
 1. Open the instance drawer and note whether Secure Score insights are turned on or off. For example, the following screenshot shows that Secure Score recommendations are turned on for **AWS Contoso EU** instance:
 
-    ![Screenshot of an instance where Secure Score recommendations are turned on.](media/security-saas-secure-score-main-instance-drawer.png)
+    :::image type="content" source="media/security-saas-secure-score-main-instance-drawer.png" alt-text="Screenshot of an instance where Secure Score recommendations are turned on." lightbox="media/security-saas-secure-score-main-instance-drawer.png":::
 
     If the instance is currently set to **Off**, select the **...** options menu and then select **Turn on Secure Score recommendations**. For example:
 
-    ![Screenshot of the Turn on Secure Score recommendations option.](media/security-saas-choose-secure-score-main-instance.png)
+    :::image type="content" source="media/classic-security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
 
 Security recommendations are shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score). Recommendations are based on Microsoft benchmarks, and may take up to 24 hours to update.
 
