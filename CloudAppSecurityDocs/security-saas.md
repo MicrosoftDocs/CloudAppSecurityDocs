@@ -33,7 +33,7 @@ This procedure describes how to ensure that your connector is set to show data i
 
     If the instance is currently set to **Off**, select the **...** options menu and then select **Turn on Secure Score recommendations**. For example:
 
-    :::image type="content" source="media/classic-security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
+    :::image type="content" source="media/security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
 
 Security recommendations are shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score). Recommendations are based on Microsoft benchmarks, and may take up to 24 hours to update.
 
