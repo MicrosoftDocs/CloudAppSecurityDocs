@@ -104,15 +104,15 @@ Below is a list of the file filters that can be applied. To provide you with a p
 - **File name** – File name or sub string of the name as defined in the cloud app. For example, all files with a password in their name.
 
 - **Sensitivity label** - Search for files with specific labels set. Labels are either:
+
+    > [!NOTE]
+    > If this filter is used in a file policy, the policy will apply to Microsoft Office files only, and will ignore other file types.
+
   - **Microsoft Purview Information Protection** - Requires integration with Microsoft Purview Information Protection.
-  - **Defender for Cloud Apps** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For example, you can set up policies to alert and quarantine password-protected files that are shared externally.
-    - **Azure RMS encrypted** – Files whose content wasn't inspected because they have an Azure RMS encryption set.
+   - **Defender for Cloud Apps** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For example, you can set up policies to alert and quarantine password-protected files that are shared externally.
+       - **Azure RMS encrypted** – Files whose content wasn't inspected because they have an Azure RMS encryption set.
     - **Password encrypted** – Files whose content wasn't inspected because they're password protected by the user.
     - **Corrupt file** – Files whose content wasn't inspected because their contents couldn't be read.
-
-    >[!NOTE]
-    >
-    > If this filter is used in a file policy, the policy will apply to Microsoft Office files only and will ignore other file types.
 
 - **File type** – Defender for Cloud Apps scans the file to determine whether the true file type matches the MIME type received (see table) from the service. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, *All folders that are ...* or *All spreadsheet files that are...*
 
