@@ -27,7 +27,9 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ### SSPM support for multiple instances of the same app (Preview)
 
-Defender for Cloud Apps now supports SaaS security posture management (SSPM) across multiple instances of the same app. For example, if you have two instances of Salesforce, you can now connect both instances to Defender for Cloud Apps and get security recommendations for both.
+Defender for Cloud Apps now supports SaaS security posture management (SSPM) across multiple instances of the same app. For example, if you have multiple instances of AWS, you can configure Secure Score recommendations for each instance individually. Each instance will show up as a separate item on the **App Connectors** page. For example:
+
+![Screenshot of the Turn on Secure Score recommendations option.](media/security-saas-choose-secure-score-main-instance.png)
 
 For more information, see [SaaS security posture management (SSPM)](security-saas.md).
 
