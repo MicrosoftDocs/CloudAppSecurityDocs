@@ -23,7 +23,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
-## January 2023
+## January 2024
 
 ### Limitation removed for the number of files that can be controlled for uploading in session policies (Preview)
 
