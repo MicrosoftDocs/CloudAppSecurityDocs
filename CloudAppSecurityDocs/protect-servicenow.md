@@ -104,6 +104,7 @@ Defender for Cloud Apps supports the following ServiceNow versions:
         - Rome
         - San Diego
         - Tokyo    
+        - Vancouver
     :::column-end:::
 :::row-end:::
 
