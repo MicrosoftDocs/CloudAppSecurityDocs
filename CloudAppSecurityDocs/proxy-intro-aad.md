@@ -219,7 +219,6 @@ Here are some examples:
     Here are a few examples:
 
   The security administrator defines the following policy: *Block upload of files containing PII to OneDrive*.
-  - The user tries to upload a selection of 200 non-sensitive files using the file upload dialog. **Result:** the files are uploaded
   - The user tries to upload a selection of 200 non-sensitive files using drag & drop. **Result:** the files are blocked
   - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using the file upload dialog. **Result:** the non-sensitive files are uploaded, the sensitive files are blocked
   - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using drag & drop. **Result:** the whole set of files is blocked
