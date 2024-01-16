@@ -88,7 +88,7 @@ Use the following steps to create a new session policy:
 
       - Edit items in various apps
 
-      For example, use a send items activity in your condtiions to catch a user attempting to send information in a Teams chat or Slack channel, and block the message if it contains sensitive information like a password or other credentials.
+      For example, use a send items activity in your conditions to catch a user attempting to send information in a Teams chat or Slack channel, and block the message if it contains sensitive information like a password or other credentials.
 
     > [!NOTE]
     > Session policies don't support mobile and desktop apps. Mobile apps and desktop apps can also be blocked or allowed by creating an access policy.
