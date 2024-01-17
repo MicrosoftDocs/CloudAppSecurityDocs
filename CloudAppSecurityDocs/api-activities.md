@@ -53,7 +53,6 @@ The following table describes the supported filters:
 | source | string | eq, neq | Filter all activities by source type or stream ID. Example: `[{ "s:stream-id", "t:source-type" }]` Possible source type values include:<br /><br />**0**: Access control<br />**1**: Session control<br />**2**: App connector<br />**3**: App connector analysis<br />**5**: Discovery<br />**6**: MDATP |
 | activity.alertId | string | eq | Filter all activities relevant to an alert ID |
 | activityObject | string | eq, neq | Filter activities containing the specified ID |
-| fileLabels | string | eq, neq | Filter files containing the specified file labels (tags) IDs |
 | created || lte, gte, range, gt, lt, eq | Filter activities that were created in the specified time range |
 | entity | entity pk | eq, neq, isset, isnotset, startswith | Filter activities by the entity who performed the activity. Example: `[{ "id": "entity-id", "inst": 0 }]` |
 | user.username | string | eq, neq, isset, isnotset, startswith | Filter activities by the user who performed the activity |
