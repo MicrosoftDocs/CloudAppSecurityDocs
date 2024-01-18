@@ -26,7 +26,7 @@ To get started, use the [Basic Setup](general-setup.md) page for access to the M
 
 ## Feature variations in Microsoft Defender for Cloud Apps US Government offerings
 
-Unless otherwise specified, new feature releases, including preview features, documented in [What's new with Microsoft Defender for Cloud Apps](release-notes.md), will be available in GCC High and DoD environments within three months of release in the Microsoft Defender for Cloud Apps commercial environment, unless otherwise noted.
+Unless otherwise specified, new feature releases, including preview features, documented in [What's new with Microsoft Defender for Cloud Apps](release-notes.md), will be available in GCC High and DoD environments within three months of release in the Microsoft Defender for Cloud Apps commercial environment.
 
 ## Feature support
 

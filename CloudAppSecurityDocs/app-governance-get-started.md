@@ -14,6 +14,10 @@ description: Get started with app governance capabilities to govern your apps in
 >
 > **Take this action before July 31, 2023 to continue using it without any interruption.**
 
+> [!NOTE]
+> By default, the Microsoft Defender for Cloud Apps instance in the US Government environments cannot connect to resources in Azure commercial and is FedRAMP 
+> compliant.  However, App Governance is not FedRAMP compliant. Enabling App Governance would allow data to flow non-FedRAMP certified environments.  
+
 ## Prerequisites
 
 Before you start, verify that you satisfy the following prerequisites:
@@ -24,7 +28,7 @@ Before you start, verify that you satisfy the following prerequisites:
 
 - You must have [one of the appropriate roles](#roles) to turn on app governance and access it.
 
-- Your organization's billing address must be in a region **other than** Brazil, South Korea, Switzerland, Norway, South Africa, Sweden or United Arab Emirates.
+- Your organization's billing address must be in a region **other than** Brazil, Singapore ,Latin America, South Korea, Switzerland, Norway, South Africa, Sweden or United Arab Emirates.
 - Your organization must use the commercial cloud, and not a government cloud. App governance isn't yet available in government clouds.
 
 ## Turn on app governance

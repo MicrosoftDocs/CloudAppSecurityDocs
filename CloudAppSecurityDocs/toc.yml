@@ -64,12 +64,8 @@ items:
     href: working-with-app-page.md
   - name: Working with discovered apps
     href: discovered-apps.md
-  - name: Security
-    items:
-    - name: Security baseline
-      href: /security/benchmark/azure/baselines/cloud-app-security-security-baseline?toc=/cloud-app-security/toc.json
-    - name: Deploying and monitoring for Zero Trust
-      href: zero-trust.md
+  - name: Defender for Cloud Apps and Zero Trust monitoring
+    href: zero-trust.md
 - name: How-to guides
   items:
   - name: Basic set up
@@ -545,6 +541,10 @@ items:
       href: classic-risk-score.md
     - name: Working with discovered apps
       href: classic-discovered-apps.md
+    - name: Security
+      items:
+      - name: Security baseline
+        href: /security/benchmark/azure/baselines/cloud-app-security-security-baseline?toc=/cloud-app-security/toc.json
   - name: How-to guides
     items:
     - name: Basic set up
