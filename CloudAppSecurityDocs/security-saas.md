@@ -45,7 +45,9 @@ This procedure describes how to ensure that your connector is set to show data i
 
 Security recommendations are shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score). Recommendations are based on Microsoft benchmarks, and may take up to 24 hours to update.
 
-In Microsoft Secure Score, filter the **Recommended actions** tab by product to view any recommended actions. If you have multiple instances of an app, you can select to filter recommendations from specific instances only.
+In Microsoft Secure Score, filter the **Recommended actions** tab by product to view any recommended actions. If you have multiple instances of an app, you can select to filter recommendations from specific instances only. For example:
+
+:::image type="content" source="media/secure-score-filter.png" alt-text="Screenshot of a Secure Score filter showing multiple instances of an app.":::
 
 Select a recommendation and then select the **Implementation** tab in the details pane for a step-by-step remediation guide.
 
