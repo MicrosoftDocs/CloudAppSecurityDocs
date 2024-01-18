@@ -23,7 +23,7 @@ Your SaaS application environments may be configured in a risky posture. Microso
 
 This procedure describes how to ensure that your connector is set to show data in Microsoft Secure Score for SaaS app security posture management.
 
-Any app or app instance with Secure Score recommendations turned on can contribute to your overall Secure Score rating. Turn on Secure Score recommendations only for those apps you want to see recommendations for in Secure Score.
+Any app or app instance with Secure Score recommendations turned on can contribute to your overall Secure Score rating. Turn on Secure Score recommendations only for those apps you want to see recommendations for in Secure Score. Turning on Secure Score recommendations is irreversible.
 
 1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps** > **Connected apps** > **App Connectors**.
 
