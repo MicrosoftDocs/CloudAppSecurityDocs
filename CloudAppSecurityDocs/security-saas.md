@@ -23,8 +23,6 @@ Your SaaS application environments may be configured in a risky posture. Microso
 
 This procedure describes how to ensure that your connector is set to show data in Microsoft Secure Score for SaaS app security posture management.
 
-Any app or app instance with Secure Score recommendations turned on can contribute to your overall Secure Score rating. Turn on Secure Score recommendations only for those apps you want to see recommendations for in Secure Score. Turning on Secure Score recommendations is irreversible.
-
 1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps** > **Connected apps** > **App Connectors**.
 
 1. Use the filter to locate the app where you want to turn on Secure Score recommendations.
@@ -42,6 +40,8 @@ Any app or app instance with Secure Score recommendations turned on can contribu
     :::image type="content" source="media/security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
 
 Security recommendations are shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score). Recommendations are based on Microsoft benchmarks, and may take up to 24 hours to update.
+
+If you have Preview features turned on and you have multiple instances of an app, adding an app instance is irreversible. Security recommendations for the selected instance are added to your Secure Score and impact your Secure Score rating.
 
 In Microsoft Secure Score, filter the **Recommended actions** tab by product to view any recommended actions. If you have multiple instances of an app, you can select to filter recommendations from specific instances only. For example:
 
