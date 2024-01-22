@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Activity policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Activity policies allow you to enforce a wide range of automated processes using the app provider's APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of one certain type of activity.
 

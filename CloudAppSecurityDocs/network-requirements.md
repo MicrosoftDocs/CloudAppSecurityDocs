@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Network requirements
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides a list of ports and IP addresses you need to allow and allowlist to work with Microsoft Defender for Cloud Apps.
 

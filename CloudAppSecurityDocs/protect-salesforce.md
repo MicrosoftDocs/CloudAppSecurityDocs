@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # How Defender for Cloud Apps helps protect your Salesforce environment
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 As a major CRM cloud provider, Salesforce incorporates large amounts of sensitive information about customers, pricing playbooks, and major deals inside your organization. Being a business-critical app, Salesforce is accessed and used by people inside your organization and by others outside of it (such as partners and contractors) for various purposes. In many cases, a large proportion of your users accessing Salesforce have low awareness of security and might put your sensitive information at risk by unintentionally sharing it. In other instances, malicious actors may gain access to your most sensitive customer-related assets.
 

@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Troubleshooting content inspection errors
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides a list of content inspection statuses and their meanings.
 

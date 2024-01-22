@@ -11,7 +11,7 @@ We recommend that you simplify policy creation by starting with existing templat
 
 For the full list of templates, check the Microsoft Defender Portal.
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 ## Policy template highlights
 

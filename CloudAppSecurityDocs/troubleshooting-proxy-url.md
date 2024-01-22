@@ -7,7 +7,7 @@ ms.topic: conceptual
 
 # Troubleshooting - What is `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`?
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides information about the `mcas.ms`, `mcas-gov.us`, and `mcas-gov.ms` URL suffixes used by Conditional Access App Control.
 

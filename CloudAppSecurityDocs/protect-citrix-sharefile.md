@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Connect Citrix ShareFile to Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Citrix ShareFile is a secure content collaboration, file sharing and sync solution that supports all the document-centric tasks and workflow needs of small and large businesses. Citrix ShareFile holds critical data of your organization, and this makes it a target for malicious actors.
 

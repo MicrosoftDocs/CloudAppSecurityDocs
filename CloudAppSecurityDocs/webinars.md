@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Microsoft Defender for Cloud Apps webinars
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 View this six-part webinar series to learn more about Microsoft Defender for Cloud Apps key use cases and deployment best practices to help you better secure your cloud environments.
 

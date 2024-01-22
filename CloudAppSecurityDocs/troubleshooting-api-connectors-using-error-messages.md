@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Troubleshooting App Connector error messages
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides a list of API App connector error messages and resolution recommendations for each error.
 
