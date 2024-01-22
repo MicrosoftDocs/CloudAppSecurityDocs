@@ -1,7 +1,7 @@
 ---
 title: Protect apps with Conditional Access App Control
 description: This article provides information about how the Defender for Cloud Apps Conditional Access App Control reverse proxy works.
-ms.date: 03/21/2023
+ms.date: 01/03/2024
 ms.topic: conceptual
 ---
 # Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control
@@ -211,7 +211,6 @@ Here are some examples:
 - **File upload limitation**
 
   If a session policy to block or monitor the upload of sensitive files is applied, then in these scenarios the user's attempts to upload files or folders using **drag & drop** will block the entire list of files and folders:
-  - a folder that contains 100 or more files
   - a folder that contains at least one file and at least one subfolder
   - a folder that contains multiple subfolders
   - a selection of at least one file and at least one folder
@@ -220,7 +219,6 @@ Here are some examples:
     Here are a few examples:
 
   The security administrator defines the following policy: *Block upload of files containing PII to OneDrive*.
-  - The user tries to upload a selection of 200 non-sensitive files using the file upload dialog. **Result:** the files are uploaded
   - The user tries to upload a selection of 200 non-sensitive files using drag & drop. **Result:** the files are blocked
   - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using the file upload dialog. **Result:** the non-sensitive files are uploaded, the sensitive files are blocked
   - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using drag & drop. **Result:** the whole set of files is blocked

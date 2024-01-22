@@ -8,7 +8,7 @@ ROBOTS: NOINDEX
 
 # Classic portal: Get started with Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This quickstart provides you with steps for getting up and running with Defender for Cloud Apps. Microsoft Defender for Cloud Apps can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity and helping to increase the protection of corporate data. In this article, we walk you through the steps you take to set up and work with Microsoft Defender for Cloud Apps.
 
@@ -207,4 +207,4 @@ These settings help give you better control of features in the console. With IP 
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
-[!INCLUDE [Open support ticket](includes/support.md)].
+[!INCLUDE [Open support ticket](includes/classic-support.md)].

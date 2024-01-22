@@ -4,6 +4,7 @@ description: This article provides instructions for importing your user groups f
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Import user groups from connected apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

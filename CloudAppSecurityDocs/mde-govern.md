@@ -1,7 +1,7 @@
 ---
 title: Govern discovered apps using Microsoft Defender for Endpoint
 description: This article describes how to govern Microsoft Defender for Endpoint discovered apps.
-ms.date: 02/16/2023
+ms.date: 12/20/2023
 ms.topic: how-to
 ---
 
@@ -14,7 +14,7 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 ## Prerequisites
 
 - Microsoft Defender for Cloud Apps license
-- Microsoft Defender for Endpoint [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
+- Microsoft Defender for Endpoint [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2), with endpoints onboarded to Defender for Endpoint
 - Supported operating systems are listed below in the [Prerequisites for blocking apps](#prerequisites-for-blocking-apps-with-defender-for-endpoint) section
 - Microsoft Defender Antivirus
   - [Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)

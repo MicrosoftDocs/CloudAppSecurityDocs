@@ -88,6 +88,8 @@ Use the following steps to create a new session policy:
 
       - Edit items in various apps
 
+      For example, use a send items activity in your conditions to catch a user attempting to send information in a Teams chat or Slack channel, and block the message if it contains sensitive information like a password or other credentials.
+
     > [!NOTE]
     > Session policies don't support mobile and desktop apps. Mobile apps and desktop apps can also be blocked or allowed by creating an access policy.
 
@@ -188,8 +190,8 @@ Defender for Cloud Apps currently supports applying [sensitivity labels from Mic
 * PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 * PDF
 > [!NOTE]
-> For PDF, you must use unified labels.
-
+> - For PDF, you must use unified labels.
+> - It is not possible to overwrite files that already have an existing label using Protect option in session policies.
 ## <a name="protect-upload"></a>Protect uploads of sensitive files
 
 When **Control file upload (with inspection)** is set as the **Session Control type** in the Defender for Cloud Apps session policy, Conditional Access App Control prevents a user from uploading a file per the policy's file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and doesn't have a proper label, the file upload is blocked.

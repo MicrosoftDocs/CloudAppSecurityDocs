@@ -23,7 +23,7 @@ GET api/discovery/streams/
 Here is an example of the request.
 
 ```rest
-curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery/streams/"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/discovery/streams/"
 ```
 
 ### Response

@@ -1,7 +1,7 @@
 ---
-title: Configure automatic log upload using on-premises Docker on Windows
+title: Configure automatic log upload using on-premises Docker on Windows | Microsoft Defender for Cloud Apps
 description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Windows in an on-premises server.
-ms.date: 01/29/2023
+ms.date: 12/20/2023
 ms.topic: how-to
 ---
 # Configure automatic log upload using on-premises Docker on Windows
@@ -12,22 +12,29 @@ You can configure automatic log upload for continuous reports in Defender for Cl
 
 ## Prerequisites
 
-* OS:
-  * **Windows 10** (fall creators update)
-  * Windows Server **version 1709+** (SAC)
-  * **Windows Server 2019 (LTSC)**
+- **Architecture specifications**:
 
-* Disk space: 250 GB
+    - **Operating system**: One of the following: 
 
-* CPU cores: 2
+        - Windows 10 (Fall creators update)
 
-* CPU Architecture: Intel® 64 and AMD 64
+        - Windows Sever version 1709+ (SAC)
 
-* RAM: 4 GB
+        - Windows Server 2019 (LTSC)
 
-* Set your firewall as described in [Network requirements](network-requirements.md#log-collector)
+    - **Disk space**: 250 GB 
 
-* Virtualization on the operating system must be enabled with Hyper-V
+    - **CPU cores**:  2  
+
+    - **CPU architecture**:Intel 64 and AMD 64    
+
+    - **RAM**: 4 GB 
+
+    For a list of supported Docker architectures, see [Docker installation documentation](https://docs.docker.com/engine/install/).
+
+- **Set your firewall** as described in [Network requirements](network-requirements.md#log-collector)
+
+- **Virtualization** on the operating system must be enabled with Hyper-V
 
 > [!IMPORTANT]
 >
