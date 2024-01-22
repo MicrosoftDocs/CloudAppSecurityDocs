@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your Workday environment
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 As a major HCM solution, Workday holds some of the most sensitive information in your organization such as employees' personal data, contracts, vendor details, and more. Preventing exposure of this data requires continuous monitoring to prevent any malicious actors or security unaware insiders from exfiltrating the sensitive information.
 

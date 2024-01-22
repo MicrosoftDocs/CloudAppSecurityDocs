@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Entities API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 > [!NOTE]
 > This API is not available for Microsoft 365 Cloud App Security.

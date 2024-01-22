@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your Smartsheet
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 As a productivity and collaboration cloud solution, Smartsheet holds sensitive information to your organization. Any abuse of Smartsheet by a malicious actor or any human error may expose your most critical assets and services to potential attacks.
 

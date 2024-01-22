@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Close true positive - Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the POST request to close multiple alerts matching the specified filters as true positive (an alert on a confirmed malicious activity).
 

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Fetch - Activities API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the GET request to fetch the activity matching the specified primary key.
 

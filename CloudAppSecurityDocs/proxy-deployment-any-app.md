@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Deploy Conditional Access App Control for custom apps using Microsoft Entra ID
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Session controls in Microsoft Defender for Cloud Apps can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps hosted via the Microsoft Entra application proxy with session controls. It provides steps to create a Microsoft Entra Conditional Access policy that routes app sessions to Defender for Cloud Apps. For other IdP solutions, see [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](proxy-deployment-any-app-idp.md).
 

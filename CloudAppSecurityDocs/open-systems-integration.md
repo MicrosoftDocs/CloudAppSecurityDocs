@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with Open Systems
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 If you work with both Defender for Cloud Apps and Open Systems, you can integrate the two products to enhance your security Cloud Discovery experience. Open Systems, as a standalone Secure Web Gateway, monitors your organization's traffic enabling you to set policies for blocking transactions. Together, Defender for Cloud Apps and Open Systems provide the following capabilities:
 

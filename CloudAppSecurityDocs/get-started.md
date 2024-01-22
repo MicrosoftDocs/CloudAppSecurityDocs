@@ -7,7 +7,7 @@ ms.topic: quickstart
 
 # Get started with Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This quickstart describes how to start working with Microsoft Defender for Cloud Apps on the Microsoft Defender Portal. 
 

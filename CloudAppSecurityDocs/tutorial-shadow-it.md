@@ -6,7 +6,7 @@ ms.topic: tutorial
 ---
 # Tutorial: Discover and manage shadow IT
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 When IT admins are asked how many cloud apps they think their employees use, on average they say 30 or 40, when in reality, the average is over 1,000 separate apps being used by employees in your organization. Shadow IT helps you know and identify which apps are being used and what your risk level is. 80% of employees use non-sanctioned apps that no one has reviewed, and may not be compliant with your security and compliance policies. And because your employees can access your resources and apps from outside your corporate network, it's no longer enough to have rules and policies on your firewalls.
 

@@ -6,7 +6,7 @@ ms.topic: tutorial
 ---
 # Tutorial: Discover and protect sensitive information in your organization
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 In a perfect world, all your employees understand the importance of information protection and work within your policies. In the real world, it's likely that a busy partner who frequently works with accounting information will inadvertently upload a sensitive document to your Box repository with incorrect permissions. A week later you realize your enterprise's confidential information was leaked to your competition.
 

@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Built-in DLP content inspection in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 > [!IMPORTANT]
 > Effective March 2023, we're retiring the built-in DLP content inspection engine. To ensure a smooth transition, we highly recommend that you begin transitioning your policies to the Data Classification Services (DCS) Content Inspection Engine.  While the built-in DLP engine will continue to work, we strongly advise you to move your policies to the DCS engine to take advantage of its improved capabilities.  

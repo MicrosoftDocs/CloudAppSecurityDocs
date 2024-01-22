@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # List - Activities API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the GET or POST request to fetch a list of activities matching the specified filters.
 

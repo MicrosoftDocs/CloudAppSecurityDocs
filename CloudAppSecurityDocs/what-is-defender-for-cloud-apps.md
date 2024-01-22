@@ -10,7 +10,7 @@ ms.topic: overview
 > You might be looking for Microsoft 365 Cloud App Security. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?](editions-cloud-app-security-o365.md)
 > 
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Software as a service (SaaS) apps are ubiquitous across hybrid work environments, and protecting SaaS apps and the important data they store is a big challenge for organizations. The rise in app usage, combined with employees accessing company resources outside of the corporate perimeter has also introduced new attack vectors. To combat these attacks effectively, security teams need an approach that protects their data within cloud apps beyond the traditional scope of cloud access security brokers (CASBs).
 

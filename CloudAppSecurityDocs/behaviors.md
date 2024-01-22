@@ -8,7 +8,7 @@ ms.topic: conceptual
 
 # Investigate behaviors with advanced hunting (Preview)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 While some anomaly detections focus primarily on detecting problematic security scenarios, others can help identifying and investigating anomalous user behavior that doesn't necessarily indicate a compromise. In such cases, Microsoft Defender for Cloud Apps uses a separate data type, called *behaviors*.
 

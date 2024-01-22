@@ -7,7 +7,7 @@ ms.topic: troubleshooting
 
 # Troubleshooting access and session controls for admin users
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides Microsoft Defender for Cloud Apps admins with guidance on how to investigate and resolve common access and session control issues as experienced by admins.
 
