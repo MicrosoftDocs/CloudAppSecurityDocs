@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Finalize file upload - Cloud Discovery API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 After the file content upload successfully completes, notify us in order to begin the processing of the file.
 

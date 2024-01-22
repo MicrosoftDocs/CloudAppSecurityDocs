@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # List - Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 Run the GET or POST request to fetch a list of alerts matching the specified filters.
 

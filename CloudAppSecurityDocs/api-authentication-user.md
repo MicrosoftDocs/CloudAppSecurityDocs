@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Access Microsoft Defender for Cloud Apps API with user context
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 This page describes how to create an application to get programmatic access to Defender for Cloud Apps on behalf of a user.
 

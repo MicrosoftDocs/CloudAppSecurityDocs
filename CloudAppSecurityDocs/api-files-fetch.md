@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Fetch - Files API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 > [!NOTE]
 >

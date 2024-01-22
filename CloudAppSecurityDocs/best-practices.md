@@ -6,7 +6,7 @@ ms.topic: quickstart
 ---
 # Best practices for protecting your organization with Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 This article provides best practices for protecting your organization by using Microsoft Defender for Cloud Apps. These best practices come from our experience with Defender for Cloud Apps and the experiences of customers like you.
 

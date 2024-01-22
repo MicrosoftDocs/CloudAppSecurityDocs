@@ -6,7 +6,7 @@ ms.topic: overview
 ---
 # What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 This article describes the differences between Defender for Cloud Apps and Microsoft 365 Cloud App Security.
 

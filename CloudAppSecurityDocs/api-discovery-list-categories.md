@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # List continuous report categories - Cloud Discovery API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 Run the POST request to fetch a list of categories associated with a continuous report.
 

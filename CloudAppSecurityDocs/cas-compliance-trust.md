@@ -6,7 +6,7 @@ ms.topic: overview
 ---
 # Data security and privacy practices for Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

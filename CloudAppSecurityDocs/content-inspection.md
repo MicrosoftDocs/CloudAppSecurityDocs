@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # DLP content inspection in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 If you enable content inspection, you can choose to use preset expressions or to search for other customized expressions.
 

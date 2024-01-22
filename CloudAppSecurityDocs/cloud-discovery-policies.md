@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Create Cloud Discovery policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/)]
 
 You can create app discovery policies to alert you when new apps are detected. Defender for Cloud Apps also searches all the logs in your Cloud Discovery for anomalies.
 
