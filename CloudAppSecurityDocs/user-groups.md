@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Import user groups from connected apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 When you connect apps using API connectors, Microsoft Defender for Cloud Apps enables you to import user groups, for example from Microsoft 365 and Microsoft Entra ID. There are two types of user groups:
 

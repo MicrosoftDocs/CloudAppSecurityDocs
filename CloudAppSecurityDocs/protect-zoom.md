@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Connect Zoom to Microsoft Defender for Cloud Apps (Preview)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Zoom is an online video conferencing and collaboration tool. Zoom holds critical data of your organization, and this makes it a target for malicious actors.
 

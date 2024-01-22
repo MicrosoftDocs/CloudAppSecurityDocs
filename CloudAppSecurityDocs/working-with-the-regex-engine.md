@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Working with the RegEx engine
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides instructions for using RegEx for pattern matching in Defender for Cloud Apps policies.
 

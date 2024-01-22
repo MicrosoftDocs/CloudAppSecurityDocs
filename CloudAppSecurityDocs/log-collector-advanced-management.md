@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Advanced log collector management
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article describes how to configure advanced options for Defender for Cloud Apps cloud discovery log collectors.
 

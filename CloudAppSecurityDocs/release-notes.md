@@ -7,7 +7,7 @@ ms.topic: overview
 
 # What's new in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 *Applies to: Microsoft Defender for Cloud Apps*
 

@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Session policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Microsoft Defender for Cloud Apps session policies provide granular visibility into cloud apps with real-time, session-level monitoring. Use session policies to take different actions, depending on the policy you set for a user session.
 
