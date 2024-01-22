@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Managing API tokens
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Defender for Cloud Apps exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Defender for Cloud Apps capabilities.
 

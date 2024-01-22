@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Close benign - Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the POST request to close multiple alerts matching the specified filters as benign (an alert on a suspicious but not malicious activity, such as a penetration test or other authorized suspicious action).
 

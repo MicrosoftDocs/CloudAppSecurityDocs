@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Additional integrations with external solutions
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 You can integrate Microsoft Defender for Cloud Apps with your other security investments to leverage and enhance an integrated protection ecosystem. For example, you can integrate with external mobile device management solutions, UEBA solutions, and external threat intelligence feeds.
 
