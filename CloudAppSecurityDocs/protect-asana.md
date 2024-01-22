@@ -72,6 +72,5 @@ If you have any problems connecting the app, see [Troubleshooting App Connectors
 
 ## Related content
 
-<!--moved this from "how mda ..."-->
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
