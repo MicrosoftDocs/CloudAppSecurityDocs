@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Use a custom log parser
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Defender for Cloud Apps enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Defender for Cloud Apps. This can be a CSV parser or a custom key value parser.
 

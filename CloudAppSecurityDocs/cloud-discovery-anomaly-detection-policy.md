@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Cloud Discovery anomaly detection policy
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 This article gives you reference details about policies. Explanations for each policy type and fields that can be configured for each policy are listed.
 

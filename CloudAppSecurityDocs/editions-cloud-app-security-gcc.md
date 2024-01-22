@@ -6,7 +6,7 @@ ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps for US Government offerings
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 The Microsoft Defender for Cloud Apps GCC High and Department of Defense (DoD) offerings is built on the Microsoft Azure Government Cloud and is designed to inter-operate with Microsoft 365 GCC High and DoD. The GCC High and DoD offerings utilizes the same underlying technologies and capabilities as the commercial instance of Microsoft Defender for Cloud Apps. Therefore, the commercial offering's public documentation should be used as a starting point for deploying and operating the service.
 

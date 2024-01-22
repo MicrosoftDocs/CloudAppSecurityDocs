@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Defender for Cloud Apps REST API
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 This article describes how to interact with Defender for Cloud Apps over HTTPS.
 

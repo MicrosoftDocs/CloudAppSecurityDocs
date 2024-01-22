@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Basic setup for Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 The following procedure gives you instructions for customizing your Microsoft Defender for Cloud Apps environment.
 

@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Admin notification settings
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Microsoft Defender for Cloud Apps allows you to customize your admin notification settings. The notification settings allow admins to specify if they would like to receive email notifications for alerts.
 

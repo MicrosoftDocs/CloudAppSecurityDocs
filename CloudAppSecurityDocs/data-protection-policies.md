@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # File policies in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 File Policies allow you to enforce a wide range of automated processes using the cloud provider's APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases. Defender for Cloud Apps can monitor any file type based on more than 20 metadata filters (for example, access level, file type).
 

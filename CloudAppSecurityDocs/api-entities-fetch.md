@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Fetch - Entities API
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 > [!NOTE]
 > This request is not available for Microsoft 365 Cloud App Security.

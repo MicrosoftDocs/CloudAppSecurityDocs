@@ -7,7 +7,7 @@ ms.topic: overview
 
 # What are the differences in discovery capabilities for Microsoft Defender for Cloud Apps and Cloud App Discovery?
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery.
 

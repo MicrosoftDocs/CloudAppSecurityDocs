@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # List - Data Enrichment API
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Run the GET or POST request to fetch a list of IP ranges matching the specified filters.
 

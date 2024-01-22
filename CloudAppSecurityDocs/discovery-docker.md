@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Configure automatic log upload for continuous reports
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed, and transmitted to the portal. FTP logs are uploaded to Microsoft Defender for Cloud Apps after the file finished the FTP transfer to the Log Collector. For Syslog, the Log Collector writes the received logs to the disk. Then the collector uploads the file to Defender for Cloud Apps when the file size is larger than 40 KB.
 

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Mark as read - Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Run the POST request to mark the alert matching the specified primary key as read.
 

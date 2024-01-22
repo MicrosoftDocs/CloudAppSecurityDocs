@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Create IP address range - Data Enrichment API
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Run the POST request to add a new IP address range.
 

@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Microsoft Defender for Cloud Apps e-books
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Read our e-books to learn about Microsoft Defender for Cloud Apps, its key use cases, and deployment best practices to help you better secure your cloud environments.
 

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Initiate file upload - Cloud Discovery API
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Run the GET request to initiate the upload process. This call, the first of the three, returns a URL that will later be used to perform the upload (PUT) request.
 

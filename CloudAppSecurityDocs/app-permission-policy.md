@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Create policies to control OAuth apps
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and are authorized by more than 50 users.
 

@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Control cloud apps with policies
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Policies allow you to define the way you want your users to behave in the cloud. They enable you to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. If necessary, you can integrate remediation work flows to achieve complete risk mitigation. There are multiple types of policies that correlate to the different types of information you want to gather about your cloud environment and the types of remediation actions you may want to take.
 

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Feedback on activity - Activities API
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Run the POST request to send feedback about the activity matching the specified primary key.
 

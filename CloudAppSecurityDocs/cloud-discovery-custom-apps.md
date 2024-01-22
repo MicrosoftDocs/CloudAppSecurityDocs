@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Add custom apps to Cloud Discovery
 
-[!INCLUDE [Banner for top of topics](includes/)]
+
 
 Cloud Discovery analyzes your traffic logs against the Defender for Cloud Apps catalog. Over 31,000 cloud apps are in the Cloud App Catalog. The catalog contains publicly available cloud apps only, for which Defender for Cloud Apps provides visibility and risk information.
 
