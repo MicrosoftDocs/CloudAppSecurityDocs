@@ -157,9 +157,11 @@ For more information, see:
 **Where**: In the Microsoft Defender XDR Portal, select:
 
 - **Incidents & alerts**
-- **Cloud apps > App governance > Apps** <!--should this be Azure AD?-->
+- **Cloud apps > App governance > Azure AD**
 
 We recommend that you check your list of OAuth-enabled apps daily, together with relevant app metadata and usage data. Select an app to view deeper insights and information.
+
+App governance uses machine learning-based detection algorithms to detect anomalous app behavior in your Microsoft Defender XDR tenant, and generates alerts that you can see, investigate, and resolve. Beyond this built-in detection capability, you can use a set of default policy templates or create your own app policies that generate other alerts.
 
 For more information, see:
 
@@ -263,8 +265,6 @@ We recommend reviewing your cloud discovery dashboard on a daily basis. The clou
     - Filter views to see your top apps in specific categories.
     - View top users and IP addresses to identify the users who are the most dominant users of cloud apps in your organization.
     - View app data on a world map to understand how discovered apps spread by geographic location.
-
-<!--1. Check the discovery alerts status to see how many open alerts should you investigate. WHERE DO YOU SEE THIS?-->
 
 After reviewing the list of discovered apps in your environment, we recommend that you secure your environment by approving safe apps (*Sanctioned* apps), prohibiting unwanted apps (*Unsanctioned* apps), or applying custom tags.
 

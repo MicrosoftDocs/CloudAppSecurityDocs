@@ -23,7 +23,6 @@ To view Secure Score recommendations per product, in Microsoft Defender XDR, sel
 
 ## Check app connectors, log collectors, and SIEM agent health
 
-<!--in the overview this is in daily?-->
 **Where**: In the Microsoft Defender XDR Portal, select **Settings > Cloud apps**.
 
 **Persona**: Security and Compliance administrators, SOC analysts
