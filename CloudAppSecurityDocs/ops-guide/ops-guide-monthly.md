@@ -17,7 +17,7 @@ Monthly activities can be performed more frequently or as needed, depending on y
 
 **Persona**: Security and Compliance administrators
 
-Review the policies and make any necessary updates to ensure they are still appropriate for your organization.
+Review the policies and make any necessary updates to ensure they're still appropriate for your organization.
 
 - **Check for false positive and benign true positive rates, and adjust policies where rates are too high**. For example, ensure that any new corporate IP address is properly configured in your Defender for Cloud Apps settings to avoid impossible travel false positives.
 
@@ -37,7 +37,7 @@ For more information, see [Control cloud apps with policies](../control-cloud-ap
 
 **Persona**: Security and Compliance administrators
 
-You'll frequently review activity logs in relation to alerts and as part of threat investigations. We recommend revisiting the Activity log monthly to check for repeated activities by the same entity, such as multiple searches or sign-ins by the same user.
+You frequently review activity logs in relation to alerts and as part of threat investigations. We recommend revisiting the Activity log monthly to check for repeated activities by the same entity, such as multiple searches or sign-ins by the same user.
 
 1. Pivot results by activity type, such as failed sign-ins, or deleting or assigning privileges.
 1. Narrow down activity to an app or a user.
@@ -47,4 +47,4 @@ For more information, see [Activity queries](../activity-filters-queries.md#acti
 
 ## Related content
 
-[Microsoft Defender for Cloud Apps operational guide](mda-ops-guide.md)
+[Microsoft Defender for Cloud Apps operational guide](ops-guide.md)

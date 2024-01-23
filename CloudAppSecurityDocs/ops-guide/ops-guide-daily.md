@@ -31,7 +31,7 @@ Alerts and incidents are two of the most important items your security operation
     |---------|---------|
     |**Status**     |  New, In progress       |
     |**Severity**     |  High, Medium, Low       |
-    |**Service source**     |  Keep all service sources checked. This should list alerts with the most fidelity, with correlation across other Microsoft XDR workloads. Select **Defender for Cloud Apps** to view items that come specifically from Defender for Cloud Apps.       |
+    |**Service source**     |  Keep all service sources checked. Keeping all service source checked should list alerts with the most fidelity, with correlation across other Microsoft XDR workloads. Select **Defender for Cloud Apps** to view items that come specifically from Defender for Cloud Apps.       |
 
 1. Select each incident to review all details. Review all tabs in the incident, the activity log, and advanced hunting.
 
@@ -68,12 +68,12 @@ For more information, see:
 - [Connect data from Microsoft Defender XDR to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
 - [Generic SIEM integration](../siem.md)
 
-Integrating Microsoft Defender XDR with Microsoft Sentinel allows you to stream all Microsoft Defender XDR incidents into Microsoft Sentinel and keep them synchronized between both portals. Microsoft Defender XDR incidents in Microsoft Sentinel includes all associated alerts, entities, and relevant information, providing enough context to triage and run a preliminary investigation.
+Integrating Microsoft Defender XDR with Microsoft Sentinel allows you to stream all Microsoft Defender XDR incidents into Microsoft Sentinel and keep them synchronized between both portals. Microsoft Defender XDR incidents in Microsoft Sentinel include all associated alerts, entities, and relevant information, providing enough context to triage and run a preliminary investigation.
 
 Once in Microsoft Sentinel, incidents remain synchronized with Microsoft Defender XDR so that you can use the features from both portals in your investigation.
 
 - When installing Microsoft Sentinel's data connector for Microsoft Defender XDR, make sure to include the Microsoft Defender for Cloud Apps option.
-- Consider using a [streaming API](/microsoft-365/security/defender/streaming-api) to send data to an EventHub, where it can be consumed through any partner SIEM with an EventHub connector, or placed in Azure Storage.
+- Consider using a [streaming API](/microsoft-365/security/defender/streaming-api) to send data to an event hub, where it can be consumed through any partner SIEM with an event hub connector, or placed in Azure Storage.
 
 For more information, see:
 
@@ -95,7 +95,7 @@ Cloud app threat detection is where many SOC analysts focus their daily activiti
 
 Defender for Cloud Apps threat detection uses Microsoft threat intelligence and security research data. Alerts are available in Microsoft Defender XDR and should be [triaged regularly](#review-alerts-and-incidents).
 
-Whe dealing with alerts, security administrators and SOC analysts handle the following main types of threat detection policies:
+When security administrators and SOC analysts deal with alerts, they handle the following main types of threat detection policies:
 
 - [Activity policies](../user-activity-policies.md)
 - [Anomaly detection policies](../anomaly-detection-policy.md)
@@ -197,12 +197,12 @@ Conditional access app control (CAAP) provides you with the ability to monitor a
 
 Generated alerts are available in Microsoft Defender XDR and should be [triaged regularly](#review-alerts-and-incidents).
 
-By default, there is no CAAP access or session policies deployed, and therefore no related alerts available. You can onboard any web app to work with access and session controls, and a number of popular apps that are pre-onboarded. We recommend that you create session and access policies as needed for your organization.
+By default, there's no CAAP access or session policies deployed, and therefore no related alerts available. You can onboard any web app to work with access and session controls, and many popular apps that are preonboarded. We recommend that you create session and access policies as needed for your organization.
 
 For more information, see:
 
 - [View and manage incidents and alerts](/microsoft-365/security/defender/mto-incidents-alerts)
-- [Pre-onboarded apps](../proxy-intro-aad.md#pre-onboarded-apps)
+- [Preonboarded apps](../proxy-intro-aad.md#pre-onboarded-apps)
 - [Access policies](../access-policy-aad.md)
 - [Session policies](../session-policy-aad.md)
 - [Block and protect download of sensitive data to unmanaged or risky devices](../best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)
@@ -210,7 +210,7 @@ For more information, see:
 
 **Persona**: SOC administrator
 
-We recommend that you review conditional access app control alerts daily, as well as the activity log. Filter activity logs by source, access control, and session control.
+We recommend that you review conditional access app control alerts daily, and the activity log. Filter activity logs by source, access control, and session control.
 
 For more information, see [Review alerts and incidents](#review-alerts-and-incidents)
 
@@ -307,4 +307,4 @@ For more information, see:
 
 ## Related content
 
-[Microsoft Defender for Cloud Apps operational guide](mda-ops-guide.md)
+[Microsoft Defender for Cloud Apps operational guide](ops-guide.md)

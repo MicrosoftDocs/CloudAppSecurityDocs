@@ -65,7 +65,7 @@ CloudAppEvents
 | evaluate bag_unpack(ActivityObjects)
 ```
 
-### Search for *AAD - Add to Role* records
+### Search for *Microsoft Entra ID - Add to Role* records
 
 ```kusto
 CloudAppEvents
@@ -75,7 +75,7 @@ CloudAppEvents
 | project Timestamp,Type,ActionType,RoleName,UserAddedName,UserAddedId,AccountId,Account DisplayName
 ```
 
-### Search for *AAD - Group Adds* records
+### Search for *Microsoft Entra ID - Group Adds* records
 
 
 ```kusto
@@ -106,7 +106,7 @@ For more information, see [Understand how quarantine works](../use-case-admin-qu
 
 **Persona**: Compliance administrators
 
-The cloud app catalog rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. We recommend reviewing the score for each of the apps in your environment to make sure it’s aligned with your company regulations.
+The cloud app catalog rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. We recommend reviewing the score for each of the apps in your environment to make sure it aligns with your company regulations.
 
 After checking an app's risk score, you might want to submit a request to change the score, or customize the risk score in **Cloud Discovery > Score metrics**.
 
@@ -149,4 +149,4 @@ For more information, see [Create snapshot Cloud Discovery reports](../create-sn
 
 ## Related content
 
-[Microsoft Defender for Cloud Apps operational guide](mda-ops-guide.md)
+[Microsoft Defender for Cloud Apps operational guide](ops-guide.md)

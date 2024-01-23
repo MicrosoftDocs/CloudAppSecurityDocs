@@ -15,9 +15,9 @@ This article lists weekly operational activities that we recommend you perform w
 
 **Persona**: Security and Compliance administrators, SOC analysts
 
-SaaS Security Posture Management (SSPM) capabilities in Microsoft Defender for Cloud Apps enable you to get deeper visibility, automatically identify SaaS app misconfigurations, and and help you remediate those misconfigurations to improve your organizational security. 
+SaaS Security Posture Management (SSPM) capabilities in Microsoft Defender for Cloud Apps enable you to get deeper visibility, automatically identify SaaS app misconfigurations, and help you remediate those misconfigurations to improve your organizational security. 
 
-Defender for Cloud Apps' SSPM features are integrated into Microsoft Defender XDR so that security teams can see their holistic security posture across the enterprise with Microsoft Secure Score.
+Defender for Cloud Apps SSPM features are integrated into Microsoft Defender XDR so that security teams can see their holistic security posture across the enterprise with Microsoft Secure Score.
 
 To view Secure Score recommendations per product, in Microsoft Defender XDR, select **Secure Score** > **Recommended actions**, and group the list by **Product**.
 
@@ -53,7 +53,7 @@ For more information, see:
 
 **Persona**: Security administrators
 
-The Microsoft 365 **Message center** helps you to keep track of upcoming changes, including new features, planned maintenance, or other important announcements that may affect your Defender for Cloud Apps environment.
+The Microsoft 365 **Message center** helps you to keep track of upcoming changes, including new features, planned maintenance, or other important announcements that might affect your Defender for Cloud Apps environment.
 
 For more information, see [Track new and changed features in the Microsoft 365 Message center](/microsoft-365/admin/manage/message-center).
 
@@ -63,10 +63,10 @@ For more information, see [Track new and changed features in the Microsoft 365 M
 
 **Persona**: Security and Compliance administrators
 
-The Governance log provides a status record of each task that you set Defender for Cloud Apps to run, including both manual and automatic tasks. These tasks include those you set in policies, governance actions that you set on files and users, and any other action you set Defender for Cloud Apps to take.
+The Governance log provides a status record of each task that you configure Defender for Cloud Apps to run, including both manual and automatic tasks. These tasks include tasks configured in policies, governance actions that you set on files and users, and any other action you set Defender for Cloud Apps to take.
 
 For more information, see [Governing connected apps](../governance-actions.md).
 
 ## Related content
 
-[Microsoft Defender for Cloud Apps operational guide](mda-ops-guide.md)
+[Microsoft Defender for Cloud Apps operational guide](ops-guide.md)
