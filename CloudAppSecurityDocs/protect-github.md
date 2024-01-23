@@ -33,7 +33,7 @@ To see security posture recommendations for GitHub in Microsoft Secure Score, cr
 
 For example, recommendations for GitHub include:
 
-- *Enable multi-factor authentication (MFA)*
+- *Enable multifactor authentication (MFA)*
 - *Enable single sign on (SSO)*
 - *Disable 'Allow members to change repository visibilities for this organization'*
 - *Disable 'members with admin permissions for repositories can delete or transfer repositories'*
