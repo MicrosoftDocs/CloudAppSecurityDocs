@@ -1096,7 +1096,7 @@ This detection identifies OAuth application that creating bulk of Azure Virtual 
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the OAuth app having high privlege scopes has been created and is creating large numbers of Virtual Machines in your tenant, then a true positive is indicated.
+- **TP**: If you’re able to confirm that the OAuth app having high privilege scopes has been created and is creating large numbers of Virtual Machines in your tenant, then a true positive is indicated.
 
   **Recommended actions**: Review the Virtual machines created and any recent changes made to the application. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
 
