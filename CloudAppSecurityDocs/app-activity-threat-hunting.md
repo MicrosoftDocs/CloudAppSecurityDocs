@@ -13,15 +13,6 @@ Using app governance and advanced hunting capabilities, you can get complete vis
 
 This article describes how you can simplify app-based threat hunting using app governance in Microsoft Defender for Cloud Apps.
 
-## Prerequisites
-
-Before you perform the steps in this article, make sure that you are using preview features and have app governance turned on. 
-
-For more information, see:
-
-- [Preview features in Microsoft Defender for Cloud Apps](preview-features.md)
-- [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md)
-
 ## Step 1: Find the app in app governance
 
 The Defender for Cloud Apps **App governance** page lists [all Microsoft Entra ID OAuth apps](https://security.microsoft.com/cloudapps/app-governance?viewid=allApps).
