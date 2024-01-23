@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Mark as unread - Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the POST request to mark the alert matching the specified primary key as unread.
 

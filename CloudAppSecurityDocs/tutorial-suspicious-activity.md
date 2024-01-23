@@ -7,7 +7,7 @@ ms.topic: tutorial
 
 # Tutorial: Detect suspicious user activity with behavioral analytics (UEBA)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Microsoft Defender for Cloud Apps provides best-of-class detections across the attack kill chain for compromised users, insider threats, exfiltration, ransomware, and more. Our comprehensive solution is achieved by combining multiple detection methods, including anomaly, behavioral analytics (UEBA), and rule-based activity detections, to provide a broad view of how your users use apps in your environment.
 

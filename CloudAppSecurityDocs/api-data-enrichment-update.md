@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Update IP address range - Data Enrichment API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the POST request to update an existing IP address range.
 

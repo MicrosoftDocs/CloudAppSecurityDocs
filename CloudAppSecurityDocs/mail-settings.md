@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Email notification preferences
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps to your users when a breach is detected.
 

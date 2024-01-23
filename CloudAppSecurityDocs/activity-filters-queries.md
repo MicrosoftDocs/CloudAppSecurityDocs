@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Activity filters and queries
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides descriptions and instructions for Defender for Cloud Apps activity filters and queries.
 

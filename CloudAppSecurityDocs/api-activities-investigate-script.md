@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Investigate activities using the API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 You can use the Activities APIs to investigate the activities performed by your users across connected cloud apps.
 

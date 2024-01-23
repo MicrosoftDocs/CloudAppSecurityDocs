@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Cloud Discovery policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides an overview of how to get started using Defender for Cloud Apps to gain visibility across your organization into Shadow IT using Cloud Discovery.
 

@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Attest your apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Microsoft Defender for Cloud Apps enables you to attest your app, so that you make sure that the compliance and security details we use to rate your app in our Cloud App Catalog are up to date.
 

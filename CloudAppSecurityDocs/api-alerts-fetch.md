@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Fetch - Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the GET request to fetch the alert matching the specified primary key.
 

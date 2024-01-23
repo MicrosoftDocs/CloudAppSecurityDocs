@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your Egnyte environment
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Egnyte provides a cloud platform for enterprise file synchronization and sharing, as well as content and data governance. Along with the benefits of effective collaboration in the cloud, your organization's most critical assets may be exposed to threats. Preventing exposure of your critical assets in Egnyte requires continuous monitoring to prevent any malicious actors or security-unaware insiders from exfiltrating sensitive information.
 

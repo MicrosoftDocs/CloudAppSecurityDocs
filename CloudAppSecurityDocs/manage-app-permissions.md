@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Manage OAuth apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Microsoft 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users' grant gives you the necessary visibility and control to protect your users and your applications.
 

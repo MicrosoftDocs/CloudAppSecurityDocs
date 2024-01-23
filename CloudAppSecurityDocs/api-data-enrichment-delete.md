@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Delete IP address range - Data Enrichment API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the DELETE request to delete an IP address range.
 

@@ -7,7 +7,7 @@ ms.topic: conceptual
 
 # Troubleshooting SIEM integration
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides a list of possible issues when connecting your SIEM to Defender for Cloud Apps and provides possible resolutions.
 
