@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 01/03/2024
+ms.date: 01/18/2024
 ms.topic: overview
 ---
 
@@ -24,6 +24,14 @@ For more information on what's new with other Microsoft Defender security produc
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## January 2024
+
+### SSPM support for multiple instances of the same app (Preview)
+
+Defender for Cloud Apps now supports SaaS security posture management (SSPM) across multiple instances of the same app. For example, if you have multiple instances of AWS, you can configure Secure Score recommendations for each instance individually. Each instance will show up as a separate item on the **App Connectors** page. For example:
+
+:::image type="content" source="media/security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
+
+For more information, see [SaaS security posture management (SSPM)](security-saas.md).
 
 ### Limitation removed for the number of files that can be controlled for uploading in session policies (Preview)
 

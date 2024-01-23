@@ -1,6 +1,6 @@
 ---
 title: App governance in Microsoft Defender for Cloud Apps and Microsoft Defender XDR
-ms.date: 05/28/2023
+ms.date: 01/23/2024
 ms.topic: conceptual
 description: Implement Microsoft app governance capabilities over Microsoft Defender for Cloud Apps and Microsoft Defender XDR to govern your apps.
 ---
@@ -35,7 +35,7 @@ View app governance data together with other Defender for Cloud Apps data and Mi
 
 For example:
 
-- On the app governance **OAuth apps** page, view aggregated sign-in activity for each app. From there, select links to go to the Microsoft Entra admin center for the details of sign-in events.
+- On the **App governance** page, view aggregated sign-in activity for each app. Select an app to view details in a side pane, and select **View in Azure AD** to view more details in the Microsoft Entra admin center.
 
 - On other **Cloud apps** pages in Microsoft Defender XDR, view API usage levels and aggregate data transfer. From there, select links to go to the app governance **OAuth apps** page for more details.
 
