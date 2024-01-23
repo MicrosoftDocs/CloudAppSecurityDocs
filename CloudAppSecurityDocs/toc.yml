@@ -348,6 +348,18 @@ items:
       href: flow-integration.md
 - name: Reference
   items:
+  - name: Operations guide
+    items:
+    - name: Operations guide overview
+      href: ops-guide/ops-guide.md
+    - name: Daily activities
+      href: ops-guide/ops-guide-daily.md
+    - name: Weekly activities
+      href: ops-guide/ops-guide-weekly.md
+    - name: Monthly activities
+      href: ops-guide/ops-guide-monthly.md
+    - name: Ad-hoc activities
+      href: ops-guide/ops-guide-ad-hoc.md
   - name: Attest your app
     href: attest-your-app.md
   - name: Common policies
@@ -777,7 +789,7 @@ items:
         href: classic-troubleshooting-siem.md
       - name: Support and troubleshooting for the classic portal
         href: classic-support-and-ts.md
-- name: Microsoft 365 Defender Docs
+- name: Microsoft Defender XDR Docs
   items:
   - name: Microsoft Defender XDR
     href: /microsoft-365/security/defender/
