@@ -1,53 +1,55 @@
 ---
-title: SaaS security posture management (SSPM) - Microsoft Defender for Cloud Apps
+title: Turn on and manage SaaS security posture management (SSPM) - Microsoft Defender for Cloud Apps
 description: Learn how to get security configuration recommendations in Defender for Cloud Apps for your organization's SaaS applications.
-ms.date: 12/12/2023
+ms.date: 01/18/2024
 ms.topic: how-to
 ---
 
-# SaaS security posture management (SSPM)
+# Turn on and manage SaaS security posture management (SSPM)
 
-Your SaaS application environments may be configured in a risky posture. Microsoft Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to help you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application.
+Your SaaS application environments may be configured in a risky posture. Microsoft Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to help you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application. For example:
 
-   ![SSPM_in_SecureScore_SalesForce_filter.](media/security-saas-sspm-in-secure-score-salesforce-filter.png)
+![Screenshot of the SalesForce recommendations in Secure Score.](media/security-saas-sspm-in-secure-score-salesforce-filter.png)
 
 ## Prerequisites
 
-Your organization must have Microsoft Defender for Cloud Apps licenses.
-
-## How to enable SaaS apps security posture management
-
-1. Connect the app that you want to manage to Defender for Cloud Apps. For more information, see:
+- Your organization must have Microsoft Defender for Cloud Apps licenses.
+- Your app must be connected to Defender for Cloud Apps. For more information, see:
 
     - [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
     - [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility)
 
-1. After you connected the application via Defender for Cloud Apps, make sure the connector is set to show data in Microsoft Secure Score. To verify it, in the Microsoft Defender Portal, select **Settings** > **Cloud Apps** > **Connected apps** > **App Connectors**. 
+## Turn on Secure Score recommendations
 
-1. Open the instance drawer and make sure there is a field **Secure Score insights: Main instance**. For example:
+This procedure describes how to ensure that your connector is set to show data in Microsoft Secure Score for SaaS app security posture management.
 
-    ![Screenshot of the Secure Score instance in Defender for Cloud Apps.](media/security-saas-secure-score-main-instance-drawer.png)
+1. In Microsoft Defender XDR, select **Settings** > **Cloud Apps** > **Connected apps** > **App Connectors**.
 
-    If the instance is not set as the Secure Score main instance, set it by selecting the three dots > **Set as Microsoft Secure Score instance**. For example:
+1. Use the filter to locate the app where you want to turn on Secure Score recommendations.
 
-    ![Select Secure Score instance in Defender for Cloud Apps.](media/security-saas-choose-secure-score-main-instance.png)
+    > [!TIP]
+    > If you have multiple instances of the same app and also have Defender for Cloud *Preview* features turned on, you'll have an instance drawer for each instance of the app. Multiple instances of the same app aren't supported without [Preview features turned on](preview-features.md).
+    >
 
-## How to manage your SaaS apps security posture
+1. Open the instance drawer and note whether Secure Score recommendations are turned on or off. For example, the following screenshot shows that Secure Score recommendations are turned on for **AWS Contoso EU** instance:
 
-1. The security recommendations will be shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score). Navigate to the [Microsoft Defender Portal](https://security.microsoft.com). Under the navigation bar, select **Secure score**, and go to **Recommended actions** tab.
+    :::image type="content" source="media/security-saas-secure-score-main-instance-drawer.png" alt-text="Screenshot of an instance where Secure Score recommendations are turned on." lightbox="media/security-saas-secure-score-main-instance-drawer.png":::
 
-    ![Screenshot of the Secure Score main page.](media/security-saas-secure-score-main-page.png)
+    If the instance is currently set to **Off**, select the **...** options menu and then select **Turn on Secure Score recommendations**. For example:
 
-1. Filter the desired **product** to see its security controls.
-1. When selecting the control, you'll find its description and status.
-1. To see a step-by-step remediation guide for risky controls, go to the **Implementation** tab in the control side pane.
+    :::image type="content" source="media/security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
 
-    ![Screenshot of Secure Score remediation steps.](media/security-saas-secures-score-remediations-steps.png)
+Security recommendations are shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score). Recommendations are based on Microsoft benchmarks, and may take up to 24 hours to update.
 
->[!NOTE]
->
-> - The recommendations are based on Microsoft benchmarks.
-> - Score updates may take up to 24 hours.
+If you have Preview features turned on and you have multiple instances of an app, adding an app instance is irreversible. Security recommendations for the selected instance are added to your Secure Score and impact your Secure Score rating.
+
+In Microsoft Secure Score, filter the **Recommended actions** tab by product to view any recommended actions. If you have multiple instances of an app, you can select to filter recommendations from specific instances only. For example:
+
+:::image type="content" source="media/secure-score-filter.png" alt-text="Screenshot of a Secure Score filter showing multiple instances of an app.":::
+
+Select a recommendation and then select the **Implementation** tab in the details pane for a step-by-step remediation guide.
+
+For more information, see [Assess your security posture with Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions).
 
 ## Next steps
 
@@ -55,4 +57,3 @@ Your organization must have Microsoft Defender for Cloud Apps licenses.
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
