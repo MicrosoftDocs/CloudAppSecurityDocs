@@ -1,10 +1,8 @@
 ---
-title: Hunt for threats in app activities - Microsoft Defender for Cloud Apps
+title: Hunt for threats in app activities | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: how-to
 description: Learn how app governance in Microsoft Defender for Cloud Apps helps you hunt for resources accessed and activities carried out by apps in your environment.
-author: anandd512
-ms.author: andeshpande
 ---
 
 # Hunt for threats in app activities
