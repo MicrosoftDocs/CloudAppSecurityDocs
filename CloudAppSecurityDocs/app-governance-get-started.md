@@ -7,12 +7,7 @@ description: Get started with app governance capabilities to govern your apps in
 
 # Turn on app governance for Microsoft Defender for Cloud Apps
 
-> [!NOTE]
-> Starting June 1, 2023, app governance is included with your Defender for Cloud Apps license.
->
-> If you are currently an app governance trial customer, use the steps described in this article to turn on app governance with a Defender for Cloud Apps license.
->
-> **Take this action before July 31, 2023 to continue using it without any interruption.**
+This article describes how to turn on Microsoft Defender for Cloud Apps app governance.
 
 > [!NOTE]
 > By default, the Microsoft Defender for Cloud Apps instance in the US Government environments cannot connect to resources in Azure commercial and is FedRAMP 
@@ -52,12 +47,6 @@ You can join the waitlist and provide your consent, so that we can turn on app g
 For example:
 
 :::image type="content" source="media/app-governance-get-started/app-governance-service-status.png" alt-text="Screenshot of the App governance waitlist option." lightbox="media/app-governance-get-started/app-governance-service-status.png":::
-
-## Current trial customers
-
-If you're currently running a free trial of app governance and want to use it without interruption, go to [Microsoft Defender XDR > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and switch on the app governance toggle before **July 31, 2023**. 
-
-If you want to opt out of app governance, no action is needed, and app governance will automatically turn off after **July 31, 2023**. Your data will be deleted permanently in accordance with our data retention policies. To keep a copy of your app and policy data, make sure to export them manually from the app governance pages before July 31, 2023.
 
 ## Licensing
 
