@@ -84,24 +84,29 @@ In GitHub, browse to your organization's page, and from the URL, make a note of 
 
     ![Screenshot showing obtaining organization login name.](media/connect-github-org-login-name.png)
 
-1. **Create an OAuth App for Defender for Cloud Apps to connect your GitHub organization.**  
+1. **Create an OAuth App for Defender for Cloud Apps to connect your GitHub organization.**
+
 Repeat this step for each additional connected organization.
 
-    1. Browse to **Settings** > **Developer settings**, select  **OAuth Apps**, and then select **Register an application**. Alternatively, if you have existing OAuth apps, select **New OAuth App**.
+> [!NOTE]
+> If you have [preview features](preview-features.md) and [app governance turned on](app-governance-get-started.md), use the **App governance** page instead of the **OAuth apps** page to perform this procedure.
+>
 
-        ![Screenshot showing creating an oauth app.](media/connect-github-create-oauth-app.png)
+1. Browse to **Settings** > **Developer settings**, select  **OAuth Apps**, and then select **Register an application**. Alternatively, if you have existing OAuth apps, select **New OAuth App**.
 
-    1. Fill out the **Register a new OAuth app** details and then select **Register application**.
-        - In the **Application name** box, enter a name for the app.
-        - In the **Homepage URL** box, enter the URL for the app's homepage.
-        - In the **Authorization callback URL** box, enter the following value: `https://portal.cloudappsecurity.com/api/oauth/saga`.
+    ![Screenshot showing creating an oauth app.](media/connect-github-create-oauth-app.png)
 
-            > [!NOTE]
-            >
-            > - For US Government GCC customers, enter the following value: `https://portal.cloudappsecuritygov.com/api/oauth/saga`
-            > - For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/saga`
+1. Fill out the **Register a new OAuth app** details and then select **Register application**.
+    - In the **Application name** box, enter a name for the app.
+    - In the **Homepage URL** box, enter the URL for the app's homepage.
+    - In the **Authorization callback URL** box, enter the following value: `https://portal.cloudappsecurity.com/api/oauth/saga`.
 
-        ![Screenshot showing registering an oauth app.](media/connect-github-register-oauth-app.png)
+    > [!NOTE]
+    >
+    > - For US Government GCC customers, enter the following value: `https://portal.cloudappsecuritygov.com/api/oauth/saga`
+    > - For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/saga`
+
+    ![Screenshot showing registering an oauth app.](media/connect-github-register-oauth-app.png)
 
     > [!NOTE]
     >

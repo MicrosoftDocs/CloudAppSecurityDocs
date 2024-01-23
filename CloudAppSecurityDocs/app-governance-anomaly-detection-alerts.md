@@ -94,8 +94,8 @@ This detection identifies an OAuth app accessed a suspicious Reply URL through t
 
   **Recommended action**: Review the Reply URL, domains and scopes requested by the app. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users are granted access.
 
-  To ban access to the app, go to thee OAuth apps page. On the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled, and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog. We recommend that you let the app users know their app is about to be banned from use.
-
+  To ban access to the app, go to the relevant tab for your app on the **App governance** page. On the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled, and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog. We recommend that you let the app users know their app is about to be banned from use.
+ 
 - **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
   **Recommended action**: Dismiss the alert.
@@ -170,7 +170,7 @@ This detection identifies an OAuth app that was found to have bad URL reputation
 
   **Recommended action**: Review the level of permission requested by this app and which users granted access. Based on your investigation you can choose to ban access to this app.
 
-  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
+  To ban access to the app, go to the relevant tab for your app on the **App governance** page. On the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
 
 - **FP**: If you're to confirm that the app has an encoded name but has a legitimate business use in the organization.
 
@@ -192,7 +192,7 @@ Follow the tutorial on how to [investigate risky OAuth apps](./investigate-risky
 
   **Recommended action**: Review the Reply URL and scopes requested by the app. Based on your investigation you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
 
-  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
+  To ban access to the app, go to the relevant tab for your app on the **App governance** page. On the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
 
 - **B-TP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 

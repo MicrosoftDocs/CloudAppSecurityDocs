@@ -1,10 +1,8 @@
 ---
-title: Hunt for threats in app activities - Microsoft Defender for Cloud Apps
-ms.date: 05/28/2023
+title: Hunt for threats in app activities | Microsoft Defender for Cloud Apps
+ms.date: 01/23/2024
 ms.topic: how-to
 description: Learn how app governance in Microsoft Defender for Cloud Apps helps you hunt for resources accessed and activities carried out by apps in your environment.
-author: anandd512
-ms.author: andeshpande
 ---
 
 # Hunt for threats in app activities
@@ -14,6 +12,15 @@ Apps can be a valuable entry point for attackers, so we recommend monitoring ano
 Using app governance and advanced hunting capabilities, you can get complete visibility into activities done by the apps and the resources it has accessed.
 
 This article describes how you can simplify app-based threat hunting using app governance in Microsoft Defender for Cloud Apps.
+
+## Prerequisites
+
+Before you perform the steps in this article, make sure that you are using preview features and have app governance turned on. 
+
+For more information, see:
+
+- [Preview features in Microsoft Defender for Cloud Apps](preview-features.md)
+- [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md)
 
 ## Step 1: Find the app in app governance
 
