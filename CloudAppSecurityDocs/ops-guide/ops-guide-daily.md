@@ -124,8 +124,6 @@ For more information, see:
 - [Investigate predefined app policy alerts](../app-governance-investigate-predefined-policies.md)
 - [Investigate and remediate risky OAuth apps](../investigate-risky-oauth.md)
 
-<!--App governance uses machine learning-based detection algorithms to detect anomalous app behavior in your Microsoft 365 tenant and generates alerts that you can see, investigate, and resolve. Beyond this built-in detection capability, you can use a set of default policy templates or create your own app policies that generate other alerts. ISN'T THIS TRUE FOR ALL OF THEM?--> 
-
 ### Check app governance overview page 
 
 **Where**: In the Microsoft Defender XDR Portal, select:
