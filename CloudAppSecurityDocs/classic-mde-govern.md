@@ -57,7 +57,7 @@ Use the following steps to enable access control for cloud apps:
    - Microsoft 365 E5
 1. Onboarded machines: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
 1. [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
-1. Enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
+1. Enable [cloud app blocking with Defender for Endpoint](#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
 
 ### Blocking apps
 
