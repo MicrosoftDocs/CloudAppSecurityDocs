@@ -7,32 +7,39 @@ ms.topic: how-to
 
 # Govern discovered apps using Microsoft Defender for Endpoint
 
-
-
 The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for Endpoint](mde-integration.md) provides a seamless Shadow IT visibility and control solution. Our integration enables Defender for Cloud Apps administrators to block access of end users to cloud apps, by natively integrating Defender for Cloud Apps app governance controls with Microsoft Defender for Endpoint's network protection. Alternatively, administrators can take a gentler approach of warning users when they access risky cloud apps.
 
-## Prerequisites
-
-- Microsoft Defender for Cloud Apps license
-- Microsoft Defender for Endpoint [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2), with endpoints onboarded to Defender for Endpoint
-- Supported operating systems are listed below in the [Prerequisites for blocking apps](#prerequisites-for-blocking-apps-with-defender-for-endpoint) section
-- Microsoft Defender Antivirus
-  - [Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
-  - [Cloud-delivered protection enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
-  - [Network protection enabled and configured to block mode](/microsoft-365/security/defender-endpoint/enable-network-protection)
-
-## Block access to unsanctioned cloud apps
-
 Defender for Cloud Apps uses the built-in [**Unsanctioned**](governance-discovery.md#sanctioningunsanctioning-an-app) app tag to mark cloud apps as prohibited for use, available in both the Cloud Discovery and Cloud app catalog pages. By enabling the integration with Defender for Endpoint, you can seamlessly block access to unsanctioned apps with a single click in the Defender for Cloud Apps portal.
-
-### How blocking works
 
 Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically synced to Defender for Endpoint. More specifically, the domains used by these unsanctioned apps are propagated to endpoint devices to be blocked by Microsoft Defender Antivirus within the Network Protection SLA.
 
 > [!NOTE]
 > The time latency to block an app via Defender for Endpoint is up to three hours from the moment you mark the app as unsanctioned in Defender for Cloud Apps to the moment the app is blocked in the device. This is due to up to one hour of synchronization of Defender for Cloud Apps sanctioned/unsanctioned apps to Defender for Endpoint, and up to two hours to push the policy to the devices in order to block the app once the indicator was created in Defender for Endpoint.
 
-### How to enable cloud app blocking with Defender for Endpoint
+## Prerequisites
+
+- One of the following licenses:
+
+  - Defender for Cloud Apps (E5, AAD-P1m CAS-D) and Microsoft Defender for Endpoint [Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2), with endpoints onboarded to Defender for Endpoint
+  - Microsoft 365 E5
+
+- Microsoft Defender Antivirus. For more information, see:
+
+  - [Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
+  - [Cloud-delivered protection enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
+  - [Network protection enabled and configured to block mode](/microsoft-365/security/defender-endpoint/enable-network-protection)
+
+- One of the following supported operating systems:
+
+   - Windows: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
+   - Android: minimum version 8.0: For more information see: [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android#system-requirements)
+   - iOS: minimum version 14.0: For more information see: [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios#prerequisites)
+   - MacOS: minimum version 11: For more information see:  [Network protection for macOS](/microsoft-365/security/defender-endpoint/network-protection-macos)
+   - [Linux system requirements](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux): For more information see: [Network protection for Linux](/microsoft-365/security/defender-endpoint/network-protection-linux)
+
+- Microsoft Defender for Endpoint onboarded. For more information, see [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
+
+## Enable cloud app blocking with Defender for Endpoint
 
 Use the following steps to enable access control for cloud apps:
 
@@ -49,23 +56,7 @@ Use the following steps to enable access control for cloud apps:
 
     ![Screenshot showing how to enable custom network indicators in Defender for Endpoint.](media/mde-custom-network-indicators.png)
 
-### Prerequisites for blocking apps with Defender for Endpoint
-
-1. One of the following licenses:
-
-   - Defender for Cloud Apps (E5, AAD-P1m CAS-D) and Microsoft Defender for Endpoint [Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
-   - Microsoft 365 E5
-1. Supported Operating Systems:
-   - Windows: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
-   - Android: minimum version 8.0: For more information see: [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android#system-requirements)
-   - iOS: minimum version 14.0: For more information see: [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios#prerequisites)
-   - MacOS: minimum version 11: For more information see:  [Network protection for macOS](/microsoft-365/security/defender-endpoint/network-protection-macos)
-   - [Linux system requirements](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux): For more information see: [Network protection for Linux](/microsoft-365/security/defender-endpoint/network-protection-linux)
-
-1. [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
-1. Enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
-
-### Blocking apps
+## Block apps for specific device groups
 
 To block usage for specific device groups, do the following steps:
 
@@ -111,12 +102,6 @@ To block an app, do the following steps:
 ## Educate users when accessing risky apps
 
 Admins have the option to warn users when they access risky apps. Rather than blocking users, they're prompted with a message providing a custom redirect link to a company page listing apps approved for use. The prompt provides options for users to bypass the warning and continue to the app. Admins are also able to monitor the number of users that bypass the warning message.
-
-### Prerequisites for warning with Defender for Endpoint
-
-Same as [Prerequisites for blocking apps with Defender for Endpoint](/defender-cloud-apps/mde-govern), but doesn't support mobile (Android and iOS).
-
-### How does it work
 
 Defender for Cloud Apps uses the built-in **Monitored** app tag to mark cloud apps as risky for use. The tag is available on both the Cloud Discovery and Cloud App Catalog pages. By enabling the integration with Defender for Endpoint, you can seamlessly warn users on access to monitored apps with a single click in the Defender for Cloud Apps portal.
 
