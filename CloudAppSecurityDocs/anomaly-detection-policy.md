@@ -61,7 +61,9 @@ This detection identifies malicious files in your cloud storage, whether they're
 Use this detection to control file uploads and downloads in real time with session policies.
 
 **File Sandboxing**
+
 By enabling file sandboxing, files that according to their metadata and based on proprietary heuristics to be potentially risky, will also be sandbox scanned in a safe environment. The Sandbox scan may detect files that were not detected based on threat intelligence sources.
+
 Defender for Cloud Apps supports malware detection for the following apps:
 
 * Box
