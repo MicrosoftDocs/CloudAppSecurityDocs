@@ -150,7 +150,7 @@ These steps can be completed independently of the [Configure GitHub Enterprise C
 
     Back in the Defender for Cloud Apps console, you should receive a message that GitHub was successfully connected.
 
-1. Work with your GitHub organization owner to grant organization access to the OAuth app created. The organization owner should navigate to **Organization Settings** -> **Integrations** -> **Third-party access** to grant access.
+1. Work with your GitHub organization owner to grant organization access to the OAuth app created under the GitHub **Third-party access** settings. For more information, see [GitHub documentation](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/enabling-oauth-app-access-restrictions-for-your-organization).
 
    The organization owner will find the request from the OAuth app only after connecting GitHub to Defender for Cloud Apps.
 
