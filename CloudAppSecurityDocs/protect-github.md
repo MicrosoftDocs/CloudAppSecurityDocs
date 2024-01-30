@@ -86,7 +86,7 @@ These steps can be completed independently of the [Configure GitHub Enterprise C
 1. **Create an OAuth App for Defender for Cloud Apps to connect your GitHub organization.** Repeat this step for each additional connected organization.
 
     > [!NOTE]
-    > If you have [preview features](preview-features.md) and [app governance turned on](app-governance-get-started.md), use the **App governance** page instead of the **OAuth apps** page to perform this procedure.
+    > If you have [preview features](/microsoft-365/security/defender/preview) and [app governance turned on](app-governance-get-started.md), use the **App governance** page instead of the **OAuth apps** page to perform this procedure.
     >
 
 1. Browse to **Settings** > **Developer settings**, select  **OAuth Apps**, and then select **Register an application**. Alternatively, if you have existing OAuth apps, select **New OAuth App**.

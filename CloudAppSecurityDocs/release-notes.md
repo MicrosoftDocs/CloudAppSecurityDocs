@@ -60,7 +60,7 @@ The classic Microsoft Defender for Cloud Apps portal experience and functionalit
 For more information, see:
 
 - [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps)
-- [Preview features in Microsoft Defender for Cloud Apps](preview-features.md)
+- [Microsoft 365 Defender preview features](/microsoft-365/security/defender/preview)
 
 ## December 2023
 

@@ -15,7 +15,7 @@ For more information, see [Investigate risky OAuth apps](investigate-risky-oauth
 > [!NOTE]
 > This article uses samples and screenshots from the **OAuth apps** page, which is used when you don't have app governance turned on.
 >
-> If you are using [preview features](preview-features.md) and have app governance turned on, the same functionality is available from the **App governance** page instead.
+> If you are using [preview features](/microsoft-365/security/defender/preview) and have app governance turned on, the same functionality is available from the **App governance** page instead.
 > 
 > For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md).
 >
