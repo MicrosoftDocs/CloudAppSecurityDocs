@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 01/18/2024
+ms.date: 01/30/2024
 ms.topic: overview
 ---
 
@@ -22,6 +22,20 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
+
+## March 2024
+
+### Turn preview options on in the main Microsoft 365 Defender settings (Preview)
+
+Now, preview customers can manage settings for preview features together with other Microsoft 365 Defender preview features.
+
+Select **Settings > Microsoft Defender XDR > General > Preview** to toggle preview features on or off as needed. For example:
+
+:::image type="content" source="media/release-notes/preview-features.png" alt-text="Screenshot of the Microsoft Defender XDR Preview features settings page.":::
+
+Customers not yet using preview features continue to see the legacy settings under **Settings > Cloud apps > System > Preview** features.
+
+For more information, see [Microsoft 365 Defender preview features](/microsoft-365/security/defender/preview).
 
 ## January 2024
 
