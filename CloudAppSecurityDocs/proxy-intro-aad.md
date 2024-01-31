@@ -180,6 +180,7 @@ In the following applications, we've encountered scenarios where navigating to a
   - GitHub
   - Microsoft Power Automate
   - Microsoft Power Apps
+  - Microsoft Teams
   - Workplace from Meta
   - ServiceNow
 
