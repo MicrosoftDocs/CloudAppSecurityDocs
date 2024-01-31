@@ -31,7 +31,7 @@ Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically syn
 
 - One of the following supported operating systems:
 
-   - Windows: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
+   - Windows: Windows 10 version 18.09 (RS5), OS Build 1776.3 and Windows 11
    - Android: minimum version 8.0: For more information see: [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android#system-requirements)
    - iOS: minimum version 14.0: For more information see: [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios#prerequisites)
    - MacOS: minimum version 11: For more information see:  [Network protection for macOS](/microsoft-365/security/defender-endpoint/network-protection-macos)
