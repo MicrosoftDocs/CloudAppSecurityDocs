@@ -1,7 +1,7 @@
 {
     "redirections": [
         {
-            "source_path": "CloudAppSecurityDocs/preview.md",
+            "source_path": "CloudAppSecurityDocs/preview-features.md",
             "redirect_url": "/microsoft-365/security/defender/preview",
             "redirect_document_id": false
         }, 
