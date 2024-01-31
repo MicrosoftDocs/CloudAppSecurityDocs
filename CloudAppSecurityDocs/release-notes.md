@@ -25,9 +25,9 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## March 2024
 
-### Turn preview options on in the main Microsoft 365 Defender settings (Preview)
+### Turn preview options on in the main Microsoft Defender XDR settings (Preview)
 
-Now, preview customers can manage settings for preview features together with other Microsoft 365 Defender preview features.
+Now, preview customers can manage settings for preview features together with other Microsoft Defender XDR preview features.
 
 Select **Settings > Microsoft Defender XDR > General > Preview** to toggle preview features on or off as needed. For example:
 
@@ -35,7 +35,7 @@ Select **Settings > Microsoft Defender XDR > General > Preview** to toggle previ
 
 Customers not yet using preview features continue to see the legacy settings under **Settings > Cloud apps > System > Preview** features.
 
-For more information, see [Microsoft 365 Defender preview features](/microsoft-365/security/defender/preview).
+For more information, see [Microsoft Defender XDR preview features](/microsoft-365/security/defender/preview).
 
 ## January 2024
 
@@ -60,7 +60,7 @@ The classic Microsoft Defender for Cloud Apps portal experience and functionalit
 For more information, see:
 
 - [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps)
-- [Microsoft 365 Defender preview features](/microsoft-365/security/defender/preview)
+- [Microsoft Defender XDR preview features](/microsoft-365/security/defender/preview)
 
 ## December 2023
 
