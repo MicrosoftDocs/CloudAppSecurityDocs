@@ -50,15 +50,7 @@ For example:
 
 ## Licensing
 
-App governance is available to organizations with a valid Defender for Cloud Apps license, including:
-
-- Microsoft Defender for Cloud Apps (standalone)
-- Enterprise Mobility & Security E5/A5
-- Microsoft 365 Security E5/A5/F5
-- Microsoft 365 E5/A5/F5
-- Microsoft Purview E5/A5/F5
-- Microsoft 365 F5 Security & Compliance
-- Microsoft 365 Audit Platform
+App governance is available to organizations with a valid Defender for Cloud Apps license. For more information, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
 ## Roles
 
