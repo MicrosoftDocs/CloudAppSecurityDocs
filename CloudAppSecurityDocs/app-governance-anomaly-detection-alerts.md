@@ -1058,6 +1058,62 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
 
+### App with application permissions accessing numerous emails
+
+**Severity**: Medium
+
+**MITRE IDs**: T1114
+
+This detection generates alerts for multi-tenant cloud apps with application permissions showing a significant increase in calls to the Exchange Web Services API that are specific to email enumeration and collection. This app might be involved in accessing and retrieving sensitive email data.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the app has accessed sensitive email data or made a large number of unusual calls to the Exchange workload.
+
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
+    - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
+### Unused app newly accessing APIs
+
+**Severity**: Medium
+
+**MITRE IDs**: T1530
+
+This detection generates alerts for a multi-tenant cloud app that has been inactive for a while and has recently started making API calls. This app may be compromised by an attacker and being used to access and retrieve sensitive data.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the app has accessed sensitive data or made a large number of unusual calls to Microsoft Graph, Exchange or Azure Resource Manager workloads.
+
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
+    - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+   
 ## Impact alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to  manipulate, interrupt, or destroy your systems and data from your organization.
