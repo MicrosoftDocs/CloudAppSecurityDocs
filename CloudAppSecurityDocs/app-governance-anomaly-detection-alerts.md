@@ -1058,13 +1058,13 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
 
-### App with application permissions accessing numerous emails
+### App with EWS application permissions accessing numerous emails
 
 **Severity**: Medium
 
 **MITRE IDs**: T1114
 
-This detection generates alerts for multi-tenant cloud apps with application permissions showing a significant increase in calls to the Exchange Web Services API that are specific to email enumeration and collection. This app might be involved in accessing and retrieving sensitive email data.
+This detection generates alerts for multi-tenant cloud apps with EWS application permissions showing a significant increase in calls to the Exchange Web Services API that are specific to email enumeration and collection. This app might be involved in accessing and retrieving sensitive email data.
 
 **TP or FP?**
 
