@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot access and session controls for admins | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by admins with Microsoft Defender for Cloud Apps.
-ms.date: 11/20/2023
+ms.date: 02/08/2024
 ms.topic: troubleshooting
 ---
 
@@ -505,7 +505,7 @@ For example, the following image shows the **Admin View** toolbar showing at the
 
 The following sections describe how to use the **Admin View** toolbar to test and troubleshoot.
 
-### Test mode (Preview)
+### Test mode
 
 As an admin user, you might want to test upcoming proxy bug fixes before the latest release is fully rolled out to all tenants. Provide your feedback about the bug fix to the Microsoft support team to help speed up release cycles.
 
