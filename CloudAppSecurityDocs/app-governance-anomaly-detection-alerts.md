@@ -61,7 +61,7 @@ Use the following general guidelines when investigating any type of alert to gai
 
 This section describes alerts indicating that a malicious app may be attempting to maintain their foothold in your organization.  
 
-### App redirects to phishing URL by exploiting OAuth redirection vulnerability
+### App redirects to phishing URL by exploiting OAuth redirection vulnerability
 
 **Severity**: Medium
 
