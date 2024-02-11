@@ -31,7 +31,7 @@ This guide provides information about investigating and remediating app governan
 - [Persistence](#persistence-alerts)
 - [Privilege Escalation](#privilege-escalation-alerts)
 - [Defense Evasion](#defense-evasion-alerts)
-- Credential Access
+- [Credential Access](#credential-access)
 - [Discovery](#discovery-alerts)
 - Lateral Movement
 - [Collection](#collection-alerts)
@@ -682,6 +682,35 @@ This detection generates alerts for non-Microsoft OAuth apps with publisher doma
 1. Review all activities performed by the app.
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
+
+## Credential access
+
+This section describes alerts indicating that a malicious actor may be attempting to read sensitive credential data, and consists of techniques for stealing credentials like account names, secrets, tokens, certificates, and passwords in your organization.
+
+### Application initiating multiple failed KeyVault read activity with no success
+
+**Severity**: Medium
+
+**MITRE ID**: T1078.004
+
+This detection identifies an application in your tenant that was observed making multiple read action calls to the KeyVault using Azure Resource Manager API in a short interval, with only failures and no successful read activity being completed.
+
+**TP or FP?**
+ 
+- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious. After after verifiying the Azure resource being used and validating the app use in the tenant, the given activity may require that the app be disabled. This is usually evidence of suspected enumeration activity against the KeyVault resource to gain access to credentials for lateral movement or privilege escalation.
+ 
+  **Recommended actions**: Review the Azure resources accessed or created by the application and any recent changes made to the application. Based on your investigation, choose whether you want to ban access to this app. Review the permission level requested by this app and which users have granted access.
+ 
+- **FP**: If, after investigation, you can confirm that the app has legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+ 
+**Understand the scope of the breach**
+ 
+1. Review the app's access and activity.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and the Role granted to it in your subscription.
+1. Review any user who might have accessed the app prior to the activity.
 
 ## Discovery alerts
 
