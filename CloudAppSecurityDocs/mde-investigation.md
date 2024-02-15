@@ -50,7 +50,7 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 ### Discover apps via Defender for Endpoint when the endpoint is behind a network proxy
 
-As a preview feature, Defender for Cloud Apps can discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy. For example, if your Windows 10 endpoint device is in the same environment as ZScalar, Defender for Cloud Apps can discover Shadow IT applications via the **Win10 Endpoint Users** stream.
+Defender for Cloud Apps can discover Shadow IT network events detected from Defender for Endpoint devices that are working in the same environment as a network proxy. For example, if your Windows 10 endpoint device is in the same environment as ZScalar, Defender for Cloud Apps can discover Shadow IT applications via the **Win10 Endpoint Users** stream.
 
 ## Investigate device network events in Microsoft Defender XDR
 
