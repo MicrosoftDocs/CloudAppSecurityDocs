@@ -7,8 +7,6 @@ ms.topic: overview
 
 # What's new in Microsoft Defender for Cloud Apps
 
-
-
 *Applies to: Microsoft Defender for Cloud Apps*
 
 This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
@@ -22,6 +20,17 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
+
+## February
+
+The Defender for Cloud Apps experience in the Microsoft Defender XDR portal is now available for all users detailed in [Manage admin access](manage-admins.md), including the following admin roles, which were previously limited:
+
+- App/Instance admin
+- User group admin
+- Cloud Discovery global admin
+- Cloud Discovery report admin
+
+For more information, see [Built-in admin roles in Defender for Cloud Apps](manage-admins.md#built-in-admin-roles-in-defender-for-cloud-apps) and [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
 ## January 2024
 
