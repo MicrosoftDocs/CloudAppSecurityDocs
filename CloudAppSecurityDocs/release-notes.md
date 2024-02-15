@@ -23,14 +23,14 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## February
 
-The Defender for Cloud Apps experience in the Microsoft Defender XDR portal is now available for all users detailed in [Manage admin access](manage-admins.md), including the following admin roles, which were previously limited:
+The Defender for Cloud Apps experience in the Microsoft Defender XDR portal is now available for all Defender for Cloud Apps roles, including the following roles that were previously limited:
 
 - App/Instance admin
 - User group admin
 - Cloud Discovery global admin
 - Cloud Discovery report admin
 
-For more information, see [Built-in admin roles in Defender for Cloud Apps](manage-admins.md#built-in-admin-roles-in-defender-for-cloud-apps) and [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+For more information, see [Built-in admin roles in Defender for Cloud Apps](manage-admins.md#built-in-admin-roles-in-defender-for-cloud-apps).
 
 ## January 2024
 
