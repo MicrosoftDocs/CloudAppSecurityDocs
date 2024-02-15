@@ -23,7 +23,9 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## February
 
-The Defender for Cloud Apps experience in the Microsoft Defender XDR portal is now available for all Defender for Cloud Apps roles, including the following roles that were previously limited:
+### Defender for Cloud Apps in the Microsoft Defender portal now available to all Defender for Cloud Apps roles
+
+The Defender for Cloud Apps experience in the Microsoft Defender portal is now available for all Defender for Cloud Apps roles, including the following roles that were previously limited:
 
 - App/Instance admin
 - User group admin
