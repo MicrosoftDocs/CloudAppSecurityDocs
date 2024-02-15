@@ -1,7 +1,7 @@
 ---
 title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 08/17/2023
+ms.date: 02/14/2024
 ms.topic: how-to
 ---
 
@@ -50,87 +50,93 @@ The following tables list, per cloud app, which abilities are supported with App
 
 ### Users and activities
 
-|   App                | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
+|   App    | List accounts  | List groups  | List privileges    | Log on activity    | User activity | Administrative activity   |
 | ----------------- | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------------- | ------------------------- |
-| [Atlassian](protect-atlassian.md)         | ✔ |  |  | ✔ | ✔ | ✔ |
-| [AWS](protect-aws.md)               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
-| [Azure](protect-azure.md)             | ✔                                    | ✔                                    |                                      | ✔                                    |  ✔                                          |                        |
-|   [Box](protect-box.md)             | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| [Asana](protect-miro.md)  |    |    |    |   |   |   |
+| [Atlassian](protect-atlassian.md)   | ✔ |  |  | ✔ | ✔ | ✔ |
+| [AWS](protect-aws.md)   | ✔   | | | ✔   | Not applicable  | ✔ |
+| [Azure](protect-azure.md) | ✔   | ✔   | | ✔   |  ✔   |  |
+|   [Box](protect-box.md) | ✔   | ✔   | ✔   | ✔   | ✔    | ✔ |
 |  [Citrix ShareFile](protect-citrix-sharefile.md)  |  |  |  |   |
-| [DocuSign](protect-docusign.md)          | Supported with DocuSign Monitor|  |  | Supported with DocuSign Monitor | Supported with DocuSign Monitor | Supported with DocuSign Monitor |
-| [Dropbox](protect-dropbox.md)           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| [DocuSign](protect-docusign.md)    | Supported with DocuSign Monitor|  |  | Supported with DocuSign Monitor | Supported with DocuSign Monitor | Supported with DocuSign Monitor |
+| [Dropbox](protect-dropbox.md) | ✔   | ✔   | ✔   | ✔   | ✔    | ✔ |
 | [Egnyte](protect-egnyte.md)  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
-| [GitHub](protect-github.md)            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
-| [GCP](protect-gcp.md)               | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | ✔                                           | ✔                         |
-| [Google  Workspace](protect-google-workspace.md) | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
+| [GitHub](protect-github.md)  | ✔   | | ✔   | | ✔    | ✔ |
+| [GCP](protect-gcp.md)   | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | ✔    | ✔ |
+| [Google  Workspace](protect-google-workspace.md) | ✔   | ✔   | ✔   | ✔   | ✔ - requires Google Business or  Enterprise | ✔ |
 | [NetDocuments](protect-netdocuments.md)  | ✔ |  | ✔ |  | ✔ | ✔ |
-| [Microsoft 365](protect-office-365.md)        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
-| [Okta](protect-okta.md)              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
+| [Microsoft 365](protect-office-365.md)  | ✔   | ✔   | ✔   | ✔   | ✔    | ✔ |
+| [Miro](protect-miro.md)  |    |    |    |   | |   |
+| [Okta](protect-okta.md)  | ✔   | | Not supported by provider  | ✔   | ✔    | ✔ |
 | [OneLogin](protect-onelogin.md) | ✔ | | ✔ | ✔ | ✔ | ✔ |
-| [ServiceNow](protect-servicenow.md)      | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Partial                                     | Partial                   |
-| [Salesforce](protect-salesforce.md)        | Supported with Salesforce Shield                                        |Supported with Salesforce Shield                                       | Supported with Salesforce Shield                                   | Supported with Salesforce Shield                                    | Supported with Salesforce Shield            | Supported with Salesforce Shield                             |
+| [ServiceNow](protect-servicenow.md)  | ✔   | ✔   | ✔   | ✔   | Partial    | Partial |
+| [Salesforce](protect-salesforce.md)  | Supported with Salesforce Shield |Supported with Salesforce Shield  | Supported with Salesforce Shield  | Supported with Salesforce Shield   | Supported with Salesforce Shield  | Supported with Salesforce Shield |
 | [Slack](protect-slack.md) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | [Smartsheet](protect-smartsheet.md) | ✔ | | ✔ |  | ✔ | ✔ |
-| [Webex](protect-webex.md)             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           |  Not supported by provider |
-| [Workday](protect-workday.md)           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
+| [Webex](protect-webex.md) | ✔   | | ✔   |   | ✔    |  Not supported by provider |
+| [Workday](protect-workday.md) | ✔   | Not supported by provider  | Not supported by provider  | ✔   | ✔    | Not supported by provider |
 |[Workplace by Meta](protect-workplace.md)|✔||✔|✔|✔|✔|
 | [Zendesk](protect-zendesk.md) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | [Zoom](protect-zoom.md)  |  |  |  |   |
 
 ### User, app governance, and security configuration visibility
 
-|  App      | User governance     | View app permissions   | Revoke app permissions    | SaaS Security Posture Management (SSPM) |
+|  App  | User governance | View app permissions   | Revoke app permissions    | SaaS Security Posture Management (SSPM) |
 | --------- | ------------------- | ---------------------- | ------------------------- | --------------------------------------- |
-| [Atlassian](protect-atlassian.md)         |  |  |  | Preview |
-| [AWS](protect-aws.md)               |                                      | Not applicable            | Not applicable            |             |
-| [Azure](protect-azure.md)             |                                      |                           | Not supported by provider |  |
-|  [Box](protect-box.md)                | ✔                                    | Not supported by provider |                           |                           |
-| [Citrix ShareFile](protect-citrix-sharefile.md)          |  |  | | ✔|
-| [DocuSign](protect-docusign.md)           |  |  | | ✔|
-| [Dropbox](protect-dropbox.md)           |                                      |                           |                            |     Preview                       |
+| [Asana](protect-asana.md)  |    |    |    |   |   |   |
+| [Atlassian](protect-atlassian.md)   |  |  |  | ✔ |
+| [AWS](protect-aws.md)   | | Not applicable  | Not applicable  | |
+| [Azure](protect-azure.md) | |   | Not supported by provider |  |
+|  [Box](protect-box.md)    | ✔   | Not supported by provider |   |   |
+| [Citrix ShareFile](protect-citrix-sharefile.md)    |  |  | | ✔|
+| [DocuSign](protect-docusign.md) |  |  | | ✔|
+| [Dropbox](protect-dropbox.md) | |   |    | ✔ |
 | [Egnyte](protect-egnyte.md) | | | | |
-| [GitHub](protect-github.md)              |                                      | ✔                         |                           | ✔|
-| [GCP](protect-gcp.md)                 | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
-| [Google  Workspace](protect-google-workspace.md) | ✔                                    | ✔                         | ✔                         |✔|
+| [GitHub](protect-github.md)  | | ✔ |   | ✔|
+| [GCP](protect-gcp.md) | Subject Google Workspace  connection | Not applicable  | Not applicable  | |
+| [Google  Workspace](protect-google-workspace.md) | ✔   | ✔ | ✔ |✔|
 | [NetDocuments](protect-netdocuments.md)  |  |  |  | Preview |
-| [Microsoft 365](protect-office-365.md)      | ✔                                    | ✔                         | ✔                         | ✔                 |
-| [Okta](protect-okta.md)              |                                      | Not applicable            | Not applicable            | ✔|
+| [Miro](protect-miro.md)  |    |    |    |   | |   |
+| [Microsoft 365](protect-office-365.md)  | ✔   | ✔ | ✔ | ✔ |
+| [Okta](protect-okta.md)  | | Not applicable  | Not applicable  | ✔|
 |  [OneLogin](protect-onelogin.md) | |  |  |  |
-| [ServiceNow](protect-servicenow.md)      |               |                           |                           | ✔ |
-| [Salesforce](protect-salesforce.md)        | ✔                                    | ✔                         | ✔                         | ✔ |
+| [ServiceNow](protect-servicenow.md)  |   |   |   | ✔ |
+| [Salesforce](protect-salesforce.md)  | ✔   | ✔ | ✔ | ✔ |
 | [Slack](protect-slack.md) |  |  |  |  |
 | [Smartsheet](protect-smartsheet.md) | | | | |
-| [Webex](protect-webex.md)             |                                      | Not applicable            | Not applicable            |             |
-| [Workday](protect-workday.md)           | Not supported by provider            | Not applicable            | Not applicable            |             |
+| [Webex](protect-webex.md) | | Not applicable  | Not applicable  | |
+| [Workday](protect-workday.md) | Not supported by provider  | Not applicable  | Not applicable  | |
 |[Workplace by Meta](protect-workplace.md)||||Preview|
-| [Zendesk](protect-zendesk.md)  |  |  |  | Preview |
+| [Zendesk](protect-zendesk.md)  |  |  |  | ✔ |
 |  [Zoom](protect-zoom.md)   |  |  |  | Preview  |
 
 ### Information protection
 
-|     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply sensitivity labels from Microsoft Purview Information Protection |
-| ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
-| [Atlassian](protect-atlassian.md)         |  |  |  |  |  |
-|  [AWS](protect-aws.md)                |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
-| [Azure](protect-azure.md)              |                           |                                          |                           |                           |                                            |
-| [Box](protect-box.md)                | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
+| App  | DLP - Periodic backlog scan | DLP - Near real-time scan    | Sharing control | File governance | Apply sensitivity labels from Microsoft Purview Information Protection |
+|------ | ------- | ----------- | -------- | ----------- | ---------------- |
+| [Asana](protect-asana.md)  |    |    |    |   | |
+| [Atlassian](protect-atlassian.md)   |  |  |  |  |  |
+|  [AWS](protect-aws.md)    |   | ✔ - S3 Bucket discovery only | ✔ | ✔ | Not applicable |
+| [Azure](protect-azure.md)  |   |   |   |   | |
+| [Box](protect-box.md)    | ✔ | ✔ | ✔ | ✔ | ✔   |
 | [Citrix ShareFile](protect-citrix-sharefile.md)  |  |  |  |   |
-| [DocuSign](protect-docusign.md)           |  |  |  |  |  |
-| [Dropbox](protect-dropbox.md)            | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
+| [DocuSign](protect-docusign.md) |  |  |  |  |  |
+| [Dropbox](protect-dropbox.md)  | ✔ | ✔ | ✔ | ✔ | |
 | [Egnyte](protect-egnyte.md)  |  |  |  |  | |
-|  [GitHub](protect-github.md)             |                           |                                          |                           |                           |                                            |
-| [GCP](protect-gcp.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
-| [Google  Workspace](protect-google-workspace.md) | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
+|  [GitHub](protect-github.md) |   |   |   |   | |
+| [GCP](protect-gcp.md)   | Not applicable  | Not applicable   | Not applicable  | Not applicable  | Not applicable |
+| [Google  Workspace](protect-google-workspace.md) | ✔ | ✔ - requires Google Business  Enterprise | ✔ | ✔ | ✔   |
 | [NetDocuments](protect-netdocuments.md)  |  |  |  |  |  |
-| [Microsoft 365](protect-office-365.md)         | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
-| [Okta](protect-okta.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
+| [Microsoft 365](protect-office-365.md)   | ✔ | ✔ | ✔ | ✔ | ✔   |
+| [Miro](protect-miro.md)  |    |    |    |   | |
+| [Okta](protect-okta.md)   | Not applicable  | Not applicable   | Not applicable  | Not applicable  | Not applicable |
 | [OneLogin](protect-onelogin.md) |  |  |  |  |  |
-| [ServiceNow](protect-servicenow.md)      | ✔                         | ✔                                        | Not applicable            |                           |                                            |
-|  [Salesforce](protect-salesforce.md)         | ✔                         | ✔                                        |                           | ✔                         |                                            |
+| [ServiceNow](protect-servicenow.md)  | ✔ | ✔ | Not applicable  |   | |
+|  [Salesforce](protect-salesforce.md)   | ✔ | ✔ |   | ✔ | |
 |  [Slack](protect-slack.md) |  |  | |  | |
 |  [Smartsheet](protect-smartsheet.md)  | | | | | |
-|  [Webex](protect-webex.md)             | ✔                         | ✔                                        | ✔                         | ✔                         | Not applicable                             |
-|  [Workday](protect-workday.md)            | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
+|  [Webex](protect-webex.md) | ✔ | ✔ | ✔ | ✔ | Not applicable |
+|  [Workday](protect-workday.md)  | Not supported by provider | Not supported by provider    | Not supported by provider | Not supported by provider | Not applicable |
 |[Workplace by Meta](protect-workplace.md)||||||
 | [Zendesk](protect-zendesk.md)  |  |  |  |  | Preview |
 | [Zoom](protect-zoom.md)   |  |  |  |   |
