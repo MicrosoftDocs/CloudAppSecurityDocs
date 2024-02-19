@@ -50,6 +50,7 @@ Risk scores are kept up to date using the following sources:
 Microsoft Defender for Cloud Apps is making some changes to the cloud app catalog to improve our app risk scoring.
 
 Changes include:
+
 -  Removing the following irrelevant and redundant indicators from the catalog:
 - Consumer Popularity Index
 - Safe Harbor
@@ -67,7 +68,9 @@ Changes include:
 - FISMA
 
 Due to the changes detailed above:
+
 -    The risk score for some apps might change and new alerts might be triggered, if you’ve created discovery policies based on a total app score or any of the removed indicators.
+
 -    Any existing policies that were created based on the removed indicators will be disabled.
 We plan to deploy the changes to the cloud app catalog starting Mid-May 2024. We recommend that you review your existing policies and modify them or create new policies as needed.
 ## Confirm cloud app security risk
