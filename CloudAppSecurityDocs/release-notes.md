@@ -23,6 +23,17 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## February 2024
+
+### New App governance alerts for Credential Access and Lateral Movement
+
+We've added the following new alerts for App governance customers:
+
+- [Application initiating multiple failed KeyVault read activity with no success](app-governance-anomaly-detection-alerts.md#application-initiating-multiple-failed-keyvault-read-activity-with-no-success)
+- [Dormant OAuth App predominantly using MS Graph or Exchange Web Services recently seen to be accessing ARM workloads](app-governance-anomaly-detection-alerts.md#dormant-oauth-app-predominantly-using-ms-graph-or-exchange-web-services-recently-seen-to-be-accessing-arm-workloads)
+
+For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md).
+
 ## January 2024
 
 ### SSPM support for multiple instances of the same app (Preview)
