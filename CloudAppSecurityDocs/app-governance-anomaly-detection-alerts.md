@@ -1,6 +1,6 @@
 ---
 title: Investigate app governance threat detection alerts | Microsoft Defender for Cloud Apps
-ms.date: 08/06/2023
+ms.date: 02/12/2023
 ms.topic: conceptual
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 description: Learn how to investigate threat detection alerts from app governance in Microsoft Defender XDR with Microsoft Defender for Cloud Apps.
@@ -33,7 +33,7 @@ This guide provides information about investigating and remediating app governan
 - [Defense Evasion](#defense-evasion-alerts)
 - Credential Access
 - [Discovery](#discovery-alerts)
-- Lateral Movement
+- [Lateral Movement](#lateral-movement-alerts)
 - [Collection](#collection-alerts)
 - [Exfiltration](#exfiltration-alerts)
 - [Impact](#impact-alerts)
@@ -809,6 +809,39 @@ This detection identifies an OAuth app that used an unusual user agent to access
 1. Review if the application was newly created or has had any recent changes made to it.
 2. Review the permissions granted to the application and users that have consented to the application.
 3. Review all activities done by the app.
+
+## Lateral movement alerts
+
+This section describes alerts indicating that a malicious actor may be attempting to laterally move within different resources, while pivoting through multiple systems and accounts to gain more control in your organization.
+
+### Dormant OAuth App predominantly using MS Graph or Exchange Web Services recently seen to be accessing ARM workloads
+
+**Severity**: Medium
+
+**MITRE ID**: T1078.004
+
+This detection identifies an application in your tenant that has, after a long span of dormant activity, started accessing the Azure Resource Manager API for the first time. Previously, this application had mostly using MS Graph or Exchange Web Service.
+ 
+**TP or FP?**
+
+- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious and may require disabling the app, after verifying the Azure resource being used, and validating the app usage in the tenant.
+
+  **Recommended actions**:
+
+  1. Review the Azure resources accessed or created by the application and any recent changes made to the application.
+  1. Review the level of permission requested by this app and which users have granted access.
+  1. Based on your investigation, choose whether you want to ban access to this app. 
+ 
+- **FP**: If, after investigation, you can confirm that the app has legitimate business use in the organization.
+ 
+  **Recommended action**: Dismiss the alert.
+ 
+**Understand the scope of the breach**
+ 
+1. Review the app's access and activity.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and the Role granted to it in your subscription.
+1. Review any user who might have accessed the app prior to the activity.
 
 ## Collection alerts
 
