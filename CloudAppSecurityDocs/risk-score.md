@@ -72,7 +72,8 @@ Due to the changes detailed above:
 -    The risk score for some apps might change and new alerts might be triggered, if you’ve created discovery policies based on a total app score or any of the removed indicators.
 
 -    Any existing policies that were created based on the removed indicators will be disabled.
-We plan to deploy the changes to the cloud app catalog starting Mid-May 2024. We recommend that you review your existing policies and modify them or create new policies as needed.
+
+We plan to gradually roll out changes to the cloud app catalog starting later in 2024. We recommend that you review your existing policies and modify them or create new policies as needed.
 ## Confirm cloud app security risk
 
 Check the cloud app catalog to ensure that the apps used by the organization fit into your organization's security requirements. For example, you might want to periodically check that CRM apps used in your organization are adequately secure. In this case, you'd use the following steps to identify your apps:
