@@ -1,7 +1,7 @@
 ---
 title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 08/17/2023
+ms.date: 02/20/2023
 ms.topic: how-to
 ---
 
@@ -52,6 +52,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |   App                | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
 | ----------------- | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------------- | ------------------------- |
+| [Asana](protect-asana.md)  | ✔ |  |  | ✔ | ✔| |
 | [Atlassian](protect-atlassian.md)         | ✔ |  |  | ✔ | ✔ | ✔ |
 | [AWS](protect-aws.md)               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | [Azure](protect-azure.md)             | ✔                                    | ✔                                    |                                      | ✔                                    |  ✔                                          |                        |
@@ -63,8 +64,9 @@ The following tables list, per cloud app, which abilities are supported with App
 | [GitHub](protect-github.md)            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
 | [GCP](protect-gcp.md)               | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | ✔                                           | ✔                         |
 | [Google  Workspace](protect-google-workspace.md) | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
-| [NetDocuments](protect-netdocuments.md)  | ✔ |  | ✔ |  | ✔ | ✔ |
 | [Microsoft 365](protect-office-365.md)        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| [Miro](protect-miro.md)  | ✔ |  |  | ✔ | ✔| |
+| [NetDocuments](protect-netdocuments.md)  | ✔ |  | ✔ |  | ✔ | ✔ |
 | [Okta](protect-okta.md)              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
 | [OneLogin](protect-onelogin.md) | ✔ | | ✔ | ✔ | ✔ | ✔ |
 | [ServiceNow](protect-servicenow.md)      | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Partial                                     | Partial                   |
@@ -81,6 +83,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |  App      | User governance     | View app permissions   | Revoke app permissions    | SaaS Security Posture Management (SSPM) |
 | --------- | ------------------- | ---------------------- | ------------------------- | --------------------------------------- |
+| [Asana](protect-asana.md)  |  |  |  |  |
 | [Atlassian](protect-atlassian.md)         |  |  |  | Preview |
 | [AWS](protect-aws.md)               |                                      | Not applicable            | Not applicable            |             |
 | [Azure](protect-azure.md)             |                                      |                           | Not supported by provider |  |
@@ -92,8 +95,9 @@ The following tables list, per cloud app, which abilities are supported with App
 | [GitHub](protect-github.md)              |                                      | ✔                         |                           | ✔|
 | [GCP](protect-gcp.md)                 | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | [Google  Workspace](protect-google-workspace.md) | ✔                                    | ✔                         | ✔                         |✔|
-| [NetDocuments](protect-netdocuments.md)  |  |  |  | Preview |
 | [Microsoft 365](protect-office-365.md)      | ✔                                    | ✔                         | ✔                         | ✔                 |
+| [Miro](protect-miro.md)  |  |  |  |  |
+| [NetDocuments](protect-netdocuments.md)  |  |  |  | Preview |
 | [Okta](protect-okta.md)              |                                      | Not applicable            | Not applicable            | ✔|
 |  [OneLogin](protect-onelogin.md) | |  |  |  |
 | [ServiceNow](protect-servicenow.md)      |               |                           |                           | ✔ |
@@ -110,6 +114,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply sensitivity labels from Microsoft Purview Information Protection |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
+| [Asana](protect-asana.md)   |  |  |  |  |  |
 | [Atlassian](protect-atlassian.md)         |  |  |  |  |  |
 |  [AWS](protect-aws.md)                |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | [Azure](protect-azure.md)              |                           |                                          |                           |                           |                                            |
@@ -121,8 +126,9 @@ The following tables list, per cloud app, which abilities are supported with App
 |  [GitHub](protect-github.md)             |                           |                                          |                           |                           |                                            |
 | [GCP](protect-gcp.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | [Google  Workspace](protect-google-workspace.md) | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
+| [Okta](protect-okta.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
+| [Miro](protect-miro.md)   |  |  |  |  |  |
 | [NetDocuments](protect-netdocuments.md)  |  |  |  |  |  |
-| [Microsoft 365](protect-office-365.md)         | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | [Okta](protect-okta.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | [OneLogin](protect-onelogin.md) |  |  |  |  |  |
 | [ServiceNow](protect-servicenow.md)      | ✔                         | ✔                                        | Not applicable            |                           |                                            |
