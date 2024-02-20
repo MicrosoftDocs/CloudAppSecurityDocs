@@ -127,7 +127,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | [GCP](protect-gcp.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | [Google  Workspace](protect-google-workspace.md) | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
 | [Okta](protect-okta.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
-| [Miro](protect-mir.md)   |  |  |  |  |  |
+| [Miro](protect-miro.md)   |  |  |  |  |  |
 | [NetDocuments](protect-netdocuments.md)  |  |  |  |  |  |
 | [Okta](protect-okta.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | [OneLogin](protect-onelogin.md) |  |  |  |  |  |
