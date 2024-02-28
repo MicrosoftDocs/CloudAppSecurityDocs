@@ -84,13 +84,13 @@ The following tables list, per cloud app, which abilities are supported with App
 |  App      | User governance     | View app permissions   | Revoke app permissions    | SaaS Security Posture Management (SSPM) |
 | --------- | ------------------- | ---------------------- | ------------------------- | --------------------------------------- |
 | [Asana](protect-asana.md)  |  |  |  |  |
-| [Atlassian](protect-atlassian.md)         |  |  |  | Preview |
+| [Atlassian](protect-atlassian.md)         |  |  |  | ✔ |
 | [AWS](protect-aws.md)               |                                      | Not applicable            | Not applicable            |             |
 | [Azure](protect-azure.md)             |                                      |                           | Not supported by provider |  |
 |  [Box](protect-box.md)                | ✔                                    | Not supported by provider |                           |                           |
 | [Citrix ShareFile](protect-citrix-sharefile.md)          |  |  | | ✔|
 | [DocuSign](protect-docusign.md)           |  |  | | ✔|
-| [Dropbox](protect-dropbox.md)           |                                      |                           |                            |     Preview                       |
+| [Dropbox](protect-dropbox.md)           |                                      |                           |                            |     ✔                       |
 | [Egnyte](protect-egnyte.md) | | | | |
 | [GitHub](protect-github.md)              |                                      | ✔                         |                           | ✔|
 | [GCP](protect-gcp.md)                 | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
@@ -107,7 +107,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | [Webex](protect-webex.md)             |                                      | Not applicable            | Not applicable            |             |
 | [Workday](protect-workday.md)           | Not supported by provider            | Not applicable            | Not applicable            |             |
 |[Workplace by Meta](protect-workplace.md)||||Preview|
-| [Zendesk](protect-zendesk.md)  |  |  |  | Preview |
+| [Zendesk](protect-zendesk.md)  |  |  |  | ✔ |
 |  [Zoom](protect-zoom.md)   |  |  |  | Preview  |
 
 ### Information protection
