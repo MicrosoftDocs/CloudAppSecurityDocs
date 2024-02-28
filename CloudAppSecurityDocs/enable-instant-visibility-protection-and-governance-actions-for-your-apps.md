@@ -101,7 +101,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | [Okta](protect-okta.md)              |                                      | Not applicable            | Not applicable            | ✔|
 |  [OneLogin](protect-onelogin.md) | |  |  |  |
 | [ServiceNow](protect-servicenow.md)      |               |                           |                           | ✔ |
-| [Salesforce](protect-salesforce.md)        | ✔                                    | ✔                         | ✔                         | ✔ |
+| [Salesforce](protect-salesforce.md)        | ✔                                    |                          | ✔                         | ✔ |
 | [Slack](protect-slack.md) |  |  |  |  |
 | [Smartsheet](protect-smartsheet.md) | | | | |
 | [Webex](protect-webex.md)             |                                      | Not applicable            | Not applicable            |             |
