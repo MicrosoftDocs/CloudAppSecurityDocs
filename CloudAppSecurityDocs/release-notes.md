@@ -25,7 +25,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## February 2024
 
-### SSPM support for more connected apps in general avilability
+### SSPM support for more connected apps in general availability
 
 Defender for Cloud Apps provides you with security recommendations for your SaaS applications to help you prevent possible risks. These recommendations are shown via Microsoft Secure Score once you have a connector to an application.
 
