@@ -246,7 +246,7 @@ items:
       href: protect-zendesk.md
     - name: Zoom
       href: protect-zoom.md
-  - name: Conditional Access App Control
+  - name: Conditional access app control
     items:
     - name: Protect apps with Conditional Access App Control
       href: proxy-intro-aad.md
@@ -320,6 +320,14 @@ items:
           href: access-policy-aad.md
         - name: Session policies
           href: session-policy-aad.md
+        - name: In-browser protection (Microsoft Edge for Business)
+          href: in-browser-protection.md
+        - name: Policies for identity-managed devices
+          displayName: conditional access app control, caac
+          href: conditional-access-app-control-identity.md
+        - name: Known limitations
+          href: caac-known-issues.md
+          displayName: conditional access app control, caac
       - name: Shadow IT policies
         items:
         - name: Cloud Discovery policy

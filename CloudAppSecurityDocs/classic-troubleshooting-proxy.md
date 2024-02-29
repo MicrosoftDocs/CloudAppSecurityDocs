@@ -120,7 +120,7 @@ Defender for Cloud Apps provides the following options for identifying a device'
 1. Hybrid Microsoft Entra Domain joined
 1. Client certificates
 
-For more information on device identification, see [Managed Device Identification](proxy-intro-aad.md#managed-device-identification).
+For more information, see [Identity-managed devices with conditional access app control](conditional-access-app-control-identity.md).
 
 Common device identification issues you might encounter include
 
@@ -159,7 +159,7 @@ Microsoft Entra Conditional Access enables Intune compliant and Microsoft Entra 
 
 #### Client certificates aren't prompting when expected
 
-The device identification mechanism can request authentication from relevant devices using client certificates. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session. For more information about client certificates, see [Client-certificate authenticated devices](proxy-intro-aad.md#client-certificate-authenticated-devices).
+The device identification mechanism can request authentication from relevant devices using client certificates. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session. For more information,  about client certificates, see [Client-certificate authenticated devices](proxy-intro-aad.md#client-certificate-authenticated-devices).
 
 **Recommended steps**
 

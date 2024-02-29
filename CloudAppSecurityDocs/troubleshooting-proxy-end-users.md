@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting access and session controls for end-users | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by end-users with Microsoft Defender for Cloud Apps.
-ms.date: 08/20/2023
+ms.date: 02/29/2024
 ms.topic: troubleshooting
 ---
 
@@ -18,7 +18,7 @@ Before you start troubleshooting, make sure your environment meets the following
 |---------|---------|
 |**Licensing**     |   Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans) for Microsoft Defender for Cloud Apps.      |
 |**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Microsoft Entra ID using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
-|**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>Google Chrome<br>Mozilla Firefox<br>or Apple Safari      |
+|**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>- Google Chrome<br>- Mozilla Firefox<br>- Apple Safari  <br><br>In-browser protection for Microsoft Edge also has specific requirements, including the user signed in with their work profile. For more information, see [Prerequisites](in-browser-protection.md#prerequisites).    |
 |**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. <br><br>To configure the default behavior during system downtime, in Microsoft Defender XDR, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
 
 ## User monitoring page is not appearing
@@ -165,19 +165,19 @@ If the end user can't successfully encrypt the document, use the following steps
 In some scenarios, navigating to a link may result in the user landing on the app's home page rather than the full path of the link.
 
 > [!TIP]
-> Defender for Cloud Apps maintains a list of apps that are known to suffer from context loss. For more information, see [Known limitations](proxy-intro-aad.md#known-limitations).
+> Defender for Cloud Apps maintains a list of apps that are known to suffer from context loss. For more information, see [Context loss limitations](caac-known-issues.md#context-loss-limitations).
 >
 
 **Recommended steps**
 
-If a user lands on the app's home page instead of the full path of the link, resolve the issue by appending  `.mcas.ms` to the original URL.
+If you are using a browser other than Microsoft Edge and a user lands on the app's home page instead of the full path of the link, resolve the issue by appending  `.mcas.ms` to the original URL.
 
 For example, if the original URL is:
 
 `https://www.github.com/organization/threads/threadnumber`, change it to
 `https://www.github.com.mcas.ms/organization/threads/threadnumber`
 
-For apps experiencing context loss, open a [support ticket](support-and-ts.md).
+Microsoft Edge users benefit from in-browser protection, are not redirected to a reverse proxy, and shouldn't need the `.mcas.ms` suffix added. For apps experiencing context loss, open a [support ticket](support-and-ts.md).
 
 <a name="app-additional-considerations"></a>
 
@@ -214,13 +214,9 @@ Malicious actors can craft URLs that are similar to other sites' URLs in order t
 
 In some rare cases, users under session control will receive a message from the browser indicating suspicious site access. The reason for this is the browser treats the suffixed domain (for example:  `.mcas.ms`) as suspicious.
 
-For example, in Microsoft Edge:
+This message only appears for Chrome users, as Microsoft Edge users benefit from in-browser protection, without the reverse proxy architecture. For example:
 
-  ![Screenshot of a similar site warning in Microsoft Edge.](media/edge-similar-site-warning.png)
-
-For example, in Chrome:
-
-  ![Screenshot of a simliar site warning in Chrome.](media/chrome-similar-site-warning.png)
+![Screenshot of a similar site warning in Chrome.](media/chrome-similar-site-warning.png)
 
 If you receive a message like this, contact Microsoft’s support, who will address it with the relevant browser vendor.
 

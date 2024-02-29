@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting - What is mcas.ms, mcas-gov.us, or mcas-gov.ms?
 description: This article provides information about the mcas.ms, mcas-gov.us, or mcas-gov.ms URL suffix used by Conditional Access App Control.
-ms.date: 01/29/2023
+ms.date: 02/29/2024
 ms.topic: conceptual
 ---
 
@@ -13,9 +13,9 @@ This article provides information about the `mcas.ms`, `mcas-gov.us`, and `mcas-
 
 ## Our system flagged a new DNS entry or generated certificate for `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`, but we don't use Defender for Cloud Apps
 
-This is normal behavior and results from Defender for Cloud Apps protecting your environment. Even if your organization doesn't use Defender for Cloud Apps, when someone visits your site or service from an environment that does, their URLs are rewritten to protect their access.
+This is normal behavior and results from Defender for Cloud Apps protecting your environment in a browser other than Microsoft Edge. Even if your organization doesn't use Defender for Cloud Apps, when someone visits your site or service from an environment that does, and they use a browser other than Microsoft Edge, their URLs are rewritten to protect their access.
 
-For example, Contoso protects its environment using Conditional Access App Control provided by Defender for Cloud Apps. When a Contoso user visits `fabrikam.com`, the user is automatically redirected to `fabrikam.com.mcas.ms`. As a result, Fabrikam's phishing team will see a new DNS entry and certificate for `fabrikam.com.mcas.ms`.
+For example, Contoso protects its environment using Conditional Access App Control provided by Defender for Cloud Apps. When a Contoso user visits `fabrikam.com` from Google Chrome, the user is automatically redirected to `fabrikam.com.mcas.ms`. As a result, Fabrikam's phishing team will see a new DNS entry and certificate for `fabrikam.com.mcas.ms`.
 
 So even though Fabrikam doesn't actually use Defender for Cloud Apps, they see the DNS entry or certificate because Contoso does.
 
@@ -50,3 +50,12 @@ So when you try accessing a cloud app such as Salesforce, SharePoint Online, or 
 If the URL does not exactly match one of the replacement patterns (for example, `<app_site>.com` is not replaced with `<app_site>.com.mcas.ms`), or if you have additional concerns, contact your IT department.
 
 If you don't recognize the remaining portion of the URL (for example, **myurl.com**.mcas.ms) as associated with any of your business apps, it's recommended that you investigate the issue further and consider blocking the URL to avoid any potential security risks.
+
+> [!NOTE]
+> Microsoft Edge users benefit from in-browser protection, and are not redirected to a reverse proxy. Your URLs retain their original syntax in Microsoft Edge, even when access and sessions are protected by Defender for Cloud Apps. For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
+
+## Related content
+
+- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+- [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md)
+- [Troubleshooting access and session controls for end-users](troubleshooting-proxy-end-users.md)
