@@ -207,7 +207,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 
 ## Step 3: Verify that the app is working correctly<a name="verify-app"></a>
 
-To verify that the application is being proxied, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
+To verify that the application is protected, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
 
 Open the application and perform the following checks:
 

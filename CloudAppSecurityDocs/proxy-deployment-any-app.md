@@ -153,7 +153,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 
    ![Onboard with session control.](media/proxy-deployment-aad/onboard-with-session-control.png)
 
-To verify that the application is being proxied, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
+To verify that the application is protected, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
 
 Open the application and perform the following checks:
 
