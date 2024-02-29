@@ -429,7 +429,7 @@ If you run into any issues while deploying the app, see [Issues when onboarding 
 After adding a custom app, in the **Conditional Access App Control apps** page, you might see the option: **Request session control**.
 
 > [!NOTE]
-> [Catalog apps](proxy-intro-aad.md#session-controls) have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process.
+> Catalog apps have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process. For more information, see [Pre-onboarded apps](proxy-intro-aad.md#pre-onboarded-apps).
 
 **Recommended steps**
 
