@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # In-browser protection with Microsoft Edge for Business (Preview)
 
-Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
+Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
 
 Microsoft Edge for Business supports separate profiles for work and personal use, allowing users and organizations to separate browsing data into independent silos. For example, personal favorites and history aren't synchronized with the work account if you set up separate profiles for work and personal use. The work and personal profiles have separate caches and storage locations to keep information separate.
 
