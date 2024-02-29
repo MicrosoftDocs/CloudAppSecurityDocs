@@ -321,7 +321,7 @@ We've consolidated the flow that allows Microsoft Defender for Cloud Apps data t
 - **Protecting apps that use non-standard ports with session controls**  
 This feature allows Microsoft Defender for Cloud Apps to enforce session policies for applications that use port numbers other than 443.
  Splunk and other applications that use ports other than 443 will now be eligible for session control.  
-There's no configuration requirement for this feature.  The feature is currently in preview mode. For more information, see [Session controls](proxy-intro-aad.md#session-controls).
+There's no configuration requirement for this feature.  The feature is currently in preview mode. For more information, [Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
 
 ### Defender for Cloud Apps release 232 and 233
 
