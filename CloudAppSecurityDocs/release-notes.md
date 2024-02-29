@@ -25,6 +25,27 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## February 2024
 
+### SSPM support for more connected apps in general availability
+
+Defender for Cloud Apps provides you with security recommendations for your SaaS applications to help you prevent possible risks. These recommendations are shown via Microsoft Secure Score once you have a connector to an application.
+
+Defender for Cloud Apps has now enhanced its SSPM support in general avilability by including the following apps:
+
+- [Atlassian](protect-atlassian.md)
+- [Dropbox](protect-dropbox.md)
+- [Zendesk](protect-zendesk.md)
+
+SSPM is also now supported for [Google Workspace](protect-google-workspace.md) in General Availability.
+
+> [!NOTE]
+> If you already have a connector to one of these apps, your score in Secure score might automatically update accordingly.
+
+For more information, see:
+
+- [SaaS security posture management (SSPM)](security-saas.md)
+- [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
+
 ### New App governance alerts for Credential Access and Lateral Movement
 
 We've added the following new alerts for App governance customers:
