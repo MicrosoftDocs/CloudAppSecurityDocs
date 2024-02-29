@@ -23,6 +23,16 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## March 2024
+
+### Data in motion protection for Edge for Business users (Preview)
+
+Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
+
+Users experience a smoother experience with their cloud apps, with less latency and fewer incompatibilities, and benefit from higher levels of security protection from attackers.
+
+For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
+
 ## February 2024
 
 ### New App governance alerts for Credential Access and Lateral Movement
@@ -33,16 +43,6 @@ We've added the following new alerts for App governance customers:
 - [Dormant OAuth App predominantly using MS Graph or Exchange Web Services recently seen to be accessing ARM workloads](app-governance-anomaly-detection-alerts.md#dormant-oauth-app-predominantly-using-ms-graph-or-exchange-web-services-recently-seen-to-be-accessing-arm-workloads)
 
 For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md).
-
-## March 2024
-
-### Data in motion protection for Edge for Business users (Preview)
-
-Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
-
-Users experience a smoother experience with their cloud apps, with less latency and fewer incompatibilities, and benefit from higher levels of security protection from attackers.
-
-For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
 
 ## January 2024
 
