@@ -302,13 +302,13 @@ items:
           href: proxy-intro-aad.md
         - name: Deploy conditional access app control
           items:
-          - name: Deploy for catalog apps with Microsoft Entra ID
+          - name: Catalog apps with Microsoft Entra ID
             href: proxy-deployment-aad.md
-          - name: Deploy for catalog apps with non-Microsoft IdP
+          - name: Catalog apps with non-Microsoft IdP
             href: proxy-deployment-featured-idp.md
-          - name: Deploy for custom apps with Microsoft Entra ID
+          - name: Custom apps with Microsoft Entra ID
             href: proxy-deployment-any-app.md
-          - name: Deploy for custom apps with non-Microsoft IdP
+          - name: Custom apps with non-Microsoft IdP
             href: proxy-deployment-any-app-idp.md
           - name: Sample deployment processes
             items:
