@@ -7,8 +7,6 @@ ms.topic: overview
 
 # What's new in Microsoft Defender for Cloud Apps
 
-
-
 *Applies to: Microsoft Defender for Cloud Apps*
 
 This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
@@ -33,7 +31,39 @@ Users experience a smoother experience with their cloud apps, with less latency 
 
 For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
 
+### Defender for Cloud Apps in the Microsoft Defender portal now available to all Defender for Cloud Apps roles
+
+The Defender for Cloud Apps experience in the Microsoft Defender portal is now available for all Defender for Cloud Apps roles, including the following roles that were previously limited:
+
+- App/Instance admin
+- User group admin
+- Cloud Discovery global admin
+- Cloud Discovery report admin
+
+For more information, see [Built-in admin roles in Defender for Cloud Apps](manage-admins.md#built-in-admin-roles-in-defender-for-cloud-apps).
+
 ## February 2024
+
+### SSPM support for more connected apps in general availability
+
+Defender for Cloud Apps provides you with security recommendations for your SaaS applications to help you prevent possible risks. These recommendations are shown via Microsoft Secure Score once you have a connector to an application.
+
+Defender for Cloud Apps has now enhanced its SSPM support in general avilability by including the following apps:
+
+- [Atlassian](protect-atlassian.md)
+- [Dropbox](protect-dropbox.md)
+- [Zendesk](protect-zendesk.md)
+
+SSPM is also now supported for [Google Workspace](protect-google-workspace.md) in General Availability.
+
+> [!NOTE]
+> If you already have a connector to one of these apps, your score in Secure score might automatically update accordingly.
+
+For more information, see:
+
+- [SaaS security posture management (SSPM)](security-saas.md)
+- [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
 
 ### New App governance alerts for Credential Access and Lateral Movement
 

@@ -1,6 +1,6 @@
 ---
 title: Manage admin access | Microsoft Defender for Cloud APps
-description: This article provides instructions for setting access to the Defender for Cloud Apps portal for your admins.
+description: This article provides instructions for setting access to Defender for Cloud Apps for your admins.
 ms.date: 12/21/2023
 ms.topic: how-to
 ---
@@ -91,7 +91,7 @@ By default, the following Microsoft 365 and [Microsoft Entra ID](/azure/active-d
 
 ## Built-in admin roles in Defender for Cloud Apps
 
-The following specific admin roles can be configured in the Defender for Cloud Apps portal:
+The following specific admin roles can be configured in the Microsoft Defender portal, in the **Permissions > Cloud Apps > Roles** area:
 
 - **Global administrator**: Has **Full access** similar to the Microsoft Entra Global Administrator role but only to Defender for Cloud Apps.
 
@@ -197,7 +197,7 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 1. Select **+Add user** to add the admins who should have access to Defender for Cloud Apps. Provide an email address of a user from inside your organization.
 
     > [!NOTE]
-    > If you want to add external Managed Security Service Providers (MSSPs) as administrators of your Defender for Cloud Apps portal, make sure you first [invite them as a guest](#invite-external-admins) to your organization.
+    > If you want to add external Managed Security Service Providers (MSSPs) as administrators for Defender for Cloud Apps, make sure you first [invite them as a guest](#invite-external-admins) to your organization.
 
     ![add admins.](media/add-admin.png)
 
@@ -210,14 +210,14 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 
 ## Invite external admins
 
-Defender for Cloud Apps enables you to invite external admins (MSSPs) as administrators of your organization's (MSSP customer) Defender for Cloud Apps portal. To add MSSPs, make sure Defender for Cloud Apps is enabled on the MSSPs tenant, and then add them as [Microsoft Entra B2B collaboration users](/azure/active-directory/external-identities/add-users-administrator) in the MSSPs customers Azure portal. Once added, MSSPs can be configured as administrators and assigned any of the roles available in Defender for Cloud Apps.
+Defender for Cloud Apps enables you to invite external admins (MSSPs) as administrators of your organization's (MSSP customer) Defender for Cloud Apps service. To add MSSPs, make sure Defender for Cloud Apps is enabled on the MSSPs tenant, and then add them as [Microsoft Entra B2B collaboration users](/azure/active-directory/external-identities/add-users-administrator) in the MSSPs customers Azure portal. Once added, MSSPs can be configured as administrators and assigned any of the roles available in Defender for Cloud Apps.
 
-### To add MSSPs to the MSSP customer Defender for Cloud Apps portal
+### To add MSSPs to the MSSP customer Defender for Cloud Apps service
 
 1. Add MSSPs as a guest in the MSSP customer directory using the steps under [Add guest users to the directory](/azure/active-directory/external-identities/add-users-administrator#add-guest-users-to-the-directory).
 1. Add MSSPs and assign an administrator role in the MSSP customer Defender for Cloud Apps portal using the steps under [Add additional admins](#add-additional-admins). Provide the same external email address used when adding them as guests in the MSSP customer directory.
 
-### Access for MSSPs to the MSSP customer Defender for Cloud Apps portal
+### Access for MSSPs to the MSSP customer Defender for Cloud Apps service
 
 By default, MSSPs access their Defender for Cloud Apps tenant through the following URL: `https://security.microsoft.com`.
 
