@@ -34,6 +34,38 @@ The Defender for Cloud Apps experience in the Microsoft Defender portal is now a
 
 For more information, see [Built-in admin roles in Defender for Cloud Apps](manage-admins.md#built-in-admin-roles-in-defender-for-cloud-apps).
 
+## February 2024
+
+### SSPM support for more connected apps in general availability
+
+Defender for Cloud Apps provides you with security recommendations for your SaaS applications to help you prevent possible risks. These recommendations are shown via Microsoft Secure Score once you have a connector to an application.
+
+Defender for Cloud Apps has now enhanced its SSPM support in general avilability by including the following apps:
+
+- [Atlassian](protect-atlassian.md)
+- [Dropbox](protect-dropbox.md)
+- [Zendesk](protect-zendesk.md)
+
+SSPM is also now supported for [Google Workspace](protect-google-workspace.md) in General Availability.
+
+> [!NOTE]
+> If you already have a connector to one of these apps, your score in Secure score might automatically update accordingly.
+
+For more information, see:
+
+- [SaaS security posture management (SSPM)](security-saas.md)
+- [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility)
+- [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score)
+
+### New App governance alerts for Credential Access and Lateral Movement
+
+We've added the following new alerts for App governance customers:
+
+- [Application initiating multiple failed KeyVault read activity with no success](app-governance-anomaly-detection-alerts.md#application-initiating-multiple-failed-keyvault-read-activity-with-no-success)
+- [Dormant OAuth App predominantly using MS Graph or Exchange Web Services recently seen to be accessing ARM workloads](app-governance-anomaly-detection-alerts.md#dormant-oauth-app-predominantly-using-ms-graph-or-exchange-web-services-recently-seen-to-be-accessing-arm-workloads)
+
+For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md).
+
 ## January 2024
 
 ### SSPM support for multiple instances of the same app (Preview)

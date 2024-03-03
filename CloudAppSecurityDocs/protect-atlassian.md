@@ -43,7 +43,7 @@ For more information about remediating threats from apps, see [Governing connect
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
-## SaaS security posture management (Preview)
+## SaaS security posture management
 
 [Connect Atlassian](#connect-atlassian-to-microsoft-defender-for-cloud-apps) to get security posture recommendations for Atlassian in Microsoft Secure Score. To see security recommendations for Atlassian in Microsoft Secure Score:
 
