@@ -23,7 +23,7 @@ Before you start troubleshooting, make sure your environment meets the following
 |---------|---------|
 |**Licensing**     |   Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans) for Microsoft Defender for Cloud Apps.      |
 |**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Microsoft Entra ID using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
-|**Browser support** | Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>- Google Chrome<br>- Mozilla Firefox<br>- Apple Safari <br><br>In-browser protection for Microsoft Edge also has specific requirements, including the user signed in with their work profile. For more information, see [Prerequisites](in-browser-protection.md#prerequisites). |
+|**Browser support** | Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>- Google Chrome<br>- Mozilla Firefox<br>- Apple Safari <br><br>In-browser protection for Microsoft Edge also has specific requirements, including the user signed in with their work profile. For more information, see [In-browser protection requirements](in-browser-protection.md#in-browser-protection-requirements). |
 |**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, when the normal policy controls can't be enforced, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content. <br><br>To configure the default behavior during system downtime, in Microsoft Defender XDR, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
 
 ### In-browser protection requirements
@@ -32,9 +32,9 @@ If you're using [in-browser protection with Microsoft Edge](in-browser-protectio
 
 - **The feature is turned on in your Defender XDR settings**. For more information, see [Configure in-browser protection settings](in-browser-protection.md#configure-in-browser-protection-settings).
 
-- **All policies that the user is covered by are supported for Microsoft Edge for Business**. If a user is served by another policy that's *not* supported by Microsoft Edge for Business, they're always served by the reverse proxy. For more information, see [Prerequisites](in-browser-protection.md#prerequisites).
+- **All policies that the user is covered by are supported for Microsoft Edge for Business**. If a user is served by another policy that's *not* supported by Microsoft Edge for Business, they're always served by the reverse proxy. For more information, see [In-browser protection requirements](in-browser-protection.md#in-browser-protection-requirements).
 
-- **You're using a supported platform**, including a supported operating system, identity platform, and Edge version. For more information, see [Prerequisites](in-browser-protection.md#prerequisites).
+- **You're using a supported platform**, including a supported operating system, identity platform, and Edge version. For more information, see [In-browser protection requirements](in-browser-protection.md#in-browser-protection-requirements).
 
 ## Reference of troubleshooting issues for admins
 
