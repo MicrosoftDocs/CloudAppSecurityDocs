@@ -51,7 +51,7 @@ For more information, see [Built-in admin roles in Defender for Cloud Apps](mana
 
 Defender for Cloud Apps provides you with security recommendations for your SaaS applications to help you prevent possible risks. These recommendations are shown via Microsoft Secure Score once you have a connector to an application.
 
-Defender for Cloud Apps has now enhanced its SSPM support in general avilability by including the following apps:
+Defender for Cloud Apps has now enhanced its SSPM support in general availability by including the following apps:
 
 - [Atlassian](protect-atlassian.md)
 - [Dropbox](protect-dropbox.md)
