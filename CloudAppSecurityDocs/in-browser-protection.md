@@ -63,11 +63,11 @@ In-browser protection with Microsoft Edge for Business is turned on by default. 
 
 **To configure in-browser protection settings:**
 
-1. In the Microsoft Defender portal, select **Settings > Cloud Apps > Conditional Access App Control > Edge for Business integration**.
+1. In the Microsoft Defender portal, select **Settings > Cloud Apps > Conditional Access App Control > Edge for Business protection**.
 
 1. Configure the following settings as needed:
 
-    - Toggle the **Turn on Edge for Business integration** option **Off** or **On**.
+    - Toggle the **Turn on Edge for Business protection** option **Off** or **On**.
     - Select to **Notify users in non-Edge browsers to use Microsoft Edge for Business for better performance and security**.
 
         If you selected to notify non-Edge users, select to either use the default message or customize your own message.
