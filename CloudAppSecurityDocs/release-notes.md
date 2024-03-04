@@ -29,7 +29,10 @@ Defender for Cloud Apps users who use Microsoft Edge for Business and are subjec
 
 Users experience a smoother experience with their cloud apps, with less latency and fewer incompatibilities, and benefit from higher levels of security protection from attackers.
 
+In-browser protection is turned on by default, and is being gradually rolled out across tenants, starting early in March 2024.
+
 For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
+
 
 ### Defender for Cloud Apps in the Microsoft Defender portal now available to all Defender for Cloud Apps roles
 

@@ -2,7 +2,8 @@
 title: In-browser protection with Microsoft Edge for Business | Microsoft Defender for Cloud Apps
 description: Learn how to apply in-browser protection with Microsoft Defender for Cloud Apps session policies and Microsoft Edge for Business
 ms.date: 03/04/2024
-ms.topic: how-to
+ms.topic: concept
+#customerIntent: As a Defender for Cloud Apps admin, I want to learn about the user experience with in-browser protection.
 ---
 
 # In-browser protection with Microsoft Edge for Business (Preview)
@@ -11,13 +12,15 @@ Defender for Cloud Apps users who use Microsoft Edge for Business and are subjec
 
 Users with in-browser protection have a smoother experience, with less latency or app compatibility issues, and a higher level of security protection.
 
-> [!NOTE]
-> In-browser protection is applied on the Microsoft Edge for Business work profile only. For more information, see [User access for in-browser protection](#user-access-for-in-browser-protection).
->
+## In-browser protection requirements
 
-## Prerequisites
+To use in-browser protection, users must be in their browser's work profile. 
 
-In-browser protection is applied on the work profile only, using Microsoft Edge for Business with the following requirements:
+Microsoft Edge profiles allow users to split browsing data into separate profiles, where the data that belongs to each profile is kept separate from the other profiles. For example, when users have different profiles for personal browsing and work, their personal favorites and history aren't synchronized with their work profile.
+
+When users have separate profiles, their work browser (Microsoft Edge for Business) and personal browser (Microsoft Edge) have separate caches and storage locations, and information remains separate.
+
+To use in-browser protection, users must also have the following environmental requirements in place:
 
 |Requirement  |Description  |
 |---------|---------|
@@ -38,6 +41,22 @@ For example, the following users are all served by the reverse proxy:
 - Microsoft Edge users with older browser versions
 - B2B guest users
 
+## User experience with in-browser protection
+
+Users know that they're using the in-browser protection in Microsoft Edge for Business because they see an extra *"lock"* icon in the browser address bar. The icon indicates that the session is protected by Defender for Cloud Apps. For example:
+
+:::image type="content" source="media/in-browser-protection/url-icon.png" alt-text="Screenshot of an extra lock icon in the browser address bar.":::
+
+Also, the `.mcas.ms` suffix doesn't appear in the browser address bar with in-browser protection, as it does with standard conditional access app control, and developer tools are turned off with in-browser protection.
+
+### Work profile enforcement for in-browser protection
+
+To access a work resource in *contoso.com* with in-browser protection, users must sign in with their *username@contoso.com* profile. If users try to access the work resource from outside the work profile, they're prompted to switch to the work profile or create one if it doesn't exist. Users can also choose to continue with their current profile, in which case they're served by the [reverse proxy architecture](proxy-intro-aad.md).
+
+If the user decides to create a new work profile, they'll be prompted with the **Allow my organization to manage my device** option. In such cases, users don't need to select this option to create the work profile or benefit from in-browser protection.
+
+For more information, see [Microsoft Edge for Business](/deployedge/microsoft-edge-for-business) and [How to add new profiles to Microsoft Edge](https://www.microsoft.com/en-us/edge/learning-center/how-to-add-new-profiles).
+
 ## Configure in-browser protection settings
 
 In-browser protection with Microsoft Edge for Business is turned on by default. Admins can turn the integration off and on, and can configure a prompt for non-Edge users to switch to Microsoft Edge for enhanced performance and security.
@@ -54,26 +73,6 @@ In-browser protection with Microsoft Edge for Business is turned on by default. 
         If you selected to notify non-Edge users, select to either use the default message or customize your own message.
 
 1. Select **Save** when you're done to save your changes.
-
-## User access for in-browser protection
-
-Microsoft Edge profiles allow you to split your browsing data into separate sections, where the data that belongs to each profile is kept separate from the other profiles. For example, when you use different profiles for personal browsing and work, your personal favorites and history aren't synchronized with your work profile.
-
-When you use separate profiles, your work browser (Microsoft Edge for Business) and personal browser (Microsoft Edge) have separate caches and storage locations, and information remains separate.
-
-Users must be in their browser's work profile to have in-browser protection with Microsoft Edge for Business.
-
-For example, to access a work resource in *contoso.com* with in-browser protection, sign in with your *username@contoso.com* profile. If you try to access the work resource from outside the work profile, you're prompted to switch to the work profile or create one if it doesn't exist. You can also choose to continue with their current profile, in which case you're served by the [reverse proxy architecture](proxy-intro-aad.md).
-
-If you decide to create a new work profile, make sure to select the **Allow my organization to manage my device** option if required by your organization. <!--is this right? do we need to say this?-->
-
-Users know that they're using the in-browser protection in Microsoft Edge for Business because they see an extra *"lock"* icon in the browser address bar. The icon indicates that the session is protected by Defender for Cloud Apps. For example:
-
-:::image type="content" source="media/in-browser-protection/url-icon.png" alt-text="Screenshot of an extra lock icon in the browser address bar.":::
-
-Also, the `.mcas.ms` suffix doesn't appear in the browser address bar with in-browser protection, as it does with standard conditional access app control, and developer tools are turned off with in-browser protection.
-
-For more information, see [Microsoft Edge for Business](https://www.microsoft.com/edge/features/edge-for-business) and [Automatic switching with the Enterprise personal browsing experience](/deployedge/microsoft-edge-for-business#automatic-switching-with-the-enterprise-personal-browsing-experience).
 
 ## Working with Microsoft Purview and Endpoint data loss prevention
 
