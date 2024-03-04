@@ -1,7 +1,7 @@
 ---
 title: Network requirements 
 description: This article describes the IP addresses and ports you need to open to work with Defender for Cloud Apps.
-ms.date: 03/15/2023
+ms.date: 02/29/2024
 ms.topic: how-to
 ---
 
@@ -60,9 +60,9 @@ Users are likely to be served from the closest region. For example, a user with 
 
 When there is a high load or outage, the user may be served from a different region.
 
-It is recommended to allow all region addresses in your firewall since there is no guarantee as to which addresses will be used.
+Configure your firewall for conditional access app control using the settings relevant to your environment. Microsoft Edge users benefit from in-browser protection. Access and session controls are applied in other browsers using a reverse proxy.
 
-Configure your firewall for reverse proxy using the settings relevant to your environment.
+For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
 
 ### Commercial customers
 

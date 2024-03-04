@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 01/18/2024
+ms.date: 02/29/2024
 ms.topic: overview
 ---
 
@@ -21,7 +21,18 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
-## March
+## March 2024
+
+### Data in motion protection for Edge for Business users (Preview)
+
+Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
+
+Protected users experience a smooth experience with their cloud apps, without latency or app compatibility issues, and with a higher level of security protection.
+
+In-browser protection is turned on by default, and is being gradually rolled out across tenants, starting early in March 2024.
+
+For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
+
 
 ### Defender for Cloud Apps in the Microsoft Defender portal now available to all Defender for Cloud Apps roles
 
@@ -40,7 +51,7 @@ For more information, see [Built-in admin roles in Defender for Cloud Apps](mana
 
 Defender for Cloud Apps provides you with security recommendations for your SaaS applications to help you prevent possible risks. These recommendations are shown via Microsoft Secure Score once you have a connector to an application.
 
-Defender for Cloud Apps has now enhanced its SSPM support in general avilability by including the following apps:
+Defender for Cloud Apps has now enhanced its SSPM support in general availability by including the following apps:
 
 - [Atlassian](protect-atlassian.md)
 - [Dropbox](protect-dropbox.md)
