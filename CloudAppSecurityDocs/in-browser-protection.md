@@ -10,7 +10,7 @@ ms.topic: concept
 
 Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
 
-Users with in-browser protection have a smoother experience, with less latency or app compatibility issues, and a higher level of security protection.
+Protected users experience a smooth experience, without latency or app compatibiltiy issues, and with a higher level of security protection.
 
 ## In-browser protection requirements
 
