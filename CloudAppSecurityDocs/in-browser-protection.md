@@ -1,7 +1,7 @@
 ---
 title: In-browser protection with Microsoft Edge for Business | Microsoft Defender for Cloud Apps
 description: Learn how to apply in-browser protection with Microsoft Defender for Cloud Apps session policies and Microsoft Edge for Business
-ms.date: 02/29/2024
+ms.date: 03/04/2024
 ms.topic: how-to
 ---
 
@@ -9,9 +9,9 @@ ms.topic: how-to
 
 Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
 
-Microsoft Edge for Business supports separate profiles for work and personal use, allowing users and organizations to separate browsing data into independent silos. For example, personal favorites and history aren't synchronized with the work account if you set up separate profiles for work and personal use. The work and personal profiles have separate caches and storage locations to keep information separate.
+Users with in-browser protection have a smoother experience, with less latency or app compatibility issues, and a higher level of security protection.
 
-In-browser protection is applied on the work profile only, where users experience a smoother experience with their cloud apps. In-browser protection provides less latency and fewer incompatibilities, with higher levels of security protection from attackers.
+In-browser protection is applied on the work profile only. For more information, see 
 
 ## Prerequisites
 
@@ -74,6 +74,20 @@ If the same exact context and action are configured for both Defender for Cloud 
 For example, if you have an Endpoint DLP policy that blocks a file upload to Salesforce, and you also have a Defender for Cloud Apps policy that monitors file uploads to Salesforce, the Endpoint DLP policy is applied.
 
 For more information, see [Learn about data loss prevention](/purview/dlp-learn-about-dlp).
+
+## Work profile enforcement in Microsoft Edge
+
+Microsoft Edge profiles allow you to split your browsing data into separate sections, where the data that belongs to each profile is kept separate from the other profiles. For example, when you use different profiles for personal browsing and work, your personal favorites and history aren't synchronized with your work profile.
+
+When you use separate profiles, your work browser (Microsoft Edge for Business) and personal browser (Microsoft Edge) have separate caches and storage locations, and information remains separate.
+
+Users must be in their browser's work profile to have in-browser protection with Microsoft Edge for Business.
+
+For example, ito access a work resource in *contoso.com* with in-browser protection, you must do so from your *username@contoso.com* profile. If you try to access the work resource from outside the work profile, you're prompted to switch to the work profile or create one if it doesn't exist. You can also choose to continue with their current profile, in which case you're served by the [reverse proxy architecture](proxy-intro-aad.md).
+
+If you decide to create a new work profile, make sure to select the **Allow my organization to manage my device** option if required by your organization. <!--is this right?-->
+
+For more information, see [Microsoft Edge for Business](https://www.microsoft.com/edge/features/edge-for-business) and [Automatic switching with the Enterprise personal browsing experience](/deployedge/microsoft-edge-for-business#automatic-switching-with-the-enterprise-personal-browsing-experience).
 
 ## Related content
 
