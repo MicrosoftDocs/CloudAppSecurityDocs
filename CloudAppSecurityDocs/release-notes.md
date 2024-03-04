@@ -23,6 +23,23 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## March
 
+### New threat detections for Microsoft Copilot for Microsoft 365
+
+Defender for Cloud Apps now provides new detections for risky user activities in Microsoft Copilot for Microsoft 365 with the Microsoft 365 connector.
+
+- Related alerts are shown together with other Microsoft Defender XDR alerts, in the Microsoft Defender portal.
+- Copilot for Microsoft 365 activities are available in the Defender for Cloud Apps activity log.
+- In the Microsoft Defender portal's **Advanced hunting** page, Copilot for Microsoft 365 activities are available in the **CloudAppEvents** table, under the **Microsoft Copilot for Microsoft 365** application.
+
+For more information, see:
+
+- [Get started with Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-setup)
+- [How Defender for Cloud Apps helps protect your Microsoft 365 environment](protect-office-365.md)
+- [Investigate alerts in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-alerts)
+- [Defender for Cloud Apps Activity log](activity-filters.md)
+- [Proactively hunt for threats with advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview)
+- [CloudAppEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table)
+  
 ### Defender for Cloud Apps in the Microsoft Defender portal now available to all Defender for Cloud Apps roles
 
 The Defender for Cloud Apps experience in the Microsoft Defender portal is now available for all Defender for Cloud Apps roles, including the following roles that were previously limited:
