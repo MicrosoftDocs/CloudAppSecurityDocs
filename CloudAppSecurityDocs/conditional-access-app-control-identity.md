@@ -28,8 +28,8 @@ Once the certificate is uploaded and a relevant policy is configured, when an ap
 
 When a client certificate check is performed, Defender for Cloud Apps checks for the following conditions:
 
-1. The selected client certificate is valid and is under the correct root or intermediate CA.
-1. The certificate isn't revoked (if CRL is enabled).
+- The selected client certificate is valid and is under the correct root or intermediate CA.
+- The certificate isn't revoked (if CRL is enabled).
 
 > [!NOTE]
 > Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
