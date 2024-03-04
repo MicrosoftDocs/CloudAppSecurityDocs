@@ -27,7 +27,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
 
-Protected users experience a smooth experience with their cloud apps, without latency or app compatibiltiy issues, and with a higher level of security protection.
+Protected users experience a smooth experience with their cloud apps, without latency or app compatibility issues, and with a higher level of security protection.
 
 In-browser protection is turned on by default, and is being gradually rolled out across tenants, starting early in March 2024.
 

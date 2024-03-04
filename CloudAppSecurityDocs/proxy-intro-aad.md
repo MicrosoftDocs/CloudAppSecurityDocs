@@ -14,7 +14,7 @@ For example:
 
 - **Use access policies to:**
 
-    - Block access to Salesforce for users coming from unamanged devices
+    - Block access to Salesforce for users coming from unmanaged devices
     - Block access to Dropbox for native clients.
 
 - **Use session policies to**:
@@ -53,7 +53,7 @@ Access and session policies include the following types of activities:
 |Activity  |Description  |
 |---------|---------|
 |**Prevent data exfiltration**     |  Block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.       |
-| **Require authentication context** | Reevaluate Microsoft Entra Conditional Access policies when a sensitive action occurs in the session, such as requiring multi-factor authentication. |
+| **Require authentication context** | Reevaluate Microsoft Entra Conditional Access policies when a sensitive action occurs in the session, such as requiring multifactor authentication. |
 |**Protect on download**     |    Instead of blocking the download of sensitive documents, require documents to be labeled and encrypted when you integrate with Microsoft Purview Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.     |
 |**Prevent upload of unlabeled files**     |  Ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content. Before a sensitive file is uploaded, distributed, and used by others, it's important to make sure that the sensitive file has the label defined by your organization's policy.        |
 |**Block potential malware**     |  Protect your environment from malware by blocking the upload of potentially malicious files. Any file that is uploaded or downloaded can be scanned against Microsoft threat intelligence and blocked instantaneously.       |

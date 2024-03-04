@@ -35,7 +35,7 @@ Our approach to information protection can be split into the following phases th
 
     - **Use conditional access app control**: Our conditional access app control solution is uniquely integrated with Microsoft Entra Conditional Access, and allows you to apply controls to any app.
 
-        Microsoft Edge users benefit from direct, in-browser protection. Conditional acces app control is applied in other browsers using a reverse proxy architecture. For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
+        Microsoft Edge users benefit from direct, in-browser protection. Conditional access app control is applied in other browsers using a reverse proxy architecture. For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
     
 
 1. **Investigate**: After you connect an app to Defender for Cloud Apps using its API connector, Defender for Cloud Apps scans all the files it uses. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Files** to get an overview of the files shared by your cloud apps, their accessibility, and their status. For more information, see [Investigate files](file-filters.md).
