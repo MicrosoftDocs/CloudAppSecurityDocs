@@ -11,11 +11,13 @@ Defender for Cloud Apps users who use Microsoft Edge for Business and are subjec
 
 Users with in-browser protection have a smoother experience, with less latency or app compatibility issues, and a higher level of security protection.
 
-In-browser protection is applied on the work profile only. For more information, see 
+> [!NOTE]
+> In-browser protection is applied on the Microsoft Edge for Business work profile only. For more information, see [User access for in-browser protection](#user-access-for-in-browser-protection).
+>
 
 ## Prerequisites
 
-This section lists the supported platforms for in-browser protection with Microsoft Edge for Business.
+In-browser protection is applied on the work profile only, using Microsoft Edge for Business with the following requirements:
 
 |Requirement  |Description  |
 |---------|---------|
@@ -24,7 +26,7 @@ This section lists the supported platforms for in-browser protection with Micros
 |**Microsoft Edge for Business versions**     |   121 and higher      |
 |**Supported session policies**     | - Block\Monitor of file download (all files\sensitive files) <br>- Block\Monitor file upload <br>- Block\Monitor copy\cut <br>- Block\Monitor print <br><br> Users that are served by multiple policies, including at least one policy that's *not* supported by Microsoft Edge for Business, their sessions are always served by the reverse proxy. <br><br>Policies defined in the Microsoft Entra ID portal are also always served by reverse proxy.   |
 
-All other scenarios are served automatically with the standard reverse proxy technology including user sessions from browsers that don't support in-browser protection, or for policies not supported by in-browser protection.
+All other scenarios are served automatically with the standard reverse proxy technology, including user sessions from browsers that don't support in-browser protection, or for policies not supported by in-browser protection.
 
 For example, the following users are all served by the reverse proxy:
 
@@ -36,23 +38,9 @@ For example, the following users are all served by the reverse proxy:
 - Microsoft Edge users with older browser versions
 - B2B guest users
 
-For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md).
-
-## User access for in-browser protection
-
-To benefit from in-browser protection with Microsoft Edge for Business, users must sign into the browser using their work profile. Users who attempt to access the cloud app from outside of their work profile are prompted to switch to their work profiles, or create a new one if it doesn’t exist.
-
-For example, a user accessing a resource on contoso.com must use their user@contoso.com profile.
-
-Users know that they're using the in-browser protection in Microsoft Edge for Business because they see an extra *"lock"* icon in the browser address bar. The icon indicates that the session is protected by Defender for Cloud Apps. For example:
-
-:::image type="content" source="media/in-browser-protection/url-icon.png" alt-text="Screenshot of an extra lock icon in the browser address bar.":::
-
-Also, the `.mcas.ms` suffix doesn't appear in the browser address bar with in-browser protection, as it does with standard conditional access app control, and developer tools are turned off with in-browser protection.
-
 ## Configure in-browser protection settings
 
-In-browser protection with Microsoft Edge for Business is enabled by default. Admins can turn the integration off and on, and can configure a prompt for non-Edge users to switch to Microsoft Edge for enhanced performance and security.
+In-browser protection with Microsoft Edge for Business is turned on by default. Admins can turn the integration off and on, and can configure a prompt for non-Edge users to switch to Microsoft Edge for enhanced performance and security.
 
 **To configure in-browser protection settings:**
 
@@ -67,15 +55,7 @@ In-browser protection with Microsoft Edge for Business is enabled by default. Ad
 
 1. Select **Save** when you're done to save your changes.
 
-### Working with Microsoft Purview and Endpoint data loss prevention
-
-If the same exact context and action are configured for both Defender for Cloud Apps policies and a Microsoft Purview Endpoint data loss prevention policy (DLP), the Endpoint DLP policy is applied.
-
-For example, if you have an Endpoint DLP policy that blocks a file upload to Salesforce, and you also have a Defender for Cloud Apps policy that monitors file uploads to Salesforce, the Endpoint DLP policy is applied.
-
-For more information, see [Learn about data loss prevention](/purview/dlp-learn-about-dlp).
-
-## Work profile enforcement in Microsoft Edge
+## User access for in-browser protection
 
 Microsoft Edge profiles allow you to split your browsing data into separate sections, where the data that belongs to each profile is kept separate from the other profiles. For example, when you use different profiles for personal browsing and work, your personal favorites and history aren't synchronized with your work profile.
 
@@ -83,11 +63,25 @@ When you use separate profiles, your work browser (Microsoft Edge for Business) 
 
 Users must be in their browser's work profile to have in-browser protection with Microsoft Edge for Business.
 
-For example, ito access a work resource in *contoso.com* with in-browser protection, you must do so from your *username@contoso.com* profile. If you try to access the work resource from outside the work profile, you're prompted to switch to the work profile or create one if it doesn't exist. You can also choose to continue with their current profile, in which case you're served by the [reverse proxy architecture](proxy-intro-aad.md).
+For example, to access a work resource in *contoso.com* with in-browser protection, sign in with your *username@contoso.com* profile. If you try to access the work resource from outside the work profile, you're prompted to switch to the work profile or create one if it doesn't exist. You can also choose to continue with their current profile, in which case you're served by the [reverse proxy architecture](proxy-intro-aad.md).
 
-If you decide to create a new work profile, make sure to select the **Allow my organization to manage my device** option if required by your organization. <!--is this right?-->
+If you decide to create a new work profile, make sure to select the **Allow my organization to manage my device** option if required by your organization. <!--is this right? do we need to say this?-->
+
+Users know that they're using the in-browser protection in Microsoft Edge for Business because they see an extra *"lock"* icon in the browser address bar. The icon indicates that the session is protected by Defender for Cloud Apps. For example:
+
+:::image type="content" source="media/in-browser-protection/url-icon.png" alt-text="Screenshot of an extra lock icon in the browser address bar.":::
+
+Also, the `.mcas.ms` suffix doesn't appear in the browser address bar with in-browser protection, as it does with standard conditional access app control, and developer tools are turned off with in-browser protection.
 
 For more information, see [Microsoft Edge for Business](https://www.microsoft.com/edge/features/edge-for-business) and [Automatic switching with the Enterprise personal browsing experience](/deployedge/microsoft-edge-for-business#automatic-switching-with-the-enterprise-personal-browsing-experience).
+
+## Working with Microsoft Purview and Endpoint data loss prevention
+
+If the same exact context and action are configured for both Defender for Cloud Apps policies and a Microsoft Purview Endpoint data loss prevention policy (DLP), the Endpoint DLP policy is applied.
+
+For example, if you have an Endpoint DLP policy that blocks a file upload to Salesforce, and you also have a Defender for Cloud Apps policy that monitors file uploads to Salesforce, the Endpoint DLP policy is applied.
+
+For more information, see [Learn about data loss prevention](/purview/dlp-learn-about-dlp).
 
 ## Related content
 
