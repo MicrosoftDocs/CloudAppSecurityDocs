@@ -188,7 +188,7 @@ Microsoft uses encryption technology to protect your data while at rest in a Mic
 
 ### Identity and access management
 
-Defender for Cloud Apps enables you to limit access of administrators to the portal based on geolocation using Microsoft Entra ID. It's possible to require multi-factor authentication to access the Defender for Cloud Apps portal by using Microsoft Entra ID.
+Defender for Cloud Apps enables you to limit access of administrators to the portal based on geolocation using Microsoft Entra ID. It's possible to require multifactor authentication to access the Defender for Cloud Apps portal by using Microsoft Entra ID.
 
 ### Permissions
 
