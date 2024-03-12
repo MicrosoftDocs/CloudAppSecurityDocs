@@ -23,6 +23,12 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## March 2024
 
+### New data in "CloudAppEvents" table in Advanced Hunting: Anomaly columns 
+
+Defender for Cloud Apps users who use Microsoft Advanced Hunting are now can utilize new data columns ("LastSeenForUser" and "UncommonForUser") for queries and detection rules. Using this data will assist in ruling out false positives and find out anomalies.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-cloudappevents-table?view=o365-worldwide).
+
 ### Data in motion protection for Edge for Business users (Preview)
 
 Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
