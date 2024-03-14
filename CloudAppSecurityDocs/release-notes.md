@@ -23,9 +23,9 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## March 2024
 
-### New data in "CloudAppEvents" table in Advanced Hunting: Anomaly columns 
+### New anomaly data for the advanced hunting CloudAppEvents table
 
-Defender for Cloud Apps users who use Microsoft Advanced Hunting are now can utilize new data columns ("LastSeenForUser" and "UncommonForUser") for queries and detection rules. Using this data assists in ruling out false positives and finding anomalies.
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns columns for queries and detections rules. Using this data assists in ruling out false positives and finding anomalies.
 
 For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
