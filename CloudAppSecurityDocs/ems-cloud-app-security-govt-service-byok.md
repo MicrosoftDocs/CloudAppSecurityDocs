@@ -108,10 +108,7 @@ When you enable data encryption, Defender for Cloud Apps immediately uses your A
 
 1. In the Microosft Defender portal, select **Settings > Cloud Apps > Data encryption > Enable data encryption**.
 
-1. In the **Azure Key Vault key URI** box, paste the key identifier URI value you copied earlier.
-
-    > [!NOTE]
-    > Defender for Cloud Apps always uses the latest key version, regardless of the key version specified by the URI.
+1. In the **Azure Key Vault key URI** box, paste the key identifier URI value you copied earlier. Defender for Cloud Apps always uses the latest key version, regardless of the key version specified by the URI.
 
 1. Once the URI validation has completed, select **Enable**.
 
