@@ -27,7 +27,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 Defender for Cloud Apps users who use Microsoft Advanced Hunting are now can utilize new data columns ("LastSeenForUser" and "UncommonForUser") for queries and detection rules. Using this data assists in ruling out false positives and finding anomalies.
 
-For more information, see [Advanced Hunting "CloudAppEvents" Data schema](https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-cloudappevents-table?view=o365-worldwide).
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
 ### Data in motion protection for Edge for Business users (Preview)
 
