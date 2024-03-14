@@ -29,7 +29,7 @@ Now you can complete the process for encrypting Defender for Cloud Apps data at 
 
 This feature is now limited on the classic Microsoft Defender for Cloud Apps portal, and is avaialble only from the Microsoft Defender portal.
 
-For more information, see [Encrypt Defender for Cloud Apps data at rest with your own key (BYOK)](ems-cloud-app-security-govt-service-byok).
+For more information, see [Encrypt Defender for Cloud Apps data at rest with your own key (BYOK)](ems-cloud-app-security-govt-service-byok.md).
 
 ### Data in motion protection for Edge for Business users (Preview)
 
