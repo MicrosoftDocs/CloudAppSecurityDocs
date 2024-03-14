@@ -83,7 +83,7 @@ Defender for Cloud Apps identifies apps using data from the cloud app catalog. I
 
 ## Pre-onboarded apps
 
-Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls for Azure Access Directory.
+Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls for Microsoft Entra ID.
 
 > [!NOTE]
 > It's required to route your desired applications to access and session controls, and to perform a first login.
