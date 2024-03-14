@@ -2,7 +2,7 @@
 title: Network requirements 
 description: This article describes the IP addresses and ports you need to open to work with Defender for Cloud Apps.
 ms.date: 02/29/2024
-ms.topic: how-to
+ms.topic: reference
 ---
 
 # Network requirements
