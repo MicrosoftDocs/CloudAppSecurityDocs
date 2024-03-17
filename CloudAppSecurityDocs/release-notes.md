@@ -23,17 +23,6 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## March 2024
 
-### Data in motion protection for Edge for Business users (Preview)
-
-Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
-
-Protected users experience a smooth experience with their cloud apps, without latency or app compatibility issues, and with a higher level of security protection.
-
-In-browser protection is turned on by default, and is being gradually rolled out across tenants, starting early in March 2024.
-
-For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
-
-
 ### New threat detections for Microsoft Copilot for Microsoft 365
 
 Defender for Cloud Apps now provides new detections for risky user activities in Microsoft Copilot for Microsoft 365 with the Microsoft 365 connector.
@@ -50,6 +39,16 @@ For more information, see:
 - [Defender for Cloud Apps Activity log](activity-filters.md)
 - [Proactively hunt for threats with advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview)
 - [CloudAppEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table)
+
+### Data in motion protection for Edge for Business users (Preview)
+
+Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
+
+Protected users experience a smooth experience with their cloud apps, without latency or app compatibility issues, and with a higher level of security protection.
+
+In-browser protection is turned on by default, and is being gradually rolled out across tenants, starting early in March 2024.
+
+For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
   
 ### Defender for Cloud Apps in the Microsoft Defender portal now available to all Defender for Cloud Apps roles
 
