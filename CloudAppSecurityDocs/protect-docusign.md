@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # How Defender for Cloud Apps helps protect your DocuSign environment
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 DocuSign helps organizations manage electronic agreements, and so your DocuSign environment holds sensitive information for your organization. Any abuse of DocuSign by a malicious actor or any human error may expose your most critical assets to potential attacks.
 

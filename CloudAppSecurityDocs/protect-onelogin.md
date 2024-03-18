@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your OneLogin
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 As an identity and access management solution, OneLogin holds the keys to your organizations most business critical services. OneLogin manages the authentication and authorization processes for your users. Any abuse of OneLogin by a malicious actor or any human error may expose your most critical assets and services to potential attacks.
 

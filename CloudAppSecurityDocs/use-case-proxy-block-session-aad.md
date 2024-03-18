@@ -1,12 +1,12 @@
 ---
 title: Block download of sensitive information with Conditional Access App Control
-description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Microsoft Entra ID reverse proxy capabilities.
+description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Microsoft Entra ID conditional access app control.
 ms.date: 01/29/2023
 ms.topic: tutorial
 ---
 # Tutorial: Block download of sensitive information with Conditional Access App Control
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Today's IT admin is stuck between a rock and hard place. You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. However, you want to protect the company's assets including proprietary and privileged information. How can you enable employees to access your cloud apps while protecting your data? **This tutorial allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
 

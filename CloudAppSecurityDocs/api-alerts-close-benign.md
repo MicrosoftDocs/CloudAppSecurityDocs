@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Close benign - Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the POST request to close multiple alerts matching the specified filters as benign (an alert on a suspicious but not malicious activity, such as a penetration test or other authorized suspicious action).
 
@@ -35,7 +35,7 @@ POST /api/v1/alerts/close_benign/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/close_benign/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/alerts/close_benign/" -d '{
   "filters": {
     "id": {
       "eq": [

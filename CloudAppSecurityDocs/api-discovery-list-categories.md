@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # List continuous report categories - Cloud Discovery API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the POST request to fetch a list of categories associated with a continuous report.
 
@@ -35,7 +35,7 @@ POST api/v1/discovery/discovered_apps/categories/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/discovered_apps/categories/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/discovery/discovered_apps/categories/" -d '{
   "filters": {
     // some filters
   },

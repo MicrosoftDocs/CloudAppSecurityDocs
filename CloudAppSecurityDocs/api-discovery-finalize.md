@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Finalize file upload - Cloud Discovery API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 After the file content upload successfully completes, notify us in order to begin the processing of the file.
 
@@ -31,7 +31,7 @@ POST /api/v1/discovery/done_upload/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/done_upload/" -d {\"uploadUrl\":\"<initiate_file_upload_response_url>\",\"inputStreamName\":\"<inputStreamName>\"}
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/discovery/done_upload/" -d {\"uploadUrl\":\"<initiate_file_upload_response_url>\",\"inputStreamName\":\"<inputStreamName>\"}
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]

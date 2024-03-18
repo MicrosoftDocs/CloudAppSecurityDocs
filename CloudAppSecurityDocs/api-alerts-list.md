@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # List - Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the GET or POST request to fetch a list of alerts matching the specified filters.
 
@@ -37,7 +37,7 @@ POST /api/v1/alerts/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/alerts/" -d '{
   "filters": {
     // some filters
   },

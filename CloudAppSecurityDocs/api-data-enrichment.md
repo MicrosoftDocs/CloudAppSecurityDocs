@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Data Enrichment API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 The Data Enrichment API enables you to manage identifiable IP address ranges, such as your physical office IP addresses. IP address ranges allow you to tag, categorize, and customize the way logs and alerts are displayed and investigated. For more information, see [Working with IP ranges and tags](ip-tags.md).
 

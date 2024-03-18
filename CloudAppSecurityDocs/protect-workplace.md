@@ -7,7 +7,7 @@ ms.date: 12/06/2023
 
 # How Defender for Cloud Apps helps protect your Workplace environment (Preview)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Workplace by Meta is an online collaboration software tool developed by Meta that facilitates online groupwork, instant messaging, video conferencing, and news sharing in one place. Along with the benefits of effective collaboration in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include messages, posts, and files with potentially sensitive information, collaboration, partnership details, and more. Preventing exposure of this data requires continuous monitoring to prevent any malicious actors or security-unaware insiders from exfiltrating sensitive information.
 

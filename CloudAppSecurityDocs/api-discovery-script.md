@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Generate block script - Cloud Discovery API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 > [!NOTE]
 > This request is not available for Microsoft 365 Cloud App Security.
@@ -51,7 +51,7 @@ This request returns the block script as text.
 Here is an example of the request.
 
 ```rest
-curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery_block_scripts/?format=102&type=banned"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/discovery_block_scripts/?format=102&type=banned"
 ```
 
 > [!NOTE]

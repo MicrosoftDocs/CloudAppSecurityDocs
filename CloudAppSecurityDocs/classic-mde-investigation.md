@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Investigate apps discovered by Microsoft Defender for Endpoint
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for Endpoint](mde-integration.md) provides a seamless Shadow IT visibility and control solution. Our integration enables Defender for Cloud Apps administrators to investigate discovered devices, network events, and app usage.
 
@@ -42,7 +42,6 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 >
 > - Defender for Endpoint forwards data to Defender for Cloud Apps in chunks of ~4 MB (~4000 endpoint transactions)
 > - If the 4 MB limit isn't reached within 1 hour, Defender for Endpoint reports all the transactions performed over the last hour.
-> - If the endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoint and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Defender for Cloud Apps using the **Automated log upload** in order to get complete visibility. For an alternative way to view this traffic and investigate accessed URLs by devices, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/mdatp-monitoring-network-connection-behind-forward-proxy-public/ba-p/758274).
 
 ## Investigate device network events in Microsoft Defender XDR
 
@@ -110,4 +109,4 @@ Sometimes, access to an unsanctioned app isn't blocked, either because the endpo
 
 - [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Session policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Microsoft Defender for Cloud Apps session policies provide granular visibility into cloud apps with real-time, session-level monitoring. Use session policies to take different actions, depending on the policy you set for a user session.
 
@@ -87,6 +87,8 @@ Use the following steps to create a new session policy:
       - Share and unshare items in various apps
 
       - Edit items in various apps
+
+      For example, use a send items activity in your conditions to catch a user attempting to send information in a Teams chat or Slack channel, and block the message if it contains sensitive information like a password or other credentials.
 
     > [!NOTE]
     > Session policies don't support mobile and desktop apps. Mobile apps and desktop apps can also be blocked or allowed by creating an access policy.

@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 > [!IMPORTANT]
 > This document focuses on shadow IT discovery capabilities from Defender for Endpoint logs. For more information on shadow IT governing capabilities via Defender for Endpoint, see [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md).

@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Defender for Cloud Apps REST API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article describes how to interact with Defender for Cloud Apps over HTTPS.
 
@@ -161,4 +161,4 @@ The following table describes the supported operators:
 > [!div class="nextstepaction"]
 > [API authentication](api-authentication.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

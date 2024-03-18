@@ -1,13 +1,13 @@
 ---
 title: Deploy Conditional Access App Control custom apps with Microsoft Entra ID
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for custom apps using Microsoft Entra ID
-ms.date: 03/05/2023
+ms.date: 02/29/2024
 ms.topic: how-to
 ---
 
 # Deploy Conditional Access App Control for custom apps using Microsoft Entra ID
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Session controls in Microsoft Defender for Cloud Apps can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps hosted via the Microsoft Entra application proxy with session controls. It provides steps to create a Microsoft Entra Conditional Access policy that routes app sessions to Defender for Cloud Apps. For other IdP solutions, see [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](proxy-deployment-any-app-idp.md).
 
@@ -153,11 +153,11 @@ For example, if you've configured a policy that blocks downloading files for an 
 
    ![Onboard with session control.](media/proxy-deployment-aad/onboard-with-session-control.png)
 
-To verify that the application is being proxied, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
+To verify that the application is protected, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
 
 Open the application and perform the following checks:
 
-- Check that the URL contains the `.mcas` suffix
+- Check to see if the lock :::image type="icon" source="media/in-browser-protection/lock.png"::: icon appears in your browser, or if you're working in a browser other than Microsoft Edge, check that your app URL contains the `.mcas` suffix. For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
 - Visit all pages within the app that are part of a user's work process and verify that the pages render correctly.
 - Verify that the behavior and functionality of the app isn't adversely affected by performing common actions such as downloading and uploading files.
 - Review the list of domains associated with the app.

@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Policy template reference
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article provides information on policy templates included in Microsoft Defender for Cloud Apps.
 
@@ -58,4 +58,4 @@ To see the full list of policy templates, in the portal, go to **Control** -> **
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

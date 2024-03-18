@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Create Cloud Discovery policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 You can create app discovery policies to alert you when new apps are detected. Defender for Cloud Apps also searches all the logs in your Cloud Discovery for anomalies.
 
@@ -94,4 +94,4 @@ Defender for Cloud Apps searches all the logs in your Cloud Discovery for anomal
 > [!div class="nextstepaction"]
 > [User activity policies](user-activity-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Deploy Conditional Access App Control for any web app using Okta as the identity provider (IdP)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any non-Microsoft IdP. This article describes how to route app sessions from Okta to Defender for Cloud Apps for real-time session controls.
 
@@ -201,4 +201,4 @@ In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign
 > [!div class="nextstepaction"]
 > [Troubleshooting access and session controls](troubleshooting-proxy.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

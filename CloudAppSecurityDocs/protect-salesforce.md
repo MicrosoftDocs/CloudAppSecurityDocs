@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # How Defender for Cloud Apps helps protect your Salesforce environment
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 As a major CRM cloud provider, Salesforce incorporates large amounts of sensitive information about customers, pricing playbooks, and major deals inside your organization. Being a business-critical app, Salesforce is accessed and used by people inside your organization and by others outside of it (such as partners and contractors) for various purposes. In many cases, a large proportion of your users accessing Salesforce have low awareness of security and might put your sensitive information at risk by unintentionally sharing it. In other instances, malicious actors may gain access to your most sensitive customer-related assets.
 
@@ -86,7 +86,7 @@ This section provides instructions for connecting Microsoft  Defender for Cloud 
 ### How to connect Salesforce to Defender for Cloud Apps
 
 > [!NOTE]
-> Salesforce Shield should be available for your Salesforce instance as a prerequisite for this integration.
+> Salesforce Shield should be available for your Salesforce instance as a prerequisite for this integration in all supported abilities except SSPM
 
 1. It's recommended to have a dedicated service admin account for Defender for Cloud Apps.
 
@@ -122,7 +122,6 @@ This section provides instructions for connecting Microsoft  Defender for Cloud 
       If these checkboxes aren't selected, you may need to contact Salesforce to add them to your account.
 
 1. If your organization has **Salesforce CRM Content** enabled, make sure that the current administrative account has it enabled as well.
-
     1. Go to the Salesforce **Setup Home** page.
 
     1. Under **Administration** -> **Users**, go to the **Users** page.
@@ -141,8 +140,7 @@ This section provides instructions for connecting Microsoft  Defender for Cloud 
 
     1. Select **Save**.
 
-    1. Go to **Build** -> **Customize** -> **Salesforce Files** -> **Settings** -> **Content Deliveries and Public Links**.
-
+   1. Go to **Apps** -> **Feature Settings** -> **Salesforce Files** ->  **Content Deliveries and Public Links**.
     1. Select **Edit** and then select **Checked Content Deliveries feature can be enabled for users**
 
     1. Select **Save**.

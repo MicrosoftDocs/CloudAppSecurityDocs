@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting access and session controls for end-users | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by end-users with Microsoft Defender for Cloud Apps.
-ms.date: 08/20/2023
+ms.date: 02/29/2024
 ms.topic: troubleshooting
 ---
 
@@ -17,15 +17,15 @@ Before you start troubleshooting, make sure your environment meets the following
 |Requirement  |Description  |
 |---------|---------|
 |**Licensing**     |   Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans) for Microsoft Defender for Cloud Apps.      |
-|**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Microsoft Entra ID using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
-|**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>Google Chrome<br>Mozilla Firefox<br>or Apple Safari      |
-|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. <br><br>To configure the default behavior during system downtime, in Microsoft Defender XDR, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
+|**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported single sign-on (SSO) solutions: <br><br>  - Microsoft Entra ID using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
+|**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>- Google Chrome<br>- Mozilla Firefox<br>- Apple Safari  <br><br>In-browser protection for Microsoft Edge also has specific requirements, including the user signed in with their work profile. For more information, see [In-browser protection requirements](in-browser-protection.md#in-browser-protection-requirements).    |
+|**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls can't be enforced. <br><br>To configure the default behavior during system downtime, in Microsoft Defender XDR, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
 
-## User monitoring page is not appearing
+## User monitoring page isn't appearing
 
-When routing a user through the Defender for Cloud Apps, you can notify the user that their session will be monitored. By default, the user monitoring page is enabled.
+When routing a user through the Defender for Cloud Apps, you can notify the user that their session is monitored. By default, the user monitoring page is enabled.
 
-This section describes the troubleshooting steps recommended to take if the user monitoring page is enabled but doesn't appear as expected.
+This section describes the troubleshooting steps we recommend you taking if the user monitoring page is enabled but doesn't appear as expected.
 
 **Recommended steps**
 
@@ -41,7 +41,7 @@ This section describes the troubleshooting steps recommended to take if the user
     | Message type | Details |
     | --- | --- |
     | **Default** | **Header**:<br />Access to [App Name Will Appear Here] is monitored<br />**Body**:<br />For improved security, your organization allows access to [App Name Will Appear Here] in monitor mode. Access is only available from a web browser. |
-    | **Custom** | **Header**:<br />Use this box to provide a custom heading to inform users they are being monitored.<br />**Body**:<br />Use this box to add additional custom information for the user, such as who to contact with questions, and supports the following inputs: plain text, rich text, hyperlinks. |
+    | **Custom** | **Header**:<br />Use this box to provide a custom heading to inform users they're being monitored.<br />**Body**:<br />Use this box to add other custom information for the user, such as who to contact with questions, and supports the following inputs: plain text, rich text, hyperlinks. |
 
 1. Select **Preview** to verify the user monitoring page that appears before accessing an app.
 
@@ -61,7 +61,7 @@ If an end user receives a general failure after signing into an app from a non-M
 
     1. Validate that the SAML certificate that was uploaded is correct.
 
-    1. Verify that valid SSO URLs have been provided in the app configuration.
+    1. Verify that valid SSO URLs are provided in the app configuration.
 
     1. Validate that the attributes and values in the custom app are reflected in identity provider settings. 
     
@@ -73,7 +73,7 @@ If an end user receives a general failure after signing into an app from a non-M
 
 ### Something Went Wrong page appears
 
-Sometimes during a proxied session, the **Something Went Wrong** page may appear. This can happen when:
+Sometimes during a proxied session, the **Something Went Wrong** page might appear. This can happen when:
 
 - A user logs in after being idle for a while
 - Refreshing the browser and the page load takes longer than expected
@@ -87,7 +87,7 @@ Sometimes during a proxied session, the **Something Went Wrong** page may appear
     1. Restart your browser session.
     1. Clear history, cookies, and cache from the browser.
 
-### Clipboard actions or file controls are not being blocked
+### Clipboard actions or file controls aren't being blocked
 
 The ability to block clipboard actions such as cut, copy, paste, and file controls such as download, upload, and print is required to prevent data exfiltration and infiltration scenarios. 
 
@@ -108,11 +108,11 @@ If the session is being proxied, use the following steps to verify the policy:
 
     1. If there's an activity, expand the activity drawer by clicking on the activity.
 
-    1. On the activity drawer's **General** tab, click the matched policies link, to verify the policy you enforced is present.
+    1. On the activity drawer's **General** tab, select the matched policies link, to verify the policy you enforced is present.
 
     1. If you don't see your policy, see [Issues when creating access and session policies](troubleshooting-proxy.md#issues-when-creating-access-and-session-policies).
 
-    1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
+    1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down, and the default behavior was applied.
 
         1. To change the default behavior, in the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
 
@@ -120,9 +120,9 @@ If the session is being proxied, use the following steps to verify the policy:
 
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
 
-### Downloads are not being protected
+### Downloads aren't being protected
 
-As an end user, downloading sensitive data on an unmanaged device might be necessary. In these scenarios, you can protect documents with Microsoft Information Protection. 
+As an end user, downloading sensitive data on an unmanaged device might be necessary. In these scenarios, you can protect documents with Microsoft Purview Information Protection. 
 
 If the end user can't successfully encrypt the document, use the following steps to investigate the issue.
 
@@ -136,11 +136,11 @@ If the end user can't successfully encrypt the document, use the following steps
 
     1. If there's an activity, expand the activity drawer by clicking on the activity
 
-    1. On the activity drawer's **General** tab, click the matched policies link, to verify the policy you enforced is present.
+    1. On the activity drawer's **General** tab, select the matched policies link, to verify the policy you enforced is present.
 
     1. If you don't see your policy, see [Issues when creating access and session policies](troubleshooting-proxy.md#issues-when-creating-access-and-session-policies).
 
-    1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
+    1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down, and the default behavior was applied.
 
         1. To change the default behavior, in the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
  
@@ -162,30 +162,30 @@ If the end user can't successfully encrypt the document, use the following steps
 
 ### Navigating to a particular URL of a suffixed app and landing on a generic page
 
-In some scenarios, navigating to a link may result in the user landing on the app's home page rather than the full path of the link.
+In some scenarios, navigating to a link might result in the user landing on the app's home page rather than the full path of the link.
 
 > [!TIP]
-> Defender for Cloud Apps maintains a list of apps that are known to suffer from context loss. For more information, see [Known limitations](proxy-intro-aad.md#known-limitations).
+> Defender for Cloud Apps maintains a list of apps that are known to suffer from context loss. For more information, see [Context loss limitations](caac-known-issues.md#context-loss-limitations).
 >
 
 **Recommended steps**
 
-If a user lands on the app's home page instead of the full path of the link, resolve the issue by appending  `.mcas.ms` to the original URL.
+If you're using a browser other than Microsoft Edge and a user lands on the app's home page instead of the full path of the link, resolve the issue by appending  `.mcas.ms` to the original URL.
 
 For example, if the original URL is:
 
 `https://www.github.com/organization/threads/threadnumber`, change it to
 `https://www.github.com.mcas.ms/organization/threads/threadnumber`
 
-For apps experiencing context loss, open a [support ticket](support-and-ts.md).
+Microsoft Edge users benefit from in-browser protection, aren't redirected to a reverse proxy, and shouldn't need the `.mcas.ms` suffix added. For apps experiencing context loss, open a [support ticket](support-and-ts.md).
 
 <a name="app-additional-considerations"></a>
 
 ### Blocking downloads cause PDF previews to be blocked
 
-Occasionally when previewing or printing PDF files, apps initiate a download of the file. This causes Defender for Cloud Apps to intervene to ensure the download is blocked and that data isn't leaked from your environment. 
+Occasionally, when you preview or print PDF files, apps initiate a download of the file. This causes Defender for Cloud Apps to intervene to ensure the download is blocked and that data isn't leaked from your environment. 
 
-For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files may be blocked, with a message like this:
+For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files might be blocked, with a message like this:
 
 ![Screenshot of a Download blocked message.](media/before-powershell.png)
 
@@ -195,7 +195,7 @@ To allow the preview, an Exchange administrator should perform the following ste
 
 1. Connect to the module. For more information, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa-and-modern-authentication).
 
-1. After you've connected to the Exchange Online PowerShell, use the [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) cmdlet to update the parameters in the policy:
+1. After you connected to the Exchange Online PowerShell, use the [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) cmdlet to update the parameters in the policy:
 
     ```powershell
     Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -DirectFileAccessOnPrivateComputersEnabled $false -DirectFileAccessOnPublicComputersEnabled $false
@@ -204,7 +204,7 @@ To allow the preview, an Exchange administrator should perform the following ste
     >[!NOTE]
     >The **OwaMailboxPolicy-Default** policy is the default OWA policy name in Exchange Online. Some customers may have deployed additional or created a custom OWA policy with a different name. If you have multiple OWA policies, they may be applied to specific users. Therefore, you'll need to also update them to have complete coverage.
 
-1. After these parameters have been set, run a test on OWA with a PDF file and a session policy configured to block downloads. The **Download** option should be removed from the dropdown and you can preview the file. For example:
+1. After these parameters are set, run a test on OWA with a PDF file and a session policy configured to block downloads. The **Download** option should be removed from the dropdown and you can preview the file. For example:
 
     ![Screenshot of a PDF preview not blocked.](media/after-powershell.png)
 
@@ -212,47 +212,43 @@ To allow the preview, an Exchange administrator should perform the following ste
 
 Malicious actors can craft URLs that are similar to other sites' URLs in order to impersonate and trick users to believe they're browsing to another site. Some browsers try to detect this behavior and warn users before accessing the URL or block access.
 
-In some rare cases, users under session control will receive a message from the browser indicating suspicious site access. The reason for this is the browser treats the suffixed domain (for example:  `.mcas.ms`) as suspicious.
+In some rare cases, users under session control receive a message from the browser indicating suspicious site access. The reason for this is the browser treats the suffixed domain (for example:  `.mcas.ms`) as suspicious.
 
-For example, in Microsoft Edge:
+This message only appears for Chrome users, as Microsoft Edge users benefit from in-browser protection, without the reverse proxy architecture. For example:
 
-  ![Screenshot of a similar site warning in Microsoft Edge.](media/edge-similar-site-warning.png)
+![Screenshot of a similar site warning in Chrome.](media/chrome-similar-site-warning.png)
 
-For example, in Chrome:
+If you receive a message like this, contact Microsoft’s support to address it with the relevant browser vendor.
 
-  ![Screenshot of a simliar site warning in Chrome.](media/chrome-similar-site-warning.png)
+### Second sign-in (also known as 'second login')
 
-If you receive a message like this, contact Microsoft’s support, who will address it with the relevant browser vendor.
+Some applications have more than one deep link to sign in. Unless you define the sign-in links in the app settings, users might be redirected to an unrecognized page when they sign in, blocking their access.
 
-### Second sign-in (AKA 'second login')
+The integration between IdPs such as Microsoft Entra ID is based on intercepting an app sign-in and redirecting it. This means that browser sign-ins can't be controlled directly without triggering a second sign-in. To trigger a second sign-in, we need to employ a second sign-in URL specifically for that purpose.
 
-Some applications have more than one deep link to login, and unless the customer defines it in the app settings, when the end user will sign-in =, it might be redirected to unrecognized page and the experience will be broken
+If the app uses a nonce, the second sign-in might be transparent to users, or they are prompted to sign-in again.
 
-The integration between IDP companies as Azure AD is based on intercepting an app sign-in and redirecting it. This means that browser sign in cannot be directly controlled without triggering a second sign-in. To trigger a second sign-in, we need to employ second sign-in URL that will be used for that purpose
-
-If the app uses a nonce, the second sign-in may be transparent to users, or they be prompted to login again
-
-If it is not transparent to the end user, the second sign-in URL should be added to the app settings:
+If it isn't transparent to the end user, add the second sign-in URL to the app settings:
 
 1. Go to 'settings'\'Cloud apps'\'connected apps'\'Conditional Access App Control Apps'
 
-1. Choose the relevant pp and then click on the three dots
+1. Select the relevant app and then select the three dots.
 
-1. Click on 'Edit app'\'Advanced login configuration'
+1. Select **Edit app\Advanced login configuration**.
 
-1. Add the second sign-in URL as mentioned in the error page
+1. Add the second sign-in URL as mentioned in the error page.
 
-If you are confident the app does not use a nonce, you can disable this by editing the apps settings as described in [Slow sign-ins](troubleshooting-proxy.md#slow-sign-ins).
+If you're confident the app doesn't use a nonce, you can disable this by editing the apps settings as described in [Slow sign-ins](troubleshooting-proxy.md#slow-sign-ins).
 
-### Additional considerations for troubleshooting apps
+### More considerations for troubleshooting apps
 
-While troubleshooting apps, there are some additional things to consider:
+When troubleshooting apps, there are some more things to consider:
 
 - **Session controls support for modern browsers**
-  Defender for Cloud Apps session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
+  Defender for Cloud Apps session controls now includes support for the new Microsoft Edge browser based on Chromium. While we continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support is limited and we recommend using the new Microsoft Edge browser.
 
 - **Session controls protect limitation**
-Co-Auth labeling under **"protect"** action is not supported by Defender for Cloud Apps session controls. For more information, see [Enable co-authoring for files encrypted with sensitivity labels](/purview/sensitivity-labels-coauthoring#if-you-need-to-disable-this-feature).
+Co-Auth labeling under **"protect"** action isn't supported by Defender for Cloud Apps session controls. For more information, see [Enable coauthoring for files encrypted with sensitivity labels](/purview/sensitivity-labels-coauthoring#if-you-need-to-disable-this-feature).
 
 ## Next steps
 

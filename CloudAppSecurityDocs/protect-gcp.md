@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your Google Cloud Platform (GCP) environment
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Google Cloud Platform is an IaaS provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, ports, and virtual private networks that enable access to your organization.
 

@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Manage alerts
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article explains how to work with alerts raised in the Defender for Cloud Apps portal.
 
@@ -78,4 +78,4 @@ The following table provides a list of the types of alerts that can be triggered
 
 For more information about investigating alerts, see [Investigate](investigate.md).
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

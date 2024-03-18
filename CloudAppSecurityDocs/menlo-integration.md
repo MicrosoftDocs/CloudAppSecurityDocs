@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with Menlo Security
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 If you work with both Defender for Cloud Apps and Menlo Security, you can integrate the two products to enhance your security Cloud Discovery experience. Menlo Security, as a standalone Secure Web Gateway, monitors your organization's traffic enabling you to set policies for blocking transactions. Together, Defender for Cloud Apps and Menlo Security provide the following capabilities:
 

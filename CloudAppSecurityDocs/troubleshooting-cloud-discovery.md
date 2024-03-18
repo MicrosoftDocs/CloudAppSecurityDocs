@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Troubleshooting Cloud Discovery errors
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides a list of Cloud Discovery errors and resolution recommendations for each.
 

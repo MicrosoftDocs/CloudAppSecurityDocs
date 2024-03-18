@@ -6,7 +6,7 @@ ms.topic: tutorial
 ---
 # Tutorial: Investigate risky users
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often aren't connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Defender for Cloud Apps now simplifies this by taking away the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
 

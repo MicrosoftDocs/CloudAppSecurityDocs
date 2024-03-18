@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Cloud Discovery data anonymization
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Microsoft Defender for Cloud Apps portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. When necessary, for a specific security investigation (for example, a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, they can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal's **Governance log**.
 

@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # How Defender for Cloud Apps helps protect your Atlassian environment
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Atlassian is an online collaborative and software development platform (including Confluence, Jira and Bitbucket). Along with the benefits of effective collaboration in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include posts, tasks, and files with potentially sensitive information, collaboration, and partnership details, and more. Preventing exposure of this data requires continuous monitoring to prevent any malicious actors or security-unaware insiders from exfiltrating sensitive information.
 
@@ -43,7 +43,7 @@ For more information about remediating threats from apps, see [Governing connect
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
-## SaaS security posture management (Preview)
+## SaaS security posture management
 
 [Connect Atlassian](#connect-atlassian-to-microsoft-defender-for-cloud-apps) to get security posture recommendations for Atlassian in Microsoft Secure Score. To see security recommendations for Atlassian in Microsoft Secure Score:
 

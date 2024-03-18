@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # List - Activities API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the GET or POST request to fetch a list of activities matching the specified filters.
 
@@ -37,7 +37,7 @@ POST /api/v1/activities/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/activities/" -d '{
   "filters": {
     // some filters
   },

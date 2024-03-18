@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Microsoft Sentinel integration (Preview)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 You can integrate Microsoft Defender for Cloud Apps with Microsoft Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and discovery data. Integrating with Microsoft Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 

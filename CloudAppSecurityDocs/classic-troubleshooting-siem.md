@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Classic portal: Troubleshooting SIEM integration
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article provides a list of possible issues when connecting your SIEM to Defender for Cloud Apps and provides possible resolutions.
 
@@ -122,4 +122,4 @@ Newer versions of Java can cause problems with the SIEM agent. If you've install
 > [!div class="nextstepaction"]
 > [Best practices for protecting your organization](best-practices.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

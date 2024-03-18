@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 The Alerts API provides you with information about immediate risks identified by Defender for Cloud Apps that require attention. Alerts can result from suspicious usage patterns or from files containing content that violates company policy.
 
