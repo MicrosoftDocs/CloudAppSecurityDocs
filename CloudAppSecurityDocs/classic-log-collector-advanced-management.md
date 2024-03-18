@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Advanced log collector management
 description: Classic portal -  This article provides information about how advanced management tasks for Defender for Cloud Apps Cloud Discovery log collectors.
-ms.date: 01/19/2023
+ms.date: 03/18/2024
 ms.topic: how-to
 ROBOTS: NOINDEX
 ---
@@ -263,7 +263,6 @@ Use these steps to download the log collector image using a computer that has ac
 > - To install Docker on your host, download the desired operating system:
 >   - <https://download.docker.com/linux/ubuntu>
 >   - <https://download.docker.com/linux/centos/>
->   - <https://download.docker.com/linux/rhel/>
 >
 > After the download, use the [offline installation guide](https://docs.docker.com/engine/install/binaries/) to install your operating system.
 
