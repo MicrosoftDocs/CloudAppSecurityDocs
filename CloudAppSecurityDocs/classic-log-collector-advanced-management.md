@@ -263,7 +263,8 @@ Use these steps to download the log collector image using a computer that has ac
 > - To install Docker on your host, download the desired operating system:
 >   - <https://download.docker.com/linux/ubuntu>
 >   - <https://download.docker.com/linux/centos/>
->
+>   - <https://download.docker.com/linux/rhel/>
+> 
 > After the download, use the [offline installation guide](https://docs.docker.com/engine/install/binaries/) to install your operating system.
 
 Start the process by [exporting the log collector image](#export-the-log-collector-image-from-your-docker-hub) and then [import the image to your destination host](#import-and-load-the-log-collector-image-to-your-destination-host).
