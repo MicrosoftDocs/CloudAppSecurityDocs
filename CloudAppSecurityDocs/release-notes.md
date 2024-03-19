@@ -27,7 +27,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 Microsoft Defender for Cloud Apps log collector now supports [Podman](https://docs.podman.io/en/latest/), and you can configure automatic log collection on Podman for continuous reporting with Defender for Cloud Apps. 
 
-Automatic log collection is supported using a Docker container on multiple operating systems. For Linux distributions using RHEL version 8 and higher, you must use Podman as the container's runtime system.
+Automatic log collection is supported using a Docker container on multiple operating systems. For Linux distributions using RHEL version 7.1 and higher, you must use Podman as the container's runtime system.
 
 For more information, see [Configure automatic log upload using Podman](discovery-linux-podman.md).
 

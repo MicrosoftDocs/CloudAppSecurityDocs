@@ -15,7 +15,7 @@ This article describes how to configure automatic log upload for continuous repo
 
 Before you start:
 
-- Make sure you're using a container with RHEL 8 and higher.
+- Make sure you're using a container with RHEL 7.1 and higher.
 - Since Docker and Podman can't coexist on the same machine, make sure to uninstall any Docker installations before running Podman.
 - Make sure that you're signed in to the RHEL machine as user `root` to deploy Podman
 
