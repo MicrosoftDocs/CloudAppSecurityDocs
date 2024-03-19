@@ -53,7 +53,6 @@ The Log Collector supports the **Container** deployment mode. For more informati
 
 - [Configure automatic log upload using on-premises Docker on Windows](discovery-docker-windows.md)
 - [Configure automatic log upload using Podman](discovery-linux-podman.md)
-- [Configure automatic log upload using on-premises Docker on Linux](discovery-docker-ubuntu.md)
 - [Configure automatic log upload using Docker in Azure](discovery-docker-ubuntu-azure.md)
 
 ## Next steps
