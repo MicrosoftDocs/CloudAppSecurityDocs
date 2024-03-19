@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 
 [!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
-You can configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Ubuntu, or CentOS in Azure.
+You can configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Ubuntu or CentOS in Azure.
 
 ## Prerequisites
 

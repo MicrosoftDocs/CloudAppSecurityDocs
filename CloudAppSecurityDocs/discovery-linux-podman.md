@@ -23,7 +23,7 @@ Before you start:
 
 1. Sign into Microsoft Defender XDR and select **Settings > Cloud Apps > Cloud Discovery > Automatic log upload**.
 
-1. Make sure that you have a data source defined on the **Data sources** tab. If you don't, select **Add a data source** to add one. <!--i don't see this option?-->
+1. Make sure that you have a data source defined on the **Data sources** tab. If you don't, select **Add a data source** to add one. 
 
 1. Select the **Log collectors** tab, which lists all the log collectors deployed on your tenant.
 
@@ -67,7 +67,7 @@ If you're not getting firewall logs from your Podman container, check the follow
 
     where `<container name>` is the name of the container you're using.
 
-1. If the logs are still not sent, make sure that the container is deployed using the `--privileged` flag. If you haven't deployed your container with the `--privileged` flag, the container won't gather uploaded files to the host machine. <!--is this needed? what does this mean?-->
+1. If the logs are still not sent, make sure that the container is deployed using the `--privileged` flag. If you haven't deployed your container with the `--privileged` flag, the container won't gather uploaded files to the host machine.
 
 ## Related content
 
