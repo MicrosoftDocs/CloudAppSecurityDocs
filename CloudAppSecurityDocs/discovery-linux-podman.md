@@ -9,7 +9,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes how to configure automatic log upload for continuous reports in Defender for Cloud Apps using a Podman container on Linux in an on-premises server. Customers using RHEL 8 or higher must use Podman for automatic log collection.
+This article describes how to configure automatic log upload for continuous reports in Defender for Cloud Apps using a Podman container on Linux in an on-premises server. Customers using RHEL 7.1 or higher must use Podman for automatic log collection.
 
 ## Prerequisites
 
