@@ -8,10 +8,10 @@ ms.topic: how-to
 
 
 
-You can configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on an on-premises Ubuntu, Red Hat Enterprise Linux (RHEL), or CentOS server.
+You can configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on an on-premises Ubuntu  or CentOS server.
 
 > [!IMPORTANT]
-> If you're using RHEL version 8 or higher, you must use Podman for automatic log collection instead of Docker. For more information, see [Configure automatic log upload using Podman (Preview)](discovery-linux-podman.md).
+> If you're using RHEL version 7.1 or higher, you must use Podman for automatic log collection instead of Docker. For more information, see [Configure automatic log upload using Podman (Preview)](discovery-linux-podman.md).
 
 Essential information required for user success
 
@@ -19,7 +19,6 @@ Essential information required for user success
 
 * OS:
   * Ubuntu 14.04, 16.04, 18.04 and 20.04
-  * RHEL 7.2 - 7.9
   * CentOS 7.2 or higher
 
 * Disk space: 250 GB
@@ -178,7 +177,7 @@ The following steps describe the deployment in Ubuntu.
 
 1. Remove the container-tools module: `yum module remove container-tools`
 1. Add the Docker CE repository: `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`
-1. Modify the yum repo file to use CentOS 8/RHEL 8 packages: `sed -i s/7/8/g /etc/yum.repos.d/docker-ce.repo`
+1. Modify the yum repo file to use CentOS 8 packages: `sed -i s/7/8/g /etc/yum.repos.d/docker-ce.repo`
 1. Install Docker CE: `yum install docker-ce`
 
 1. Start Docker
