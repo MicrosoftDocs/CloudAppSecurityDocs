@@ -63,18 +63,6 @@ You must have one of these roles to turn on app governance:
 - Compliance Data Admin
 - Cloud App Security admin
 
-One of the following administrator roles is required to see app governance pages or manage policies and settings:
-
-- Application Administrator
-- Cloud Application Administrator
-- Company or Global Administrator
-- Compliance Administrator
-- Compliance Data Administrator
-- Global Reader
-- Security Administrator
-- Security Operator
-- Security Reader (read-only)
-
 The following table lists the app governance capabilities for each role.
 
 | Role | Read the dashboard | Read all apps |Read policies | Create, update, or delete policies | Read alerts | Update alerts | Read settings | Update settings | Read Remediation | Update Remediation |
