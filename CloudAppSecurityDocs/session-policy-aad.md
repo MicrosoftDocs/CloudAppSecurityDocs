@@ -28,7 +28,16 @@ Session policies enable you to set user-session controls, configure access, and 
 
 > [!NOTE]
 > - There is no limit to the number of policies that can be applied.
-> - There's no connection between a policy that you create for a host app and any related resource apps. For example, session policies that you create for Teams, Exchange, or Gmail, are not connected to Sharepoint, OneDrive, or Google Drive. If you need a policy for the resource app in addition to the host app, create a separate policy.
+>
+> - Session policies secure client-app resources according to the app context they belong to.  
+> For instance:   
+> -A policy for Teams protects any resource inside Teams regardless of its URL.  
+> -A link to a file on OneDrive that's embedded in Teams follows the Teams policy.  
+> Microsoft Defender for Cloud Apps technology attempts to track the context in various scenarios such as opening the link in a new tab or using the link externally.  
+> In some cases, context tracing is not possible, for instance when the user attempts to open the file in a new tab using a shared link.
+>
+>   It is recommended to create a session policy for cloud storage services, OneDrive in that case, to ensure more hermetic coverage. 
+
 
 
 ## Prerequisites to using session policies
