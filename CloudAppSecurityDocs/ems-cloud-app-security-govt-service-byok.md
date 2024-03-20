@@ -67,7 +67,7 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
 
         ![Screenshot showing add access policy page.](media/cloud-app-security-byok/byok-kv-add-access-policy.PNG)
 
-    4. Select **Save**.
+    3. Select **Save**.
 
 1. Create a [new RSA key](/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key) and do the following:
 
