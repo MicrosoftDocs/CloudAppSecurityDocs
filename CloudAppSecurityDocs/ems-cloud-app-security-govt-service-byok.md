@@ -61,11 +61,13 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
 
         ![Screenshot showing the selection of key permissions.](media/cloud-app-security-byok/byok-kv-access-policy-key-perms.PNG)
 
-    2. Under **Select principal**, choose **Microsoft Defender for Cloud Apps - BYOK**. Note: the principal can also be named: **Microsoft Cloud App Security - BYOK**.
+    2. Under **Select principal**, choose **Microsoft Defender for Cloud Apps - BYOK**.
+
+       Note: the principal can also be named: **Microsoft Cloud App Security - BYOK**.
 
         ![Screenshot showing add access policy page.](media/cloud-app-security-byok/byok-kv-add-access-policy.PNG)
 
-    3. Select **Save**.
+    4. Select **Save**.
 
 1. Create a [new RSA key](/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key) and do the following:
 
