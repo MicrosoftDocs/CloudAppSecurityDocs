@@ -927,7 +927,7 @@ The Docker-based log collector was enhanced with the following important updates
 
   - Stability and performance improvements
 
-    We strongly recommend that you upgrade your environment to this new version. For more information, see [Log collector deployment modes](discovery-docker.md#deployment-modes).
+    We strongly recommend that you upgrade your environment to this new version. For more information, see [Log collector deployment modes](discovery-docker.md#related-content).
 
 - **Support for ServiceNow New York**  
 Cloud App Security now supports the latest version (New York) of ServiceNow. To learn about securing ServiceNow, see [Connect ServiceNow to Microsoft Cloud App Security](./connect-servicenow.md).
