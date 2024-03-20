@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 02/29/2024
+ms.date: 03/18/2024
 ms.topic: overview
 ---
 
@@ -22,6 +22,14 @@ For more information on what's new with other Microsoft Defender security produc
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## March 2024
+
+### Podman supported for automatic log collection (Preview)
+
+Microsoft Defender for Cloud Apps log collector now supports [Podman](https://docs.podman.io/en/latest/), and you can configure automatic log collection on Podman for continuous reporting with Defender for Cloud Apps. 
+
+Automatic log collection is supported using a Docker container on multiple operating systems. For Linux distributions using RHEL version 7.1 and higher, you must use Podman as the container's runtime system.
+
+For more information, see [Configure automatic log upload using Podman](discovery-linux-podman.md).
 
 ### New threat detections for Microsoft Copilot for Microsoft 365
 

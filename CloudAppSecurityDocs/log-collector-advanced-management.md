@@ -1,7 +1,7 @@
 ---
 title: Advanced log collector management | Microsoft Defender for Cloud Apps
 description: This article provides information about advanced management tasks for Defender for Cloud Apps Cloud Discovery log collectors.
-ms.date: 12/20/2023
+ms.date: 03/18/2024
 ms.topic: how-to
 ---
 # Advanced log collector management
@@ -302,7 +302,6 @@ The downloaded image can be imported either in your private repository or direct
 
     - <https://download.docker.com/linux/ubuntu>
     - <https://download.docker.com/linux/centos/>
-    - <https://download.docker.com/linux/rhel/>
 
 1. After the download, use Docker's [offline installation guide](https://docs.docker.com/engine/install/binaries/) to install your operating system.
 
