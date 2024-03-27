@@ -37,7 +37,7 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
     	accountEnabled = $true
     }
 
-    Update-MgServicePrincipal -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+    Update-MgServicePrincipal -ServicePrincipalId $servicePrincipalId.Id -BodyParameter $params
     ```
 
     Where *ServicePrincipalId* is the ID returned by the previous command (`New-MgServicePrincipal`).
@@ -61,7 +61,7 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
 
         ![Screenshot showing the selection of key permissions.](media/cloud-app-security-byok/byok-kv-access-policy-key-perms.PNG)
 
-    2. Under **Select principal**, choose **Microsoft Defender for Cloud Apps - BYOK**.
+    2. Under **Select principal**, choose **Microsoft Defender for Cloud Apps - BYOK** or **Microsoft Cloud App Security - BYOK**.
 
         ![Screenshot showing add access policy page.](media/cloud-app-security-byok/byok-kv-add-access-policy.PNG)
 
