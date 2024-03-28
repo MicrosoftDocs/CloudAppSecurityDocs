@@ -4,7 +4,7 @@ description: Classic portal -  This article outlines the steps to configure many
 ms.date: 01/10/2023
 ms.topic: conceptual
 ROBOTS: NOINDEX
-appliesTo:
+appliesto:
    - Microsoft Defender for Cloud Apps
 ---
 # Classic portal: Information protection policies
