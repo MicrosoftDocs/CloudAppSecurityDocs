@@ -1,16 +1,16 @@
 ---
-title: Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP
-description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for catalog apps with non-Microsoft IdP.
+title: Deploy conditional access app control for catalog apps with non-Microsoft IdP
+description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps conditional access app control reverse proxy features for catalog apps with non-Microsoft IdP.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP
+# Deploy conditional access app control for catalog apps with non-Microsoft IdP
 
-Access and session controls in Microsoft Defender for Cloud Apps work with applications from the Cloud app catalog and with custom applications. For a list of apps that are pre-onboarded by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#pre-onboarded-apps).
+Access and session controls in Microsoft Defender for Cloud Apps work with applications from the Cloud app catalog and with custom applications. For a list of apps that are pre-onboarded by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps conditional access app control](proxy-intro-aad.md#pre-onboarded-apps).
 
 ## Prerequisites
 
-- Your organization must have the following licenses to use Conditional Access App Control:
+- Your organization must have the following licenses to use conditional access app control:
 
   - The license required by your identity provider (IdP) solution
   - Microsoft Defender for Cloud Apps
@@ -23,23 +23,7 @@ Access and session controls in Microsoft Defender for Cloud Apps work with appli
     |Microsoft Entra ID|SAML 2.0 or OpenID Connect|
     |Other|SAML 2.0|
 
-## To deploy catalog apps
-
-Follow these steps to configure catalog apps to be controlled by Microsoft Defender for Cloud Apps Conditional Access App Control.
-
-**Step 1: [Configure your IdP to work with Defender for Cloud Apps](#configure-integration-with-other-idp-solutions)**
-
-**Step 2: [Sign in to each app using a user scoped to the policy](#sign-in-scoped)**
-
-**Step 3: [Verify the apps are configured to use access and session controls](#portal)**
-
-**Step 4: [Enable the app for use in your organization](#enable-app)**
-
-**Step 5: [Test the deployment](#test)**
-
-## Step 1:  Configure your IdP to work with Defender for Cloud Apps
-
-### Configure integration with other IdP solutions
+## Configure your IdP to work with Defender for Cloud Apps
 
 Use the following steps to route app sessions from other IdP solutions to Defender for Cloud Apps. For Microsoft Entra ID, see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md).
 
@@ -67,7 +51,7 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 
     For example:
 
-    ![Screenshot showing app information page.](media/proxy-deploy-add-idp-app-info.png)
+    ![Screenshot showing the APP INFORMATION area of the Add a SAML application with your identity provider dialog.](media/proxy-deploy-add-idp-app-info.png)
 
 1. On the **IDENTITY PROVIDER** page, use the provided steps to set up a new application in your IdP's portal, and then select **Next**.
 
@@ -79,7 +63,7 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 
 1. Copy the apps single sign-on configuration information. You'll need it in the next step. For example:
 
-    ![Screenshot showing gather identity provider information page.](media/proxy-deploy-add-idp-get-conf.png)
+    ![Screenshot showing the Identity provider / External configuration area of the Add a SAML application with your identity provider dialog](media/proxy-deploy-add-idp-get-conf.png)
 
     > [!NOTE]
     > These steps may differ slightly depending on your identity provider. This step is recommended for the following reasons:
@@ -99,7 +83,7 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 
     For example:
 
-    ![Screenshot showing enter identity provider information page.](media/proxy-deploy-add-idp-enter-conf.png)
+    ![Screenshot showing the Identity provider / Fill in data manually area of the Add a SAML application with your identity provider dialog](media/proxy-deploy-add-idp-enter-conf.png)
 
 1. On the next page, copy the following information, and then select **Next**. You'll need the information in the next step.
 
@@ -108,7 +92,7 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 
     For example:
 
-    ![Screenshot showing gather identity providers SAML information page.](media/proxy-deploy-add-idp-ext-conf.png)
+    ![Screenshot showing the Identity provider area of the Add a SAML application with your identity provider dialog, with sample details entered.](media/proxy-deploy-add-idp-ext-conf.png)
 
 1. In your IdP's portal, configure the following settings, commonly found in the IdP portal's custom app settings page.
 
@@ -129,7 +113,7 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 
     For example:
 
-    ![Screenshot showing gather Defender for Cloud Apps SAML information page.](media/proxy-deploy-add-idp-app-changes.png)
+    ![Screenshot showing the App changes area of the Add a SAML application with your identity provider dialog.](media/proxy-deploy-add-idp-app-changes.png)
 
 1. In your app's portal, on the single sign-on settings, do the following:
 
@@ -141,11 +125,11 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 
     1. Select **Save**.
 
-After saving your settings, all associated sign-in requests to this app will be routed through Conditional Access App Control.
+After saving your settings, all associated sign-in requests to this app will be routed through conditional access app control.
 
 The Defender for Cloud Apps SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
-## Step 2: Sign in to each app using a user scoped to the policy<a name="sign-in-scoped"></a>
+## Sign in to each app using a user scoped to the policy<a name="sign-in-scoped"></a>
 
 > [!NOTE]
 > Before proceeding, make sure to first sign out of existing sessions.
@@ -154,7 +138,7 @@ After you've created the policy, sign in to each app configured in that policy. 
 
 Defender for Cloud Apps will sync your policy details to its servers for each new app you sign in to. This may take up to one minute.
 
-## Step 3: Verify the apps are configured to use access and session controls<a name="portal"></a>
+## Verify the apps are configured to use access and session controls<a name="portal"></a>
 
 The preceding instructions helped you create a built-in Defender for Cloud Apps policy for catalog apps directly in Microsoft Entra ID. In this step, verify that the access and session controls are configured for these apps.
 
@@ -166,9 +150,9 @@ The preceding instructions helped you create a built-in Defender for Cloud Apps 
 
     If the app isn't enabled for session control, add it by selecting **Onboard with session control** and checking **Use this app with session controls**. For example:
 
-    ![Screenshot of how to onboard with session control.](media/proxy-deployment-aad/onboard-with-session-control.png)
+    ![Screenshot of the Onboard with session control link.](media/proxy-deployment-aad/onboard-with-session-control.png)
 
-## Step 4: Enable the app for use in your organization<a name="enable-app"></a>
+## Enable the app for use in your organization<a name="enable-app"></a>
 
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
@@ -178,9 +162,9 @@ Once you're ready to enable the app for use in your organization's production en
 
 1. Select **Enable the app to work on session controls** and then select **Save**. For example:
 
-   ![Screenshot of the Edit this app dialog](media/proxy-deployment-featured-idp/edit-app.png)
+   ![Screenshot of the Edit this app? dialog.](media/proxy-deployment-featured-idp/edit-app.png)
    
-## Step 5: Test the deployment<a name="test"></a>
+## Test the deployment<a name="test"></a>
 
 1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Microsoft Entra ID, or for a SAML app configured with your identity provider.
 
@@ -188,22 +172,22 @@ Once you're ready to enable the app for use in your organization's production en
 
 1. You can filter by selecting **Advanced**, and then filtering using **Source equals Access control**. For example:
 
-    ![Filter using Microsoft Entra Conditional Access.](media/sso-logon.png)
+    ![Screenshot of filtering with Microsoft Entra Conditional Access.](media/sso-logon.png)
 
 1. We recommend that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.  
 
 To verify that the activity is properly captured, select a single sign-on login activity so that it opens the activity drawer. Make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).
 
 > [!NOTE]
-> After it is deployed, you can't remove an app from the Conditional Access App Control page. As long as you don't set a session or access policy on the app, the Conditional Access App Control won't change any behavior for the app.
+> After it is deployed, you can't remove an app from the Conditional Access App Control page. As long as you don't set a session or access policy on the app, the conditional access app control won't change any behavior for the app.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [« PREVIOUS: Introduction to Conditional Access App Control](proxy-intro-aad.md)
+> [« PREVIOUS: Introduction to conditional access app control](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
-> [NEXT: Deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+> [NEXT: Deploy conditional access app control for any app »](proxy-deployment-any-app.md)
 
 > [!div class="nextstepaction"]
 > [Troubleshooting access and session controls](troubleshooting-proxy.md)
