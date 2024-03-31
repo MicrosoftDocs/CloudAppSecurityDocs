@@ -41,7 +41,7 @@ If you require more than 10 data sources, we recommend that you split the data s
 
     1. In the **Add data source** dialog, enter a name for your data source, and then select the source and receiver type.
 
-        Before selecting a source, select **View sample of expected log file** and compare your log with the expected format. If your log fil format doesn't match this sample, add your data source as **Other**.
+        Before selecting a source, select **View sample of expected log file** and compare your log with the expected format. If your log file format doesn't match this sample, add your data source as **Other**.
 
         To work with a network appliance that isn't listed, select **Other > Customer log format** or **Other (manual only)**. For more information, see [Working with the custom log parser](custom-log-parser.md).
 
@@ -158,7 +158,7 @@ This procedure describes how to deploy your machine with Ubuntu. The deployment 
 
     ---
 
-1. Run the command that you'd copied earlier from the **Create log collector** dialg. For example:
+1. Run the command that you'd copied earlier from the **Create log collector** dialog. For example:
 
     ```bash
     (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
