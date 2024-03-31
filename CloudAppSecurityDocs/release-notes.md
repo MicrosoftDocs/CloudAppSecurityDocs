@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 02/29/2024
+ms.date: 03/18/2024
 ms.topic: overview
 ---
 
@@ -23,11 +23,36 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## March 2024
 
+### Podman supported for automatic log collection (Preview)
+
+Microsoft Defender for Cloud Apps log collector now supports [Podman](https://docs.podman.io/en/latest/), and you can configure automatic log collection on Podman for continuous reporting with Defender for Cloud Apps. 
+
+Automatic log collection is supported using a Docker container on multiple operating systems. For Linux distributions using RHEL version 7.1 and higher, you must use Podman as the container's runtime system.
+
+For more information, see [Configure automatic log upload using Podman](discovery-linux-podman.md).
+
 ### New anomaly data for the advanced hunting CloudAppEvents table
 
 Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns columns for queries and detections rules. Using this data assists in ruling out false positives and finding anomalies.
 
 For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+
+### New threat detections for Microsoft Copilot for Microsoft 365
+
+Defender for Cloud Apps now provides new detections for risky user activities in Microsoft Copilot for Microsoft 365 with the Microsoft 365 connector.
+
+- Related alerts are shown together with other Microsoft Defender XDR alerts, in the Microsoft Defender portal.
+- Copilot for Microsoft 365 activities are available in the Defender for Cloud Apps activity log.
+- In the Microsoft Defender portal's **Advanced hunting** page, Copilot for Microsoft 365 activities are available in the **CloudAppEvents** table, under the **Microsoft Copilot for Microsoft 365** application.
+
+For more information, see:
+
+- [Get started with Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-setup)
+- [How Defender for Cloud Apps helps protect your Microsoft 365 environment](protect-office-365.md)
+- [Investigate alerts in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-alerts)
+- [Defender for Cloud Apps Activity log](activity-filters.md)
+- [Proactively hunt for threats with advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview)
+- [CloudAppEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table)
 
 ### Data in motion protection for Edge for Business users (Preview)
 
@@ -38,8 +63,7 @@ Protected users experience a smooth experience with their cloud apps, without la
 In-browser protection is turned on by default, and is being gradually rolled out across tenants, starting early in March 2024.
 
 For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
-
-
+  
 ### Defender for Cloud Apps in the Microsoft Defender portal now available to all Defender for Cloud Apps roles
 
 The Defender for Cloud Apps experience in the Microsoft Defender portal is now available for all Defender for Cloud Apps roles, including the following roles that were previously limited:

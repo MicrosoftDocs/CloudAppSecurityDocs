@@ -47,9 +47,13 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 - Network bandwidth - Your network bandwidth determines the log upload speed.
 - I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector's disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
 
-## Deployment modes
+## Related content
 
-The Log Collector supports the **Container** deployment mode. It runs as a Docker image on [Windows](discovery-docker-windows.md), [Ubuntu on-premises](discovery-docker-ubuntu.md), [Ubuntu in Azure](discovery-docker-ubuntu-azure.md), [RHEL on-premises](discovery-docker-ubuntu.md) or CentOS.
+The Log Collector supports the **Container** deployment mode. For more information, see:
+
+- [Configure automatic log upload using on-premises Docker on Windows](discovery-docker-windows.md)
+- [Configure automatic log upload using Podman](discovery-linux-podman.md)
+- [Configure automatic log upload using Docker in Azure](discovery-docker-ubuntu-azure.md)
 
 ## Next steps
 
