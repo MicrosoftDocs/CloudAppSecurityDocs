@@ -6,6 +6,8 @@ ms.topic: how-to
 ---
 # Deploy conditional access app control for catalog apps with non-Microsoft IdP
 
+<a name=configure-integration-with-other-idp-solutions></a>
+
 Access and session controls in Microsoft Defender for Cloud Apps work with applications from the Cloud app catalog and with custom applications. For a list of apps that are pre-onboarded by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps conditional access app control](proxy-intro-aad.md#pre-onboarded-apps).
 
 ## Prerequisites
