@@ -75,7 +75,7 @@ When you're ready, this procedure descries how to enable the app for use in your
 
 1. Select **Enable the app to work on session controls** and then select **Save**. For example:
 
-   ![Screenshot of the Edit this app dialog](media/proxy-deployment-aad/edit-app.png)
+   :::image type="content" source="media/proxy-deployment-aad/edit-app.png" alt-text="Screenshot of the Edit this app? dialog.":::
 
 1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Microsoft Entra ID, or for a SAML app configured with your identity provider.
 

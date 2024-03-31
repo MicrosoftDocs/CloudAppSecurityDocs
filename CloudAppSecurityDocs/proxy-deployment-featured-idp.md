@@ -162,7 +162,7 @@ Once you're ready to enable the app for use in your organization's production en
 
 1. Select **Enable the app to work on session controls** and then select **Save**. For example:
 
-   ![Screenshot of the Edit this app? dialog.](media/proxy-deployment-featured-idp/edit-app.png)
+    :::image type="content" source="media/proxy-deployment-featured-idp/edit-app.png" alt-text="Screenshot of the Edit this app? dialog.":::
    
 ## Test the deployment<a name="test"></a>
 
