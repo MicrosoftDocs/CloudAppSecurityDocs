@@ -67,7 +67,7 @@ The preceding instructions helped you create a built-in Defender for Cloud Apps 
 
 ## Enable your app for use in production
 
-When you're ready, this procedure descries how to enable the app for use in your organization's production environment.
+When you're ready, this procedure describes how to enable the app for use in your organization's production environment.
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 

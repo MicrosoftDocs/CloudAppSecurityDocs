@@ -65,7 +65,7 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 
 1. Copy the apps single sign-on configuration information. You'll need it in the next step. For example:
 
-    ![Screenshot showing the Identity provider / External configuration area of the Add a SAML application with your identity provider dialog](media/proxy-deploy-add-idp-get-conf.png)
+    ![Screenshot showing the Identity provider / External configuration area of the Add a SAML application with your identity provider dialog.](media/proxy-deploy-add-idp-get-conf.png)
 
     > [!NOTE]
     > These steps may differ slightly depending on your identity provider. This step is recommended for the following reasons:
@@ -85,7 +85,7 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 
     For example:
 
-    ![Screenshot showing the Identity provider / Fill in data manually area of the Add a SAML application with your identity provider dialog](media/proxy-deploy-add-idp-enter-conf.png)
+    ![Screenshot showing the Identity provider / Fill in data manually area of the Add a SAML application with your identity provider dialog.](media/proxy-deploy-add-idp-enter-conf.png)
 
 1. On the next page, copy the following information, and then select **Next**. You'll need the information in the next step.
 
