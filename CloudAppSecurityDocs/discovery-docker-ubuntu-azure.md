@@ -21,16 +21,7 @@ Before you start, make sure that your environment meets the following requiremen
 |**RAM**     |     4 GB    |
 | **Firewall configuration** | As defined in [Network requirements](network-requirements.md#log-collector) |
 
-## Remove your log collector
-
-If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
-
-```console
-docker stop <collector_name>
-docker rm <collector_name>
-```
-
-## Plan your log collectors by performance
+### Plan your log collectors by performance
 
 Each log collector can successfully handle log capacity of up to 50 GB per hour comprised of up to 10 data sources. The main bottlenecks in the log collection process are:
 
@@ -214,6 +205,15 @@ Verify that the logs are being uploaded to Defender for Cloud Apps and that repo
     >When applying filters on continuous reports, the selection will be included, not excluded. For example, if you apply a filter on a certain user group, only that user group will be included in the report.
 
      ![Screenshot of a custom continuous report.](media/custom-continuous-report.png)
+
+## Remove your log collector
+
+If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
+
+```console
+docker stop <collector_name>
+docker rm <collector_name>
+```
 
 ## Next steps
 
