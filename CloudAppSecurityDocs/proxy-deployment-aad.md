@@ -69,18 +69,20 @@ Once you're ready to enable the app for use in your organization's production en
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
-1. Select **Enable the app to work on session controls** and then select **Save**.
+1. Select **Enable the app to work on session controls** and then select **Save**. For example:
 
-   ![Edit app](media/proxy-deployment-aad/edit-app.png)
-   
+   ![Screenshot of the Edit this app dialog](media/proxy-deployment-aad/edit-app.png)
+
 1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Microsoft Entra ID, or for a SAML app configured with your identity provider.
+
 1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Activity log**, and make sure the login activities are captured for each app.
 
-1. You can filter by selecting **Advanced**, and then filtering using **Source equals Access control**.
+1. You can filter by selecting **Advanced**, and then filtering using **Source equals Access control**. For example:
 
     ![Filter using Microsoft Entra Conditional Access.](media/sso-logon.png)
-   
-1. It's recommended that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.  
+
+1. We recommend that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.  
+
    To verify that the activity is properly captured, select a single sign-on login activity so that it opens the activity drawer. Make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).
 
 > [!NOTE]
