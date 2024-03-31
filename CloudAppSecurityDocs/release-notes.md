@@ -31,6 +31,12 @@ Automatic log collection is supported using a Docker container on multiple opera
 
 For more information, see [Configure automatic log upload using Podman](discovery-linux-podman.md).
 
+### New anomaly data for the advanced hunting CloudAppEvents table
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns columns for queries and detections rules. Using this data assists in ruling out false positives and finding anomalies.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+
 ### New threat detections for Microsoft Copilot for Microsoft 365
 
 Defender for Cloud Apps now provides new detections for risky user activities in Microsoft Copilot for Microsoft 365 with the Microsoft 365 connector.
