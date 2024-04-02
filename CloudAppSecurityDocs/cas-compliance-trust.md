@@ -135,7 +135,7 @@ Defender for Cloud Apps shares data, including customer data, among the followin
 - Microsoft Defender for Cloud
 - Microsoft Sentinel     
 - Microsoft Defender for Endpoint
-- Microsoft Defender Exposure Management (public preview)
+- Microsoft Security Exposure Management (public preview)
 - Microsoft Purview
 
 
