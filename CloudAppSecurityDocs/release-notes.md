@@ -23,6 +23,23 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## March 2024
 
+## New Log Collector Version Released
+
+We released a new version of a log collector with the latest vulnerability fixes. The new version is columbus-0.272.0-signed.jar, and the image name is mcaspublic.azurecr.io/public/mcas/logcollector with the tag latest/0.272.0.
+
+The main changes include upgrading dependencies such as:
+• amazon-corretto
+• ubuntu
+• libssl
+• oauthlib
+• logback
+• setuptools
+
+Customers will need to stop their log collectors, remove the current image, and install the new one.
+To verify the version, the command cat /var/adallom/versions | grep columbus- should be run inside the docker container.
+Additionally, there is a need to update the certifications, and instructions can be found at
+log-collector-advanced-management.md#customize-certificate-files
+ 
 ### Podman supported for automatic log collection (Preview)
 
 Microsoft Defender for Cloud Apps log collector now supports [Podman](https://docs.podman.io/en/latest/), and you can configure automatic log collection on Podman for continuous reporting with Defender for Cloud Apps. 
