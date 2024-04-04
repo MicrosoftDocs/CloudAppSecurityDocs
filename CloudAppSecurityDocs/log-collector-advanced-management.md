@@ -14,7 +14,10 @@ Defender for Cloud Apps cloud discovery continues to focus on base firewall form
 
 This article describes how to modify the configuration for your Defender for Cloud Apps cloud discovery Docker.
 
-## Verify the log collector version
+## Modify the log collector FTP configuration
+Use these steps in the following sections to modify the configuration for your Defender for Cloud Apps Cloud Discovery Docker.
+
+### Verify the log collector version
 
 To verify the version of the log collector currently installed on your system, connect to the log collector host and run:
 
@@ -23,7 +26,7 @@ cat /var/adallom/versions | grep columbus-
 ```
 
 
-## Change the FTP password
+###  Change the FTP password
 
 This procedure describes how to change the password used to access log collector files:
 
@@ -47,7 +50,7 @@ You should be able to view the following contents:
 - `ssl_update`
 - `config.json`
 
-## Customize certificate files
+### Customize certificate files
 
 This procedure describes how to customize the certificate files used for secure connections to the cloud discovery Docker instance.
 
