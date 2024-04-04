@@ -36,7 +36,7 @@ Changes include upgrading dependencies, such as:
 - logback
 - setuptools
 
-For more information, see [Advanced log collector management](log-collector-advanced-management.md).
+For more information, see [Advanced log collector management](log-collector-advanced-management.md#update-the-log-collector-version).
  
 ### Podman supported for automatic log collection (Preview)
 
