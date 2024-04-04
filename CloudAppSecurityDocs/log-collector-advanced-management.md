@@ -12,10 +12,7 @@ This article describes how to configure advanced options for Defender for Cloud 
 
 Defender for Cloud Apps cloud discovery continues to focus on base firewall formats. Changes to the logs being forwarded at the firewall level may not continue to work, or may cause issues with parsing. If you find errors of this sort, we recommend that you continue to use the base firewall format, or use options with the custom log collector. For more information, see [Use a custom log parser](custom-log-parser.md).
 
-
-## Modify the log collector FTP configuration
-
-Use these steps in the following sections to modify the configuration for your Defender for Cloud Apps Cloud Discovery Docker.
+This article describes how to modify the configuration for your Defender for Cloud Apps cloud discovery Docker.
 
 ## Verify the log collector version
 
@@ -26,7 +23,7 @@ cat /var/adallom/versions | grep columbus-
 ```
 
 
-### Change the FTP password
+## Change the FTP password
 
 This procedure describes how to change the password used to access log collector files:
 
@@ -50,7 +47,7 @@ You should be able to view the following contents:
 - `ssl_update`
 - `config.json`
 
-### Customize certificate files
+## Customize certificate files
 
 This procedure describes how to customize the certificate files used for secure connections to the cloud discovery Docker instance.
 
@@ -516,6 +513,13 @@ docker exec CustomerLogCollectorName tail -f -q /var/adallom/syslog/<datasource_
 ```
 
 Compare the output file (`/tmp/log.log`) to the messages stored in the `/var/adallom/discoverylogsbackup` directory.
+
+## Update the log collector version
+
+When updating your log collector:
+
+- **Before installing the new version**, make sure to stop your log collector and remove the current image.
+- **After installing the new version**, [update your certificate files](#customize-certificate-files).
 
 ## Next steps
 
