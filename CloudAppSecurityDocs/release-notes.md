@@ -22,6 +22,24 @@ For more information on what's new with other Microsoft Defender security produc
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## March 2024
+### New Log Collector Version Released
+
+We released a new version of a log collector with the latest vulnerability fixes. The new version is columbus-0.272.0-signed.jar, and the image name is mcaspublic.azurecr.io/public/mcas/logcollector with the tag latest/0.272.0.
+
+Main Changes:
+The main changes include upgrading dependencies such as:
+• amazon-corretto
+• ubuntu
+• libssl
+• oauthlib
+• logback
+• setuptools
+
+Customers will need to stop their log collectors, remove the current image, and install the new one.
+To verify the version, the command cat /var/adallom/versions | grep columbus- should be run inside the docker container.
+
+Additionally, there is a need to update the certifications, and instructions can be found at
+https://learn.microsoft.com/en-us/defender-cloud-apps/log-collector-advanced-management#customize-certificate-files .
 
 ## New Log Collector Version Released
 
