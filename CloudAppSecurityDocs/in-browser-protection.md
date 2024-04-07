@@ -26,7 +26,7 @@ To use in-browser protection, users must also have the following environmental r
 |---------|---------|
 |**Operating systems**     |   Windows 10 or 11      |
 |**Identity platform**     | Microsoft Entra ID        |
-|**Microsoft Edge for Business versions**     |   121 and higher      |
+|**Microsoft Edge for Business versions**     |   122 and higher      |
 |**Supported session policies**     | - Block\Monitor of file download (all files\sensitive files) <br>- Block\Monitor file upload <br>- Block\Monitor copy\cut <br>- Block\Monitor print <br><br> Users that are served by multiple policies, including at least one policy that's *not* supported by Microsoft Edge for Business, their sessions are always served by the reverse proxy. <br><br>Policies defined in the Microsoft Entra ID portal are also always served by reverse proxy.   |
 
 All other scenarios are served automatically with the standard reverse proxy technology, including user sessions from browsers that don't support in-browser protection, or for policies not supported by in-browser protection.
