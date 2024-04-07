@@ -23,22 +23,20 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## March 2024
 
-## New Log Collector Version Released
+### New log collector version released
 
-We released a new version of a log collector with the latest vulnerability fixes. The new version is columbus-0.272.0-signed.jar, and the image name is mcaspublic.azurecr.io/public/mcas/logcollector with the tag latest/0.272.0.
+We released a new version of a log collector with the latest vulnerability fixes. The new version is `columbus-0.272.0-signed.jar`, and the image name is `mcaspublic.azurecr.io/public/mcas/logcollector`, with the tag `latest/0.272.0`.
 
-The main changes include upgrading dependencies such as:
-• amazon-corretto
-• ubuntu
-• libssl
-• oauthlib
-• logback
-• setuptools
+Changes include upgrading dependencies, such as:
 
-Customers will need to stop their log collectors, remove the current image, and install the new one.
-To verify the version, the command cat /var/adallom/versions | grep columbus- should be run inside the docker container.
-Additionally, there is a need to update the certifications, and instructions can be found at
-log-collector-advanced-management.md#customize-certificate-files
+- amazon-corretto
+- ubuntu
+- libssl
+- oauthlib
+- logback
+- setuptools
+
+For more information, see [Advanced log collector management](log-collector-advanced-management.md#update-the-log-collector-version).
  
 ### Podman supported for automatic log collection (Preview)
 
