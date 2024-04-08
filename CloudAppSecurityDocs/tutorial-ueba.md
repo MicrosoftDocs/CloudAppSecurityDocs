@@ -23,9 +23,9 @@ In this tutorial, you'll learn how to use Defender for Cloud Apps to investigate
 > - [Further investigate users](#investigate)
 > - [Protect your organization](#protect)
 
-## Cloud Discovery anomaly detection policy - Deprecation timeline
+## Investigation priority score increase - Deprecation timeline
 
-We will be retiring the "Investigation priority score increase" support from Microsoft Defender for Cloud Apps by mid-June 2024.
+We will be gradually retiring the "Investigation priority score increase" support from Microsoft Defender for Cloud Apps by Jyly 2024.
 
 After careful analysis and consideration, we have decided to deprecate it due to the high rate of false positives associated with this alert, which we found was not contributing effectively to the overall security of your organization. 
 
