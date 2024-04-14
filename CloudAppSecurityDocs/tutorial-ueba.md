@@ -23,6 +23,50 @@ In this tutorial, you'll learn how to use Defender for Cloud Apps to investigate
 > - [Further investigate users](#investigate)
 > - [Protect your organization](#protect)
 
+## Investigation priority score increase - Deprecation timeline
+
+We will be gradually retiring the "Investigation priority score increase" support from Microsoft Defender for Cloud Apps by July 2024.
+
+After careful analysis and consideration, we have decided to deprecate it due to the high rate of false positives associated with this alert, which we found was not contributing effectively to the overall security of your organization. 
+
+Our research indicated that this feature was not adding significant value and was not aligned with our strategic focus on delivering high-quality, reliable security solutions. 
+
+We are committed to continuously improving our services and ensuring that they meet your needs and expectations. 
+
+For those who wish to continue using this alert, we suggest using "Advanced Hunting" dedicated query:
+
+```kql    
+let time_back = 1d;
+let last_seen_threshold = 30;
+// the number of days which the resource is considered to be in use by the user lately, and therefore not indicates anomaly resource usage
+// anomaly score based on LastSeenForUser column in CloudAppEvents table
+let last_seen_scores =
+CloudAppEvents
+| where Timestamp > ago(time_back)
+| where isnotempty(LastSeenForUser)
+| mv-expand LastSeenForUser
+| extend resource = tostring(bag_keys(LastSeenForUser)[0])
+| extend last_seen = LastSeenForUser[resource]
+| where last_seen < 0 or last_seen > last_seen_threshold
+// score is calculated as the number of resources which were never seen before or breaching the chosen threshold
+| summarize last_seen_score = dcount(resource) by ReportId, AccountId;
+// anomaly score based on UncommonForUser column in CloudAppEvents table
+let uncommonality_scores =
+CloudAppEvents
+| where Timestamp > ago(time_back)
+| where isnotempty(UncommonForUser)
+| extend uncommonality_score = array_length(UncommonForUser)
+// score is calculated as the number of uncommon resources on the event
+| project uncommonality_score, ReportId, AccountId;
+last_seen_scores | join kind=innerunique uncommonality_scores on ReportId and AccountId
+| project-away ReportId1, AccountId1
+| extend anomaly_score = last_seen_score + uncommonality_score
+// joined scores
+```
+
+* This querty is a suggestion, use it as template and modify based on your needs.
+
+
 ## Understand the investigation priority score<a name="risk-score"></a>
 
 The investigation priority score is a score Defender for Cloud Apps gives to each user to let you know how risky a user is relative to other users in your organization.

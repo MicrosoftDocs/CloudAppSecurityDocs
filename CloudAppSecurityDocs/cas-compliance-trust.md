@@ -27,7 +27,7 @@ Defender for Cloud Apps meets many international and industry-specific complianc
 | Organization |Title|Description|
 |----|----|----|
 |![logo csa attestation.](media/csastar-attest.png)|CSA STAR Attestation|Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.|
-|![logo csa certification.](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
+|![logo csa certification.](media/csastar-attest.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
 |![logo EU model clauses.](media/eu-model-icon.png)|[EU Model Clauses](/compliance/regulatory/offering-EU-Model-Clauses)|Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.|
 |![logo HIPAA.](media/hipaa-logo.png)|[HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech)|Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).|
 |![logo iso 9001.](media/iso-9001.png)|ISO 9001|Microsoft is certified for its implementation of these quality management standards.|
@@ -135,9 +135,11 @@ Defender for Cloud Apps shares data, including customer data, among the followin
 - Microsoft Defender for Cloud
 - Microsoft Sentinel     
 - Microsoft Defender for Endpoint
-- Microsoft Defender Exposure Management (public preview)
+- Microsoft Security Exposure Management (public preview)
 - Microsoft Purview
 
+
+- Microsoft Purview
 
 ### Deleting personal data
 

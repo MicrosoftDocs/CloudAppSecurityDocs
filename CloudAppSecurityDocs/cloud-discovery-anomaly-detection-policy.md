@@ -10,6 +10,19 @@ ms.topic: how-to
 
 This article gives you reference details about policies. Explanations for each policy type and fields that can be configured for each policy are listed.
 
+## Cloud Discovery anomaly detection policy - Deprecation timeline
+
+We will be retiring the "Cloud Discovery anomaly" support from Microsoft Defender for Cloud Apps by July 2024.
+
+After careful analysis and consideration, we have decided to deprecate it due to the high rate of false positives associated with this alert, which we found was not contributing effectively to the overall security of your organization. 
+
+Our research indicated that this feature was not adding significant value and was not aligned with our strategic focus on delivering high-quality, reliable security solutions.
+
+We are committed to continuously improving our services and ensuring that they meet your needs and expectations. 
+
+For those who wish to continue using this alert, we suggest using "**App discovery policy**" and under "**Trigger a policy match if all the following occur on the same day**" set the filters acordinaly.
+
+
 ## Cloud Discovery anomaly detection policy reference
 
 A Cloud Discovery anomaly detection policy enables you to set up and configure continuous monitoring of unusual increases in cloud application usage. Increases in downloaded data, uploaded data, transactions, and users are considered for each cloud application. Each increase is compared to the normal usage pattern of the application as learned from past usage. The most extreme increases trigger security alerts.

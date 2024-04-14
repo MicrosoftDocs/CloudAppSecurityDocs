@@ -13,7 +13,7 @@ Cloud Discovery analyzes your traffic logs against the Microsoft Defender for Cl
 >[!TIP]
 > By default, Defender for Cloud Apps cannot discover apps that aren't in the catalog. 
 > 
-> To see Defender for Cloud Apps data for an app that's not currently in the catalog, we recommend that you [check our roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Defender%20for%20Identity) or [create a custom app](cloud-discovery-custom-apps.md).
+> To see Defender for Cloud Apps data for an app that's not currently in the catalog, we recommend that you [check our roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Defender%20for%20Cloud%20Apps)) or [create a custom app](cloud-discovery-custom-apps.md).
 
 
 ## Snapshot and continuous risk assessment reports

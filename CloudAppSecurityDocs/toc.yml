@@ -168,12 +168,14 @@ items:
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
         href: discovery-docker.md
-      - name: Docker on Windows on-premises
-        href: discovery-docker-windows.md
+      - name: Podman on Linux on-premises
+        href: discovery-linux-podman.md
       - name: Docker on Linux on-premises
         href: discovery-docker-ubuntu.md
       - name: Docker on Linux in Azure
         href: discovery-docker-ubuntu-azure.md
+      - name: Docker on Windows on-premises
+        href: discovery-docker-windows.md
       - name: Advanced log collector management
         href: log-collector-advanced-management.md
       - name: Use the custom log parser

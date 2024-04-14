@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 03/14/2024
+ms.date: 04/14/2024
 ms.topic: overview
 ---
 
@@ -21,26 +21,46 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
-## March 2024
+## April 2024
 
-### Enable data encryption from the Microsoft Defender portal
+### Enable data encryption from the Microsoft Defender portal (Preview)
 
 Now you can complete the process for encrypting Defender for Cloud Apps data at rest with your own key by enabling data encrpytion from the **Settings** area of the Microsoft Defender portal.
 
-This feature is now limited on the classic Microsoft Defender for Cloud Apps portal, and is avaialble only from the Microsoft Defender portal.
+This feature is now limited on the classic Microsoft Defender for Cloud Apps portal, and is available only from the Microsoft Defender portal.
 
 For more information, see [Encrypt Defender for Cloud Apps data at rest with your own key (BYOK)](ems-cloud-app-security-govt-service-byok.md).
 
-### Data in motion protection for Edge for Business users (Preview)
+## March 2024
 
-Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
+### New log collector version released
 
-Protected users experience a smooth experience with their cloud apps, without latency or app compatibility issues, and with a higher level of security protection.
+We released a new version of a log collector with the latest vulnerability fixes. The new version is `columbus-0.272.0-signed.jar`, and the image name is `mcaspublic.azurecr.io/public/mcas/logcollector`, with the tag `latest/0.272.0`.
 
-In-browser protection is turned on by default, and is being gradually rolled out across tenants, starting early in March 2024.
+Changes include upgrading dependencies, such as:
 
-For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
+- amazon-corretto
+- ubuntu
+- libssl
+- oauthlib
+- logback
+- setuptools
 
+For more information, see [Advanced log collector management](log-collector-advanced-management.md#update-the-log-collector-version).
+ 
+### Podman supported for automatic log collection (Preview)
+
+Microsoft Defender for Cloud Apps log collector now supports [Podman](https://docs.podman.io/en/latest/), and you can configure automatic log collection on Podman for continuous reporting with Defender for Cloud Apps. 
+
+Automatic log collection is supported using a Docker container on multiple operating systems. For Linux distributions using RHEL version 7.1 and higher, you must use Podman as the container's runtime system.
+
+For more information, see [Configure automatic log upload using Podman](discovery-linux-podman.md).
+
+### New anomaly data for the advanced hunting CloudAppEvents table
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns columns for queries and detections rules. Using this data assists in ruling out false positives and finding anomalies.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
 ### New threat detections for Microsoft Copilot for Microsoft 365
 
@@ -58,6 +78,16 @@ For more information, see:
 - [Defender for Cloud Apps Activity log](activity-filters.md)
 - [Proactively hunt for threats with advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview)
 - [CloudAppEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table)
+
+### Data in motion protection for Edge for Business users (Preview)
+
+Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
+
+Protected users experience a smooth experience with their cloud apps, without latency or app compatibility issues, and with a higher level of security protection.
+
+In-browser protection is turned on by default, and is being gradually rolled out across tenants, starting early in March 2024.
+
+For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md), [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md), and [Session policies](session-policy-aad.md).
   
 ### Defender for Cloud Apps in the Microsoft Defender portal now available to all Defender for Cloud Apps roles
 
