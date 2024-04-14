@@ -23,7 +23,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## April 2024
 
-### Enable data encryption from the Microsoft Defender portal (Preview)
+### Enable data encryption from the Microsoft Defender portal
 
 Now you can complete the process for encrypting Defender for Cloud Apps data at rest with your own key by enabling data encrpytion from the **Settings** area of the Microsoft Defender portal.
 
