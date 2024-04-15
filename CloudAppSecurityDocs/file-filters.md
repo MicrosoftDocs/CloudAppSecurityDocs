@@ -51,7 +51,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 > When using the file policy filters, **Contains**  will search only for **full words** – separated by commas, dots, hyphens or spaces to search.
 >
 > - Spaces or hyphens between words function like *OR*. For example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both *malware-virus.exe* and *virus.exe*.
-> - If you want to search for a string, enclose the words in quotation marks. This functions like *AND*. For example, if you search for **"malware"** **"virus"**, it will find *virus_malware_file.exe* but it will not find *malwarevirusfile.exe* and it will not find *malware.exe*. However, it will search for the exact string. If you search for **"malware virus"**, it will not find **"virus"** or **"virus_malware"**.
+> - If you want to search for a string, enclose the words in quotation marks. This functions like *AND*. For example, if you search for **"malware"** **"virus"**, it will find *virus-malware-file.exe* but it will not find *malwarevirusfile.exe* and it will not find *malware.exe*. However, it will search for the exact string. If you search for **"malware virus"**, it will not find **"virus"** or **"virus-malware"**.
 >
 > **Equals** will search only for the complete string. For example, if you search for **malware.exe** it will find *malware.exe* but not *malware.exe.txt*.
 
