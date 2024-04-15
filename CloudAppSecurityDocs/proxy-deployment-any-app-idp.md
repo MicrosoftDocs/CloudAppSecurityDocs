@@ -158,7 +158,7 @@ Applications in the app catalog are automatically populated into the table under
    
 1. In the list of new apps, for each app that you're onboarding, select the **+** sign, and then select **Add**.
 
-       > [!NOTE]
+   > [!NOTE]
     > If an app does not appear in the Defender for Cloud Apps app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
 
    ![Conditional access app control discovered Microsoft Entra apps.](media/caac-discovered-aad-apps.png)
