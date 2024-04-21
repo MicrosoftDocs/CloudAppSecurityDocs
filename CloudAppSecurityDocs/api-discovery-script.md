@@ -50,6 +50,12 @@ This request returns the block script as text.
 
 Here is an example of the request.
 
+Bearer token: 
+```rest
+curl -XGET -H "Authorization:Bearer <your_token>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/discovery_block_scripts/?format=102&type=banned"
+```
+
+Legacy token: 
 ```rest
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/discovery_block_scripts/?format=102&type=banned"
 ```
