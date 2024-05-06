@@ -7,6 +7,8 @@ ms.topic: how-to
 
 # How Defender for Cloud Apps helps protect your Asana environment
 
+
+
 Asana is a cloud-based project management tool that enables your users to collaborate on projects and tasks across your organization and partners in a streamlined and efficient way. Asana holds critical data of your organization, and this makes it a target for malicious actors. 
 
 Connecting Asana to Defender for Cloud Apps gives you improved insights into your users' activities and provides threat detection using machine learning based anomaly detections.
