@@ -389,7 +389,7 @@ In session policies, when using the **Control file download (with inspection)** 
 1. If the **Protect** action isn't available or is greyed out, verify that you have the Microsoft Purview license. For more information, see [Microsoft Purview Information Protection integration](azip-integration.md).
 1. If the **Protect** action is available, but aren't seeing the appropriate labels.
     1. In Defender for Cloud Apps, in the menu bar, select the settings cog, select **Microsoft Information Protection**, and verify that the integration is enabled.
-    1. For Office labels, in the AIP portal, make sure **Unified Labeling** is selected.
+    1. For Office labels, in the Microsoft Purview portal, make sure **Unified Labeling** is selected.
 
 <a name="policies-additional-considerations"></a>
 
@@ -567,7 +567,7 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down, and the default behavior was applied.
         1. To change the default behavior, in Defender for Cloud Apps, in the menu bar, select the settings cog, and then select **Settings**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
         1. Go to `https://status.cloudappsecurity.com/` and monitor notifications about system downtime.
-    1. If you're protecting the file with an AIP label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
+    1. If you're protecting the file with an security label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
         - Word: docm, docx, dotm, dotx
         - Excel: xlam, xlsm, xlsx, xltx
         - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx

@@ -471,7 +471,7 @@ If the **Protect** action isn't available, use the following steps to investigat
 
     1. In Defender for Cloud Apps, in the menu bar, select the settings icon > **Microsoft Information Protection**, and verify that the integration is enabled.
 
-    1. For Office labels, in the AIP portal, make sure **Unified Labeling** is selected.
+    1. For Office labels, in the Microsoft Purview portal, make sure **Unified Labeling** is selected.
 
 <a name="policies-additional-considerations"></a>
 
