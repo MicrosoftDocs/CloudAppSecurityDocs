@@ -119,7 +119,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then select **Edit app.**
 
-   ![Screenshot of the Edit this app? dialog](media/proxy-deployment-any-app/edit-app.png)
+   ![Screenshot of the Edit this app? dialog.](media/proxy-deployment-any-app/edit-app.png)
    
    
    
@@ -129,7 +129,7 @@ For example, if you've configured a policy that blocks downloading files for an 
    - **Enable the app to work on session controls**: To allow this app to be used or not used with session controls. When onboarding the application always make sure this is ticked.
    - **Perform a second logon**: If the application uses a nonce, a second logon is needed to account for nonce handling. The nonce or second logon is used by applications to make sure that the login token that the IdP creates for the user can only be used once, and not stolen and reused by someone else. The nonce is checked by the Service Provider to match what it was expecting, and not something it has recently used already, which could indicate a replay attack. When this is chosen, we ensure that a second login is being triggered from a suffixed session, which ensures a successful login. For better performance, this should be enabled.
    
-   ![Screenshot of the Edit this app? dialog](media/proxy-deployment-any-app/edit-app.png)
+   ![Screenshot of the Edit this app? dialog.](media/proxy-deployment-any-app/edit-app.png)
      
 1. In **User-defined domains**, enter all the domains you want to associate with this app, and then select **Save**.
 
