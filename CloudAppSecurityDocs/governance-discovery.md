@@ -59,7 +59,7 @@ To prevent users from accidentally blocking business-critical services and causi
 - Microsoft Defender Security Center
 - Microsoft 365 Security Center
 - Microsoft Defender for Identity
-- Microsoft Azure Information Protection
+- Microsoft Purview
 - Microsoft Entra Permissions Management
 - Microsoft Conditional Access Application Control
 - Microsoft Secure Score

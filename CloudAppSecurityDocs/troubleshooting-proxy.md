@@ -465,7 +465,7 @@ If the **Protect** action isn't available, use the following steps to investigat
 
 **Recommended steps**
 
-1. If the **Protect** action isn't available or is greyed out, verify that you have the Azure Information Protection (AIP) Premium P1 license. For more information, see [Microsoft Purview Information Protection integration](azip-integration.md).
+1. If the **Protect** action isn't available or is greyed out, verify that you have a Microsoft Purview license. For more information, see [Microsoft Purview Information Protection integration](azip-integration.md).
 
 1. If the **Protect** action is available, but aren't seeing the appropriate labels.
 
