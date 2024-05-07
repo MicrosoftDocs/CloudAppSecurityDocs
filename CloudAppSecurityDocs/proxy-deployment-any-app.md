@@ -27,7 +27,7 @@ Before starting the onboarding process, you must do the following:
 1. Enter the user principal name or email for the users that will be onboarding the app, and then select **Save**.
 
     ![Screenshot of settings for App onboarding and maintenance.](media/app-onboarding-settings.png)
-
+   
 ### Check for necessary licenses
 
 - Your organization must have the following licenses to use Conditional Access App Control:
@@ -67,7 +67,7 @@ Follow the steps below to configure any app to be controlled by Defender for Clo
 1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then click **Select**.
 
     ![Microsoft Entra Conditional Access.](media/azure-ad-caac-policy.png)
-
+   
 1. Optionally, add conditions and grant controls as required.
 1. Set **Enable policy** to **On** and then select **Create**.
 
@@ -77,11 +77,11 @@ Applications in the app catalog are automatically populated into the table under
 1. Under **Connected apps**, select **Conditional Access App Control apps** to access a table of applications that can be configured with access and session policies.
 
     ![Conditional access app control apps.](media/conditional-access-app-control-apps.png)
-
+   
 1. Select the **App: Select apps…** dropdown menu to filter and search for the app you want to deploy.
 
     ![Select App: Select apps to search for the app.](media/select-apps.png)
-
+   
 1. If you don't see the app there, you'll have to manually add it.
 
 ### How to manually add an unidentified app
@@ -95,7 +95,7 @@ Applications in the app catalog are automatically populated into the table under
    > If an app does not appear in the Defender for Cloud Apps app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
 
     ![Conditional access app control discovered Microsoft Entra apps.](media/caac-discovered-aad-apps.png)
-
+   
 Associating the correct domains to an app allows Defender for Cloud Apps to enforce policies and audit activities.
 
 For example, if you've configured a policy that blocks downloading files for an associated domain, file downloads by the app from that domain will be blocked. However, file downloads by the app from domains not associated with the app won't be blocked and the action won't be audited in the activity log.
@@ -117,20 +117,20 @@ For example, if you've configured a policy that blocks downloading files for an 
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
-1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then select **Edit app**.
+1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then select **Edit app.**
 
-   :::image type="content" source="media/edit-app-details.png" alt-text="Edit app details.":::
-
+   ![Screenshot of the Edit this app? dialog.](media/proxy-deployment-any-app/edit-app.png)
+   
+   
+   
    > [!TIP]
    > To view the list of domains configured in the app, select **View app domains**.
-
    - **User-defined domains**: Domains associated with the application. Navigate to the application and you can use the [Admin tool bar](troubleshooting-proxy.md#diagnose-and-troubleshoot-with-the-admin-view-toolbar) to identify the domains associated with the application and determine if any of them are missing. Note that a missing domain can cause the protected application to not render correctly.
-   - **Treat access token as login requests**: Some applications use access tokens and code requests as app logins. This gives the ability to treat access token and code requests as logins when onboarding apps to access and session controls for the application to render correctly. When onboarding the application, always make sure this is ticked.
-   - **Use app with session control**: To allow this app to be used or not used with session controls. When onboarding the application always make sure this is ticked.
+   - **Enable the app to work on session controls**: To allow this app to be used or not used with session controls. When onboarding the application always make sure this is ticked.
    - **Perform a second logon**: If the application uses a nonce, a second logon is needed to account for nonce handling. The nonce or second logon is used by applications to make sure that the login token that the IdP creates for the user can only be used once, and not stolen and reused by someone else. The nonce is checked by the Service Provider to match what it was expecting, and not something it has recently used already, which could indicate a replay attack. When this is chosen, we ensure that a second login is being triggered from a suffixed session, which ensures a successful login. For better performance, this should be enabled.
-
-      :::image type="content" source="media/second-login.png" alt-text="Perform a second login.":::
-
+   
+   ![Screenshot of the Edit this app? dialog.](media/proxy-deployment-any-app/edit-app.png)
+     
 1. In **User-defined domains**, enter all the domains you want to associate with this app, and then select **Save**.
 
    > [!NOTE]
@@ -152,7 +152,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. Check that the application is available in the table.
 
    ![Onboard with session control.](media/proxy-deployment-aad/onboard-with-session-control.png)
-
+   
 To verify that the application is protected, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
 
 Open the application and perform the following checks:
