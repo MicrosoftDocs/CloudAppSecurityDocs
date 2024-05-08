@@ -1,7 +1,7 @@
 ---
 title: Advanced log collector management | Microsoft Defender for Cloud Apps
 description: This article provides information about advanced management tasks for Defender for Cloud Apps Cloud Discovery log collectors.
-ms.date: 12/20/2023
+ms.date: 03/18/2024
 ms.topic: how-to
 ---
 # Advanced log collector management
@@ -12,12 +12,12 @@ This article describes how to configure advanced options for Defender for Cloud 
 
 Defender for Cloud Apps cloud discovery continues to focus on base firewall formats. Changes to the logs being forwarded at the firewall level may not continue to work, or may cause issues with parsing. If you find errors of this sort, we recommend that you continue to use the base firewall format, or use options with the custom log collector. For more information, see [Use a custom log parser](custom-log-parser.md).
 
+This article describes how to modify the configuration for your Defender for Cloud Apps cloud discovery Docker.
 
 ## Modify the log collector FTP configuration
-
 Use these steps in the following sections to modify the configuration for your Defender for Cloud Apps Cloud Discovery Docker.
 
-## Verify the log collector version
+### Verify the log collector version
 
 To verify the version of the log collector currently installed on your system, connect to the log collector host and run:
 
@@ -26,7 +26,7 @@ cat /var/adallom/versions | grep columbus-
 ```
 
 
-### Change the FTP password
+###  Change the FTP password
 
 This procedure describes how to change the password used to access log collector files:
 
@@ -302,7 +302,6 @@ The downloaded image can be imported either in your private repository or direct
 
     - <https://download.docker.com/linux/ubuntu>
     - <https://download.docker.com/linux/centos/>
-    - <https://download.docker.com/linux/rhel/>
 
 1. After the download, use Docker's [offline installation guide](https://docs.docker.com/engine/install/binaries/) to install your operating system.
 
@@ -343,7 +342,7 @@ The following procedures describe how to export the log collector image, using L
 
     ```cmd
     docker login -u caslogcollector -p C0llector3nthusiast
-    docker pull mcr.microsoft/mcas/logcollector
+    docker pull mcr.microsoft.com/mcas/logcollector
     ```
 
 1. Export the log collector image. Run:
@@ -517,6 +516,13 @@ docker exec CustomerLogCollectorName tail -f -q /var/adallom/syslog/<datasource_
 ```
 
 Compare the output file (`/tmp/log.log`) to the messages stored in the `/var/adallom/discoverylogsbackup` directory.
+
+## Update the log collector version
+
+When updating your log collector:
+
+- **Before installing the new version**, make sure to stop your log collector and remove the current image.
+- **After installing the new version**, [update your certificate files](#customize-certificate-files).
 
 ## Next steps
 

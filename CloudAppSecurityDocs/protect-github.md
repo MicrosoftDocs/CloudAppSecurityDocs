@@ -96,12 +96,12 @@ These steps can be completed independently of the [Configure GitHub Enterprise C
 1. Fill out the **Register a new OAuth app** details and then select **Register application**.
     - In the **Application name** box, enter a name for the app.
     - In the **Homepage URL** box, enter the URL for the app's homepage.
-    - In the **Authorization callback URL** box, enter the following value: `https://portal.cloudappsecurity.com/api/oauth/saga`.
+    - In the **Authorization callback URL** box, enter the following value: `https://portal.cloudappsecurity.com/api/oauth/connect`.
 
     > [!NOTE]
     >
-    > - For US Government GCC customers, enter the following value: `https://portal.cloudappsecuritygov.com/api/oauth/saga`
-    > - For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/saga`
+    > - For US Government GCC customers, enter the following value: `https://portal.cloudappsecuritygov.com/api/oauth/connect`
+    > - For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect`
 
     ![Screenshot showing registering an oauth app.](media/connect-github-register-oauth-app.png)
 

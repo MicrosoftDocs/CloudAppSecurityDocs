@@ -1,6 +1,6 @@
 ---
 title: Investigate app governance threat detection alerts | Microsoft Defender for Cloud Apps
-ms.date: 08/06/2023
+ms.date: 02/12/2023
 ms.topic: conceptual
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 description: Learn how to investigate threat detection alerts from app governance in Microsoft Defender XDR with Microsoft Defender for Cloud Apps.
@@ -31,9 +31,9 @@ This guide provides information about investigating and remediating app governan
 - [Persistence](#persistence-alerts)
 - [Privilege Escalation](#privilege-escalation-alerts)
 - [Defense Evasion](#defense-evasion-alerts)
-- Credential Access
+- [Credential Access](#credential-access)
 - [Discovery](#discovery-alerts)
-- Lateral Movement
+- [Lateral Movement](#lateral-movement-alerts)
 - [Collection](#collection-alerts)
 - [Exfiltration](#exfiltration-alerts)
 - [Impact](#impact-alerts)
@@ -61,7 +61,7 @@ Use the following general guidelines when investigating any type of alert to gai
 
 This section describes alerts indicating that a malicious app may be attempting to maintain their foothold in your organization.  
 
-### App redirects to phishing URL by exploiting OAuth redirection vulnerability
+### App redirects to phishing URL by exploiting OAuth redirection vulnerability
 
 **Severity**: Medium
 
@@ -683,6 +683,35 @@ This detection generates alerts for non-Microsoft OAuth apps with publisher doma
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
 
+## Credential access
+
+This section describes alerts indicating that a malicious actor may be attempting to read sensitive credential data, and consists of techniques for stealing credentials like account names, secrets, tokens, certificates, and passwords in your organization.
+
+### Application initiating multiple failed KeyVault read activity with no success
+
+**Severity**: Medium
+
+**MITRE ID**: T1078.004
+
+This detection identifies an application in your tenant that was observed making multiple read action calls to the KeyVault using Azure Resource Manager API in a short interval, with only failures and no successful read activity being completed.
+
+**TP or FP?**
+ 
+- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious. After after verifiying the Azure resource being used and validating the app use in the tenant, the given activity may require that the app be disabled. This is usually evidence of suspected enumeration activity against the KeyVault resource to gain access to credentials for lateral movement or privilege escalation.
+ 
+  **Recommended actions**: Review the Azure resources accessed or created by the application and any recent changes made to the application. Based on your investigation, choose whether you want to ban access to this app. Review the permission level requested by this app and which users have granted access.
+ 
+- **FP**: If, after investigation, you can confirm that the app has legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+ 
+**Understand the scope of the breach**
+ 
+1. Review the app's access and activity.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and the Role granted to it in your subscription.
+1. Review any user who might have accessed the app prior to the activity.
+
 ## Discovery alerts
 
 ### App performed drive enumeration
@@ -809,6 +838,39 @@ This detection identifies an OAuth app that used an unusual user agent to access
 1. Review if the application was newly created or has had any recent changes made to it.
 2. Review the permissions granted to the application and users that have consented to the application.
 3. Review all activities done by the app.
+
+## Lateral movement alerts
+
+This section describes alerts indicating that a malicious actor may be attempting to laterally move within different resources, while pivoting through multiple systems and accounts to gain more control in your organization.
+
+### Dormant OAuth App predominantly using MS Graph or Exchange Web Services recently seen to be accessing ARM workloads
+
+**Severity**: Medium
+
+**MITRE ID**: T1078.004
+
+This detection identifies an application in your tenant that has, after a long span of dormant activity, started accessing the Azure Resource Manager API for the first time. Previously, this application had mostly using MS Graph or Exchange Web Service.
+ 
+**TP or FP?**
+
+- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious and may require disabling the app, after verifying the Azure resource being used, and validating the app usage in the tenant.
+
+  **Recommended actions**:
+
+  1. Review the Azure resources accessed or created by the application and any recent changes made to the application.
+  1. Review the level of permission requested by this app and which users have granted access.
+  1. Based on your investigation, choose whether you want to ban access to this app. 
+ 
+- **FP**: If, after investigation, you can confirm that the app has legitimate business use in the organization.
+ 
+  **Recommended action**: Dismiss the alert.
+ 
+**Understand the scope of the breach**
+ 
+1. Review the app's access and activity.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and the Role granted to it in your subscription.
+1. Review any user who might have accessed the app prior to the activity.
 
 ## Collection alerts
 
@@ -1058,6 +1120,62 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
 
+### App with EWS application permissions accessing numerous emails
+
+**Severity**: Medium
+
+**MITRE IDs**: T1114
+
+This detection generates alerts for multi-tenant cloud apps with EWS application permissions showing a significant increase in calls to the Exchange Web Services API that are specific to email enumeration and collection. This app might be involved in accessing and retrieving sensitive email data.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the app has accessed sensitive email data or made a large number of unusual calls to the Exchange workload.
+
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
+    - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
+### Unused app newly accessing APIs
+
+**Severity**: Medium
+
+**MITRE IDs**: T1530
+
+This detection generates alerts for a multi-tenant cloud app that has been inactive for a while and has recently started making API calls. This app may be compromised by an attacker and being used to access and retrieve sensitive data.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the app has accessed sensitive data or made a large number of unusual calls to Microsoft Graph, Exchange or Azure Resource Manager workloads.
+
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
+    - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+   
 ## Impact alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to  manipulate, interrupt, or destroy your systems and data from your organization.

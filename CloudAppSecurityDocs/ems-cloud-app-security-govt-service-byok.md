@@ -14,6 +14,8 @@ Defender for Cloud Apps takes your security and privacy seriously. Therefore, on
 
 > [!IMPORTANT]
 > If there is a problem accessing your Azure Key Vault key, Defender for Cloud Apps will fail to encrypt your data and your tenant will be lock down within an hour. When your tenant is locked down, all access to it will be blocked until the cause has been resolved. Once your key is accessible again, full access to your tenant will be restored.
+>
+> This procedure is available only on the Microsoft Defender portal, and cannot be performed on the classic Microsoft Defender for Cloud Apps portal.
 
 ## Prerequisites
 
@@ -37,7 +39,7 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
     	accountEnabled = $true
     }
 
-    Update-MgServicePrincipal -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+    Update-MgServicePrincipal -ServicePrincipalId $servicePrincipalId.Id -BodyParameter $params
     ```
 
     Where *ServicePrincipalId* is the ID returned by the previous command (`New-MgServicePrincipal`).
@@ -61,7 +63,7 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
 
         ![Screenshot showing the selection of key permissions.](media/cloud-app-security-byok/byok-kv-access-policy-key-perms.PNG)
 
-    2. Under **Select principal**, choose **Microsoft Defender for Cloud Apps - BYOK**.
+    2. Under **Select principal**, choose **Microsoft Defender for Cloud Apps - BYOK** or **Microsoft Cloud App Security - BYOK**.
 
         ![Screenshot showing add access policy page.](media/cloud-app-security-byok/byok-kv-add-access-policy.PNG)
 
@@ -104,16 +106,9 @@ When you enable data encryption, Defender for Cloud Apps immediately uses your A
 
 ### To enable data encryption
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog ![settings icon.](media/cloud-app-security-byok/byok-kv-settings-icon.png) and select **Settings**.
+1. In the Microosft Defender portal, select **Settings > Cloud Apps > Data encryption > Enable data encryption**.
 
-1. Select the **Data encryption** tab.
-
-1. Select **Enable data encryption**.
-
-1. In the **Azure Key Vault key URI** box, paste the key identifier URI value you copied earlier.
-
-    > [!NOTE]
-    > Defender for Cloud Apps always uses the latest key version, regardless of the key version specified by the URI.
+1. In the **Azure Key Vault key URI** box, paste the key identifier URI value you copied earlier. Defender for Cloud Apps always uses the latest key version, regardless of the key version specified by the URI.
 
 1. Once the URI validation has completed, select **Enable**.
 

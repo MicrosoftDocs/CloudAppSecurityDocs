@@ -12,7 +12,7 @@ Cloud Discovery data can now be enriched with Microsoft Entra username data. Whe
 
 - You can investigate Shadow IT usage by Microsoft Entra user. The user will be shown with its UPN.
 - You can correlate the Discovered cloud app use with the API collected activities.
-- You can then create custom logs based on Microsoft Entra user groups. For example, a Shadow IT report for a specific Marketing department.
+- You can then create custom reports based on Microsoft Entra user groups. For example, a Shadow IT report for a specific Marketing department.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ Cloud Discovery data can now be enriched with Microsoft Entra username data. Whe
 1. In the **User enrichment** tab, select **Enrich discovered user identifiers with Azure Active Directory usernames**. This option enables Defender for Cloud Apps to use Azure Active Directory data to enrich usernames by default.
 
     ![Enrich Defender for Cloud Apps Discovery with Azure AD usernames.](media/discovery-enrichment.png)
-
+   
 ## Next steps
 
 > [!div class="nextstepaction"]

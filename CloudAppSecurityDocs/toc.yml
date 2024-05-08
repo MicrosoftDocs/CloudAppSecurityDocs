@@ -168,12 +168,14 @@ items:
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
         href: discovery-docker.md
-      - name: Docker on Windows on-premises
-        href: discovery-docker-windows.md
+      - name: Podman on Linux on-premises
+        href: discovery-linux-podman.md
       - name: Docker on Linux on-premises
         href: discovery-docker-ubuntu.md
       - name: Docker on Linux in Azure
         href: discovery-docker-ubuntu-azure.md
+      - name: Docker on Windows on-premises
+        href: discovery-docker-windows.md
       - name: Advanced log collector management
         href: log-collector-advanced-management.md
       - name: Use the custom log parser
@@ -246,24 +248,6 @@ items:
       href: protect-zendesk.md
     - name: Zoom
       href: protect-zoom.md
-  - name: Conditional Access App Control
-    items:
-    - name: Protect apps with Conditional Access App Control
-      href: proxy-intro-aad.md
-    - name: Deploy for catalog apps with Microsoft Entra ID
-      href: proxy-deployment-aad.md
-    - name: Deploy for catalog apps with non-Microsoft IdP
-      href: proxy-deployment-featured-idp.md
-    - name: Deploy for custom apps with Microsoft Entra ID
-      href: proxy-deployment-any-app.md
-    - name: Deploy for custom apps with non-Microsoft IdP
-      href: proxy-deployment-any-app-idp.md
-    - name: Configuring your PingOne IdP
-      href: proxy-idp-pingone.md
-    - name: Configuring your AD FS IdP
-      href: proxy-idp-adfs.md
-    - name: Configuring your Okta IdP
-      href: proxy-idp-okta.md
   - name: Investigation and response
     href: investigate.md
     items:
@@ -314,12 +298,40 @@ items:
             href: dcs-inspection.md
           - name: Working with the RegEx engine
             href: working-with-the-regex-engine.md
-      - name: Conditional Access policies
+      - name: Conditional access app control policies
         items:
-        - name: Access policies
+        - name: Protect apps with conditional access app control
+          href: proxy-intro-aad.md
+        - name: Deploy conditional access app control
+          items:
+          - name: Catalog apps with Microsoft Entra ID
+            href: proxy-deployment-aad.md
+          - name: Catalog apps with non-Microsoft IdP
+            href: proxy-deployment-featured-idp.md
+          - name: Custom apps with Microsoft Entra ID
+            href: proxy-deployment-any-app.md
+          - name: Custom apps with non-Microsoft IdP
+            href: proxy-deployment-any-app-idp.md
+          - name: Sample deployment processes
+            items:
+            - name: Configuring your PingOne IdP
+              href: proxy-idp-pingone.md
+            - name: Configuring your AD FS IdP
+              href: proxy-idp-adfs.md
+            - name: Configuring your Okta IdP
+              href: proxy-idp-okta.md
+        - name: Create access policies
           href: access-policy-aad.md
-        - name: Session policies
+        - name: Create session policies
           href: session-policy-aad.md
+        - name: Use in-browser protection (Microsoft Edge for Business)
+          href: in-browser-protection.md
+        - name: Configure policies for identity-managed devices
+          displayName: conditional access app control, caac
+          href: conditional-access-app-control-identity.md
+        - name: Known limitations
+          href: caac-known-issues.md
+          displayName: conditional access app control, caac
       - name: Shadow IT policies
         items:
         - name: Cloud Discovery policy

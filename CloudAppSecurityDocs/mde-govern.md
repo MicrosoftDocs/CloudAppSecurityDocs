@@ -31,7 +31,7 @@ Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically syn
 
 - One of the following supported operating systems:
 
-   - Windows: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
+   - Windows: Windows versions 10 18.09 (RS5) OS Build 1776.3, 11, and higher
    - Android: minimum version 8.0: For more information see: [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android#system-requirements)
    - iOS: minimum version 14.0: For more information see: [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios#prerequisites)
    - MacOS: minimum version 11: For more information see:  [Network protection for macOS](/microsoft-365/security/defender-endpoint/network-protection-macos)
@@ -98,7 +98,7 @@ To block an app, do the following steps:
 > - Any organizational scoping that was set manually on indicators that were created by Defender for Cloud Apps before the release of this feature will be overridden by Defender for Cloud Apps. The required scoping should be set from the Defender for Cloud Apps experience using the scoped profiles experience.
 > - To remove a selected scoping profile from an unsanctioned app, remove the unsanctioned tag and then tag the app again with the required scoped profile.
 > - It can take up to two hours for app domains to propagate and be updated in the endpoint devices once they're marked with the relevant tag or/and scoping.
-> - When an app is tagged as Monitored, the option to apply scoped profile will not be showing if the built-in Data Source "Win10 Endpoint Users" is not receiving data on a consistent pace for the last 30 days.
+> - When an app is tagged as *Monitored*, the option to apply a scoped profile shows only if the built-in *Win10 Endpoint Users* data source has consistently recieved data during the past 30 days.
 
 ## Educate users when accessing risky apps
 

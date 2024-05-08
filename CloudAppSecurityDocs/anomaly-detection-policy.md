@@ -56,9 +56,13 @@ The following anomaly detection policies are available:
 
 ### Malware detection
 
-This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files that match risks heuristics such as file type and sharing level are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Files that are found potentially risky according to other heuristics will also be sandbox scanned. After malicious files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
+This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files that match risks heuristics such as file type and sharing level are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. After malicious files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
 
 Use this detection to control file uploads and downloads in real time with session policies.
+
+**File Sandboxing**
+
+By enabling file sandboxing, files that according to their metadata and based on proprietary heuristics to be potentially risky, will also be sandbox scanned in a safe environment. The Sandbox scan may detect files that were not detected based on threat intelligence sources.
 
 Defender for Cloud Apps supports malware detection for the following apps:
 
@@ -81,7 +85,7 @@ Defender for Cloud Apps supports malware detection for the following apps:
 
 ### Ransomware activity
 
-* Defender for Cloud Apps extended its ransomware detection capabilities with anomaly detection to ensure a more comprehensive coverage against sophisticated Ransomware attacks. Using our security research expertise to identify behavioral patterns that reflect ransomware activity, Defender for Cloud Apps ensures holistic and robust protection. If Defender for Cloud Apps identifies, for example, a high rate of file uploads or file deletion activities it may represent an adverse encryption process. This data is collected in the logs received from connected APIs and is then combined with learned behavioral patterns and threat intelligence, for example, known ransomware extensions. For more information about how Defender for Cloud Apps detects ransomware, see [Protecting your organization against ransomware](use-case-ransomware.md).
+* Defender for Cloud Apps extended its ransomware detection capabilities with anomaly detection to ensure a more comprehensive coverage against sophisticated Ransomware attacks. Using our security research expertise to identify behavioral patterns that reflect ransomware activity, Defender for Cloud Apps ensures holistic and robust protection. If Defender for Cloud Apps identifies, for example, a high rate of file uploads or file deletion activities it may represent an adverse encryption process. This data is collected in the logs received from connected APIs and is then combined with learned behavioral patterns and threat intelligence, for example, known ransomware extensions. For more information about how Defender for Cloud Apps detects ransomware, see [Protecting your organization against ransomware](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware).
 
 ### Activity performed by terminated user
 
@@ -192,7 +196,7 @@ To scope an anomaly detection policy:
 1. Select **Exclude** to specify users for who this policy won't apply. Any user selected here won't be considered a threat and won't generate an alert, even if they're members of groups selected under **Include**.
 
     ![anomaly detection scoping.](media/anomaly-detection-scoping.png)
-
+   
 ## Triage anomaly detection alerts
 
 You can triage the various alerts triggered by the new anomaly detection policies quickly and decide which ones need to be taken care of first. To do this, you need the context for the alert, so you can see the bigger picture and understand whether something malicious is indeed happening.
@@ -200,7 +204,7 @@ You can triage the various alerts triggered by the new anomaly detection policie
 1. In the **Activity log**, you can open an activity to display the Activity drawer. Select **User** to view the user insights tab. This tab includes information like number of alerts, activities, and where they've connected from, which is important in an investigation.
 
     ![anomaly detection alert.](media/anomaly-alert-user1.png)
-
+   
 1. For malware infected files, After files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about that type of malware the file is infected with.
 
 ## Related videos

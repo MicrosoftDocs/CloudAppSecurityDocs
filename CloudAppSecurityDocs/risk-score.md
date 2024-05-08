@@ -46,9 +46,37 @@ Risk scores are kept up to date using the following sources:
 - **Continuous analysis by the Defender for Cloud Apps analysis team**, for attributes such as encryption at rest.
 - **Customer requests** for changes to the cloud app catalog. All requests are reviewed by our cloud analysis team and updated based on their findings. For information, see [Request a risk score update](#request-a-risk-score-update).
 
+## Planned changes for the risk scoring
+Microsoft Defender for Cloud Apps is making some changes to the cloud app catalog to improve our app risk scoring.
+
+Changes include:
+
+-  Removing the following irrelevant and redundant indicators from the catalog:
+- Consumer Popularity Index
+- Safe Harbor
+- Jericho Forum Commandments
+- Heartbleed Patched
+- Protected against DROWN
+- ISO 27002
+- The following values of PCI-DSS indicator: 1, 2, 3, 3.1, and 3.2
+
+-   Removing the following indicators from the default score calculation. These indicators will continue to be presented in the catalog and can be included in score calculations by configuring the score metrics:
+- Founded
+- Holding
+- Domain Registration
+- FedRAMP level
+- FISMA
+
+Due to the changes detailed above:
+
+-    The risk score for some apps might change and new alerts might be triggered, if you’ve created discovery policies based on a total app score or any of the removed indicators.
+
+-    Any existing policies that were created based on the removed indicators will be disabled.
+
+We plan to gradually roll out changes to the cloud app catalog starting later in 2024. We recommend that you review your existing policies and modify them or create new policies as needed.
 ## Confirm cloud app security risk
 
-Check the cloud app catalog to ensure that the apps used by organization fit into your organization's security requirements. For example, you might want to periodically check that CRM apps used in your organization are adequately secure. In this case, you'd use the following steps to identify your apps:
+Check the cloud app catalog to ensure that the apps used by the organization fit into your organization's security requirements. For example, you might want to periodically check that CRM apps used in your organization are adequately secure. In this case, you'd use the following steps to identify your apps:
 
 1. Sign into Microsoft Defender XDR and select **Cloud apps** > **Cloud app catalog**.
 
@@ -56,7 +84,7 @@ Check the cloud app catalog to ensure that the apps used by organization fit int
 
 1. Select the **Advanced filters** toggle to configure the following advanced filter:
 
-    - **Compliance risk factor** > **SOC 2** > **equals** > **Yes**
+- **Compliance risk factor** > **SOC 2** > **equals** > **Yes**
     - **Compliance risk factor** > **ISO 27001** > **equals** > **Yes**
     - **Security risk factor** > **Data-at-rest-encryption method** > **does not equal** > **Not supported, NA**
     - **Security risk factor** > **Admin audit trail** > **equals** > **Yes**
@@ -65,7 +93,7 @@ Check the cloud app catalog to ensure that the apps used by organization fit int
     For example:
 
     ![Screenshot showing cloud app catalog filters.](media/cloud-app-catalog-filters.png)
-
+   
 1. Review the filtered apps shown in the grid and check to see that the apps you use have appropriate risk scores for your organization. Select an app to expand it for more details.
 
     We recommend that you review the weights given to risk factors and risk categories when scoring a specific app. In the expanded app details, scroll down and hover an **i** button next to each risk factor name to learn more. For example:
@@ -124,10 +152,10 @@ If you find a new app in your environment that hasn't been scored by Defender fo
 
     :::image type="content" source="media/suggest-new-app.png" alt-text="Screenshot showing the **Suggest an app** menu item in Defender for Cloud Apps." lightbox="media/suggest-new-app.png":::
 
-2. In the **Suggest new cloud app** pop-up, fill in details about the new app. Include the name and domain of the app.
+1. In the **Suggest new cloud app** pop-up, fill in details about the new app. Include the name and domain of the app.
 
-    ![Screenshot showing the **Suggest new cloud app** pop-up box in Defender for Cloud Apps.](media/suggest-new-app-pop-up.png)
-
+    ![Screenshot showing the ](media/suggest-new-app-pop-up.png)
+   
 3. We recommend selecting the checkbox to enable Defender for Cloud Apps analysts to contact you in case additional information about the app is needed.
 
 ## Supported filters and categories

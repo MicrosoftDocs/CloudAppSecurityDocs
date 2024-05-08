@@ -10,6 +10,65 @@ ms.topic: conceptual
 
 This article is an archive that describes updates made in past releases of Defender for Cloud Apps. To see the latest what's new list, see [What's new in Defender for Cloud Apps](release-notes.md).
 
+## July 2023
+
+### Log collector version 0.255.0
+
+Defender for Cloud Apps has released the Defender for Cloud Apps log collector version 0.255.0, including updates to the *amazon-corretto* and *openssl* dependencies.
+
+The new version filename is `columbus-0.255.0-signed.jar`, and the image name is `mcaspublic.azurecr.io/public/mcas/logcollector`, with the `latest/0.255.0` tag.
+
+To update your log collector, make sure to stop the log collector in your environment, remove the current image, install the new one, and update the certificates.
+
+For more information, see [Advanced log collector management](log-collector-advanced-management.md).
+
+### ServiceNow connector now supports Utah version
+
+The Defender for Cloud Apps ServiceNow connector now supports the ServiceNow *Utah* version. For more information, see [Connect ServiceNow to Microsoft Defender for Cloud Apps](connect-servicenow.md)
+
+### Google Workspace connector updates
+
+The Google Workspace connector now supports:
+
+- (Preview) SaaS Security Posture Management (SSPM) tools for increased visibility into SaaS apps' posture misconfigurations when compared to the ideal app configurations. SSPM features help you proactively reduce the risk of breaches and attacks without needing to be a security expert for each platform.
+- The **Enable multi-factor authentication** control. To view related data, make sure that you've configured the Google Workspace connector. 
+
+For more information, see [Connect Google Workspace to Microsoft Defender for Cloud Apps](connect-google-workspace.md).
+
+### Custom connectors with the open app connector platform (Preview)
+
+Defender for Cloud Apps' new codeless, open app connector platform helps SaaS vendors create app connectors for their SaaS apps.
+
+Create Defender for Cloud Apps connectors to extend app security features across customer SaaS ecosystems, safeguarding data, mitigating risks, and reinforcing overall SaaS security posture.
+
+For more information, see [Microsoft Defender for Cloud Apps open app connector platform](connector-platform.md).
+
+### New app connectors for Asana and Miro (Preview)
+
+Defender for Cloud Apps now supports built-in app connectors for Asana and Miro, which both might hold critical data your organization and are therefore targets for malicious actors. Connect these apps to Defender for Cloud Apps for improved insights into your users' activities and threat detection with machine learning-based anomaly detections.
+
+For more information, see:
+
+- [Protect Asana](protect-asana.md)
+- [Protect Miro](protect-miro.md)
+
+### Session and access policy consolidation
+
+Defender for Cloud Apps now simplifies working with both session and access policies. Previously, in order to create a session or access policy for a host app, such as Exchange, Teams, or Gmail, customers would need to create a separate policy for any relevant resource app, such as SharePoint, OneDrive, or Google Drive. Starting on July 11, 2023, you now only need to create a single policy on the hosted app.
+
+For more information, see:
+
+- [Control cloud apps with policies](/defender-cloud-apps/control-cloud-apps-with-policies)
+- [Access policies in Microsoft Defender for Cloud Apps](/defender-cloud-apps/access-policy-aad)
+- [Session policies](/defender-cloud-apps/session-policy-aad)
+
+### Automatic redirect to Microsoft Defender XDR (Preview)
+
+Customers using preview features are now automatically redirected to Microsoft Defender XDR from the classic Microsoft Defender for Cloud Apps portal. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
+
+For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+
+
 ## June 2023
 
 > [!NOTE]
@@ -262,7 +321,7 @@ We've consolidated the flow that allows Microsoft Defender for Cloud Apps data t
 - **Protecting apps that use non-standard ports with session controls**  
 This feature allows Microsoft Defender for Cloud Apps to enforce session policies for applications that use port numbers other than 443.
  Splunk and other applications that use ports other than 443 will now be eligible for session control.  
-There's no configuration requirement for this feature.  The feature is currently in preview mode. For more information, see [Session controls](proxy-intro-aad.md#session-controls).
+There's no configuration requirement for this feature.  The feature is currently in preview mode. For more information, [Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
 
 ### Defender for Cloud Apps release 232 and 233
 
@@ -683,7 +742,7 @@ Released July 26, 2020
 We've extended our anomaly detections to include suspicious download activities by an OAuth app. The new detection is now available out-of-the-box and automatically enabled to alert you when an OAuth app downloads multiple files from Microsoft SharePoint or Microsoft OneDrive in a manner that is unusual for the user.
 
 - **Performance improvements using proxy caching for Session Controls (gradual rollout)**  
-We've made additional performance improvements to our session controls, by improving our content caching mechanisms. The improved service is even more streamlined and provides increased responsiveness when using session controls. Note that session controls don't cache private content, aligning with the appropriate standards to only cache shared (public) content. For more information, see [How session control works](proxy-intro-aad.md#how-session-control-works).
+We've made additional performance improvements to our session controls, by improving our content caching mechanisms. The improved service is even more streamlined and provides increased responsiveness when using session controls. Note that session controls don't cache private content, aligning with the appropriate standards to only cache shared (public) content. For more information, see [How session control works](classic-proxy-intro-aad.md#how-session-control-works).
 
 - **New feature: Save security configuration queries**  
 We've added the ability to save queries for our security configuration dashboard filters for Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). This can help make future investigations even simpler by reusing common queries. Learn more about [Security configuration recommendations](security-config.md).
@@ -868,7 +927,7 @@ The Docker-based log collector was enhanced with the following important updates
 
   - Stability and performance improvements
 
-    We strongly recommend that you upgrade your environment to this new version. For more information, see [Log collector deployment modes](discovery-docker.md#deployment-modes).
+    We strongly recommend that you upgrade your environment to this new version. For more information, see [Log collector deployment modes](discovery-docker.md#related-content).
 
 - **Support for ServiceNow New York**  
 Cloud App Security now supports the latest version (New York) of ServiceNow. To learn about securing ServiceNow, see [Connect ServiceNow to Microsoft Cloud App Security](./connect-servicenow.md).
@@ -1136,7 +1195,7 @@ Released March 17, 2019
 - **Microsoft Defender ATP integration is now GA**  
 Last year we announced [integration with Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-cloud-app-security-and-windows-defender-atp-better/ba-p/263265) that enhances the Discovery of Shadow IT in your organization, and extends it beyond the corporate network. [Enabled with a single click](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), we are excited to announce that this unique integration is now generally available.
 - **Dynamics 365 CRM support**  
-Cloud App Security added real-time monitoring and control for Dynamics 365 CRM, to enable you to protect your business applications and the sensitive content stored within these apps. For more information about what can be done with Dynamics 365 CRM, see [this article](proxy-intro-aad.md#how-it-works).
+Cloud App Security added real-time monitoring and control for Dynamics 365 CRM, to enable you to protect your business applications and the sensitive content stored within these apps.
 
 ### Cloud App Security release 144
 

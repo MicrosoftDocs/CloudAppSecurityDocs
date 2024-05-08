@@ -120,7 +120,7 @@ Defender for Cloud Apps provides the following options for identifying a device'
 1. Hybrid Microsoft Entra Domain joined
 1. Client certificates
 
-For more information on device identification, see [Managed Device Identification](proxy-intro-aad.md#managed-device-identification).
+For more information, see [Identity-managed devices with conditional access app control](conditional-access-app-control-identity.md).
 
 Common device identification issues you might encounter include
 
@@ -159,7 +159,7 @@ Microsoft Entra Conditional Access enables Intune compliant and Microsoft Entra 
 
 #### Client certificates aren't prompting when expected
 
-The device identification mechanism can request authentication from relevant devices using client certificates. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session. For more information about client certificates, see [Client-certificate authenticated devices](proxy-intro-aad.md#client-certificate-authenticated-devices).
+The device identification mechanism can request authentication from relevant devices using client certificates. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session. For more information, see [Identity-managed devices with conditional access app control](conditional-access-app-control-identity.md).
 
 **Recommended steps**
 
@@ -357,7 +357,7 @@ When creating an access or session policy, you might see the following error mes
 After adding a custom app, in the **Conditional Access App Control apps** page, you might see the option: **Request session control**.
 
 > [!NOTE]
-> [Catalog apps](proxy-intro-aad.md#session-controls) have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process.
+> Catalog apps have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process. For more information, see [Pre-onboarded apps](classic-proxy-intro-aad.md#pre-onboarded-apps).
 
 **Recommended steps**
 
@@ -429,7 +429,7 @@ If you have difficulty accessing or loading your application, and you'd like to 
 
 Once you select **Bypass session**, the application runs without the Conditional Access proxy.
 ![Bypass session.](media/troubleshooting-proxy/classic-proxy-admin-toolbar-bypass.png)
-You can confirm the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
+You can confirm the session is bypassed by noting that the URL isn't [suffixed](classic-proxy-intro-aad.md#how-session-control-works).
 
 In the next session of the application, the Conditional Access proxy will be used.
 

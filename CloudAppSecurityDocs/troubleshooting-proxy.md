@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot access and session controls for admins | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by admins with Microsoft Defender for Cloud Apps.
-ms.date: 11/20/2023
+ms.date: 02/29/2024
 ms.topic: troubleshooting
 ---
 
@@ -11,6 +11,10 @@ ms.topic: troubleshooting
 
 This article provides Microsoft Defender for Cloud Apps admins with guidance on how to investigate and resolve common access and session control issues as experienced by admins.
 
+> [!NOTE]
+> Any troubleshooting related to proxy functionality is only relevant for sessions that are not configured for [in-browser protection with Microsoft Edge](in-browser-protection.md).
+>
+
 ## Check minimum requirements
 
 Before you start troubleshooting, make sure your environment meets the following minimum general requirements for access and session controls.
@@ -19,8 +23,18 @@ Before you start troubleshooting, make sure your environment meets the following
 |---------|---------|
 |**Licensing**     |   Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans) for Microsoft Defender for Cloud Apps.      |
 |**Single Sign-On (SSO)**     |  Apps must be configured with one of the supported SSO solutions: <br><br>  - Microsoft Entra ID using SAML 2.0 or OpenID Connect 2.0 <br>- Non-Microsoft IdP using SAML 2.0       |
-|**Browser support**     |  Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>Google Chrome<br>Mozilla Firefox<br>or Apple Safari      |
+|**Browser support** | Session controls are available for browser-based sessions on the latest versions of the following browsers: <br><br>- Microsoft Edge<br>- Google Chrome<br>- Mozilla Firefox<br>- Apple Safari <br><br>In-browser protection for Microsoft Edge also has specific requirements, including the user signed in with their work profile. For more information, see [In-browser protection requirements](in-browser-protection.md#in-browser-protection-requirements). |
 |**Downtime**     |   Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. <br><br>For example, when the normal policy controls can't be enforced, you might choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content. <br><br>To configure the default behavior during system downtime, in Microsoft Defender XDR, go to **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.      |
+
+### In-browser protection requirements
+
+If you're using [in-browser protection with Microsoft Edge](in-browser-protection.md) and are still being served by a reverse proxy, make sure you meet the following additional requirements:
+
+- **The feature is turned on in your Defender XDR settings**. For more information, see [Configure in-browser protection settings](in-browser-protection.md#configure-in-browser-protection-settings).
+
+- **All policies that the user is covered by are supported for Microsoft Edge for Business**. If a user is served by another policy that's *not* supported by Microsoft Edge for Business, they're always served by the reverse proxy. For more information, see [In-browser protection requirements](in-browser-protection.md#in-browser-protection-requirements).
+
+- **You're using a supported platform**, including a supported operating system, identity platform, and Edge version. For more information, see [In-browser protection requirements](in-browser-protection.md#in-browser-protection-requirements).
 
 ## Reference of troubleshooting issues for admins
 
@@ -124,7 +138,7 @@ Defender for Cloud Apps provides the following options for identifying a device'
 - Hybrid Microsoft Entra Domain joined
 - Client certificates
 
-For more information on device identification, see [Managed Device Identification](proxy-intro-aad.md#managed-device-identification).
+For more information, see [Identity-managed devices with conditional access app control](conditional-access-app-control-identity.md).
 
 Common device identification issues you might encounter include:
 
@@ -164,7 +178,7 @@ For more information, see [Introduction to device management in Microsoft Entra 
 
 The device identification mechanism can request authentication from relevant devices using client certificates. You can upload an X.509 root or intermediate certificate authority (CA) certificate, formatted in the PEM certificate format.
 
-Certificates must contain the CA's public key, which is then used to sign the client certificates presented during a session. For more information, see [Client-certificate authenticated devices](proxy-intro-aad.md#client-certificate-authenticated-devices).
+Certificates must contain the CA's public key, which is then used to sign the client certificates presented during a session. For more information, see [Check for device management without Microsoft Entra](conditional-access-app-control-identity.md#check-for-device-management-without-microsoft-entra).
 
 **Recommended steps**
 
@@ -415,7 +429,7 @@ If you run into any issues while deploying the app, see [Issues when onboarding 
 After adding a custom app, in the **Conditional Access App Control apps** page, you might see the option: **Request session control**.
 
 > [!NOTE]
-> [Catalog apps](proxy-intro-aad.md#session-controls) have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process.
+> Catalog apps have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process. For more information, see [Pre-onboarded apps](proxy-intro-aad.md#pre-onboarded-apps).
 
 **Recommended steps**
 
@@ -505,7 +519,7 @@ For example, the following image shows the **Admin View** toolbar showing at the
 
 The following sections describe how to use the **Admin View** toolbar to test and troubleshoot.
 
-### Test mode (Preview)
+### Test mode
 
 As an admin user, you might want to test upcoming proxy bug fixes before the latest release is fully rolled out to all tenants. Provide your feedback about the bug fix to the Microsoft support team to help speed up release cycles.
 
@@ -518,9 +532,11 @@ When in test mode, only the admin users are exposed to any changes provided in t
 
 If you have difficulty accessing or loading your application, you may want to verify whether the issue is with the conditional access proxy by running the application without the proxy. 
 
-To bypass the proxy, in the **Admin View** toolbar, select **Bypass experience**. Confirm that the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
+To bypass the proxy, in the **Admin View** toolbar, select **Bypass experience**. Confirm that the session is bypassed by noting that the URL isn't suffixed.
 
 The conditional access proxy is used again in your next session.
+
+For more information, see [Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
 
 ### Record a session
 
