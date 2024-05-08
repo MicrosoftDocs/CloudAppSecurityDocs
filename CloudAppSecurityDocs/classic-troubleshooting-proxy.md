@@ -567,7 +567,7 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down, and the default behavior was applied.
         1. To change the default behavior, in Defender for Cloud Apps, in the menu bar, select the settings cog, and then select **Settings**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
         1. Go to `https://status.cloudappsecurity.com/` and monitor notifications about system downtime.
-    1. If you're protecting the file with an security label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
+    1. If you're protecting the file with an sensitivity label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
         - Word: docm, docx, dotm, dotx
         - Excel: xlam, xlsm, xlsx, xltx
         - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
