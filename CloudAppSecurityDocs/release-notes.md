@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 03/18/2024
+ms.date: 04/14/2024
 ms.topic: overview
 ---
 
@@ -21,7 +21,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
-## April 2024
+## May 2024
 
 ### App governance available for government clouds
 
@@ -29,6 +29,16 @@ App governance features in Defender for Cloud Apps are now avaialble in governme
 
 - [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md)
 - [Microsoft Defender for Cloud Apps for US Government offerings](editions-cloud-app-security-gcc.md)
+
+## April 2024
+
+### Enable data encryption from the Microsoft Defender portal
+
+Now you can complete the process for encrypting Defender for Cloud Apps data at rest with your own key by enabling data encrpytion from the **Settings** area of the Microsoft Defender portal.
+
+This feature is now limited on the classic Microsoft Defender for Cloud Apps portal, and is available only from the Microsoft Defender portal.
+
+For more information, see [Encrypt Defender for Cloud Apps data at rest with your own key (BYOK)](ems-cloud-app-security-govt-service-byok.md).
 
 ## March 2024
 

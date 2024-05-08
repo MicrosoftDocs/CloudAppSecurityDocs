@@ -342,7 +342,7 @@ The following procedures describe how to export the log collector image, using L
 
     ```cmd
     docker login -u caslogcollector -p C0llector3nthusiast
-    docker pull mcr.microsoft/mcas/logcollector
+    docker pull mcr.microsoft.com/mcas/logcollector
     ```
 
 1. Export the log collector image. Run:
