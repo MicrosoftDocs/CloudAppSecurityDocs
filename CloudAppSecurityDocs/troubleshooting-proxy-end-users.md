@@ -146,7 +146,7 @@ If the end user can't successfully encrypt the document, use the following steps
  
        1. Go to the [Microsoft 365 Service Health Dashboard](/microsoft-365/admin/manage/health-dashboard-overview) and monitor notifications about system downtime.
 
-    1. If you're protecting the file with an AIP label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
+    1. If you're protecting the file with a sensitivity label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
 
         - **Word**: docm, docx, dotm, dotx
 

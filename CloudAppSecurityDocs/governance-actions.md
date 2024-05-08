@@ -177,7 +177,7 @@ For information about how governance actions are treated when there are policy c
 |Files |File |Restore from user quarantine |Restores a user from being quarantined. |Box |
 |Files |File | Grant read permissions to myself| Grants read permissions for the file for yourself so you can access the file and understand if it has a violation or not.| Google Workspace|
 |Files |File | Allow editors to share | In Google Drive, the default editor permission of a file allows sharing as well. This governance action is the opposite of Remove editor's ability to share and enables the editor to share the file. | Google Workspace|
-|Files |File | Protect | Protect a file with Azure Information Protection by applying an organization template. | Microsoft 365 (SharePoint and OneDrive) |
+|Files |File | Protect | Protect a file with Microsoft Purview by applying an organization template. | Microsoft 365 (SharePoint and OneDrive) |
 |Files |File | Revoke read permissions form myself | Revokes read permissions for the file for yourself, useful after granting yourself permission to understand if a file has a violation or not.| Google Workspace|
 |Files, File policy|File | Transfer file ownership | Changes the owner - in the policy you choose a specific owner. | Google Workspace|
 |Files, File policy|File | Reduce public access|This action enables you to set publicly available files to be available only with a shared link.| Google Workspace|
