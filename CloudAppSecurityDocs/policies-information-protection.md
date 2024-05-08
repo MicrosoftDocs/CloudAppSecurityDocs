@@ -220,7 +220,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Microsoft Purview Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
+- [Microsoft Purview Information Protection integration](azip-integration.md) is enabled and GDPR label is configured in Microsoft Purview
 
 ### Steps
 

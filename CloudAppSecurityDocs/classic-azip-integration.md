@@ -21,7 +21,7 @@ By integrating Microsoft Purview Information Protection into Defender for Cloud 
 ## Prerequisites
 
 > [!NOTE]
-> To enable this feature, you need both a Defender for Cloud Apps license and a license for Azure Information Protection Premium P1. As soon as both licenses are in place, Defender for Cloud Apps syncs the organization's labels from the Azure Information Protection service.
+> To enable this feature, you need both a Defender for Cloud Apps license and a license for Microsoft Purview. As soon as both licenses are in place, Defender for Cloud Apps syncs the organization's labels from the Microsoft Purview service.
 
 - To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Microsoft 365](./connect-office-365.md).
 
