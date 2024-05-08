@@ -133,7 +133,7 @@ You can connect AWS **Security auditing** to Defender for Cloud Apps connections
 
     ![Download csv in AWS.](media/aws-download-csv.png "Download csv in AWS")
    
-       > [!NOTE]
+   > [!NOTE]
     > After connecting AWS, you'll receive events for seven days prior to connection. If you just enabled CloudTrail, you'll receive events from the time you enabled CloudTrail.
 
 ### Step 2: Connect Amazon Web Services auditing to Defender for Cloud Apps
