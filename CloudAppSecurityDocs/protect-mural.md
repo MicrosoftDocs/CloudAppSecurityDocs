@@ -51,7 +51,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 - A Mural enterprise account is a pre-requisite for this connection. You must be signed-in as an admin to Mural.
 
-**To connect Miro to Defender for Cloud Apps**:
+**To connect Mural to Defender for Cloud Apps**:
 
 1.	Sign into your [Mural](https://app.mural.co/) account and select your account icon > **Manage Company > Developtment > API keys > Create API key**.
 1.	Select all checkboxes and then select **Create API Key** and then **Copy Key**.
@@ -59,7 +59,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 1.	In the connection wizard, enter your isntance name, and then select **Next**.
 1.	Paste the API key you'd copied from the Mural portal and then select **Submit**.
 
-Once the connection is successfully established, Defender for Cloud Apps starts fetching Mural audit logs.
+Once the connection is successfully established, Defender for Cloud Apps starts fetching Mural audit logs. Since Mural's API logs are delayed by 48 hours, the audit log ingestion to Defender for Cloud Apps is similiarly delayed.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](/defender-cloud-apps/troubleshooting-api-connectors-using-error-messages).
 
