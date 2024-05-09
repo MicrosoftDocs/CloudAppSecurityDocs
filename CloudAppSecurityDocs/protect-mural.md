@@ -5,7 +5,7 @@ ms.date: 05/06/2024
 ms.topic: how-to
 ---
 
-# Protect your Mural environment
+# Protect your Mural environment (Preview)
 
 Mural is an online workspace that enables distributed, cross-functional teams organize and collaborate on projects. Mural holds critical data of your organization, and this makes it a target for malicious actors.
 

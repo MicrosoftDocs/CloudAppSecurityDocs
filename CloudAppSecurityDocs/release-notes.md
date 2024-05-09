@@ -23,7 +23,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## May 2024
 
-### Connect Mural to Defender for Cloud Apps
+### Connect Mural to Defender for Cloud Apps (Preview)
 
 Defender for Cloud Apps now supports connections to [Mural](https://www.mural.co/) accounts using app connector APIs, giving your visibility into and control over your organizaiton's Mural use.
 
