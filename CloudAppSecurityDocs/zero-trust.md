@@ -1,7 +1,7 @@
 ---
 title: Zero Trust and Microsoft Defender for Cloud Apps
 description: This article describes how Microsoft Defender for Cloud Apps fits into an overall Zero Trust security strategy when deployed with Microsoft Defender XDR.
-ms.date: 012/05/2024
+ms.date: 05/12/2024
 ms.topic: conceptual
 ms.collection:
   - zerotrust-services
