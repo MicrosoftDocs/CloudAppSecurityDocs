@@ -52,7 +52,8 @@ You can use the following built-in policy templates to detect and notify you abo
 
 | Type | Name |
 | ---- | ---- |
-| Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires Microsoft Entra ID as IdP)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Ransomware detection](anomaly-detection-policy.md#ransomware-activity)<br />[Unusual multiple file download activities](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />
+[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires Microsoft Entra ID as IdP)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Ransomware detection](anomaly-detection-policy.md#ransomware-activity)<br />[Unusual multiple file download activities](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Activity policy template | Logon from a risky IP address<br />Mass download by a single user|
 | File policy template | Detect a file shared with an unauthorized domain<br />Detect a file shared with personal email addresses<br />Detect files with PII/PCI/PHI |
 
@@ -147,17 +148,7 @@ For more information, see the [ServiceNow product documentation](https://docs.se
    
    1. Select **Update**.
    
-1. Establish an internal procedure to ensure that the connection remains alive. A couple of days before the expected expiration of the refresh token lifespan, perform the following operations:
-
-   1. [Complete a manual sync process for ITSM connector configuration](/azure/azure-monitor/alerts/itsmc-resync-servicenow).
-   
-      1. Revoke to the old refresh token. We don't recommend keeping old keys for security reasons.
-      
-      1. On the **ServiceNow** pane, search for **System OAuth**, and then select **Manage Tokens**.
-      
-      1. Select the old token from the list according to the OAuth name and expiration date.
-      
-      1. Select **Revoke Access** > **Revoke**.
+1. Establish an internal procedure to ensure that the connection remains alive. A couple of days before the expected expiration of the refresh token lifespan.
       
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
