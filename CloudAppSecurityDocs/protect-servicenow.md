@@ -33,7 +33,8 @@ Connecting ServiceNow to Defender for Cloud Apps gives you improved insights int
 
 ## SaaS security posture management
 
-[Connect ServiceNow](#connect-servicenow-to-microsoft-defender-for-cloud-apps) to automatically get security recommendations for ServiceNow in Microsoft Secure Score.
+[
+Connect ServiceNow](#connect-servicenow-to-microsoft-defender-for-cloud-apps) to automatically get security recommendations for ServiceNow in Microsoft Secure Score.
 
 In Secure Score, select **Recommended actions** and filter by **Product** = **ServiceNow**. For example, recommendations for ServiceNow include:
 
@@ -149,6 +150,13 @@ For more information, see the [ServiceNow product documentation](https://docs.se
    1. Select **Update**.
    
 1. Establish an internal procedure to ensure that the connection remains alive. A couple of days before the expected expiration of the refresh token lifespan.
+Revoke to the old refresh token. We don't recommend keeping old keys for security reasons.
+
+    1. On the ServiceNow pane, search for System OAuth, and then select Manage Tokens.
+
+    1. Select the old token from the list according to the OAuth name and expiration date.
+
+    1. Select Revoke Access > Revoke.
       
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
