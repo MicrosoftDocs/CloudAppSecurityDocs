@@ -123,40 +123,59 @@ For more information, see the [ServiceNow product documentation](https://docs.se
 
 1. Sign in with an Admin account to your ServiceNow account.
 
-    > [!NOTE]
-    > The username/password provided are only used for API token generation and are not saved after the initial connection process.
-
+   > [!NOTE]
+   > The username/password provided are only used for API token generation and are not saved after the initial connection process.
 1. In the **Filter navigator** search bar, type **OAuth** and select **Application Registry**.
 
 1. In the **Application Registries** menu bar, select **New** to create a new OAuth profile.
 1. Under **What kind of OAuth application?**, select **Create an OAuth API endpoint for external clients**.
 1. Under **Application Registries New record** fill in the following fields:
-    - **Name** field, name the new OAuth profile, for example, CloudAppSecurity.
-
-    - The **Client ID** is generated automatically. Copy this ID, you need to paste it into Defender for Cloud Apps to complete connection.
-
-    - In the **Client Secret** field, enter a string. If left empty, a random Secret is generated automatically. Copy and save it for later.
-
-    - Increase the **Access Token Lifespan** to at least 3,600.
-
+   - **Name** field, name the new OAuth profile, for example, CloudAppSecurity.
+      
+   - The **Client ID** is generated automatically. Copy this ID, you need to paste it into Defender for Cloud Apps to complete connection.
+      
+   - In the **Client Secret** field, enter a string. If left empty, a random Secret is generated automatically. Copy and save it for later.
+      
+   - Increase the **Access Token Lifespan** to at least 3,600.
+      
    - Select **Submit**.
+1. Update the lifespan of the refresh token:
+
+   1. On the **ServiceNow** pane, search for **System OAuth**, and then select **Application Registry**.
+   
+   1. Select the name of the OAuth that was defined, and change **Refresh Token Lifespan** to **7,776,000 seconds** (90 days).
+   
+   1. Select **Update**.
+   
+1. Establish an internal procedure to ensure that the connection remains alive. A couple of days before the expected expiration of the refresh token lifespan, perform the following operations:
+
+   1. [Complete a manual sync process for ITSM connector configuration](/azure/azure-monitor/alerts/itsmc-resync-servicenow).
+   
+      1. Revoke to the old refresh token. We don't recommend keeping old keys for security reasons.
+      
+      1. On the **ServiceNow** pane, search for **System OAuth**, and then select **Manage Tokens**.
+      
+      1. Select the old token from the list according to the OAuth name and expiration date.
+      
+      1. Select **Revoke Access** > **Revoke**.
+      
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, and then **ServiceNow**.
 
     ![connect ServiceNow.](media/connect-servicenow.png "connect ServiceNow")
-
+   
 1. In the next window, give the connection a name and select **Next**.
 1. In the **Enter details** page, select **Connect using OAuth token (recommended)**. Select **Next**.
 
 1. In the **Basic Details** page, add your ServiceNow user ID, password, and instance URL in the appropriate boxes. Select **Next**.
 
     ![Screenshot of the ServiceNow App Connector Details Dialog.](media/servicenow-app-connector-details-screenshot.png)
-
+   
    - To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
-
+   
      ![ServiceNow user ID.](media/servicenow-userid.png)
-
+     
 1. In the **OAuth Details** page, enter your **Client ID** and **Client Secret**. Select **Next**.
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
@@ -174,20 +193,20 @@ To connect ServiceNow with Defender for Cloud Apps, you must have admin-level pe
 1. Make sure the REST API plug-in is turned on.
 
     ![ServiceNow account.](media/servicenow-account.png "ServiceNow account")
-
+   
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, select **+Connect an app**, and then **ServiceNow**.
 
    ![connect ServiceNow.](media/connect-servicenow.png "connect ServiceNow")
-
+   
 1. In the next window, give the connection a name and select **Next**.
 1. In the **Enter details** page, select **Connect using username and password only**. Select **Next**.
 
 1. In the **Basic Details** page, add your ServiceNow user ID, password, and instance URL in the appropriate boxes. Select **Next**.
 
     ![ServiceNow update password.](media/servicenow-update-password.png "ServiceNow update password")
-
+   
 1. Select **Connect**.
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 After connecting ServiceNow, you'll receive events for seven days prior to connection.
