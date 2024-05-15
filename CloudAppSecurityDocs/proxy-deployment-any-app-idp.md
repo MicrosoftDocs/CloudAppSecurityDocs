@@ -166,7 +166,7 @@ Open the application and perform the following checks:
 - Check to see if the lock :::image type="icon" source="media/in-browser-protection/lock.png"::: icon appears in your browser, or if you're working in a browser other than Microsoft Edge, check that your app URL contains the `.mcas` suffix. For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
 - Visit all pages within the app that are part of a user's work process and verify that the pages render correctly.
 - Verify that the behavior and functionality of the app isn't adversely affected by performing common actions such as downloading and uploading files.
-- Review the list of domains associated with the app. For more information, see [Add the domains for the app](#add-domains).
+- Review the list of domains associated with the app. For more information, see [Add domains for your app](troubleshooting-proxy.md#add-domains-for-your-app).
 
 If you encounter errors or issues, use the admin toolbar to gather resources such as `.har` files and recorded sessions for filing a support ticket.
 
