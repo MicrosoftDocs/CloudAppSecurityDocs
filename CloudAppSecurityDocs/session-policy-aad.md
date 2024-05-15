@@ -19,11 +19,6 @@ Policies created for a host app are not connected to any related resource apps. 
 
 There is no limit to the number of policies that can be applied.
 
-> [!NOTE]
-> To keep users in the same session, conditional access app control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Defender for Cloud Apps URLs.
->
-> For example, if the app returns a page with links whose domains end with `myapp.com`, conditional access app control replaces the links with domains ending with something like `myapp.com.mcas.ms`. This way, Defender for Cloud Apps monitors the entire session.
-
 ## Prerequisites
 
 Before you start, make sure that you have the following prerequisites:
@@ -140,11 +135,15 @@ Make sure to sign in with a user that matches your policy.
 
 **To test your policy in your app**:
 
-- Check that your app URL contains the `.mcas` suffix
+- Check to see if the lock :::image type="icon" source="media/in-browser-protection/lock.png"::: icon appears in your browser, or if you're working in a browser other than Microsoft Edge, check that your app URL contains the `.mcas` suffix. For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
+
 - Visit all pages within the app that are part of a user's work process and verify that the pages render correctly.
-- Verify that the app behavior matches your policy configuration. For example, if you've blocked a file download from unmanaged devices, try and download a file from an unmanaged device. 
+
 - Verify that the behavior and functionality of the app isn't adversely affected by performing common actions such as downloading and uploading files.
+
 - If you're working with custom, non-Microsoft IdP apps, check each of the domains that you've [manually added for your app](troubleshooting-proxy.md#add-domains-for-your-app).
+
+If you encounter errors or issues, use the admin toolbar to gather resources such as `.har` files and recorded sessions for filing a support ticket.
 
 **To check for updates in Microsoft Defender XDR**:
 

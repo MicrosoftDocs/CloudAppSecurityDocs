@@ -145,31 +145,6 @@ Make sure that you're using the correct **Current CA** or **Next CA** certificat
 
 For more information, see [App doesn't appear on the Conditional Access App Control apps page](troubleshooting-proxy.md#app-doesnt-appear-on-the-conditional-access-app-control-apps-page).
 
-## Verify that apps are configured to use access and session controls<a name="enable-app"></a>
-
-This procedure describes how to verify that your apps are configured to use access and session controls in Defender for Cloud Apps and configure those settings if needed.
-
-> [!NOTE]
-> While you can't remove session control settings for an app, no behavior is changed until you have a session or access policy configured for the app.
->
-
-1. In Microsoft Defender XDR, select **Settings > Cloud Apps > Connected apps > Conditional Access App Control apps**.
-
-1. In the apps table, search for your app and check the **IDP type** column value. Make sure that **Non-MS authentication app** and **Session control** appear for your app.
-
-## Verify that the app is protected<a name="verify-app"></a>
-
-To verify that the application is protected, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
-
-Open the application and perform the following checks:
-
-- Check to see if the lock :::image type="icon" source="media/in-browser-protection/lock.png"::: icon appears in your browser, or if you're working in a browser other than Microsoft Edge, check that your app URL contains the `.mcas` suffix. For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
-- Visit all pages within the app that are part of a user's work process and verify that the pages render correctly.
-- Verify that the behavior and functionality of the app isn't adversely affected by performing common actions such as downloading and uploading files.
-- Review the list of domains associated with the app. For more information, see [Add domains for your app](troubleshooting-proxy.md#add-domains-for-your-app).
-
-If you encounter errors or issues, use the admin toolbar to gather resources such as `.har` files and recorded sessions for filing a support ticket.
-
 ## Related content
 
 - [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
