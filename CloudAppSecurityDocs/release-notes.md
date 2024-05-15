@@ -21,6 +21,15 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## May 2024
+
+### App governance available for government clouds
+
+App governance features in Defender for Cloud Apps are now avaialble in government clouds. For more information, see:
+
+- [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md)
+- [Microsoft Defender for Cloud Apps for US Government offerings](editions-cloud-app-security-gcc.md)
+
 ## April 2024
 
 ### Enable data encryption from the Microsoft Defender portal
