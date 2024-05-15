@@ -24,7 +24,7 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 ## To configure session controls for your app using Okta as the IdP
 
-Use the following steps to route your web app sessions from Okta to Defender for Cloud Apps. For Microsoft Entra configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md).
+Use the following steps to route your web app sessions from Okta to Defender for Cloud Apps. For Microsoft Entra configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Microsoft Entra ID](classic-proxy-deployment-any-app.md).
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by Okta using one of the following methods:
@@ -38,7 +38,7 @@ Use the following steps to route your web app sessions from Okta to Defender for
 
 **Step 2: [Configure Defender for Cloud Apps with your app's SAML information](#idp1-conf-cas-with-your-app-saml-info)**
 
-**Step 3: [Create a new Okta Custom Application and App Single Sign-On configuration](#idp1-create-custom-app-okta)**
+**Step 3: [Create a new Okta Custom Application and app single sign-on configuration](#idp1-create-custom-app-okta)**
 
 **Step 4: [Configure Defender for Cloud Apps with the Okta app's information](#idp1-conf-cas-with-okta-app-info)**
 
@@ -191,7 +191,7 @@ In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [« PREVIOUS: Deploy Conditional Access App Control for any apps](proxy-deployment-any-app.md)
+> [« PREVIOUS: Deploy Conditional Access App Control for any apps](classic-proxy-deployment-any-app.md)
 
 ## See also
 
