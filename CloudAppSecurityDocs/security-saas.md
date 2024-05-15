@@ -28,7 +28,7 @@ This procedure describes how to ensure that your connector is set to show data i
 1. Use the filter to locate the app where you want to turn on Secure Score recommendations.
 
     > [!TIP]
-    > If you have multiple instances of the same app and also have Defender for Cloud *Preview* features turned on, you'll have an instance drawer for each instance of the app. Multiple instances of the same app aren't supported without [Preview features turned on](preview-features.md).
+    > If you have multiple instances of the same app and also have Defender for Cloud *Preview* features turned on, you'll have an instance drawer for each instance of the app. Multiple instances of the same app aren't supported without [Preview features turned on](/microsoft-365/security/defender/preview).
     >
 
 1. Open the instance drawer and note whether Secure Score recommendations are turned on or off. For example, the following screenshot shows that Secure Score recommendations are turned on for **Okta Contoso EU** instance:

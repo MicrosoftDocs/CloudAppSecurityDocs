@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "CloudAppSecurityDocs/preview-features.md",
+            "redirect_url": "/microsoft-365/security/defender/preview",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "CloudAppSecurityDocs/working-with-cloud-discovery-data.md",
             "redirect_url": "/defender-cloud-apps/discovered-apps",
             "redirect_document_id": false

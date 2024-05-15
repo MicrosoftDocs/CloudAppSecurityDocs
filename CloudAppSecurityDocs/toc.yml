@@ -12,7 +12,7 @@ items:
   - name: Lifecycle management
     href: lifecycle-management.md
   - name: Preview features
-    href: preview-features.md
+    href: /microsoft-365/security/defender/preview?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/bread/toc.json
   - name: Compare
     items:
     - name: Microsoft 365 Cloud App Security
