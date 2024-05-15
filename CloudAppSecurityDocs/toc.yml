@@ -64,6 +64,9 @@ items:
     href: working-with-app-page.md
   - name: Working with discovered apps
     href: discovered-apps.md
+  - name: Conditional access app control
+    href: proxy-intro-aad.md
+    displayName: conditional access app control, conditional access, conditional access policies
   - name: Defender for Cloud Apps and Zero Trust monitoring
     href: zero-trust.md
 - name: How-to guides
@@ -298,37 +301,36 @@ items:
             href: dcs-inspection.md
           - name: Working with the RegEx engine
             href: working-with-the-regex-engine.md
-      - name: Conditional access app control policies
+      - name: Conditional access policies
         items:
-        - name: Protect apps with conditional access app control
-          href: proxy-intro-aad.md
-        - name: Deploy conditional access app control
-          items:
-          - name: Catalog apps with Microsoft Entra ID
-            href: proxy-deployment-aad.md
-          - name: Catalog apps with non-Microsoft IdP
-            href: proxy-deployment-featured-idp.md
-          - name: Custom apps with Microsoft Entra ID
-            href: proxy-deployment-any-app.md
-          - name: Custom apps with non-Microsoft IdP
-            href: proxy-deployment-any-app-idp.md
-          - name: Sample deployment processes
-            items:
-            - name: Configuring your PingOne IdP
-              href: proxy-idp-pingone.md
-            - name: Configuring your AD FS IdP
-              href: proxy-idp-adfs.md
-            - name: Configuring your Okta IdP
-              href: proxy-idp-okta.md
+        - name: Overview
+          displayName: conditional access app control, caac
+          href: conditional-access-app-control-how-to-overview.md
         - name: Create access policies
+          displayName: conditional access app control, caac
           href: access-policy-aad.md
         - name: Create session policies
+          displayName: conditional access app control, caac
           href: session-policy-aad.md
-        - name: Use in-browser protection (Microsoft Edge for Business)
-          href: in-browser-protection.md
         - name: Configure policies for identity-managed devices
           displayName: conditional access app control, caac
           href: conditional-access-app-control-identity.md
+        - name: Use in-browser protection (Microsoft Edge for Business)
+          href: in-browser-protection.md
+        - name: Deploy catalog and custom apps with a non-Microsoft IdP
+          items:
+          - name: Deploy for non-Microsoft IdP catalog apps 
+            displayName: conditional access app control, caac
+            href: proxy-deployment-featured-idp.md
+          - name: Deploy for non-Microsoft IdP custom apps
+            displayName: conditional access app control, caac
+            href: proxy-deployment-any-app-idp.md
+          - name: Sample - Deploy PingOne apps
+            href: proxy-idp-pingone.md
+          - name: Sample - Deploy AD FS apps
+            href: proxy-idp-adfs.md
+          - name: Sample - Deploy Okta apps
+            href: proxy-idp-okta.md
         - name: Known limitations
           href: caac-known-issues.md
           displayName: conditional access app control, caac

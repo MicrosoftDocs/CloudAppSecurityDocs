@@ -1,15 +1,15 @@
 ---
-title: Troubleshooting - What is mcas.ms, mcas-gov.us, or mcas-gov.ms?
-description: This article provides information about the mcas.ms, mcas-gov.us, or mcas-gov.ms URL suffix used by Conditional Access App Control.
-ms.date: 02/29/2024
-ms.topic: conceptual
+title: Troubleshooting - What is mcas.ms, mcas-gov.us, or mcas-gov.ms? | Microsoft Defender for Cloud Apps
+description: Learn about the `mcas.ms`, `mcas-gov.us`, and `mcas-gov.ms` URL suffixes used by Microsoft Defender for Cloud Apps and conditional access app control.
+ms.date: 05/15/2024
+ms.topic: troubleshooting
 ---
 
 # Troubleshooting - What is `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`?
 
 
 
-This article provides information about the `mcas.ms`, `mcas-gov.us`, and `mcas-gov.ms` URL suffixes used by Conditional Access App Control.
+This article provides information about the `mcas.ms`, `mcas-gov.us`, and `mcas-gov.ms` URL suffixes used by Microsoft Defender for Cloud Apps and conditional access app control.
 
 ## Our system flagged a new domain name system (DNS) entry or generated certificate for `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`, but we don't use Defender for Cloud Apps
 
@@ -47,9 +47,9 @@ They do this by using Defender for Cloud Apps, a solution for protecting your or
 
 So when you try accessing a cloud app such as Salesforce, SharePoint Online, or AWS, you notice that its URL is suffixed with `.mcas.ms`, `.mcas-gov.us`, or `.mcas-gov.ms`. For example, when using the XYZ app, the URL you're used to seeing changes from `XYZ.com` to `XYZ.com.mcas.ms`.
 
-If the URL doesn't exactly match one of the replacement patterns (for example, `<app_site>.com` isn't replaced with `<app_site>.com.mcas.ms`), or if you have other concerns, contact your IT department.
+If the URL doesn't exactly match one of the replacement patterns, such as `<app_site>.com` isn't replaced with `<app_site>.com.mcas.ms`, or if you have other concerns, contact your IT department.
 
-If you don't recognize the remaining portion of the URL (for example, **myurl.com**.mcas.ms) as associated with any of your business apps, we recommend investigating the issue further and consider blocking the URL to avoid any potential security risks.
+If you don't recognize the remaining portion of the URL, such as **myurl.com**.mcas.ms, as associated with any of your business apps, we recommend that you investigate the issue further and consider blocking the URL to avoid any potential security risks.
 
 > [!NOTE]
 > Microsoft Edge users benefit from in-browser protection, and are not redirected to a reverse proxy. Your URLs retain their original syntax in Microsoft Edge, even when access and sessions are protected by Defender for Cloud Apps. For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
