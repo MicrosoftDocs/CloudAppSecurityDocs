@@ -41,6 +41,10 @@ The following table lists more examples of files that are and aren't scanned:
 |**A Word file** composed of images and text, 4-MB size and 2 million characters     |  Not scanned        |
 |**A Word file** composed of images and text, 40-MB size and 400-K characters     |  Not scanned         |
 
+## External B2B users in Teams
+
+External B2B collaboration users are not protected by session policies in Teams application.
+
 ## Limitations for sessions served by reverse proxy
 
 This section lists limitations that apply only on sessions that are served by the reverse proxy. Users of Microsoft Edge can benefit from in-browser protection instead of using the reverse proxy, and therefore aren't affected by these limitations.
