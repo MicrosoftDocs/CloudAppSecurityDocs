@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Protect apps with Conditional Access App Control
 description: Classic portal -  This article provides information about how the Defender for Cloud Apps Conditional Access App Control reverse proxy works.
-ms.date: 01/19/2023
+ms.date: 05/15/2024
 ms.topic: conceptual
 ROBOTS: NOINDEX
 ---
@@ -17,13 +17,13 @@ In today's workplace, it's often not enough to know what's happening in your clo
 
 ## How it works
 
-Conditional Access App Control uses a reverse proxy architecture and integrates with your IdP. When integrating with Microsoft Entra Conditional Access, you can configure apps to work with Conditional Access App Control with just a few clicks, allowing you to easily and selectively enforce access and session controls on your organization's apps based on any condition in Conditional Access. The conditions define *who* (user or group of users) and *what* (which cloud apps) and *where* (which locations and networks) a Conditional Access policy is applied to. After you've determined the conditions, you can route users to Defender for Cloud Apps where you can protect data with Conditional Access App Control by applying access and session controls.
+Conditional Access App Control uses a reverse proxy architecture and integrates with your IdP. When integrating with Microsoft Entra Conditional Access, you can configure apps to work with Conditional Access App Control, allowing you to easily and selectively enforce access and session controls on your organization's apps based on any condition in Conditional Access. The conditions define *who* (user or group of users) and *what* (which cloud apps) and *where* (which locations and networks) a Conditional Access policy is applied to. After you've determined the conditions, you can route users to Defender for Cloud Apps where you can protect data with Conditional Access App Control by applying access and session controls.
 
 Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user. With the access and session policies, you can:
 
 - **Prevent data exfiltration**: You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
 
-- **Require authentication context**: You can reevaluate Microsoft Entra Conditional Access policies when a sensitive action occurs in the session. For example, require multi-factor authentication on download of a highly confidential file.
+- **Require authentication context**: You can reevaluate Microsoft Entra Conditional Access policies when a sensitive action occurs in the session. For example, require multifactor authentication on download of a highly confidential file.
 
 - **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and encrypted when you integrate with Microsoft Purview Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
 
@@ -76,9 +76,9 @@ Microsoft Entra Conditional Access enables Intune compliant and Microsoft Entra 
 
 The device identification mechanism can request authentication from relevant devices using client certificates. You can either use existing client certificates already deployed in your organization or roll out new client certificates to managed devices. Make sure that the client certificate is installed in the user store and not the computer store. You then use the presence of those certificates to set access and session policies.
 
-SSL client certificates are verified via a trust chain. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session.
+SSL/TLS client certificates are verified via a trust chain. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session.
 
-Once the certificate is uploaded and a relevant policy is configured, when an applicable session traverses Conditional Access App Control, the Defender for Cloud Apps endpoint requests the browser to present the SSL client certificates. The browser serves the SSL client certificates that are installed with a private key. This combination of certificate and private key is done by using the PKCS #12 file format, typically .p12 or .pfx.
+Once the certificate is uploaded and a relevant policy is configured, when an applicable session traverses Conditional Access App Control, the Defender for Cloud Apps endpoint requests the browser to present the SSL/TLS client certificates. The browser serves the SSL/TLS client certificates that are installed with a private key. This combination of certificate and private key is done by using the PKCS #12 file format, typically .p12 or .pfx.
 
 When a client certificate check is performed, Defender for Cloud Apps checks for the following conditions:
 
@@ -89,7 +89,7 @@ When a client certificate check is performed, Defender for Cloud Apps checks for
 >
 > Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
 
-To configure a policy to leverage device management via client certificates:
+To configure a policy to use device management via client certificates:
 
 1. In Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon.](media/classic-settings-icon.png "settings icon") and select **Settings**.
 
@@ -130,9 +130,9 @@ While session controls are built to work with any browser on any major platform 
 > [!NOTE]
 >
 > - Defender for Cloud Apps uses Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
-> - To apply session controls to portal.office.com, you must onboard Microsoft 365 admin center. For more information about onboarding apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
+> - To apply session controls to portal.office.com, you must onboard Microsoft 365 admin center. For more information about onboarding apps, see [Onboard and deploy Conditional Access App Control for any app](classic-proxy-deployment-any-app.md).
 
-#### Pre-onboarded apps
+#### Preonboarded apps
 
 Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls for Azure Access Directory.
 
@@ -151,11 +151,11 @@ Any web app configured using the [previously mentioned authentication protocols]
 - HighQ
 - JIRA/Confluence
 - LinkedIn Learning
-- Microsoft Azure DevOps (Visual Studio Team Services)
+- Microsoft Azure DevOps Services
 - Microsoft Azure portal
 - Microsoft Dynamics 365 CRM
 - Microsoft Exchange Online
-- Microsoft OneDrive for Business
+- Microsoft OneDrive
 - Microsoft Power BI
 - Microsoft SharePoint Online
 - Microsoft Teams
@@ -167,7 +167,7 @@ Any web app configured using the [previously mentioned authentication protocols]
 - Workiva
 - Workplace from Meta
 
-If you're interested in a specific app being pre-onboarded, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
+If you're interested in a specific app being preonboarded, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
 
 ## Known limitations
 
@@ -181,10 +181,10 @@ It's possible to bypass the defined copy/cut policy by using the browser develop
 It's possible to bypass the defined session policy by modifying parameters. For example, it's possible to alter the URL parameters and mislead the service in a way that bypasses the proxy and enables a download of a sensitive file.
 
 - **Browser plug-in limitation**  
-Our current Conditional Access App Control session restrictions enforcement solution doesn't support native applications, since it requires some modification of the underlying application code. Browser extensions, similar to native apps, are pre-installed on the browser and so don't allow us to modify their code as needed and will break when their tokens are redirected through our proxy solution. As an administrator, you can define the default system behavior when a policy can't be enforced and choose between allowing access or totally blocking it.
+Our current Conditional Access App Control session restrictions enforcement solution doesn't support native applications, since it requires some modification of the underlying application code. Browser extensions, similar to native apps, are preinstalled on the browser and so don't allow us to modify their code as needed and will break when their tokens are redirected through our proxy solution. As an administrator, you can define the default system behavior when a policy can't be enforced and choose between allowing access or totally blocking it.
 
 - **Context loss**  
-In the following applications, we've encountered scenarios where navigating to a link may result in loss of the full path of the link and typically the user lands on the home page of the app.
+In the following applications, we've encountered scenarios where navigating to a link might result in loss of the full path of the link and typically the user lands on the home page of the app.
   - ArcGIS
   - GitHub
   - Microsoft Dynamics 365 CRM
@@ -195,8 +195,8 @@ In the following applications, we've encountered scenarios where navigating to a
   - Workplace from Meta
 
 - **Session policies are valid for files up to 50 MB in size**  
-Files with a size of up to 50MB are subject to session policies.
-For example, an admin may define one of the following session policies:
+Files with a size of up to 50 MB are subject to session policies.
+For example, an admin might define one of the following session policies:
   - Monitor file downloads for OneDrive app
   - Block file upload
   - Block download\upload of malware files
@@ -206,18 +206,18 @@ For example, an admin may define one of the following session policies:
 
 - **Inspections policies for information protection are valid for files up to 30 MB in size and 1 million characters**  
 When a session policy to block file uploads or downloads based on information protection content inspection is applied, inspection is performed on files smaller than 30 MB and smaller than 1 million characters.
-For example, an admin may define one of the following session policies:
+For example, an admin might define one of the following session policies:
   - Block file upload for files containing Social Security Number (SSN)
   - Protect file download for files containing PHI (Protected Health Information)
   - Block file download for with sensitivity label “very sensitive”
 
-  In such cases, files larger than 30 MB or 1 million characters are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned.**
+  In such cases, files larger than 30 MB or 1 million characters aren't scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned.**
 Here are some examples:
-  - a TXT file, 1 MB size and 1 million characters: will be scanned
-  - a TXT file, 2 MB size and 2 million characters: won't be scanned
-  - a Word file composed of images and text, 4 MB size and 400 K characters: will be scanned
-  - a Word file composed of images and text, 4 MB size and 2 million characters: won't be scanned
-  - a Word file composed of images and text, 40 MB size and 400 K characters: won't be scanned
+  - a TXT file, 1-MB size and 1 million characters: will be scanned
+  - a TXT file, 2-MB size and 2 million characters: won't be scanned
+  - a Word file composed of images and text, 4-MB size and 400-K characters: will be scanned
+  - a Word file composed of images and text, 4-MB size and 2 million characters: won't be scanned
+  - a Word file composed of images and text, 40-MB size and 400-K characters: won't be scanned
 
 - **File upload limitation**
 
@@ -229,19 +229,19 @@ Here are some examples:
 
     Here are a few examples:
 
-  The security administrator defines the following policy: *Block upload of files containing PII to OneDrive*.
-  - The user tries to upload a selection of 200 non-sensitive files using the file upload dialog. **Result:** the files are uploaded
-  - The user tries to upload a selection of 200 non-sensitive files using drag & drop. **Result:** the files are blocked
-  - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using the file upload dialog. **Result:** the non-sensitive files are uploaded, the sensitive files are blocked
-  - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using drag & drop. **Result:** the whole set of files is blocked
+  The security administrator defines the following policy: *Block upload of files containing personal data to OneDrive*.
+  - The user tries to upload a selection of 200 nonsensitive files using the file upload dialog. **Result:** the files are uploaded
+  - The user tries to upload a selection of 200 nonsensitive files using drag & drop. **Result:** the files are blocked
+  - The user tries to upload a selection of 200 files, some are sensitive, and some aren't, using the file upload dialog. **Result:** the nonsensitive files are uploaded, the sensitive files are blocked
+  - The user tries to upload a selection of 200 files, some are sensitive, and some aren't, using drag & drop. **Result:** the whole set of files is blocked
 
 ## Next steps
 
-For instructions on how to onboard your apps, see the appropriate document below:
+For instructions on how to onboard your apps, see:
 
-- [Deploy Conditional Access App Control for catalog apps with Microsoft Entra ID](proxy-deployment-aad.md)
-- [Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP](proxy-deployment-featured-idp.md)
-- [Deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md)
-- [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](proxy-deployment-any-app-idp.md)
+- [Deploy Conditional Access App Control for catalog apps with Microsoft Entra ID](classic-proxy-deployment-aad.md)
+- [Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP](classic-proxy-deployment-featured-idp.md)
+- [Deploy Conditional Access App Control for custom apps using Microsoft Entra ID](classic-proxy-deployment-any-app.md)
+- [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](classic-proxy-deployment-any-app-idp.md)
 
 [!INCLUDE [Open support ticket](includes/classic-support.md)]

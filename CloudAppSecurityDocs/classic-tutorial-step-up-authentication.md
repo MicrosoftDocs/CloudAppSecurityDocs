@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Require step-up authentication (authentication context) upon risky action
 description: Classic portal -  This tutorial provides instructions for requiring step-up authentication (authentication context) upon risky action.
-ms.date: 01/10/2023
+ms.date: 05/15/2024
 ms.topic: tutorial
 ROBOTS: NOINDEX
 ---
@@ -31,7 +31,7 @@ Protect your organization by requiring Microsoft Entra Conditional Access polici
     | ----------- | -------------------------- |
     | Microsoft Entra ID    | SAML 2.0 or OpenID Connect |
 
-- Make sure the [app is deployed to Defender for Cloud Apps](proxy-deployment-aad.md)
+- Make sure the [app is deployed to Defender for Cloud Apps](classic-proxy-deployment-aad.md)
 
 ## Create a policy to enforce step-up authentication
 
@@ -41,9 +41,9 @@ Defender for Cloud Apps session policies allow you to restrict a session based o
 
 Make sure you've configured your IdP solution to work with Defender for Cloud Apps, as follows:
 
-- For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+- For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](classic-proxy-deployment-aad.md#configure-integration-with-azure-ad)
 
-- For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
+- For other IdP solutions, see [Configure integration with other IdP solutions](classic-proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
 
 After completing this task, go to the Defender for Cloud Apps portal and create a session policy to monitor and control file downloads in the session.
 
@@ -92,7 +92,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. In the Defender for Cloud Apps portal, select **Control** followed by **Policies**, and then select the policy you've created to view the policy report. A session policy match should appear shortly.
 
-1. In the policy report, you can see which logins where redirected to Microsoft Defender for Cloud Apps for session control, and which files were downloaded or blocked from the monitored sessions.
+1. In the policy report, you can see which logins were redirected to Microsoft Defender for Cloud Apps for session control, and which files were downloaded or blocked from the monitored sessions.
 
 ## Next steps
 
