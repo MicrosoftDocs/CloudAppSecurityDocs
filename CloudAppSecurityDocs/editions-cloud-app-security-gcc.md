@@ -1,7 +1,7 @@
 ---
 title: US Government offerings
 description: This article describes the features differences between Microsoft Defender for Cloud Apps for US Government offerings and the commercial offering.
-ms.date: 04/03/2023
+ms.date: 04/11/2024
 ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps for US Government offerings
@@ -30,11 +30,7 @@ Unless otherwise specified, new feature releases, including preview features, do
 
 ## Feature support
 
-Microsoft Defender for Cloud Apps for US Government offers parity with the Microsoft Defender for Cloud Apps commercial environment, with the following exceptions:
-
-| Feature Name                           | Description                                                  | GCC     | GCC High | DoD     |
-| -------------------------------------- | ------------------------------------------------------------ | ------- | -------- | ------- |
-|**App governance in Microsoft Defender for Cloud Apps** | App governance delivers full visibility, remediation, and governance into how Azure-connected apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. | Roadmap | Roadmap  | Roadmap |
+Microsoft Defender for Cloud Apps for US Government offers parity with the Microsoft Defender for Cloud Apps commercial environment.
 
 ## Next steps
 
