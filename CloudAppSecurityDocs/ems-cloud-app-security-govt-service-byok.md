@@ -8,7 +8,7 @@ ms.date: 01/04/2024
 
 # Encrypt Defender for Cloud Apps data at rest with your own key (BYOK)
 
-This article describes how to configure Defender for Cloud Apps to use your own key to encrypt the data it collects, whilst it's at rest. If you are looking for documentation about applying encryption to data stored in cloud apps, see [Azure Information Protection integration](azip-integration.md).
+This article describes how to configure Defender for Cloud Apps to use your own key to encrypt the data it collects, whilst it's at rest. If you are looking for documentation about applying encryption to data stored in cloud apps, see [Microsoft Purview integration](azip-integration.md).
 
 Defender for Cloud Apps takes your security and privacy seriously. Therefore, once Defender for Cloud Apps starts collecting data, it uses its own managed keys to protect your data in accordance with our [data security and privacy](cas-compliance-trust.md) policy. Additionally, Defender for Cloud Apps allows you to further protect your data at rest by encrypting it with your own Azure Key Vault key.
 

@@ -35,6 +35,13 @@ Customers not yet using preview features continue to see the legacy settings und
 
 For more information, see [Microsoft Defender XDR preview features](/microsoft-365/security/defender/preview).
 
+### App governance available for government clouds
+
+App governance features in Defender for Cloud Apps are now avaialble in government clouds. For more information, see:
+
+- [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md)
+- [Microsoft Defender for Cloud Apps for US Government offerings](editions-cloud-app-security-gcc.md)
+
 ## April 2024
 
 ### Enable data encryption from the Microsoft Defender portal
