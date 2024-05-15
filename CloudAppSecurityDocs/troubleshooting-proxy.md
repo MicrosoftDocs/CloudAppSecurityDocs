@@ -391,7 +391,6 @@ Common scenarios you might encounter while configuring these policies include:
 - [Can't create session policies for an app](#cant-create-session-policies-for-an-app)
 - [Can't choose **Inspection Method**: **Data Classification Service**](#cant-choose-inspection-method-data-classification-service)
 - [Can't choose **Action**: **Protect**](#cant-choose-action-protect)
-- [Extra considerations](#policies-additional-considerations)
 
 ### In Conditional Access policies, you can't see the Conditional Access App Control option
 
@@ -505,7 +504,7 @@ When in test mode, only the admin users are exposed to any changes provided in t
 
 If you're using a non-Edge browser and have difficulty accessing or loading your application, you may want to verify whether the issue is with the conditional access proxy by running the application without the proxy.
 
-To bypass the proxy, in the **Admin View** toolbar, select **Bypass experience**. Confirm that the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#url-customizations).
+To bypass the proxy, in the **Admin View** toolbar, select **Bypass experience**. Confirm that the session is bypassed by noting that the URL isn't suffixed.
 
 The conditional access proxy is used again in your next session.
 

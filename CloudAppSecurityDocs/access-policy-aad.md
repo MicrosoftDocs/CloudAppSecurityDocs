@@ -58,8 +58,6 @@ This procedure describes how to create a new access policy in Defender for Cloud
 
 1. In the **Activities matching all of the following** area, select additional activity filters to apply to the policy. Filters include the following options: 
 
-    <!--add this in other places too: If you choose not to use the **App** filter, the policy applies to all applications that are marked as **Enabled** on the **Settings > Cloud Apps > Connected apps > Conditional Access App Control apps** page.-->
-
     |Name  |Description  |
     |---------|---------|
     | **App** | Filters for a specific app to include in the policy. Select apps by first selecting whether they use **Automated Azure AD onboarding**, for Microsoft Entra ID apps, or **Manual onboarding**, for non-Microsoft IdP apps. Then, select the app you want to include in your filter from the list. <br><br>If your non-Microsoft IdP app is missing from the list, make sure that you've onboarded it fully. For more information, see: <br>- [Onboard non-Microsoft IdP catalog apps for conditional access app control](proxy-deployment-featured-idp.md)<br>- [Onboard non-Microsoft IdP custom apps for conditional access app control](proxy-deployment-any-app-idp.md) <br><br>If you choose not to use the **App** filter, the policy applies to all applications that are marked as **Enabled** on the **Settings > Cloud Apps > Connected apps > Conditional Access App Control apps** page.<br><br>**Note**: You may see some overlap between apps that are onboarded and apps that need manual onboarding. In case of a conflict in your filter between the apps, manually onboarded apps take precedence.|
