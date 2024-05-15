@@ -10,7 +10,7 @@ ms.author: bagol
 ms.custom: include file
 ---
 
-The following apps are preonboarded by Defender for Cloud Apps to work out-of-the-box:
+Defender for Cloud Apps preonboards the following apps to work out-of-the-box:
 
 :::row:::
     :::column:::
