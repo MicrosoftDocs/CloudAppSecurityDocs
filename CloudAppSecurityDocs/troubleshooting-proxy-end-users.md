@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting access and session controls for end-users | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by end-users with Microsoft Defender for Cloud Apps.
-ms.date: 02/29/2024
+ms.date: 05/15/2024
 ms.topic: troubleshooting
 ---
 
@@ -30,7 +30,7 @@ This section describes the troubleshooting steps we recommend you taking if the 
 **Recommended steps**
 
 1. In the Microsoft Defender Portal, select **Settings** > **Cloud Apps**.
-1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps. For exmaple:
+1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps. For example:
 
     ![Screenshot of the user monitoring options.](media/proxy-user-monitoring.png)
 
@@ -216,7 +216,7 @@ In some rare cases, users under session control receive a message from the brows
 
 This message only appears for Chrome users, as Microsoft Edge users benefit from in-browser protection, without the reverse proxy architecture. For example:
 
-![Screenshot of a similar site warning in Chrome.](media/chrome-similar-site-warning.png)
+:::image type="content" source="media/chrome-similar-site-warning.png" alt-text="Screenshot of a similar site warning in Chrome." lightbox="media/chrome-similar-site-warning.png" border="false":::
 
 If you receive a message like this, contact Microsoft’s support to address it with the relevant browser vendor.
 
@@ -250,6 +250,8 @@ When troubleshooting apps, there are some more things to consider:
 - **Session controls protect limitation**
 Co-Auth labeling under **"protect"** action isn't supported by Defender for Cloud Apps session controls. For more information, see [Enable coauthoring for files encrypted with sensitivity labels](/purview/sensitivity-labels-coauthoring#if-you-need-to-disable-this-feature).
 
-## Next steps
+## Related content
 
-For more information, see [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md).
+- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+- [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md)
+- [Troubleshooting - What is `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`?](troubleshooting-proxy-url.md)
