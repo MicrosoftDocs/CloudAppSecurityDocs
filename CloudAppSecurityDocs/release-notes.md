@@ -23,6 +23,14 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## May 2024
 
+### Defender for Cloud Apps in the Microsoft Defender portal - General Availability and advance notice for redirection
+
+The Defender for Cloud Apps experience in the Microsoft Defender portal is generally available, and the automatic redirection from the classic portal is on by default for all customers. 
+
+Starting June 16th, 2024, the redirection toggle will no longer be available. From then on, all users accessing the classic Microsoft Defender for Cloud Apps portal will be automatically rerouted to the Microsoft Defender portal, with no option to opt-out.
+
+To prepare for this change, we recommend that any customers still using the classic portal move operations to the Microsoft Defender portal.
+
 ### Turn preview options on in the main Microsoft Defender XDR settings (Preview)
 
 Now, preview customers can manage settings for preview features together with other Microsoft Defender XDR preview features.
