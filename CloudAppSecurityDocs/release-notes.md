@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 05/15/2024
+ms.date: 05/16/2024
 ms.topic: overview
 ---
 
