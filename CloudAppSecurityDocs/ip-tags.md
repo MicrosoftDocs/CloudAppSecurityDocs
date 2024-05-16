@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Working with IP ranges and tags
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges. IP address ranges allow you to tag, categorize, and customize the way logs and alerts are displayed and investigated. Each group of IP ranges can be categorized based on a preset list of IP categories. You're also able to create custom IP tags for your IP ranges. Additionally, you can override public geolocation information based on your internal network knowledge. Both IPv4 and IPv6 are supported.
 
@@ -24,7 +24,7 @@ Built-in IP address tags and custom IP tags are considered hierarchically. Custo
 
 ## Create an IP address range
 
-In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **IP address ranges**. Select **Add IP address range** to add IP address ranges and set the following fields:
+In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **IP address ranges**. Select **Add IP address range** to add IP address ranges and set the following fields:
 
 1. **Name** your IP range. The name doesn't appear in the activities log. It's only used to manage your IP range.
 

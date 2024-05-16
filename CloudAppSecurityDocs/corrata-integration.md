@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with Corrata
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 If you work with both Defender for Cloud Apps and Corrata, you can integrate the two products to enhance your security Cloud Discovery experience for mobile app use. Corrata, as a local Mobile gateway, monitors your organization's traffic from mobile devices enabling you to set policies for blocking transactions. Together, Defender for Cloud Apps and Corrata provide the following capabilities:
 
@@ -22,7 +22,7 @@ If you work with both Defender for Cloud Apps and Corrata, you can integrate the
 ## Deployment
 
 1. In the Corrata portal, integrate Corrata into Defender for Cloud Apps. For instructions, see [Integrating Corrata with Microsoft Defender for Cloud Apps](https://corrata.com/microsoft-mcas-onboarding/).
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com/), do the following integration steps:
+1. In the [Microsoft Defender Portal](https://security.microsoft.com/), do the following integration steps:
     1. Select **Settings**. Then choose **Cloud Apps**.
     1. Under **Cloud Discovery**, select **Automatic log upload**. Then select **+Add data source**.
     1. In the **Add data source** page, enter the following settings:

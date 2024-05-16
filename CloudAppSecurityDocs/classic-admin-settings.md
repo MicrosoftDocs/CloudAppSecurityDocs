@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Admin user settings
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Microsoft Defender for Cloud Apps allows you to customize your admin user settings. The notification settings allow admins to specify if they would like to receive email notifications for alerts.
 
@@ -23,7 +23,7 @@ To set up your preferences as an admin of Microsoft Defender for Cloud Apps, sel
 
     > [!NOTE]
     >
-    > - Notifications are not sent for Azure Active Directory IPC events.
+    > - Notifications are not sent for Microsoft Entra IPC events.
 
     ![notification settings.](media/classic-notification-settings.png)
 
@@ -34,4 +34,4 @@ To set up your preferences as an admin of Microsoft Defender for Cloud Apps, sel
 > [!div class="nextstepaction"]
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

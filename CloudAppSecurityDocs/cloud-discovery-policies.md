@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Create Cloud Discovery policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 You can create app discovery policies to alert you when new apps are detected. Defender for Cloud Apps also searches all the logs in your Cloud Discovery for anomalies.
 
@@ -14,7 +14,7 @@ You can create app discovery policies to alert you when new apps are detected. D
 
 Discovery policies enable you to set alerts that notify you when new apps are detected within your organization.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
 
 1. Select **Create policy** and then select **App discovery policy**.
 
@@ -59,7 +59,7 @@ Set the thresholds that should trigger an alert for a certain discovered app at 
 
 Defender for Cloud Apps searches all the logs in your Cloud Discovery for anomalies. For instance, when a user, who never used Dropbox before, suddenly uploads 600 GB to it, or when there are a lot more transactions than usual on a particular app. The anomaly detection policy is enabled by default. It's not necessary to configure a new policy for it to work. However, you can fine-tune which types of anomalies you want to be alerted about in the default policy.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
 
 1. Select **Create policy** and select **Cloud Discovery anomaly detection policy**.
 

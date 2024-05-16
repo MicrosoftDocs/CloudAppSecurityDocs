@@ -7,31 +7,33 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Manage admin access
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
-Microsoft Defender for Cloud Apps supports role-based access control. This article provides instructions for setting access to the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference) and [Microsoft 365](/microsoft-365/admin/add-users/assign-admin-roles).
+Microsoft Defender for Cloud Apps supports role-based access control. This article provides instructions for setting access to the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Microsoft Entra ID](/azure/active-directory/roles/permissions-reference) and [Microsoft 365](/microsoft-365/admin/add-users/assign-admin-roles).
 
 <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>
 
-## Microsoft 365 and Azure AD roles with access to Defender for Cloud Apps
+<a name='microsoft-365-and-azure-ad-roles-with-access-to-defender-for-cloud-apps'></a>
+
+## Microsoft 365 and Microsoft Entra roles with access to Defender for Cloud Apps
 
 > [!NOTE]
 >
-> - Microsoft 365 and Azure AD roles aren't listed in the Defender for Cloud Apps **Manage admin access** page. To assign roles in Microsoft 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
-> - Defender for Cloud Apps uses Azure Active Directory to determine the user's [directory level inactivity timeout setting](/azure/azure-portal/set-preferences#change-the-directory-timeout-setting-admin). If a user is configured in Azure Active Directory to never sign out when inactive, the same setting will apply in Defender for Cloud Apps as well.
+> - Microsoft 365 and Microsoft Entra roles aren't listed in the Defender for Cloud Apps **Manage admin access** page. To assign roles in Microsoft 365 or Microsoft Entra ID, go to the relevant RBAC settings for that service.
+> - Defender for Cloud Apps uses Microsoft Entra ID to determine the user's [directory level inactivity timeout setting](/azure/azure-portal/set-preferences#change-the-directory-timeout-setting-admin). If a user is configured in Microsoft Entra ID to never sign out when inactive, the same setting will apply in Defender for Cloud Apps as well.
 
-By default, the following Microsoft 365 and [Azure AD](/azure/active-directory/roles/permissions-reference) admin roles have access to Defender for Cloud Apps:
+By default, the following Microsoft 365 and [Microsoft Entra ID](/azure/active-directory/roles/permissions-reference) admin roles have access to Defender for Cloud Apps:
 
 - **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Defender for Cloud Apps. They can add admins, add policies and settings, upload logs and perform governance actions, access and manage SIEM agents.
 
-- **Cloud App Security administrator**: Allows full access and permissions in Defender for Cloud Apps. This role grants full permissions to Defender for Cloud Apps, like the Azure AD **Global administrator** role. However, this role is scoped to Defender for Cloud Apps and won't grant full permissions across other Microsoft security products.
+- **Cloud App Security administrator**: Allows full access and permissions in Defender for Cloud Apps. This role grants full permissions to Defender for Cloud Apps, like the Microsoft Entra ID **Global administrator** role. However, this role is scoped to Defender for Cloud Apps and won't grant full permissions across other Microsoft security products.
 
 - **Compliance administrator**: Has read-only permissions and can manage alerts. Can't access Security recommendations for cloud platforms. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
 
 - **Compliance data administrator**: Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports. Can't access Security recommendations for cloud platforms.
 
 > [!NOTE]
-> As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+> As of August 28 2022, users who were assigned a Microsoft Entra ID **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to a Microsoft Entra ID **Security Operator**.
 
 - **Security operator**: Has read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
 
@@ -92,13 +94,13 @@ By default, the following Microsoft 365 and [Azure AD](/azure/active-directory/r
 
 The following specific admin roles can be configured in the Defender for Cloud Apps portal:
 
-- **Global administrator**: Has **Full access** similar to the Azure AD Global administrator role but only to Defender for Cloud Apps.
+- **Global administrator**: Has **Full access** similar to the Microsoft Entra Global Administrator role but only to Defender for Cloud Apps.
 
-- **Compliance administrator**: Grants the same permissions as the Azure AD Compliance administrator role but only to Defender for Cloud Apps.
+- **Compliance administrator**: Grants the same permissions as the Microsoft Entra Compliance administrator role but only to Defender for Cloud Apps.
 
-- **Security reader**: Grants the same permissions as the Azure AD Security reader role but only to Defender for Cloud Apps.
+- **Security reader**: Grants the same permissions as the Microsoft Entra Security reader role but only to Defender for Cloud Apps.
 
-- **Security operator**: Grants the same permissions as the Azure AD Security operator role but only to Defender for Cloud Apps.
+- **Security operator**: Grants the same permissions as the Microsoft Entra Security operator role but only to Defender for Cloud Apps.
 
 - **App/instance admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
@@ -133,7 +135,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
     > [!NOTE]
     >
     > - To assign groups to user group admins, you must first [import user groups](user-groups.md) from connected apps.
-    > - You can only assign user group admins permissions to imported Azure AD groups.
+    > - You can only assign user group admins permissions to imported Microsoft Entra groups.
 
 - **Cloud Discovery global admin**: Has permission to view and edit all Cloud Discovery settings and data. The Global Discovery admin has the following access:
 
@@ -176,16 +178,16 @@ The following specific admin roles can be configured in the Defender for Cloud A
 
 ## Override admin permissions
 
-If you want to override an administrator's permission from Azure AD or Microsoft 365, you can do so by manually adding the user to Defender for Cloud Apps and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure AD to have **Full access** in Defender for Cloud Apps, you can add her manually to Defender for Cloud Apps and assign her **Full access** to override her role and allow her the necessary permissions in Defender for Cloud Apps. Note that it is not possible to override Azure AD roles that grant Full access (Global administrator, Security administrator, and Cloud App Security administrator).
+If you want to override an administrator's permission from Microsoft Entra ID or Microsoft 365, you can do so by manually adding the user to Defender for Cloud Apps and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Microsoft Entra ID to have **Full access** in Defender for Cloud Apps, you can add her manually to Defender for Cloud Apps and assign her **Full access** to override her role and allow her the necessary permissions in Defender for Cloud Apps. Note that it is not possible to override Microsoft Entra roles that grant Full access (Global administrator, Security administrator, and Cloud App Security administrator).
 
 ## Add additional admins
 
-You can add additional admins to Defender for Cloud Apps without adding users to Azure AD administrative roles. To add additional admins, perform the following steps:
+You can add additional admins to Defender for Cloud Apps without adding users to Microsoft Entra administrative roles. To add additional admins, perform the following steps:
 
 > [!IMPORTANT]
 >
 > - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers and Global Readers groups.
-> - Only Azure AD Global Administrators or Security Administrators can edit the **Manage admin access** page and grant other users access to Defender for Cloud Apps.
+> - Only Microsoft Entra Global Administrators or Security Administrators can edit the **Manage admin access** page and grant other users access to Defender for Cloud Apps.
 
 1. Select the settings cog ![settings icon.](media/classic-settings-icon.png "settings icon") and then **Manage admin access**.
 
@@ -205,7 +207,7 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 
 ## Invite external admins
 
-Defender for Cloud Apps enables you to invite external admins (MSSPs) as administrators of your organization's (MSSP customer) Defender for Cloud Apps portal. To add MSSPs, make sure Defender for Cloud Apps is enabled on MSSPs tenant and then add them as [Azure AD B2B collaboration users](/azure/active-directory/external-identities/add-users-administrator) in the MSSPs customers Azure portal. Once added, MSSPs can be configured as administrators and assigned any of the roles available in Defender for Cloud Apps.
+Defender for Cloud Apps enables you to invite external admins (MSSPs) as administrators of your organization's (MSSP customer) Defender for Cloud Apps portal. To add MSSPs, make sure Defender for Cloud Apps is enabled on MSSPs tenant and then add them as [Microsoft Entra B2B collaboration users](/azure/active-directory/external-identities/add-users-administrator) in the MSSPs customers Azure portal. Once added, MSSPs can be configured as administrators and assigned any of the roles available in Defender for Cloud Apps.
 
 ### To add MSSPs to the MSSP customer Defender for Cloud Apps portal
 
@@ -220,10 +222,10 @@ MSSPs however, will need to access the MSSP customer Defender for Cloud Apps por
 
 MSSPs can use the following steps to obtain the MSSP customer portal tenant ID and then use the ID to access the tenant-specific URL:
 
-1. As an MSSP, sign in to Azure AD with your credentials.
+1. As an MSSP, sign in to Microsoft Entra ID with your credentials.
 
 1. Switch directory to the MSSP customer's tenant.
-1. Select **Azure Active Directory** > **Properties**. You'll find the MSSP customer tenant ID in the **Tenant ID** field.
+1. Select **Microsoft Entra ID** > **Properties**. You'll find the MSSP customer tenant ID in the **Tenant ID** field.
 1. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://portal.cloudappsecurity.com?tid=customer_tenant_id`.
 
 ## Admin activity auditing

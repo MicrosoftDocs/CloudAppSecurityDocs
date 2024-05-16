@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Cloud Discovery policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides an overview of how to get started using Defender for Cloud Apps to gain visibility across your organization into Shadow IT using Cloud Discovery.
 
@@ -22,7 +22,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **App discovery policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **App discovery policy**.
 
 1. In the **Policy template** field, select **New high volume app** or **New popular app** and apply the template.
 
@@ -43,7 +43,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **App discovery policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **App discovery policy**.
 
 1. In the **Policy template** field, select the **New risky app** template and apply the template.
 
@@ -89,7 +89,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Cloud Discovery anomaly detection policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Cloud Discovery anomaly detection policy**.
 
 1. In the **Policy template** field, select **Anomalous behavior in discovered users** or **Anomalous behavior in discovered IP addresses**.
 
@@ -112,7 +112,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Cloud Discovery anomaly detection policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Cloud Discovery anomaly detection policy**.
 
 1. Select the filter **App category** equals **Cloud storage**.
 
@@ -132,7 +132,7 @@ You must have the Google Workspace, Microsoft 365, or Salesforce app connected u
 
 ### Steps
 
-1. 1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **OAuth app policy**.
+1. 1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **OAuth app policy**.
 
 1. Select the filter **App** and set the app the policy should cover, Google Workspace, Microsoft 365, or Salesforce.
 

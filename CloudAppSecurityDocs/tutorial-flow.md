@@ -6,7 +6,7 @@ ms.topic: tutorial
 ---
 # Tutorial: Extend governance to endpoint remediation
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Defender for Cloud Apps provides predefined governance options for policies, such as suspend a user or make a file private. Using the native integration with Microsoft Power Automate, you can use a large ecosystem of software as a service (SaaS) connectors to build workflows to automate processes including remediation.
 
@@ -30,14 +30,14 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 - You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing/)
 - You must have a valid Microsoft Defender for Endpoint plan
-- The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
+- The Power Automate environment must be Microsoft Entra ID synced, Defender for Endpoint monitored, and domain-joined
 
 ## Phase 1: Generate a Defender for Cloud Apps API token<a name="generate-token"></a>
 
 > [!NOTE]
 > If you have previously created a workflow using a Defender for Cloud Apps connector, Power Automate automatically reuses the token and you can skip this step.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **System**, choose **API tokens**.
 1. Select **+Add token** to generate a new API token.
 1. In the **Generate new token** pop-up, enter the token name (for example, "Flow-Token"), and then select **Generate**.
@@ -67,7 +67,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 ## Phase 3: Configure the flow<a name="configure-flow"></a>
 
 > [!NOTE]
-> If you have previously created a flow using an Azure AD connector, Power Automate automatically reuses the token and you can skip this step.
+> If you have previously created a flow using a Microsoft Entra connector, Power Automate automatically reuses the token and you can skip this step.
 
 1. In the list of apps, on the row in which **Defender for Cloud Apps** appears, select **Create**.
 
@@ -93,7 +93,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 ## Phase 4: Configure a policy to run the flow<a name="configure-policy"></a>
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**.
 
 1. In the list of policies, on the row where the relevant policy appears, choose the three dots at the end of the row, and then choose **Edit policy**.
 

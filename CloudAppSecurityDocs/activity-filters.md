@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Activities
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Microsoft Defender for Cloud Apps gives you visibility into all the activities from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps scans all the activities that happened - the retroactive scan period differs per app - and then it's updated constantly with new activities.
 
@@ -25,12 +25,15 @@ The basic filter provides great tools to start filtering your activities.
 
 ![basic activity log filter.](media/activity-log-filter-basic.png)
 
-You can expand the basic filter by selecting **Advanced filters**to drill down into more specific activities.
+You can expand the basic filter by selecting **Advanced filters** to drill down into more specific activities.
 
 ![advanced activity log filter.](media/activity-log-filter-advanced.png)
 
 > [!NOTE]
-> The Legacy tag is added to any activity policy that uses the older "user" filter. This filter will continue to work as usual. If you want to remove the Legacy tag, you can remove the filter and add the filter again using the new **User name** filter.
+> 
+> - The Legacy tag is added to any activity policy that uses the older "user" filter. This filter will continue to work as usual. If you want to remove the Legacy tag, you can remove the filter and add the filter again using the new **User name** filter.
+> 
+> - In some rare cases, the count of the events presented in the activity log may show a slightly higher number than the real number of events that apply for the filter and being presented.
 
 ## The Activity drawer
 

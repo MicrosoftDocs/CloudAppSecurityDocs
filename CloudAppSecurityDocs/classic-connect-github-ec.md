@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Connect GitHub Enterprise Cloud to Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing GitHub Enterprise Cloud organization using the App Connector APIs. This connection gives you visibility into and control over your organization's GitHub Enterprise Cloud use. For more information about how Defender for Cloud Apps protects GitHub Enterprise Cloud, see [Protect GitHub Enterprise](protect-github.md).
 
@@ -21,7 +21,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ### Verify your GitHub domains
 
-Verifying your domains is optional. However, we highly recommend that you do verify your domains so that Defender for Cloud Apps can match the domain emails of your GitHub organization's members to their corresponding Azure Active Directory user.
+Verifying your domains is optional. However, we highly recommend that you do verify your domains so that Defender for Cloud Apps can match the domain emails of your GitHub organization's members to their corresponding Microsoft Entra user.
 
 These steps can be completed independently of the [Configure GitHub Enterprise Cloud](#configure-github-enterprise-cloud) steps and can skipped if you have already verified your domains.
 
@@ -113,4 +113,4 @@ If you have any problems connecting the app, see [Troubleshooting App Connectors
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

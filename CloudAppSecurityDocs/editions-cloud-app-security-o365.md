@@ -6,7 +6,7 @@ ms.topic: overview
 ---
 # What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article describes the differences between Defender for Cloud Apps and Microsoft 365 Cloud App Security.
 
@@ -38,7 +38,7 @@ Microsoft 365 Cloud App Security is a subset of Microsoft Defender for Cloud App
 |Information Protection|Data Loss Prevention (DLP) support|Cross-SaaS DLP and data sharing control|Uses existing Office DLP (available in Office E3 and above)|
 ||App permissions and ability to revoke access|Yes|Yes|
 ||Policy setting and enforcement|Yes||
-||Integration with Azure Information Protection |Yes||
+||Integration with Microsoft Purview |Yes||
 ||Integration with third-party DLP solutions|Yes||
 |Threat Detection|Anomaly detection and behavioral analytics|For Cross-SaaS apps including Microsoft 365|For Microsoft 365 apps |
 ||Manual and automatic alert remediation|Yes|Yes|

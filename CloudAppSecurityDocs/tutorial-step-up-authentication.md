@@ -6,11 +6,11 @@ ms.topic: tutorial
 ---
 # Tutorial: Require step-up authentication (authentication context) upon risky action
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 As an IT admin today, you're stuck between a rock and hard place. You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. However, you want to protect the company's assets including proprietary and privileged information. How can you enable employees to access your cloud apps while protecting your data?
 
-This tutorial allows you to reevaluate Azure AD Conditional Access policies when users take sensitive actions during a session.
+This tutorial allows you to reevaluate Microsoft Entra Conditional Access policies when users take sensitive actions during a session.
 
 ## The threat
 
@@ -18,17 +18,17 @@ An employee logged in to SharePoint Online from the corporate office. During the
 
 ## The solution
 
-Protect your organization by requiring Azure AD Conditional Access policies to be reassessed during sensitive session actions the Defender for Cloud Apps Conditional Access App Control.
+Protect your organization by requiring Microsoft Entra Conditional Access policies to be reassessed during sensitive session actions the Defender for Cloud Apps Conditional Access App Control.
 
 ## Prerequisites
 
-- A valid license for Azure AD Premium P1 license
+- A valid license for Microsoft Entra ID P1 license
 
 - Configure a cloud app for SSO using one of the following authentication protocols:
 
     | IdP   | Protocols                           |
     | ----------- | -------------------------- |
-    | Azure AD    | SAML 2.0 or OpenID Connect |
+    | Microsoft Entra ID    | SAML 2.0 or OpenID Connect |
 
 - Make sure the [app is deployed to Defender for Cloud Apps](proxy-deployment-aad.md)
 
@@ -40,7 +40,7 @@ Defender for Cloud Apps session policies allow you to restrict a session based o
 
 Make sure you've configured your IdP solution to work with Defender for Cloud Apps, as follows:
 
-- For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+- For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md#configure-integration-with-azure-ad)
 
 - For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
 
@@ -48,7 +48,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 ### Step 2: Create a session policy
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Polices** -> **Policy management**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Polices** -> **Policy management**.
 
 1. In the **Policies** page, select **Create policy** followed by **Session policy**.
 
@@ -60,7 +60,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. Under **Activity source** in the **Activities matching all the following** section, select the filters:
 
-    - **Device tag**: Select **Does not equal**, and then select **Intune compliant**, **Hybrid Azure AD joined**, or **Valid client certificate**. Your selection depends on the method used in your organization for identifying managed devices.
+    - **Device tag**: Select **Does not equal**, and then select **Intune compliant**, **Microsoft Entra hybrid joined**, or **Valid client certificate**. Your selection depends on the method used in your organization for identifying managed devices.
 
     - **App**: Select the app you want to control.
 
@@ -77,7 +77,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 1. Under **Actions**, select **Require step-up authentication**.
 
     >[!NOTE]
-    >This requires [authentication context to be created in Azure AD](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/StepUpTags).
+    >This requires [authentication context to be created in Microsoft Entra ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/StepUpTags).
 
 1. Set the alerts you want to receive when the policy is matched. You can set a limit so that you don't receive too many alerts. Select if to get the alerts as an email message.
 
@@ -89,7 +89,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. You should be required to perform the action configured in the authentication context policy.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Polices** -> **Policy management**. Then select the policy you've created to view the policy report. A session policy match should appear shortly.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Polices** -> **Policy management**. Then select the policy you've created to view the policy report. A session policy match should appear shortly.
 
 1. In the policy report, you can see which logins where redirected to Microsoft Defender for Cloud Apps for session control, and which files were downloaded or blocked from the monitored sessions.
 

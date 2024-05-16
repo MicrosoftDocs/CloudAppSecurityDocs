@@ -1,61 +1,61 @@
 ---
-title: Use a custom log parser
+title: Use a custom log parser | Microsoft Defender for Cloud APps
 description: This article provides information about how to use the custom log parser to upload logs for devices that aren't supported to Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 12/20/2023
 ms.topic: how-to
 ---
 # Use a custom log parser
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Defender for Cloud Apps enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Defender for Cloud Apps. This can be a CSV parser or a custom key value parser.
 
 The custom parser enables you to use logs from unsupported firewalls by following this process.
 
-To configure a custom parser:
+**To configure a custom parser**:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then, in the top-right corner, select the **Actions** menu and select **Create Cloud Discovery snapshot report**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Cloud Discovery** >  **Actions** > **Create Cloud Discovery snapshot report**. For example:
 
-    ![Create new snapshot report.](media/create-new-snapshot-report.png)
+    ![Screenshot of the Create new snapshot report option.](media/create-new-snapshot-report.png)
 
-2. Enter a **Report name** and a **Description**
+1. Enter a **Report name** and a **Description**
 
-3. Under **Source**, select **Custom log format...**.
+1. Under **Source**, scroll all the way down and select **Custom log format...**. For example:
 
-    ![New snapshot report.](media/custom-log-upload.png)
+    ![Screenshot of the Create new Cloud Discovery snapshot report dialog.](media/custom-log-upload.png)
 
-4. Collect logs from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.
+1. Collect logs from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.
 
-5. Open the logs you want to process in a text editor. Review their format, making sure that the column names in the log correspond to the fields in the **Custom log format** screen.
+1. Open the logs you want to process in a text editor. Review their format, making sure that the column names in the log correspond to the fields in the **Custom log format** dialog.
 
-    ![Review field in custom log parser.](media/log-data.png)
+    Required fields are marked in the **Custom log format** dialog with an asterisk (*), and must be present in the logs in the same sequence as presented in the **Custom log format** dialog. Logs are processed only if the required fields are found in the log. Extra fields, which aren't used by Defender for Cloud Apps, are discarded.
 
-6. Then, fill in the fields based on your data to delineate which columns in the data correlate to specific fields in Defender for Cloud Apps. You may have to modify column names in your log file to correlate properly.
+1. In the **Custom log format** dialog, fill in the fields based on your data to delineate which columns in the data correlate to specific fields in Defender for Cloud Apps. You may have to modify column names in your log file to correlate properly.
 
     > [!NOTE]
-    > The fields are case-sensitive. Make sure you spell and type the names of the columns identically in Defender for Cloud Apps and in the log file. Also, make sure that the date format you choose is identical.
+    > The fields are case-sensitive. Make sure you spell and type the names of the columns identically in Defender for Cloud Apps and in the log file. Also, make sure that the date format you choose is identical. 
 
-    ![Fill in custom log parser fields.](media/custom-log-parser.png)
+    For example, the following images show a sample log file opened in a text editor, and the corresponding **Custom log format** dialog, populated.
 
-7. Select **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on **Edit**.
+    :::image type="content" source="media/log-data.png" alt-text="Screenshot of a log file opened in a text editor.":::
 
-8. Under **Upload traffic logs**, select the log file you modified and upload it. You can upload up to 20 files at once. Compressed and zipped files are also supported.
+    ![Screenshot of the Custom log format dialog, with populated values.](media/custom-log-parser.png)
 
-9. Select **Upload logs**.
+1. Select **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by selecting **Edit**.
 
-10. After upload completes, the status message will appear at the top-right corner of your screen letting you know that your log was successfully uploaded.
+1. Under **Upload traffic logs**, select the log file you modified and select **Upload logs** to upload it. You can upload up to 20 files at once. Compressed and zipped files are also supported.
 
-11. After you upload your log files, it will take some time for them to be parsed and analyzed.
-    After processing of your log files completes, you'll receive an email to notify you that it's done.
+After the upload completes, a status message shows at the top right-corner of your screen, letting you know that your log was successfully uploaded. 
 
-12. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.
-    ![processing log file menu bar.](media/processing-log-file-menu-bar.png)
+It'll take some time for your logs to be parsed and analyzed. A notification banner shows in the status bar at the top of the **Cloud Discovery > Dashboard** tab, showing you the processing status of your log files. For example:
 
-13. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by selecting the link in the status bar, or you can go Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**, and then under **Cloud Discovery**, select **Snapshot reports**.
+![Screenshot of a processing log file menu bar.](media/processing-log-file-menu-bar.png)
 
-14. Then select your snapshot report.
+When the processing of your log files is complete, you'll receive an email to notify you that it's done.
 
-    ![snapshot report management.](media/snapshot-report-management.png)
+View the report either by selecting the link in the status bar, or select **Settings** > **Cloud Apps** > **Cloud Discovery** > **Snapshot reports**. Select your snapshot report to open it. For example:
+
+![Screenshot of a the Snapshot reports page.](media/snapshot-report-management.png)
 
 ## Next steps
 

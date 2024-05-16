@@ -4,9 +4,10 @@ description: This article provides a list of possible issues when connecting you
 ms.date: 01/29/2023
 ms.topic: conceptual
 ---
+
 # Troubleshooting SIEM integration
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides a list of possible issues when connecting your SIEM to Defender for Cloud Apps and provides possible resolutions.
 
@@ -21,7 +22,7 @@ If you received a system alert regarding an issue with activity delivery through
 
 ### Step 1 – Configure a new SIEM Agent in parallel to your existing agent
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **System**, select **SIEM Agent**. Then select [add a new SIEM agent](siem.md), and use the wizard to configure the connection details to your SIEM. For example, you can create a new SIEM agent with the following configuration:
     - **Protocol**: TCP
     - **Remote host**: Any device where you can listen to a port. For example, a simple solution would be to use the same device as the agent and set the remote host IP address to 127.0.0.1
@@ -91,28 +92,62 @@ Newer versions of Java can cause problems with the SIEM agent. If you've install
     cd "C:\Program Files (x86)\Java\jre1.8.0_291\bin"
     ```
 
-1. Download each of the four Azure TLS Issuing CA certificates.
-
+1. Download each of the following Azure TLS Issuing CA certificates.
+    
     ```powershell
-    Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt" -OutFile "$env:temp\azuretls01.crt"
-    Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt" -OutFile "$env:temp\azuretls02.crt"
-    Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt" -OutFile "$env:temp\azuretls05.crt"
-    Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt" -OutFile "$env:temp\azuretls06.crt"
+        Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt" -OutFile "$env:temp\azuretls01.crt"
+        Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt" -OutFile "$env:temp\azuretls02.crt"
+        Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt" -OutFile "$env:temp\azuretls05.crt"
+        Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt" -OutFile "$env:temp\azuretls06.crt"
+        Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2003%20-%20xsign.crt" -OutFile "$env:temp\azuretls03.crt"
+        Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2004%20-%20xsign.crt" -OutFile "$env:temp\azuretls04.crt"
+        Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2007%20-%20xsign.crt" -OutFile "$env:temp\azuretls07.crt"
+        Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2008%20-%20xsign.crt" -OutFile "$env:temp\azuretls08.crt"
+    ```
+
+
+    ```bash
+        cd /tmp
+        wget https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt -O azuretls01.crt
+        wget https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt -O azuretls02.crt
+        wget https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt -O azuretls05.crt
+        wget https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt -O azuretls06.crt
+        wget https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2003%20-%20xsign.crt -O azuretls03.crt
+        wget https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2004%20-%20xsign.crt -O azuretls04.crt
+        wget https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2007%20-%20xsign.crt -O azuretls07.crt
+        wget https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20RSA%20TLS%20Issuing%20CA%2008%20-%20xsign.crt -O azuretls08.crt
     ```
 
 1. Import each CA certificate CRT file to the Java keystore, using the default keystore password *changeit*.
 
+    
     ```powershell
-    keytool -importcert -file "$env:temp\azuretls01.crt" -keystore ..\lib\security\cacerts -alias azuretls01crt -storepass changeit
-    keytool -importcert -file "$env:temp\azuretls02.crt" -keystore ..\lib\security\cacerts -alias azuretls02crt -storepass changeit
-    keytool -importcert -file "$env:temp\azuretls05.crt" -keystore ..\lib\security\cacerts -alias azuretls05crt -storepass changeit
-    keytool -importcert -file "$env:temp\azuretls06.crt" -keystore ..\lib\security\cacerts -alias azuretls06crt -storepass changeit
+        keytool -importcert -file "$env:temp\azuretls01.crt" -keystore ..\lib\security\cacerts -alias azuretls01crt -storepass changeit
+        keytool -importcert -file "$env:temp\azuretls02.crt" -keystore ..\lib\security\cacerts -alias azuretls02crt -storepass changeit
+        keytool -importcert -file "$env:temp\azuretls05.crt" -keystore ..\lib\security\cacerts -alias azuretls05crt -storepass changeit
+        keytool -importcert -file "$env:temp\azuretls06.crt" -keystore ..\lib\security\cacerts -alias azuretls06crt -storepass changeit
+        keytool -importcert -file "$env:temp\azuretls03.crt" -keystore ..\lib\security\cacerts -alias azuretls03crt -storepass changeit
+        keytool -importcert -file "$env:temp\azuretls04.crt" -keystore ..\lib\security\cacerts -alias azuretls04crt -storepass changeit
+        keytool -importcert -file "$env:temp\azuretls07.crt" -keystore ..\lib\security\cacerts -alias azuretls07crt -storepass changeit
+        keytool -importcert -file "$env:temp\azuretls08.crt" -keystore ..\lib\security\cacerts -alias azuretls08crt -storepass changeit
+    ```
+
+
+    ```bash
+        keytool -importcert -file "\tmp\azuretls01.crt" -keystore ..\lib\security\cacerts -alias azuretls01crt -storepass changeit
+        keytool -importcert -file "\tmp\azuretls02.crt" -keystore ..\lib\security\cacerts -alias azuretls02crt -storepass changeit
+        keytool -importcert -file "\tmp\azuretls05.crt" -keystore ..\lib\security\cacerts -alias azuretls05crt -storepass changeit
+        keytool -importcert -file "\tmp\azuretls06.crt" -keystore ..\lib\security\cacerts -alias azuretls06crt -storepass changeit
+        keytool -importcert -file "\tmp\azuretls03.crt" -keystore ..\lib\security\cacerts -alias azuretls03crt -storepass changeit
+        keytool -importcert -file "\tmp\azuretls04.crt" -keystore ..\lib\security\cacerts -alias azuretls04crt -storepass changeit
+        keytool -importcert -file "\tmp\azuretls07.crt" -keystore ..\lib\security\cacerts -alias azuretls07crt -storepass changeit
+        keytool -importcert -file "\tmp\azuretls08.crt" -keystore ..\lib\security\cacerts -alias azuretls08crt -storepass changeit
     ```
 
 1. To verify, view the Java keystore for Azure TLS issuing CA certificate aliases listed above.
 
-    ```powershell
-    keytool -list -keystore ..\lib\security\cacerts
+    ```
+        keytool -list -keystore ..\lib\security\cacerts
     ```
 
 1. Start the SIEM agent and review the new trace log file to confirm a successful connection.
@@ -123,3 +158,4 @@ Newer versions of Java can cause problems with the SIEM agent. If you've install
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+

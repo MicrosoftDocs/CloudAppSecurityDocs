@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Security posture management for SaaS apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Your SaaS application environments may be configured in a risky posture. Microsoft Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to make sure you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application.
 
@@ -40,7 +40,7 @@ Your organization must have Microsoft Defender for Cloud Apps licenses.
 
 ## How to manage your SaaS apps security posture
 
-1. The security recommendations will be shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation). Navigate to the [Microsoft 365 Defender portal](https://security.microsoft.com). Under the navigation bar, select **Secure score**, and go to **Recommended actions** tab.
+1. The security recommendations will be shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation). Navigate to the [Microsoft Defender Portal](https://security.microsoft.com). Under the navigation bar, select **Secure score**, and go to **Recommended actions** tab.
 
     ![Secure_Score_main_page.](media/classic-security-saas-secure-score-main-page.png)
 
@@ -60,4 +60,4 @@ Your organization must have Microsoft Defender for Cloud Apps licenses.
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

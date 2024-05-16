@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Working with the app page
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Cloud applications have become pivotal entities inside organizations, increasing productivity and enabling remote work. As adoption of these applications rises, Security and Compliance admins must deal with the risks that usage of cloud applications might expose the organization to.
 
@@ -41,7 +41,7 @@ Continue investigating by viewing the top 100 users, source IPs, and devices (wh
 After analyzing the risk versus the usage of the application, an admin can decide which app controls should be applied to this application using the app actions. Admins can control cloud applications by:
 
 - Tagging the app with built-in tags to enforce further access control on the network layer (endpoints or integrated 3rd party network appliances). For more information, see [Govern discovered apps](governance-discovery.md).
-- On-boarding the app to Azure AD to manage logins and govern users when applicable. For more information, see [Add an application to your tenant](/azure/active-directory/manage-apps/add-application-portal).
+- On-boarding the app to Microsoft Entra ID to manage logins and govern users when applicable. For more information, see [Add an application to your tenant](/azure/active-directory/manage-apps/add-application-portal).
 - Using Conditional Access app controls to monitor and control user sessions, prevent risky actions, and avert potential data exfiltration. For more information, see [Deploy Conditional Access App Control for catalog apps](proxy-deployment-aad.md).
 - Connecting the app via the app connectors in Defender for Cloud Apps when applicable. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 

@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Access Microsoft Defender for Cloud Apps with application context
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This page describes how to create an application to get programmatic access to Defender for Cloud Apps without a user. If you need programmatic access to Defender for Cloud Apps on behalf of a user, see [Get access with user context](api-authentication-user.md). If you aren't sure which access you need, see the [Managing API tokens](api-authentication.md) page.
 
@@ -15,17 +15,17 @@ Microsoft Defender for Cloud Apps exposes much of its data and actions through a
 
 In general, you’ll need to take the following steps to use the APIs:
 
-- Create an Azure Active Directory (Azure AD) application.
+- Create a Microsoft Entra application.
 - Get an access token using this application.
 - Use the token to access Defender for Cloud Apps API.
 
-This article explains how to create an Azure AD application, get an access token to Microsoft Defender for Cloud Apps, and validate the token.
+This article explains how to create a Microsoft Entra application, get an access token to Microsoft Defender for Cloud Apps, and validate the token.
 
 ## Create an app
 
 1. Sign in to [Azure](https://portal.azure.com) with a user that has the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
+2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
    ![Image of Microsoft Azure and navigation to application registration.](media/atp-azure-new-app2.png)
 
@@ -97,7 +97,7 @@ This article explains how to create an Azure AD application, get an access token
 
 ## Get an access token
 
-For more information on Azure AD tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Microsoft Entra tokens, see the [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Use PowerShell
 

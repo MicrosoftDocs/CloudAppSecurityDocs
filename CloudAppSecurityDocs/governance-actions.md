@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Governing connected apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Governance enables you to control what your users do across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Defender for Cloud Apps. Governance actions control what your users do across connected apps. For information about where you can use governance actions, see [Governing connected apps](governance-actions.md).
 
@@ -86,7 +86,7 @@ The following governance actions can be taken for connected apps either on a spe
 > [!NOTE]
 > In SharePoint and OneDrive, Defender for Cloud Apps supports user quarantine only for files in Shared Documents libraries (SharePoint Online) and files in the Documents library (OneDrive for Business).
 > 
-> Microsoft Defender for Microsoft 365 customers can control detected malware files in SharePoint and OneDrive via the [Microsoft 365 Defender **Quarantine** page](https://security.microsoft.com/quarantine?viewid=Files). For example, supported activities include recovering files, deleting files, and downloading files in password-protected ZIP files. These activities are limited to files that were not already quarantined by Microsoft Defender for Cloud Apps.
+> Microsoft Defender for Microsoft 365 customers can control detected malware files in SharePoint and OneDrive via the [Microsoft Defender XDR **Quarantine** page](https://security.microsoft.com/quarantine?viewid=Files). For example, supported activities include recovering files, deleting files, and downloading files in password-protected ZIP files. These activities are limited to files that were not already quarantined by Microsoft Defender for Cloud Apps.
 > In SharePoint, Defender for Cloud Apps supports quarantine tasks only for files with Shared Documents in path in English.
 > 
 > Actions will only show for connected apps.
@@ -106,17 +106,17 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Suspend user** – Suspend the user from the application.
     > [!NOTE]
-    > If your Azure Active Directory (Azure AD) is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted.
+    > If your Microsoft Entra ID is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Microsoft Entra settings and this governance action will be reverted.
 
   - **Require user to sign in again** – Signs the user out and requires them to sign in again.
 
-  - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. For more information How Azure AD works with risk levels, see [How does Azure AD use my risk feedback](/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
+  - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Microsoft Entra ID to be enforced. For more information How Microsoft Entra ID works with risk levels, see [How does Microsoft Entra ID use my risk feedback](/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
 
   ![Defender for Cloud Apps activity policy governance actions.](media/activity-policy-ref6.png)
 
 ## Revoke an OAuth app and notify user
 
-For Google Workspace and Salesforce, it's possible to revoke permission to an OAuth app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Azure AD.
+For Google Workspace and Salesforce, it's possible to revoke permission to an OAuth app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Microsoft Entra ID.
 
 1. On the **Google** or **Salesforce** tabs on the **App governance** page, select the three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: <https://security.google.com/settings/security/permissions?hl=en&pli=1>  Select the app and select 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 2. You can also revoke permissions to use the app for the user. Select the icon at the end of the app row in the table and selecting **Revoke app**. For example:
@@ -136,13 +136,13 @@ After creating multiple policies, a situation may arise in which the governance 
 
 ### Conflicts in user sync
 
-- If your Azure AD is set to automatically sync with the users in your Active Directory on-premises environment, the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted.
+- If your Microsoft Entra ID is set to automatically sync with the users in your Active Directory on-premises environment, the settings in the on-premises environment will override the Microsoft Entra settings and this governance action will be reverted.
 
 ## Governance log
 
 The Governance log provides a status record of each task that you set Defender for Cloud Apps to run, including both manual and automatic tasks. These tasks include those you set in policies, governance actions that you set on files and users, and any other action you set Defender for Cloud Apps to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log.
 
-To view the governance log, in the Microsoft 365 Defender portal, under **Cloud Apps**, select **Governance log**.
+To view the governance log, in the Microsoft Defender Portal, under **Cloud Apps**, select **Governance log**.
 
 The following table is the full list of actions the Defender for Cloud Apps portal enables you to take. These actions are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
 For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md).
@@ -155,7 +155,7 @@ For information about how governance actions are treated when there are policy c
 |Accounts |File |Transfer all files ownership | On an account, you transfer one user's files to all be owned by a new person you select. The previous owner becomes an editor and can no longer change sharing settings. The new owner will receive an email notification about the change of ownership. | Google Workspace|
 |Accounts, Activity policy | Account | Suspend user| Sets user to have no access and no ability to sign in. If they're logged in when you set this action, they're immediately locked out. |Google Workspace, Box, Office, Salesforce|
 |Activity policy, Accounts | Account |Require user to sign in again|Revokes all refresh tokens and session cookies issues to applications by the user. This action will prevent access to any of the organization's data and will force the user to sign into all applications again.| Google Workspace, Office|
-|Activity policy, Accounts | Account |Confirm user compromised|Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. | Office |
+|Activity policy, Accounts | Account |Confirm user compromised|Set the user's risk level to high. This causes the relevant policy actions defined in Microsoft Entra ID to be enforced. | Office |
 |Activity policy, Accounts | Account | Revoke admin privileges |Revokes privileges for an admin account. For example, setting an activity policy that revokes admin privileges after 10 failed login attempts. | Google Workspace|
 |App dashboard > App permissions |Permissions|Unban app| In Google and Salesforce: remove the banning from the app and allow users to give permissions to the third-party app with their Google or Salesforce. In Microsoft 365: restores the permissions of the third-party app's to Office. |Google Workspace, Salesforce, Office |
 |App dashboard > App permissions |Permissions| Disable app permissions | Revoke a third-party app's permissions to Google, Salesforce, or Office. This is a one-time action that will occur on all existing permissions, but won't prevent future connections.|Google Workspace, Salesforce, Office |
@@ -173,11 +173,11 @@ For information about how governance actions are treated when there are policy c
 |File policy and Files|File | [Put in admin quarantine](use-case-admin-quarantine.md) |Removes any permissions from the file and moves the file to a quarantine folder in a location for the admin. This action enables the admin to review the file and remove it.| Microsoft 365 SharePoint, OneDrive for Business, Box|
 |File policy and Files|File | Apply sensitivity label|Applies a Microsoft Purview Information Protection sensitivity label to files automatically based on the conditions set in the policy.| Box, One Drive, Google Workspace, SharePoint |
 |File policy and Files|File | Remove sensitivity label | Removes a Microsoft Purview Information Protection sensitivity label from files automatically based on the conditions set in the policy. You can remove labels only if they do not include protection, and they were applied from within Defender for Cloud Apps, not labels applied directly in Information Protection.| Box, One Drive, Google Workspace, SharePoint |
-|File policy, Activity policy, Alerts | App |Require users to sign in again| You can require users to sign in again to all Microsoft 365 and Azure AD apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option. | Microsoft 365, Azure AD |
+|File policy, Activity policy, Alerts | App |Require users to sign in again| You can require users to sign in again to all Microsoft 365 and Microsoft Entra apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option. | Microsoft 365, Microsoft Entra ID |
 |Files |File |Restore from user quarantine |Restores a user from being quarantined. |Box |
 |Files |File | Grant read permissions to myself| Grants read permissions for the file for yourself so you can access the file and understand if it has a violation or not.| Google Workspace|
 |Files |File | Allow editors to share | In Google Drive, the default editor permission of a file allows sharing as well. This governance action is the opposite of Remove editor's ability to share and enables the editor to share the file. | Google Workspace|
-|Files |File | Protect | Protect a file with Azure Information Protection by applying an organization template. | Microsoft 365 (SharePoint and OneDrive) |
+|Files |File | Protect | Protect a file with Microsoft Purview by applying an organization template. | Microsoft 365 (SharePoint and OneDrive) |
 |Files |File | Revoke read permissions form myself | Revokes read permissions for the file for yourself, useful after granting yourself permission to understand if a file has a violation or not.| Google Workspace|
 |Files, File policy|File | Transfer file ownership | Changes the owner - in the policy you choose a specific owner. | Google Workspace|
 |Files, File policy|File | Reduce public access|This action enables you to set publicly available files to be available only with a shared link.| Google Workspace|
@@ -201,4 +201,3 @@ For information about how governance actions are treated when there are policy c
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-

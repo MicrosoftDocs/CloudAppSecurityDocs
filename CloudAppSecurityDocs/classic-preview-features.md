@@ -29,7 +29,7 @@ When working with features in public preview, these features:
 
 ## Required permissions
 
-Accounts assigned the following Azure Active Directory (Azure AD) roles can turn on Defender for Cloud Apps features:
+Accounts assigned the following Microsoft Entra roles can turn on Defender for Cloud Apps features:
 
 - Global administrator
 - Security administrator
@@ -50,12 +50,9 @@ You'll know you have preview features turned on when you see that the **Enable p
 
 :::image type="content" source="media/classic-preview-features.png" alt-text="Enable preview features.":::
 
-> [!NOTE]
-> To learn how to enable preview features in Defender for Cloud Apps in the Microsoft 365 Defender portal, see [Preview Features in Defender for Cloud Apps](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps#preview-features-in-defender-for-cloud-apps).
-
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Defender for Cloud Apps best practices](best-practices.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

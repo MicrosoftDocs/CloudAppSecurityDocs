@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Fetch - Activities API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the GET request to fetch the activity matching the specified primary key.
 
@@ -29,7 +29,7 @@ GET /api/v1/activities/<pk>/
 Here is an example of the request.
 
 ```rest
-curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/activities/<pk>/"
 ```
 
 ### Response

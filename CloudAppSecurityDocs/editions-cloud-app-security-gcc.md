@@ -1,12 +1,12 @@
 ---
 title: US Government offerings
 description: This article describes the features differences between Microsoft Defender for Cloud Apps for US Government offerings and the commercial offering.
-ms.date: 04/03/2023
+ms.date: 04/11/2024
 ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps for US Government offerings
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 The Microsoft Defender for Cloud Apps GCC High and Department of Defense (DoD) offerings is built on the Microsoft Azure Government Cloud and is designed to inter-operate with Microsoft 365 GCC High and DoD. The GCC High and DoD offerings utilizes the same underlying technologies and capabilities as the commercial instance of Microsoft Defender for Cloud Apps. Therefore, the commercial offering's public documentation should be used as a starting point for deploying and operating the service.
 
@@ -26,15 +26,11 @@ To get started, use the [Basic Setup](general-setup.md) page for access to the M
 
 ## Feature variations in Microsoft Defender for Cloud Apps US Government offerings
 
-Unless otherwise specified, new feature releases, including preview features, documented in [What's new with Microsoft Defender for Cloud Apps](release-notes.md), will be available in GCC High and DoD environments within three months of release in the Microsoft Defender for Cloud Apps commercial environment, unless otherwise noted.
+Unless otherwise specified, new feature releases, including preview features, documented in [What's new with Microsoft Defender for Cloud Apps](release-notes.md), will be available in GCC High and DoD environments within three months of release in the Microsoft Defender for Cloud Apps commercial environment.
 
 ## Feature support
 
-Microsoft Defender for Cloud Apps for US Government offers parity with the Microsoft Defender for Cloud Apps commercial environment, with the following exceptions:
-
-| Feature Name                           | Description                                                  | GCC     | GCC High | DoD     |
-| -------------------------------------- | ------------------------------------------------------------ | ------- | -------- | ------- |
-|**App governance in Microsoft Defender for Cloud Apps** | App governance delivers full visibility, remediation, and governance into how Azure-connected apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. | Roadmap | Roadmap  | Roadmap |
+Microsoft Defender for Cloud Apps for US Government offers parity with the Microsoft Defender for Cloud Apps commercial environment.
 
 ## Next steps
 

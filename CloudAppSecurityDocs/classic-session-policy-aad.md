@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Session policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Microsoft Defender for Cloud Apps session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of [allowing or blocking access completely](access-policy-aad.md), with session control you can allow access while monitoring the session and/or limit specific session activities using the reverse proxy capabilities of Conditional Access App Control.
 
@@ -25,10 +25,10 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 ## Prerequisites to using session policies
 
 * Defender for Cloud Apps license (stand-alone or part of another license)
-* A license for Azure AD Premium P1 (as a stand-alone license or as an E5 license), or the license required by your identity provider (IdP) solution
+* A license for Microsoft Entra ID P1 (as a stand-alone license or as an E5 license), or the license required by your identity provider (IdP) solution
 * The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 * Make sure you've configured your IdP solution to work with Defender for Cloud Apps, as follows:
-  * For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  * For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md#configure-integration-with-azure-ad)
   * For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
 
 ## Create a Defender for Cloud Apps session policy
@@ -124,7 +124,7 @@ When **Block** is set as the **Action** you want to take in the Defender for Clo
 
 ## Require step-up authentication (authentication context)
 
-When **Session control type** is set to **Block activities, Control file download (with inspection), Control file upload (with inspection)**, you can select an **Action** of **Require step-up authentication**. When this action is selected, Defender for Cloud Apps will redirect the session to Azure AD Conditional Access for policy re-evaluation, whenever the selected activity occurs. Based on the configured authentication context in Azure AD, claims such as multi-factor authentication and device compliance can be checked during a session.
+When **Session control type** is set to **Block activities, Control file download (with inspection), Control file upload (with inspection)**, you can select an **Action** of **Require step-up authentication**. When this action is selected, Defender for Cloud Apps will redirect the session to Microsoft Entra Conditional Access for policy re-evaluation, whenever the selected activity occurs. Based on the configured authentication context in Microsoft Entra ID, claims such as multi-factor authentication and device compliance can be checked during a session.
 
 ## <a name="block-activities"></a>Block specific activities
 
@@ -192,6 +192,6 @@ For example, if a user uploads a file without a sensitivity label, a message can
 ## See also
 
 > [!div class="nextstepaction"]
-> [Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control](use-case-proxy-block-session-aad.md)
+> [Blocking downloads on unmanaged devices using Microsoft Entra Conditional Access App Control](use-case-proxy-block-session-aad.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

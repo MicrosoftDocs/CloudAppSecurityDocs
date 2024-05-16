@@ -4,19 +4,22 @@ description: This article provides information about how to scope your Defender 
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Scoped deployment
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Microsoft Defender for Cloud Apps enables you to scope your deployment. Scoping allows you to select certain user groups to be monitored for apps or excluded from monitoring.
 
+> [!NOTE]
+> Scoped Deployment **does not** reduce the number of files that are scanned from the configured App connectors.
 ## Include or exclude user groups
 
 You may not want to use Microsoft Defender for Cloud Apps for all the users in your organization. Scoping is especially useful when you want to limit your deployment because of license restrictions. You may also need to limit because of compliance regulations requiring you not monitor users from certain countries/regions. For example, use scoped deployment to only monitor US-based employees. Alternatively, you can avoid showing any activities for your users based in Germany.
 
 - To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Defender for Cloud Apps. By default, you'll see the following groups:
 
-  - **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Azure AD applications.
+  - **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Microsoft Entra applications.
 
   - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
 
@@ -24,7 +27,7 @@ You may not want to use Microsoft Defender for Cloud Apps for all the users in y
 
 - Excluded user groups override included user groups. Meaning that if you include the user group "UK-employees" but exclude "Marketing", marketing members from the UK won't be monitored even if they're members of the group **UK-employees**.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Scoped deployment and privacy**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Scoped deployment and privacy**.
 
 1. To scope your deployment to include or exclude specific groups, you must first [import user groups](user-groups.md) into Microsoft Defender for Cloud Apps.
 

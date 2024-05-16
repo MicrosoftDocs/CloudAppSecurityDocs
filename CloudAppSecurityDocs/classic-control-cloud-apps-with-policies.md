@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Control cloud apps with policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Policies allow you to define the way you want your users to behave in the cloud. They enable you to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. If necessary, you can integrate remediation work flows to achieve complete risk mitigation. There are multiple types of policies that correlate to the different types of information you want to gather about your cloud environment and the types of remediation actions you may want to take.
 
@@ -181,4 +181,4 @@ To download the exported report:
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

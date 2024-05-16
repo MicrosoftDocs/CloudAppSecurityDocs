@@ -1,8 +1,8 @@
 ---
-title: App governance in Microsoft Defender for Cloud Apps and Microsoft 365 Defender
-ms.date: 05/28/2023
+title: App governance in Microsoft Defender for Cloud Apps and Microsoft Defender XDR
+ms.date: 01/23/2024
 ms.topic: conceptual
-description: Implement Microsoft app governance capabilities over Microsoft Defender for Cloud Apps and Microsoft 365 Defender to govern your apps.
+description: Implement Microsoft app governance capabilities over Microsoft Defender for Cloud Apps and Microsoft Defender XDR to govern your apps.
 ---
 
 # App governance in Microsoft Defender for Cloud Apps
@@ -15,13 +15,13 @@ To understand the potential risks and stop these types of attacks, you need to g
 
 ## App governance features
 
-App governance in Defender for Cloud Apps is a set of security and policy management capabilities designed for OAuth-enabled apps registered on Azure Active Directory (Azure AD), Google, and Salesforce. App governance delivers visibility, remediation, and governance into how these apps and their users access, use, and share sensitive data in Microsoft 365 and other cloud platforms through actionable insights and automated policy alerts and actions.
+App governance in Defender for Cloud Apps is a set of security and policy management capabilities designed for OAuth-enabled apps registered on Microsoft Entra ID, Google, and Salesforce. App governance delivers visibility, remediation, and governance into how these apps and their users access, use, and share sensitive data in Microsoft 365 and other cloud platforms through actionable insights and automated policy alerts and actions.
 
 App governance also enables you to see which user-installed OAuth applications have access to data on Microsoft 365, Google Workspace, and Salesforce. It tells you what permissions the apps have and which users have granted access to their accounts.
 
 App governance insights enable you to make informed decisions around blocking or restricting apps that present significant risk to your organization. For example:
 
-- **Insights**: See a view of all non-Microsoft apps registered to Azure Active Directory, Google, or Salesforce in your organization on a single dashboard. You can see the status of apps and their activities, and react or respond to them.
+- **Insights**: See a view of all non-Microsoft apps registered to Microsoft Entra ID, Google, or Salesforce in your organization on a single dashboard. You can see the status of apps and their activities, and react or respond to them.
 
 - **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using noncompliant or malicious apps and limiting the access of risky apps to your data.
 
@@ -31,19 +31,19 @@ App governance insights enable you to make informed decisions around blocking or
 
 ## Share data across Microsoft services
 
-View app governance data together with other Defender for Cloud Apps data and Azure AD data to aggregate information and jump between views.
+View app governance data together with other Defender for Cloud Apps data and Microsoft Entra data to aggregate information and jump between views.
 
 For example:
 
-- On the app governance **OAuth apps** page, view aggregated sign-in activity for each app. From there, select links to go to the Azure Active Directory admin center for the details of sign-in events.
+- On the **App governance** page, view aggregated sign-in activity for each app. Select an app to view details in a side pane, and select **View in Azure AD** to view more details in the Microsoft Entra admin center.
 
-- On other **Cloud apps** pages in Microsoft 365 Defender, view API usage levels and aggregate data transfer. From there, select links to go to the app governance **OAuth apps** page for more details.
+- On other **Cloud apps** pages in Microsoft Defender XDR, view API usage levels and aggregate data transfer. From there, select links to go to the app governance **OAuth apps** page for more details.
 
-App governance alerts show up in the Microsoft 365 Defender alerts list as alerts with the **Detection source** field set to *App Governance*.
+App governance alerts show up in the Microsoft Defender XDR alerts list as alerts with the **Detection source** field set to *App Governance*.
 
 ## Next steps
 
-View the **App governance > Overview** tab in the [Microsoft 365 Defender portal](https://aka.ms/appgovernance). Your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
+View the **App governance > Overview** tab in the [Microsoft Defender Portal](https://aka.ms/appgovernance). Your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
 For more information, see [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md).
 
@@ -55,14 +55,12 @@ For more information, see [Turn on app governance for Microsoft Defender for Clo
 
 - [Microsoft shifts to a comprehensive SaaS security solution - Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2023/02/15/microsoft-shifts-to-a-comprehensive-saas-security-solution/)
 
-- [Improve your app posture and hygiene using Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/improve-your-app-posture-and-hygiene-using-microsoft-defender/ba-p/3742361)
+- [Improve your app posture and hygiene using Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/improve-your-app-posture-and-hygiene-using-microsoft-defender/ba-p/3742361)
 
 **Videos**:
 
 - [App governance video playlist](https://youtube.com/playlist?list=PLyhj1WZ29G66k4F_OZeMkQymRGyqHwZVp)
 
 - [Microsoft Mechanics Video on app governance](https://www.youtube.com/watch?v=KmE8LW_tJ1M).
-
-- [App Governance segment in the Security Summit video](https://mssecuritysummit.event.microsoft.com/Home/Security) starts at 11:50 mark. You need to register to view.
 
 - [App Governance is a Key Part of a Customers' Zero Trust Journey - YouTube](https://www.youtube.com/watch?v=XuGZu8ja134)

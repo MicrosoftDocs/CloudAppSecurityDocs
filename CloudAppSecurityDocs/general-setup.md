@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Basic setup for Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 The following procedure gives you instructions for customizing your Microsoft Defender for Cloud Apps environment.
 
@@ -16,7 +16,7 @@ For portal access requirements, see [Portal access](network-requirements.md#port
 
 ## Set up your Defender for Cloud Apps environment
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **System** -> **Organization details**, it's important that you provide an **Organization display name** for your organization. It's displayed on emails and web pages sent from the system.
 
@@ -39,7 +39,7 @@ For portal access requirements, see [Portal access](network-requirements.md#port
 > [!NOTE]
 > If you use ExpressRoute, Defender for Cloud Apps is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Defender for Cloud Apps apps APIs and traffic sent to Defender for Cloud Apps APIs, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security.
 >
-> Microsoft 365 Defender portal usage is not included in the ExpressRoute integration.
+> Microsoft Defender Portal usage is not included in the ExpressRoute integration.
 >
 > For more information about Microsoft Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
 

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Delete IP address range - Data Enrichment API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the DELETE request to delete an IP address range.
 
@@ -23,7 +23,7 @@ DELETE /api/v1/subnet/<ip_range_id>/
 Here is an example of the request.
 
 ```rest
-curl -X DELETE -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/<ip_range_id>/"
+curl -X DELETE -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/subnet/<ip_range_id>/"
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Govern discovered apps using Microsoft Defender for Endpoint
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for Endpoint](mde-integration.md) provides a seamless Shadow IT visibility and control solution. Our integration enables Defender for Cloud Apps administrators to block access of end users to cloud apps, by natively integrating Defender for Cloud Apps app governance controls with Microsoft Defender for Endpoint's network protection. Alternatively, administrators can take a gentler approach of warning users when they access risky cloud apps.
 
@@ -43,7 +43,7 @@ Use the following steps to enable access control for cloud apps:
     > [!NOTE]
     > It can take up to 30 minutes for this setting to take effect.
 
-1. In Microsoft 365 Defender, go to **Settings** > **Endpoints** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/microsoft-365/security/defender-endpoint/indicator-ip-domain).
+1. In Microsoft Defender XDR, go to **Settings** > **Endpoints** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/microsoft-365/security/defender-endpoint/indicator-ip-domain).
 
     This allows you to leverage Microsoft Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Defender for Cloud Apps, either by manually assigning [app tags](governance-discovery.md#sanctioningunsanctioning-an-app) to specific apps or automatically using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
@@ -57,7 +57,7 @@ Use the following steps to enable access control for cloud apps:
    - Microsoft 365 E5
 1. Onboarded machines: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
 1. [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
-1. Enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
+1. Enable [cloud app blocking with Defender for Endpoint](#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
 
 ### Blocking apps
 
@@ -160,4 +160,4 @@ Once controls are applied, you can monitor app usage patterns by the applied con
 > [!div class="nextstepaction"]
 > [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

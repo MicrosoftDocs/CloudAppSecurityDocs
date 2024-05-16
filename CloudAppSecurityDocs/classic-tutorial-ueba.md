@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Tutorial: Investigate risky users
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often aren't connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Defender for Cloud Apps now simplifies this by taking away the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
 
@@ -36,7 +36,7 @@ The investigation priority score is based on security alerts, abnormal activitie
 
 If you select the score value for an alert or an activity, you can view the evidence that explains how Defender for Cloud Apps scored the activity.
 
-Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Defender for Cloud Apps. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they're compromised, exfiltrating data, or acting as insider threats.
+Every Microsoft Entra user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Defender for Cloud Apps. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they're compromised, exfiltrating data, or acting as insider threats.
 
 Defender for Cloud Apps uses the following to measure risk:
 
@@ -127,4 +127,4 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

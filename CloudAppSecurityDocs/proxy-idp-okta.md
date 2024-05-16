@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Deploy Conditional Access App Control for any web app using Okta as the identity provider (IdP)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any non-Microsoft IdP. This article describes how to route app sessions from Okta to Defender for Cloud Apps for real-time session controls.
 
@@ -23,7 +23,7 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 ## To configure session controls for your app using Okta as the IdP
 
-Use the following steps to route your web app sessions from Okta to Defender for Cloud Apps. For Azure AD configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
+Use the following steps to route your web app sessions from Okta to Defender for Cloud Apps. For Microsoft Entra configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md).
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by Okta using one of the following methods:
@@ -70,7 +70,7 @@ Use the following steps to route your web app sessions from Okta to Defender for
 
 ## Step 2: Configure Defender for Cloud Apps with your app's SAML information
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 1. Select **+Add**, and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
 1. On the **APP INFORMATION** page, select **Fill in data manually**, in the **Assertion consumer service URL** enter the Salesforce **Login URL** you noted earlier, and then click **Next**.

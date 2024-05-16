@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Discovered app filters and queries in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 When you have a large number of discovered apps, you'll find it useful to filter and query them. This article describes what filters are available and how to query your discovered apps.
 
@@ -35,7 +35,7 @@ You can create a custom app tag. These tags can then be used as filters for deep
 
 To create a custom app tag:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **App tags**. Then select **+Addd app tag**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **App tags**. Then select **+Addd app tag**.
 
    ![create custom app tag.](media/create-app-tag.png)
 

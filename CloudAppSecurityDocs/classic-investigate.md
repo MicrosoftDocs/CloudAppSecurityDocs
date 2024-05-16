@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Investigate cloud app risks and suspicious activity
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 After Microsoft Defender for Cloud Apps runs in your cloud environment, you'll need a stage of learning and investigating. Learn to use the Microsoft Defender for Cloud Apps tools to gain a deeper understanding of what's happening in your cloud environment. Based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk. This article describes how to do an investigation to get a better understanding of your cloud environment.
 
@@ -79,7 +79,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
     - Do you want to revoke a user's permission to a specific app or require a specific user to use multi-factor authentication?
 
-    - You can drill down into the user's account by selecting the three dots at the end of the user's account row and selecting an action to take. Take an action such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Azure Active Directory, you can also select **Azure AD account settings** to get easy access to advanced user management features. Examples of management features include group management, MFA, details about the user's sign ins, and the ability to block sign in.
+    - You can drill down into the user's account by selecting the three dots at the end of the user's account row and selecting an action to take. Take an action such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Microsoft Entra ID, you can also select **Microsoft Entra account settings** to get easy access to advanced user management features. Examples of management features include group management, MFA, details about the user's sign ins, and the ability to block sign in.
 
 4. Go to **Investigate**, followed by **Connected apps** then select an app. The app dashboard opens and gives you information and insights. You can use the tabs across the top to check:
 
@@ -147,4 +147,4 @@ Now that you have the policy in place, you're surprised to see that you get an a
 
 To learn how to control your organization's cloud app, see [Control](control.md).
 
-[!INCLUDE [Open support ticket](includes/support.md)].
+[!INCLUDE [Open support ticket](includes/classic-support.md)].

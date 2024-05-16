@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Information protection policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Defender for Cloud Apps file policies allow you to enforce a wide range of automated processes. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
 
@@ -221,7 +221,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Microsoft Purview Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
+- [Microsoft Purview Information Protection integration](azip-integration.md) is enabled and GDPR label is configured in Microsoft Purview.
 
 ### Steps
 
@@ -242,9 +242,9 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
 
-- Make sure your app is a SAML-based app that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+- Make sure your app is a SAML-based app that utilizes Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
@@ -269,8 +269,8 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
-- Make sure your app is a SAML-based app that uses Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
+- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
@@ -299,9 +299,9 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
 
-- Make sure your app is a SAML-based app that uses Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 - sensitivity labels from Microsoft Purview Information Protection must be configured and used inside your organization.
 
@@ -330,4 +330,4 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

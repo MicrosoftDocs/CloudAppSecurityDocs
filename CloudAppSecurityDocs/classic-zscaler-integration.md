@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Integrate Defender for Cloud Apps with Zscaler
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 If you work with both Defender for Cloud Apps and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Zscaler, as a standalone cloud proxy, monitors your organization's traffic enabling you to set policies for blocking transactions. Together, Defender for Cloud Apps and Zscaler provide the following capabilities:
 
@@ -17,7 +17,7 @@ If you work with both Defender for Cloud Apps and Zscaler, you can integrate the
 
 ## Prerequisites
 
-- A valid license for Microsoft Defender for Cloud Apps, or a valid license for Azure Active Directory Premium P1
+- A valid license for Microsoft Defender for Cloud Apps, or a valid license for Microsoft Entra ID P1
 - A valid license for Zscaler Cloud 5.6
 - An active Zscaler NSS subscription
 
@@ -49,4 +49,4 @@ If you work with both Defender for Cloud Apps and Zscaler, you can integrate the
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

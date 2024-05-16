@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Create snapshot Cloud Discovery reports
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 It's important to upload a log manually and let Microsoft Defender for Cloud Apps parse it before trying to use the automatic log collector. For information on how the log collector works and the expected log format, see [Using traffic logs for Cloud Discovery](#log-format).
 
@@ -16,7 +16,7 @@ To create a snapshot report:
 
 1. Collect log files from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud discovery**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Cloud discovery**.
 1. In the top-right corner, pull down **Actions**, and select **Create Cloud Discovery snapshot report.**
 
     ![Create new snapshot report.](media/create-new-snapshot-report.png)
@@ -50,7 +50,7 @@ To create a snapshot report:
 1. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.
     ![processing log file menu bar.](media/processing-log-file-menu-bar.png)
 
-1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report by selecting the link in the status bar. Or, in the Microsoft 365 Defender portal, select **Settings**.
+1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report by selecting the link in the status bar. Or, in the Microsoft Defender Portal, select **Settings**.
 
 1. Then under **Cloud Discovery**, select **Snapshot reports**, and select your snapshot report.
 

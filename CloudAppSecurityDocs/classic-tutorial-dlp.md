@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Tutorial: Discover and protect sensitive information in your organization
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 In a perfect world, all your employees understand the importance of information protection and work within your policies. In the real world, it's likely that a busy partner who frequently works with accounting information will inadvertently upload a sensitive document to your Box repository with incorrect permissions. A week later you realize your enterprise's confidential information was leaked to your competition.
 
@@ -33,7 +33,7 @@ Our approach to information protection can be split into the following phases th
 1. **Connect apps**: The first step in discovering which data is being used in your organization, is to connect cloud apps used in your organization to Defender for Cloud Apps. Once connected, Defender for Cloud Apps can scan data, add classifications, and enforce policies and controls. Depending on how apps are connected affects how, and when, scans and controls are applied. You can connect your apps in one of the following ways:
 
     - **Use an app connector**: Our app connectors use the APIs supplied by app providers. They provide greater visibility into and control over the apps used in your organization. Scans are performed periodically (every 12 hours) and in real time (triggered each time a change is detected). For more information and instructions on how to add apps, see [Connecting apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-    - **Use Conditional Access App Control**: Our Conditional Access App Control solution uses a reverse proxy architecture that is uniquely integrated with Azure Active Directory (AD) Conditional Access. Once configured in Azure AD, users will be routed to Defender for Cloud Apps where access and session policies are enforced to protect the data apps attempt to use. This connection method allows you to apply controls to [any app](proxy-deployment-any-app.md). For more information, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md).
+    - **Use Conditional Access App Control**: Our Conditional Access App Control solution uses a reverse proxy architecture that is uniquely integrated with Microsoft Entra Conditional Access. Once configured in Microsoft Entra ID, users will be routed to Defender for Cloud Apps where access and session policies are enforced to protect the data apps attempt to use. This connection method allows you to apply controls to [any app](proxy-deployment-any-app.md). For more information, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md).
 
 1. **Investigate**: After you connect an app to Defender for Cloud Apps using its API connector, Defender for Cloud Apps scans all the files it uses. You can then go to the file investigation page (**Investigate** > **Files**) to get an overview of the files shared by your cloud apps, their accessibility, and their status. For more information, see [Investigate files](file-filters.md).
 
@@ -121,4 +121,4 @@ In conclusion, managing sensitive information in this way ensures that data save
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/classic-support.md)]  

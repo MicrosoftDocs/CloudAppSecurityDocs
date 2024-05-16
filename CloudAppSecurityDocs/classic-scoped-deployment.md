@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Scoped deployment
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Microsoft Defender for Cloud Apps enables you to scope your deployment. Scoping allows you to select certain user groups to be monitored for apps or excluded from monitoring.
 
@@ -17,7 +17,7 @@ You may not want to use Microsoft Defender for Cloud Apps for all the users in y
 
 - To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Defender for Cloud Apps. By default, you'll see the following groups:
 
-  - **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Azure AD applications.
+  - **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Microsoft Entra applications.
 
   - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
 
@@ -83,4 +83,4 @@ The following user activities are monitored:
 > [!div class="nextstepaction"]
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/classic-support.md)]  

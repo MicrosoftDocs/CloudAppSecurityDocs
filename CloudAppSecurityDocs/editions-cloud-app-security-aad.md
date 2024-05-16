@@ -1,13 +1,13 @@
 ---
 title: Discovery capability differences for Defender for Cloud Apps and Cloud App Discovery
-description: This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery (part of Azure Active Directory).
+description: This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery (part of Microsoft Entra ID).
 ms.date: 02/15/2023
 ms.topic: overview
 ---
 
 # What are the differences in discovery capabilities for Microsoft Defender for Cloud Apps and Cloud App Discovery?
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery.
 
@@ -21,8 +21,8 @@ Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringin
 
 Cloud App Discovery comes at no additional cost as part of:
 
-1. Azure Active Directory P1.
-1. Enterprise Mobility + Security E3  (EMS E3).
+1. Microsoft Entra ID P1.
+1. Enterprise Mobility + Security E3 (EMS E3).
 1. Microsoft 365 E3.
     
 This is a subset of Microsoft Defender for Cloud Apps. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
@@ -47,7 +47,7 @@ The following table is a comparison of the discovery capabilities in Defender fo
 |Information Protection|Data Loss Prevention (DLP) support|Cross-SaaS DLP and data sharing control||
 ||App permissions and ability to revoke access (OAuth apps)|Yes||
 ||Policy setting and enforcement|Yes||
-||Integration with Azure Information Protection |Yes||
+||Integration with Microsoft Purview|Yes||
 ||Integration with third-party DLP solutions|Yes||
 |Threat Detection|Anomaly detection and behavioral analytics|For Cross-SaaS apps||
 ||Manual and automatic alert remediation|Yes||
@@ -60,4 +60,3 @@ The following table is a comparison of the discovery capabilities in Defender fo
 - Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-

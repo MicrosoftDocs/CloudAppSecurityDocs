@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Microsoft Sentinel integration (Preview)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 You can integrate Microsoft Defender for Cloud Apps with Microsoft Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and discovery data. Integrating with Microsoft Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
@@ -86,7 +86,7 @@ The following table describes each field in the **McasShadowItReporting** schema
 | DownloadedBytes | Integer | Amount of downloaded data | 2,552,911 |
 | IpAddress | String | Source IP address | 127.0.0.0 |
 | UserName | String | User name | `Raegan@contoso.com` |
-| EnrichedUserName | String | Enriched user name with Azure AD username | `Raegan@contoso.com` |
+| EnrichedUserName | String | Enriched user name with Microsoft Entra username | `Raegan@contoso.com` |
 | AppName | String | Name of cloud app | Microsoft OneDrive for Business |
 | AppId | Integer | Cloud app identifier | 15600 |
 | AppCategory | String | Category of cloud app | Cloud storage |
@@ -130,4 +130,4 @@ You can get started quickly by using the following steps:
 
 1. After connecting your data, go to the workspace **Datasets** tab and select **Refresh**. This will update the report with your own data.
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

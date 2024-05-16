@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Integrate with Microsoft Power Automate for custom alert automation
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Defender for Cloud Apps integrates with [Microsoft Power Automate](/power-automate/getting-started) to provide custom alert automation and orchestration playbooks. By using the [connectors](/connectors/) available in Power Automate, you can automate the triggering of playbooks when Defender for Cloud Apps generates alerts. For example, automatically create an issue in ticketing systems using [ServiceNow connector](/connectors/service-now/) or send an approval email to execute a custom governance action when an alert is triggered in Defender for Cloud Apps.
 
@@ -41,12 +41,12 @@ The [Defender for Cloud Apps connector](/connectors/cloudappsecurity/) in Power 
     ![Power Automate workflow.](media/flow-workflow.png)
 
 1. Continue to configure your playbook. The playbook will be automatically synchronized with Defender for Cloud Apps. For more information about creating playbooks in Power Automate, see [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow).
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. In the row of the policy whose alerts you want to forward to Power Automate, select the three dots and then select **Edit Policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. In the row of the policy whose alerts you want to forward to Power Automate, select the three dots and then select **Edit Policy**.
 1. Under **Alerts**, select **Send Alerts to Power Automate** and choose the name of the playbook you created earlier from the drop-down menu.
 
     ![Enable Power Automate in policy.](media/flow-alerts-config.png)
 
-1. Defender for Cloud Apps playbooks that you've authored or are granted access to can be seen by in the Microsoft 365 Defender portal, by going to **Settings**, then choosing **Cloud Apps**, and under **System** selecting **Playbooks**.
+1. Defender for Cloud Apps playbooks that you've authored or are granted access to can be seen by in the Microsoft Defender Portal, by going to **Settings**, then choosing **Cloud Apps**, and under **System** selecting **Playbooks**.
 
     ![view playbooks in Defender for Cloud Apps.](media/flow-extensions.png)
 

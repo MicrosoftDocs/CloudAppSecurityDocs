@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Managing internal tokens (legacy)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 In order to access the Defender for Cloud Apps API, you have to create an API token and use it in your software to connect to the API. This token will be included in the header when Defender for Cloud Apps makes API requests.
 
@@ -14,7 +14,7 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
 ## Generate a token
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **API tokens**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **API tokens**.
 
 1. Select the **Add token** and provide a name to identify the token in the future, and select **Generate**.
 

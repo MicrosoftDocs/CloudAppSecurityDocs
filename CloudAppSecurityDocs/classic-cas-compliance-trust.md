@@ -7,9 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Data security and privacy practices for Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Microsoft Defender for Cloud Apps is a critical component of the Microsoft Cloud Security stack. It's a comprehensive solution that helps your organization take full advantage of the promise of cloud applications. Defender for Cloud Apps keeps you in control through comprehensive visibility, auditing, and granular controls over your sensitive data.
 
@@ -68,7 +66,7 @@ Personal data about users is derived from the user's object in the SaaS applicat
 
 ## Data location
 
-Defender for Cloud Apps currently operates in datacenters in the European Union, the United Kingdom, and the United States (each a "Geo"). Customer data collected by the service is stored at rest as follows (a) for customers whose tenants are provisioned in the European Union or the United Kingdom, in either the European Union or the United Kingdom; (b) else, a data center in the Geo that is nearest to the location of where the customer's Azure Active Directory tenant has been provisioned; or (c) if Defender for Cloud Apps uses another Microsoft online service (such as Azure Active Directory or Azure CDN) to process such data, the data geolocation will be as defined by the data storage rules of that other online service.
+Defender for Cloud Apps currently operates in datacenters in the European Union, the United Kingdom, and the United States (each a "Geo"). Customer data collected by the service is stored at rest as follows (a) for customers whose tenants are provisioned in the European Union or the United Kingdom, in either the European Union or the United Kingdom; (b) else, a data center in the Geo that is nearest to the location of where the customer's Microsoft Entra tenant has been provisioned; or (c) if Defender for Cloud Apps uses another Microsoft online service (such as Microsoft Entra ID or Azure CDN) to process such data, the data geolocation will be as defined by the data storage rules of that other online service.
 
 > [!NOTE]
 > Defender for Cloud Apps uses Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
@@ -120,13 +118,13 @@ The following table show what data is surfaced for each product integration:
 
 | Product | Exposed data | Configuration |
 | --- | --- | --- |
-| Microsoft 365 Defender | Alerts and user activities | Enabled automatically on Microsoft 365 Defender upon onboarding |
+| Microsoft Defender XDR | Alerts and user activities | Enabled automatically on Microsoft Defender XDR upon onboarding |
 | Microsoft Sentinel | Alerts and discovery data | [Enabled in Defender for Cloud Apps](siem-sentinel.md) and [configured in Microsoft Sentinel](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps) |
 | Microsoft Purview compliance portal | Alerts for Microsoft 365 | Automatically streamed to Microsoft Purview compliance portal  |
 | Microsoft Defender for Cloud | Alerts for Azure | Enabled by default in Defender for Cloud Apps; can be disabled in Microsoft Defender for Cloud |
 | Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](/graph/api/resources/security-api-overview) |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Defender for Cloud Apps](flow-integration.md) |
-| Microsoft Azure AD Identity Protection | Subset of alerts for identity risk model | Enabled automatically on Azure AD Identity Protection upon onboarding |
+| Microsoft Entra ID Protection | Subset of alerts for identity risk model | Enabled automatically on Microsoft Entra ID Protection upon onboarding |
 
 #### Third-party products
 
@@ -150,11 +148,11 @@ Microsoft uses encryption technology to protect your data while at rest in a Mic
 
 ### Identity and access management
 
-Defender for Cloud Apps enables you to limit access of administrators to the portal based on geolocation using Azure Active Directory. It's possible to require multi-factor authentication to access the Defender for Cloud Apps portal by using Azure Active Directory.
+Defender for Cloud Apps enables you to limit access of administrators to the portal based on geolocation using Microsoft Entra ID. It's possible to require multi-factor authentication to access the Defender for Cloud Apps portal by using Microsoft Entra ID.
 
 ### Permissions
 
-Defender for Cloud Apps supports role-based access control. Microsoft 365 and Azure Active Directory Global admin and Security admin roles have full access to Defender for Cloud Apps, and Security readers have read access. [For more information](manage-admins.md).
+Defender for Cloud Apps supports role-based access control. Microsoft 365 and Microsoft Entra Global admin and Security admin roles have full access to Defender for Cloud Apps, and Security readers have read access. [For more information](manage-admins.md).
 
 ## Customer controls for organizational compliance
 

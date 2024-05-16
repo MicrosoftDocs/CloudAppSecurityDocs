@@ -8,7 +8,7 @@ ROBOTS: NOINDEX
 
 # Classic portal: Activity filters and queries
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article provides descriptions and instructions for Defender for Cloud Apps activity filters and queries.
 
@@ -40,7 +40,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Date – The date when the activity occurred. Filter supports before/after dates and a date range.
 
-- Device tag - Search by **Intune compliant**, **Hybrid Azure AD joined** or **Valid client certificate**.
+- Device tag - Search by **Intune compliant**, **Microsoft Entra hybrid joined** or **Valid client certificate**.
 
 - Device type - Search only for activities that were done using a specific device type. For example, search all activities from mobile devices, PCs, or Tablets.
 

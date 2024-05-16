@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: DLP content inspection in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 If you enable content inspection, you can choose to use preset expressions or to search for other customized expressions.
 
@@ -25,7 +25,7 @@ In order to give Defender for Cloud Apps the necessary permissions:
 
 1. Go to **Settings** and then **Microsoft Purview Information Protection**.
 2. Enable **Inspect protected files.**
-3. Follow the prompt to allow the required permissions in Azure Active Directory.
+3. Follow the prompt to allow the required permissions in Microsoft Entra ID.
 4. You can configure the settings per file policy to determine which policies will scan protected files.
 
 ## Next steps
@@ -33,4 +33,4 @@ In order to give Defender for Cloud Apps the necessary permissions:
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # List - Entities API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 > [!NOTE]
 > This request is not available for Microsoft 365 Cloud App Security.
@@ -40,7 +40,7 @@ POST /api/v1/entities/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/entities/" -d '{
   "filters": {
     // some filters
   },

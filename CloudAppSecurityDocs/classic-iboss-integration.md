@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Integrate Defender for Cloud Apps with iboss
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 If you work with both Defender for Cloud Apps and iboss, you can integrate the two products to enhance your security Cloud Discovery experience. iboss is a standalone secure cloud gateway that monitors your organization's traffic and enables you to set policies that block transactions. Together, Defender for Cloud Apps and iboss provide the following capabilities:
 
@@ -46,4 +46,4 @@ If you work with both Defender for Cloud Apps and iboss, you can integrate the t
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

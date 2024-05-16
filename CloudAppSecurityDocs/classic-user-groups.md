@@ -7,9 +7,9 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Import user groups from connected apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
-When you connect apps using API connectors, Microsoft Defender for Cloud Apps enables you to import user groups, for example from Microsoft 365 and Azure Active Directory. There are two types of user groups:
+When you connect apps using API connectors, Microsoft Defender for Cloud Apps enables you to import user groups, for example from Microsoft 365 and Microsoft Entra ID. There are two types of user groups:
 
 - **Automatic groups:** Automatic groups are created by default by Microsoft Defender for Cloud Apps. For example, there's an automatic user group called **External** that combines all users from all apps who are external to your organization and have access to files or were in user activities in your tenant. The following automatic groups exist in Defender for Cloud Apps:
 
@@ -58,4 +58,4 @@ For more information on using the User group filters, see [Activities](activity-
 > [!div class="nextstepaction"]
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

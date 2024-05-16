@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Tutorial: Discover and manage shadow IT
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 When IT admins are asked how many cloud apps they think their employees use, on average they say 30 or 40, when in reality, the average is over 1,000 separate apps being used by employees in your organization. Shadow IT helps you know and identify which apps are being used and what your risk level is. 80% of employees use non-sanctioned apps that no one has reviewed, and may not be compliant with your security and compliance policies. And because your employees are able to access your resources and apps from outside your corporate network, it's no longer enough to have rules and policies on your firewalls.
 
@@ -70,9 +70,9 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
 - **Manage cloud apps**: Defender for Cloud Apps helps you with the process for managing app use in your organization. After you identified the different patterns and behaviors used in your organization, you can create new custom app tags in order to classify each app according to its business status or justification. These tags can be then used for specific monitoring purposes, for example, identify high traffic that is going to apps that are tagged as risky cloud storage apps. App tags can be managed under **Cloud Discovery settings** > **App tags**. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
 
-- **Manage discovered apps using Azure Active Directory (Azure AD) Gallery**<a name ="gallery-apps"></a>: Defender for Cloud Apps also uses its native integration with Azure AD to enable you to manage your discovered apps in Azure AD Gallery. For apps that already appear in the Azure AD Gallery, you can apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
+- **Manage discovered apps using Microsoft Entra Gallery**<a name ="gallery-apps"></a>: Defender for Cloud Apps also uses its native integration with Microsoft Entra ID to enable you to manage your discovered apps in Microsoft Entra Gallery. For apps that already appear in the Microsoft Entra Gallery, you can apply single sign-on and manage the app with Microsoft Entra ID. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Microsoft Entra ID**.
 
-    ![manage app in azure ad gallery.](media/classic-manage-app-in-azure-ad-gallery.png)
+    ![manage app in Microsoft Entra gallery.](media/classic-manage-app-in-azure-ad-gallery.png)
 
 - **Continuous monitoring**: Now that you've thoroughly investigated the apps, you might want to set policies that monitor the apps and provide control where needed.
 
@@ -97,7 +97,7 @@ The nature of cloud apps means that they're updated daily and new apps appear al
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]
 
 ## Learn more
 

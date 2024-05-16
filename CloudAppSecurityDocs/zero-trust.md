@@ -1,7 +1,7 @@
 ---
 title: Zero Trust and Microsoft Defender for Cloud Apps
-description: This article describes how Microsoft Defender for Cloud Apps fits into an overall Zero Trust security strategy when deployed with Microsoft 365 Defender.
-ms.date: 03/29/2023
+description: This article describes how Microsoft Defender for Cloud Apps fits into an overall Zero Trust security strategy when deployed with Microsoft Defender XDR.
+ms.date: 05/12/2024
 ms.topic: conceptual
 ms.collection:
   - zerotrust-services
@@ -15,7 +15,7 @@ ms.collection:
 |---------|---------|---------|
 |Always authenticate and authorize based on all available data points.     | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.        | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.        |
 
-Microsoft Defender for Cloud apps is a primary component of a Zero Trust strategy and your XDR deployment with Microsoft 365 Defender. Microsoft Defender for Cloud Apps gathers signals from your organization's use of cloud apps and protects data flowing between your environment and these apps, including both sanctioned and unsanctioned cloud apps. For example, Microsoft Defender for Cloud Apps notices anomalous behavior like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these to the security team for mitigation.
+Microsoft Defender for Cloud apps is a primary component of a Zero Trust strategy and your XDR deployment with Microsoft Defender XDR. Microsoft Defender for Cloud Apps gathers signals from your organization's use of cloud apps and protects data flowing between your environment and these apps, including both sanctioned and unsanctioned cloud apps. For example, Microsoft Defender for Cloud Apps notices anomalous behavior like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these to the security team for mitigation.
 
 ## Monitoring for Zero Trust
 
@@ -23,7 +23,7 @@ When monitoring for Zero Trust, use Defender for Cloud Apps to [discover and sec
 
 Respond to threats with Defender for Cloud Apps's user and entity behavioral analytics (UEBA) and anomaly detection, malware protection, OAuth app protection, incident investigation, and remediation. Monitor for [security anomaly alerts](./investigate-anomaly-alerts.md), such as for impossible travel, suspicious inbox rules, and ransomware. Focus on identifying app usage patterns, assessing risk levels and business readiness of apps, preventing data leaks to noncompliant apps, and limiting access to regulated data.
 
-Use Defender for Cloud Apps to inform Azure AD about what happened to the user after they authenticated and received a token. If the user pattern starts to look suspicious, such as if a user starts to download gigabytes of data from OneDrive or starts to send spam emails in Exchange Online, notify Azure AD that the user seems to be compromised or high risk. On the next access request from this user, Azure AD can correctly take action to verify the user or block them.
+Use Defender for Cloud Apps to inform Microsoft Entra ID about what happened to the user after they authenticated and received a token. If the user pattern starts to look suspicious, such as if a user starts to download gigabytes of data from OneDrive or starts to send spam emails in Exchange Online, notify Microsoft Entra ID that the user seems to be compromised or high risk. On the next access request from this user, Microsoft Entra ID can correctly take action to verify the user or block them.
 
 ### IaaS and PaaS security
 
@@ -44,4 +44,4 @@ See these articles for additional Zero Trust policies and best practices for app
 
 Learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust).
 
-For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](/microsoft-365/security/defender/zero-trust-with-microsoft-365-defender).
+For an overview of Zero Trust for Microsoft Defender XDR services, see [Zero Trust with Microsoft Defender XDR](/microsoft-365/security/defender/zero-trust-with-microsoft-365-defender).

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Cloud Discovery API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Cloud Discovery APIs allow developers to automate log uploads, list and interact with discovered apps, and generate block scripts for enforcement by a firewall or a Security Web Gateway.
 

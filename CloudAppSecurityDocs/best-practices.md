@@ -6,7 +6,7 @@ ms.topic: quickstart
 ---
 # Best practices for protecting your organization with Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides best practices for protecting your organization by using Microsoft Defender for Cloud Apps. These best practices come from our experience with Defender for Cloud Apps and the experiences of customers like you.
 
@@ -247,9 +247,9 @@ When dismissing alerts, it's important to investigate and understand why they ar
 **Detail**: Connecting each of these cloud platforms to Defender for Cloud Apps helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
 **For more information**:
 
-* [Connect Azure to Microsoft Defender for Cloud Apps](./connect-azure.md)
-* [Connect AWS to Microsoft Defender for Cloud Apps](./connect-aws.md)
-* [Connect GCP to Microsoft Defender for Cloud Apps (Preview)](./connect-google-gcp.md)
+- [Connect Azure to Microsoft Defender for Cloud Apps](protect-azure.md#connect-azure-to-microsoft-defender-for-cloud-apps)
+- [Connect Amazon Web Services to Microsoft Defender for Cloud Apps](protect-aws.md#connect-amazon-web-services-to-microsoft-defender-for-cloud-apps)
+- [Connect Google Workspace to Microsoft Defender for Cloud Apps](protect-google-workspace.md#connect-google-workspace-to-microsoft-defender-for-cloud-apps)
 
 ---
 

@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Accounts
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Microsoft Defender for Cloud Apps gives you visibility into the accounts from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps reads account information associated with connected apps. The Accounts page enables you to investigate those accounts, permissions, the groups they're members of, their aliases and the apps they're using. Additionally, when Defender for Cloud Apps detects a new account that wasn't previously seen in one of the connected apps - for example in activities or in file sharing - the account is added to the accounts list of that app. This enables you to have visibility into the activity of external users interacting with your cloud apps.
 
@@ -50,7 +50,7 @@ Following is a list of the account filters that can be applied. Most filters sup
 
 From the **Users and account** page, you can take governance actions such as suspend an app or go to the account settings page. For a full list of governance actions, see the [governance log](governance-actions.md).
 
-For example, if you identify a user that is compromised, you can apply the **Confirm user compromised** action to set the user risk level to high, causing the relevant policy actions defined in Azure Active Directory to be enforced. The action can be applied manually or using relevant [policies that support governance actions](governance-actions.md).
+For example, if you identify a user that is compromised, you can apply the **Confirm user compromised** action to set the user risk level to high, causing the relevant policy actions defined in Microsoft Entra ID to be enforced. The action can be applied manually or using relevant [policies that support governance actions](governance-actions.md).
 
 ### To manually apply a user or account governance action
 
@@ -67,4 +67,4 @@ You can manually apply the **Confirm user compromised** action using one of the 
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

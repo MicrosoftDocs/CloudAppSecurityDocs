@@ -7,9 +7,11 @@ ms.topic: how-to
 
 # File policies in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 File Policies allow you to enforce a wide range of automated processes using the cloud provider's APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases. Defender for Cloud Apps can monitor any file type based on more than 20 metadata filters (for example, access level, file type).
+
+For a list of file filters that can be applied see [File filters in Microsoft Defender for Cloud Apps](file-filters.md).
 
 ## Supported file types
 
@@ -51,7 +53,7 @@ The following are examples of file policies that can be created:
 
 To create a new file policy, follow this procedure:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Select the **Information Protection** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Select the **Information Protection** tab.
 
 1. Select **Create policy** and select **File policy**.
 
@@ -102,13 +104,13 @@ To create a new file policy, follow this procedure:
 
 1. Consolidate several file policies for the same service (such as SharePoint, OneDrive, Box, and so on) to a single policy.
 
-1. When enabling file monitoring (from the **Settings** page), create at least one file policy. When no file policy exists, or is disabled for seven consecutive days, file monitoring will be autodisabled.
+1. When enabling file monitoring (from the **Settings** page), create at least one file policy. When no file policy exists, or is disabled for seven consecutive days, file monitoring is autodisabled.
 
 ## File policy reference
 
 This section provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.
 
-A **File policy** is an API-based policy that enables you to control your organization's content in the cloud, taking into account over 20 file metadata filters (including owner and sharing level) and content inspection results. Based on the policy results, governance actions can be applied. The content inspection engine can be extended via 3rd-party DLP engines as well as anti-malware solutions.
+A **File policy** is an API-based policy that enables you to control your organization's content in the cloud, taking into account over 20 file metadata filters (including owner and sharing level) and content inspection results. Based on the policy results, governance actions can be applied. The content inspection engine can be extended via 3rd-party DLP engines and anti-malware solutions.
 
 Each policy is composed of the following parts:
 
@@ -124,7 +126,7 @@ Each policy is composed of the following parts:
 
 To make investigation even simpler, you can now create custom queries and save them for later use.
 
-1. In the **Files** page, use the filters as described above to drill down into your apps as necessary.
+1. In the **Files** page, use the filters as described previously to drill down into your apps as necessary.
 
 1. After you've finished building your query, select the **Save as** button above the filters.
 
@@ -136,7 +138,7 @@ To make investigation even simpler, you can now create custom queries and save t
 
 You can go to the Policy center to review file policy violations.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**, and then select the **Information protection** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**, and then select the **Information protection** tab.
 1. For each file policy, you can see the file policy violations by selecting the **matches**.  
    ![PCI matches.](media/pci-matches.png "pci matches")
 

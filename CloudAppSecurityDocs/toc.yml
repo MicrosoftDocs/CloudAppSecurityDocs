@@ -12,12 +12,12 @@ items:
   - name: Lifecycle management
     href: lifecycle-management.md
   - name: Preview features
-    href: preview-features.md
+    href: /microsoft-365/security/defender/preview?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/bread/toc.json
   - name: Compare
     items:
     - name: Microsoft 365 Cloud App Security
       href: editions-cloud-app-security-o365.md
-    - name: Azure AD Cloud App Discovery
+    - name: Microsoft Entra Cloud App Discovery
       href: editions-cloud-app-security-aad.md
   - name: US Government offerings
     items:
@@ -62,68 +62,10 @@ items:
   items:
   - name: Working with the app page
     href: working-with-app-page.md
-  - name: Working with App risk scores
-    href: risk-score.md
   - name: Working with discovered apps
     href: discovered-apps.md
-  - name: Working with connected apps
-    items:
-    - name: Protect connected apps
-      href: protect-connected-apps.md
-    - name: Protect Atlassian
-      href: protect-atlassian.md
-    - name: Protect AWS
-      href: protect-aws.md
-    - name: Protect Azure
-      href: protect-azure.md
-    - name: Protect Box
-      href: protect-box.md
-    - name: Protect DocuSign
-      href: protect-docusign.md
-    - name: Protect Dropbox
-      href: protect-dropbox.md
-    - name: Protect Egnyte
-      href: protect-egnyte.md
-    - name: Protect GitHub
-      href: protect-github.md
-    - name: Protect GCP
-      href: protect-gcp.md
-    - name: Protect Google Workspace
-      href: protect-google-workspace.md
-    - name: Protect NetDocuments
-      href: protect-netdocuments.md
-    - name: Protect Microsoft 365
-      href: protect-office-365.md
-    - name: Protect Okta
-      href: protect-okta.md
-    - name: Protect OneLogin
-      href: protect-onelogin.md
-    - name: Protect Salesforce
-      href: protect-salesforce.md
-    - name: Protect ServiceNow
-      href: protect-servicenow.md
-    - name: Protect Asana (Preview)
-      href: protect-asana.md
-    - name: Protect Slack
-      href: protect-slack.md
-    - name: Protect Miro (Preview)
-      href: protect-miro.md
-    - name: Protect Workplace (Preview)
-      href: protect-workplace.md
-    - name: Protect Smartsheet
-      href: protect-smartsheet.md
-    - name: Protect Webex
-      href: protect-webex.md
-    - name: Protect Workday
-      href: protect-workday.md
-    - name: Protect Zendesk
-      href: protect-zendesk.md
-  - name: Security
-    items:
-    - name: Security baseline
-      href: /security/benchmark/azure/baselines/cloud-app-security-security-baseline?toc=/cloud-app-security/toc.json
-    - name: Deploying and monitoring for Zero Trust
-      href: zero-trust.md
+  - name: Defender for Cloud Apps and Zero Trust monitoring
+    href: zero-trust.md
 - name: How-to guides
   items:
   - name: Basic set up
@@ -202,7 +144,7 @@ items:
           href: app-activity-threat-hunting.md
     - name: What's new archive for app governance
       href: app-governance-whats-new.md
-  - name: Cloud Discovery
+  - name: Cloud discovery
     items:
     - name: Set up
       items:
@@ -220,27 +162,33 @@ items:
         href: menlo-integration.md
       - name: Integrate with Open Systems
         href: open-systems-integration.md
+      - name: Work with discovery data
+        href: working-with-cloud-discovery-data.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
         href: discovery-docker.md
-      - name: Docker on Windows on-premises
-        href: discovery-docker-windows.md
+      - name: Podman on Linux on-premises
+        href: discovery-linux-podman.md
       - name: Docker on Linux on-premises
         href: discovery-docker-ubuntu.md
       - name: Docker on Linux in Azure
         href: discovery-docker-ubuntu-azure.md
+      - name: Docker on Windows on-premises
+        href: discovery-docker-windows.md
       - name: Advanced log collector management
         href: log-collector-advanced-management.md
       - name: Use the custom log parser
         href: custom-log-parser.md
-    - name: Cloud Discovery enrichment
+    - name: Enrich cloud discovery
       href: cloud-discovery-aad-enrichment.md
-    - name: Anonymize Cloud Discovery data
+    - name: Find your cloud app and calculate risk scores
+      href: risk-score.md
+    - name: Anonymize cloud discovery data
       href: cloud-discovery-anonymizer.md
-    - name: Add custom apps to Cloud Discovery
+    - name: Add custom apps to cloud discovery
       href: cloud-discovery-custom-apps.md
-    - name: Discovered app filters and queries
+    - name: Filter and query discovered apps
       href: discovered-app-queries.md
   - name: Connect apps
     items:
@@ -248,76 +196,58 @@ items:
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Custom connectors with the open app connector platform
       href: ./connector-platform.md
-    - name: Connect Asana (Preview)
-      href: ./connect-asana.md
-    - name: Connect Atlassian
-      href: connect-atlassian.md
-    - name: Connect AWS
-      href: ./connect-aws.md
-    - name: Connect Azure
-      href: ./connect-azure.md
-    - name: Connect Box
-      href: ./connect-box.md
-    - name: Connect Citrix ShareFile
-      href: ./connect-citrix-sharefile.md
-    - name: Connect DocuSign
-      href: ./connect-docusign.md
-    - name: Connect Dropbox
-      href: ./connect-dropbox.md
-    - name: Connect Egnyte
-      href: ./connect-egnyte.md
-    - name: Connect GitHub
-      href: ./connect-github-ec.md
-    - name: Connect Google Cloud Platform
-      href: ./connect-google-gcp.md
-    - name: Connect Google Workspace
-      href: ./connect-google-workspace.md
-    - name: Connect Miro (Preview)
-      href: ./connect-miro.md
-    - name: Connect NetDocuments
-      href: connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
-    - name: Connect Microsoft 365
-      href: ./connect-office-365.md
-    - name: Connect Okta
-      href: ./connect-okta.md
-    - name: Connect OneLogin 
-      href: ./connect-onelogin.md
-    - name: Connect Salesforce
-      href: ./connect-salesforce.md
-    - name: Connect ServiceNow
-      href: ./connect-servicenow.md
-    - name: Connect Slack
-      href: ./connect-slack.md
-    - name: Connect Smartsheet
-      href: ./connect-smartsheet.md
-    - name: Connect Webex
-      href: ./connect-webex.md
-    - name: Connect Workday
-      href: ./connect-workday.md
-    - name: Connect Workplace (Preview)
-      href: connect-workplace.md
-    - name: Connect Zendesk
-      href: ./connect-zendesk.md
-    - name: Connect Zoom
-      href: connect-zoom.md
-  - name: Conditional Access App Control
-    items:
-    - name: Protect apps with Conditional Access App Control
-      href: proxy-intro-aad.md
-    - name: Deploy for catalog apps with Azure Active Directory
-      href: proxy-deployment-aad.md
-    - name: Deploy for catalog apps with non-Microsoft IdP
-      href: proxy-deployment-featured-idp.md
-    - name: Deploy for custom apps with Azure Active Directory
-      href: proxy-deployment-any-app.md
-    - name: Deploy for custom apps with non-Microsoft IdP
-      href: proxy-deployment-any-app-idp.md
-    - name: Configuring your PingOne IdP
-      href: proxy-idp-pingone.md
-    - name: Configuring your AD FS IdP
-      href: proxy-idp-adfs.md
-    - name: Configuring your Okta IdP
-      href: proxy-idp-okta.md
+    - name: Asana
+      href: protect-asana.md
+    - name: Atlassian
+      href: protect-atlassian.md
+    - name: AWS
+      href: protect-aws.md
+    - name: Azure
+      href: protect-azure.md
+    - name: Box
+      href: protect-box.md
+    - name: Citrix ShareFile
+      href: ./protect-citrix-sharefile.md
+    - name: DocuSign
+      href: protect-docusign.md
+    - name: Dropbox
+      href: protect-dropbox.md
+    - name: Egnyte
+      href: protect-egnyte.md
+    - name: GitHub
+      href: protect-github.md
+    - name: GCP
+      href: protect-gcp.md
+    - name: Google Workspace
+      href: protect-google-workspace.md
+    - name: Microsoft 365
+      href: protect-office-365.md
+    - name: Miro
+      href: protect-miro.md
+    - name: NetDocuments
+      href: protect-netdocuments.md
+    - name: Okta
+      href: protect-okta.md
+    - name: OneLogin
+      href: protect-onelogin.md
+    - name: Salesforce
+      href: protect-salesforce.md
+    - name: ServiceNow
+      href: protect-servicenow.md
+    - name: Slack
+      href: protect-slack.md
+    - name: Smartsheet
+      href: protect-smartsheet.md
+    - name: Webex
+      href: protect-webex.md
+    - name: Workday
+      href: protect-workday.md
+    - name: Workplace (Preview)
+      href: protect-workplace.md
+    - name: Zendesk
+      href: protect-zendesk.md
+    - name: Zoom
+      href: protect-zoom.md
   - name: Investigation and response
     href: investigate.md
     items:
@@ -368,12 +298,40 @@ items:
             href: dcs-inspection.md
           - name: Working with the RegEx engine
             href: working-with-the-regex-engine.md
-      - name: Conditional Access policies
+      - name: Conditional access app control policies
         items:
-        - name: Access policies
+        - name: Protect apps with conditional access app control
+          href: proxy-intro-aad.md
+        - name: Deploy conditional access app control
+          items:
+          - name: Catalog apps with Microsoft Entra ID
+            href: proxy-deployment-aad.md
+          - name: Catalog apps with non-Microsoft IdP
+            href: proxy-deployment-featured-idp.md
+          - name: Custom apps with Microsoft Entra ID
+            href: proxy-deployment-any-app.md
+          - name: Custom apps with non-Microsoft IdP
+            href: proxy-deployment-any-app-idp.md
+          - name: Sample deployment processes
+            items:
+            - name: Configuring your PingOne IdP
+              href: proxy-idp-pingone.md
+            - name: Configuring your AD FS IdP
+              href: proxy-idp-adfs.md
+            - name: Configuring your Okta IdP
+              href: proxy-idp-okta.md
+        - name: Create access policies
           href: access-policy-aad.md
-        - name: Session policies
+        - name: Create session policies
           href: session-policy-aad.md
+        - name: Use in-browser protection (Microsoft Edge for Business)
+          href: in-browser-protection.md
+        - name: Configure policies for identity-managed devices
+          displayName: conditional access app control, caac
+          href: conditional-access-app-control-identity.md
+        - name: Known limitations
+          href: caac-known-issues.md
+          displayName: conditional access app control, caac
       - name: Shadow IT policies
         items:
         - name: Cloud Discovery policy
@@ -396,14 +354,24 @@ items:
       items:
       - name: Generic SIEM integration
         href: siem.md
-      - name: External DLP integration
-        href: icap-stunnel.md
       - name: Additional integrations
         href: additional-integrations.md
     - name: Automate processes using Microsoft Power Automate
       href: flow-integration.md
 - name: Reference
   items:
+  - name: Operations guide
+    items:
+    - name: Operations guide overview
+      href: ops-guide/ops-guide.md
+    - name: Daily activities
+      href: ops-guide/ops-guide-daily.md
+    - name: Weekly activities
+      href: ops-guide/ops-guide-weekly.md
+    - name: Monthly activities
+      href: ops-guide/ops-guide-monthly.md
+    - name: Ad-hoc activities
+      href: ops-guide/ops-guide-ad-hoc.md
   - name: Attest your app
     href: attest-your-app.md
   - name: Common policies
@@ -525,13 +493,17 @@ items:
     - name: Troubleshooting policies
       href: troubleshoot-policies.md
     - name: Troubleshooting access and session controls
-      href: troubleshooting-proxy.md
+      items:
+      - name: Admin issues
+        href: troubleshooting-proxy.md
+        displayName: Troubleshooting access and session controls
+      - name: End-user issues
+        href: troubleshooting-proxy-end-users.md
+        displayName: Troubleshooting access and session controls
     - name: Troubleshooting - What is cas.ms?
       href: troubleshooting-proxy-url.md
 - name: Resources
   items:
-  - name: Defender for Cloud Apps Operational Guide
-    href: https://aka.ms/mdaoperationalguide
   - name: Watch our webinars
     href: webinars.md
   - name: Read our e-books
@@ -542,7 +514,7 @@ items:
     href: https://aka.ms/M365EnterprisePlans
   - name: Support and troubleshooting
     href: support-and-ts.md
-  - name: Microsoft 365 Defender portal
+  - name: Microsoft Defender Portal
     href: https://security.microsoft.com
   - name: How to buy Defender for Cloud Apps
     href: https://www.microsoft.com/security/business/cloud-apps-defender
@@ -591,6 +563,10 @@ items:
       href: classic-risk-score.md
     - name: Working with discovered apps
       href: classic-discovered-apps.md
+    - name: Security
+      items:
+      - name: Security baseline
+        href: /security/benchmark/azure/baselines/cloud-app-security-security-baseline?toc=/cloud-app-security/toc.json
   - name: How-to guides
     items:
     - name: Basic set up
@@ -697,11 +673,11 @@ items:
       items:
       - name: Protect apps with Conditional Access App Control
         href: classic-proxy-intro-aad.md
-      - name: Deploy for catalog apps with Azure Active Directory
+      - name: Deploy for catalog apps with Microsoft Entra ID
         href: classic-proxy-deployment-aad.md
       - name: Deploy for catalog apps with non-Microsoft IdP
         href: classic-proxy-deployment-featured-idp.md
-      - name: Deploy for custom apps with Azure Active Directory
+      - name: Deploy for custom apps with Microsoft Entra ID
         href: classic-proxy-deployment-any-app.md
       - name: Deploy for custom apps with non-Microsoft IdP
         href: classic-proxy-deployment-any-app-idp.md
@@ -733,12 +709,6 @@ items:
           href: classic-security-config.md
         - name: Security configuration for SaaS applications
           href: classic-security-saas.md
-        - name: Security configuration for Azure
-          href: classic-security-config-azure.md
-        - name: Security configuration for AWS
-          href: classic-security-config-aws.md
-        - name: Security configuration for GCP
-          href: classic-security-config-gcp.md
       - name: Monitor alerts
         href: classic-monitor-alerts.md
         items:
@@ -789,7 +759,7 @@ items:
         href: classic-mde-govern.md
       - name: Microsoft Defender for Identity integration
         href: classic-mdi-integration.md
-      - name: Azure AD Identity Protection integration
+      - name: Microsoft Entra ID Protection integration
         href: classic-aadip-integration.md
       - name: Microsoft Information Protection integration
         href: classic-azip-integration.md
@@ -827,9 +797,11 @@ items:
         href: classic-troubleshooting-proxy.md
       - name: Troubleshooting SIEM integration
         href: classic-troubleshooting-siem.md
-- name: Microsoft 365 Defender Docs
+      - name: Support and troubleshooting for the classic portal
+        href: classic-support-and-ts.md
+- name: Microsoft Defender XDR Docs
   items:
-  - name: Microsoft 365 Defender
+  - name: Microsoft Defender XDR
     href: /microsoft-365/security/defender/
   - name: Microsoft Defender for Microsoft 365
     href: /microsoft-365/security/office-365-security/

@@ -7,12 +7,12 @@ ms.topic: how-to
 
 # File filters in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 To provide data protection, Microsoft Defender for Cloud Apps gives you visibility into all the files from your connected apps. After you connect Microsoft Defender for Cloud Apps to an app using the App connector, Microsoft Defender for Cloud Apps scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Defender for Cloud Apps rescans each file every time it's modified – the modification can be to content, metadata, or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps.
 
 > [!NOTE]
-> File monitoring should be enabled in Settings. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Information Protection**, select **Files**. Select **Enable file monitoring** and then select **Save**.  
+> File monitoring should be enabled in Settings. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Information Protection**, select **Files**. Select **Enable file monitoring** and then select **Save**.  
 > If there are no active file policies, then seven days after the last file page engagement time file monitoring will become disabled.  
 > If there are no active file policies, then 35 days after the last file page engagement time Defender for Cloud Apps will begin deleting the data that Defender for Cloud Apps maintains about these stored files.
 > Starting Aug 20 2023, the filter 'last modified before (days) will be deprecated. Instead, we recommend the utilization of "file before (date) and continue the investigating by fixed date, you can also use 'manual' investigation by "modified before (date)" - in "policy page" or "files page". 
@@ -51,7 +51,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 > When using the file policy filters, **Contains**  will search only for **full words** – separated by commas, dots, hyphens or spaces to search.
 >
 > - Spaces or hyphens between words function like *OR*. For example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both *malware-virus.exe* and *virus.exe*.
-> - If you want to search for a string, enclose the words in quotation marks. This functions like *AND*. For example, if you search for **"malware"** **"virus"**, it will find *virus_malware_file.exe* but it will not find *malwarevirusfile.exe* and it will not find *malware.exe*. However, it will search for the exact string. If you search for **"malware virus"**, it will not find **"virus"** or **"virus_malware"**.
+> - If you want to search for a string, enclose the words in quotation marks. This functions like *AND*. For example, if you search for **"malware"** **"virus"**, it will find *virus-malware-file.exe* but it will not find *malwarevirusfile.exe* and it will not find *malware.exe*. However, it will search for the exact string. If you search for **"malware virus"**, it will not find **"virus"** or **"virus-malware"**.
 >
 > **Equals** will search only for the complete string. For example, if you search for **malware.exe** it will find *malware.exe* but not *malware.exe.txt*.
 
@@ -104,9 +104,13 @@ Below is a list of the file filters that can be applied. To provide you with a p
 - **File name** – File name or sub string of the name as defined in the cloud app. For example, all files with a password in their name.
 
 - **Sensitivity label** - Search for files with specific labels set. Labels are either:
+
+    > [!NOTE]
+    > If this filter is used in a file policy, the policy will apply to Microsoft Office files only, and will ignore other file types.
+
   - **Microsoft Purview Information Protection** - Requires integration with Microsoft Purview Information Protection.
-  - **Defender for Cloud Apps** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For example, you can set up policies to alert and quarantine password-protected files that are shared externally.
-    - **Azure RMS encrypted** – Files whose content wasn't inspected because they have an Azure RMS encryption set.
+   - **Defender for Cloud Apps** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For example, you can set up policies to alert and quarantine password-protected files that are shared externally.
+       - **Azure RMS encrypted** – Files whose content wasn't inspected because they have an Azure RMS encryption set.
     - **Password encrypted** – Files whose content wasn't inspected because they're password protected by the user.
     - **Corrupt file** – Files whose content wasn't inspected because their contents couldn't be read.
 
@@ -154,7 +158,7 @@ After Defender for Cloud Apps has identified files as posing a malware or DLP ri
 
 ### To authorize files
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Policies** -> **Policy management**. Select the **Information protection** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Policies** -> **Policy management**. Select the **Information protection** tab.
 1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, select the **matches** link.
 
     > [!TIP]

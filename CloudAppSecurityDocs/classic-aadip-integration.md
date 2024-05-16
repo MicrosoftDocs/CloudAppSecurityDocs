@@ -1,15 +1,15 @@
 ---
-title: Classic portal -  Azure Active Directory Identity Protection integration
+title: Classic portal -  Microsoft Entra ID Protection integration
 description: Classic portal -  This article provides information about how to leverage Identity Protection alerts in Defender for Cloud Apps for hybrid risk detection.
 ms.date: 01/19/2023
 ms.topic: how-to
 ROBOTS: NOINDEX
 ---
-# Classic portal: Azure Active Directory Identity Protection integration
+# Classic portal: Microsoft Entra ID Protection integration
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
-Microsoft Defender for Cloud Apps integrates with Azure Active Directory Identity Protection to provide user entity behavioral analytics (UEBA) across a hybrid environment. For more information about the machine learning and behavioral analytics provided by Identity Protection, see [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection).
+Microsoft Defender for Cloud Apps integrates with Microsoft Entra ID Protection to provide user entity behavioral analytics (UEBA) across a hybrid environment. For more information about the machine learning and behavioral analytics provided by Identity Protection, see [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection).
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ To disable Defender for Cloud Apps integration with Identity Protection:
 > [!NOTE]
 >
 > - When the integration is disabled, existing Identity Protection alerts are kept in accordance with Defender for Cloud Apps retention policies.
-> - Since Defender for Cloud Apps only consumes interactive logins from Azure AD, some alerts may not show related activities. You can investigate such activities in the Azure AD portal.
+> - Since Defender for Cloud Apps only consumes interactive logins from Microsoft Entra ID, some alerts may not show related activities. You can investigate such activities in the Microsoft Entra admin center.
 
 ## Configure Identity Protection Policies
 
@@ -68,4 +68,4 @@ The following policies are available:
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

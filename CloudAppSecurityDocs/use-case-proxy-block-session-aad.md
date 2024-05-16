@@ -1,12 +1,12 @@
 ---
 title: Block download of sensitive information with Conditional Access App Control
-description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
+description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Microsoft Entra ID conditional access app control.
 ms.date: 01/29/2023
 ms.topic: tutorial
 ---
 # Tutorial: Block download of sensitive information with Conditional Access App Control
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Today's IT admin is stuck between a rock and hard place. You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. However, you want to protect the company's assets including proprietary and privileged information. How can you enable employees to access your cloud apps while protecting your data? **This tutorial allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
 
@@ -27,12 +27,12 @@ Protect your organization by monitoring and controlling cloud app use with any I
 
 ## Prerequisites
 
-- A valid license for Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
+- A valid license for Microsoft Entra ID P1 license, or the license required by your identity provider (IdP) solution
 - Configure a cloud app for SSO using one of the following authentication protocols:
 
     |IdP|Protocols|
     |---|---|
-    |Azure AD|SAML 2.0 or OpenID Connect|
+    |Microsoft Entra ID|SAML 2.0 or OpenID Connect|
     |Other|SAML 2.0|
 - Make sure the [app is deployed to Defender for Cloud Apps](proxy-deployment-aad.md)
 
@@ -46,14 +46,14 @@ To create the conditional access policy, follow the steps in [Create a Defender 
 
 Make sure you've configured your IdP solution to work with Defender for Cloud Apps, as follows:
 
-- For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+- For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md#configure-integration-with-azure-ad)
 - For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
 
 After completing this task, go to the Defender for Cloud Apps portal and create a session policy to monitor and control file downloads in the session.
 
 ### Step 2: Create a session policy
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), under **Cloud Apps**, go to **Policies**, then select **Policy management**.
+1. In the [Microsoft Defender Portal](https://security.microsoft.com), under **Cloud Apps**, go to **Policies**, then select **Policy management**.
 
 1. In the **Policies** page, select **Create policy** followed by **Session policy**.
 
@@ -65,7 +65,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. Under **Activity source** in the **Activities matching all of the following** section, select the filters:
 
-    - **Device tag**: Select **Does not equal**. and then select **Intune compliant**, **Hybrid Azure AD joined**, or **Valid client certificate**. Your selection depends on the method used in your organization for identifying managed devices.
+    - **Device tag**: Select **Does not equal**. and then select **Intune compliant**, **Microsoft Entra hybrid joined**, or **Valid client certificate**. Your selection depends on the method used in your organization for identifying managed devices.
 
     - **App**: Select the app you want to control.
 
@@ -101,7 +101,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. The file should be blocked and you should receive the message you set under **Customize block messages**.
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), under **Cloud Apps**, go to **Policies**, then select **Policy management**. Then select the policy you've created to view the policy report. A session policy match should appear shortly.
+1. In the [Microsoft Defender Portal](https://security.microsoft.com), under **Cloud Apps**, go to **Policies**, then select **Policy management**. Then select the policy you've created to view the policy report. A session policy match should appear shortly.
 
 1. In the policy report, you can see which logins were redirected to Microsoft Defender for Cloud Apps for session control, and which files were downloaded or blocked from the monitored sessions.
 

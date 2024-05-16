@@ -4,11 +4,12 @@ description: This article provides instructions for importing your user groups f
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Import user groups from connected apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-When you connect apps using API connectors, Microsoft Defender for Cloud Apps enables you to import user groups, for example from Microsoft 365 and Azure Active Directory. There are two types of user groups:
+
+When you connect apps using API connectors, Microsoft Defender for Cloud Apps enables you to import user groups, for example from Microsoft 365 and Microsoft Entra ID. There are two types of user groups:
 
 - **Automatic groups:** Automatic groups are created by default by Microsoft Defender for Cloud Apps. For example, there's an automatic user group called **External** that combines all users from all apps who are external to your organization and have access to files or were in user activities in your tenant. The following automatic groups exist in Defender for Cloud Apps:
 
@@ -27,20 +28,21 @@ When you connect apps using API connectors, Microsoft Defender for Cloud Apps en
   - Check if there's something unusual happening in the executive group.
   - Find if someone from the admin group performed an activity outside the US.
 
-## How to import user groups
+## Import user groups
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, choose **User groups**.
-1. Select **+Import user group**.
+1. In Microsoft Defender XDR, select **Settings > Cloud Apps > System > User groups > + Import user group**.
 
-    ![Import user groups.](media/user-groups-add.png)
+1. In the **Import user group** pane, select the app from which to import the user group. The apps shown depend on which connectors you've deployed.
 
-1. Select the app from which to import the user group. The list of apps will depend on which App Connectors you deployed.
-1. Select the group to import. The list of available groups will be a list of all the existing user groups in the app itself. If you want to add a new group, you have to do it directly in the app itself. Then, when the group appears in the list here, select it.
-1. You can select the option to be notified by email when the import process is complete.
-1. Select **Import**. After you import a group, Defender for Cloud Apps automatically syncs the group members, just like Active Directory Connect.
-1. After the import is complete, from the **User groups** page you can select a specific group to view a list of all the members of the group. Select any member of the group to further drill down into the details of a specific account. You can view which apps they use and a summary of the account including graphs of the user and their activity.
+1. Select the group you want to import. The list includes the first 50 groups from the existing user groups in the app. If you don't see your group, enter search text in the search field above the list.
 
-Importing groups enables you to select those groups as filters when investigating in the **Activity log** and when creating policies.
+   To add a new group to the list, do so in the app itself, and then return to the Microsoft Defender portal to view your new group in the list.
+
+1. (Optional) Select to be notified by email when the import process is complete. 
+
+1. Select **Import**.
+
+After the import is complete, select your group from the **User groups** page to view a list of all group members. Select any group member to drill down further for more details, including the apps used and a summary of the account activities. Imported groups can also be selected as filters when investigating in the **Activity log** and when creating policies. Group members are automatically synchronized for imported groups, just as they are for Active Directory Connect.
 
 > [!NOTE]
 >

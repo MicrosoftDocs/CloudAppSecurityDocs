@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with Zscaler
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 If you work with both Microsoft Defender for Cloud Apps and [Zscaler](https://www.zscaler.com/), integrate the two to enhance your cloud discovery experience. Zscaler, as a standalone cloud proxy, monitors your organization's traffic and enables you set policies for blocking transactions. Together, Defender for Cloud Apps and Zscaler provide the following capabilities:
 
@@ -16,14 +16,14 @@ If you work with both Microsoft Defender for Cloud Apps and [Zscaler](https://ww
 
 ## Prerequisites
 
-- A valid license for Microsoft Defender for Cloud Apps, or a valid license for Azure Active Directory Premium P1
+- A valid license for Microsoft Defender for Cloud Apps, or a valid license for Microsoft Entra ID P1
 - A valid license for Zscaler Cloud 5.6
 - An active Zscaler NSS subscription
 
 ## Deploy the Zscaler integration
 
 1. In the Zscalar portal, configure the Zscaler integration for Defender for Cloud Apps. For more information, see the [Zscaler documentation](https://help.zscaler.com/zia/configuring-mcas-integration).
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), complete the integration with the following steps:
+1. In [Microsoft Defender XDR](https://security.microsoft.com/), complete the integration with the following steps:
 
     1. Select **Settings** > **Cloud apps** > **Cloud discovery** > **Automatic log upload** > **+Add data source**.
     1. In the **Add data source** page, enter the following settings:

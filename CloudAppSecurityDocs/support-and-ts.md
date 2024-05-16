@@ -1,90 +1,51 @@
 ---
-title: Support and troubleshooting information
-description: This article describes your support and troubleshooting options for Microsoft Defender for Cloud Apps
-ms.date: 01/29/2023
+title: Contact Microsoft Defender for Cloud Apps support | Microsoft Defender for Cloud Apps
+description: Learn how to contact Microsoft Defender for Cloud Apps  support
 ms.topic: conceptual
+ms.date: 11/30/2023
 ---
-# Support and troubleshooting information for Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+# Contact Microsoft Defender for Cloud Apps support
 
-This article describes the available support and troubleshooting options for Defender for Cloud Apps.
+This article describes how to access Microsoft Defender for Cloud Apps support from the Microsoft Defender XDR portal. The support widget in Microsoft Defender XDR helps you find solutions to common problems or submit a support case to the Microsoft support team.
 
-## Manage support requests for Defender for Cloud Apps
+## Prerequisites
 
-Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Defender for Cloud Apps. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available
-in additional languages.
+To open support cases, you must have access to Microsoft Defender XDR as a **Service Support Administrator** or a **Helpdesk Administrator**. Any roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
 
-As an admin, you can use the **Help + Support** option to file an online support request for Defender for Cloud Apps from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+For more information, see [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator) and [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
-* Global administrator
+## Find solutions to common problems
 
-* Service administrator
+Access the Microsoft Defender XDR support widget by selecting the **?** icon at the top of the page. Then, enter text in the search box to find self-help solutions.
 
-Select **support request** to create a new support request that opens to the **Basics** tab of the Azure *Help + support* page by following the protocol below.
+Select an item from the self-help options shown to see more information. If the suggest content isn't sufficient, [open a service request](#open-a-service-request).
 
->[!NOTE]
-> For technical support with third-party products that work with Microsoft Defender for Cloud Apps (for example, Box, Salesforce, and Google Workspace) contact the supplier of that product first.
+## Open a service request
 
-### Create an online support request
+Look through the available self-help options before opening a service request. If you need to contact support, do so from a self-help article using either the **Contact support** button or the :::image type="icon" source="media/support-and-ts/contact-support.png" border="false"::: button.
 
-1. Sign in to the Azure portal [https://portal.azure.com](https://portal.azure.com/) with your admin
-    credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+For example:
 
-2. On the Azure **Help + support** page, select **Create a support request**.
+:::image type="content" source="media/support-and-ts/contact-support-buttons.png" alt-text="Screenshot of the Contact support buttons."::: 
 
-3. On the **Basics** tab, for most support issues, choose the following options:
+> [!NOTE]
+> If you have a premier support contract with Microsoft, you'll see the premier tag on the widget. If not, contact your Microsoft account manager.
 
-    * **Issue type**: **Technical**
+Use the **Contact support** form to enter details about your support request, including a description of the issue, related attachments, and your preferred contact options. 
 
-    * **Subscription**: \<*your subscription*\>
+Expand areas for regional and accessibility settings to indicate more details about yourself to help us make the process smoother.
 
-    * **Service**: **Microsoft Defender for Cloud Apps**
+The request is sent to Microsoft Support Team. The team will respond to your service request shortly.
 
-    * **Problem type**: Choose your problem type from the drop-down menu
+## Related topics
 
-    * **Problem subtype**: Choose the problem subtype from the drop-down menu
-
-    * **Subject**: Briefly describe the issue that you are having
-
-4. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then click **Next: Review + create**.
-
-5. Review the information, verify that it is correct, and then choose **Create** to submit your support request.
-
-**Note:** If you have a billing or subscription question, you can open a case to get support through the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/).
-
-### View open support requests
-
-You can view a support request from within the Azure portal. To do so:
-
-1. Sign in to Azure [https://portal.azure.com](https://portal.azure.com/) with your admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
-
-2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
-
-## Troubleshooting Microsoft Defender for Cloud Apps status
-
-Check the [current status of Microsoft Defender for Cloud Apps](https://portal.microsoft.com/Adminportal/Home#/servicehealth).
-
-## Additional resources
-
-* [Talk to a community of peers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/bd-p/MicrosoftDefenderCloudApps)
-
-* [Start a trial today](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
-
-* [Stay up to date with our blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/bg-p/MicrosoftSecurityandCompliance/label-name/Microsoft%20Defender%20for%20Cloud%20Apps)
-
-* Download [the Defender for Cloud Apps datasheet](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
-
-<a name="feedback"></a>
-
-## How to provide feedback
-
-The Defender for Cloud Apps team is always eager to hear your thoughts about our product. Provide feedback using one of the following options:
-
-* **Product feedback**: Send feedback to [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com).
-
-* **Documentation feedback**: Our new feedback system is built on GitHub Issues. To provide feedback on documentation you must first create a GitHub account. Read about this change in [our blog post](/teamblog/a-new-feedback-system-is-coming-to-docs).
-
-## Next steps
-
-Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md)
+- [Check service health](/microsoft-365/enterprise/view-service-health)
+- [Troubleshooting Cloud Discovery errors](troubleshooting-cloud-discovery.md)
+- [Troubleshooting content inspection errors](troubleshooting-content-inspection.md)
+- [Troubleshooting App Connector error messages](troubleshooting-api-connectors-using-error-messages.md)
+- [Troubleshooting Microsoft Defender for Cloud Apps policies](troubleshoot-policies.md)
+- [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md)
+- [Troubleshooting access and session controls for end-users](troubleshooting-proxy-end-users.md)
+- [Troubleshooting - What is `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`?](troubleshooting-proxy-url.md)
+- [Troubleshooting SIEM integration](troubleshooting-siem.md)

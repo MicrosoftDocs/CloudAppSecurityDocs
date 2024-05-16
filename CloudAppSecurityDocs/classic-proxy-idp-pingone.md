@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Deploy Conditional Access App Control for any web app using PingOne as the identity provider (IdP)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any non-Microsoft IdP. This article describes how to route app sessions from PingOne to Defender for Cloud Apps for real-time session controls.
 
@@ -24,7 +24,7 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 ## To configure session controls for your app using PingOne as the IdP
 
-Use the following steps to route your web app sessions from PingOne to Defender for Cloud Apps. For Azure AD configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
+Use the following steps to route your web app sessions from PingOne to Defender for Cloud Apps. For Microsoft Entra configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md).
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by PingOne using one of the following methods:
@@ -218,4 +218,4 @@ In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign
 > [!div class="nextstepaction"]
 > [Troubleshooting access and session controls](troubleshooting-proxy.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

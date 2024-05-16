@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Threat protection policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Defender for Cloud Apps enables you to identify high-risk use and cloud security issues, detect abnormal user behavior, and prevent threats in your sanctioned cloud apps. Get visibility into user and admin activities and define policies to automatically alert when suspicious behavior or specific activities that you consider risky are detected. Draw from the vast amount of Microsoft threat intelligence and security research data to help ensure that your sanctioned apps have all the security controls you need in place and help you maintain control over them.
 
@@ -55,15 +55,15 @@ Detect when a user, who is on unpaid leave and should not be active on any organ
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Create a security group in Azure Active Directory for the users on unpaid leave and add all the users you want to monitor.
+- Create a security group in Microsoft Entra ID for the users on unpaid leave and add all the users you want to monitor.
 
 ### Steps
 
-1. On the [User groups](user-groups.md) screen, select **Create user group** and import the relevant Azure AD group.
+1. On the [User groups](user-groups.md) screen, select **Create user group** and import the relevant Microsoft Entra group.
 
 2. On the **Policies** page, create a new **Activity policy**.
 
-3. Set the filter **User group** equals to the name of the user groups you created in Azure AD for the unpaid leave users.
+3. Set the filter **User group** equals to the name of the user groups you created in Microsoft Entra ID for the unpaid leave users.
 
 4. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. You can choose **Suspend user**.
 
@@ -294,4 +294,4 @@ You must have at least one app connected using [app connectors](enable-instant-v
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

@@ -1,17 +1,10 @@
 ---
-title: Investigate and remediate risky OAuth apps
+title: Investigate and remediate risky OAuth apps | Microsoft Defender for Cloud Apps
 description: This tutorial provides information on how to investigate and remediate risky OAuth apps in Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 01/23/2024
 ms.topic: tutorial
 ---
 # Investigate and remediate risky OAuth apps
-
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
-
->[!NOTE]
->Try the new app governance add-on to Microsoft Defender for Cloud Apps to get deeper protection, app usage insights, governance, and remediation capabilities for apps that directly access M365 app customer data. For more information, see [App governance add-on to Microsoft Defender for Cloud Apps (in preview)](/microsoft-365/compliance/app-governance-manage-app-governance).
->
->Learn about [customer eligibility](/microsoft-365/compliance/app-governance-get-started) and [sign up for a free trial here](https://www.microsoft.com/microsoft-365/try).
 
 OAuth is an open standard for token-based authentication and authorization. OAuth enables a user's account information to be used by third-party services, without exposing the user's password. OAuth acts as an intermediary on behalf of the user, providing the service with an access token that authorizes specific account information to be shared.
 
@@ -37,6 +30,14 @@ In this tutorial, you'll learn how to:
 > - [Investigate risky OAuth apps](#how-to-investigate-suspicious-oauth-apps)
 > - [Remediate risky OAuth apps](#how-to-remediate-suspicious-oauth-apps)
 
+> [!NOTE]
+> This article uses samples and screenshots from the **OAuth apps** page, which is used when you don't have app governance turned on.
+>
+> If you are using [preview features](/microsoft-365/security/defender/preview) and have app governance turned on, the same functionality is available from the **App governance** page instead.
+> 
+> For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md).
+>
+
 ## How to detect risky OAuth apps
 
 Detecting a risky OAuth app can be accomplished using:
@@ -50,7 +51,7 @@ You can set policies to automatically send you notifications when an OAuth app m
 
 ### Detect risky apps by hunting
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **OAuth apps**. Use the filters and queries to review what's happening in your environment:
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **OAuth apps**. Use the filters and queries to review what's happening in your environment:
 
     - Set the filter to **Permission level high severity** and **Community use not common**. Using this filter, you can focus on apps that are potentially very risky, where users may have underestimated the risk.
     - Under **Permissions** select all the options that are particularly risky in a specific context. For example, you can select all the filters that provide permission to email access, such as **Full access to all mailboxes** and then review the list of apps to make sure that they all really need mail-related access. This can help you investigate within a specific context, and find apps that seem legitimate, but contain unnecessary permissions. These apps are more likely to be risky.

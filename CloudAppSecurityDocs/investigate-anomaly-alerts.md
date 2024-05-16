@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # How to investigate anomaly detection alerts
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Microsoft Defender for Cloud Apps provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. However, it's important to note that since anomaly detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
@@ -292,9 +292,9 @@ Activity performed by a terminated user can indicate that a terminated employee 
 **Understand the scope of the breach**
 
 1. Cross-reference HR records to confirm that user is terminated.
-1. Validate the existence of the Azure Active Directory (Azure AD) user account.
+1. Validate the existence of the Microsoft Entra user account.
     > [!NOTE]
-    > If using Azure AD Connect, validate the on-premises Active Directory object and confirm a successful sync cycle.
+    > If using Microsoft Entra Connect, validate the on-premises Active Directory object and confirm a successful sync cycle.
 1. Identify all apps that the terminated user had access to and decommission the accounts.
 1. Update decommissioning procedures.
 
@@ -744,4 +744,3 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 > [!div class="nextstepaction"]
 > [Investigate risky users](tutorial-ueba.md)
-

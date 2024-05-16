@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Threat protection policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Defender for Cloud Apps enables you to identify high-risk use and cloud security issues, detect abnormal user behavior, and prevent threats in your sanctioned cloud apps. Get visibility into user and admin activities and define policies to automatically alert when suspicious behavior or specific activities that you consider risky are detected. Draw from the vast amount of Microsoft threat intelligence and security research data to help ensure that your sanctioned apps have all the security controls you need in place and help you maintain control over them.
 
@@ -23,7 +23,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-This detection is automatically configured out-of-the-box to alert you when there is access from new locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+This detection is automatically configured out-of-the-box to alert you when there's access from new locations. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 ## Detect compromised account by impossible location (impossible travel)
 
@@ -35,7 +35,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when there is access from impossible locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when there's access from impossible locations. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 1. Optional: you can [customize anomaly detection policies](anomaly-detection-policy.md#scope-anomaly-detection-policies):
 
     - Customize the detection scope in terms of users and groups
@@ -48,21 +48,21 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ## Detect suspicious activity from an "on-leave" employee
 
-Detect when a user, who is on unpaid leave and should not be active on any organizational resource, is accessing any of your organization's cloud resources.
+Detect when a user, who is on unpaid leave and shouldn't be active on any organizational resource, is accessing any of your organization's cloud resources.
 
 ### Prerequisites
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Create a security group in Azure Active Directory for the users on unpaid leave and add all the users you want to monitor.
+- Create a security group in Microsoft Entra ID for the users on unpaid leave and add all the users you want to monitor.
 
 ### Steps
 
-1. On the [User groups](user-groups.md) screen, select **Create user group** and import the relevant Azure AD group.
+1. On the [User groups](user-groups.md) screen, select **Create user group** and import the relevant Microsoft Entra group.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
-1. Set the filter **User group** equals to the name of the user groups you created in Azure AD for the unpaid leave users.
+1. Set the filter **User group** equals to the name of the user groups you created in Microsoft Entra ID for the unpaid leave users.
 
 1. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. You can choose **Suspend user**.
 
@@ -78,7 +78,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
 
 1. Set the filter **User agent tag** equals to **Outdated browser** and **Outdated operating system**.
 
@@ -98,7 +98,7 @@ Detect admin activities performed from and IP address that is considered a risky
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
 
 1. Set **Act on** to **Single activity**.
 
@@ -123,7 +123,7 @@ Detect service account activities originating from a non-internal IP addresses. 
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
 1. Set the filter **User** to **Name** and then **Starts with** and enter your naming convention, such as svc.
 
@@ -143,7 +143,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
 1. Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure**. This will exclude non-interactive device-based activities.
 
@@ -162,9 +162,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when there is a potential ransomware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when there's a potential ransomware risk detected. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Defender for Cloud Apps identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
+2. It's possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Defender for Cloud Apps identifies Ransomware, see [Protecting your organization from ransomware](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware).
 
 > [!NOTE]
 > This applies to Microsoft 365, Google Workspace, Box, and Dropbox.
@@ -180,7 +180,7 @@ Detect files containing malware in your cloud environments by utilizing the Defe
 
 ### Steps
 
-- This detection is automatically configured out-of-the-box to alert you when there is a file that may contain malware. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+- This detection is automatically configured out-of-the-box to alert you when there's a file that may contain malware. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 ## Detect rogue admin takeover
 
@@ -192,7 +192,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
 1. Set **Act on** to **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy..
 
@@ -213,7 +213,7 @@ If a suspicious inbox rule was set on a user's inbox, it may indicate that the u
 
 ### Steps
 
-- This detection is automatically configured out-of-the-box to alert you when there is a suspicious inbox rule set. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+- This detection is automatically configured out-of-the-box to alert you when there's a suspicious inbox rule set. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 ## Detect leaked credentials
 
@@ -227,7 +227,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-This detection is automatically configured out-of-the-box to alert you when a possible credential leak is detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+This detection is automatically configured out-of-the-box to alert you when a possible credential leak is detected. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 ## Detect anomalous file downloads
 
@@ -239,9 +239,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-1. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. It's possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Detect anomalous file shares by a user
 
@@ -253,13 +253,13 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-1. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. It's possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Detect anomalous activities from infrequent country/region
 
-Detect activities from a location that was not recently or was never visited by the user or by any user in your organization.
+Detect activities from a location that wasn't recently or was never visited by the user or by any user in your organization.
 
 ### Prerequisites
 
@@ -267,9 +267,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country/region. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country/region. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-1. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. It's possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 > [!NOTE]
 > Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Defender for Cloud Apps does not generate alerts for new locations.
@@ -284,9 +284,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-1. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. It's possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Next steps
 

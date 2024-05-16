@@ -1,9 +1,9 @@
 ---
 title: Investigate app governance threat detection alerts | Microsoft Defender for Cloud Apps
-ms.date: 08/06/2023
+ms.date: 02/12/2023
 ms.topic: conceptual
-ms.custom: has-azure-ad-ps-ref
-description: Learn how to investigate threat detection alerts from app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+description: Learn how to investigate threat detection alerts from app governance in Microsoft Defender XDR with Microsoft Defender for Cloud Apps.
 ---
 
 # Investigate threat detection alerts
@@ -12,6 +12,14 @@ App governance provides security detections and alerts for malicious activities.
 
 For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md)
 
+> [!NOTE]
+> App governance threat detections are based on counting activities on data that is transient and may not be stored, therefore alerts may provide the number of activities or indications of spikes, but not necessarily all the relevant data. Specifically for OAuth apps Graph API activities, the activities themselves can be audited by the tenant using Log Analytics and Sentinel.
+> 
+> For more information see: 
+>
+> - [Access Microsoft Graph activity logs](/graph/microsoft-graph-activity-logs-overview)
+> - [Analyze activity logs using Log Analytics](/entra/identity/monitoring-health/howto-analyze-activity-logs-log-analytics)
+> 
 ## MITRE ATT&CK
 
 To make it easier to map the relationship between app governance alerts and the familiar MITRE ATT&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT&CK tactic. This extra reference makes it easier to understand the suspected attacks technique potentially in use when app governance alert is triggered.
@@ -23,12 +31,12 @@ This guide provides information about investigating and remediating app governan
 - [Persistence](#persistence-alerts)
 - [Privilege Escalation](#privilege-escalation-alerts)
 - [Defense Evasion](#defense-evasion-alerts)
-- Credential Access
+- [Credential Access](#credential-access)
 - [Discovery](#discovery-alerts)
-- Lateral Movement
+- [Lateral Movement](#lateral-movement-alerts)
 - [Collection](#collection-alerts)
 - [Exfiltration](#exfiltration-alerts)
-- Impact
+- [Impact](#impact-alerts)
 
 ## Security alert classifications
 
@@ -53,7 +61,7 @@ Use the following general guidelines when investigating any type of alert to gai
 
 This section describes alerts indicating that a malicious app may be attempting to maintain their foothold in your organization.  
 
-### App redirects to phishing URL by exploiting OAuth redirection vulnerability
+### App redirects to phishing URL by exploiting OAuth redirection vulnerability
 
 **Severity**: Medium
 
@@ -86,8 +94,8 @@ This detection identifies an OAuth app accessed a suspicious Reply URL through t
 
   **Recommended action**: Review the Reply URL, domains and scopes requested by the app. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users are granted access.
 
-  To ban access to the app, go to thee OAuth apps page. On the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled, and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog. We recommend that you let the app users know their app is about to be banned from use.
-
+  To ban access to the app, go to the relevant tab for your app on the **App governance** page. On the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled, and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog. We recommend that you let the app users know their app is about to be banned from use.
+ 
 - **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
   **Recommended action**: Dismiss the alert.
@@ -162,7 +170,7 @@ This detection identifies an OAuth app that was found to have bad URL reputation
 
   **Recommended action**: Review the level of permission requested by this app and which users granted access. Based on your investigation you can choose to ban access to this app.
 
-  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
+  To ban access to the app, go to the relevant tab for your app on the **App governance** page. On the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
 
 - **FP**: If you're to confirm that the app has an encoded name but has a legitimate business use in the organization.
 
@@ -184,7 +192,7 @@ Follow the tutorial on how to [investigate risky OAuth apps](./investigate-risky
 
   **Recommended action**: Review the Reply URL and scopes requested by the app. Based on your investigation you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
 
-  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
+  To ban access to the app, go to the relevant tab for your app on the **App governance** page. On the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
 
 - **B-TP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
@@ -235,15 +243,15 @@ This detection identifies OAuth apps created recently in relatively new publishe
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-    **Recommended action**: 
-    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
-    - Investigate app activity and check affected accounts for suspicious activity. 
+    **Recommended action**:
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
+    - Investigate app activity and check affected accounts for suspicious activity.
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.
 
-- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization. 
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
     **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
 
@@ -259,9 +267,9 @@ This alert identifies OAuth apps registered recently in a relatively new publish
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-    **Recommended action**: 
+    **Recommended action**:
     - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
     - Investigate app activity and check affected accounts for suspicious activity. 
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
@@ -283,10 +291,10 @@ This alert finds multitenant OAuth apps that have made numerous calls to Microso
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-    **Recommended action**: 
-    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    **Recommended action**:
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
     - Investigate app activity and check affected accounts for suspicious activity. 
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.
@@ -297,7 +305,7 @@ This alert finds multitenant OAuth apps that have made numerous calls to Microso
 
 **Understand the scope of the breach**
 
-Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts.
 
 ### Suspicious OAuth app used to send numerous emails
 
@@ -307,11 +315,11 @@ This alert indicates an OAuth app that has made numerous calls to Microsoft Grap
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-    **Recommended action**: 
-    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
-    - Investigate app activity and check affected accounts for suspicious activity. 
+    **Recommended action**:
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
+    - Investigate app activity and check affected accounts for suspicious activity.
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.
 
@@ -321,7 +329,7 @@ This alert indicates an OAuth app that has made numerous calls to Microsoft Grap
 
 **Understand the scope of the breach**
 
-Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts.
 
 ## Persistence alerts
 
@@ -365,7 +373,7 @@ This detection identifies an OAuth App that was flagged high-risk by Machine Lea
 
   **Recommended action**: Disable and remove the app, reset the password, and remove the inbox rule.
 
-Follow the tutorial on how to Reset a password using Azure Active Directory and follow the tutorial on how to remove the inbox rule.
+Follow the tutorial on how to Reset a password using Microsoft Entra ID and follow the tutorial on how to remove the inbox rule.
 
 - **FP**: If you can confirm that app created an inbox rule to a new or personal external email account for legitimate reasons.
 
@@ -391,7 +399,7 @@ This detection identifies an OAuth App that consented to suspicious scopes, crea
 
   **Recommended action**:  Disable and remove the app, reset the password, and remove the inbox rule.
 
-  Follow the tutorial on how to Reset a password using Azure Active Directory and follow the tutorial on how to remove the inbox rule.
+  Follow the tutorial on how to Reset a password using Microsoft Entra ID and follow the tutorial on how to remove the inbox rule.
 
 - **FP**: If you can confirm that app created an inbox rule to a new or personal external email account for legitimate reasons.
 
@@ -489,10 +497,10 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 - **TP**: If you are able to confirm that the OAuth app is delivered from an unknown source and is performing unusual activities.
 
    **Recommended action**: 
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details. 
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
-    - Search the *CloudAppEvents* advanced hunting table to understand app activity and determine if the observed behavior is expected.
-    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and determine if the observed behavior is expected.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
 
@@ -515,11 +523,11 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 
 - **TP**: If you are able to confirm that the OAuth app is delivered from an unknown source and is performing unusual activities.
 
-   **Recommended action**: 
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
-    - Search the *CloudAppEvents* advanced hunting table to understand app activity and determine if the observed behavior is expected.
-    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and determine if the observed behavior is expected.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
 
@@ -531,10 +539,9 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
 
-
 ### Suspicious OAuth app email activity through Graph API
 
-**Severity**: High 
+**Severity**: High
 
 This detection generates alerts for multitenant OAuth apps, registered by users with a high risk sign in, that made calls to Microsoft Graph API to perform suspicious email activities within a short period of time.
 
@@ -550,9 +557,9 @@ This detection verifies whether the API calls were made for mailbox rule creatio
 
     - Investigate app activity and check affected accounts for suspicious activity.
 
-    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts and remove the inbox rule. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts and remove the inbox rule.
 
-    - Classify the alert as a true positive. 
+    - Classify the alert as a true positive.
 
 
 - **FP**: If, after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
@@ -569,7 +576,7 @@ This detection verifies whether the API calls were made for mailbox rule creatio
 
 **Severity**: High
 
-This detection generates alerts for multitenant OAuth apps, registered by users with a high-risky sign in, that made calls to Microsoft Exchange Web Services (EWS) API to perform suspicious email activities within a short period of time. 
+This detection generates alerts for multitenant OAuth apps, registered by users with a high-risky sign in, that made calls to Microsoft Exchange Web Services (EWS) API to perform suspicious email activities within a short period of time.
 
 This detection verifies whether the API calls were made to update inbox rules, move items, delete email, delete folder, or delete attachment. Apps that trigger this alert might be actively exfiltrating or deleting confidential data and clearing tracks to evade detection.
 
@@ -595,8 +602,7 @@ This detection verifies whether the API calls were made to update inbox rules, m
 
     - Understand the scope of the breach:
 
-      Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
-
+      Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts.
 
 ## Privilege escalation alerts
 
@@ -662,8 +668,8 @@ This detection generates alerts for non-Microsoft OAuth apps with publisher doma
 
 - **TP**: If you can confirm that the publisher domain or redirect URL of the app is typosquatted and doesn't relate to the true identity of the app.
 
-  **Recommended action**: 
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+  **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
     - Check the app for other signs of spoofing or impersonation and any suspicious activity.
     - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
@@ -676,6 +682,35 @@ This detection generates alerts for non-Microsoft OAuth apps with publisher doma
 1. Review all activities performed by the app.
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
+
+## Credential access
+
+This section describes alerts indicating that a malicious actor may be attempting to read sensitive credential data, and consists of techniques for stealing credentials like account names, secrets, tokens, certificates, and passwords in your organization.
+
+### Application initiating multiple failed KeyVault read activity with no success
+
+**Severity**: Medium
+
+**MITRE ID**: T1078.004
+
+This detection identifies an application in your tenant that was observed making multiple read action calls to the KeyVault using Azure Resource Manager API in a short interval, with only failures and no successful read activity being completed.
+
+**TP or FP?**
+ 
+- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious. After after verifiying the Azure resource being used and validating the app use in the tenant, the given activity may require that the app be disabled. This is usually evidence of suspected enumeration activity against the KeyVault resource to gain access to credentials for lateral movement or privilege escalation.
+ 
+  **Recommended actions**: Review the Azure resources accessed or created by the application and any recent changes made to the application. Based on your investigation, choose whether you want to ban access to this app. Review the permission level requested by this app and which users have granted access.
+ 
+- **FP**: If, after investigation, you can confirm that the app has legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+ 
+**Understand the scope of the breach**
+ 
+1. Review the app's access and activity.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and the Role granted to it in your subscription.
+1. Review any user who might have accessed the app prior to the activity.
 
 ## Discovery alerts
 
@@ -703,17 +738,17 @@ This detection identifies an OAuth app that was detected by Machine Learning mod
 1. Review the scopes granted by the app.
 1. Review the user activity associated with this app.
 
-### Suspicious enumeration activities performed using Azure Active Directory PowerShell
+### Suspicious enumeration activities performed using Microsoft Graph PowerShell
 
 **Severity**: Medium
 
 **MITRE ID**: T1087
 
-This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an Azure AD PowerShell application.
+This detection identifies a large volume of suspicious enumeration activities performed within a short time span through a [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) application.
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that suspicious/unusual enumeration activities were performed by the Azure AD PowerShell application.
+- **TP**: If you’re able to confirm that suspicious/unusual enumeration activities were performed by the Microsoft Graph PowerShell application.
 
   **Recommended action**: Disable and remove the application and reset the password.
 
@@ -738,8 +773,8 @@ This alert finds OAuth apps registered recently in a relatively new publisher te
 
 - **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
-  **Recommended action**: 
-    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+  **Recommended action**:
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal.
     - Investigate app activity and check affected accounts for suspicious activity. 
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.  
@@ -804,6 +839,39 @@ This detection identifies an OAuth app that used an unusual user agent to access
 2. Review the permissions granted to the application and users that have consented to the application.
 3. Review all activities done by the app.
 
+## Lateral movement alerts
+
+This section describes alerts indicating that a malicious actor may be attempting to laterally move within different resources, while pivoting through multiple systems and accounts to gain more control in your organization.
+
+### Dormant OAuth App predominantly using MS Graph or Exchange Web Services recently seen to be accessing ARM workloads
+
+**Severity**: Medium
+
+**MITRE ID**: T1078.004
+
+This detection identifies an application in your tenant that has, after a long span of dormant activity, started accessing the Azure Resource Manager API for the first time. Previously, this application had mostly using MS Graph or Exchange Web Service.
+ 
+**TP or FP?**
+
+- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious and may require disabling the app, after verifying the Azure resource being used, and validating the app usage in the tenant.
+
+  **Recommended actions**:
+
+  1. Review the Azure resources accessed or created by the application and any recent changes made to the application.
+  1. Review the level of permission requested by this app and which users have granted access.
+  1. Based on your investigation, choose whether you want to ban access to this app. 
+ 
+- **FP**: If, after investigation, you can confirm that the app has legitimate business use in the organization.
+ 
+  **Recommended action**: Dismiss the alert.
+ 
+**Understand the scope of the breach**
+ 
+1. Review the app's access and activity.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and the Role granted to it in your subscription.
+1. Review any user who might have accessed the app prior to the activity.
+
 ## Collection alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to gather data of interest to their goal from your organization.
@@ -843,7 +911,7 @@ This detection identifies when Line of Business (LOB) OAuth App accesses an unus
 
 - **TP**: If you can confirm that the unusual graph activity was performed by the Line of Business (LOB) OAuth App, then a true positive is indicated.
 
-  **Recommended actions**: Temporarily disable the app and reset the password and then re-enable the app. Follow the tutorial on how to Reset a password using Azure Active Directory.
+  **Recommended actions**: Temporarily disable the app and reset the password and then re-enable the app. Follow the tutorial on how to Reset a password using Microsoft Entra ID.
 
 - **FP**: If you can confirm that the app is intended to do unusually high volume of graph calls.
 
@@ -1036,11 +1104,11 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 
 - **TP**: If you can confirm that the app has created mailbox rules or made a large number of unusual Graph API calls to the Exchange workload.
 
-   **Recommended action**: 
-    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
-    - Search the *CloudAppEvents* advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
-    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
 
@@ -1052,6 +1120,113 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 1. Review the scopes granted to the app.
 1. Review the user activity associated with the app.
 
+### App with EWS application permissions accessing numerous emails
+
+**Severity**: Medium
+
+**MITRE IDs**: T1114
+
+This detection generates alerts for multi-tenant cloud apps with EWS application permissions showing a significant increase in calls to the Exchange Web Services API that are specific to email enumeration and collection. This app might be involved in accessing and retrieving sensitive email data.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the app has accessed sensitive email data or made a large number of unusual calls to the Exchange workload.
+
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
+    - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
+### Unused app newly accessing APIs
+
+**Severity**: Medium
+
+**MITRE IDs**: T1530
+
+This detection generates alerts for a multi-tenant cloud app that has been inactive for a while and has recently started making API calls. This app may be compromised by an attacker and being used to access and retrieve sensitive data.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the app has accessed sensitive data or made a large number of unusual calls to Microsoft Graph, Exchange or Azure Resource Manager workloads.
+
+   **Recommended action**:
+    - Investigate the app's registration details on app governance and visit Microsoft Entra ID for more details.
+    - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
+    - Search the *CloudAppEvents* Advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Microsoft Entra ID to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+   
+## Impact alerts
+
+This section describes alerts indicating that a malicious actor may be attempting to  manipulate, interrupt, or destroy your systems and data from your organization.
+
+### Entra Line-of-Business app initiating an anomalous spike in virtual machine creation
+
+**Severity**: Medium
+
+**MITRE ID**: T1496
+
+This detection identifies a single tenant new OAuth application that's creating bulk of Azure Virtual Machines in your tenant using the Azure Resource Manager API.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth app has recently been created and is creating large numbers of Virtual Machines in your tenant, then a true positive is indicated.
+
+  **Recommended actions**: Review the Virtual machines created and any recent changes made to the application. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**:
+
+1. Review the apps that are created recently and VMs created.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and Role granted to it in your subscription.
+
+### OAuth app with high scope privileges in Microsoft Graph was observed initiating virtual machine creation
+
+**Severity**: Medium
+
+**MITRE ID**: T1496
+
+This detection identifies OAuth application that creating bulk of Azure Virtual Machines in your tenant using the Azure Resource Manager API while having high privilege in the tenant via MS Graph API prior to the activity.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth app having high privilege scopes has been created and is creating large numbers of Virtual Machines in your tenant, then a true positive is indicated.
+
+  **Recommended actions**: Review the Virtual machines created and any recent changes made to the application. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**:
+
+1. Review the apps that are created recently and VMs created.
+1. Review all activities done by the app since its creation.
+1. Review the scopes granted by the app in Graph API and Role granted to it in your subscription.
 
 ## Next steps
 

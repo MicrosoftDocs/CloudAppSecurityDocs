@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Cloud Discovery data anonymization
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Microsoft Defender for Cloud Apps portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. When necessary, for a specific security investigation (for example, a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, they can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal's **Governance log**.
 
@@ -29,7 +29,7 @@ Key points:
 
     - You can set the default in Defender for Cloud Apps to anonymize all data from both snapshot reports from uploaded log files and continuous reports from log collectors as follows:
 
-        1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+        1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
         1. Under **Cloud Discovery**, select **Anonymization**. To anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Defender-managed endpoints' report**. 
 
@@ -59,7 +59,7 @@ Key points:
 
     The following alternative way to resolve single usernames can also be used to look up the encrypted username of a known username.
 
-    1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+    1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
     1. Under **Cloud Discovery**, select **Anonymization**. Then, under **Anonymize and resolve usernames**  enter a justification for why you're doing the resolution.
     1. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Select **Resolve**.

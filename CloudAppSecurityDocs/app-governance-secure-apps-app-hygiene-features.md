@@ -9,9 +9,9 @@ description: Learn how to secure apps with app hygiene features
 # Secure apps with app hygiene features
 
 > [!NOTE]
-> Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium. For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
+> Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload ID Premium. For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
 
-Have you ever wanted to see the apps that your organization owns but isn't using, but didn't know how to? Or clean up unused or expiring credentials more easily? Azure AD includes recommendations to help you identify such apps, and the **App governance** page in Microsoft 365 Defender provides an app hygiene feature suite that includes controls and insights on unused apps, unused credentials, and expiring credentials. 
+Have you ever wanted to see the apps that your organization owns but isn't using, but didn't know how to? Or clean up unused or expiring credentials more easily? Microsoft Entra ID includes recommendations to help you identify such apps, and the **App governance** page in Microsoft Defender provides an app hygiene feature suite that includes controls and insights on unused apps, unused credentials, and expiring credentials. 
 
 These features enable automatic control over these apps and provide extra app behavior context to help you determine the risk these apps pose in your environment.
 
@@ -33,7 +33,7 @@ App governance allows you to sort and filter on app last used date, credential u
 
 App governance provides customizable policies for unused apps, apps with unused credentials, and apps with expiring credentials. 
 
-For example, create a policy to automatically disable any app that hasn’t been used in the past 90 days, has high privilege permissions, and can access [priority account information](/microsoft-365/admin/setup/priority-accounts). Like all app governance alerts, these alerts are aggregated into incidents in your Microsoft 365 Defender alerts queue and flow to advanced hunting and Microsoft Sentinel.
+For example, create a policy to automatically disable any app that hasn’t been used in the past 90 days, has high privilege permissions, and can access [priority account information](/microsoft-365/admin/setup/priority-accounts). Like all app governance alerts, these alerts are aggregated into incidents in your Microsoft Defender XDR alerts queue and flow to Advanced hunting and Microsoft Sentinel.
 
 For example:
 

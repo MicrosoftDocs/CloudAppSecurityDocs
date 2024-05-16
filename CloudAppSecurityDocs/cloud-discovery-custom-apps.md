@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Add custom apps to Cloud Discovery
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Cloud Discovery analyzes your traffic logs against the Defender for Cloud Apps catalog. Over 31,000 cloud apps are in the Cloud App Catalog. The catalog contains publicly available cloud apps only, for which Defender for Cloud Apps provides visibility and risk information.
 
@@ -16,7 +16,7 @@ By adding a new custom cloud app, Defender for Cloud Apps can match uploaded fir
 
 ## Add a new custom cloud app
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. You should see the Cloud Discovery dashboard.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Cloud Discovery**. You should see the Cloud Discovery dashboard.
 
     ![cloud discovery dashboard menu.](media/cloud-discovery-dashboard-menu.png)
 

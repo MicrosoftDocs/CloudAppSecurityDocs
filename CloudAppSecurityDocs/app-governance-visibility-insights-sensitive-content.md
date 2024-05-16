@@ -2,7 +2,7 @@
 title: Get insights on and regulate access to sensitive content with app governance | Microsoft Defender for Cloud Apps
 ms.date: 05/28/2023
 ms.topic: how-to
-description: Learn how to get insights on and regulate access to sensitive content in app governance with Microsoft Defender for Cloud Apps in Microsoft 365 Defender
+description: Learn how to get insights on and regulate access to sensitive content in app governance with Microsoft Defender for Cloud Apps in Microsoft Defender XDR
 ---
 
 # Get insights on and regulate access to sensitive content
@@ -13,11 +13,11 @@ App governance lets you quickly identify the Microsoft 365 services apps have ac
 
 To view apps that have accessed data across Microsoft 365 services, select **View apps** from the relevant card on the **Overview** tab. For example
 
-:::image type="content" source="media/app-governance-visibility-insights-sensitive-content/image7.png" alt-text="Screenshot of the Apps that accessed Azure AD services card.":::
+:::image type="content" source="media/app-governance-visibility-insights-sensitive-content/image7.png" alt-text="Screenshot of the Apps that accessed Microsoft Entra services card.":::
 
 Alternatively, select any of the labels listed under **Sensitivity labels access** on one of the apps tabs. Under each service type, app governance shows the number of times the app has accessed the corresponding label name in the last 30 days. For example:
 
-:::image type="content" source="media/app-governance-visibility-insights-sensitive-content/sensitive-labels-details.png" alt-text="Screenshot of the Sensitivity labels tab on the Azure AD apps tab.":::
+:::image type="content" source="media/app-governance-visibility-insights-sensitive-content/sensitive-labels-details.png" alt-text="Screenshot of the Sensitivity labels tab on the Microsoft Entra apps tab.":::
 
 For example, in the screenshot above, the app has accessed content with the sensitivity label *Highly confidential* seven times on SharePoint, 15 times on OneDrive, and 25 times on Exchange Online in the last 30 days.
 

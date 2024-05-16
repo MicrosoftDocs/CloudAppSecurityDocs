@@ -8,7 +8,7 @@ ROBOTS: NOINDEX
 
 # Classic portal: Anomaly detection policies in Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 The Microsoft Defender for Cloud Apps anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you're ready from the outset to run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies immediately start the process of detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. In addition, the policies expose more data from the Defender for Cloud Apps detection engine, to help you speed up the investigation process and contain ongoing threats.
 
@@ -27,10 +27,10 @@ Anomalies are detected by scanning user activity. The risk is evaluated by looki
 
 Based on the policy results, security alerts are triggered. Defender for Cloud Apps looks at every user session on your cloud and alerts you when something happens that is different from the baseline of your organization or from the user's regular activity.
 
-In addition to native Defender for Cloud Apps alerts, you'll also get the following detection alerts based on information received from Azure Active Directory (AD) Identity Protection:
+In addition to native Defender for Cloud Apps alerts, you'll also get the following detection alerts based on information received from Microsoft Entra ID Protection:
 
-* Leaked credentials: Triggered when a user's valid credentials have been leaked. For more information, see [Azure AD's Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
-* Risky sign-in: Combines a number of Azure AD Identity Protection sign-in detections into a single detection. For more information, see [Azure AD's Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
+* Leaked credentials: Triggered when a user's valid credentials have been leaked. For more information, see [Microsoft Entra ID's Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
+* Risky sign-in: Combines a number of Microsoft Entra ID Protection sign-in detections into a single detection. For more information, see [Microsoft Entra ID's Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
 These policies will appear on the Defender for Cloud Apps policies page and can be enabled or disabled.
 
@@ -85,9 +85,9 @@ The following anomaly detection policies are available:
 ### Activity performed by terminated user
 
 * This detection enables you to able to identify when a terminated employee continues to perform actions on your SaaS apps. Because data shows that the greatest risk of insider threat comes from employees who left on bad terms, it's important to keep an eye on the activity on accounts from terminated employees. Sometimes, when employees leave a company, their accounts are de-provisioned from corporate apps, but in many cases they still retain access to certain corporate resources. This is even more important when considering privileged accounts, as the potential damage a former admin can do is inherently greater.
-This detection takes advantage of the Defender for Cloud Apps ability to monitor user behavior across apps, allowing identification of the regular activity of the user, the fact that the account was deleted, and actual activity on other apps. For example, an employee whose Azure AD account was deleted, but still has access to the corporate AWS infrastructure, has the potential to cause large-scale damage.
+This detection takes advantage of the Defender for Cloud Apps ability to monitor user behavior across apps, allowing identification of the regular activity of the user, the fact that the account was deleted, and actual activity on other apps. For example, an employee whose Microsoft Entra account was deleted, but still has access to the corporate AWS infrastructure, has the potential to cause large-scale damage.
 
-The detection looks for users whose accounts were deleted in Azure AD, but still perform activities in other platforms such as AWS or Salesforce. This is especially relevant for users who use another account (not their primary single sign-on account) to manage resources, since these accounts are often not deleted when a user leaves the company.
+The detection looks for users whose accounts were deleted in Microsoft Entra ID, but still perform activities in other platforms such as AWS or Salesforce. This is especially relevant for users who use another account (not their primary single sign-on account) to manage resources, since these accounts are often not deleted when a user leaves the company.
 
 ### Activity from suspicious IP addresses
 
@@ -219,4 +219,4 @@ You can triage the various alerts triggered by the new anomaly detection policie
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

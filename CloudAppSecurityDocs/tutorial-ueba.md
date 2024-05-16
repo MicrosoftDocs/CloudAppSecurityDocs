@@ -6,7 +6,7 @@ ms.topic: tutorial
 ---
 # Tutorial: Investigate risky users
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often aren't connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Defender for Cloud Apps now simplifies this by taking away the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
 
@@ -23,6 +23,50 @@ In this tutorial, you'll learn how to use Defender for Cloud Apps to investigate
 > - [Further investigate users](#investigate)
 > - [Protect your organization](#protect)
 
+## Investigation priority score increase - Deprecation timeline
+
+We will be gradually retiring the "Investigation priority score increase" support from Microsoft Defender for Cloud Apps by July 2024.
+
+After careful analysis and consideration, we have decided to deprecate it due to the high rate of false positives associated with this alert, which we found was not contributing effectively to the overall security of your organization. 
+
+Our research indicated that this feature was not adding significant value and was not aligned with our strategic focus on delivering high-quality, reliable security solutions. 
+
+We are committed to continuously improving our services and ensuring that they meet your needs and expectations. 
+
+For those who wish to continue using this alert, we suggest using "Advanced Hunting" dedicated query:
+
+```kql    
+let time_back = 1d;
+let last_seen_threshold = 30;
+// the number of days which the resource is considered to be in use by the user lately, and therefore not indicates anomaly resource usage
+// anomaly score based on LastSeenForUser column in CloudAppEvents table
+let last_seen_scores =
+CloudAppEvents
+| where Timestamp > ago(time_back)
+| where isnotempty(LastSeenForUser)
+| mv-expand LastSeenForUser
+| extend resource = tostring(bag_keys(LastSeenForUser)[0])
+| extend last_seen = LastSeenForUser[resource]
+| where last_seen < 0 or last_seen > last_seen_threshold
+// score is calculated as the number of resources which were never seen before or breaching the chosen threshold
+| summarize last_seen_score = dcount(resource) by ReportId, AccountId;
+// anomaly score based on UncommonForUser column in CloudAppEvents table
+let uncommonality_scores =
+CloudAppEvents
+| where Timestamp > ago(time_back)
+| where isnotempty(UncommonForUser)
+| extend uncommonality_score = array_length(UncommonForUser)
+// score is calculated as the number of uncommon resources on the event
+| project uncommonality_score, ReportId, AccountId;
+last_seen_scores | join kind=innerunique uncommonality_scores on ReportId and AccountId
+| project-away ReportId1, AccountId1
+| extend anomaly_score = last_seen_score + uncommonality_score
+// joined scores
+```
+
+* This querty is a suggestion, use it as template and modify based on your needs.
+
+
 ## Understand the investigation priority score<a name="risk-score"></a>
 
 The investigation priority score is a score Defender for Cloud Apps gives to each user to let you know how risky a user is relative to other users in your organization.
@@ -35,7 +79,7 @@ The investigation priority score is based on security alerts, abnormal activitie
 
 If you select the score value for an alert or an activity, you can view the evidence that explains how Defender for Cloud Apps scored the activity.
 
-Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Defender for Cloud Apps. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they're compromised, exfiltrating data, or acting as insider threats.
+Every Microsoft Entra user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Defender for Cloud Apps. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they're compromised, exfiltrating data, or acting as insider threats.
 
 Defender for Cloud Apps uses the following to measure risk:
 
@@ -54,7 +98,7 @@ The activity score determines the probability of a specific user performing a sp
 
 To identify who your riskiest users are in Defender for Cloud Apps:
 
-1. In the Microsoft 365 Defender portal, under **Assets**, select **Identities**. Sort the table by **Investigation priority**. Then one by one go to their user page to investigate them.  
+1. In the Microsoft Defender Portal, under **Assets**, select **Identities**. Sort the table by **Investigation priority**. Then one by one go to their user page to investigate them.  
 The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week.
 
    ![Top users dashboard.](media/dashboard-top-users.png)
@@ -81,7 +125,7 @@ The User page helps you answer the questions:
 
 If the user was investigated and no suspicion for compromise was found, or for any reason you prefer to reset the user's investigation priority score, you can manually reset the score.
 
-1. In the Microsoft 365 Defender portal, under **Assets**, select **Identities**.
+1. In the Microsoft Defender Portal, under **Assets**, select **Identities**.
 
 1. Select the three dots to the right of the investigated user, and choose **Reset investigation priority score**. You can also select **View user page** and then select **Reset investigation priority score** from the three dots in the User page.
 
@@ -110,7 +154,7 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 
 - Contact the user – Using the user contact information integrated with Defender for Cloud Apps from Active Directory, you can drill down into each alert and activity to resolve the user identity. Make sure the user is familiar with the activities.
 
-- Directly from the Microsoft 365 Defender portal, in the **Identities** page, select the three dots by the investigated user and choose whether to require the user to sign in again, suspend the user, or confirm the user as compromised.
+- Directly from the Microsoft Defender Portal, in the **Identities** page, select the three dots by the investigated user and choose whether to require the user to sign in again, suspend the user, or confirm the user as compromised.
 
 - In the case of a compromised identity, you can ask the user to reset their password, making sure the password meets best practice guidelines for length and complexity.
 - If you drill down into an alert and determine that the activity shouldn't have triggered an alert, in the [Activity drawer](activity-filters.md), select the **Send us feedback** link so that we can be sure to fine-tune our alerting system with your organization in mind.

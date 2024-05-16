@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Activity policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Activity policies allow you to enforce a wide range of automated processes using the app provider's APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of one certain type of activity.
 
@@ -29,7 +29,7 @@ You can set activity alerts to be sent to yourself or to the user when these eve
 
 To create a new activity policy, follow this procedure:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Threat detections** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Threat detections** tab.
 
 1. Click **Create policy** and select **Activity policy**.
 
@@ -39,14 +39,14 @@ To create a new activity policy, follow this procedure:
 
 1. To set which actions or other metrics will trigger this policy, work with the **Activity filters**.
 
-    > [!NOTE]
-    >
-    > - To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries/regions, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
-    >
-    >   ![Screenshot of filter settings, showing location field is set.](media/activity-example-location-isset.png)
-    >
-    > - When a filter is set to *does not equal* and the attribute does not exist on the event, the event will not be filtered out. For example, filtering on **Device Tag does not equal "Hybrid Azure AD joined"** will not filter out events that do not contain **Device tag**, even if the device is Azure AD joined.
+   To ensure that you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries/regions, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**. For example:
 
+   ![Screenshot of filter settings, showing location field is set.](media/activity-example-location-isset.png)
+
+   When a filter is set to *does not equal* and the attribute does not exist on the event, the event will not be filtered out. For example, filtering on **Device Tag does not equal Microsoft Entra hybrid joined** doesn't filter out events that do not contain **Device tag**, even if the device is Microsoft Entra joined.
+
+   In case of a a guest user, there may be cases where the **User From Group** filter doesn't recognize the account by its domain. To make sure all guest users are included, use the **External users** as the group, if it meets your needs for the policy.
+                 
 1. Under **Create filters for the policy**, select when a policy violation will be triggered. Choose to trigger when a **Single activity** matches the filters or only when a specified number of **Repeated activities** are detected.
     - If you choose **Repeated activity**, you can set **In a single app**. This setting will trigger a policy match only when the repeated activities occur in the same app. For example, five downloads in 30 minutes from Box trigger a policy match.
 
@@ -89,4 +89,3 @@ Each policy is composed of the following parts:
 > [Data protection policies](data-protection-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-

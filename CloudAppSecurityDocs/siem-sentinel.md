@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Microsoft Sentinel integration (Preview)
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 You can integrate Microsoft Defender for Cloud Apps with Microsoft Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and discovery data. Integrating with Microsoft Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
@@ -34,18 +34,18 @@ To integrate with Microsoft Sentinel:
 
 The direct Defender for Cloud Apps - Microsoft Sentinel integration is available to commercial customers only.
 
-However, all Defender for Cloud Apps data is available in Microsoft 365 Defender, and therefore available in Microsoft Sentinel via the Microsoft 365 Defender connector.
+However, all Defender for Cloud Apps data is available in Microsoft Defender XDR, and therefore available in Microsoft Sentinel via the Microsoft Defender XDR connector.
 
-We recommend that GCC, GCC High, and DoD customers who are interested in seeing Defender for Cloud Apps data in Microsoft Sentinel install the Microsoft 365 Defender solution.
+We recommend that GCC, GCC High, and DoD customers who are interested in seeing Defender for Cloud Apps data in Microsoft Sentinel install the Microsoft Defender XDR solution.
 
 For more information, see:
 
-- [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
 - [Microsoft Defender for Cloud Apps for US Government offerings](editions-cloud-app-security-gcc.md)
 
 ### Integrating with Microsoft Sentinel
 
-1. In the Microsoft 365 Defender portal, select **Settings > Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings > Cloud Apps**.
 
 1. Under **System**, select **SIEM agents > Add SIEM agent > Sentinel**. For example:
 
@@ -95,7 +95,7 @@ The following table describes each field in the **McasShadowItReporting** schema
 | **DownloadedBytes** | Integer | Amount of downloaded data | 2,552,911 |
 | **IpAddress** | String | Source IP address | 127.0.0.0 |
 | **UserName** | String | User name | `Raegan@contoso.com` |
-| **EnrichedUserName** | String | Enriched user name with Azure AD username | `Raegan@contoso.com` |
+| **EnrichedUserName** | String | Enriched user name with Microsoft Entra username | `Raegan@contoso.com` |
 | **AppName** | String | Name of cloud app | Microsoft OneDrive for Business |
 | **AppId** | Integer | Cloud app identifier | 15600 |
 | **AppCategory** | String | Category of cloud app | Cloud storage |

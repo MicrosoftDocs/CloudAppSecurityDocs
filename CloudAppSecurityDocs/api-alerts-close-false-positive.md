@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Close false positive - Alerts API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the POST request to close multiple alerts matching the specified filters as false positive (an alert on a non-malicious activity).
 
@@ -35,7 +35,7 @@ POST /api/v1/alerts/close_false_positive/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/close_false_positive/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/alerts/close_false_positive/" -d '{
   "filters": {
     "id": {
       "eq": [

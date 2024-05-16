@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Information protection policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Defender for Cloud Apps file policies allow you to enforce a wide range of automated processes. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
 
@@ -22,7 +22,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
 1. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
@@ -44,7 +44,7 @@ Detect when files that are labeled **Confidential** and are stored in a cloud se
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
 1. Set the filter **Sensitivity label** to **Microsoft Purview Information Protection** equals the **Confidential** label, or your company's equivalent.
 
@@ -66,7 +66,7 @@ Detect files containing personally identifying information and other sensitive d
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
 1. Under **Inspection method**, select **Data Classification Service (DCS)** and under **Select type** select the type of sensitive information you want DCS to inspect.
 
@@ -87,7 +87,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
 1. Select and apply the policy template **Stale externally shared files**.
 
@@ -113,7 +113,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
 1. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
 
@@ -135,7 +135,7 @@ Sensitivity labels are configured and used inside the organization.
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
 1. Set the filter **Sensitivity label** to **Microsoft Purview Information Protection** equals the **Confidential** label, or your company's equivalent.
 
@@ -157,7 +157,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
 1. Select and apply the policy template **Externally shared source code**
 
@@ -177,7 +177,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
 1. Under **Act on**, select **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy.
 
@@ -204,7 +204,7 @@ You must have an AWS instance connected using [app connectors](enable-instant-vi
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
 1. Select and apply the policy template **Publicly accessible S3 buckets (AWS)**.
 
@@ -220,11 +220,11 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Microsoft Purview Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
+- [Microsoft Purview Information Protection integration](azip-integration.md) is enabled and GDPR label is configured in Microsoft Purview
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
 1. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select one or more information types that comply with the GDPR compliance, for example: EU debit card number, EU drivers license number, EU national/regional identification number, EU passport number, EU SSN, SU tax identification number.
 
@@ -241,13 +241,13 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
 
-- Make sure your app is a SAML-based app that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+- Make sure your app is a SAML-based app that utilizes Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Session policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Session policy**.
 
 1. Under **Session control type**, select **Control file download (with inspection)**.
 
@@ -268,12 +268,12 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
-- Make sure your app is a SAML-based app that uses Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
+- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Session policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Session policy**.
 
 1. Under **Session control type**, select **Block activities**.
 
@@ -298,15 +298,15 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
 
-- Make sure your app is a SAML-based app that uses Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 - sensitivity labels from Microsoft Purview Information Protection must be configured and used inside your organization.
 
 ### Steps
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Session policy**.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Session policy**.
 
 1. Under **Session control type**, select **Control file upload (with inspection)** or **Control file download (with inspection)**.
 

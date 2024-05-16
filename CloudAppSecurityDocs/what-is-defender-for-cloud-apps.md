@@ -10,7 +10,7 @@ ms.topic: overview
 > You might be looking for Microsoft 365 Cloud App Security. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?](editions-cloud-app-security-o365.md)
 > 
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Software as a service (SaaS) apps are ubiquitous across hybrid work environments, and protecting SaaS apps and the important data they store is a big challenge for organizations. The rise in app usage, combined with employees accessing company resources outside of the corporate perimeter has also introduced new attack vectors. To combat these attacks effectively, security teams need an approach that protects their data within cloud apps beyond the traditional scope of cloud access security brokers (CASBs).
 
@@ -66,9 +66,9 @@ While cloud apps continue to be a target for adversaries trying to exfiltrate co
 
 Defender for Cloud Apps offers built-in adaptive access control (AAC), provides user and entity behavior analysis (UEBA), and helps you mitigate malware.
 
-Defender for Cloud Apps is also integrated directly into Microsoft 365 Defender, correlating XDR signals from the Microsoft Defender suite and providing incident-level detection, investigation, and powerful response capabilities. Integrating SaaS security into Microsoft's XDR experience gives SOC teams full kill chain visibility and improves operational efficiency and effectivity.
+Defender for Cloud Apps is also integrated directly into Microsoft Defender XDR, correlating XDR signals from the Microsoft Defender suite and providing incident-level detection, investigation, and powerful response capabilities. Integrating SaaS security into Microsoft's XDR experience gives SOC teams full kill chain visibility and improves operational efficiency and effectivity.
 
-For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
 ## App to app protection with app governance
 

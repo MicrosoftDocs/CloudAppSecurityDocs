@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Email notification preferences
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps to your users when a breach is detected.
 
@@ -21,7 +21,7 @@ This article provides information about how to personalize the email notificatio
 
  Microsoft Defender for Cloud Apps enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Defender for Cloud Apps email server IP address that you should allow in your anti-spam service, see [Network requirements](network-requirements.md).
 
-1. In the Microsoft 365 Defender portal, select **Settings** > **Cloud Apps** > **System** > **Mail settings**.
+1. In the Microsoft Defender Portal, select **Settings** > **Cloud Apps** > **System** > **Mail settings**.
 
     ![Screenshot of the Mail settings tab.](media/mail-settings/email-settings.png)
     

@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # DLP content inspection in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 If you enable content inspection, you can choose to use preset expressions or to search for other customized expressions.
 
@@ -23,8 +23,8 @@ Defender for Cloud Apps allows admins to grant Defender for Cloud Apps permissio
 In order to give Defender for Cloud Apps the necessary permissions:
 
 1. Go to **Settings** and then **Microsoft Information Protection**.
-2. Under **Inspect protected files**, select **Grant permission** to grant Defender for Cloud Apps permission in Azure AD.
-3. Follow the prompt to allow the required permissions in Azure Active Directory.
+2. Under **Inspect protected files**, select **Grant permission** to grant Defender for Cloud Apps permission in Microsoft Entra ID.
+3. Follow the prompt to allow the required permissions in Microsoft Entra ID.
 4. You can configure the settings per file policy to determine which policies will scan protected files.
 
 ## Next steps

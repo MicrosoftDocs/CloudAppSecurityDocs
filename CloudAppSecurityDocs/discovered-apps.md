@@ -7,7 +7,7 @@ ms.topic: conceptual
 
 # Working with discovered apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, and the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data. Filtering allows you to generate specific views depending on what you're most interested in using easy-to-understand graphics to give you the full picture at a glance. For more information, see [Discovered app filters](discovered-app-queries.md#discovered-app-filters).
 
@@ -68,7 +68,7 @@ For example, from Defender for Cloud Apps you can monitor activity such as if a 
 
 To view discovered resources:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud discovery**. Then choose the  **Discovered resources** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Cloud discovery**. Then choose the  **Discovered resources** tab.
 
     ![Discovered resources menu.](media/discovered-resources-menu.png)
 
@@ -95,7 +95,7 @@ If you have system users, IP addresses, or devices that are noisy but uninterest
 
 To create an exclusion:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select the **Exclude entities** tab.
 
@@ -118,7 +118,7 @@ Custom continuous reports provide you more granularity when monitoring your orga
 
 To create a new continuous report:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select **Continuous report**.
 
@@ -147,7 +147,7 @@ There are a number of reasons why you may want to delete your Cloud Discovery da
 
 To delete Cloud Discovery data:
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select the **Delete data** tab.
 

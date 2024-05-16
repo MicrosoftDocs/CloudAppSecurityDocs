@@ -1,13 +1,13 @@
 ---
-title: Activity filters and queries
+title: Activity filters and queries | Microsoft Defender for Cloud Apps
 description: This article provides a list of Defender for Cloud Apps activity filters and queries and explains how to work with them.
-ms.date: 02/12/2023
+ms.date: 12/21/2023
 ms.topic: how-to
 ---
 
 # Activity filters and queries
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides descriptions and instructions for Defender for Cloud Apps activity filters and queries.
 
@@ -42,7 +42,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Date – The date when the activity occurred. Filter supports before/after dates and a date range.
 
-- Device tag - Search by **Intune compliant**, **Hybrid Azure AD joined** or **Valid client certificate**.
+- Device tag - Search by **Intune compliant**, **Microsoft Entra hybrid joined** or **Valid client certificate**.
 
 - Device type - Search only for activities that were done using a specific device type. For example, search all activities from mobile devices, PCs, or Tablets.
 
@@ -141,17 +141,21 @@ To investigate activities older than 30 days, you can navigate to the **Activity
 
 ![Select investigate 6 months back.](media/investigate-six-months-back.png)
 
-From there you can define the filters as is normally done with the **Activity Log**, but with two differences:
+From there you can define the filters as is normally done with the **Activity Log**, with the following differences:
 
-1. The date filter is mandatory and is limited to a one week span.
-1. In addition, the following filers will be supported:
-    - Activity ID
-    - Activity type
-    - Action type
-    - Application
-    - IP address
-    - Location
-    - User name
+- **The date filter is mandatory and is limited to a one week span**. This means that while you can query activities for up to six months back, you can only do so for a one week period at a time.
+
+- **Querying more than 30 days back is supported for the following fields only**:
+
+  - Activity ID
+  - Activity type
+  - Action type
+  - Application
+  - IP address
+  - Location
+  - User name
+
+For example: 
 
 ![Filter after selecting investigate 6 months back.](media/filter-six-months-back.png)
 
@@ -159,4 +163,3 @@ From there you can define the filters as is normally done with the **Activity Lo
 
 > [!div class="nextstepaction"]
 > [Best practices for protecting your organization](best-practices.md)
-

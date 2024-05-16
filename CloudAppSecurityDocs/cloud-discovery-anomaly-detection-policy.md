@@ -6,9 +6,22 @@ ms.topic: how-to
 ---
 # Cloud Discovery anomaly detection policy
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article gives you reference details about policies. Explanations for each policy type and fields that can be configured for each policy are listed.
+
+## Cloud Discovery anomaly detection policy - Deprecation timeline
+
+We will be retiring the "Cloud Discovery anomaly" support from Microsoft Defender for Cloud Apps by July 2024.
+
+After careful analysis and consideration, we have decided to deprecate it due to the high rate of false positives associated with this alert, which we found was not contributing effectively to the overall security of your organization. 
+
+Our research indicated that this feature was not adding significant value and was not aligned with our strategic focus on delivering high-quality, reliable security solutions.
+
+We are committed to continuously improving our services and ensuring that they meet your needs and expectations. 
+
+For those who wish to continue using this alert, we suggest using "**App discovery policy**" and under "**Trigger a policy match if all the following occur on the same day**" set the filters acordinaly.
+
 
 ## Cloud Discovery anomaly detection policy reference
 
@@ -16,7 +29,7 @@ A Cloud Discovery anomaly detection policy enables you to set up and configure c
 
 For each policy, you set filters that enable you to selectively monitor application usage. Filters include an application filter, selected data views, and a selected start date. You can also set the sensitivity, which enables you to set how many alerts the policy should trigger.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
 
 1. Select **Create policy** and select **Cloud Discovery anomaly detection policy**.
 

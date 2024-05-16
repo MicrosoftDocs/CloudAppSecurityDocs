@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Feedback on activity - Activities API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the POST request to send feedback about the activity matching the specified primary key.
 
@@ -35,7 +35,7 @@ POST /api/v1/activities/<pk>/feedback
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>"  -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/feedback" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>"  -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/activities/<pk>/feedback" -d '{
   "feedbackValue": "0",
   "feedbackText": "Irrelevant",
   "allowContact": false,

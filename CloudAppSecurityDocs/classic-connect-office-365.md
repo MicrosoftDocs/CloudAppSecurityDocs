@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Connect Microsoft 365 to Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Microsoft 365 account using the app connector API. This connection gives you visibility into and control over Microsoft 365 use. For information about how Defender for Cloud Apps protects Microsoft 365, see [Protect Microsoft 365](protect-office-365.md).
   
@@ -29,8 +29,8 @@ Defender for Cloud Apps integrates directly with [Microsoft 365's audit logs](/m
 >- If Office apps are enabled, groups that are part of Microsoft 365 are also imported to Defender for Cloud Apps from the specific Office apps, for example, if SharePoint is enabled, Microsoft 365 groups are imported as SharePoint groups as well.
 >- You must [enable auditing in Power BI](/power-bi/admin/service-admin-auditing) to get the logs from there. Once auditing is enabled, Defender for Cloud Apps starts getting the logs (with a delay of 24-72 hours).
 >- You must [enable auditing in Dynamics 365](/power-platform/admin/enable-use-comprehensive-auditing#enable-auditing) to get the logs from there. Once auditing is enabled, Defender for Cloud Apps starts getting the logs (with a delay of 24-72 hours).
->- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment override the Azure AD settings and use of the **Suspend user** governance action is reverted.
->- For Azure AD sign-in activities, Defender for Cloud Apps only surfaces interactive sign-in activities and sign-in activities from legacy protocols such as ActiveSync. Noninteractive sign-in activities may be viewed in the Azure AD audit log.
+>- If your Microsoft Entra ID is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment override the Microsoft Entra settings and use of the **Suspend user** governance action is reverted.
+>- For Microsoft Entra sign-in activities, Defender for Cloud Apps only surfaces interactive sign-in activities and sign-in activities from legacy protocols such as ActiveSync. Noninteractive sign-in activities may be viewed in the Microsoft Entra audit log.
 >- [Multi-geo deployments](/microsoft-365/enterprise/microsoft-365-multi-geo) are only supported for OneDrive
 >- In SharePoint and OneDrive, Defender for Cloud Apps supports user quarantine only for files in **Shared Documents** libraries (SharePoint Online) and files in the **Documents** library (OneDrive for Business).
 >- In SharePoint, Defender for Cloud Apps supports quarantine tasks only for files with **Shared Documents** in path in English.
@@ -65,4 +65,4 @@ If you have any problems connecting the app, see [Troubleshooting App Connectors
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

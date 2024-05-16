@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Troubleshooting Microsoft Defender for Cloud Apps policies
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article describes the process for troubleshooting policy creation in Defender for Cloud Apps.
 

@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Integrate Microsoft Purview Information Protection
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Microsoft Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Purview Information Protection. These labels will be applied to files as a file policy governance action, and depending on the label configuration, can apply encryption for additional protection. You can also investigate files by filtering for the applied sensitivity label within the Defender for Cloud Apps portal. Using labels enables greater visibility and control of your sensitive data in the cloud. Integrating Microsoft Purview Information Protection with Defender for Cloud Apps is as easy as selecting a single checkbox.
 
@@ -21,7 +21,7 @@ By integrating Microsoft Purview Information Protection into Defender for Cloud 
 ## Prerequisites
 
 > [!NOTE]
-> To enable this feature, you need both a Defender for Cloud Apps license and a license for Azure Information Protection Premium P1. As soon as both licenses are in place, Defender for Cloud Apps syncs the organization's labels from the Azure Information Protection service.
+> To enable this feature, you need both a Defender for Cloud Apps license and a license for Microsoft Purview. As soon as both licenses are in place, Defender for Cloud Apps syncs the organization's labels from the Microsoft Purview service.
 
 - To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Microsoft 365](./connect-office-365.md).
 
@@ -179,4 +179,4 @@ Learn more about [Microsoft Purview Information Protection](/microsoft-365/compl
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

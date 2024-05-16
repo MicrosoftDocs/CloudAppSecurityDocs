@@ -6,7 +6,7 @@ ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with iboss
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 If you work with both Defender for Cloud Apps and iboss, you can integrate the two products to enhance your security Cloud Discovery experience. iboss is a standalone secure cloud gateway that monitors your organization's traffic and enables you to set policies that block transactions. Together, Defender for Cloud Apps and iboss provide the following capabilities:
 
@@ -21,7 +21,7 @@ If you work with both Defender for Cloud Apps and iboss, you can integrate the t
 
 ## Deployment
 
-1. In the [Microsoft 365 Defender portal](https://security.microsoft.com/), do the following integration steps:
+1. In the [Microsoft Defender Portal](https://security.microsoft.com/), do the following integration steps:
     1. Select **Settings**. Then choose **Cloud Apps**.
     1. Under **Cloud Discovery**, select **Automatic log upload**. Then select **+Add data source**.
     1. In the **Add data source** page, enter the following settings:

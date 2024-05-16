@@ -6,7 +6,7 @@ ms.topic: conceptual
 ---
 # Troubleshooting App Connector error messages
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This article provides a list of API App connector error messages and resolution recommendations for each error.
 
@@ -28,7 +28,7 @@ App connector errors can be seen in the app connector dialog after attempting to
 > |BoxServerException: User cannot access this feature without having an enterprise|Box|The Box account is not an Enterprise account.|Upgrade your Box license to the Enterprise version of Box and then follow the process to connect Box to Defender for Cloud Apps again.|
 > |BoxServerException: Unauthorized - Cannot authorize with this service|Box|The Box admin deleted the Defender for Cloud Apps application in Box.|Follow the process to connect Box to Defender for Cloud Apps again.|
 > |HttpRequestFailure: Server returned: 401 Unauthorized|Exchange Online|User or password are incorrect|Make sure the username and password are correct and Follow the process to connect Exchange Online to Defender for Cloud Apps again.|
-> |HttpRequestFailure: Server returned: 404 Not Found|Exchange Online|The user you are using to log into Exchange Online does not have a primary mailbox in Exchange Online (for example, a user who does not exist in Azure AD or a user exists in Azure AD, but does not have an Exchange Online license).|Follow the process to connect Exchange Online to Defender for Cloud Apps again using a new admin account.|
+> |HttpRequestFailure: Server returned: 404 Not Found|Exchange Online|The user you are using to log into Exchange Online does not have a primary mailbox in Exchange Online (for example, a user who does not exist in Microsoft Entra ID or a user exists in Microsoft Entra ID, but does not have an Exchange Online license).|Follow the process to connect Exchange Online to Defender for Cloud Apps again using a new admin account.|
 > |GoogleJsonResponseException: 401 Unauthorized|Google Workspace|Access denied. You are not authorized to read activity records. The user you log into Google Workspace with must be an admin user.|Follow the process to connect Google Workspace to Defender for Cloud Apps again using an admin account.|
 > |GoogleJsonResponseException: 403 Forbidden|Google Workspace|Problem running the Google Workspace API.|If you just deployed the Defender for Cloud Apps App Connector for Google Workspace, check the following: If you clicked Unlimited, make sure that your Google Workspace account is really unlimited. If it is not, run the App Connector again and un-select the option for an unlimited account. Check that the scopes you defined during setup are correct. If this is not a new deployment and you see this error, it may be that you reached the API limit for today and Google Workspace events will be renewed tomorrow.|
 > |TokenResponseException: 400 Bad Request|Google Workspace|Either the connection to Google Workspace did not complete or is expired.|Follow the process to connect Google Workspace to Defender for Cloud Apps again.|

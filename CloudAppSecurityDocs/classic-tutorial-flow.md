@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Tutorial: Extend governance to endpoint remediation
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 Defender for Cloud Apps provides predefined governance options for policies, such as suspend a user or make a file private. Using the native integration with Microsoft Power Automate, you can use a large ecosystem of software as a service (SaaS) connectors to build workflows to automate processes including remediation.
 
@@ -31,7 +31,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 - You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing/)
 - You must have a valid Microsoft Defender for Endpoint plan
-- The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
+- The Power Automate environment must be Microsoft Entra ID synced, Defender for Endpoint monitored, and domain-joined
 
 ## Phase 1: Generate a Defender for Cloud Apps API token<a name="generate-token"></a>
 
@@ -68,7 +68,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 ## Phase 3: Configure the flow<a name="configure-flow"></a>
 
 > [!NOTE]
-> If you have previously created a flow using an Azure AD connector, Power Automate automatically reuses the token and you can skip this step.
+> If you have previously created a flow using a Microsoft Entra connector, Power Automate automatically reuses the token and you can skip this step.
 
 1. In the list of apps, on the row in which **Defender for Cloud Apps** appears, select **Create**.
 
@@ -82,7 +82,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 1. In the **HTTP with Azure AD** pop-up, for both the **Base Resource URL** and **Azure AD Resource URI** fields, enter `https://graph.microsoft.com`, and then select **Sign in** and enter the admin credentials you want to use with the HTTP with Azure AD connector.
 
-    ![Screenshot of the HTTP with Azure AD window, showing the Resource fields and sign-in button.](media/classic-tutorial-flow-templates-azure.png)
+    ![Screenshot of the HTTP with Microsoft Azure AD window, showing the Resource fields and sign-in button.](media/classic-tutorial-flow-templates-azure.png)
 
 1. Select **Continue**.
 

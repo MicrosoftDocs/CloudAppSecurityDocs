@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Create IP address range - Data Enrichment API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Run the POST request to add a new IP address range.
 
@@ -33,7 +33,7 @@ POST /api/v1/subnet/create_rule/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",

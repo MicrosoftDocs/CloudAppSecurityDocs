@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Fetch - Files API
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 > [!NOTE]
 >
@@ -33,7 +33,7 @@ GET /api/v1/files/<pk>/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/files/<pk>/"
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/files/<pk>/"
 ```
 
 ### Response

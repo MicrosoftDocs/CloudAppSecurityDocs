@@ -1,14 +1,14 @@
 ---
 title: Access policies
-description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control access policy to allow and block access to apps connected through Azure AD using reverse proxy capabilities.
+description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control access policy to allow and block access to apps connected through Microsoft Entra ID using reverse proxy capabilities.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Access policies in Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Defender for Cloud Apps access policies enable real-time monitoring and control over access to cloud apps based on user, location, device, and app. You can create access policies for any device, including devices that aren't Hybrid Azure AD Join and not managed by Microsoft Intune, by rolling out client certificates to managed devices or using existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices and then block access from devices without a certificate.
+
+Microsoft Defender for Cloud Apps access policies enable real-time monitoring and control over access to cloud apps based on user, location, device, and app. You can create access policies for any device, including devices that aren't Microsoft Entra hybrid join and not managed by Microsoft Intune, by rolling out client certificates to managed devices or using existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices and then block access from devices without a certificate.
 
 > [!NOTE]
 > - Instead of allowing or blocking access completely, with [session policies](session-policy-aad.md) you can allow access while monitoring the session and/or limit specific session activities.
@@ -16,17 +16,17 @@ Microsoft Defender for Cloud Apps access policies enable real-time monitoring an
 
 ## Prerequisites to using access policies
 
-- Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
+- Microsoft Entra ID P1 license, or the license required by your identity provider (IdP) solution
 - The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 - Make sure you have configured your IdP solution to work with Defender for Cloud Apps, as follows:
-  - For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  - For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md#configure-integration-with-azure-ad)
   - For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
 
 ## Create a Defender for Cloud Apps access policy
 
 To create a new access policy, follow this procedure:
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Conditional access** tab.
+1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Conditional access** tab.
 
 1. Select **Create policy** and then select **Access policy**.
 

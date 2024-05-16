@@ -7,15 +7,14 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Configure automatic log upload using Docker in Azure
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
-You can configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Ubuntu, Red Hat Enterprise Linux (RHEL), or CentOS in Azure.
+You can configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Ubuntu or CentOS in Azure.
 
 ## Prerequisites
 
 * OS:
   * Ubuntu 14.04, 16.04, 18.04, and 20.04
-  * RHEL 7.2 or higher
   * CentOS 7.2 or higher
 
 * Disk space: 250 GB
@@ -189,7 +188,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 1. Remove the container-tools module: `yum module remove container-tools`
 1. Add the Docker CE repository: `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`
-1. Modify the yum repo file to use CentOS 8/RHEL 8 packages: `sed -i s/7/8/g /etc/yum.repos.d/docker-ce.repo`
+1. Modify the yum repo file to use CentOS 8 packages: `sed -i s/7/8/g /etc/yum.repos.d/docker-ce.repo`
 1. Install Docker CE: `yum install docker-ce`
 
 1. Start Docker
@@ -272,7 +271,7 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 ### Optional - Create custom continuous reports
 
-Verify that the logs are being uploaded to Defender for Cloud Apps and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
+Verify that the logs are being uploaded to Defender for Cloud Apps and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Microsoft Entra user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**.
 1. Click the **Create report** button and fill in the fields.
@@ -288,4 +287,4 @@ Verify that the logs are being uploaded to Defender for Cloud Apps and that repo
 > [!div class="nextstepaction"]
 > [Modify the log collector FTP configuration](log-collector-advanced-management.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

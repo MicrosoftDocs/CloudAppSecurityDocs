@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Managing API tokens
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Defender for Cloud Apps exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Defender for Cloud Apps capabilities.
 
@@ -16,7 +16,7 @@ The API access requires OAuth2.0 authentication. For more information, see [OAut
 
 In general, you’ll need to take the following steps to use the APIs:
 
-- Create an Azure Active Directory (Azure AD) application
+- Create a Microsoft Entra application
 - Get an access token using this application
 - Use the token to access the Defender for Cloud Apps API
 
@@ -31,7 +31,7 @@ Used by apps that run without a signed-in user present. For example, apps that r
 
 Steps that need to be taken to access Defender for Cloud Apps API with application context:
 
-1. Create an Azure AD Web-Application.
+1. Create a Microsoft Entra Web-Application.
 1. Assign the desired permission to the application. For example, **Read Alerts** or **Upload Discovery Report**.
 1. Create a key for this application.
 1. Get the token using the application with its key.
@@ -45,7 +45,7 @@ Used to perform actions in the API on behalf of a user.
 
 Steps to take to access the Defender for Cloud Apps API with application context:
 
-1. Create an Azure AD Native-Application.
+1. Create a Microsoft Entra Native-Application.
 1. Assign the desired permission to the application. For example, **Read Alerts** or **Upload Discovery Report**.
 1. Get the token using the application with user credentials.
 1. Use the token to access the Defender for Cloud Apps API.

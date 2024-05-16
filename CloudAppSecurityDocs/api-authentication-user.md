@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Access Microsoft Defender for Cloud Apps API with user context
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 This page describes how to create an application to get programmatic access to Defender for Cloud Apps on behalf of a user.
 
@@ -18,11 +18,11 @@ Microsoft Defender for Cloud Apps exposes much of its data and actions through a
 
 In general, you’ll need to take the following steps to use the APIs:
 
-- Create an Azure Active Directory (Azure AD) application
+- Create a Microsoft Entra application
 - Get an access token using this application
 - Use the token to access Defender for Cloud Apps API
 
-This page explains how to create an Azure AD application, get an access token to Microsoft Defender for Cloud Apps and validate the token.
+This page explains how to create a Microsoft Entra application, get an access token to Microsoft Defender for Cloud Apps and validate the token.
 
 >[!NOTE]
 > When accessing Microsoft Defender for Cloud Apps API on behalf of a user, you will need the correct Application permission and user permission.
@@ -35,7 +35,7 @@ This page explains how to create an Azure AD application, get an access token to
 
 1. Sign in to [Azure](https://portal.azure.com) with a user account that has the **Global Administrator** role.
 
-1. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
+1. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
    ![Image of Microsoft Azure and navigation to application registration.](media/atp-azure-new-app2.png)
 
@@ -46,13 +46,13 @@ This page explains how to create an Azure AD application, get an access token to
 
        | Supported account types | Description |
        |-------------------------|-------------|
-       | **Accounts in this organizational directory only** | Select this option if you're building a line-of-business (LOB) application. This option isn't available if you're not registering the application in a directory.<br><br>This option maps to Azure AD only single-tenant.<br><br>This is the default option unless you're registering the app outside of a directory. In cases where the app is registered outside of a directory, the default is Azure AD multi-tenant and personal Microsoft accounts. |
-       | **Accounts in any organizational directory** | Select this option if you would like to target all business and educational customers.<br><br>This option maps to an Azure AD only multi-tenant.<br><br>If you registered the app as Azure AD only single-tenant, you can update it to be Azure AD multi-tenant and back to single-tenant through the **Authentication** pane. |
-       | **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>This option maps to Azure AD multi-tenant and personal Microsoft accounts.<br><br>If you registered the app as Azure AD multi-tenant and personal Microsoft accounts, you can't change this in the UI. Instead, you must use the application manifest editor to change the supported account types. |
+       | **Accounts in this organizational directory only** | Select this option if you're building a line-of-business (LOB) application. This option isn't available if you're not registering the application in a directory.<br><br>This option maps to Microsoft Entra-only single-tenant.<br><br>This is the default option unless you're registering the app outside of a directory. In cases where the app is registered outside of a directory, the default is Microsoft Entra multi-tenant and personal Microsoft accounts. |
+       | **Accounts in any organizational directory** | Select this option if you would like to target all business and educational customers.<br><br>This option maps to a Microsoft Entra-only multi-tenant.<br><br>If you registered the app as Microsoft Entra-only single-tenant, you can update it to be Microsoft Entra multi-tenant and back to single-tenant through the **Authentication** pane. |
+       | **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>This option maps to Microsoft Entra multi-tenant and personal Microsoft accounts.<br><br>If you registered the app as Microsoft Entra multi-tenant and personal Microsoft accounts, you can't change this in the UI. Instead, you must use the application manifest editor to change the supported account types. |
 
    - **Redirect URI (optional)** - Select the type of app you're building, **Web** or **Public client (mobile & desktop)**, and then enter the redirect URI (or reply URL) for your application.
        - For web applications, provide the base URL of your app. For example, `http://localhost:31544` might be the URL for a web app running on your local machine. Users would use this URL to sign in to a web client application.
-       - For public client applications, provide the URI used by Azure AD to return token responses. Enter a value specific to your application, such as `myapp://auth`.
+       - For public client applications, provide the URI used by Microsoft Entra ID to return token responses. Enter a value specific to your application, such as `myapp://auth`.
 
      To see specific examples for web applications or native applications, check out our [quickstarts](/azure/active-directory/develop/#quickstarts).
 
@@ -99,7 +99,7 @@ This page explains how to create an Azure AD application, get an access token to
 
 ## Get an access token
 
-For more information on Azure AD tokens, see [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on Microsoft Entra tokens, see [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using C#
 

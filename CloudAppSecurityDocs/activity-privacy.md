@@ -6,12 +6,12 @@ ms.topic: how-to
 ---
 # Activity privacy
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 
 Microsoft Defender for Cloud Apps allows enterprises to granularly determine which users they want to monitor based on group membership. Activity privacy will enable you to follow your organization's compliance regulations without compromising user privacy. This is achieved by allowing you to monitor users while maintaining their privacy by hiding their activities in the activity log. Only authorized admins can choose to view these private activities, with each instance being audited in the governance log.
 
 >[!NOTE]
-> Private activities aren't forwarded to Microsoft 365 Defender advanced hunting, and aren't passed on in our SIEM integration.
+> Private activities aren't forwarded to Microsoft Defender XDR Advanced hunting, and aren't passed on in our SIEM integration.
 
 ## Configure activity privacy user groups
 
@@ -19,11 +19,11 @@ You may have users in Defender for Cloud Apps that you want to monitor, but, due
 
 To configure your user privacy groups, you must first [import user groups](user-groups.md) to Defender for Cloud Apps. By default, you'll see the following groups:
 
-- **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Azure AD applications.
+- **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Microsoft Entra applications.
 
 - **External users** group - All users who aren't members of any managed domains you configured for your organization.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Scoped deployment and privacy**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Scoped deployment and privacy**.
 
 1. To set specific groups to be monitored by Defender for Cloud Apps, in the **Activity privacy** tab, select **+Add group**.
 
@@ -36,7 +36,7 @@ To configure your user privacy groups, you must first [import user groups](user-
 
 ## Assign admins permission to view private activities
 
-1. In the Microsoft 365 Defender portal, in the left-hand menu, select **Permissions**.
+1. In the Microsoft Defender Portal, in the left-hand menu, select **Permissions**.
 1. Under **Cloud Apps**, choose **Activity Privacy Permissions**.
 
     :::image type="content" source="media/activity-privacy-permissions.png" alt-text="Configure Activity Privacy Permissions.":::
@@ -64,6 +64,6 @@ Once an admin has been granted the appropriate permission to view private activi
 
 > [!TIP]
 > When you export activities with the **Show private activities** option selected, the activities inside the export are still private, and no activity details are exposed.
-> 
+>  
 
 [!INCLUDE [Open support ticket](includes/support.md)]

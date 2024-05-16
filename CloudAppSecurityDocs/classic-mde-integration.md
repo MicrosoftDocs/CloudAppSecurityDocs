@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 > [!IMPORTANT]
 > This document focuses on shadow IT discovery capabilities from Defender for Endpoint logs. For more information on shadow IT governing capabilities via Defender for Endpoint, see [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md).
@@ -16,7 +16,7 @@ Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Endpoin
 
 Defender for Cloud Apps uses the traffic information collected by Defender for Endpoint about the cloud apps and services being accessed from IT-managed devices specified in the prerequisites below.
 
-The integration doesn't require any additional deployment and can be enabled directly from the settings in Defender for Endpoint and Microsoft 365 Defender. You don't need to route or mirror traffic from your endpoints or do complex integration steps. Logs from your endpoints sent to Defender for Cloud Apps provide user and device information for traffic activities. Pairing device context with the username provides a full picture across your network enabling you to determine which user did which activity from which device.
+The integration doesn't require any additional deployment and can be enabled directly from the settings in Defender for Endpoint and Microsoft Defender XDR. You don't need to route or mirror traffic from your endpoints or do complex integration steps. Logs from your endpoints sent to Defender for Cloud Apps provide user and device information for traffic activities. Pairing device context with the username provides a full picture across your network enabling you to determine which user did which activity from which device.
 
 Additionally, when you identify a risky user, you can check all the devices the user accessed to detect potential risks. If you identify a risky device, check all the users who used it to detect further potential risks.
 
@@ -38,7 +38,7 @@ On its own, Defender for Cloud Apps collects logs from your endpoints using eith
 
 To enable Defender for Endpoint integration with Defender for Cloud Apps:
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com), from the navigation pane, select **Settings**.
+1. In [Microsoft Defender XDR](https://security.microsoft.com), from the navigation pane, select **Settings**.
 1. Select **Endpoints**.
 1. Under **General**, select **Advanced features**.
 1. Toggle the **Microsoft Defender for Cloud Apps** to **On**.
@@ -74,4 +74,4 @@ To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 > [!div class="nextstepaction"]
 > [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]

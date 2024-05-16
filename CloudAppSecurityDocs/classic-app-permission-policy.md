@@ -7,7 +7,7 @@ ROBOTS: NOINDEX
 ---
 # Classic portal: Create policies to control OAuth apps
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+[!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
 In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, you can set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users.
 
@@ -47,7 +47,7 @@ In addition to OAuth app policies you can create, there are the following out-of
 
 > [!NOTE]
 >
-> - Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+> - Anomaly detection policies are only available for OAuth apps that are authorized in your Microsoft Entra ID.
 > - The severity of OAuth app anomaly detection policies cannot be modified.
 
 ## Next steps
@@ -55,4 +55,4 @@ In addition to OAuth app policies you can create, there are the following out-of
 > [!div class="nextstepaction"]
 > [Data protection policies](data-protection-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]
+[!INCLUDE [Open support ticket](includes/classic-support.md)]
