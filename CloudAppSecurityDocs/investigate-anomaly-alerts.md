@@ -742,7 +742,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 #### Deprecation timeline
 
-We're gradually retiring the **Investigation priority score increase** alert from Microsoft Defender for Cloud Apps by July 2024.
+We're gradually retiring the **Investigation priority score increase** alert from Microsoft Defender for Cloud Apps by August 2024.
 
 After careful analysis and consideration, we decided to deprecate it due to the high rate of false positives associated with this alert, which we found wasn't contributing effectively to the overall security of your organization.
 

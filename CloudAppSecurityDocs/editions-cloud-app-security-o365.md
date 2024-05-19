@@ -1,7 +1,7 @@
 ---
 title: Differences between Defender for Cloud Apps and Microsoft 365 Cloud App Security
 description: This article describes the differences between Defender for Cloud Apps and Microsoft 365 Cloud App Security.
-ms.date: 01/29/2023
+ms.date: 05/19/2024
 ms.topic: overview
 ---
 # What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?
@@ -49,6 +49,6 @@ Microsoft 365 Cloud App Security includes threat detection based on user activit
 
 ## Next steps
 
-- Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md).
+Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]
