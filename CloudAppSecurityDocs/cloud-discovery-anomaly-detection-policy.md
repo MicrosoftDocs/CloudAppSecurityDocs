@@ -12,7 +12,7 @@ This article gives you reference details about policies. Explanations for each p
 
 ## Cloud Discovery anomaly detection policy - Deprecation timeline
 
-We will be retiring the "Cloud Discovery anomaly" support from Microsoft Defender for Cloud Apps by July 2024.
+We will be retiring the "Cloud Discovery anomaly" support from Microsoft Defender for Cloud Apps by August 2024.
 
 After careful analysis and consideration, we have decided to deprecate it due to the high rate of false positives associated with this alert, which we found was not contributing effectively to the overall security of your organization. 
 
