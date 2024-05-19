@@ -1,7 +1,7 @@
 ---
-title: How to investigate anomaly detection alerts
+title: How to investigate anomaly detection alerts | Microsoft Defender for Cloud Apps
 description: This article explains how to investigate the Defender for Cloud Apps anomaly detection alerts issued when attacks are detected against your organization.
-ms.date: 03/09/2023
+ms.date: 05/19/2024
 ms.topic: how-to
 ---
 
@@ -9,11 +9,11 @@ ms.topic: how-to
 
 
 
-Microsoft Defender for Cloud Apps provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. However, it's important to note that since anomaly detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+Microsoft Defender for Cloud Apps provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. However, it's important to note that since anomaly detections are nondeterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts might be in preview, so regularly review the official documentation for updated alert status.
 
 ## MITRE ATT\&CK
 
-To explain and make it easier to map the relationship between Defender for Cloud Apps alerts and the familiar MITRE ATT\&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT\&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when a Defender for Cloud Apps alert is triggered.
+To explain and make it easier to map the relationship between Defender for Cloud Apps alerts and the familiar MITRE ATT\&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT\&CK tactic. This extra reference makes it easier to understand the suspected attacks technique potentially in use when a Defender for Cloud Apps alert is triggered.
 
 This guide provides information about investigating and remediating Defender for Cloud Apps alerts in the following categories.
 
@@ -34,7 +34,7 @@ Following proper investigation, all Defender for Cloud Apps alerts can be classi
 
 - **True positive (TP)**: An alert on a confirmed malicious activity.
 - **Benign true positive (B-TP)**: An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
-- **False positive (FP)**: An alert on a non-malicious activity.
+- **False positive (FP)**: An alert on a nonmalicious activity.
 
 ## General investigation steps
 
@@ -49,13 +49,13 @@ You should use the following general guidelines when investigating any type of a
 
 ## Initial access alerts
 
-This section describes alerts indicating that a malicious actor may be attempting to gain an initial foothold into your organization.
+This section describes alerts indicating that a malicious actor might be attempting to gain an initial foothold into your organization.
 
 ### Activity from anonymous IP address
 
 **Description**
 
-Activity from an IP address that has been identified as an anonymous proxy IP address by Microsoft Threat Intelligence or by your organization. These proxies can be used to hide a device's IP address and may be used for malicious activities.
+Activity from an IP address that has been identified as an anonymous proxy IP address by Microsoft Threat Intelligence or by your organization. These proxies can be used to hide a device's IP address and might be used for malicious activities.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -70,11 +70,11 @@ This detection uses a machine learning algorithm that reduces **B-TP** incidents
 
 **Understand the scope of the breach**
 
-- Review all user activity and alerts for additional indicators of compromise. For example, if the alert was followed by another suspicious alert, such as a [Unusual file download (by user)](#unusual-file-download-by-user) or a [Suspicious inbox forwarding](#suspicious-inbox-forwarding) alert, that often indicates that an attacker is attempting to exfiltrate data.
+- Review all user activity and alerts for other indicators of compromise. For example, if the alert was followed by another suspicious alert, such as a [Unusual file download (by user)](#unusual-file-download-by-user) or a [Suspicious inbox forwarding](#suspicious-inbox-forwarding) alert, that often indicates that an attacker is attempting to exfiltrate data.
 
 ### Activity from infrequent country
 
-Activity from a country/region that could indicate malicious activity. This policy profiles your environment and triggers alerts when activity is detected from a location that was not recently or was never visited by any user in the organization.
+Activity from a country/region that could indicate malicious activity. This policy profiles your environment and triggers alerts when activity is detected from a location that wasn't recently or was never visited by any user in the organization.
 
 The policy can be further scoped to a subset of users or can exclude users known to travel to remote locations.
 
@@ -98,11 +98,11 @@ Detecting anomalous locations requires an initial learning period of seven days 
 
 **Understand the scope of the breach**
 
-- Review which resource may have been compromised, such as potential data downloads.
+- Review which resource might have been compromised, such as potential data downloads.
 
 ### Activity from suspicious IP addresses
 
-Activity from an IP address that has been identified as risky by Microsoft Threat Intelligence or by your organization. These IP addresses were identified as being involved in malicious activities, such as performing password spray, botnet command and control (C&C), and may indicate a compromised account.
+Activity from an IP address that has been identified as risky by Microsoft Threat Intelligence or by your organization. These IP addresses were identified as being involved in malicious activities, such as performing password spray, botnet command and control (C&C), and might indicate a compromised account.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -116,22 +116,22 @@ Activity from an IP address that has been identified as risky by Microsoft Threa
 **Understand the scope of the breach**
 
 1. Review the activity log and search for activities from the same IP address.
-1. Review which resource may have been compromised, such as potential data downloads or administrative modifications.
+1. Review which resource might have been compromised, such as potential data downloads or administrative modifications.
 1. Create a group for security analysts voluntarily triggering these alerts and exclude them from the policy.
 
 ### Impossible Travel
 
 Activity from the same user in different locations within a time period that is shorter than the expected travel time between the two locations. This can indicate a credential breach, however, it's also possible that the user's actual location is masked, for example, by using a VPN.
 
-To improve accuracy and alert only when there is a strong indication of a breach, Defender for Cloud Apps establishes a baseline on each user in the organization and will alert only when the unusual behavior is detected. The impossible travel policy can be fine-tuned to your requirements.
+To improve accuracy and alert only when there's a strong indication of a breach, Defender for Cloud Apps establishes a baseline on each user in the organization and will alert only when the unusual behavior is detected. The impossible travel policy can be fine-tuned to your requirements.
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
-This detection uses a machine learning algorithm that ignores obvious **B-TP** conditions, such as when the IP addresses on both sides of the travel are considered safe, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they are [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
+This detection uses a machine learning algorithm that ignores obvious **B-TP** conditions, such as when the IP addresses on both sides of the travel are considered safe, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they're [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
 
 1. **TP**: If you're able to confirm that the location in the impossible travel alert is unlikely for the user.
 
@@ -162,7 +162,7 @@ This detection identifies apps with characters, such as foreign letters, that re
     **Recommended action**: Review the level of permission requested by this app and which users granted access. Based on your investigation you can choose to ban access to this app.
 
 To ban access to the app, on the **Google** or **Salesforce** tabs on the **App governance** page, on the row in which the app you want to ban appears, select the ban icon.
-    - You can choose if you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog.
+    - You can choose if you want to tell users the app they installed and authorized has been banned. The notification lets users know the app is disabled and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog.
     - It's recommended that you let the app users know their app is about to be banned from use.
 
 1. **FP**: If you're to confirm that the app has a misleading name but has a legitimate business use in the organization.
@@ -193,13 +193,13 @@ This detection identifies apps with characters, such as foreign letters, that re
     - Apps with a low number of downloads.
     - Apps with a low rating or score or bad comments.
     - Apps with a suspicious publisher or website.
-    - Apps that have not been recently updated. This might indicate an app that is no longer supported.
+    - Apps that haven't been recently updated. This might indicate an app that is no longer supported.
     - Apps that have irrelevant permissions. This might indicate that an app is risky.
 1. If you still suspect that an app is suspicious, you can research the app name, publisher, and URL online.
 
 ## Execution alerts
 
-This section describes alerts indicating that a malicious actor may be attempting to run malicious code in your organization.
+This section describes alerts indicating that a malicious actor might be attempting to run malicious code in your organization.
 
 ### Multiple storage deletion activities
 
@@ -207,14 +207,14 @@ Activities in a single session indicating that a user performed an unusual numbe
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
 1. **TP**: If you're to confirm that the deletions were unauthorized.
 
     **Recommended action**: Suspend the user, reset their password, and scan all devices for malicious threats. Review all user activity for other indicators of compromise and explore the scope of impact.
-1. **FP**: If after your investigation, you're able to confirm that the administrator was authorized to perform these deletion activities.
+1. **FP**: If, after your investigation, you're able to confirm that the administrator was authorized to perform these deletion activities.
 
     **Recommended action**: Dismiss the alert.
 
@@ -230,16 +230,16 @@ Activities in a single session indicating that a user performed an unusual numbe
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
-To improve accuracy and alert only when there is a strong indication of a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents, such as an administrator legitimately created more VMs than the established baseline, and only alert when the unusual behavior is detected.
+To improve accuracy and alert only when there's a strong indication of a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents, such as an administrator legitimately created more VMs than the established baseline, and only alert when the unusual behavior is detected.
 
-- **TP**: If you're able to confirm that the creation activities were not performed by a legitimate user.
+- **TP**: If you're able to confirm that the creation activities weren't performed by a legitimate user.
 
     **Recommended action**: Suspend the user, reset their password, and scan all devices for malicious threats. Review all user activity for other indicators of compromise and explore the scope of impact. In addition, contact the user, confirm their legitimate actions, and then make sure you disable or delete any compromised VMs.
-- **B-TP**: If after your investigation, you're able to confirm that the administrator was authorized to perform these creation activities.
+- **B-TP**: If, after your investigation, you're able to confirm that the administrator was authorized to perform these creation activities.
 
     **Recommended action**: Dismiss the alert.
 
@@ -254,16 +254,16 @@ Activities indicating that a user performed an unusual resource creation action 
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
-To improve accuracy and alert only when there is a strong indication of a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents.
+To improve accuracy and alert only when there's a strong indication of a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents.
 
-- **TP**: If you're able to confirm that the creation activities were not performed by a legitimate user.
+- **TP**: If you're able to confirm that the creation activities weren't performed by a legitimate user.
 
     **Recommended action**: Suspend the user, reset their password, and scan all devices for malicious threats. Review all user activity for other indicators of compromise and explore the scope of impact. In addition, contact the user, confirm their legitimate actions, and then make sure you disable or delete any compromised cloud resources.
-- **B-TP**: If after your investigation, you're able to confirm that the administrator was authorized to perform these creation activities.
+- **B-TP**: If, after your investigation, you're able to confirm that the administrator was authorized to perform these creation activities.
 
     **Recommended action**: Dismiss the alert.
 
@@ -274,7 +274,7 @@ To improve accuracy and alert only when there is a strong indication of a breach
 
 ## Persistence alerts
 
-This section describes alerts indicating that a malicious actor may be attempting to maintain their foothold in your organization.
+This section describes alerts indicating that a malicious actor might be attempting to maintain their foothold in your organization.
 
 ### Activity performed by terminated user
 
@@ -318,7 +318,7 @@ Activities in a single session indicating that, a user performed suspicious chan
 
 ### Suspicious email deletion activity (by user)
 
-Activities in a single session indicating that, a user performed suspicious email deletions. The deletion type was the "hard delete" type which makes the email item deleted and not available in the user's mailbox. The deletion was made from a connection that includes uncommon preferences such as ISP, country/region and user agent. This can indicate an attempted breach of your organization, such as attackers attempting to mask operations by deleting emails related to spam activities.
+Activities in a single session indicating that, a user performed suspicious email deletions. The deletion type was the "hard delete" type, which makes the email item deleted and not available in the user's mailbox. The deletion was made from a connection that includes uncommon preferences such as ISP, country/region, and user agent. This can indicate an attempted breach of your organization, such as attackers attempting to mask operations by deleting emails related to spam activities.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -331,7 +331,7 @@ Activities in a single session indicating that, a user performed suspicious emai
 
 **Understand the scope of the breach**
 
-- Review all user activity for additional indicators of compromise such as the [Suspicious inbox forwarding](#suspicious-inbox-forwarding) alert followed by an [Impossible Travel](#impossible-travel) alert. Look for:
+- Review all user activity for other indicators of compromise such as the [Suspicious inbox forwarding](#suspicious-inbox-forwarding) alert followed by an [Impossible Travel](#impossible-travel) alert. Look for:
 
     1. New SMTP forwarding rules, as follows:
         - Check for malicious forwarding rule names. Rule names can vary from simple names, such as "Forward All Emails" and "Auto forward", or deceptive names, such as a barely visible ".". Forwarding rule names can even be empty, and the forwarding recipient can be a single email account or an entire list. Malicious rules can also be hidden from the user interface. Once detected, you can use this helpful [blog post](/archive/blogs/hkong/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi) on how to delete hidden rules from mailboxes.
@@ -341,7 +341,7 @@ Activities in a single session indicating that, a user performed suspicious emai
 
 ### Suspicious inbox manipulation rule
 
-Activities indicating that an attacker gained access to a user's inbox and created a suspicious rule. Manipulation rules, such as deleting or moving messages, or folders, from a user's inbox may be an attempt to exfiltrate information from your organization. Similarly, they can indicate an attempt to manipulate information that a user sees or to use their inbox to distribute spam, phishing emails, or malware. Defender for Cloud Apps profiles your environment and triggers alerts when suspicious inbox manipulation rules are detected on a user's inbox. This may indicate that the user's account is compromised.
+Activities indicating that an attacker gained access to a user's inbox and created a suspicious rule. Manipulation rules, such as deleting or moving messages, or folders, from a user's inbox might be an attempt to exfiltrate information from your organization. Similarly, they can indicate an attempt to manipulate information that a user sees or to use their inbox to distribute spam, phishing emails, or malware. Defender for Cloud Apps profiles your environment and triggers alerts when suspicious inbox manipulation rules are detected on a user's inbox. This might indicate that the user's account is compromised.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -354,7 +354,7 @@ Activities indicating that an attacker gained access to a user's inbox and creat
 
 **Understand the scope of the breach**
 
-1. Review all user activity for additional indicators of compromise such as the [Suspicious inbox forwarding](#suspicious-inbox-forwarding) alert followed by an [Impossible Travel](#impossible-travel) alert. Look for:
+1. Review all user activity for other indicators of compromise such as the [Suspicious inbox forwarding](#suspicious-inbox-forwarding) alert followed by an [Impossible Travel](#impossible-travel) alert. Look for:
     - New SMTP forwarding rules.
     - New inbox rules, such as "delete all", "move messages to another folder", or those with obscure naming conventions, for example "…".
 1. Collect IP address and location information for the action.
@@ -362,15 +362,15 @@ Activities indicating that an attacker gained access to a user's inbox and creat
 
 ## Privilege escalation alerts
 
-This section describes alerts indicating that a malicious actor may be attempting to gain higher-level permissions in your organization.
+This section describes alerts indicating that a malicious actor might be attempting to gain higher-level permissions in your organization.
 
 ### Unusual administrative activity (by user)
 
-Activities indicating that an attacker has compromised a user account and performed administrative actions that are not common for that user. For example, an attacker can try to change a security setting for a user, an operation that is relatively rare for a common user. Defender for Cloud Apps creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
+Activities indicating that an attacker has compromised a user account and performed administrative actions that aren't common for that user. For example, an attacker can try to change a security setting for a user, an operation that is relatively rare for a common user. Defender for Cloud Apps creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -383,38 +383,38 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 **Understand the scope of the breach**
 
-1. Review all user activity for additional indicators of compromise such as [Suspicious inbox forwarding](#suspicious-inbox-forwarding) or [Impossible Travel](#impossible-travel).
+1. Review all user activity for other indicators of compromise such as [Suspicious inbox forwarding](#suspicious-inbox-forwarding) or [Impossible Travel](#impossible-travel).
 1. Review other configuration changes, such as creating a user account that might be used for persistence.
 
 ## Credential access alerts
 
-This section describes alerts indicating that a malicious actor may be attempting to steal account names and passwords from your organization.
+This section describes alerts indicating that a malicious actor might be attempting to steal account names and passwords from your organization.
 
 ### Multiple failed login attempts
 
-Failed login attempts could indicate on an attempt to breach an account. However, failed logins can also be normal behavior. For example, when a user entered a wrong password by mistake. To achieve accuracy and alert only when there is a strong indication of an attempted breach, Defender for Cloud Apps establishes a baseline of login habits for each user in the organization and will only alert when the unusual behavior is detected.
+Failed sign in attempts could indicate on an attempt to breach an account. However, failed logins can also be normal behavior. For example, when a user entered a wrong password by mistake. To achieve accuracy and alert only when there's a strong indication of an attempted breach, Defender for Cloud Apps establishes a baseline of sign in habits for each user in the organization and will only alert when the unusual behavior is detected.
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
-This policy is based on learning the normal login behavior of a user. When a deviation from the norm is detected, an alert is triggered. If the detection begins to see that the same behavior continues, the alert is only raised once.
+This policy is based on learning the normal sign in behavior of a user. When a deviation from the norm is detected, an alert is triggered. If the detection begins to see that the same behavior continues, the alert is only raised once.
 
 1. **TP** (MFA fails): If you're able to confirm that MFA is working correctly, this could be a sign of an attempted brute force attack.
 
     **Recommended actions**:
     1. Suspend the user, mark the user as compromised, and reset their password.
     1. Find the app that performed the failed authentications and reconfigure it.
-    1. Look for other users logged in around the time of the activity because they may also be compromised. Suspend the user, mark the user as compromised, and reset their password.
+    1. Look for other users logged in around the time of the activity because they might also be compromised. Suspend the user, mark the user as compromised, and reset their password.
 1. **B-TP** (MFA fails): If you're able to confirm that the alert is caused by a problem with MFA.
 
-    **Recommended action**: Create a playbook using Power Automate to contact the user and check if they are having issues with MFA.
+    **Recommended action**: Create a playbook using Power Automate to contact the user and check if they're having issues with MFA.
 1. **B-TP** (Improperly configured app): If you're able to confirm that a misconfigured app is attempting to connect to a service multiple times with expired credentials.
 
     **Recommended action**: Dismiss the alert.
-1. **B-TP** (Password changed): If you're able to confirm that a user recently changed their password, but it has not impacted credentials across network shares.
+1. **B-TP** (Password changed): If you're able to confirm that a user recently changed their password, but it hasn't impacted credentials across network shares.
 
     **Recommended action**: Dismiss the alert.
 1. **B-TP** (Security test): If you're able to confirm that a security or penetration test is being conducted by security analysts on behalf of the organization.
@@ -423,7 +423,7 @@ This policy is based on learning the normal login behavior of a user. When a dev
 
 **Understand the scope of the breach**
 
-1. Review all user activity for additional indicators of compromise such as the alert is followed by one of the following alerts: [Impossible Travel](#impossible-travel), [Activity from anonymous IP address](#activity-from-anonymous-ip-address), or [Activity from infrequent country](#activity-from-infrequent-country).
+1. Review all user activity for other indicators of compromise such as the alert is followed by one of the following alerts: [Impossible Travel](#impossible-travel), [Activity from anonymous IP address](#activity-from-anonymous-ip-address), or [Activity from infrequent country](#activity-from-infrequent-country).
 1. Review the following user device information and compare with known device information:
     - Operating system and version
     - Browser and version
@@ -437,11 +437,11 @@ This detection identifies the suspicious addition of privileged credentials to a
 
 **Learning period**
 
-Learning your organization's environment requires a period of seven days during which you may expect a high volume of alerts.
+Learning your organization's environment requires a period of seven days during which you might expect a high volume of alerts.
 
 ### Unusual ISP for an OAuth app
 
-The detection identifies an OAuth app connecting to your cloud application from an ISP that is uncommon for the app. This may indicate that an attacker tried to use a legitimate compromised app to perform malicious activities on your cloud applications.
+The detection identifies an OAuth app connecting to your cloud application from an ISP that is uncommon for the app. This might indicate that an attacker tried to use a legitimate compromised app to perform malicious activities on your cloud applications.
 
 **Learning period**
 
@@ -449,7 +449,7 @@ The learning period for this detection is 30 days.
 
 **TP**, **B-TP**, or **FP**?
 
-1. **TP**: If you're able to confirm that the activity wasn't a legitimate activity of the OAuth app or that this ISP is not used by the legitimate OAuth app.
+1. **TP**: If you're able to confirm that the activity wasn't a legitimate activity of the OAuth app or that this ISP isn't used by the legitimate OAuth app.
 
     **Recommended action**: Revoke all the access tokens of the OAuth app and investigate if an attacker has access to generating OAuth access tokens.
 
@@ -465,7 +465,7 @@ The learning period for this detection is 30 days.
 
 ## Collection alerts
 
-This section describes alerts indicating that a malicious actor may be attempting to gather data of interest to their goal from your organization.
+This section describes alerts indicating that a malicious actor might be attempting to gather data of interest to their goal from your organization.
 
 ### Multiple Power BI report sharing activities
 
@@ -473,7 +473,7 @@ Activities in a single session indicating that a user performed an unusual numbe
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -486,12 +486,12 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 **Understand the scope of the breach**
 
-1. Review the activity log to gain a better understanding of other activities performed by the user. Look at the IP address they are logged in from and the device details.
+1. Review the activity log to gain a better understanding of other activities performed by the user. Look at the IP address they're logged in from and the device details.
 1. Contact your Power BI team or Information Protection team to understand the guidelines for sharing reports internally and externally.
 
 ### Suspicious Power BI report sharing
 
-Activities indicating that a user shared a Power BI report that may contain sensitive information identified using NLP to analyze the metadata of the report. The report was either shared with an external email address, published to the web, or a snapshot was delivered to an externally subscribed email address. This can indicate an attempted breach of your organization.
+Activities indicating that a user shared a Power BI report that might contain sensitive information identified using NLP to analyze the metadata of the report. The report was either shared with an external email address, published to the web, or a snapshot was delivered to an externally subscribed email address. This can indicate an attempted breach of your organization.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -504,7 +504,7 @@ Activities indicating that a user shared a Power BI report that may contain sens
 
 **Understand the scope of the breach**
 
-1. Review the activity log to gain a better understanding of other activities performed by the user. Look at the IP address they are logged in from and the device details.
+1. Review the activity log to gain a better understanding of other activities performed by the user. Look at the IP address they're logged in from and the device details.
 1. Contact your Power BI team or Information Protection team to understand the guidelines for sharing reports internally and externally.
 
 ### Unusual impersonated activity (by user)
@@ -513,11 +513,11 @@ In some software, there are options to allow other users to impersonate other us
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
-1. **TP**: If you're able to confirm that the activity wasn't perform by a legitimate user.
+1. **TP**: If you're able to confirm that the activity wasn't performed by a legitimate user.
 
     **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
 1. **FP** (Unusual behavior): If you're able to confirm that the user legitimately performed the unusual activities, or more activities than the established baseline.
@@ -535,11 +535,11 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 ## Exfiltration alerts
 
-This section describes alerts indicating that a malicious actor may be attempting to steal data from your organization.
+This section describes alerts indicating that a malicious actor might be attempting to steal data from your organization.
 
 ### Suspicious inbox forwarding
 
-Activities indicating that an attacker gained access to a user's inbox and created a suspicious rule. Manipulation rules, such as forward all or specific emails to another email account may be an attempt to exfiltrate information from your organization. Defender for Cloud Apps profiles your environment and triggers alerts when suspicious inbox manipulation rules are detected on a user's inbox. This may indicate that the user's account is compromised.
+Activities indicating that an attacker gained access to a user's inbox and created a suspicious rule. Manipulation rules, such as forward all or specific emails to another email account might be an attempt to exfiltrate information from your organization. Defender for Cloud Apps profiles your environment and triggers alerts when suspicious inbox manipulation rules are detected on a user's inbox. This might indicate that the user's account is compromised.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -567,7 +567,7 @@ Activities indicating that a user performed an unusual number of file downloads 
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -615,7 +615,7 @@ Activities indicating that a user performed an unusual number of file sharing ac
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -634,7 +634,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 ## Impact alerts
 
-This section describes alerts indicating that a malicious actor may be attempting to manipulate, interrupt, or destroy you systems and data in your organization.
+This section describes alerts indicating that a malicious actor might be attempting to manipulate, interrupt, or destroy your systems and data in your organization.
 
 ### Multiple delete VM activities
 
@@ -642,16 +642,16 @@ Activities in a single session indicating that a user performed an unusual numbe
 
 **TP**, **B-TP**, or **FP**?
 
-To improve accuracy and alert only when there is a strong indication of a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents and only alert when the unusual behavior is detected.
+To improve accuracy and alert only when there's a strong indication of a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents and only alert when the unusual behavior is detected.
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 - **TP**: If you're able to confirm that the deletions were unauthorized.
 
     **Recommended action**: Suspend the user, reset their password, and scan all devices for malicious threats. Review all user activity for other indicators of compromise and explore the scope of impact.
-- **B-TP**: If after your investigation, you're able to confirm that the administrator was authorized to perform these deletion activities.
+- **B-TP**: If, after your investigation, you're able to confirm that the administrator was authorized to perform these deletion activities.
 
     **Recommended action**: Dismiss the alert.
 
@@ -662,7 +662,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 ### Ransomware activity
 
-Ransomware is a cyberattack in which an attacker locks victims out of their devices or blocks them from accessing their files until the victim pays a ransom. Ransomware can be spread by a malicious shared file or compromised network. Defender for Cloud Apps uses security research expertise, threat intelligence, and learned behavioral patterns to identify ransomware activity. For example, a high rate of file uploads, or files deletions, may represent an encryption process that is common among ransomware operations.
+Ransomware is a cyberattack in which an attacker locks victims out of their devices or blocks them from accessing their files until the victim pays a ransom. Ransomware can be spread by a malicious shared file or compromised network. Defender for Cloud Apps uses security research expertise, threat intelligence, and learned behavioral patterns to identify ransomware activity. For example, a high rate of file uploads, or files deletions, might represent an encryption process that is common among ransomware operations.
 
 This detection establishes a baseline of the normal working patterns of each user in your organization, such as when the user accesses the cloud and what they commonly do in the cloud.
 
@@ -670,17 +670,17 @@ The Defender for Cloud Apps automated threat detection policies start running in
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
-1. **TP**: If you're able to confirm that the activity wasn't perform by the user.
+1. **TP**: If you're able to confirm that the activity wasn't performed by the user.
 
     **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
 1. **FP** (Unusual behavior): The user legitimately performed multiple deletion and upload activities of similar files in a short period of time.
 
-    **Recommended action**: After reviewing the activity log and confirming that the file extensions are not suspicious, dismiss the alert.
-1. **FP** (Common ransomware file extension): If you are able to confirm that the extensions of the affected files are a match for a known ransomware extension.
+    **Recommended action**: After reviewing the activity log and confirming that the file extensions aren't suspicious, dismiss the alert.
+1. **FP** (Common ransomware file extension): If you're able to confirm that the extensions of the affected files are a match for a known ransomware extension.
 
     **Recommended action**: Contact the user and confirm the files are safe and then dismiss the alert.
 
@@ -696,11 +696,11 @@ Activities indicating that a user performed an unusual file deletion activity wh
 
 **Learning period**
 
-Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
-1. **TP**: If you're able to confirm that the activity wasn't perform by a legitimate user.
+1. **TP**: If you're able to confirm that the activity wasn't performed by a legitimate user.
 
     **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
 1. **FP**: If you're able to confirm that the user legitimately performed more file deletion activities than the established baseline.
@@ -750,7 +750,7 @@ Our research indicated that this feature wasn't adding significant value and was
 
 We're committed to continuously improving our services and ensuring that they meet your needs and expectations.
 
-For those who wish to continue using this alert, we suggest using the following advanced hunting query isntead as a suggested template. Modify the query based on your needs.
+For those who wish to continue using this alert, we suggest using the following advanced hunting query instead as a suggested template. Modify the query based on your needs.
 
 ```kql    
 let time_back = 1d;
