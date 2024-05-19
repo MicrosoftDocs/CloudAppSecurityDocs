@@ -21,49 +21,6 @@ In this tutorial, you learn how to use Defender for Cloud Apps to investigate ri
 > - [Further investigate users](#investigate)
 > - [Protect your organization](#protect)
 
-## Investigation priority score increase - Deprecation timeline
-
-We will be gradually retiring the "Investigation priority score increase" support from Microsoft Defender for Cloud Apps by August 2024.
-
-After careful analysis and consideration, we have decided to deprecate it due to the high rate of false positives associated with this alert, which we found was not contributing effectively to the overall security of your organization. 
-
-Our research indicated that this feature was not adding significant value and was not aligned with our strategic focus on delivering high-quality, reliable security solutions. 
-
-We are committed to continuously improving our services and ensuring that they meet your needs and expectations. 
-
-For those who wish to continue using this alert, we suggest using "Advanced Hunting" dedicated query:
-
-```kql    
-let time_back = 1d;
-let last_seen_threshold = 30;
-// the number of days which the resource is considered to be in use by the user lately, and therefore not indicates anomaly resource usage
-// anomaly score based on LastSeenForUser column in CloudAppEvents table
-let last_seen_scores =
-CloudAppEvents
-| where Timestamp > ago(time_back)
-| where isnotempty(LastSeenForUser)
-| mv-expand LastSeenForUser
-| extend resource = tostring(bag_keys(LastSeenForUser)[0])
-| extend last_seen = LastSeenForUser[resource]
-| where last_seen < 0 or last_seen > last_seen_threshold
-// score is calculated as the number of resources which were never seen before or breaching the chosen threshold
-| summarize last_seen_score = dcount(resource) by ReportId, AccountId;
-// anomaly score based on UncommonForUser column in CloudAppEvents table
-let uncommonality_scores =
-CloudAppEvents
-| where Timestamp > ago(time_back)
-| where isnotempty(UncommonForUser)
-| extend uncommonality_score = array_length(UncommonForUser)
-// score is calculated as the number of uncommon resources on the event
-| project uncommonality_score, ReportId, AccountId;
-last_seen_scores | join kind=innerunique uncommonality_scores on ReportId and AccountId
-| project-away ReportId1, AccountId1
-| extend anomaly_score = last_seen_score + uncommonality_score
-// joined scores
-```
-
-* This querty is a suggestion, use it as template and modify based on your needs.
-
 
 ## Understand the investigation priority score<a name="risk-score"></a>
 
@@ -71,7 +28,7 @@ The **investigation priority score** is a score that Defender for Cloud Apps giv
 
 Every Microsoft Entra user has a dynamic investigation priority score that is constantly updated based on recent behavior and impact built from data evaluated from Defender for Identity and Defender for Cloud Apps.
 
-Defender for Cloud Apps builds user profiles for each user, based on analytics that consider security alerts and abnormal activities over time, peer groups, expected user activity, and the affect any specific user might have on the business or company assets.
+Defender for Cloud Apps builds user profiles for each user, based on analytics that consider security alerts and abnormal activities over time, peer groups, expected user activity, and the effect any specific user might have on the business or company assets.
 
 Activity that is anomalous to a user's baseline is evaluated and scored. After scoring is complete, Microsoft's proprietary dynamic peer calculations and machine learning are run on the user activities to calculate the investigation priority for each user.
 
@@ -86,7 +43,7 @@ Defender for Cloud Apps uses the following to measure risk:
 Select the investigation priority score for an alert or an activity to view the evidence that explains how Defender for Cloud Apps scored the activity.
 
 > [!NOTE]
-> We're gradually retiring the [**Investigation priority score increase**](investigate-anomaly-alerts.md#investigation-priority-score-increase-preview) alert from Microsoft Defender for Cloud Apps by July 2024. The investigation priority score and the procedure described in this article are not affected by this change.
+> We're gradually retiring the [**Investigation priority score increase**](investigate-anomaly-alerts.md#investigation-priority-score-increase-preview) alert from Microsoft Defender for Cloud Apps by August 2024. The investigation priority score and the procedure described in this article are not affected by this change.
 >
 > For more information, see [Investigation priority score increase deprecation timeline](investigate-anomaly-alerts.md#deprecation-timeline).
 
@@ -118,7 +75,7 @@ The user details page helps you answer the following questions:
 
 |Question  |Details  |
 |---------|---------|
-|**Who is the user?**       |  Look for basic details about the user and what the system knows about them, incuding the user's role in your company and their department. <br><br>For example, is the user a DevOps engineer who often performs unusual activities as part of their job? Or is the user a disgruntled employee who just got passed over for a promotion?       |
+|**Who is the user?**       |  Look for basic details about the user and what the system knows about them, including the user's role in your company and their department. <br><br>For example, is the user a DevOps engineer who often performs unusual activities as part of their job? Or is the user a disgruntled employee who just got passed over for a promotion?       |
 |**Is the user risky?**     |  What is the employee's [risk score](#risk-score), and is it worth your while investigating them?       |
 |**What's risk does the user present to your organization?**     |   Scroll down to investigate each activity and alert related to the user to start understanding the type of risk the user represents. <br><br>In the timeline, select each line to drill down deeper into the activity or alert itself. Select the number next to the activity so that you can understand the evidence that influenced the score itself.      |
 |**What's the risk to other assets in your organization?**     |  Select the **Lateral movement paths** tab to understand which paths an attacker can use to gain control of other assets in your organization. <br><br>For example, even if the user you're investigating has a nonsensitive account, an attacker can use connections to the account to discover and attempt to compromise sensitive accounts in your network. <br><br>For more information, see [Use Lateral Movement Paths](/defender-for-identity/investigate-lateral-movement-path).       |
@@ -129,7 +86,7 @@ The user details page helps you answer the following questions:
 
 ### Reset user score
 
-If the user was investigated and no suspicion for compromise was found, or if you want to reset the user's investigation priority score for any other reason, so so manually as follows:
+If the user was investigated and no suspicion for compromise was found, or if you want to reset the user's investigation priority score for any other reason, so manually as follows:
 
 1. In the Microsoft Defender Portal, under **Assets**, select **Identities**.
 
@@ -152,7 +109,7 @@ When you investigate a user, you want to ask the following questions about the a
 
 - **Is there a business justification for this employee to perform these activities?** For example, if someone from marketing is accessing the code base, or someone from development accesses the finance database, you should follow up with the employee to make sure this was an intentional and justified activity.
 
-- **Why did this activity recieve a high score while others didn't**? Go to the **Activity log** and set the **Investigation priority** to **Is set** to understand which activities are suspicious. 
+- **Why did this activity receive a high score while others didn't**? Go to the **Activity log** and set the **Investigation priority** to **Is set** to understand which activities are suspicious. 
 
     For example, you can filter based on **Investigation priority** for all activities that occurred in a specific geographical area. Then you can see whether there were other activities that were risky, where the user connected from, and you can easily pivot to other drill downs, such as recent nonanomalous cloud and on-premises activities, to continue your investigation.
 
