@@ -740,6 +740,47 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 1. Review all user activity and alerts for additional indicators of compromise.
 
+#### Deprecation timeline
+
+We're gradually retiring the **Investigation priority score increase** alert from Microsoft Defender for Cloud Apps by July 2024.
+
+After careful analysis and consideration, we decided to deprecate it due to the high rate of false positives associated with this alert, which we found wasn't contributing effectively to the overall security of your organization.
+
+Our research indicated that this feature wasn't adding significant value and wasn't aligned with our strategic focus on delivering high-quality, reliable security solutions.
+
+We're committed to continuously improving our services and ensuring that they meet your needs and expectations.
+
+For those who wish to continue using this alert, we suggest using the following advanced hunting query isntead as a suggested template. Modify the query based on your needs.
+
+```kql    
+let time_back = 1d;
+let last_seen_threshold = 30;
+// the number of days which the resource is considered to be in use by the user lately, and therefore not indicates anomaly resource usage
+// anomaly score based on LastSeenForUser column in CloudAppEvents table
+let last_seen_scores =
+CloudAppEvents
+| where Timestamp > ago(time_back)
+| where isnotempty(LastSeenForUser)
+| mv-expand LastSeenForUser
+| extend resource = tostring(bag_keys(LastSeenForUser)[0])
+| extend last_seen = LastSeenForUser[resource]
+| where last_seen < 0 or last_seen > last_seen_threshold
+// score is calculated as the number of resources which were never seen before or breaching the chosen threshold
+| summarize last_seen_score = dcount(resource) by ReportId, AccountId;
+// anomaly score based on UncommonForUser column in CloudAppEvents table
+let uncommonality_scores =
+CloudAppEvents
+| where Timestamp > ago(time_back)
+| where isnotempty(UncommonForUser)
+| extend uncommonality_score = array_length(UncommonForUser)
+// score is calculated as the number of uncommon resources on the event
+| project uncommonality_score, ReportId, AccountId;
+last_seen_scores | join kind=innerunique uncommonality_scores on ReportId and AccountId
+| project-away ReportId1, AccountId1
+| extend anomaly_score = last_seen_score + uncommonality_score
+// joined scores
+```
+
 ## See also
 
 > [!div class="nextstepaction"]
