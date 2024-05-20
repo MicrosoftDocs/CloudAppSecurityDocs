@@ -11,8 +11,6 @@ ms.topic: overview
 
 This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
 
-RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://aka.ms/mda/rss`
-
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft Defender XDR](/microsoft-365/security/defender/whats-new)
