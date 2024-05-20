@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 05/15/2024
+ms.date: 05/16/2024
 ms.topic: overview
 ---
 
@@ -44,6 +44,14 @@ For more information, see:
 - [Conditional access app control process flow](conditional-access-app-control-how-to-overview.md)
 - [Create access policies](access-policy-aad.md)
 - [Create session policies](session-policy-aad.md)
+
+### Defender for Cloud Apps in the Microsoft Defender portal - General Availability and advance notice for redirection
+
+The Defender for Cloud Apps experience in the Microsoft Defender portal is generally available, and the automatic redirection from the classic portal is on by default for all customers. 
+
+Starting June 16th, 2024, the redirection toggle will no longer be available. From then on, all users accessing the classic Microsoft Defender for Cloud Apps portal will be automatically rerouted to the Microsoft Defender portal, with no option to opt-out.
+
+To prepare for this change, we recommend that any customers still using the classic portal move operations to the Microsoft Defender portal. For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/defender-xdr/microsoft-365-security-center-defender-cloud-apps).
 
 ### Turn preview options on in the main Microsoft Defender XDR settings (Preview)
 
