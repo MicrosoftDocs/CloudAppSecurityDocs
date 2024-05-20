@@ -39,6 +39,8 @@ Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically syn
 
 - Microsoft Defender for Endpoint onboarded. For more information, see [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
 
+- Administrator access to make changes in Defender for Cloud Apps. For more information, see [Manage admin access](manage-admins.md).
+
 ## Enable cloud app blocking with Defender for Endpoint
 
 Use the following steps to enable access control for cloud apps:
@@ -92,7 +94,7 @@ To block an app, do the following steps:
 
     ![Choose a profile to unsanction an app with.](media/choosing-unsanctioned-app-profile.png)
 
-    The **Tag as unsanctioned?** dialog appears only when your tenant has cloud app blocking with Defender for Endpoint enabled.
+    The **Tag as unsanctioned?** dialog appears only when your tenant has cloud app blocking with Defender for Endpoint enabled and if you have admin access to make changes.
 
 > [!NOTE]
 >
