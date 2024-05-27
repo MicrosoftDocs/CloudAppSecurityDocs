@@ -56,7 +56,7 @@ Review our best practices for [securing and collaborating with external users](b
 
 ## Connect Cisco Webex to Microsoft Defender for Cloud Apps
 
-This section provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Cisco Webex account using the connector APIs. This connection gives you visibility into and control over Webex users, activities, and files. For information about how Defender for Cloud Apps protects Cisco Webex, see [Protect Cisco Webex Teams](protect-webex.md).
+This section provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Cisco Webex account using the connector APIs. This connection gives you visibility into and control over Webex users, activities, and files. For information about how Defender for Cloud Apps protects Cisco Webex, see [Protect Cisco Webex](protect-webex.md).
 
 **Prerequisites**:
 
