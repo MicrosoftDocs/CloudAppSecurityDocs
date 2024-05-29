@@ -99,6 +99,6 @@ Microsoft Defender for Cloud Apps for US Government offers parity with the Micro
 - Unused app newly accessing APIs
 
 
-##Next steps
+## Next steps
 
 - [Microsoft Defender for Cloud Apps overview](what-is-defender-for-cloud-apps.md)
