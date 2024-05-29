@@ -129,7 +129,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
   
 - **In trash** – Exclude/include files in the trash folder. These files may still be shared and pose a risk.
 
-      > [!NOTE]
+    > [!NOTE]
     > This filter does not apply to files on SharePoint and OneDrive.
 
     ![policy_file filters trash.](media/policy_file-filters-trash.png)
