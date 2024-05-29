@@ -48,57 +48,57 @@ Microsoft Defender for Cloud Apps for US Government offers parity with the Micro
 
 - App accessed from unusual location post certificate update
 
-App performed drive enumeration
+- App performed drive enumeration
 
-App redirects to phishing URL by exploiting OAuth redirection vulnerability
+- App redirects to phishing URL by exploiting OAuth redirection vulnerability
 
-App with bad URL reputation
+- App with bad URL reputation
 
-App with suspicious OAuth scope made graph calls to read email and created inbox rule
+- App with suspicious OAuth scope made graph calls to read email and created inbox rule
 
-App impersonating a Microsoft logo
+- App impersonating a Microsoft logo
 
-App is associated with a typosquatted domain
+- App is associated with a typosquatted domain
 
-App metadata associated with known phishing campaign
+- App metadata associated with known phishing campaign
 
-App metadata associated with previously flagged suspicious apps
+- App metadata associated with previously flagged suspicious apps
 
-App metadata associated with suspicious mail-related activity
+- App metadata associated with suspicious mail-related activity
 
-App with EWS application permissions accessing numerous emails
+- App with EWS application permissions accessing numerous emails
 
-Application initiating multiple failed KeyVault read activity with no success
+- Application initiating multiple failed KeyVault read activity with no success
 
-Dormant OAuth App predominantly using ARM API or MS Graph recently seen to be accessing EWS workloads
+- Dormant OAuth App predominantly using ARM API or MS Graph recently seen to be accessing EWS workloads
 
-Dormant OAuth App predominantly using ARM or EWS recently seen to be accessing MS Graph workloads
+- Dormant OAuth App predominantly using ARM or EWS recently seen to be accessing MS Graph workloads
 
-Dormant OAuth App predominantly using MS Graph or Exchange Web Services recently seen to be accessing ARM workloads
+- Dormant OAuth App predominantly using MS Graph or Exchange Web Services recently seen to be accessing ARM workloads
 
-Dormant OAuth App with no recent ARM activity
+- Dormant OAuth App with no recent ARM activity
 
-Dormant OAuth App with no recent EWS activity
+- Dormant OAuth App with no recent EWS activity
 
-Dormant OAuth App with no recent MS Graph activity
+- Dormant OAuth App with no recent MS Graph activity
 
-Entra Line-of-Business app initiating an anomalous spike in virtual machine creation
+- Entra Line-of-Business app initiating an anomalous spike in virtual machine creation
 
-Increase in app API calls to Exchange after a credential update
+- Increase in app API calls to Exchange after a credential update
 
-New app with numerous consent revocations
+- New app with numerous consent revocations
 
-OAuth App using unusual user agent
+- OAuth App using unusual user agent
 
-OAuth App with suspicious Reply URL
+- OAuth App with suspicious Reply URL
 
-Oauth app with suspicious reply url
+- Oauth app with suspicious reply url
 
-Suspicious enumeration activities performed using Microsoft Graph PowerShell
+- Suspicious enumeration activities performed using Microsoft Graph PowerShell
 
-Unused app newly accessing APIs
+- Unused app newly accessing APIs
 
 
-Next steps
+##Next steps
 
 - [Microsoft Defender for Cloud Apps overview](what-is-defender-for-cloud-apps.md)
