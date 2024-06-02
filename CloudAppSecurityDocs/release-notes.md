@@ -21,6 +21,12 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## May 2024
 
+### AKS supported for automatic log collection (Preview)
+
+Microsoft Defender for Cloud Apps log collector now supports [Azure Kubernetes Service (AKS)](/azure/aks/) when the receiver type is `Syslog-tls`, and you can configure automatic log collection on AKS for continuous reporting with Defender for Cloud Apps.
+
+For more information, see 
+
 ### Defender for Cloud Apps in the Microsoft Defender portal - General Availability and advance notice for redirection
 
 The Defender for Cloud Apps experience in the Microsoft Defender portal is generally available, and the automatic redirection from the classic portal is on by default for all customers. 
