@@ -19,6 +19,16 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## June 2024
+
+### SSPM support for multiple instances of the same app is Generally Available
+
+Defender for Cloud Apps now supports SaaS security posture management (SSPM) across multiple instances of the same app. For example, if you have multiple instances of Okta, you can configure Secure Score recommendations for each instance individually. Each instance will show up as a separate item on the **App Connectors** page. For example:
+
+:::image type="content" source="media/security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
+
+For more information, see [SaaS security posture management (SSPM)](security-saas.md).
+
 ## May 2024
 
 ### Defender for Cloud Apps in the Microsoft Defender portal - General Availability and advance notice for redirection
