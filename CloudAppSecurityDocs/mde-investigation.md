@@ -17,7 +17,7 @@ Before performing the procedures in this article, make sure that you've [integra
 
 After you integrate Defender for Endpoint with Defender for Cloud Apps, investigate discovered device data in the cloud discovery dashboard.
 
-1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Dashboard** tab.\
+1. In the Microsoft Defender portal, under **Cloud Apps**, select **Cloud Discovery** > **Dashboard**.
 
 1. In the top-right corner, select **Defender-managed endpoints**. This stream contains data from any operating systems mentioned in Defender for Cloud Apps [prerequisites](mde-integration.md#prerequisites).
 
