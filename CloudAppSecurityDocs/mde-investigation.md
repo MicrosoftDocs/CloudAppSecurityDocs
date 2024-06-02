@@ -1,19 +1,21 @@
 ---
-title: Investigate apps discovered by Microsoft Defender for Endpoint
-description: This article describes how to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
-ms.date: 05/16/2023
+title: Investigate apps discovered by Microsoft Defender for Endpoint | Microsoft Defender for Cloud Apps
+description: Learn how to use Microosft Defender for Cloud Apps to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
+ms.date: 06/02/2024
 ms.topic: how-to
 ---
 
 # Investigate apps discovered by Microsoft Defender for Endpoint
 
-
-
 The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for Endpoint](mde-integration.md) provides a seamless Shadow IT visibility and control solution. Our integration enables Defender for Cloud Apps administrators to investigate discovered devices, network events, and app usage.
+
+## Prerequisites
+
+Before performing the procedures in this article, make sure that you've [integrated Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps](mde-integration.md).
 
 ## Investigate discovered devices in Defender for Cloud Apps
 
-After you integrate Defender for Endpoint with Defender for Cloud Apps, you can investigate discovered device data in the Cloud Discovery dashboard.
+After you integrate Defender for Endpoint with Defender for Cloud Apps, investigate discovered device data in the cloud discovery dashboard.
 
 1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Dashboard** tab.\
 
