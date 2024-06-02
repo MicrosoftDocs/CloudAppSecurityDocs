@@ -1,7 +1,7 @@
 ---
 title: Govern discovered apps using Microsoft Defender for Endpoint
 description: This article describes how to govern Microsoft Defender for Endpoint discovered apps.
-ms.date: 12/20/2023
+ms.date: 05/20/2024
 ms.topic: how-to
 ---
 
@@ -38,6 +38,8 @@ Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically syn
    - [Linux system requirements](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux): For more information see: [Network protection for Linux](/microsoft-365/security/defender-endpoint/network-protection-linux)
 
 - Microsoft Defender for Endpoint onboarded. For more information, see [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
+
+- Administrator access to make changes in Defender for Cloud Apps. For more information, see [Manage admin access](manage-admins.md).
 
 ## Enable cloud app blocking with Defender for Endpoint
 
@@ -88,9 +90,11 @@ To block an app, do the following steps:
 
     ![Unsanction an app.](media/unsanctioned-app.png)
 
-1. To block all the devices in your organization, select **Save**. To block specific device groups in your organizations, select **Select a profile to include or exclude groups from being blocked**. Then choose the profile for which the app will be blocked, and select **Save**.
+1. To block all the devices in your organization, in the **Tag as unsanctioned?** dialog, select **Save**. To block specific device groups in your organizations, select **Select a profile to include or exclude groups from being blocked**. Then choose the profile for which the app will be blocked, and select **Save**.
 
     ![Choose a profile to unsanction an app with.](media/choosing-unsanctioned-app-profile.png)
+
+    The **Tag as unsanctioned?** dialog appears only when your tenant has cloud app blocking with Defender for Endpoint enabled and if you have admin access to make changes.
 
 > [!NOTE]
 >

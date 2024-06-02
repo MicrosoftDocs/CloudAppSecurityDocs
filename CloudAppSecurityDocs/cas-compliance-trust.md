@@ -99,7 +99,7 @@ Customer data collected by the service is stored at rest as follows:
 
 If App governance uses another Microsoft online service, such as Microsoft Entra ID or Azure CDN to process such data, the data geo location is defined by the data storage rules of that other online service.
 
-App governance is now part of Microsoft Defender for Cloud Apps. For existing customers, by June 2024, we will be moving your data to match your Microsoft Defender for Cloud Apps data residency. There is no work required on your side and there won’t be any service disruptions. For more information, see [Defender for Cloud Apps data storage locations](#defender-for-cloud-apps-data-storage-locations).
+App governance is now part of Microsoft Defender for Cloud Apps. For existing customers, by December 2024, we will be moving your data to match your Microsoft Defender for Cloud Apps data residency. There is no work required on your side and there won’t be any service disruptions. For more information, see [Defender for Cloud Apps data storage locations](#defender-for-cloud-apps-data-storage-locations).
 
 ## Transparency
 
