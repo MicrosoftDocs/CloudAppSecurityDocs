@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Defender for Endpoint
 description: This article describes how to integrate Microsoft Defender for Endpoint with Defender for Cloud Apps for enhanced visibility into Shadow IT and risk management.
-ms.date: 06/02/2024
+ms.date: 06/03/2024
 ms.topic: how-to
 ---
 
@@ -30,6 +30,9 @@ This article describes the out-of-the-box integration available between Microsof
     - Windows 10 version 1709 (OS Build 16299.1085 with KB4493441)
     - Windows 10 version 1803 (OS Build 17134.704 with KB4493464)
     - Windows 10 version 1809 (OS Build 17763.379 with KB4489899), or later Windows 10 and Windows 11 versions
+    - macOS, on devices with [Defender for Endpoint version 20.123072.25.0](/defender-endpoint/mac-whatsnew)
+
+- To support integrations for macOS apps, you must turn on network protection capabilties in Microsoft Defender for Endpoint. Since network protection only audits TCP connection close events, UDP protocols aren't covered for macOS support. For more information, see [Turn on network protection](/defender-endpoint/enable-network-protection)
 
 - (Recommended) Enable Microsoft Defender Antivirus:
 
@@ -49,6 +52,8 @@ The integration doesn't require extra deployment steps or routing or mirroring t
 - **Logs from your endpoints that are sent to Defender for Cloud Apps provide user and device information for traffic activities**. Pairing device context with the username provides a full picture across your network enabling you to determine which user did which activity from which device.
 - **When you identify a risky user, check the devices that the user accessed to detect potential risks**. If you identify a risky device, check all the users who used it to detect further potential risks.
 - **Once traffic information is collected, you're ready to [deep dive into cloud app use](discovered-apps.md#deep-dive-into-discovered-apps) in your organization**. Defender for Cloud Apps takes advantage of Defender for Endpoint Network Protection capabilities to block endpoint device access to cloud apps. For more information about governing the discovered apps, see [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md).
+
+Customers integrating with macOS devices may observe a spike in CPU consumption.
 
 > [!TIP]
 > [Watch our videos](#related-videos) showing the benefits of using Defender for Endpoint with Defender for Cloud Apps.
