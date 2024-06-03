@@ -170,7 +170,7 @@ Once you're ready to enable the app for use in your organization's production en
 1. Under **Connected apps**, select **Conditional Access App Control apps**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use the app with session controls** and then select **Save**.
-1. In Microsoft Entra ID, under **Security**, select **Conditional Access**.
+1. In Microsoft Entra ID, under **Protection**, select **Conditional Access**.
 1. Update the policy you created earlier to include the relevant users, groups, and controls you require.
 1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Defender for Cloud Apps and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
 
