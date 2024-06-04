@@ -2,7 +2,7 @@
 title: In-browser protection with Microsoft Edge for Business | Microsoft Defender for Cloud Apps
 description: Learn about using in-browser protection with Microsoft Defender for Cloud Apps session policies and Microsoft Edge for Business.
 ms.date: 03/04/2024
-ms.topic: concept
+ms.topic: conceptual
 #customerIntent: As a Defender for Cloud Apps admin, I want to learn about the user experience with in-browser protection.
 ---
 
