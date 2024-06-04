@@ -11,12 +11,6 @@ This article describes how to configure automatic log upload for continuous repo
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-## Prerequisites
-
-Before you start:
-
-<!--do we have any of these?-->
-
 ## Setup and configuration
 
 1. Sign into Microsoft Defender XDR and select **Settings > Cloud Apps > Cloud Discovery > Automatic log upload**.
