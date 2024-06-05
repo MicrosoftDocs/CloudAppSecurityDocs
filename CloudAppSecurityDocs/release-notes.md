@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 05/16/2024
+ms.date: 06/05/2024
 ms.topic: overview
 ---
 
@@ -19,7 +19,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
-## May 2024
+## June 2024
 
 ### Microsoft Entra ID apps are automatically onboarded for conditional access app control (Preview)
 
@@ -42,6 +42,8 @@ For more information, see:
 - [Conditional access app control process flow](conditional-access-app-control-how-to-overview.md)
 - [Create access policies](access-policy-aad.md)
 - [Create session policies](session-policy-aad.md)
+
+## May 2024
 
 ### Defender for Cloud Apps in the Microsoft Defender portal - General Availability and advance notice for redirection
 
