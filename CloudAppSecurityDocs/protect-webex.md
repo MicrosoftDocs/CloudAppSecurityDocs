@@ -1,16 +1,14 @@
 ---
-title: Protect your Cisco Webex Teams environment | Microsoft Defender for Cloud Apps
-description: Learn how about connecting your Cisco Webex Teams app to Defender for Cloud Apps using the API connector.
+title: Protect your Cisco Webex environment | Microsoft Defender for Cloud Apps
+description: Learn how about connecting your Cisco Webex app to Defender for Cloud Apps using the API connector.
 ms.date: 12/06/2023
 ms.topic: how-to
 ---
-# How Defender for Cloud Apps helps protect your Cisco Webex Teams environment
+# How Defender for Cloud Apps helps protect your Cisco Webex environment
 
+As a communication and collaboration platform, Cisco Webex enables streamlined communication and collaboration across your organization. Using Cisco Webex for your data and assets exchange may expose your sensitive organizational information to external users, for example, in chat rooms where they may also be participating in a conversation with your employees.
 
-
-As a communication and collaboration platform, Cisco Webex Teams enables streamlined communication and collaboration across your organization. Using Cisco Webex for your data and assets exchange may expose your sensitive organizational information to external users, for example, in chat rooms where they may also be participating in a conversation with your employees.
-
-Connecting Cisco Webex Teams to Defender for Cloud Apps gives you improved insights into your users' activities, provides information protection detections, and enables automated governance controls.
+Connecting Cisco Webex to Defender for Cloud Apps gives you improved insights into your users' activities, provides information protection detections, and enables automated governance controls.
 
 ## Main threats
 
@@ -26,7 +24,7 @@ Connecting Cisco Webex Teams to Defender for Cloud Apps gives you improved insig
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## Control Cisco Webex Teams with built-in policies and policy templates
+## Control Cisco Webex with built-in policies and policy templates
 
 You can use the following built-in policy templates to detect and notify you about potential threats:
 
@@ -36,11 +34,14 @@ You can use the following built-in policy templates to detect and notify you abo
 | File policy template | Detect a file shared with an unauthorized domain<br />Detect a file shared with personal email addresses<br />Detect files with PII/PCI/PHI |
 | Activity policy template | Mass download by a single user<br />Potential ransomware activity |
 
+> [!NOTE]
+> After connecting Cisco Webex, and when using Webex Meetings, attachments are ingested to Defender for Cloud Apps only when they're shared in chats. Attachments shared in meetings aren't ingested.
+
 For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
 
 ## Automate governance controls
 
-In addition to monitoring for potential threats, you can apply and automate the following Cisco Webex Teams governance actions to remediate detected threats:
+In addition to monitoring for potential threats, you can apply and automate the following Cisco Webex governance actions to remediate detected threats:
 
 | Type | Action |
 | ---- | ---- |
@@ -49,14 +50,14 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
-## Protect Cisco Webex Teams in real time
+## Protect Cisco Webex in real time
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
 
-## Connect Cisco Webex Teams to Microsoft Defender for Cloud Apps
+## Connect Cisco Webex to Microsoft Defender for Cloud Apps
 
-This section provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Cisco Webex account using the connector APIs. This connection gives you visibility into and control over Webex users, activities, and files. For information about how Defender for Cloud Apps protects Cisco Webex Teams, see [Protect Cisco Webex Teams](protect-webex.md).
+This section provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Cisco Webex account using the connector APIs. This connection gives you visibility into and control over Webex users, activities, and files. For information about how Defender for Cloud Apps protects Cisco Webex, see [Protect Cisco Webex](protect-webex.md).
 
 **Prerequisites**:
 
