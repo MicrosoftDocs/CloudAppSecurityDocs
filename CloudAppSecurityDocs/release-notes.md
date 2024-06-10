@@ -32,6 +32,12 @@ For more information, see:
 - [Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps](mde-integration.md)
 - [Investigate apps discovered by Microsoft Defender for Endpoint](mde-investigation.md)
 
+### AKS supported for automatic log collection (Preview)
+
+Microsoft Defender for Cloud Apps log collector now supports [Azure Kubernetes Service (AKS)](/azure/aks/) when the receiver type is `Syslog-tls`, and you can configure automatic log collection on AKS for continuous reporting with Defender for Cloud Apps.
+
+For more information, see [Configure automatic log upload using Docker on Azure Kubernetes Service (AKS)](discovery-kubernetes.md).
+
 ### New conditional access app control / inline data for the advanced hunting CloudAppEvents table
 
 Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *AuditSource* and *SessionData* columns for queries and detection rules. Using this data allows for queries that consider specific audit sources, including access and session control, and queries by specific inline sessions.
@@ -112,7 +118,7 @@ For more information, see [Configure automatic log upload using Podman](discover
 
 ### New anomaly data for the advanced hunting CloudAppEvents table
 
-Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns for queries and detections rules. Using this data helps ruling out false positives and finding anomalies.
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns for queries and detections rules. Using this data helps to rule out false positives and find anomalies.
 
 For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
