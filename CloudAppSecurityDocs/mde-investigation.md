@@ -1,47 +1,45 @@
 ---
-title: Investigate apps discovered by Microsoft Defender for Endpoint
-description: This article describes how to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
-ms.date: 09/26/2023
+title: Investigate apps discovered by Microsoft Defender for Endpoint | Microsoft Defender for Cloud Apps
+description: Learn how to use Microsoft Defender for Cloud Apps to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
+ms.date: 06/02/2024
 ms.topic: how-to
 ---
 
 # Investigate apps discovered by Microsoft Defender for Endpoint
 
-
-
 The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for Endpoint](mde-integration.md) provides a seamless Shadow IT visibility and control solution. Our integration enables Defender for Cloud Apps administrators to investigate discovered devices, network events, and app usage.
+
+## Prerequisites
+
+Before performing the procedures in this article, make sure that you've [integrated Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps](mde-integration.md).
 
 ## Investigate discovered devices in Defender for Cloud Apps
 
-After you integrate Defender for Endpoint with Defender for Cloud Apps, you can investigate discovered device data in the Cloud Discovery dashboard.
+After you integrate Defender for Endpoint with Defender for Cloud Apps, investigate discovered device data in the cloud discovery dashboard.
 
-1. In the Microsoft Defender Portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Dashboard** tab.
+1. In the Microsoft Defender portal, under **Cloud Apps**, select **Cloud Discovery** > **Dashboard**.
 
-1. In the top-right corner, select **Win10 endpoint users**.  This stream contains data from any operating systems mentioned in Defender for Cloud Apps [prerequisites](mde-integration.md#prerequisites). For example:
+1. At the top of the page, select **Defender-managed endpoints**. This stream contains data from any operating systems mentioned in Defender for Cloud Apps [prerequisites](mde-integration.md#prerequisites).
 
-    ![Defender for Endpoint report.](media/win10-dashboard-report.png)
+  Across the top, you'll see the number of discovered devices added after the integration.
 
-   Across the top, you'll see the number of discovered devices added after the integration.
-   
 1. Select the **Devices** tab.
 
 1. Drill down into each device that's listed, and use the tabs to view the investigation data. Find correlations between the devices, the users, IP addresses, and apps that were involved in incidents:
 
-    - **Overview**
+    - **Overview**:
+
         - **Device risk level**: Shows how risky the device's profile is relative to other devices in your organization, as indicated by the severity (high, medium, low, informational). Defender for Cloud Apps uses device profiles from Defender for Endpoint for each device based on advanced analytics. Activity that is anomalous to a device's baseline is evaluated and determines the device's risk level. Use the device risk level to determine which devices to investigate first.
         - **Transactions**: Information about the number of transactions that took place on the device over the selected period of time.
         - **Total traffic**: Information about the total amount of traffic (in MB) over the selected period of time.
         - Uploads: Information about the total amount of traffic (in MB) uploaded by the device over the selected period of time.
         - **Downloads**: Information about the total amount of traffic (in MB) downloaded by the device over the selected period of time.
-    - **Discovered apps**  
-    Lists all the discovered apps that were accessed by the device.
-    - **User history**  
-    Lists all the users who signed in to the device.
-    - **IP address history**  
-    Lists all the IP addresses that were assigned to the device.
- ![Devices overview.](media/devices-overview.png)
 
-As with any other Cloud Discovery source, you can export the data from the Win10 endpoint users report for further investigation.
+    - **Discovered apps**: Lists all the discovered apps that were accessed by the device.
+    - **User history**: Lists all the users who signed in to the device.
+    - **IP address history**: Lists all the IP addresses that were assigned to the device.
+ 
+As with any other Cloud Discovery source, you can export the data from the **Defender-managed endpoints** report for further investigation.
 
 > [!NOTE]
 >
