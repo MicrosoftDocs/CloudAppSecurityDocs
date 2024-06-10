@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 05/16/2024
+ms.date: 06/10/2024
 ms.topic: overview
 ---
 
@@ -20,6 +20,12 @@ For more information on what's new with other Microsoft Defender security produc
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## June 2024
+
+### AKS supported for automatic log collection (Preview)
+
+Microsoft Defender for Cloud Apps log collector now supports [Azure Kubernetes Service (AKS)](/azure/aks/) when the receiver type is `Syslog-tls`, and you can configure automatic log collection on AKS for continuous reporting with Defender for Cloud Apps.
+
+For more information, see [Configure automatic log upload using Docker on Azure Kubernetes Service (AKS)](discovery-kubernetes.md).
 
 ### New conditional access app control / inline data for the advanced hunting CloudAppEvents table
 
@@ -68,7 +74,7 @@ App governance features in Defender for Cloud Apps are now available in governme
 
 ### Enable data encryption from the Microsoft Defender portal
 
-Now you can complete the process for encrypting Defender for Cloud Apps data at rest with your own key by enabling data encrpytion from the **Settings** area of the Microsoft Defender portal.
+Now you can complete the process for encrypting Defender for Cloud Apps data at rest with your own key by enabling data encryption from the **Settings** area of the Microsoft Defender portal.
 
 This feature is now limited on the classic Microsoft Defender for Cloud Apps portal, and is available only from the Microsoft Defender portal.
 
@@ -101,7 +107,7 @@ For more information, see [Configure automatic log upload using Podman](discover
 
 ### New anomaly data for the advanced hunting CloudAppEvents table
 
-Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns columns for queries and detections rules. Using this data assists in ruling out false positives and finding anomalies.
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns for queries and detections rules. Using this data assists in ruling out false positives and finding anomalies.
 
 For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 

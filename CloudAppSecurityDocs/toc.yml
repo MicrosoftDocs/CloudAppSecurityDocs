@@ -174,6 +174,8 @@ items:
         href: discovery-docker-ubuntu.md
       - name: Docker on Linux in Azure
         href: discovery-docker-ubuntu-azure.md
+      - name: Docker on Azure Kubernetes Service
+        href: discovery-kubernetes.md
       - name: Docker on Windows on-premises
         href: discovery-docker-windows.md
       - name: Advanced log collector management
