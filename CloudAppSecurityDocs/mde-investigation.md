@@ -1,6 +1,6 @@
 ---
 title: Investigate apps discovered by Microsoft Defender for Endpoint | Microsoft Defender for Cloud Apps
-description: Learn how to use Microosft Defender for Cloud Apps to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
+description: Learn how to use Microsoft Defender for Cloud Apps to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
 ms.date: 06/02/2024
 ms.topic: how-to
 ---

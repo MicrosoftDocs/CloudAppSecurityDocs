@@ -32,7 +32,7 @@ This article describes the out-of-the-box integration available between Microsof
     - Windows 10 version 1809 (OS Build 17763.379 with KB4489899), or later Windows 10 and Windows 11 versions
     - macOS, on devices with [Defender for Endpoint version 20.123072.25.0](/defender-endpoint/mac-whatsnew) or higher
 
-- To support integrations for macOS apps, you must turn on network protection capabilties in Microsoft Defender for Endpoint. Since network protection only audits TCP connection close events, UDP protocols aren't covered for macOS support. For more information, see [Turn on network protection](/defender-endpoint/enable-network-protection)
+- To support integrations for macOS apps, you must turn on network protection capabilities in Microsoft Defender for Endpoint. Since network protection only audits TCP connection close events, UDP protocols aren't covered for macOS support. For more information, see [Turn on network protection](/defender-endpoint/enable-network-protection)
 
 - (Recommended) Enable Microsoft Defender Antivirus:
 
