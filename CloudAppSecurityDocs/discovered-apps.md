@@ -23,7 +23,7 @@ This procedure describes how to get an initial, general picture of your cloud di
 
     For example:
 
-    ![Screenshot of the Cloud discovery dashboard.](media/cloud-discovery-dashboard.png)
+    :::image type="content" source="media/cloud-discovery-dashboard.png" alt-text="Screenshot of the Cloud discovery dashboard":::.
 
     Supported apps include Windows and macOS apps, which are both listed under the **Defender - managed endpoints** stream.
 
