@@ -21,7 +21,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## June 2024
 
-### Defender for Cloud Apps discovery on macOS
+### Defender for Cloud Apps discovery on macOS (Preview)
 
 Defender for Cloud Apps now supports cloud app discovery on macOS devices together with the Microsoft Defender for Endpoint integration. Defender for Cloud Apps and Defender for Endpoint together provide a seamless Shadow IT visibility and control solution.
 
