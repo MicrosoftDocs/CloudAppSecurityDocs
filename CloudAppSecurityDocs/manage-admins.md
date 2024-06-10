@@ -43,9 +43,8 @@ By default, the following Microsoft 365 and [Microsoft Entra ID](/azure/active-d
   - Accessing and viewing the App connectors page
   - Accessing and viewing the Governance log
   - Accessing and viewing the Manage snapshot reports page
-  - Accessing and viewing SIEM agents
 
-- **Security reader**: Has read-only permissions. These admins are restricted from doing the following actions:
+- **Security reader**: Has read-only permissions and can create API access tokens. These admins are restricted from doing the following actions:
 
   - Create policies or edit and change existing ones
   - Performing any governance actions
@@ -57,7 +56,6 @@ By default, the following Microsoft 365 and [Microsoft Entra ID](/azure/active-d
   - Accessing and viewing the App connectors page
   - Accessing and viewing the Governance log
   - Accessing and viewing the Manage snapshot reports page
-  - Accessing and viewing SIEM agents
   
 - **Global reader**: Has full read-only access to all aspects of Defender for Cloud Apps. Can't change any settings or take any actions.
 

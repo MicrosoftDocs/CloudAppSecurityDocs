@@ -19,6 +19,22 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## June 2024
+
+### New conditional access app control / inline data for the advanced hunting CloudAppEvents table
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *AuditSource* and *SessionData* columns for queries and detection rules. Using this data allows for queries that consider specific audit sources, including access and session control, and queries by specific inline sessions.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+
+### SSPM support for multiple instances of the same app is Generally Available
+
+Defender for Cloud Apps now supports SaaS security posture management (SSPM) across multiple instances of the same app. For example, if you have multiple instances of Okta, you can configure Secure Score recommendations for each instance individually. Each instance will show up as a separate item on the **App Connectors** page. For example:
+
+:::image type="content" source="media/security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
+
+For more information, see [SaaS security posture management (SSPM)](security-saas.md).
+
 ## May 2024
 
 ### Defender for Cloud Apps discovery on macOS
@@ -54,7 +70,7 @@ For more information, see [Microsoft Defender XDR preview features](/microsoft-3
 
 ### App governance available for government clouds
 
-App governance features in Defender for Cloud Apps are now avaialble in government clouds. For more information, see:
+App governance features in Defender for Cloud Apps are now available in government clouds. For more information, see:
 
 - [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md)
 - [Microsoft Defender for Cloud Apps for US Government offerings](editions-cloud-app-security-gcc.md)
