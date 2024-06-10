@@ -5,17 +5,11 @@ ms.date: 06/02/2024
 ms.topic: how-to
 ---
 
-# Configure automatic log upload using Docker on Azure Kubernetes Service (AKS)
+# Configure automatic log upload using Docker on Azure Kubernetes Service (AKS) (Preview)
 
 This article describes how to configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker container on Azure Kubernetes Service (AKS).
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-## Prerequisites
-
-Before you start:
-
-<!--do we have any of these?-->
 
 ## Setup and configuration
 
