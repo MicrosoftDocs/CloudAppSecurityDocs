@@ -125,7 +125,7 @@ For **US Government GCC** customers:
 |----|----|----|
 |**Session controls**|US Gov Arizona: 52.235.147.86, 52.126.49.55, 52.126.48.233 <br /><br /> US Gov Virginia: 52.245.225.0, 52.245.224.229, 52.245.224.234, 52.245.224.228, 20.141.230.215, 52.227.10.254, 52.126.48.233, 52.227.3.207 | \*.mcas-gov.ms<br/>\*.admin-mcas-gov.ms|
 |**Access controls** |US Gov Arizona: 52.127.2.97, 52.235.143.220, 52.126.48.233 <br /><br />US Gov Virginia: 52.245.224.235, 52.245.224.227, 52.127.50.130, 52.245.222.168, 52.245.222.172, 52.245.222.180, 52.245.222.209, 52.245.223.38, 52.245.223.72, 52.245.223.177, 52.245.223.181, 52.245.223.182, 52.245.223.190, 23.97.12.140, 52.227.3.207  | \*.access.mcas-gov.ms|
-|**SAML proxy** |US Gov Virginia: 52.227.216.80, 52.126.48.233, 52.227.3.207 | \*.saml.cloudappsecuritygov.com|
+|**SAML proxy** |US Gov Arizona: 52.126.48.233 <br /> US Gov Virginia: 52.227.216.80, 52.126.48.233, 52.227.3.207 | \*.saml.cloudappsecuritygov.com|
 
 ## SIEM agent connection
 

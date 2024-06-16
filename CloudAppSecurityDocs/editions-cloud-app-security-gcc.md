@@ -1,7 +1,7 @@
 ---
 title: US Government offerings
 description: This article describes the features differences between Microsoft Defender for Cloud Apps for US Government offerings and the commercial offering.
-ms.date: 04/03/2023
+ms.date: 04/11/2024
 ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps for US Government offerings
@@ -30,11 +30,74 @@ Unless otherwise specified, new feature releases, including preview features, do
 
 ## Feature support
 
-Microsoft Defender for Cloud Apps for US Government offers parity with the Microsoft Defender for Cloud Apps commercial environment, with the following exceptions:
+Microsoft Defender for Cloud Apps for US Government offers parity with the Microsoft Defender for Cloud Apps commercial environment except for the following list of App Governance features. These features are on the roadmap for support in GCC, GCC High and DoD:
 
-| Feature Name                           | Description                                                  | GCC     | GCC High | DoD     |
-| -------------------------------------- | ------------------------------------------------------------ | ------- | -------- | ------- |
-|**App governance in Microsoft Defender for Cloud Apps** | App governance delivers full visibility, remediation, and governance into how Azure-connected apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. | Roadmap | Roadmap  | Roadmap |
+**App Governance predefined app policy alerts:**
+
+- App created recently has low consent rate
+
+- High volume of email search activity by an app
+
+- High volume of inbox rule creation activity by an app
+
+- Increase in app API calls to EWS
+
+- Suspicious app with access to multiple Microsoft 365 services
+
+**App Governance threat detection alerts:**
+
+- App accessed from unusual location post certificate update
+
+- App performed drive enumeration
+
+- App redirects to phishing URL by exploiting OAuth redirection vulnerability
+
+- App with bad URL reputation
+
+- App with suspicious OAuth scope made graph calls to read email and created inbox rule
+
+- App impersonating a Microsoft logo
+
+- App is associated with a typosquatted domain
+
+- App metadata associated with known phishing campaign
+
+- App metadata associated with previously flagged suspicious apps
+
+- App metadata associated with suspicious mail-related activity
+
+- App with EWS application permissions accessing numerous emails
+
+- Application initiating multiple failed KeyVault read activity with no success
+
+- Dormant OAuth App predominantly using ARM API or MS Graph recently seen to be accessing EWS workloads
+
+- Dormant OAuth App predominantly using ARM or EWS recently seen to be accessing MS Graph workloads
+
+- Dormant OAuth App predominantly using MS Graph or Exchange Web Services recently seen to be accessing ARM workloads
+
+- Dormant OAuth App with no recent ARM activity
+
+- Dormant OAuth App with no recent EWS activity
+
+- Dormant OAuth App with no recent MS Graph activity
+
+- Entra Line-of-Business app initiating an anomalous spike in virtual machine creation
+
+- Increase in app API calls to Exchange after a credential update
+
+- New app with numerous consent revocations
+
+- OAuth App using unusual user agent
+
+- OAuth App with suspicious Reply URL
+
+- Oauth app with suspicious reply url
+
+- Suspicious enumeration activities performed using Microsoft Graph PowerShell
+
+- Unused app newly accessing APIs
+
 
 ## Next steps
 

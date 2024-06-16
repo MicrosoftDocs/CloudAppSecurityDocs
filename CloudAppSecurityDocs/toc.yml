@@ -12,7 +12,7 @@ items:
   - name: Lifecycle management
     href: lifecycle-management.md
   - name: Preview features
-    href: preview-features.md
+    href: /microsoft-365/security/defender/preview?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/bread/toc.json
   - name: Compare
     items:
     - name: Microsoft 365 Cloud App Security
@@ -174,6 +174,8 @@ items:
         href: discovery-docker-ubuntu.md
       - name: Docker on Linux in Azure
         href: discovery-docker-ubuntu-azure.md
+      - name: Docker on Azure Kubernetes Service
+        href: discovery-kubernetes.md
       - name: Docker on Windows on-premises
         href: discovery-docker-windows.md
       - name: Advanced log collector management

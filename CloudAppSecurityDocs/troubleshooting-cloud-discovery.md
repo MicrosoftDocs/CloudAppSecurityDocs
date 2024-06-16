@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Cloud Discovery errors 
 description: This article provides a list of Cloud Discovery frequent errors and resolution recommendations for each.
-ms.date: 01/29/2023
+ms.date: 05/15/2024
 ms.topic: conceptual
 ---
 # Troubleshooting Cloud Discovery errors
@@ -18,8 +18,8 @@ If you integrated Microsoft Defender for Endpoint with Defender for Cloud Apps, 
 
 |Issue|Resolution|
 |----|----|
-|**Win10 endpoint users** reports don't appear in the list|Make sure the devices you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.|
-|Discovery reports are empty|If the endpoint device is behind a forward proxy, you can send logs from your forward proxy using a log collector|
+|**Defender-managed endpoints** reports do not appear in the list|Make sure the devices you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.|
+|**Discovery reports are empty** |If the endpoint device is behind a forward proxy, you can send logs from your forward proxy using a log collector|
 
 ## Log parsing errors
 

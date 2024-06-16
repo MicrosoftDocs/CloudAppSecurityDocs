@@ -1,7 +1,7 @@
 ---
 title: Deploy conditional access app control for catalog apps with Microsoft Entra ID | Microsoft Defender for Cloud Apps
 description: This article provides information about how to deploy Microsoft Defender for Cloud Apps conditional access app control for catalog apps with Microsoft Entra ID.
-ms.date: 03/31/2024
+ms.date: 05/20/2024
 ms.topic: how-to
 #customerIntent: To deploy conditional access app control for catalog apps with Microsoft Entra ID
 ---
@@ -34,12 +34,12 @@ Access and session controls in Microsoft Defender for Cloud Apps work with appli
 
 Use the following steps to create a Microsoft Entra Conditional Access policy that routes app sessions to Defender for Cloud Apps. For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md).
 
-1. In Microsoft Entra ID, browse to **Security** > **Conditional Access**.
+1. In the Microsoft Entra admin center, search for **Microsoft Entra Conditional Access**.
 1. On the **Conditional Access** pane, in the toolbar at the top, select **New policy** -> **Create new policy**.
 1. On the **New** pane, in the **Name** textbox, enter the policy name.
-1. Under **Assignments**, select **Users or workload identities** and assign the users and groups that will be onboarding (initial sign-on and verification) the app.
-1. Under **Assignments**, select **Cloud apps or actions** and assign the apps and actions you want to control with conditional access app control.
-1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only (Preview)** or **Block downloads (Preview)**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then select **Select**.
+1. Under **Assignments**, select the link to assign users and groups that will be onboarding (initial sign-on and verification) the app.
+1. Under **Target resources**, select the link to assign the target resources, including the apps and actions you want to control with conditional access app control.
+1. Under **Access controls**, select the link to open the **Session** pane. There, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only (Preview)** or **Block downloads (Preview)**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then select **Select**.
 
     ![Screenshot of the Microsoft Entra Conditional Access page.](media/azure-ad-caac-policy.png)
 

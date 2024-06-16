@@ -141,7 +141,7 @@ For more information, see [Secure apps with app hygiene features](app-governance
     For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 
 - **Non-blockable applications** (Preview): To prevent users from accidentally causing downtime, Defender for Cloud Apps now prevents you from blocking business-critical Microsoft services.
-    For more information, see [Govern discovered apps](governance-discovery.md#non-blockable-applications).
+    For more information, see [Govern discovered apps](governance-discovery.md#nonblockable-applications).
 
 ## April 2023
 
@@ -1015,7 +1015,7 @@ The following new anomaly detection policies are available out-of-the-box and au
 Released September 15, 2019
 
 - **Customize Cloud Discovery executive report name**  
-The Cloud Discovery executive report provides you with an overview of Shadow IT use across your organization. You now have the option to customize the report name before generating it. For more information, see [Generate Cloud Discovery executive report](discovered-apps.md#generate-cloud-discovery-executive-report).
+The Cloud Discovery executive report provides you with an overview of Shadow IT use across your organization. You now have the option to customize the report name before generating it. For more information, see [Generate Cloud Discovery executive report](discovered-apps.md#generate-a-cloud-discovery-executive-report).
 
 - **New policies overview report**  
 Cloud App Security detects policy matches and, where defined, logs alerts that you can use to understand your cloud environment more deeply. Now you can export a policies overview report showing aggregated alert metrics per policy to help you monitor, understand, and customize your policies to better protect your organization. For more information about exporting the report, see [Policies overview report](control-cloud-apps-with-policies.md#policies-overview-report).
@@ -1741,7 +1741,7 @@ Released July 3, 2017
   - **Password encrypted** – files whose content wasn't inspected because they're password protected by the user.
   - **Corrupt file** – files whose content wasn't inspected because their content couldn't be read.
 
-- **User insights**: The investigation experience was upgraded to enable out-of-the-box insights about the acting user. With a single click, you can now see a comprehensive overview of the users from the Activity drawer, Insights include which location they connected from, how many open alerts are they're involved with, and their metadata information.
+- **User insights**: The investigation experience was upgraded to enable out-of-the-box insights about the acting user. With a single click, you can now see a comprehensive overview of the users from the Activity drawer, Insights include which location they connected from, how many open alerts they're involved with, and their metadata information.
 - **App connector insights:** Under **App Connectors**, each connected app now includes an app drawer in the table for easier drill-down into its status. Details that are provided include when the App connector was connected and last health check on the connector. You can also monitor the status of DLP scanning on each app: the total number of files inspected by DLP and the status of the real-time scans (requested scans vs. actual scans). You'll be able to tell if the rate of files scanned by Cloud App Security in real time is lower than the requested number, and whether your tenant might be exceeding its capacity and experiencing a delay in the DLP results.
 
 - **Cloud App Catalog customization:**

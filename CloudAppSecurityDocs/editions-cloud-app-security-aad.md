@@ -22,7 +22,7 @@ Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringin
 Cloud App Discovery comes at no additional cost as part of:
 
 1. Microsoft Entra ID P1.
-1. Enterprise Mobility + Security E3  (EMS E3).
+1. Enterprise Mobility + Security E3 (EMS E3).
 1. Microsoft 365 E3.
     
 This is a subset of Microsoft Defender for Cloud Apps. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
@@ -47,7 +47,7 @@ The following table is a comparison of the discovery capabilities in Defender fo
 |Information Protection|Data Loss Prevention (DLP) support|Cross-SaaS DLP and data sharing control||
 ||App permissions and ability to revoke access (OAuth apps)|Yes||
 ||Policy setting and enforcement|Yes||
-||Integration with Azure Information Protection |Yes||
+||Integration with Microsoft Purview|Yes||
 ||Integration with third-party DLP solutions|Yes||
 |Threat Detection|Anomaly detection and behavioral analytics|For Cross-SaaS apps||
 ||Manual and automatic alert remediation|Yes||

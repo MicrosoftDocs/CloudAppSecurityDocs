@@ -566,13 +566,18 @@
       "redirect_document_id": false
     },
         {
+            "source_path": "CloudAppSecurityDocs/preview-features.md",
+            "redirect_url": "/microsoft-365/security/defender/preview",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "CloudAppSecurityDocs/working-with-cloud-discovery-data.md",
             "redirect_url": "/defender-cloud-apps/discovered-apps",
             "redirect_document_id": false
         }, 
         {
             "source_path": "CloudAppSecurityDocs/use-case-ransomware.md",
-            "redirect_url": "/defender-cloud-apps/best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware",
+            "redirect_url": "/defender-cloud-apps/best-practices#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware",
             "redirect_document_id": false 
         }, 
         {

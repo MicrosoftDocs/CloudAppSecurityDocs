@@ -1,6 +1,6 @@
 ---
 title: Turn on app governance in Microsoft Defender for Cloud Apps
-ms.date: 05/21/2023
+ms.date: 04/11/2024
 ms.topic: how-to
 description: Get started with app governance capabilities to govern your apps in  Microsoft Defender for Cloud Apps.
 ---
@@ -10,9 +10,7 @@ description: Get started with app governance capabilities to govern your apps in
 This article describes how to turn on Microsoft Defender for Cloud Apps app governance.
 
 > [!NOTE]
-> By default, the Microsoft Defender for Cloud Apps instance in the US Government environments cannot connect to resources in Azure commercial and is FedRAMP 
-> compliant.  However, App Governance is not FedRAMP compliant. Enabling App Governance would allow data to flow non-FedRAMP certified environments.  
-
+> By default, the Microsoft Defender for Cloud Apps instance in the US Government environments cannot connect to resources in Azure commercial and is FedRAMP compliant. However, App Governance is not FedRAMP certified. App Governance will only store and process data in secure locations within the United States and the data will only be accessible by approved Microsoft employees. 
 ## Prerequisites
 
 Before you start, verify that you satisfy the following prerequisites:
@@ -24,7 +22,6 @@ Before you start, verify that you satisfy the following prerequisites:
 - You must have [one of the appropriate roles](#roles) to turn on app governance and access it.
 
 - Your organization's billing address must be in a region **other than** Brazil, Singapore ,Latin America, South Korea, Switzerland, Norway, South Africa, Sweden or United Arab Emirates.
-- Your organization must use the commercial cloud, and not a government cloud. App governance isn't yet available in government clouds.
 
 ## Turn on app governance
 
@@ -37,8 +34,6 @@ After you've signed up for app governance, you'll need to wait up to 10 hours to
 If you're unable to see the app governance option in the settings page, it might be due to one or more of the following reasons:
 
 - App governance isn't yet supported in your region.
-
-- Your organization is in a government cloud.
 
 - We're unable to serve you at the moment due to capacity constraints.
 
