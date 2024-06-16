@@ -17,10 +17,10 @@ Microsoft Defender for Cloud Apps access policies enable real-time monitoring an
 ## Prerequisites to using access policies
 
 - Microsoft Entra ID P1 license, or the license required by your identity provider (IdP) solution
-- The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
+- The relevant apps should be [deployed with Conditional Access App Control](classic-proxy-deployment-aad.md)
 - Make sure you have configured your IdP solution to work with Defender for Cloud Apps, as follows:
-  - For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-  - For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
+  - For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](classic-proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  - For other IdP solutions, see [Configure integration with other IdP solutions](classic-proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
 
 ## Create a Defender for Cloud Apps access policy
 

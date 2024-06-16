@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Investigate risky users 
 description: Classic portal -  This tutorial describes the process to investigate risky users in Microsoft Defender for Cloud Apps, across hybrid environments, by integrating with Microsoft Defender for Identity.
-ms.date: 01/19/2023
+ms.date: 05/15/2024
 ms.topic: tutorial
 ROBOTS: NOINDEX
 ---
@@ -49,7 +49,7 @@ The activity score determines the probability of a specific user performing a sp
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
 1. Connect at least one app to Microsoft Defender for Cloud Apps using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Microsoft 365](./connect-office-365.md).
-1. Connect additional apps using the [proxy to achieve conditional access app control](proxy-deployment-aad.md).
+1. Connect additional apps using the [proxy to achieve conditional access app control](classic-proxy-deployment-aad.md).
 1. To enable insights across your on-premises environment, configure Defender for Cloud Apps to [integrate with your Defender for Identity environment](mdi-integration.md).
 
 ## Phase 2: Identify top risky users<a name="identify"></a>
@@ -108,7 +108,7 @@ When you investigate a user, you want to ask these questions about the activitie
 
 - Is there a business justification for this employee to perform these activities? For example, if someone from Marketing is accessing the code base, or someone from Development accesses the Finance database, you should follow up with the employee to make sure this was an intentional and justified activity.
 
-- Go to the **Activity log** to understand why this activity received a high score while others didn't. You can set the **Investigation priority** to **Is set** to understand which activities are suspicious. For example, you can filter based on Investigation priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can easily pivot to other drill downs, such as recent non-anomalous cloud and on-prem activities, to continue your investigation.
+- Go to the **Activity log** to understand why this activity received a high score while others didn't. You can set the **Investigation priority** to **Is set** to understand which activities are suspicious. For example, you can filter based on Investigation priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can easily pivot to other drill downs, such as recent non-anomalous cloud and on-premises activities, to continue your investigation.
 
 ## Phase 4: Protect your organization<a name="protect"></a>
 

@@ -118,7 +118,7 @@ After your logs are analyzed, you can easily find which cloud apps are being use
 
 ## Step 5: Deploy Conditional Access App Control for catalog apps
 
-How to page: [Deploy Conditional Access App Control for catalog apps with Microsoft Entra ID](proxy-deployment-aad.md)
+How to page: [Deploy Conditional Access App Control for catalog apps with Microsoft Entra ID](classic-proxy-deployment-aad.md)
 
 Recommended task: Deploy Conditional Access App Control for catalog apps
 
@@ -129,7 +129,7 @@ Recommended task: Deploy Conditional Access App Control for catalog apps
     1. Refresh the **Conditional Access App Control** page and to view the app.
 1. Verify the apps are configured to use access and session controls
 
-To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premises apps, see [Deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md).
+To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premises apps, see [Deploy Conditional Access App Control for custom apps using Microsoft Entra ID](classic-proxy-deployment-any-app.md).
 
 **Migration recommendation**  
 Using Conditional Access App Control in parallel with another CASB solution can potentially lead to an app being proxied twice, causing latency or other errors. Therefore, we recommended progressively migrating apps and policies to Conditional Access App Control, creating the relevant session or access policies in  Defender for Cloud Apps as you go.

@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Troubleshooting access and session controls
 description: Classic portal -  This article provides admins with guidance on how to investigate and resolve common access and session controls.
-ms.date: 01/19/2023
+ms.date: 05/15/2024
 ms.topic: conceptual
 ROBOTS: NOINDEX
 ---
@@ -120,7 +120,7 @@ Defender for Cloud Apps provides the following options for identifying a device'
 1. Hybrid Microsoft Entra Domain joined
 1. Client certificates
 
-For more information, see [Identity-managed devices with conditional access app control](conditional-access-app-control-identity.md).
+For more information on device identification, see [Managed Device Identification](classic-proxy-intro-aad.md#managed-device-identification).
 
 Common device identification issues you might encounter include
 
@@ -159,7 +159,7 @@ Microsoft Entra Conditional Access enables Intune compliant and Microsoft Entra 
 
 #### Client certificates aren't prompting when expected
 
-The device identification mechanism can request authentication from relevant devices using client certificates. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session. For more information, see [Identity-managed devices with conditional access app control](conditional-access-app-control-identity.md).
+The device identification mechanism can request authentication from relevant devices using client certificates. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session. For more information about client certificates, see [Client-certificate authenticated devices](classic-proxy-intro-aad.md#client-certificate-authenticated-devices).
 
 **Recommended steps**
 
@@ -214,8 +214,8 @@ You can onboard the following types of apps for access and session controls:
 
 When onboarding an app, it's crucial to make sure that you follow each step in the proxy deployment guides:
 
-1. [Deploy catalog apps with session controls](proxy-deployment-aad.md)
-1. [Deploy custom LOB apps, nonfeatured SaaS apps, and on-premises apps hosted via the Microsoft Entra application proxy with session controls](proxy-deployment-any-app.md)
+1. [Deploy catalog apps with session controls](classic-proxy-deployment-aad.md)
+1. [Deploy custom LOB apps, nonfeatured SaaS apps, and on-premises apps hosted via the Microsoft Entra application proxy with session controls](classic-proxy-deployment-any-app.md)
 
 Common scenarios you might encounter while onboarding an app include:
 
@@ -253,7 +253,7 @@ For apps connected via non-Microsoft identity providers (IdP), if the setup isn'
 **Recommended steps**
 
 1. Select **Continue Setup**.
-1. Go through the [deployment guide](proxy-deployment-any-app.md) and verify that you have completed all the steps. Pay particular attention to the following:
+1. Go through the [deployment guide](classic-proxy-deployment-any-app.md) and verify that you have completed all the steps. Pay particular attention to the following:
     1. Make sure you create a new custom SAML app. You need this to change the URLs and SAML attributes that might not be available in gallery apps.
     1. If your identity provider doesn't allow the reuse of the same identifier (also known as Entity ID or Audience), change the identifier of the original app.
 
@@ -294,8 +294,8 @@ After adding an app, you might see the **Request session control** option. This 
 
     | App status | Description | Steps |
     | --- | --- | --- |
-    | Not recognized | You see an app not recognized page prompting you to configure your app. | 1. [Add the app to Conditional Access App Control](proxy-deployment-any-app.md).<br /> 2. [Add the domains for the app](proxy-deployment-any-app.md), and then return to the app and refresh the page.<br /> 3. [Install the certificates for the app](proxy-deployment-any-app.md). |
-    | Recognized | You see an onboarding page prompting you to continue the app configuration process. | - [Install the certificates for the app](proxy-deployment-any-app.md). <br /><br /> **Note:** Make sure the app is configured with all domains required for the app to function correctly. To configure extra domains, proceed to [Add the domains for the app](proxy-deployment-any-app.md), and then return to the app page. |
+    | Not recognized | You see an app not recognized page prompting you to configure your app. | 1. [Add the app to Conditional Access App Control](classic-proxy-deployment-any-app.md).<br /> 2. [Add the domains for the app](classic-proxy-deployment-any-app.md), and then return to the app and refresh the page.<br /> 3. [Install the certificates for the app](classic-proxy-deployment-any-app.md). |
+    | Recognized | You see an onboarding page prompting you to continue the app configuration process. | - [Install the certificates for the app](classic-proxy-deployment-any-app.md). <br /><br /> **Note:** Make sure the app is configured with all domains required for the app to function correctly. To configure extra domains, proceed to [Add the domains for the app](classic-proxy-deployment-any-app.md), and then return to the app page. |
 
 <a name="onboarding-apps-additional-considerations"></a>
 
@@ -347,8 +347,8 @@ When creating an access or session policy, you might see the following error mes
 1. In Defender for Cloud Apps, in the menu bar, select the settings cog, and then select **Conditional Access App Control**.
 1. If you see the message **No apps connected**, use the following guide to deploy apps:
 
-    - [Deploy catalog apps that have session control enabled](proxy-deployment-aad.md)
-    - [Deploy custom line-of-business apps, nonfeatured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Microsoft Entra application proxy with session controls
+    - [Deploy catalog apps that have session control enabled](classic-proxy-deployment-aad.md)
+    - [Deploy custom line-of-business apps, nonfeatured SaaS apps, and on-premises apps](classic-proxy-deployment-any-app.md) hosted via the Microsoft Entra application proxy with session controls
 
 1. If you run into any issues while deploying the app, see [Onboarding an app](#onboarding-an-app).
 
@@ -357,11 +357,11 @@ When creating an access or session policy, you might see the following error mes
 After adding a custom app, in the **Conditional Access App Control apps** page, you might see the option: **Request session control**.
 
 > [!NOTE]
-> Catalog apps have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process. For more information, see [Pre-onboarded apps](classic-proxy-intro-aad.md#pre-onboarded-apps).
+> [Catalog apps](classic-proxy-intro-aad.md#session-controls) have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process.
 
 **Recommended steps**
 
-1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Microsoft Entra application proxy with session controls.
+1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](classic-proxy-deployment-any-app.md) hosted via the Microsoft Entra application proxy with session controls.
 
 1. Create a session policy, select the **App** filter, make sure that your app is now listed in the dropdown list.
 
@@ -386,10 +386,10 @@ In session policies, when using the **Control file download (with inspection)** 
 
 **Recommended steps**
 
-1. If the **Protect** action isn't available or is greyed out, verify that you have the Microsoft Purview license. For more information, see [Microsoft Purview Information Protection integration](azip-integration.md).
+1. If the **Protect** action isn't available or is greyed out, verify that you have the Azure Information Protection (AIP) Premium P1 license. For more information, see [Microsoft Purview Information Protection integration](azip-integration.md).
 1. If the **Protect** action is available, but aren't seeing the appropriate labels.
     1. In Defender for Cloud Apps, in the menu bar, select the settings cog, select **Microsoft Information Protection**, and verify that the integration is enabled.
-    1. For Office labels, in the Microsoft Purview portal, make sure **Unified Labeling** is selected.
+    1. For Office labels, in the AIP portal, make sure **Unified Labeling** is selected.
 
 <a name="policies-additional-considerations"></a>
 
@@ -567,7 +567,7 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down, and the default behavior was applied.
         1. To change the default behavior, in Defender for Cloud Apps, in the menu bar, select the settings cog, and then select **Settings**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
         1. Go to `https://status.cloudappsecurity.com/` and monitor notifications about system downtime.
-    1. If you're protecting the file with an sensitivity label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
+    1. If you're protecting the file with an AIP label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
         - Word: docm, docx, dotm, dotx
         - Excel: xlam, xlsm, xlsx, xltx
         - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx

@@ -1,7 +1,7 @@
 ---
 title: Get started | Microsoft Defender for Cloud Apps
 description: This quickstart outlines the process for getting Defender for Cloud Apps up and running so you have cloud app use, insight, and control.
-ms.date: 08/06/2023
+ms.date: 05/15/2024
 ms.topic: quickstart
 ---
 
@@ -29,7 +29,7 @@ Microsoft Defender for Cloud Apps is a security tool and therefore doesn't requi
 
 1. Obtain a Defender for Cloud Apps license for each user you want protected by Defender for Cloud Apps. For more information, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
-     A Defender for Cloud Apps trial is available as part of an Microsoft 365 E5 trial, and you can purchase licenses from the Microsoft 365 admin center > **Marketplace**. For more information, see [Try or buy Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) or [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
+     A Defender for Cloud Apps trial is available as part of a Microsoft 365 E5 trial, and you can purchase licenses from the Microsoft 365 admin center > **Marketplace**. For more information, see [Try or buy Microsoft 365](/microsoft-365/commerce/try-or-buy-microsoft-365) or [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
 
     >[!NOTE]
     > Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Microsoft 365 productivity suite licenses. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?](editions-cloud-app-security-o365.md).
@@ -122,26 +122,7 @@ We recommend using Defender for Cloud Apps discovery in parallel with your curre
 Having visibility into shadow IT in your organization is critical.
 After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
-## Step 5: Deploy Conditional Access App Control for catalog apps
-
-**How to page**: [Deploy Conditional Access App Control for catalog apps with Microsoft Entra ID](proxy-deployment-aad.md)
-
-**Recommended task**: Deploy Conditional Access App Control for catalog apps
-
-1. Configure your IdP to work with Defender for Cloud Apps. If you have Microsoft Entra ID, you can leverage inline controls such as *Monitor only* and *Block downloads* which will work for any catalog app out of the box.
-1. Onboard apps onto access and session controls.
-    1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
-    1. Under **Connected apps**, select *Conditional Access App Control apps**.
-    1. Sign in to each app using a user scoped to the policy
-    1. Refresh the **Conditional Access App Control apps** page and to view the app.
-1. Verify the apps are configured to use access and session controls
-
-To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premises apps, see [Deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md).
-
-**Migration recommendation**  
-Using Conditional Access App Control in parallel with another CASB solution can potentially lead to an app being proxied twice, causing latency or other errors. Therefore, we recommended progressively migrating apps and policies to Conditional Access App Control, creating the relevant session or access policies in  Defender for Cloud Apps as you go.
-
-## Step 6: Personalize your experience
+## Step 5: Personalize your experience
 
 **How to page**: [Personalize your experience](mail-settings.md)
 

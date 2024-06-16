@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Threat protection policies 
-description: Classic portal -  This topic outlines the steps to configure many threat protection policies in Defender for Cloud Apps.
-ms.date: 01/10/2023
+description: Classic portal -  This article outlines the steps to configure many threat protection policies in Defender for Cloud Apps.
+ms.date: 05/15/2024
 ms.topic: conceptual
 ROBOTS: NOINDEX
 ---
@@ -20,23 +20,23 @@ Automatic detection of user access or activity from unfamiliar locations that we
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](classic-enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](classic-proxy-deployment-aad.md).
 
 ### Steps
 
-This detection is automatically configured out-of-the-box to alert you when there is access from new locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+This detection is automatically configured out-of-the-box to alert you when there's access from new locations. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 ## Detect compromised account by impossible location (impossible travel)
 
-Automatic detection of user access or activity from 2 different locations within a time period that is shorter than the time it takes to travel between the two.
+Automatic detection of user access or activity from two different locations within a time period that is shorter than the time it takes to travel between the two.
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](classic-proxy-deployment-aad.md).
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when there is access from impossible locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when there's access from impossible locations. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 2. Optional: you can [customize anomaly detection policies](anomaly-detection-policy.md#scope-anomaly-detection-policies):
 
     - Customize the detection scope in terms of users and groups
@@ -49,7 +49,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ## Detect suspicious activity from an "on-leave" employee
 
-Detect when a user, who is on unpaid leave and should not be active on any organizational resource, is accessing any of your organization's cloud resources.
+Detect when a user, who is on unpaid leave and shouldn't be active on any organizational resource, is accessing any of your organization's cloud resources.
 
 ### Prerequisites
 
@@ -75,7 +75,7 @@ Detect when a user is using a browser with an outdated client version that might
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](classic-proxy-deployment-aad.md).
 
 ### Steps
 
@@ -113,7 +113,7 @@ Detect admin activities performed from and IP address that is considered a risky
 
 ## Detect activities by service account from external IP addresses
 
-Detect service account activities originating from a non-internal IP addresses. This could indicate suspicious behavior or a compromised account.
+Detect service account activities originating from a non-internal IP address. This could indicate suspicious behavior or a compromised account.
 
 ### Prerequisites
 
@@ -128,7 +128,7 @@ Detect service account activities originating from a non-internal IP addresses. 
 
 2. Set the filter **User** to **Name** and then **Starts with** and enter your naming convention, such as svc.
 
-3. Set the filter **IP address** to **Category** does not equal **Other** and **Corporate**.
+3. Set the filter **IP address** to **Category** doesn't equal **Other** and **Corporate**.
 
 4. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
 
@@ -140,13 +140,13 @@ Detect when a certain user accesses or downloads a massive number of files in a 
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](classic-proxy-deployment-aad.md).
 
 ### Steps
 
 1. On the **Policies** page, create a new **Activity policy**.
 
-2. Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure**. This will exclude non-interactive device-based activities.
+2. Set the filter **IP addresses** to **Tag** doesn't equal **Microsoft Azure**. This excludes non-interactive device-based activities.
 
 3. Set the filter **Activity types** equals to and then select all relevant download activities.
 
@@ -163,9 +163,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when there is a potential ransomware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when there's a potential ransomware risk detected. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Defender for Cloud Apps identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
+2. It's possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Defender for Cloud Apps identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
 > [!NOTE]
 > This applies to Microsoft 365, Google Workspace, Box, and Dropbox.
@@ -181,7 +181,7 @@ Detect files containing malware in your cloud environments by utilizing the Defe
 
 ### Steps
 
-- This detection is automatically configured out-of-the-box to alert you when there is a file that may contain malware. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+- This detection is automatically configured out-of-the-box to alert you when there's a file that might contain malware. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 ## Detect rogue admin takeover
 
@@ -195,7 +195,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 1. On the **Policies** page, create a new **Activity policy**.
 
-2. Set **Act on** to **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy..
+2. Set **Act on** to **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy.
 
 3. Set the filter **User** to **From group** equals and select all the related admin group as **Actor only**.
 
@@ -206,7 +206,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ## Detect suspicious inbox manipulation rules
 
-If a suspicious inbox rule was set on a user's inbox, it may indicate that the user account is compromised, and that the mailbox is being used to distribute spam and malware in your organization.
+If a suspicious inbox rule was set on a user's inbox, it might indicate that the user account is compromised, and that the mailbox is being used to distribute spam and malware in your organization.
 
 ### Prerequisites
 
@@ -214,11 +214,11 @@ If a suspicious inbox rule was set on a user's inbox, it may indicate that the u
 
 ### Steps
 
-- This detection is automatically configured out-of-the-box to alert you when there is a suspicious inbox rule set. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+- This detection is automatically configured out-of-the-box to alert you when there's a suspicious inbox rule set. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 ## Detect leaked credentials
 
-When cyber criminals compromise valid passwords of legitimate users, they often share those credentials. This is usually done by posting them publicly on the dark web or paste sites or by trading or selling the credentials on the black market.
+When cyber criminals compromise valid passwords of legitimate users, they often share those credentials. This is typically done by posting them publicly on the dark web or paste sites or by trading or selling the credentials on the black market.
 
 Defender for Cloud Apps utilizes Microsoft's Threat intelligence to match such credentials to the ones used inside your organization.
 
@@ -228,7 +228,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-This detection is automatically configured out-of-the-box to alert you when a possible credential leak is detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+This detection is automatically configured out-of-the-box to alert you when a possible credential leak is detected. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 ## Detect anomalous file downloads
 
@@ -236,13 +236,13 @@ Detect when users perform multiple file download activities in a single session,
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](classic-proxy-deployment-aad.md).
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+2. It's possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Detect anomalous file shares by a user
 
@@ -250,34 +250,34 @@ Detect when users perform multiple file-sharing activities in a single session w
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](classic-proxy-deployment-aad.md).
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharings. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+2. It's possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Detect anomalous activities from infrequent country/region
 
-Detect activities from a location that was not recently or was never visited by the user or by any user in your organization.
+Detect activities from a location that wasn't recently or was never visited by the user or by any user in your organization.
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](classic-proxy-deployment-aad.md).
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country/region. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country/region. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+2. It's possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 > [!NOTE]
 > Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Defender for Cloud Apps does not generate alerts for new locations.
 
 ## Detect activity performed by a terminated user
 
-Detect when a user who is no longer an employee of your organization performs an activity in a sanctioned app. This may indicate malicious activity by a terminated employee who still has access to corporate resources.
+Detect when a user who is no longer an employee of your organization performs an activity in a sanctioned app. This might indicate malicious activity by a terminated employee who still has access to corporate resources.
 
 ### Prerequisites
 
@@ -285,9 +285,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You don't need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+2. It's possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Next steps
 

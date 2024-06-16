@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Session policies
 description: Classic portal -  This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
-ms.date: 01/19/2023
+ms.date: 05/15/2024
 ms.topic: how-to
 ROBOTS: NOINDEX
 ---
@@ -26,10 +26,10 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 
 * Defender for Cloud Apps license (stand-alone or part of another license)
 * A license for Microsoft Entra ID P1 (as a stand-alone license or as an E5 license), or the license required by your identity provider (IdP) solution
-* The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
+* The relevant apps should be [deployed with Conditional Access App Control](classic-proxy-deployment-aad.md)
 * Make sure you've configured your IdP solution to work with Defender for Cloud Apps, as follows:
-  * For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-  * For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
+  * For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](classic-proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  * For other IdP solutions, see [Configure integration with other IdP solutions](classic-proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
 
 ## Create a Defender for Cloud Apps session policy
 
@@ -44,12 +44,12 @@ To create a new session policy, follow this procedure:
 1. In the **Session policy** window, assign a name for your policy, such as *Block Download of Sensitive Documents in Box for Marketing Users*.
 1. In the **Session control type** field:
 
-    1. Select **Monitor only** if you only want to monitor activities by users. This selection will create a Monitor only policy for the apps you selected where all sign-ins, heuristic downloads, and Activity types will be downloaded.
+    1. Select **Monitor only** if you only want to monitor activities by users. This selection creates a Monitor only policy for the apps you selected where all sign-ins, heuristic downloads, and Activity types are downloaded.
 
-    1. Select **Control file download (with inspection)** if you want to monitor user activities. You can take additional actions like block or protect downloads for users.
-    1. Select **Block activities** to block specific activities, which you can select using the **Activity type** filter. All activities from selected apps  will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
+    1. Select **Control file download (with inspection)** if you want to monitor user activities. You can take more actions like block or protect downloads for users.
+    1. Select **Block activities** to block specific activities, which you can select using the **Activity type** filter. All activities from selected apps are monitored (and reported in the Activity log). The specific activities you select are blocked if you select the **Block** action. The specific activities you selected raise alerts if you select the **Test** action and have alerts turned on.
 
-1. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These filters can include the following options for **Activity type**:
+1. Under **Activity source** in the **Activities matching all of the following** section, select more activity filters to apply to the policy. These filters can include the following options for **Activity type**:
 
     * **Device tags**: Use this filter to identify unmanaged devices.
 
@@ -71,9 +71,9 @@ To create a new session policy, follow this procedure:
 
 1. If you selected the option to **Control file download (with inspection)**:
 
-    1. Under **Activity source** in the **Files matching all of the following** section, select additional file filters to apply to the policy. These filters can include the following options:
+    1. Under **Activity source** in the **Files matching all of the following** section, select more file filters to apply to the policy. These filters can include the following options:
 
-        * **Sensitivity label** - Use this filter if your organization uses Microsoft Purview Information Protection and your data has been protected by its sensitivity labels. You can filter files based on the sensitivity label you applied to them. For more information about integration with Microsoft Purview Information Protection, see [Microsoft Purview Information Protection integration](azip-integration.md).
+        * **Sensitivity label** - Use this filter if your organization uses Microsoft Purview Information Protection and your data is protected by its sensitivity labels. You can filter files based on the sensitivity label you applied to them. For more information about integration with Microsoft Purview Information Protection, see [Microsoft Purview Information Protection integration](azip-integration.md).
 
         * **File name** - Use this filter to apply the policy to specific files.
         * **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
@@ -91,7 +91,7 @@ To create a new session policy, follow this procedure:
 
 ## <a name="monitor-session"></a>Monitor all activities
 
-When you create a session policy, each user session that matches the policy is redirected to session control rather than to the app directly. The user will see a monitoring notice to let them know that their sessions are being monitored.
+When you create a session policy, each user session that matches the policy is redirected to session control rather than to the app directly. The user sees a monitoring notice to let them know that their sessions are being monitored.
 
 If you don't want to notify the user that they're being monitored, you can disable the notification message.
 
@@ -99,7 +99,7 @@ If you don't want to notify the user that they're being monitored, you can disab
 
 2. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
 
-To keep the user within the session, Conditional Access App Control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Defender for Cloud Apps URLs. For example, if the app returns a page with links whose domains end with myapp.com, Conditional Access App Control replaces the links with domains ending with something like `myapp.com.mcas.ms`. This way the entire session is monitored by Microsoft Defender for Cloud Apps.
+To keep the user within the session, Conditional Access App Control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Defender for Cloud Apps URLs. For example, if the app returns a page with links whose domains end with myapp.com, Conditional Access App Control replaces the links with domains ending with something like `myapp.com.mcas.ms`. This way Microsoft Defender for Cloud Apps monitors the entire session is monitored.
 
 Conditional Access App Control records the traffic logs of every user session that is routed through it. The traffic logs include the time, IP, user agent, URLs visited, and the number of bytes uploaded and downloaded. These logs are analyzed and a continuous report, **Defender for Cloud Apps Conditional Access App Control**, is added to the list of Cloud Discovery reports in the Cloud Discovery dashboard.
 
@@ -109,7 +109,7 @@ To export these logs:
 2. On the right side of the table, select the export button.
 
     ![export button.](media/classic-export-button.png)
-3. Select the range of the report and select **Export**. This process may take some time.
+3. Select the range of the report and select **Export**. This process might take some time.
 
 To download the exported log:
 
@@ -120,15 +120,15 @@ To download the exported log:
 
 ## <a name="block-download"></a>Block all downloads
 
-When **Block** is set as the **Action** you want to take in the Defender for Cloud Apps session policy, Conditional Access App Control prevents a user from downloading a file per the policy's file filters. A download event is recognized by Microsoft Defender for Cloud Apps for each app when a user starts a download. Conditional Access App Control intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, Conditional Access App Control returns a **Download restricted** message to the user and replaces the downloaded file with a text file. The text file's message to the user can be configured and customized from the session policy.
+When **Block** is set as the **Action** you want to take in the Defender for Cloud Apps session policy, Conditional Access App Control prevents a user from downloading a file per the policy's file filters. Microsoft Defender for Cloud Apps recognizes a download event for each app when a user starts a download. Conditional Access App Control intervenes in real time to prevent it from running. When the signal is received that a user initiated a download, Conditional Access App Control returns a **Download restricted** message to the user and replaces the downloaded file with a text file. The text file's message to the user can be configured and customized from the session policy.
 
 ## Require step-up authentication (authentication context)
 
-When **Session control type** is set to **Block activities, Control file download (with inspection), Control file upload (with inspection)**, you can select an **Action** of **Require step-up authentication**. When this action is selected, Defender for Cloud Apps will redirect the session to Microsoft Entra Conditional Access for policy re-evaluation, whenever the selected activity occurs. Based on the configured authentication context in Microsoft Entra ID, claims such as multi-factor authentication and device compliance can be checked during a session.
+When **Session control type** is set to **Block activities, Control file download (with inspection), Control file upload (with inspection)**, you can select an **Action** of **Require step-up authentication**. When this action is selected, Defender for Cloud Apps will redirect the session to Microsoft Entra Conditional Access for policy reevaluation, whenever the selected activity occurs. Based on the configured authentication context in Microsoft Entra ID, claims such as multifactor authentication and device compliance can be checked during a session.
 
 ## <a name="block-activities"></a>Block specific activities
 
-When **Block activities** is set as the **Activity type**, you can select specific activities to block in specific apps. All activities from selected apps will be monitored and reported in the Activity log. The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
+When **Block activities** is set as the **Activity type**, you can select specific activities to block in specific apps. All activities from selected apps are monitored and reported in the Activity log. The specific activities you select are blocked if you select the **Block** action. The specific activities you selected raise alerts if you select the **Test** action and have alerts turned on.
 
 Examples of blocked activities include:
 
@@ -140,7 +140,7 @@ Examples of blocked activities include:
 
 ## <a name="protect-download"></a>Protect files on download
 
-Select **Block activities** to block specific activities, which you can find using the **Activity type** filter. All activities from selected apps will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
+Select **Block activities** to block specific activities, which you can find using the **Activity type** filter. All activities from selected apps are monitored (and reported in the Activity log). The specific activities you select are blocked if you select the **Block** action. The specific activities you selected raise alerts if you select the **Test** action and have alerts turned on.
 
 When **Protect** is set as the **Action** to be taken in the Defender for Cloud Apps session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file per the policy's file filters. Labels are configured in the Microsoft Purview compliance portal and the label must be configured to apply encryption for it to appear as an option in the Defender for Cloud Apps policy. When a label is selected, and a file is downloaded that meets the criteria of the Defender for Cloud Apps policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who try to access the file must meet the permission requirements determined by the protection applied.
 
@@ -169,7 +169,7 @@ You can also configure session policies to block malware on download.
 
 ## <a name="educate-protect"></a>Educate users to protect sensitive files
 
-It's important to educate users when they are in violation of a policy so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Defender for Cloud Apps allows you to customize a policy's filters and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanaged device, to ensure files are uploaded successfully.
+It's important to educate users when they are in violation of a policy so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Defender for Cloud Apps allows you to customize a policy's filters, and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanaged device, to ensure files are uploaded successfully.
 
 For example, if a user uploads a file without a sensitivity label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
 
@@ -181,7 +181,7 @@ For example, if a user uploads a file without a sensitivity label, a message can
 ## Next steps
 
 >[!div class="nextstepaction"]
-> [« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+> [« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](classic-proxy-deployment-any-app.md)
 
 >[!div class="nextstepaction"]
 > [NEXT: How to create an access policy »](access-policy-aad.md)
