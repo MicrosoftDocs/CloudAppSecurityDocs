@@ -27,6 +27,28 @@ The classic Microsoft Defender for Cloud Apps portal experience and functionalit
 
 For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
+### Microsoft Entra ID apps are automatically onboarded for conditional access app control (Preview)
+
+Now, when you're creating access or session policies with conditional access app control, your Microsoft Entra ID apps are automatically onboarded and available for you to use in your policies.
+
+When creating your access and session policies, select your apps by filtering for **Automated Azure AD onboarding**, for Microsoft Entra ID apps, or **Manual onboarding**, for non-Microsoft IdP apps.
+
+For example:
+
+:::image type="content" source="media/release-notes/onboarded-apps-filter.png" alt-text="Screenshot of the new App filter for access and session policies.":::
+
+Additional steps for using conditional access app control still include:
+
+- **Creating a Microsoft Entra ID conditional access policy** for the apps you want to control with Defender for Cloud Apps conditional access app control.
+- **Manual steps to onboard non-Microsoft IdP apps**, including configuring your IdP to work with Defender for Cloud Apps.
+
+For more information, see:
+
+- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+- [Conditional access app control process flow](conditional-access-app-control-how-to-overview.md)
+- [Create access policies](access-policy-aad.md)
+- [Create session policies](session-policy-aad.md)
+
 ### Defender for Cloud Apps discovery on macOS (Preview)
 
 Defender for Cloud Apps now supports cloud app discovery on macOS devices together with the Microsoft Defender for Endpoint integration. Defender for Cloud Apps and Defender for Endpoint together provide a seamless Shadow IT visibility and control solution.

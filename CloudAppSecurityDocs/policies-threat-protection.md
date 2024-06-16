@@ -1,7 +1,7 @@
 ---
 title: Threat protection policies 
 description: This topic outlines the steps to configure many threat protection policies in Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 05/15/2024
 ms.topic: conceptual
 ---
 # Threat protection policies
@@ -19,7 +19,7 @@ Automatic detection of user access or activity from unfamiliar locations that we
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -31,7 +31,7 @@ Automatic detection of user access or activity from 2 different locations within
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -74,7 +74,7 @@ Detect when a user is using a browser with an outdated client version that might
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -139,7 +139,7 @@ Detect when a certain user accesses or downloads a massive number of files in a 
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -235,7 +235,7 @@ Detect when users perform multiple file download activities in a single session,
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -249,7 +249,7 @@ Detect when users perform multiple file-sharing activities in a single session w
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -263,7 +263,7 @@ Detect activities from a location that wasn't recently or was never visited by t
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
