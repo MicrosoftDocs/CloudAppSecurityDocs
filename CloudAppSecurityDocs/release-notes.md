@@ -21,6 +21,12 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## June 2024
 
+### Automatic redirection for the classic Defender for Cloud Apps portal - General Availability
+
+The classic Microsoft Defender for Cloud Apps portal experience and functionality have been converged into the Microsoft Defender XDR Portal. As of June 2024, all customers using the classic Defender for Cloud Apps portal are automatically redirected to Microsoft Defender XDR, with no option to revert back to the classic portal.
+
+For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+
 ### Microsoft Entra ID apps are automatically onboarded for conditional access app control (Preview)
 
 Now, when you're creating access or session policies with conditional access app control, your Microsoft Entra ID apps are automatically onboarded and available for you to use in your policies.
