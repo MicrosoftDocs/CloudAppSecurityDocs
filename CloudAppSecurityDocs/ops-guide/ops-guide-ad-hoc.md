@@ -135,7 +135,7 @@ For more information, see [Deleting Cloud Discovery data](../discovered-apps.md#
 
 We recommend using a Cloud Discovery executive report to get an overview of Shadow IT used across your organization. Cloud Discovery executive reports identify the top potential risks and help you plan a workflow to mitigate and manage risks until they're resolved.
 
-For more information, see [Generate Cloud Discovery executive report](../discovered-apps.md#generate-cloud-discovery-executive-report).
+For more information, see [Generate Cloud Discovery executive report](../discovered-apps.md#generate-a-cloud-discovery-executive-report).
 
 ## Generate a cloud discovery snapshot report
 

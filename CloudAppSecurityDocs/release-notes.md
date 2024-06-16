@@ -1,7 +1,7 @@
 ---
-title: What's new 
+title: What's new | Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 05/16/2024
+ms.date: 06/13/2024
 ms.topic: overview
 ---
 
@@ -19,7 +19,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
-## May 2024
+## June 2024
 
 ### Microsoft Entra ID apps are automatically onboarded for conditional access app control (Preview)
 
@@ -43,15 +43,48 @@ For more information, see:
 - [Create access policies](access-policy-aad.md)
 - [Create session policies](session-policy-aad.md)
 
+### Defender for Cloud Apps discovery on macOS (Preview)
+
+Defender for Cloud Apps now supports cloud app discovery on macOS devices together with the Microsoft Defender for Endpoint integration. Defender for Cloud Apps and Defender for Endpoint together provide a seamless Shadow IT visibility and control solution.
+
+Together with this enhancement, the **Win10 Endpoint Users** option on the **Cloud Discovery** page has been renamed to **Defender-managed endpoints**.
+
+For more information, see:
+
+- [Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps](mde-integration.md)
+- [Investigate apps discovered by Microsoft Defender for Endpoint](mde-investigation.md)
+
+### AKS supported for automatic log collection (Preview)
+
+Microsoft Defender for Cloud Apps log collector now supports [Azure Kubernetes Service (AKS)](/azure/aks/) when the receiver type is `Syslog-tls`, and you can configure automatic log collection on AKS for continuous reporting with Defender for Cloud Apps.
+
+For more information, see [Configure automatic log upload using Docker on Azure Kubernetes Service (AKS)](discovery-kubernetes.md).
+
+### New conditional access app control / inline data for the advanced hunting CloudAppEvents table
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *AuditSource* and *SessionData* columns for queries and detection rules. Using this data allows for queries that consider specific audit sources, including access and session control, and queries by specific inline sessions.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+
+### SSPM support for multiple instances of the same app is Generally Available
+
+Defender for Cloud Apps now supports SaaS security posture management (SSPM) across multiple instances of the same app. For example, if you have multiple instances of Okta, you can configure Secure Score recommendations for each instance individually. Each instance shows up as a separate item on the **App Connectors** page. For example:
+
+:::image type="content" source="media/security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
+
+For more information, see [SaaS security posture management (SSPM)](security-saas.md).
+
+## May 2024
+
 ### Defender for Cloud Apps in the Microsoft Defender portal - General Availability and advance notice for redirection
 
 The Defender for Cloud Apps experience in the Microsoft Defender portal is generally available, and the automatic redirection from the classic portal is on by default for all customers. 
 
-Starting June 16th, 2024, the redirection toggle will no longer be available. From then on, all users accessing the classic Microsoft Defender for Cloud Apps portal will be automatically rerouted to the Microsoft Defender portal, with no option to opt-out.
+Starting June 16, 2024, the redirection toggle will no longer be available. From then on, all users accessing the classic Microsoft Defender for Cloud Apps portal will be automatically rerouted to the Microsoft Defender portal, with no option to opt out.
 
 To prepare for this change, we recommend that any customers still using the classic portal move operations to the Microsoft Defender portal. For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/defender-xdr/microsoft-365-security-center-defender-cloud-apps).
 
-### Turn preview options on in the main Microsoft Defender XDR settings (Preview)
+### Turn on preview options in the main Microsoft Defender XDR settings (Preview)
 
 Now, preview customers can manage settings for preview features together with other Microsoft Defender XDR preview features.
 
@@ -65,7 +98,7 @@ For more information, see [Microsoft Defender XDR preview features](/microsoft-3
 
 ### App governance available for government clouds
 
-App governance features in Defender for Cloud Apps are now avaialble in government clouds. For more information, see:
+App governance features in Defender for Cloud Apps are now available in government clouds. For more information, see:
 
 - [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md)
 - [Microsoft Defender for Cloud Apps for US Government offerings](editions-cloud-app-security-gcc.md)
@@ -74,7 +107,7 @@ App governance features in Defender for Cloud Apps are now avaialble in governme
 
 ### Enable data encryption from the Microsoft Defender portal
 
-Now you can complete the process for encrypting Defender for Cloud Apps data at rest with your own key by enabling data encrpytion from the **Settings** area of the Microsoft Defender portal.
+Now you can complete the process for encrypting Defender for Cloud Apps data at rest with your own key by enabling data encryption from the **Settings** area of the Microsoft Defender portal.
 
 This feature is now limited on the classic Microsoft Defender for Cloud Apps portal, and is available only from the Microsoft Defender portal.
 
@@ -107,7 +140,7 @@ For more information, see [Configure automatic log upload using Podman](discover
 
 ### New anomaly data for the advanced hunting CloudAppEvents table
 
-Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns columns for queries and detections rules. Using this data assists in ruling out false positives and finding anomalies.
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *LastSeenForUser* and *UncommonForUser* columns for queries and detections rules. Using this data helps to rule out false positives and find anomalies.
 
 For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
@@ -116,7 +149,7 @@ For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/micro
 Defender for Cloud Apps now provides new detections for risky user activities in Microsoft Copilot for Microsoft 365 with the Microsoft 365 connector.
 
 - Related alerts are shown together with other Microsoft Defender XDR alerts, in the Microsoft Defender portal.
-- Copilot for Microsoft 365 activities are available in the Defender for Cloud Apps activity log.
+- Copilot for Microsoft 365 activities is available in the Defender for Cloud Apps activity log.
 - In the Microsoft Defender portal's **Advanced hunting** page, Copilot for Microsoft 365 activities are available in the **CloudAppEvents** table, under the **Microsoft Copilot for Microsoft 365** application.
 
 For more information, see:
@@ -128,7 +161,7 @@ For more information, see:
 - [Proactively hunt for threats with advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview)
 - [CloudAppEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table)
 
-### Data in motion protection for Edge for Business users (Preview)
+### Data in motion protection for Microsoft Edge for Business users (Preview)
 
 Defender for Cloud Apps users who use Microsoft Edge for Business and are subject to session policies are now protected directly from within the browser. In-browser protection reduces the need for proxies, improving both security and productivity.
 
@@ -185,7 +218,7 @@ For more information, see [App governance in Microsoft Defender for Cloud Apps](
 
 ### SSPM support for multiple instances of the same app (Preview)
 
-Defender for Cloud Apps now supports SaaS security posture management (SSPM) across multiple instances of the same app. For example, if you have multiple instances of AWS, you can configure Secure Score recommendations for each instance individually. Each instance will show up as a separate item on the **App Connectors** page. For example:
+Defender for Cloud Apps now supports SaaS security posture management (SSPM) across multiple instances of the same app. For example, if you have multiple instances of AWS, you can configure Secure Score recommendations for each instance individually. Each instance shows up as a separate item on the **App Connectors** page. For example:
 
 :::image type="content" source="media/security-saas-choose-secure-score-main-instance.png" alt-text="Screenshot of the Turn on Secure Score recommendations option." lightbox="media/classic-security-saas-choose-secure-score-main-instance.png":::
 
@@ -199,7 +232,7 @@ For more information, see [Protect apps with Microsoft Defender for Cloud Apps C
 
 ### Automatic redirection for the classic Defender for Cloud Apps portal (Preview)
 
-The classic Microsoft Defender for Cloud Apps portal experience and functionality have been converged into the Microsoft Defender XDR Portal. As of January 9th, 2024, customers using the classic Defender for Cloud Apps portal with Preview features are automatically redirected to Microsoft Defender XDR, with no option to revert back to the classic portal.
+The classic Microsoft Defender for Cloud Apps portal experience and functionality have been converged into the Microsoft Defender XDR Portal. As of January 9, 2024, customers using the classic Defender for Cloud Apps portal with Preview features are automatically redirected to Microsoft Defender XDR, with no option to revert back to the classic portal.
 
 For more information, see:
 
@@ -264,7 +297,7 @@ Defender for Cloud Apps plans to rotate its application certificate. If you’ve
     ```powershell
     keytool -list -keystore ..\lib\security\cacerts
 
-1. If you see the following 4 aliases, that means you have previously explicitly trusted our certificate and need to take action. If those aliases are not present, no action should be needed.
+1. If you see the following four aliases, that means you have previously explicitly trusted our certificate and need to take action. If those aliases aren't present, no action should be needed.
     - *azuretls01crt*
     - *azuretls02crt*
     - *azuretls05crt*
@@ -297,7 +330,7 @@ For more information, see:
 
 As an admin user, you might want to test upcoming proxy bug fixes before the latest Defender for Cloud Apps release is fully rolled out to all tenants. To help you do this, Defender for Cloud Apps now provides a test mode, available from the **Admin View** toolbar.  
 
-When in test mode, only admin users are exposed to any changes provided in the bug fixes. There is no effect on other users. We encourage you to send feedback about the new fixes to the Microsoft support team to help speed up release cycles.
+When in test mode, only admin users are exposed to any changes provided in the bug fixes. There's no effect on other users. We encourage you to send feedback about the new fixes to the Microsoft support team to help speed up release cycles.
 
 When you're finished testing the new fix, turn test mode off to return to regular functionality. 
 
@@ -313,7 +346,7 @@ The Defender for Cloud Apps app catalog now supports the new **Generative AI** c
 
 :::image type="content" source="media/release-notes/generative-ai.png" alt-text="Screenshot of the new Generative AI category." lightbox="media/release-notes/generative-ai.png":::
 
-For example, you may want to use Defender for Cloud Apps' [integration with Defender for Endpoint](mde-integration.md) to approve or block the usage of specific LLM apps based on a policy.
+For example, you might want to use Defender for Cloud Apps' [integration with Defender for Endpoint](mde-integration.md) to approve or block the usage of specific LLM apps based on a policy.
 
 For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
 

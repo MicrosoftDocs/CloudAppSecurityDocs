@@ -88,6 +88,10 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
   - **Groups** – If a specific group has access to the file. Groups can be imported from Active Directory, cloud apps or manually created in the service.
 
+      >[!NOTE]
+      >
+      > - This filter is used to search for a collaborator group as a whole. It doesn't match for individual group members.
+
   - **Users** – Certain set of users that may have access to the file.
 
 - **Created** – File creation time. The filter supports before/after dates and a date range.
@@ -125,14 +129,14 @@ Below is a list of the file filters that can be applied. To provide you with a p
   | - **starts with:** text/ | Text |
   | All other file MIME types | Other |
 
-    ![policy_file filters type.](media/policy_file-filters-type.png)
-  
+  ![policy_file filters type.](media/policy_file-filters-type.png)
+
 - **In trash** – Exclude/include files in the trash folder. These files may still be shared and pose a risk.
 
-    > [!NOTE]
-    > This filter does not apply to files on SharePoint and OneDrive.
+  > [!NOTE]
+  > This filter does not apply to files on SharePoint and OneDrive.
 
-    ![policy_file filters trash.](media/policy_file-filters-trash.png)
+  ![policy_file filters trash.](media/policy_file-filters-trash.png)
   
 - **Last modified** – File modification time. The filter supports before and after dates, date range, and relative time expressions. For example, all files that weren't modified in the last six months.
 
@@ -146,8 +150,8 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Parent folder** – Include or exclude a specific folder (doesn't apply to subfolders). For example, all publicly shared files except for files in this folder.
 
-    > [!NOTE]
-    > Defender for Cloud Apps only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
+  > [!NOTE]
+  > Defender for Cloud Apps only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
 
 - **Quarantined** – If the file quarantined by the service. For example, show me all files that are quarantined.
 
