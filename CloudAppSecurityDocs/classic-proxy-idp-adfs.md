@@ -86,10 +86,10 @@ Use the following steps to route your web app sessions from AD FS to Defender fo
 
 <a name="idp1-create-custom-app-adfs"></a>
 
-## Step 3: Create a new AD FS Relying Party Trust and App Single Sign-On configuration
+## Step 3: Create a new AD FS Relying Party Trust and App single sign-on configuration
 
 > [!NOTE]
-> To limit end-user downtime and preserve your existing known good configuration, we recommend creating a new **Relying Party Trust** and **Single Sign-On configuration**. Where this is not possible, skip the relevant steps. For example, if the app you are configuring does not support creating multiple **Single Sign-On configurations**, then skip the create new single sign-on step.
+> To limit end-user downtime and preserve your existing known good configuration, we recommend creating a new **Relying Party Trust** and single sign-on configuration. Where this is not possible, skip the relevant steps. For example, if the app you are configuring does not support creating multiple single sign-on configurations, then skip the create new single sign-on step.
 
 1. In the **AD FS Management** console, under **Relying Party Trusts**, view the properties of your existing relying party trust for your app, and make note of the settings.
 

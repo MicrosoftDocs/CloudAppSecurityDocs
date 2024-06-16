@@ -26,7 +26,7 @@ In this tutorial, you learn how to use Defender for Cloud Apps to investigate ri
 
 The **investigation priority score** is a score that Defender for Cloud Apps gives to each user to let you know how risky the user is, relative to other users in your organization. Use the investigation priority score to determine which users to investigate first, detecting both malicious insiders, and external attackers moving laterally in your organizations, without having to rely on standard deterministic detections.
 
-Every Microsoft Entra user has a dynamic investigation priority score that is constantly updated based on recent behavior and impact built from data evaluated from Defender for Identity and Defender for Cloud Apps.
+Every Microsoft Entra user has a dynamic investigation priority score, which is constantly updated based on recent behavior and impact built from data evaluated from Defender for Identity and Defender for Cloud Apps.
 
 Defender for Cloud Apps builds user profiles for each user, based on analytics that consider security alerts and abnormal activities over time, peer groups, expected user activity, and the effect any specific user might have on the business or company assets.
 

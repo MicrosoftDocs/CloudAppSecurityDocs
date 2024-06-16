@@ -72,7 +72,7 @@ This procedure describes how to create a new access policy in Defender for Cloud
 
     For example:
 
-    :::image type="content" source="media/release-notes/onboarded-apps-filter.png" alt-text="Screenshot of a sample filter when creating an access policy.":::
+    :::image type="content" source="media/access-policy-aad/onboarded-apps-filter.png" alt-text="Screenshot of a sample filter when creating an access policy.":::
 
     Select **Edit and preview results** to get a preview of the types of activities that would be returned with your current selection.
 

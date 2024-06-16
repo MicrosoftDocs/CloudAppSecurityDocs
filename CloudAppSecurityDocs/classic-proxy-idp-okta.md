@@ -83,10 +83,10 @@ Use the following steps to route your web app sessions from Okta to Defender for
 
 <a name="idp1-create-custom-app-okta"></a>
 
-## Step 3: Create a new Okta Custom Application and App Single Sign-On configuration
+## Step 3: Create a new Okta Custom Application and App single sign-on configuration
 
 > [!NOTE]
-> To limit end-user downtime and preserve your existing known good configuration, we recommend creating a new **Custom Application** and **Single Sign-On configuration**. Where this is not possible, skip the relevant steps. For example, if the app you are configuring does not support creating multiple **Single Sign-On configurations**, then skip the create new single sign-on step.
+> To limit end-user downtime and preserve your existing known good configuration, we recommend creating a new **Custom Application** and single sign-on configuration. Where this is not possible, skip the relevant steps. For example, if the app you are configuring does not support creating multiple single sign-on configurations, then skip the create new single sign-on step.
 
 1. In the **Okta Admin** console, under **Applications**, view the properties of your existing configuration for your app, and make note of the settings.
 

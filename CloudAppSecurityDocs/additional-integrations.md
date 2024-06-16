@@ -12,7 +12,7 @@ You can integrate Microsoft Defender for Cloud Apps with your other security inv
 
 The Defender for Cloud Apps robust platform allows you to integrate with a wide variety of external security solutions, including:
 
-- **Threat Intelligence (TI) feeds (Bring You Own TI)**  
+- **Threat Intelligence (TI) feeds (Bring Your Own TI)**  
     You can use the Defender for Cloud Apps [IP address range API](api-data-enrichment.md) to add new risky IP address ranges identified by third-party TI solutions. Once defined, IP address ranges allow you to tag, categorize, and customize how logs and alerts are displayed and investigated.
 
 - **Mobile Device Management (MDM) / Mobile Threat Defense (MTD) solutions**  
