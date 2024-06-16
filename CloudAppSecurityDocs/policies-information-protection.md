@@ -1,7 +1,7 @@
 ---
 title: Information protection policies 
 description: This article outlines the steps to configure many information protection policies in Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 05/15/2024
 ms.topic: conceptual
 ---
 # Information protection policies
@@ -241,9 +241,9 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
+Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for conditional access app control.
 
-- Make sure your app is a SAML-based app that utilizes Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
@@ -268,8 +268,9 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
-- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for conditional access app control.
+
+For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
@@ -298,11 +299,11 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
+- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for conditional access app control.
 
-- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
-- sensitivity labels from Microsoft Purview Information Protection must be configured and used inside your organization.
+- Sensitivity labels from Microsoft Purview Information Protection must be configured and used inside your organization.
 
 ### Steps
 

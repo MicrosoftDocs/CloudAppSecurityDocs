@@ -42,7 +42,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     > * The first connection can take up to 4 hours to get all users and their activities in the 7 days before the connection.
     > * After the connector's **Status** is marked as **Connected**, the connector is live and works.
     > * The received activities are from the Slack Audit Log API. You can find them in the [Slack documentation](https://api.slack.com/admins/audit-logs#audit_logs_actions).
-    > * **Send Slack message** activity is an activity that can be received from [Conditional Access App Control](proxy-deployment-aad.md), and not from the Slack API connector.
+    > * **Send Slack message** activity is an activity that can be received from [Conditional Access App Control](classic-proxy-deployment-aad.md), and not from the Slack API connector.
 
 ## Next steps
 

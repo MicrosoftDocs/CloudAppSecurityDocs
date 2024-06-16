@@ -24,7 +24,7 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 ## To configure session controls for your app using Okta as the IdP
 
-Use the following steps to route your web app sessions from Okta to Defender for Cloud Apps. For Microsoft Entra configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md).
+Use the following steps to route your web app sessions from Okta to Defender for Cloud Apps. For Microsoft Entra configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Microsoft Entra ID](classic-proxy-deployment-any-app.md).
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by Okta using one of the following methods:
@@ -38,7 +38,7 @@ Use the following steps to route your web app sessions from Okta to Defender for
 
 **Step 2: [Configure Defender for Cloud Apps with your app's SAML information](#idp1-conf-cas-with-your-app-saml-info)**
 
-**Step 3: [Create a new Okta Custom Application and App Single Sign-On configuration](#idp1-create-custom-app-okta)**
+**Step 3: [Create a new Okta Custom Application and app single sign-on configuration](#idp1-create-custom-app-okta)**
 
 **Step 4: [Configure Defender for Cloud Apps with the Okta app's information](#idp1-conf-cas-with-okta-app-info)**
 
@@ -83,10 +83,10 @@ Use the following steps to route your web app sessions from Okta to Defender for
 
 <a name="idp1-create-custom-app-okta"></a>
 
-## Step 3: Create a new Okta Custom Application and App Single Sign-On configuration
+## Step 3: Create a new Okta Custom Application and App single sign-on configuration
 
 > [!NOTE]
-> To limit end-user downtime and preserve your existing known good configuration, we recommend creating a new **Custom Application** and **Single Sign-On configuration**. Where this is not possible, skip the relevant steps. For example, if the app you are configuring does not support creating multiple **Single Sign-On configurations**, then skip the create new single sign-on step.
+> To limit end-user downtime and preserve your existing known good configuration, we recommend creating a new **Custom Application** and single sign-on configuration. Where this is not possible, skip the relevant steps. For example, if the app you are configuring does not support creating multiple single sign-on configurations, then skip the create new single sign-on step.
 
 1. In the **Okta Admin** console, under **Applications**, view the properties of your existing configuration for your app, and make note of the settings.
 
@@ -191,7 +191,7 @@ In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [« PREVIOUS: Deploy Conditional Access App Control for any apps](proxy-deployment-any-app.md)
+> [« PREVIOUS: Deploy Conditional Access App Control for any apps](classic-proxy-deployment-any-app.md)
 
 ## See also
 

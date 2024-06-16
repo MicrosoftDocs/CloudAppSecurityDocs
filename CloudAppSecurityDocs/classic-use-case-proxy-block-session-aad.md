@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Block download of sensitive information with Conditional Access App Control
 description: Classic portal -  This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Microsoft Entra ID reverse proxy capabilities.
-ms.date: 01/19/2023
+ms.date: 05/15/2024
 ms.topic: tutorial
 ROBOTS: NOINDEX
 ---
@@ -35,7 +35,7 @@ Protect your organization by monitoring and controlling cloud app use with any I
     |---|---|
     |Microsoft Entra ID|SAML 2.0 or OpenID Connect|
     |Other|SAML 2.0|
-- Make sure the [app is deployed to Defender for Cloud Apps](proxy-deployment-aad.md)
+- Make sure the [app is deployed to Defender for Cloud Apps](classic-proxy-deployment-aad.md)
 
 ## Create a block download policy for unmanaged devices
 
@@ -47,8 +47,8 @@ To create the conditional access policy, follow the steps in [Create a Defender 
 
 Make sure you have configured your IdP solution to work with Defender for Cloud Apps, as follows:
 
-- For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-- For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
+- For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](classic-proxy-deployment-aad.md#configure-integration-with-azure-ad)
+- For other IdP solutions, see [Configure integration with other IdP solutions](classic-proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
 
 After completing this task, go to the Defender for Cloud Apps portal and create a session policy to monitor and control file downloads in the session.
 

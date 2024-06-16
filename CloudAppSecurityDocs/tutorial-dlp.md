@@ -1,7 +1,7 @@
 ---
 title: Discover and protect sensitive information in your organization
 description: This tutorial describes the process to discover and protect sensitive information in Microsoft Defender for Cloud Apps.
-ms.date: 02/29/2024
+ms.date: 05/15/2024
 ms.topic: tutorial
 ---
 # Tutorial: Discover and protect sensitive information in your organization
@@ -33,7 +33,7 @@ Our approach to information protection can be split into the following phases th
 
     - **Use an app connector**: Our app connectors use the APIs supplied by app providers. They provide greater visibility into and control over the apps used in your organization. Scans are performed periodically (every 12 hours) and in real time (triggered each time a change is detected). For more information and instructions on how to add apps, see [Connecting apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-    - **Use conditional access app control**: Our conditional access app control solution is uniquely integrated with Microsoft Entra Conditional Access, and allows you to apply controls to any app.
+    - **Use Conditional Access App Control**: Our conditional access app control solution uses a reverse proxy architecture that is uniquely integrated with Microsoft Entra Conditional Access, and allows you to apply controls to any app. 
 
         Microsoft Edge users benefit from direct, in-browser protection. Conditional access app control is applied in other browsers using a reverse proxy architecture. For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
     
@@ -96,11 +96,13 @@ So now you can detect files with sensitive information, but what you really want
     - Remove specific file or folder permissions in Microsoft 365
     - Move a file to the trash folder
 
-1. **Session policy controls**: Uses reverse proxy capabilities to protect files, including:
+1. **Session policy controls**: Uses reverse proxy capabilities to protect files, such as:
     - Trigger alerts and send email notifications about the incident
-    - [Monitor all activities](session-policy-aad.md#monitor-all): Explicitly allows the download or upload of files and monitors all related activities.
-    - [Block](session-policy-aad.md#block-download): Explicitly blocks the download or upload of files. Use this option to protect your organization's sensitive files from exfiltration or infiltration from any device, including unmanaged devices.
-    - [Protect](session-policy-aad.md#protect-download): Automatically applies a sensitivity label to files that match the policy's file filters. Use this option to protect the download of sensitive files.
+    - Explicitly allowing the download or upload of files and monitors all related activities.
+    - Explicitly block the download or upload of files. Use this option to protect your organization's sensitive files from exfiltration or infiltration from any device, including unmanaged devices.
+    - Automatically apply a sensitivity label to files that match the policy's file filters. Use this option to protect the download of sensitive files.
+
+    For more information, see [Create Microsoft Defender for Cloud Apps session policies](session-policy-aad.md).
 
 ### Phase 4: Monitor and report on your data
 

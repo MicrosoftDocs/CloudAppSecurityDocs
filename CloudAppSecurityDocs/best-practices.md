@@ -160,7 +160,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **Detail**: Use Conditional Access App Control to set controls on your SaaS apps. You can create session policies to monitor your high risk, low trust sessions. Similarly, you can create session policies to block and protect downloads by users trying to access sensitive data from unmanaged or risky devices. If you don't create session policies to monitor high-risk sessions, you'll lose the ability to block and protect downloads in the web client, as well as the ability to monitor low-trust session both in Microsoft and third-party apps.  
 **For more information**:
 
-* [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md)
+* [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
 * [Session policies](session-policy-aad.md)
 
 ---
@@ -174,7 +174,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **Detail**: To secure collaboration in your environment, you can create a session policy to monitor sessions between your internal and external users. This not only gives you the ability to monitor the session between your users (and notify them that their session activities are being monitored), but it also enables you to limit specific activities as well. When creating session policies to monitor activity, you can choose the apps and users you'd like to monitor.  
 **For more information**:
 
-* [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md)
+* [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
 * [Session policies](session-policy-aad.md)
 
 ---
@@ -187,7 +187,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **Best practice**: Tune Anomaly policies, set IP ranges, send feedback for alerts  
 **Detail**: Anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you can immediately run advanced threat detection across your cloud environment.
 
-Anomaly detection policies are triggered when there are unusual activities performed by the users in your environment. Defender for Cloud Apps continually monitors your users activities and uses UEBA and ML to learn and understand the *normal* behavior of your users. You can tune policy settings to fit your organizations requirements, for example, you can set the sensitivity of a policy, as well as scope a policy to a specific group.
+Anomaly detection policies are triggered when there are unusual activities performed by the users in your environment. Defender for Cloud Apps continually monitors your users' activities and uses UEBA and ML to learn and understand the *normal* behavior of your users. You can tune policy settings to fit your organizations requirements, for example, you can set the sensitivity of a policy, as well as scope a policy to a specific group.
 
 * **Tune and Scope Anomaly Detection Policies**: As an example, to reduce the number of false positives within the impossible travel alert, you can set the policy's sensitivity slider to low. If you have users in your organization that are frequent corporate travelers, you can add them to a user group and select that group in the scope of the policy.
 
@@ -256,8 +256,10 @@ When dismissing alerts, it's important to investigate and understand why they ar
 **Best practice**: Onboard custom apps  
 **Detail**: To gain additional visibility into activities from your line-of-business apps, you can onboard custom apps to Defender for Cloud Apps. Once custom apps are configured, you see information about who's using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
 
-Additionally, you can onboard a custom app as a Conditional Access App Control app to monitor their low-trust sessions.  
+Additionally, you can onboard a custom app as a Conditional Access App Control app to monitor their low-trust sessions. Microsoft Entra ID apps are automatically onboarded.
+
 **For more information**:
 
-* [Add custom apps to Cloud Discovery](cloud-discovery-custom-apps.md)
-* [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md)
+- [Add custom apps to Cloud Discovery](cloud-discovery-custom-apps.md)
+- [Onboard non-Microsoft IdP catalog apps for conditional access app control](proxy-deployment-featured-idp.md)
+- [Onboard non-Microsoft IdP custom apps for conditional access app control](proxy-deployment-any-app-idp.md)

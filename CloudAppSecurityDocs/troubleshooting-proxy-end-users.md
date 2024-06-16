@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting access and session controls for end-users | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by end-users with Microsoft Defender for Cloud Apps.
-ms.date: 02/29/2024
+ms.date: 05/15/2024
 ms.topic: troubleshooting
 ---
 
@@ -30,7 +30,7 @@ This section describes the troubleshooting steps we recommend you taking if the 
 **Recommended steps**
 
 1. In the Microsoft Defender Portal, select **Settings** > **Cloud Apps**.
-1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps. For exmaple:
+1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps. For example:
 
     ![Screenshot of the user monitoring options.](media/proxy-user-monitoring.png)
 
@@ -47,7 +47,7 @@ This section describes the troubleshooting steps we recommend you taking if the 
 
 1. Select **Save**.
 
-### Not able to access app from a non-Microsoft Identity Provider
+## Not able to access app from a non-Microsoft Identity Provider
 
 If an end user receives a general failure after signing into an app from a non-Microsoft Identity Provider, validate the non-Microsoft IdP configuration.
 
@@ -71,7 +71,7 @@ If an end user receives a general failure after signing into an app from a non-M
 
 1. If you still can't access the app, open a [support ticket](support-and-ts.md).
 
-### Something Went Wrong page appears
+## Something Went Wrong page appears
 
 Sometimes during a proxied session, the **Something Went Wrong** page might appear. This can happen when:
 
@@ -87,7 +87,7 @@ Sometimes during a proxied session, the **Something Went Wrong** page might appe
     1. Restart your browser session.
     1. Clear history, cookies, and cache from the browser.
 
-### Clipboard actions or file controls aren't being blocked
+## Clipboard actions or file controls aren't being blocked
 
 The ability to block clipboard actions such as cut, copy, paste, and file controls such as download, upload, and print is required to prevent data exfiltration and infiltration scenarios. 
 
@@ -120,7 +120,7 @@ If the session is being proxied, use the following steps to verify the policy:
 
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
 
-### Downloads aren't being protected
+## Downloads aren't being protected
 
 As an end user, downloading sensitive data on an unmanaged device might be necessary. In these scenarios, you can protect documents with Microsoft Purview Information Protection. 
 
@@ -160,7 +160,7 @@ If the end user can't successfully encrypt the document, use the following steps
 
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
 
-### Navigating to a particular URL of a suffixed app and landing on a generic page
+## Navigating to a particular URL of a suffixed app and landing on a generic page
 
 In some scenarios, navigating to a link might result in the user landing on the app's home page rather than the full path of the link.
 
@@ -181,7 +181,7 @@ Microsoft Edge users benefit from in-browser protection, aren't redirected to a 
 
 <a name="app-additional-considerations"></a>
 
-### Blocking downloads cause PDF previews to be blocked
+## Blocking downloads cause PDF previews to be blocked
 
 Occasionally, when you preview or print PDF files, apps initiate a download of the file. This causes Defender for Cloud Apps to intervene to ensure the download is blocked and that data isn't leaked from your environment. 
 
@@ -208,7 +208,7 @@ To allow the preview, an Exchange administrator should perform the following ste
 
     ![Screenshot of a PDF preview not blocked.](media/after-powershell.png)
 
-### Similar site warning appears
+## Similar site warning appears
 
 Malicious actors can craft URLs that are similar to other sites' URLs in order to impersonate and trick users to believe they're browsing to another site. Some browsers try to detect this behavior and warn users before accessing the URL or block access.
 
@@ -216,11 +216,11 @@ In some rare cases, users under session control receive a message from the brows
 
 This message only appears for Chrome users, as Microsoft Edge users benefit from in-browser protection, without the reverse proxy architecture. For example:
 
-![Screenshot of a similar site warning in Chrome.](media/chrome-similar-site-warning.png)
+:::image type="content" source="media/chrome-similar-site-warning.png" alt-text="Screenshot of a similar site warning in Chrome." lightbox="media/chrome-similar-site-warning.png" border="false":::
 
 If you receive a message like this, contact Microsoft’s support to address it with the relevant browser vendor.
 
-### Second sign-in (also known as 'second login')
+## Second sign-in (also known as 'second login')
 
 Some applications have more than one deep link to sign in. Unless you define the sign-in links in the app settings, users might be redirected to an unrecognized page when they sign in, blocking their access.
 
@@ -240,7 +240,7 @@ If it isn't transparent to the end user, add the second sign-in URL to the app s
 
 If you're confident the app doesn't use a nonce, you can disable this by editing the apps settings as described in [Slow sign-ins](troubleshooting-proxy.md#slow-sign-ins).
 
-### More considerations for troubleshooting apps
+## More considerations for troubleshooting apps
 
 When troubleshooting apps, there are some more things to consider:
 
@@ -250,6 +250,8 @@ When troubleshooting apps, there are some more things to consider:
 - **Session controls protect limitation**
 Co-Auth labeling under **"protect"** action isn't supported by Defender for Cloud Apps session controls. For more information, see [Enable coauthoring for files encrypted with sensitivity labels](/purview/sensitivity-labels-coauthoring#if-you-need-to-disable-this-feature).
 
-## Next steps
+## Related content
 
-For more information, see [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md).
+- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+- [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md)
+- [Troubleshooting - What is `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`?](troubleshooting-proxy-url.md)
