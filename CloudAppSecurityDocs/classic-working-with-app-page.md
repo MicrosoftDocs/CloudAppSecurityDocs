@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Working with the app page
 description: Classic portal -  This article describes how the app page works in Defender for Cloud Apps.
-ms.date: 01/19/2023
+ms.date: 05/15/2024
 ms.topic: conceptual
 ROBOTS: NOINDEX
 ---
@@ -43,7 +43,7 @@ After analyzing the risk versus the usage of the application, an admin can decid
 
 - Tagging the app with built-in tags to enforce further access control on the network layer (endpoints or integrated 3rd party network appliances). For more information, see [Govern discovered apps](governance-discovery.md).
 - On-boarding the app to Microsoft Entra ID to manage logins and govern users when applicable. For more information, see [Add an application to your tenant](/azure/active-directory/manage-apps/add-application-portal).
-- Using Conditional Access app controls to monitor and control user sessions, prevent risky actions, and avert potential data exfiltration. For more information, see [Deploy Conditional Access App Control for catalog apps](proxy-deployment-aad.md).
+- Using Conditional Access app controls to monitor and control user sessions, prevent risky actions, and avert potential data exfiltration. For more information, see [Deploy Conditional Access App Control for catalog apps](classic-proxy-deployment-aad.md).
 - Connecting the app via the app connectors in Defender for Cloud Apps when applicable. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ## Discovered OAuth apps

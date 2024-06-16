@@ -10,7 +10,9 @@ ROBOTS: NOINDEX
 
 [!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
-Access and session controls in Microsoft Defender for Cloud Apps work with applications from the Cloud app catalog and with custom applications. For a list of apps that are pre-onboarded and work out of the box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#pre-onboarded-apps).
+Access and session controls in Microsoft Defender for Cloud Apps work with applications from the Cloud app catalog and with custom applications.
+
+[!INCLUDE [classic-pre-onboarded-apps](includes/classic-pre-onboarded-apps.md)]
 
 ## Prerequisites
 
@@ -37,7 +39,7 @@ Follow the steps below to configure catalog apps to be controlled by Microsoft D
 > [!NOTE]
 > When configuring an application with SSO in Microsoft Entra ID, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
 
-Use the following steps to create a Microsoft Entra Conditional Access policy that routes app sessions to Defender for Cloud Apps. For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md).
+Use the following steps to create a Microsoft Entra Conditional Access policy that routes app sessions to Defender for Cloud Apps. For other IdP solutions, see [Configure integration with other IdP solutions](classic-proxy-deployment-featured-idp.md).
 
 1. In Microsoft Entra ID, browse to **Security** > **Conditional Access**.
 1. On the **Conditional Access** pane, in the toolbar at the top, select **New policy** -> **Create new policy**.
@@ -93,7 +95,7 @@ Once you're ready to enable the app for use in your organization's production en
 > [« PREVIOUS: Introduction to Conditional Access App Control](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
-> [NEXT: Deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+> [NEXT: Deploy Conditional Access App Control for any app »](classic-proxy-deployment-any-app.md)
 
 > [!div class="nextstepaction"]
 > [Troubleshooting access and session controls](troubleshooting-proxy.md)

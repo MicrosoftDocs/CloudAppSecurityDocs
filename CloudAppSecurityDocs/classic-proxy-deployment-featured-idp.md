@@ -9,7 +9,9 @@ ROBOTS: NOINDEX
 
 [!INCLUDE [Banner for top of topics](includes/classic-banner.md)]
 
-Access and session controls in Microsoft Defender for Cloud Apps work with applications from the Cloud app catalog and with custom applications. For a list of apps that are pre-onboarded by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#pre-onboarded-apps).
+Access and session controls in Microsoft Defender for Cloud Apps work with applications from the Cloud app catalog and with custom applications. 
+
+[!INCLUDE [classic-pre-onboarded-apps](includes/classic-pre-onboarded-apps.md)]
 
 ## Prerequisites
 
@@ -44,7 +46,7 @@ Follow these steps to configure catalog apps to be controlled by Microsoft Defen
 
 ### Configure integration with other IdP solutions
 
-Use the following steps to route app sessions from other IdP solutions to Defender for Cloud Apps. For Microsoft Entra ID, see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md).
+Use the following steps to route app sessions from other IdP solutions to Defender for Cloud Apps. For Microsoft Entra ID, see [Configure integration with Microsoft Entra ID](classic-proxy-deployment-aad.md).
 
 > [!NOTE]
 > For examples of how to configure IdP solutions, see:
@@ -144,7 +146,7 @@ The preceding instructions helped you create a built-in Defender for Cloud Apps 
 1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** or **Microsoft Entra Conditional Access**, and **Session control** appear for your apps.
 
     > [!NOTE]
-    > If session control doesn't appear for an app, it's not yet available for that specific app. You can either add it immediately as a [custom app](proxy-deployment-any-app.md), or you can open a request to add it as a catalog app by clicking **Request session control**.
+    > If session control doesn't appear for an app, it's not yet available for that specific app. You can either add it immediately as a [custom app](classic-proxy-deployment-any-app.md), or you can open a request to add it as a catalog app by clicking **Request session control**.
     >
     >![Conditional access app control request.](media/classic-caac-request.png)
 
@@ -180,7 +182,7 @@ To verify that the activity is properly captured, select a single sign-on login 
 > [« PREVIOUS: Introduction to Conditional Access App Control](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
-> [NEXT: Deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+> [NEXT: Deploy Conditional Access App Control for any app »](classic-proxy-deployment-any-app.md)
 
 > [!div class="nextstepaction"]
 > [Troubleshooting access and session controls](troubleshooting-proxy.md)

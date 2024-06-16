@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "CloudAppSecurityDocs/proxy-deployment-any-app.md",
+            "redirect_url": "/defender-cloud-apps/proxy-intro-aad",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "CloudAppSecurityDocs/proxy-deployment-aad.md",
+            "redirect_url": "/defender-cloud-apps/proxy-intro-aad",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "CloudAppSecurityDocs/preview-features.md",
             "redirect_url": "/microsoft-365/security/defender/preview",
             "redirect_document_id": false
