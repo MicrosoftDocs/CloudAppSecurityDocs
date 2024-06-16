@@ -13,7 +13,7 @@ This article provides an overview of how to use Microsoft Defender for Cloud App
 
 The following image shows the high level process for configuring and implementing conditional access app control:
 
-:::image type="content" source="media/conditional-access/conditional-access-policy-flow.png" alt-text="Diagram of the conditional access app control process flow." border="false" lightbox="media/conditional-access/conditional-access-policy-flow.png":::
+:::image type="content" source="media/conditional-access-app-control-how-to-overview/conditional-access-policy-flow.png" alt-text="Diagram of the conditional access app control process flow." border="false" lightbox="media/conditional-access-app-control-how-to-overview/conditional-access-policy-flow.png":::
 
 ## Which identity provider are you using?
 
