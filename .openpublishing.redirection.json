@@ -566,6 +566,11 @@
       "redirect_document_id": false
     },
         {
+            "source_path": "CloudAppSecurityDocs/e-books.md",
+            "redirect_url": "/defender-cloud-apps/what-is-defender-for-cloud-apps",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "CloudAppSecurityDocs/proxy-deployment-any-app.md",
             "redirect_url": "/defender-cloud-apps/proxy-intro-aad",
             "redirect_document_id": false

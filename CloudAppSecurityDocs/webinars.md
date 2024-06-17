@@ -25,7 +25,6 @@ You can watch recorded sessions at any time.
 | **Threat detection**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4I2y0)<br />*Captions available* | - Protecting against cloud threats<br />- Detecting threats across cloud apps<br />- Detecting malware<br />- OAuth app permissions<br />- Configuring alerts in policies |
 | **Extending real-time monitoring & controls**<br />[Watch now](https://www.youtube.com/watch?v=hGqL89V6zAI) | - Session control & reverse proxy infrastructure<br />- Featured apps and out-of-the-box controls<br />- Onboarding any apps (new, custom, and on-premises apps)<br />- Extending controls for any app |
 | **App discovery and log collector configuration**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4GtTy)<br />*Captions available* | - How discovery works<br />- The Shadow IT discovery lifecycle<br />- Extending integration with secure web gateways<br />- Discovery using log collectors |
-| **Connecting third-party apps**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4GriX)<br />*Captions available* | Connecting third-party apps using:<br />- APIs<br />- OAuth<br />- Conditional Access App Control<br />- Microsoft Entra application proxy |
 | **Automation and integration with Microsoft Power Automate**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4GjvM)<br />*Captions available* | Extending Defender for Cloud Apps with Microsoft Flow to automate advanced remediation scenarios |
 
 ## Next steps
