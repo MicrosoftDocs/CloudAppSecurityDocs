@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot access and session controls for admins | Microsoft Defender for Cloud Apps
 description: This article describes how to troubleshoot common access and session control issues experienced by admins with Microsoft Defender for Cloud Apps.
-ms.date: 05/15/2024
+ms.date: 06/18/2024
 ms.topic: troubleshooting
 ---
 
@@ -543,8 +543,11 @@ Associating the correct domains to an app allows Defender for Cloud Apps to enfo
 
 For example, if you've configured a policy that blocks downloading files for an associated domain, file downloads by the app from that domain will be blocked. However, file downloads by the app from domains not associated with the app won't be blocked and the action won't be audited in the activity log.
 
+If an admin browses in a proxied app to an unrecognized domain, that Defender for Cloud Apps doesn't consider to a part of the same app or any other app, the **Unrecognized domain** message appears, prompting the admin to add the domain so that it's protected next time. In such cases, if the admin doesn't want to add the domain, no action is needed.
+
 > [!NOTE]
 > Defender for Cloud Apps still adds a suffix to domains not associated with the app to ensure a seamless user experience.
+
 **To add domains for your app**:
 
 1. Open your app in a browser, with the Defender for Cloud Apps **Admin View toolbar** visible on your screen. 
