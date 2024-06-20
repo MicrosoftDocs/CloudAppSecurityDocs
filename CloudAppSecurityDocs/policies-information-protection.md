@@ -77,32 +77,6 @@ Detect files containing personally identifying information and other sensitive d
 > [!NOTE]
 > The ability to apply a sensitivity label directly in Defender for Cloud Apps is currently only supported for Box, Google Workspace, SharePoint online and OneDrive for Business.
 
-## Detect stale externally shared data
-
-Detect unused and stale files, files that weren't updated recently, that are accessible publicly via direct public link, web search, or to specific external users.
-
-### Prerequisites
-
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-
-### Steps
-
-1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
-
-1. Select and apply the policy template **Stale externally shared files**.
-
-1. Customize the filter **Last modified** to match your organization's policy.
-
-1. Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example:
-
-    - Google Workspace: Make the file private and notify the last file editor
-
-    - Box: Notify the last file editor
-
-    - SharePoint online: Make the file private and send a policy-match digest to the file owner
-
-1. Create the file policy.
-
 ## Detect data access from an unauthorized location
 
 Detect when files are accessed from an unauthorized location, based on your organization's common locations, to identify a potential data leak or malicious access.
