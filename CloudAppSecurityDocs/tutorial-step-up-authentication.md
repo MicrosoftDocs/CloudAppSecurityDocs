@@ -30,7 +30,7 @@ Protect your organization by requiring Microsoft Entra Conditional Access polici
 
 ## Create a policy to enforce step-up authentication
 
-Defender for Cloud Apps session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a conditional access policy **and** a session policy.
+Defender for Cloud Apps session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a Conditional Access policy **and** a session policy.
 
 **To create your policy**:
 

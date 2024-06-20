@@ -180,18 +180,18 @@ For more information, see:
 - [Create app policies in app governance](../app-governance-app-policies-create.md)
 - [Manage app policies](../app-governance-app-policies-manage.md)
 
-## Review conditional access app control
+## Review Conditional Access app control
 
 **Where**: In the Microsoft Defender XDR Portal, select:
 
 - **Incidents & alerts**
-- **Cloud apps > Policies > Policy Management > Conditional access**
+- **Cloud apps > Policies > Policy Management > Conditional Access**
 
-To configure conditional access app control, select **Settings > Cloud apps > Conditional Access App Control**
+To configure Conditional Access app control, select **Settings > Cloud apps > Conditional Access App Control**
 
 **Persona**: Security administrator
 
-Conditional access app control provides you with the ability to monitor and control user app access and sessions in real time, based on access and session policies.
+Conditional Access app control provides you with the ability to monitor and control user app access and sessions in real time, based on access and session policies.
 
 Generated alerts are available in Microsoft Defender XDR and should be [triaged regularly](#review-alerts-and-incidents).
 
@@ -200,13 +200,13 @@ By default, there's no access or session policies deployed, and therefore no rel
 For more information, see:
 
 - [View and manage incidents and alerts](/microsoft-365/security/defender/mto-incidents-alerts)
-- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](../proxy-intro-aad.md)
+- [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](../proxy-intro-aad.md)
 - [Block and protect download of sensitive data to unmanaged or risky devices](../best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)
 - [Secure collaboration with external users by enforcing real-time session controls](../best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)
 
 **Persona**: SOC administrator
 
-We recommend that you review conditional access app control alerts daily, and the activity log. Filter activity logs by source, access control, and session control.
+We recommend that you review Conditional Access app control alerts daily, and the activity log. Filter activity logs by source, access control, and session control.
 
 For more information, see [Review alerts and incidents](#review-alerts-and-incidents)
 

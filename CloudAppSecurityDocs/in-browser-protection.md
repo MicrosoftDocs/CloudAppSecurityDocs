@@ -47,7 +47,7 @@ Users know that they're using the in-browser protection in Microsoft Edge for Bu
 
 :::image type="content" source="media/in-browser-protection/url-icon.png" alt-text="Screenshot of an extra lock icon in the browser address bar.":::
 
-Also, the `.mcas.ms` suffix doesn't appear in the browser address bar with in-browser protection, as it does with standard conditional access app control, and developer tools are turned off with in-browser protection.
+Also, the `.mcas.ms` suffix doesn't appear in the browser address bar with in-browser protection, as it does with standard Conditional Access app control, and developer tools are turned off with in-browser protection.
 
 ### Work profile enforcement for in-browser protection
 
@@ -84,4 +84,4 @@ For more information, see [Learn about data loss prevention](/purview/dlp-learn-
 
 ## Related content
 
-For more information, see [Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+For more information, see [Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).

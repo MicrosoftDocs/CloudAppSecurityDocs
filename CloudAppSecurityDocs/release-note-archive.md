@@ -457,7 +457,7 @@ We've released a new log collector version with the latest vulnerabilities fixes
 - **Onboarding application to session controls (Preview)**  
   The process of onboarding an application to be used for session controls has been improved and should increase the success rate of the onboarding process. To onboard an application:
 
-  1. Go to the Conditional Access App Control list in **Settings** -> **Conditional access app control**.
+  1. Go to the Conditional Access App Control list in **Settings** -> **Conditional Access app control**.
   1. After selecting **Onboard with session control**, you're presented with an **Edit this app** form.
   1. To onboard the application to session controls, you must select the **Use the app with session controls** option.
   
@@ -474,7 +474,7 @@ We've consolidated the flow that allows Microsoft Defender for Cloud Apps data t
 - **Protecting apps that use non-standard ports with session controls**  
 This feature allows Microsoft Defender for Cloud Apps to enforce session policies for applications that use port numbers other than 443.
 Splunk and other applications that use ports other than 443 will now be eligible for session control.  
-There's no configuration requirement for this feature.  The feature is currently in preview mode. For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+There's no configuration requirement for this feature.  The feature is currently in preview mode. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
 
 ### Defender for Cloud Apps release 232 and 233
 
@@ -873,7 +873,7 @@ We've updated the term **machine** to **device** as part of the general Microsof
 Released September 6, 2020
 
 - **Access and session controls for Azure portal GA**  
-Conditional Access App Control for the Azure portal is now generally available. For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+Conditional Access App Control for the Azure portal is now generally available. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
 
 ### Cloud App Security release 181
 
@@ -926,7 +926,7 @@ We've added the following app connectors to our portfolio of generally available
 We've expanded our session controls to detect potential malware using Microsoft Threat Intelligence upon file uploads or downloads. The new detection is now generally available out-of-the-box and can be configured to automatically block files identified as potential malware. For more information, see [Block malware on upload or download](session-policy-aad.md#block-malware-on-upload-or-download).
 
 - **Enhanced access and session controls with any IdP GA**  
-Access and session controls support for SAML apps configured with any identity provider is now generally available. For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+Access and session controls support for SAML apps configured with any identity provider is now generally available. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
 
 - **Risky machine investigation enhancement**  
 Cloud App Security provides the ability to identify risky machines as part of your shadow IT discovery investigation. Now, we've added the Microsoft Defender Advanced Threat Protection **Machine risk level** to the **machines** page giving analysts more context when investigating machines in your organization. For more information, see [Investigate devices in Cloud App Security](mde-investigation.md).
@@ -942,7 +942,7 @@ Released June 14, 2020
 We've expanded our session controls to detect potential malware using Microsoft Threat Intelligence upon file uploads or downloads. The new detection is now available out-of-the-box and can be configured to automatically block files identified as potential malware. For more information, see [Block malware on upload or download](session-policy-aad.md#block-malware-on-upload-or-download).
 
 - **New access token support for access and session controls**  
-We've added the ability to treat access token and code requests as logins when onboarding apps to access and session controls. To use tokens, select the settings cog icon, select **Conditional Access App Control**, edit the relevant app (three dots menu > **Edit app**), select **Treat access token and code requests as app logins**, and then select **Save**. For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+We've added the ability to treat access token and code requests as logins when onboarding apps to access and session controls. To use tokens, select the settings cog icon, select **Conditional Access App Control**, edit the relevant app (three dots menu > **Edit app**), select **Treat access token and code requests as app logins**, and then select **Save**. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
 On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allowlist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
@@ -1015,7 +1015,7 @@ We've updated the detection logic for impossible travel to provide improved accu
 Released April 5, 2020
 
 - **Enhanced access and session controls with any IdP (preview)**  
-Access and session controls now support SAML apps configured with any identity provider. The public preview of this new feature is now gradually rolling out. For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+Access and session controls now support SAML apps configured with any identity provider. The public preview of this new feature is now gradually rolling out. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
 
 - **New bulk deanonymization of users and machines**  
 We've expanded and simplified the process of deanonymizing one or more users and machines under investigation. For more information about bulk deanonymization, see [How data anonymization works](cloud-discovery-anonymizer.md#how-data-anonymization-works).
@@ -1389,7 +1389,7 @@ The **Alert** page now groups related entities that were involved in an alert to
 Released February 3, 2019
 
 - **Session policy configuration in Azure AD**  
-You can now configure session policies to monitor users or block downloads in real-time, directly in Azure AD conditional access. You can still configure advanced session policies directly in Cloud App Security. For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+You can now configure session policies to monitor users or block downloads in real-time, directly in Azure AD Conditional Access. You can still configure advanced session policies directly in Cloud App Security. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
 
 - **Suggested and Saved queries for OAuth apps**  
 Suggested queries have been added to the OAuth apps page provide out-of-the-box investigation templates to filter your OAuth apps. Suggested queries include custom filters to identify risky apps such as apps authorized by administrators. Saved queries enable you to save custom queries for future use, similar to saved queries available today in the Activity log and Discovery pages.
@@ -1491,7 +1491,7 @@ Cloud App Security now gives you the ability to define app permission policies m
 
 - **Conditional Access App Control now integrates with your on-premises apps via Azure Active Directory Application Proxy**  
   - The [Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy) provides single sign-on and secure remote access for your web apps hosted on-premises.
-  - These on-premises web apps can now be routed to Microsoft Cloud App Security via Azure AD conditional access to provide real-time monitoring and controls, via [access](access-policy-aad.md) and [session](session-policy-aad.md) policies.
+  - These on-premises web apps can now be routed to Microsoft Cloud App Security via Azure AD Conditional Access to provide real-time monitoring and controls, via [access](access-policy-aad.md) and [session](session-policy-aad.md) policies.
 
 ### Cloud App Security release 133, 134, 135
 
@@ -1590,7 +1590,7 @@ Released July 8, 2018
 Released June 24, 2018
 
 - **Conditional Access App Control GA**  
-Microsoft Cloud App Security's Conditional Access App Control (reverse proxy) is now generally available for any SAML applications. Conditional Access App Control integrates directly with your Azure AD conditional access policies to **monitor and control your users' sessions in real time**, while enabling them to be productive. Since first previewing the feature, many features and improvements have been made, including:
+Microsoft Cloud App Security's Conditional Access App Control (reverse proxy) is now generally available for any SAML applications. Conditional Access App Control integrates directly with your Azure AD Conditional Access policies to **monitor and control your users' sessions in real time**, while enabling them to be productive. Since first previewing the feature, many features and improvements have been made, including:
   - The ability to create an [access policy](access-policy-aad.md) to manage access to the same apps from native clients, in addition to creating a session policy for browser traffic.
   - The app onboarding process was streamlined to support custom SAML applications in your organization.
   - As part of the Azure worldwide network, the integration and interface have been improved for a seamless experience for users located anywhere in the world.
@@ -1685,7 +1685,7 @@ Released April 29, 2018
 
 Released April 22, 2018
 
-- The public preview of **Conditional Access App Control (formerly known as Cloud App Security Proxy)** has been enhanced with capabilities that facilitate deeper visibility into, and control over various applications. You can now create a Session Policy with an *Activity type* filter, to monitor, and block various app-specific activities. This new filter augments the existing file download control features, to provide you with comprehensive control of the applications in your organization and works hand-in-hand with Azure Active Directory conditional access, to provide real-time visibility and control of risky user sessions—for example, sessions with B2B collaboration users or users coming from an unmanaged device. For more information, see [Session policies](session-policy-aad.md).
+- The public preview of **Conditional Access App Control (formerly known as Cloud App Security Proxy)** has been enhanced with capabilities that facilitate deeper visibility into, and control over various applications. You can now create a Session Policy with an *Activity type* filter, to monitor, and block various app-specific activities. This new filter augments the existing file download control features, to provide you with comprehensive control of the applications in your organization and works hand-in-hand with Azure Active Directory Conditional Access, to provide real-time visibility and control of risky user sessions—for example, sessions with B2B collaboration users or users coming from an unmanaged device. For more information, see [Session policies](session-policy-aad.md).
 
 - Gradual rollout: Cloud App Security's **anomaly detection policies have been improved** to include two new types of threat detection: Ransomware activity and Terminated user activity. Cloud App Security extended its ransomware detection capabilities with anomaly detection to ensure a more comprehensive coverage against sophisticated Ransomware attacks. Using our security research expertise to identify behavioral patterns that reflect ransomware activity, Cloud App Security ensures holistic and robust protection. Terminated user activity enables you to monitor the accounts of terminated users, who may have been deprovisioned from corporate apps, but in many cases they still retain access to certain corporate resources. For more information, see [Get instantaneous behavioral analytics and anomaly detection](anomaly-detection-policy.md).
 
