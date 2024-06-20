@@ -60,9 +60,9 @@ Users are likely to be served from the closest region. For example, a user with 
 
 When there is a high load or outage, the user may be served from a different region.
 
-Configure your firewall for conditional access app control using the settings relevant to your environment. Microsoft Edge users benefit from in-browser protection. Access and session controls are applied in other browsers using a reverse proxy.
+Configure your firewall for Conditional Access app control using the settings relevant to your environment. Microsoft Edge users benefit from in-browser protection. Access and session controls are applied in other browsers using a reverse proxy.
 
-For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
+For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
 
 ### Commercial customers
 

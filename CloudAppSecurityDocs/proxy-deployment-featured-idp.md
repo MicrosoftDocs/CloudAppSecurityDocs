@@ -1,17 +1,17 @@
 ---
-title: Onboard non-Microsoft IdP catalog apps for conditional access app control | Microsoft Defender for Cloud Apps
-description: Learn how to deploy conditional access app control with Microsoft Defender for Cloud Apps, for catalog apps with a non-Microsoft IdP.
+title: Onboard non-Microsoft IdP catalog apps for Conditional Access app control | Microsoft Defender for Cloud Apps
+description: Learn how to deploy Conditional Access app control with Microsoft Defender for Cloud Apps, for catalog apps with a non-Microsoft IdP.
 ms.date: 05/15/2024
 ms.topic: how-to
 ---
 
-# Onboard non-Microsoft IdP catalog apps for conditional access app control
+# Onboard non-Microsoft IdP catalog apps for Conditional Access app control
 
 
 
-Access and session controls in Microsoft Defender for Cloud apps work with both catalog and custom apps. While Microsoft Entra ID apps are automatically onboarded to use conditional access app control, if you're working with a non-Microsoft IdP, you'll need to onboard your app manually.
+Access and session controls in Microsoft Defender for Cloud apps work with both catalog and custom apps. While Microsoft Entra ID apps are automatically onboarded to use Conditional Access app control, if you're working with a non-Microsoft IdP, you'll need to onboard your app manually.
 
-This article describes how to configure your IdP to work with Defender for Cloud Apps. Integrating your IdP with Defender for Cloud Apps automatically onboards all catalog apps from your IdP for conditional access app control.
+This article describes how to configure your IdP to work with Defender for Cloud Apps. Integrating your IdP with Defender for Cloud Apps automatically onboards all catalog apps from your IdP for Conditional Access app control.
 
 ## Prerequisites
 
@@ -89,7 +89,7 @@ This procedure describes how to route app sessions from other IdP solutions to D
 
     1. Make sure to save your settings when you're done.
 
-1. Back in Defender for Cloud Apps, on the wizard's **APP CHANGES** page, copy the SAML single sign-on URL and download the Microsoft Defender for Cloud Apps SAML certificate. The SAML single sign-on URL is a customized URL for your app when used with Defender for Cloud Apps conditional access app control.
+1. Back in Defender for Cloud Apps, on the wizard's **APP CHANGES** page, copy the SAML single sign-on URL and download the Microsoft Defender for Cloud Apps SAML certificate. The SAML single sign-on URL is a customized URL for your app when used with Defender for Cloud Apps Conditional Access app control.
 
 1. Browse to your app's portal and configure your single-sign on settings as follows:
 
@@ -100,7 +100,7 @@ This procedure describes how to route app sessions from other IdP solutions to D
 
 1. In the wizard, select **Finish** to complete the configuration.
 
-After saving your app's single-sign on settings with the values customized by Defender for Cloud Apps, all associated sign-in requests to the app are routed though Defender for Cloud Apps and conditional access app control.
+After saving your app's single-sign on settings with the values customized by Defender for Cloud Apps, all associated sign-in requests to the app are routed though Defender for Cloud Apps and Conditional Access app control.
 
 > [!NOTE]
 > The Defender for Cloud Apps SAML certificate is valid for 1 year. After it expires, you'll need to generate and upload a new one.
@@ -123,8 +123,8 @@ For more information, see:
 
 ## Related content
 
-- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
-- [Deploy conditional access app control for custom apps with non-Microsoft identity providers](proxy-deployment-any-app-idp.md)
+- [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)
+- [Deploy Conditional Access app control for custom apps with non-Microsoft identity providers](proxy-deployment-any-app-idp.md)
 - [Troubleshooting access and session controls](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

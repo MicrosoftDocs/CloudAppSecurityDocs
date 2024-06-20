@@ -1,10 +1,10 @@
 ---
-title: Conditional access app control | Microsoft Defender for Cloud Apps
-description: Learn how Microsoft Defender for Cloud Apps provides conditional access app control.
+title: Conditional Access app control | Microsoft Defender for Cloud Apps
+description: Learn how Microsoft Defender for Cloud Apps provides Conditional Access app control.
 ms.date: 02/29/2024
 ms.topic: conceptual
 ---
-# Microsoft Defender for Cloud Apps conditional access app control
+# Microsoft Defender for Cloud Apps Conditional Access app control
 
 In today's workplace, it's not enough to know what's happened in your cloud environment after the fact. You also need to stop breaches and leaks in real-time, and prevent employees from intentionally or accidentally putting your data and organization at risk.
 
@@ -26,11 +26,11 @@ Microsoft Edge users benefit from [direct, in-browser protection](in-browser-pro
 
 Users of other browsers are redirected via a reverse proxy to Defender for Cloud Apps, and display an `*.mcas.ms` suffix in the link's URL. For example, if the app URL is *myapp.com*, the app URL is updated to *myapp.com.mcas.ms*.
 
-This article describes Defender for Cloud Apps's conditional access app control with [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies.
+This article describes Defender for Cloud Apps's Conditional Access app control with [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies.
 
-## Conditional access app control activities
+## Conditional Access app control activities
 
-Conditional access app control uses *access policies* and *session policies* to monitor and control user app access and sessions in real time, across your organization. 
+Conditional Access app control uses *access policies* and *session policies* to monitor and control user app access and sessions in real time, across your organization. 
 
 Each policy has conditions to define *who* (which user or group of users), *what* (which cloud apps), and *where* (which locations and networks) the policy is applied to. After determining the conditions, route your users first to Defender for Cloud Apps, where you can apply the access and session controls to protect your data.
 
@@ -54,7 +54,7 @@ For more information, see:
 
 ## Usability
 
-Conditional access app control doesn't require you to install anything on the device, making it ideal when monitoring or controlling sessions from unmanaged devices or partner users.
+Conditional Access app control doesn't require you to install anything on the device, making it ideal when monitoring or controlling sessions from unmanaged devices or partner users.
 
 Defender for Cloud Apps uses best-in-class, patented heuristics to identify and control activities performed by the user in the target app. Our heuristics are designed to optimize and balance security with usability.
 
@@ -75,7 +75,7 @@ Additionally, if you're using Microsoft Entra ID apps, apply session and access 
 - Any interactive single sign-on that uses the Open ID Connect authentication protocol.
 - Apps hosted on-premises and configured with the [Microsoft Entra application proxy](/entra/identity/app-proxy/application-proxy).
 
-Microsoft Entra ID apps are also automatically onboarded for conditional access app control, while apps that use other IdPs must be [onboarded manually](conditional-access-app-control-how-to-overview.md).
+Microsoft Entra ID apps are also automatically onboarded for Conditional Access app control, while apps that use other IdPs must be [onboarded manually](conditional-access-app-control-how-to-overview.md).
 
 Defender for Cloud Apps identifies apps using data from the cloud app catalog. If you've customized apps with plugins, any associated custom domains must be added to the relevant app in the catalog. For more information, see [Working with the risk score](risk-score.md).
 
@@ -104,5 +104,5 @@ However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using
 
 For more information, see:
 
-- [Conditional access app control known limitations](caac-known-issues.md)
+- [Conditional Access app control known limitations](caac-known-issues.md)
 - [Troubleshooting access and session controls](troubleshooting-proxy.md)

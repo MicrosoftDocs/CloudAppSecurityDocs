@@ -1,6 +1,6 @@
 ---
 title: Create session policies | Microsoft Defender for Cloud Apps
-description: Learn how to configure Microsoft Defender for Cloud Apps session policies with conditional access app control to gain visibility into user session activities and block downloads.
+description: Learn how to configure Microsoft Defender for Cloud Apps session policies with Conditional Access app control to gain visibility into user session activities and block downloads.
 ms.date: 05/15/2024
 ms.topic: how-to
 ---
@@ -11,7 +11,7 @@ ms.topic: how-to
 
 Microsoft Defender for Cloud Apps session policies provide granular visibility into cloud apps with real-time, session-level monitoring. Use session policies to take various actions, depending on the policy you set for a user session.
 
-In contrast to [access policies](access-policy-aad.md), which allow or block access completely, session policies allow access while monitoring the session. Add conditional access app control to your session policies to limit specific session activities.
+In contrast to [access policies](access-policy-aad.md), which allow or block access completely, session policies allow access while monitoring the session. Add Conditional Access app control to your session policies to limit specific session activities.
 
 For example, you may want to allow users to access an app from unmanaged devices, or from specific locations. However, you may want to limit the download of sensitive files during those sessions or require that specific documents are protected from downloading, uploading, or copying when exiting the app.
 
@@ -29,12 +29,12 @@ Before you start, make sure that you have the following prerequisites:
 
 - If you're using a non-Microsoft IdP, the license required by your identity provider (IdP) solution.
 
-- The relevant apps onboarded to conditional access app control. Microsoft Entra ID apps are automatically onboarded, while non-Microsoft IdP apps must be onboarded manually.
+- The relevant apps onboarded to Conditional Access app control. Microsoft Entra ID apps are automatically onboarded, while non-Microsoft IdP apps must be onboarded manually.
 
     If you're working with a non-Microsoft IdP, make sure that you've also configured your IdP to work with Microsoft Defender for Cloud Apps. For more information, see:
 
-    - [Onboard non-Microsoft IdP catalog apps for conditional access app control](proxy-deployment-featured-idp.md)
-    - [Onboard non-Microsoft IdP custom apps for conditional access app control](proxy-deployment-any-app-idp.md)
+    - [Onboard non-Microsoft IdP catalog apps for Conditional Access app control](proxy-deployment-featured-idp.md)
+    - [Onboard non-Microsoft IdP custom apps for Conditional Access app control](proxy-deployment-any-app-idp.md)
 
 In order for your access policy to work, you must also have a Microsoft Entra ID Conditional Access policy, which creates the permissions to control traffic.
 
@@ -44,11 +44,11 @@ In order for your access policy to work, you must also have a Microsoft Entra ID
 
 This procedure describes how to create a new session policy in Defender for Cloud Apps.
 
-1. In Microsoft Defender XDR, select the **Cloud Apps > Policies > Policy management > Conditional access** tab.
+1. In Microsoft Defender XDR, select the **Cloud Apps > Policies > Policy management > Conditional Access** tab.
 
 1. Select **Create policy** > **Session policy**. For example:
 
-    ![Screenshot of the Create a Conditional access policy page.](media/create-policy-from-conditional-access-tab.png)
+    ![Screenshot of the Create a Conditional Access policy page.](media/create-policy-from-conditional-access-tab.png)
 
 1. On the **Create session policy** page, start by either selecting a template from the **Policy template** dropdown, or by entering all details manually.
 
@@ -67,7 +67,7 @@ This procedure describes how to create a new session policy in Defender for Clou
     |Name  |Description  |
     |---------|---------|
     | **Activity type** | Select the activity type you want to apply, such as: <br><br>- Printing <br>- Clipboard actions like cutting, copying, pasting <br>- Sending, sharing, unsharing, or editing items in supported apps.  <br><br>For example, use a *send items* activity in your conditions to catch a user attempting to send information in a Teams chat or Slack channel, and block the message if it contains sensitive information like a password or other credentials.|
-    | **App** | Filters for a specific app to include in the policy. Select apps by first selecting whether they use **Automated Azure AD onboarding**, for Microsoft Entra ID apps, or **Manual onboarding**, for non-Microsoft IdP apps. Then, select the app you want to include in your filter from the list. <br><br>If your non-Microsoft IdP app is missing from the list, make sure that you've onboarded it fully. For more information, see: <br>- [Onboard non-Microsoft IdP catalog apps for conditional access app control](proxy-deployment-featured-idp.md).<br>- [Onboard non-Microsoft IdP custom apps for conditional access app control](proxy-deployment-any-app-idp.md)<br><br>If you choose not to use the **App** filter, the policy applies to all applications that are marked as **Enabled** on the **Settings > Cloud Apps > Connected apps > Conditional Access App Control apps** page. <br><br>**Note**: You may see some overlap between apps that are onboarded and apps that need manual onboarding. In case of a conflict in your filter between the apps, manually onboarded apps will take precedence.|
+    | **App** | Filters for a specific app to include in the policy. Select apps by first selecting whether they use **Automated Azure AD onboarding**, for Microsoft Entra ID apps, or **Manual onboarding**, for non-Microsoft IdP apps. Then, select the app you want to include in your filter from the list. <br><br>If your non-Microsoft IdP app is missing from the list, make sure that you've onboarded it fully. For more information, see: <br>- [Onboard non-Microsoft IdP catalog apps for Conditional Access app control](proxy-deployment-featured-idp.md).<br>- [Onboard non-Microsoft IdP custom apps for Conditional Access app control](proxy-deployment-any-app-idp.md)<br><br>If you choose not to use the **App** filter, the policy applies to all applications that are marked as **Enabled** on the **Settings > Cloud Apps > Connected apps > Conditional Access App Control apps** page. <br><br>**Note**: You may see some overlap between apps that are onboarded and apps that need manual onboarding. In case of a conflict in your filter between the apps, manually onboarded apps will take precedence.|
     | **Device** | Filter for device tags, such as for a specific device management method, or device types, such as PC, mobile, or tablet.|
     |**IP address**     |  Filter per IP address or use previously assigned IP address tags.       |
     |**Location**     |   Filter by geographic location. The absence of a clearly defined location may identify risky activities. |
@@ -109,7 +109,7 @@ This procedure describes how to create a new session policy in Defender for Clou
     |---------|---------|
     |**Audit**     |   Monitors all activities. Select to explicitly allow download according to the policy filters you set.      |
     |**Block**     | Blocks file downloads and monitors all activities. Select to explicitly block downloads according to the policy filters you set. <br><br>Block policies also allow you to select to notify users by email, and to customize the block message.        |
-    |**Protect**     |  Applies a sensitivity label to the download and monitors all activities. Available only if you'd selected **Control file download (with inspection)**.<br><br>If you use Microsoft Purview Information Protection, you can also select to apply a sensitivity label to matching files, apply custom permissions to the user downloading files, or block the download of specific files. <br><br>If you have a Microsoft Entra ID conditional access policy, you can also select to require step-up authentication (Preview).   |
+    |**Protect**     |  Applies a sensitivity label to the download and monitors all activities. Available only if you'd selected **Control file download (with inspection)**.<br><br>If you use Microsoft Purview Information Protection, you can also select to apply a sensitivity label to matching files, apply custom permissions to the user downloading files, or block the download of specific files. <br><br>If you have a Microsoft Entra ID Conditional Access policy, you can also select to require step-up authentication (Preview).   |
 
     Optionally, select the **Always apply the selected action even if the data cannot be scanned** option as needed for your policy.
 
@@ -201,7 +201,7 @@ To monitor activities other than downloads and uploads, you must have at least o
 
 ### <a name="block-download"></a>Block all downloads
 
-When **Control file download (with inspection)** is set as the [session control type](#type), and **Block** is set as the [action](#actions), conditional access app control prevents users from downloading a file per the policies file filters. 
+When **Control file download (with inspection)** is set as the [session control type](#type), and **Block** is set as the [action](#actions), Conditional Access app control prevents users from downloading a file per the policies file filters. 
 
 When a user initiates a download, a **Download restricted** message appears for the user, and the downloaded file is replaced with a text file. Configure the text file's message to the user as needed for your organization.
 

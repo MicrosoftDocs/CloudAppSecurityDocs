@@ -10,11 +10,11 @@ ms.author: bagol
 ms.custom: include file
 ---
 
-### Sample: Create Microsoft Entra ID conditional access policies for use with Defender for Cloud Apps
+### Sample: Create Microsoft Entra ID Conditional Access policies for use with Defender for Cloud Apps
 
-This procedure provides a high-level example of how to create a conditional access policy for use with Defender for Cloud Apps.
+This procedure provides a high-level example of how to create a Conditional Access policy for use with Defender for Cloud Apps.
 
-1. In Microsoft Entra ID Conditional access, select **Create new policy**.
+1. In Microsoft Entra ID Conditional Access, select **Create new policy**.
 
 1. Enter a meaningful name for your policy, and then select the link under **Session** to add controls to your policy.
 
@@ -30,4 +30,4 @@ Microsoft Entra ID supports both browser-based and non browser-based policies. W
 
 Repeat this procedure to create a nonbrowser based Conditional Access policy. In the **Client apps** area, toggle the **Configure** option to **Yes**. Then, under **Modern authentication clients**, clear the **Browser** option. Leave all other default selections selected.
 
-For more information, see [Conditional access policies](/azure/active-directory/conditional-access/overview) and [Building a Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies).
+For more information, see [Conditional Access policies](/azure/active-directory/conditional-access/overview) and [Building a Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies).

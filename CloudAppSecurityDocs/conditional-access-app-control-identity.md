@@ -1,11 +1,11 @@
 ---
-title: Identity-managed devices with conditional access app control | Microsoft Defender for Cloud Apps
-description: This article provides information about how to configure access and session policies for conditional access app control to check for identity-managed devices.
+title: Identity-managed devices with Conditional Access app control | Microsoft Defender for Cloud Apps
+description: This article provides information about how to configure access and session policies for Conditional Access app control to check for identity-managed devices.
 ms.date: 12/24/2023
 ms.topic: how-to
 ---
 
-# Identity-managed devices with conditional access app control
+# Identity-managed devices with Conditional Access app control
 
 You might want to add conditions to your policy about whether a device is managed or not. To identify the state of a device, configure access and session policies to check for specific conditions, depending on whether you have Microsoft Entra or not.
 
@@ -24,7 +24,7 @@ If you don't have Microsoft Entra, check for the presence of client certificates
 
 Make sure that the client certificate is installed in the user store and not the computer store. You then use the presence of those certificates to set access and session policies.
 
-Once the certificate is uploaded and a relevant policy is configured, when an applicable session traverses Defender for Cloud Apps and conditional access app control,  Defender for Cloud Apps requests the browser to present the SSL/TLS client certificates. The browser serves the SSL/TLS client certificates that are installed with a private key. This combination of certificate and private key is done by using the PKCS #12 file format, typically .p12 or .pfx.
+Once the certificate is uploaded and a relevant policy is configured, when an applicable session traverses Defender for Cloud Apps and Conditional Access app control,  Defender for Cloud Apps requests the browser to present the SSL/TLS client certificates. The browser serves the SSL/TLS client certificates that are installed with a private key. This combination of certificate and private key is done by using the PKCS #12 file format, typically .p12 or .pfx.
 
 When a client certificate check is performed, Defender for Cloud Apps checks for the following conditions:
 
@@ -50,4 +50,4 @@ After the certificates are uploaded, you can create access and session policies 
 
 ## Related content
 
-For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
