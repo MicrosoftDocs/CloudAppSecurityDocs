@@ -1,31 +1,31 @@
 ---
-title: Use Defender for Cloud Apps conditional access app control | Microsoft Defender for Cloud Apps
-description: Learn how to use Microsoft Defender for Cloud Apps conditional access app control to create access and session policies for real-time monitoring and control over access to cloud apps.
+title: Use Defender for Cloud Apps Conditional Access app control | Microsoft Defender for Cloud Apps
+description: Learn how to use Microsoft Defender for Cloud Apps Conditional Access app control to create access and session policies for real-time monitoring and control over access to cloud apps.
 ms.date: 05/15/2024
 ms.topic: how-to
 ---
 
-# Use Defender for Cloud Apps conditional access app control
+# Use Defender for Cloud Apps Conditional Access app control
 
-This article provides an overview of how to use Microsoft Defender for Cloud Apps app control to create access and session policies. Conditional access app control provides real-time monitoring and control over user access to cloud apps.
+This article provides an overview of how to use Microsoft Defender for Cloud Apps app control to create access and session policies. Conditional Access app control provides real-time monitoring and control over user access to cloud apps.
 
-## Conditional access app control usage flow
+## Conditional Access app control usage flow
 
-The following image shows the high level process for configuring and implementing conditional access app control:
+The following image shows the high level process for configuring and implementing Conditional Access app control:
 
-:::image type="content" source="media/conditional-access-app-control-how-to-overview/conditional-access-policy-flow.png" alt-text="Diagram of the conditional access app control process flow." border="false" lightbox="media/conditional-access-app-control-how-to-overview/conditional-access-policy-flow.png":::
+:::image type="content" source="media/conditional-access-app-control-how-to-overview/conditional-access-policy-flow.png" alt-text="Diagram of the Conditional Access app control process flow." border="false" lightbox="media/conditional-access-app-control-how-to-overview/conditional-access-policy-flow.png":::
 
 ## Which identity provider are you using?
 
-Before you start using conditional access app control, understand whether your apps are managed by Microsoft Entra or another identity provider (IdP).
+Before you start using Conditional Access app control, understand whether your apps are managed by Microsoft Entra or another identity provider (IdP).
 
-- **Microsoft Entra apps** are automatically onboarded for conditional access app control, and are immediately available for you to use in your access and session policy conditions.
+- **Microsoft Entra apps** are automatically onboarded for Conditional Access app control, and are immediately available for you to use in your access and session policy conditions.
 
 - **Apps that use non-Microsoft IdPs** must be manually onboarded before you can select them in your access and session policy conditions.
 
-    - If you're working with a catalog app from a non-Microsoft IdP, configure the integration between your IdP and Defender for Cloud Apps to onboard all catalog apps. For more information, see [Onboard non-Microsoft IdP catalog apps for conditional access app control](proxy-deployment-featured-idp.md).
+    - If you're working with a catalog app from a non-Microsoft IdP, configure the integration between your IdP and Defender for Cloud Apps to onboard all catalog apps. For more information, see [Onboard non-Microsoft IdP catalog apps for Conditional Access app control](proxy-deployment-featured-idp.md).
 
-    - If you're working with custom apps, you need to both configure the integration between your IdP and Defender for Cloud Apps, and also onboard each custom app. For more information, see [Onboard non-Microsoft IdP custom apps for conditional access app control](proxy-deployment-any-app-idp.md).
+    - If you're working with custom apps, you need to both configure the integration between your IdP and Defender for Cloud Apps, and also onboard each custom app. For more information, see [Onboard non-Microsoft IdP custom apps for Conditional Access app control](proxy-deployment-any-app-idp.md).
 
 ### Sample procedures
 
@@ -41,7 +41,7 @@ In order for your access or session policy to work, you must also have Microsoft
 
 We embedded a sample of this process in the [access](access-policy-aad.md) and [session](session-policy-aad.md) policy creation documentation. 
 
-For more information, see [Conditional access policies](/azure/active-directory/conditional-access/overview) and [Building a Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies).
+For more information, see [Conditional Access policies](/azure/active-directory/conditional-access/overview) and [Building a Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies).
 
 ## Create your access and session policies
 
@@ -61,4 +61,4 @@ Make sure to test your policies and update any conditions or settings as needed.
 
 ## Related content
 
-For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).

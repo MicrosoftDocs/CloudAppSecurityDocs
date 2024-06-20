@@ -138,7 +138,7 @@ Defender for Cloud Apps provides the following options for identifying a device'
 - Hybrid Microsoft Entra Domain joined
 - Client certificates
 
-For more information, see [Identity-managed devices with conditional access app control](conditional-access-app-control-identity.md).
+For more information, see [Identity-managed devices with Conditional Access app control](conditional-access-app-control-identity.md).
 
 Common device identification issues you might encounter include:
 
@@ -241,12 +241,12 @@ Certificates that are revoked by the CA are no longer trusted. Selecting this op
 
 ## Issues when onboarding an app
 
-Microsoft Entra ID apps are automatically onboarded to Defender for Cloud Apps for conditional access and session controls. You must manually onboard non-Microsoft IdP apps, including both catalog and custom apps.
+Microsoft Entra ID apps are automatically onboarded to Defender for Cloud Apps for Conditional Access and session controls. You must manually onboard non-Microsoft IdP apps, including both catalog and custom apps.
 
 For more information, see:
 
-- [Deploy conditional access app control for catalog apps with non-Microsoft IdPs](proxy-deployment-featured-idp.md)
-- [Deploy conditional access app control for custom apps with non-Microsoft IdPs](proxy-deployment-any-app-idp.md)
+- [Deploy Conditional Access app control for catalog apps with non-Microsoft IdPs](proxy-deployment-featured-idp.md)
+- [Deploy Conditional Access app control for custom apps with non-Microsoft IdPs](proxy-deployment-any-app-idp.md)
 
 Common scenarios you might encounter while onboarding an app include:
 
@@ -261,7 +261,7 @@ When onboarding an non-Microsoft IdP app to Conditional Access App Control, the 
 
 **Recommended steps**
 
-1. Make sure your app meets the following conditional access app control prerequisites:
+1. Make sure your app meets the following Conditional Access app control prerequisites:
 
     - Make sure you have a valid Defender for Cloud Apps license.
     - Create a duplicate app.
@@ -286,8 +286,8 @@ For apps connected via non-Microsoft identity providers (IdP), if the setup isn'
 
 1. Review the following articles and verify that you've completed all the steps required:
 
-    - [Deploy conditional access app control for catalog apps with non-Microsoft IdPs](proxy-deployment-featured-idp.md)
-    - [Deploy conditional access app control for custom apps with non-Microsoft IdPs](proxy-deployment-any-app-idp.md)
+    - [Deploy Conditional Access app control for catalog apps with non-Microsoft IdPs](proxy-deployment-featured-idp.md)
+    - [Deploy Conditional Access app control for custom apps with non-Microsoft IdPs](proxy-deployment-any-app-idp.md)
 
     Pay special attention to the following steps:
 
@@ -312,7 +312,7 @@ Built-in apps can be detected heuristically and you can use access policies to m
 
 Defender for Cloud Apps can recognize over 31,000 apps through the **Cloud App Catalog**.
 
-If you're using a custom app that is configured through Microsoft Entra SSO, and isn't one of the supported apps, you come across an **App is not recognized** page. To resolve the issue, you must configure the app with conditional access app control.
+If you're using a custom app that is configured through Microsoft Entra SSO, and isn't one of the supported apps, you come across an **App is not recognized** page. To resolve the issue, you must configure the app with Conditional Access app control.
 
 **Recommended steps**
 
@@ -331,7 +331,7 @@ If you're using a custom app that is configured through Microsoft Entra SSO, and
 
 After onboarding a non-Microsoft IdP app, you may see the **Request session control** option. This occurs because only catalog apps have out-of-the-box session controls. For any other app, you must go through a self-onboarding process.
 
-Follow the instructions at [Deploy conditional access app control for custom apps with non-Microsoft IdPs](proxy-deployment-any-app-idp.md).
+Follow the instructions at [Deploy Conditional Access app control for custom apps with non-Microsoft IdPs](proxy-deployment-any-app-idp.md).
 
 **Recommended steps**
 
@@ -345,7 +345,7 @@ Follow the instructions at [Deploy conditional access app control for custom app
 
     - **Not recognized**. You see an *App not recognized* page that prompts you to configure your app. Do the following steps:
 
-        1. Onboard the app for conditional access app control.
+        1. Onboard the app for Conditional Access app control.
         1. Add the domains for the app.
         1. Install the app's certificates.
 
@@ -402,7 +402,7 @@ If you don't see the **Conditional Access App Control** option in your Condition
 
 ### Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control
 
-When creating an access or session policy, you might see the following error message: *You don't have any apps deployed with Conditional Access App Control*. This error indicates that the app is a non-Microsoft IdP app that hasn't been onboarded for conditional access app control.
+When creating an access or session policy, you might see the following error message: *You don't have any apps deployed with Conditional Access App Control*. This error indicates that the app is a non-Microsoft IdP app that hasn't been onboarded for Conditional Access app control.
 
 **Recommended steps**
 
@@ -410,20 +410,20 @@ When creating an access or session policy, you might see the following error mes
 
 1. If you see the message **No apps connected**, use the following guides to deploy apps:
 
-    - [Onboard non-Microsoft IdP catalog apps for conditional access app control](proxy-deployment-featured-idp.md)
-    - [Onboard non-Microsoft IdP custom apps for conditional access app control](proxy-deployment-any-app-idp.md)
+    - [Onboard non-Microsoft IdP catalog apps for Conditional Access app control](proxy-deployment-featured-idp.md)
+    - [Onboard non-Microsoft IdP custom apps for Conditional Access app control](proxy-deployment-any-app-idp.md)
 
 If you run into any issues while deploying the app, see [Issues when onboarding an app](#issues-when-onboarding-an-app).
 
 ### Can't create session policies for an app
 
-After onboarding a non-Microsoft IdP app for conditional access app control, in the **Conditional Access App Control apps** page, you may see the option: **Request session control**.
+After onboarding a non-Microsoft IdP app for Conditional Access app control, in the **Conditional Access App Control apps** page, you may see the option: **Request session control**.
 
 > [!NOTE]
 > [Catalog apps](proxy-deployment-featured-idp.md) have out-of-the-box session controls. For any other non-Microsoft IdP apps, you must go through a self-onboarding process.
 **Recommended steps**
 
-1. Deploy your app to session control. For more information, see [Onboard non-Microsoft IdP custom apps for conditional access app control](proxy-deployment-any-app-idp.md).
+1. Deploy your app to session control. For more information, see [Onboard non-Microsoft IdP custom apps for Conditional Access app control](proxy-deployment-any-app-idp.md).
 
 1. Create a session policy and select the **App** filter.
 
@@ -502,13 +502,13 @@ When in test mode, only the admin users are exposed to any changes provided in t
 
 ### Bypass proxy session
 
-If you're using a non-Edge browser and have difficulty accessing or loading your application, you may want to verify whether the issue is with the conditional access proxy by running the application without the proxy.
+If you're using a non-Edge browser and have difficulty accessing or loading your application, you may want to verify whether the issue is with the Conditional Access proxy by running the application without the proxy.
 
 To bypass the proxy, in the **Admin View** toolbar, select **Bypass experience**. Confirm that the session is bypassed by noting that the URL isn't suffixed.
 
-The conditional access proxy is used again in your next session.
+The Conditional Access proxy is used again in your next session.
 
-For more information, see [Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
+For more information, see [Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
 
 ### Record a session
 
@@ -570,10 +570,10 @@ If an admin browses in a proxied app to an unrecognized domain, that Defender fo
 
         For example, `sub1.contoso.com`,`sub2.contoso.com` are examples of specific domains. To add both of these domains at once, as well as other sibling domains, use `*.contoso.com`.
 
-For more information, see [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md).
+For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
 
 ## Related content
 
-- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+- [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)
 - [Troubleshooting access and session controls for end-users](troubleshooting-proxy-end-users.md)
 - [Troubleshooting - What is `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`?](troubleshooting-proxy-url.md)

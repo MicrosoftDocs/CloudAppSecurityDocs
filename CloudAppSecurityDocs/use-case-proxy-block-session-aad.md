@@ -1,6 +1,6 @@
 ---
 title: Block download of sensitive information with Conditional Access App Control
-description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Microsoft Entra ID conditional access app control.
+description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Microsoft Entra ID Conditional Access app control.
 ms.date: 05/15/2024
 ms.topic: tutorial
 ---
@@ -25,12 +25,12 @@ In this case, your users sign into Salesforce using their corporate credentials,
 
 ## The solution
 
-Protect your organization by monitoring and controlling cloud app use with Defender for Cloud Apps conditional access app control.
+Protect your organization by monitoring and controlling cloud app use with Defender for Cloud Apps Conditional Access app control.
 
 ## Prerequisites
 
 - A valid license for Microsoft Entra ID P1 license, or the license required by your identity provider (IdP) solution
-- A Microsoft Entra conditional access policy for Salesforce
+- A Microsoft Entra Conditional Access policy for Salesforce
 - Salesforce configured as a Microsoft Entra ID app
 
 ## Create a block download policy for unmanaged devices

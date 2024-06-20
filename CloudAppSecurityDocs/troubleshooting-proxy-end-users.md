@@ -252,6 +252,6 @@ Co-Auth labeling under **"protect"** action isn't supported by Defender for Clou
 
 ## Related content
 
-- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+- [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)
 - [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md)
 - [Troubleshooting - What is `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`?](troubleshooting-proxy-url.md)

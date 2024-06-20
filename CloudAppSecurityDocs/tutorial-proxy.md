@@ -24,7 +24,7 @@ Use this process to roll out real-time controls in your organization.
 
 ### Phase 1: Monitor user activities for anomalies
 
-Microsoft Entra ID apps are automatically deployed for conditional access app control, and are monitored in real time for immediate insights into their activities and related information. Use this information to identify anomalous behavior.
+Microsoft Entra ID apps are automatically deployed for Conditional Access app control, and are monitored in real time for immediate insights into their activities and related information. Use this information to identify anomalous behavior.
 
 Use the Defender for Cloud Apps' [Activity Log](activity-filters.md) to monitor and characterize app use in your environment, and understand their risks. Narrow the scope of activities listed by using [search, filters, and queries](activity-filters-queries.md) to quickly identify risky activities.
 

@@ -215,7 +215,7 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 ### Prerequisites
 
-Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for conditional access app control.
+Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for Conditional Access app control.
 
 For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
@@ -242,7 +242,7 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 ### Prerequisites
 
-Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for conditional access app control.
+Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for Conditional Access app control.
 
 For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
@@ -273,7 +273,7 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 
 ### Prerequisites
 
-- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for conditional access app control.
+- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for Conditional Access app control.
 
 For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 

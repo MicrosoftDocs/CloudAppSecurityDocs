@@ -47,7 +47,7 @@ Before configuring individual policies, it advisable to configure IP ranges so t
 
 Because IP address information is crucial for almost all investigations, [configuring known IP addresses](ip-tags.md) helps our machine learning algorithms identify known locations and consider them as part of the machine learning models. For example, adding the IP address range of your VPN will help the model to correctly classify this IP range and automatically exclude it from impossible travel detections because the VPN location doesn't represent the true location of that user.
 
-Note:  Configured IP ranges are not limited to detections and are used throughout Defender for Cloud Apps in areas such as activities in the activity log, conditional access, etc. Keep this in mind when configuring the ranges. So, for example, identifying your physical office IP addresses allows you to customize the way logs and alerts are displayed and investigated.
+Note:  Configured IP ranges are not limited to detections and are used throughout Defender for Cloud Apps in areas such as activities in the activity log, Conditional Access, etc. Keep this in mind when configuring the ranges. So, for example, identifying your physical office IP addresses allows you to customize the way logs and alerts are displayed and investigated.
 
 ### Review out-of-the-box anomaly detection alerts
 
