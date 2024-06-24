@@ -8,7 +8,7 @@ ms.date: 06/24/2024
 
 ---
 
-# Work with discovered apps via Graph API
+# Work with discovered apps via Graph API (Preview)
 
 Microsoft Defender for Cloud Apps supports a Microsoft Graph API that you can use to work with discovered cloud apps, to customize and automate the **Discovered apps** page functionality in the Microsoft Defender portal.
 

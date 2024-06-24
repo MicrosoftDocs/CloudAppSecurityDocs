@@ -21,7 +21,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## July 2024
 
-### Defender for Cloud Apps support for Graph API
+### Defender for Cloud Apps support for Graph API (Preview)
 
 Defender for Cloud Apps customers can now query data about discovered apps via the Graph API, which you can use to customize and automate functionality on the **Discovered apps** page. For more information, see:
 
