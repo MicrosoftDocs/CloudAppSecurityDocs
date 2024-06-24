@@ -25,9 +25,8 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 Defender for Cloud Apps customers can now query data about discovered apps via the Graph API, which you can use to customize and automate functionality on the **Discovered apps** page. For more information, see:
 
-- tbd
-- reference
-- [Working with discovered apps](discovered-apps.md)
+- [Work with discovered apps via Graph API](discovered-apps-api-graph.md).
+- 
 
 ## June 2024
 
