@@ -47,7 +47,6 @@ For the full list of templates, check the Microsoft Defender Portal.
 |Sharing control|File shared with unauthorized domain|Alert when file is shared with an unauthorized domain (such as your competitor).|
 |Sharing control|Shared digital certificates (file extensions)|Alert when a file containing digital certificates is publicly shared. Use this template to help govern your AWS storage.|
 |Sharing control|Publicly accessible S3 buckets (AWS)|Alert when an AWS S3 bucket is publicly shared.|
-|Sharing control|Stale externally shared files|Alert when externally shared files haven't been modified for at least 6 months.|
 
 ## View the full list of policy templates
 
