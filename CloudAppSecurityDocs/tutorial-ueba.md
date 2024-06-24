@@ -52,7 +52,7 @@ Select the investigation priority score for an alert or an activity to view the 
 
 Connect at least one app to Microsoft Defender for Cloud Apps using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Microsoft 365](./connect-office-365.md).
 
-Microsoft Entra ID apps are automatically onboarded for conditional access app control.
+Microsoft Entra ID apps are automatically onboarded for Conditional Access app control.
 
 ## Phase 2: Identify top risky users<a name="identify"></a>
 

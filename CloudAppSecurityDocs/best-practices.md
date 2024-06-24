@@ -160,7 +160,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **Detail**: Use Conditional Access App Control to set controls on your SaaS apps. You can create session policies to monitor your high risk, low trust sessions. Similarly, you can create session policies to block and protect downloads by users trying to access sensitive data from unmanaged or risky devices. If you don't create session policies to monitor high-risk sessions, you'll lose the ability to block and protect downloads in the web client, as well as the ability to monitor low-trust session both in Microsoft and third-party apps.  
 **For more information**:
 
-* [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+* [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)
 * [Session policies](session-policy-aad.md)
 
 ---
@@ -174,7 +174,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **Detail**: To secure collaboration in your environment, you can create a session policy to monitor sessions between your internal and external users. This not only gives you the ability to monitor the session between your users (and notify them that their session activities are being monitored), but it also enables you to limit specific activities as well. When creating session policies to monitor activity, you can choose the apps and users you'd like to monitor.  
 **For more information**:
 
-* [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+* [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)
 * [Session policies](session-policy-aad.md)
 
 ---
@@ -261,5 +261,5 @@ Additionally, you can onboard a custom app as a Conditional Access App Control a
 **For more information**:
 
 - [Add custom apps to Cloud Discovery](cloud-discovery-custom-apps.md)
-- [Onboard non-Microsoft IdP catalog apps for conditional access app control](proxy-deployment-featured-idp.md)
-- [Onboard non-Microsoft IdP custom apps for conditional access app control](proxy-deployment-any-app-idp.md)
+- [Onboard non-Microsoft IdP catalog apps for Conditional Access app control](proxy-deployment-featured-idp.md)
+- [Onboard non-Microsoft IdP custom apps for Conditional Access app control](proxy-deployment-any-app-idp.md)

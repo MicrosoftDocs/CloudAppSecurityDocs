@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting - What is mcas.ms, mcas-gov.us, or mcas-gov.ms? | Microsoft Defender for Cloud Apps
-description: Learn about the `mcas.ms`, `mcas-gov.us`, and `mcas-gov.ms` URL suffixes used by Microsoft Defender for Cloud Apps and conditional access app control.
+description: Learn about the `mcas.ms`, `mcas-gov.us`, and `mcas-gov.ms` URL suffixes used by Microsoft Defender for Cloud Apps and Conditional Access app control.
 ms.date: 05/15/2024
 ms.topic: troubleshooting
 ---
@@ -9,7 +9,7 @@ ms.topic: troubleshooting
 
 
 
-This article provides information about the `mcas.ms`, `mcas-gov.us`, and `mcas-gov.ms` URL suffixes used by Microsoft Defender for Cloud Apps and conditional access app control.
+This article provides information about the `mcas.ms`, `mcas-gov.us`, and `mcas-gov.ms` URL suffixes used by Microsoft Defender for Cloud Apps and Conditional Access app control.
 
 ## Our system flagged a new domain name system (DNS) entry or generated certificate for `*.mcas.ms`, `*.mcas-gov.us`, or `*.mcas-gov.ms`, but we don't use Defender for Cloud Apps
 
@@ -56,6 +56,6 @@ If you don't recognize the remaining portion of the URL, such as **myurl.com**.m
 
 ## Related content
 
-- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+- [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)
 - [Troubleshooting access and session controls for admin users](troubleshooting-proxy.md)
 - [Troubleshooting access and session controls for end-users](troubleshooting-proxy-end-users.md)

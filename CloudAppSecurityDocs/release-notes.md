@@ -36,9 +36,9 @@ The classic Microsoft Defender for Cloud Apps portal experience and functionalit
 
 For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
-### Microsoft Entra ID apps are automatically onboarded for conditional access app control (Preview)
+### Microsoft Entra ID apps are automatically onboarded for Conditional Access app control (Preview)
 
-Now, when you're creating access or session policies with conditional access app control, your Microsoft Entra ID apps are automatically onboarded and available for you to use in your policies.
+Now, when you're creating access or session policies with Conditional Access app control, your Microsoft Entra ID apps are automatically onboarded and available for you to use in your policies.
 
 When creating your access and session policies, select your apps by filtering for **Automated Azure AD onboarding**, for Microsoft Entra ID apps, or **Manual onboarding**, for non-Microsoft IdP apps.
 
@@ -46,15 +46,15 @@ For example:
 
 :::image type="content" source="media/release-notes/onboarded-apps-filter.png" alt-text="Screenshot of the new App filter for access and session policies.":::
 
-Extra steps for using conditional access app control still include:
+Extra steps for using Conditional Access app control still include:
 
-- **Creating a Microsoft Entra ID conditional access policy** for the apps you want to control with Defender for Cloud Apps conditional access app control.
+- **Creating a Microsoft Entra ID Conditional Access policy** for the apps you want to control with Defender for Cloud Apps Conditional Access app control.
 - **Manual steps to onboard non-Microsoft IdP apps**, including configuring your IdP to work with Defender for Cloud Apps.
 
 For more information, see:
 
-- [Protect apps with Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
-- [Conditional access app control process flow](conditional-access-app-control-how-to-overview.md)
+- [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)
+- [Conditional Access app control process flow](conditional-access-app-control-how-to-overview.md)
 - [Create access policies](access-policy-aad.md)
 - [Create session policies](session-policy-aad.md)
 
@@ -75,7 +75,7 @@ Microsoft Defender for Cloud Apps log collector now supports [Azure Kubernetes S
 
 For more information, see [Configure automatic log upload using Docker on Azure Kubernetes Service (AKS)](discovery-kubernetes.md).
 
-### New conditional access app control / inline data for the advanced hunting CloudAppEvents table
+### New Conditional Access app control / inline data for the advanced hunting CloudAppEvents table
 
 Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *AuditSource* and *SessionData* columns for queries and detection rules. Using this data allows for queries that consider specific audit sources, including access and session control, and queries by specific inline sessions.
 
