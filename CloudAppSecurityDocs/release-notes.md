@@ -1,7 +1,7 @@
 ---
 title: What's new | Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 06/16/2024
+ms.date: 06/24/2024
 ms.topic: overview
 ---
 
@@ -18,6 +18,16 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
+
+## July 2024
+
+### Defender for Cloud Apps support for Graph API
+
+Defender for Cloud Apps customers can now query data about discovered apps via the Graph API, which you can use to customize and automate functionality on the **Discovered apps** page. For more information, see:
+
+- tbd
+- reference
+- [Working with discovered apps](discovered-apps.md)
 
 ## June 2024
 
