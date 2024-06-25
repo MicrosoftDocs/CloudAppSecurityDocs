@@ -60,20 +60,27 @@ GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/
 
 ## Get the userIdentifier of all users, devices, or IP addresses using a specific app
 
-Identify the users, devices, or IP addresses that are currently using a specific app, run:
+Identify the users, devices, or IP addresses that are currently using a specific app, run one of the following commands:
 
-```http
-GET  https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/<streamId>/aggregatedAppsDetails (period=duration'P30D')/ <id>/users  
-```
+- **To return users**:
 
-Responses include a list of `userIdentifer` values.
+    ```http
+    GET  https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/<streamId>/aggregatedAppsDetails (period=duration'P30D')/ <id>/users  
+    ```
 
-<!--how to do this? 
-*same for a collection of entities called Collection(discoveredCloudAppsipAddress) with 1 property called "ipAddress" 
+- **To return IP addresses**:
 
-*same for a collection of entities called Collection(discoveredCloudAppsDevice) with 1 property called "name". Note applicable only if the stream is Endpoint Stream. 
+    ```http
+    GET  https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/<streamId>/aggregatedAppsDetails (period=duration'P30D')/ <id>/ipAddress  
+    ```
 
--->
+- **To return devices**:
+
+    ```http
+    GET  https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/<streamId>/aggregatedAppsDetails (period=duration'P30D')/ <id>/name  
+    ```
+
+<!--For more information, see xref.-->
 
 ## Use filters to see apps by category
 
