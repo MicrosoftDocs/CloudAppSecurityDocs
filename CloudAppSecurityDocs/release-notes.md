@@ -23,7 +23,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ### Defender for Cloud Apps support for Graph API (Preview)
 
-Defender for Cloud Apps customers can now query data about discovered apps via the Graph API. Use the Graph API to customize views and automate flows on the **Discovered apps** page, such as applying filters to view specific data. The API provides [GET](/graph/use-the-api) capabitilies only.
+Defender for Cloud Apps customers can now query data about discovered apps via the Graph API. Use the Graph API to customize views and automate flows on the **Discovered apps** page, such as applying filters to view specific data. The API supports [GET](/graph/use-the-api) capabitilies only.
 
 For more information, see:
 
