@@ -7,8 +7,6 @@ ms.topic: how-to
 
 # Configure automatic log upload for continuous reports
 
-
-
 Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed, and transmitted to the portal. FTP logs are uploaded to Microsoft Defender for Cloud Apps after the file finished the FTP transfer to the Log Collector. For Syslog, the Log Collector writes the received logs to the disk. Then the collector uploads the file to Defender for Cloud Apps when the file size is larger than 40 KB.
 
 After a log is uploaded to Defender for Cloud Apps, it's moved to a backup directory. The backup directory stores the last 20 logs. When new logs arrive, the old ones are deleted. Whenever the log collector disk space is full, the log collector drops new logs until it has more free disk space (this shouldn't happen if prerequisites are properly met). You'll receive a warning on the **Log collectors** tab of the **Upload logs automatically** settings when this happens.
@@ -54,6 +52,7 @@ The Log Collector supports the **Container** deployment mode. For more informati
 - [Configure automatic log upload using on-premises Docker on Windows](discovery-docker-windows.md)
 - [Configure automatic log upload using Podman](discovery-linux-podman.md)
 - [Configure automatic log upload using Docker in Azure](discovery-docker-ubuntu-azure.md)
+- [Configure automatic log upload using Docker in Azure Kubernetes Service (AKS)](discovery-kubernetes.md)
 
 ## Next steps
 

@@ -1,10 +1,10 @@
 ---
-title: Conditional access app control | Microsoft Defender for Cloud Apps
-description: Learn how Microsoft Defender for Cloud Apps provides conditional access app control.
+title: Conditional Access app control | Microsoft Defender for Cloud Apps
+description: Learn how Microsoft Defender for Cloud Apps provides Conditional Access app control.
 ms.date: 02/29/2024
 ms.topic: conceptual
 ---
-# Microsoft Defender for Cloud Apps conditional access app control
+# Microsoft Defender for Cloud Apps Conditional Access app control
 
 In today's workplace, it's not enough to know what's happened in your cloud environment after the fact. You also need to stop breaches and leaks in real-time, and prevent employees from intentionally or accidentally putting your data and organization at risk.
 
@@ -26,25 +26,11 @@ Microsoft Edge users benefit from [direct, in-browser protection](in-browser-pro
 
 Users of other browsers are redirected via a reverse proxy to Defender for Cloud Apps, and display an `*.mcas.ms` suffix in the link's URL. For example, if the app URL is *myapp.com*, the app URL is updated to *myapp.com.mcas.ms*.
 
-This article describes Defender for Cloud Apps's conditional access app control with [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies.
+This article describes Defender for Cloud Apps's Conditional Access app control with [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies.
 
-## Usability
+## Conditional Access app control activities
 
-Conditional access app control doesn't require you to install anything on the device, making it ideal when monitoring or controlling sessions from unmanaged devices or partner users.
-
-Defender for Cloud Apps uses best-in-class, patented heuristics to identify and control activities performed by the user in the target app. Our heuristics are designed to optimize and balance security with usability.
-
-In some rare scenarios, when blocking activities on the server-side renders the app unusable, we secure these activities only on the client-side, which makes them potentially susceptible to exploitation by malicious insiders.
-
-## System performance and data storage
-
-Defender for Cloud Apps uses Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
-
-Defender for Cloud Apps proxy servers do not store data at rest. When caching content, we follow the requirements laid out in [RFC 7234 (HTTP caching)](https://tools.ietf.org/html/rfc7234) and only cache public content.
-
-## Reference of supported activities
-
-Conditional access app control uses *access policies* and *session policies* to monitor and control user app access and sessions in real time, across your organization. 
+Conditional Access app control uses *access policies* and *session policies* to monitor and control user app access and sessions in real time, across your organization. 
 
 Each policy has conditions to define *who* (which user or group of users), *what* (which cloud apps), and *where* (which locations and networks) the policy is applied to. After determining the conditions, route your users first to Defender for Cloud Apps, where you can apply the access and session controls to protect your data.
 
@@ -66,6 +52,20 @@ For more information, see:
 - [Create Microsoft Defender for Cloud Apps access policies](access-policy-aad.md)
 - [Create Microsoft Defender for Cloud Apps session policies](session-policy-aad.md)
 
+## Usability
+
+Conditional Access app control doesn't require you to install anything on the device, making it ideal when monitoring or controlling sessions from unmanaged devices or partner users.
+
+Defender for Cloud Apps uses best-in-class, patented heuristics to identify and control activities performed by the user in the target app. Our heuristics are designed to optimize and balance security with usability.
+
+In some rare scenarios, when blocking activities on the server-side renders the app unusable, we secure these activities only on the client-side, which makes them potentially susceptible to exploitation by malicious insiders.
+
+## System performance and data storage
+
+Defender for Cloud Apps uses Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
+
+Defender for Cloud Apps proxy servers do not store data at rest. When caching content, we follow the requirements laid out in [RFC 7234 (HTTP caching)](https://tools.ietf.org/html/rfc7234) and only cache public content.
+
 ## Supported apps and clients
 
 Apply session and access to controls to any interactive single sign-on that uses the SAML 2.0 authentication protocol. Access controls are also supported for built-in mobile and desktop client apps.
@@ -75,50 +75,15 @@ Additionally, if you're using Microsoft Entra ID apps, apply session and access 
 - Any interactive single sign-on that uses the Open ID Connect authentication protocol.
 - Apps hosted on-premises and configured with the [Microsoft Entra application proxy](/entra/identity/app-proxy/application-proxy).
 
+Microsoft Entra ID apps are also automatically onboarded for Conditional Access app control, while apps that use other IdPs must be [onboarded manually](conditional-access-app-control-how-to-overview.md).
+
 Defender for Cloud Apps identifies apps using data from the cloud app catalog. If you've customized apps with plugins, any associated custom domains must be added to the relevant app in the catalog. For more information, see [Working with the risk score](risk-score.md).
 
 > [!NOTE]
-> Apps with *non-interactive* sign-in flows, such as the Authenticator app and other built-in apps, cannot be used with access controls.
+> Installed apps with *non-interactive* sign-in flows, such as the Authenticator app and other built-in apps, cannot be used with access controls. Our recommendation in that case is to craft an access policy in Entra ID portal in addition to Microsoft defender for cloud apps access policies
 >
 
-## Pre-onboarded apps
-
-Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls for Microsoft Entra ID.
-
-> [!NOTE]
-> It's required to route your desired applications to access and session controls, and to perform a first login.
-
-- AWS
-- Box
-- Concur
-- CornerStone on Demand
-- DocuSign
-- Dropbox
-- Egnyte
-- GitHub
-- Google Workspace
-- HighQ
-- JIRA/Confluence
-- LinkedIn Learning
-- Microsoft Azure DevOps (Visual Studio Team Services)
-- Microsoft Azure portal
-- Microsoft Dynamics 365 CRM
-- Microsoft Exchange Online
-- Microsoft OneDrive for Business
-- Microsoft Power BI
-- Microsoft SharePoint Online
-- Microsoft Teams
-- Microsoft Yammer
-- Salesforce
-- Slack
-- Tableau
-- Workday
-- Workiva
-- Workplace from Meta
-
-If you're interested in a specific app being pre-onboarded, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
-
-## Supported browsers
+## Session control support scope
 
 While session controls are built to work with any browser on any major platform on any operating system, we support the following browsers:
 
@@ -139,5 +104,5 @@ However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using
 
 For more information, see:
 
-- [Conditional access app control known limitations](caac-known-issues.md)
+- [Conditional Access app control known limitations](caac-known-issues.md)
 - [Troubleshooting access and session controls](troubleshooting-proxy.md)

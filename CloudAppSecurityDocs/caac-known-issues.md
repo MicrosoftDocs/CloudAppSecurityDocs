@@ -1,13 +1,13 @@
 ---
-title: Conditional access app control known limitations | Microsoft Defender for Cloud Apps
-description: Learn about known limitations for working with Microsoft Defender for Cloud Apps conditional access app control.
+title: Conditional Access app control known limitations | Microsoft Defender for Cloud Apps
+description: Learn about known limitations for working with Microsoft Defender for Cloud Apps Conditional Access app control.
 ms.date: 01/23/2024
 ms.topic: how-to
 ---
 
-# Conditional access app control known limitations
+# Conditional Access app control known limitations
 
-This article describes known limitations for working with Microsoft Defender for Cloud Apps conditional access app control.
+This article describes known limitations for working with Microsoft Defender for Cloud Apps Conditional Access app control.
 
 To learn more about security limitations, contact our support team.
 
@@ -41,13 +41,17 @@ The following table lists more examples of files that are and aren't scanned:
 |**A Word file** composed of images and text, 4-MB size and 2 million characters     |  Not scanned        |
 |**A Word file** composed of images and text, 40-MB size and 400-K characters     |  Not scanned         |
 
+## External B2B users in Teams
+
+External B2B collaboration users are not protected by session policies in Teams application.
+
 ## Limitations for sessions served by reverse proxy
 
 This section lists limitations that apply only on sessions that are served by the reverse proxy. Users of Microsoft Edge can benefit from in-browser protection instead of using the reverse proxy, and therefore aren't affected by these limitations.
 
 ### Built-in app and browser plug-in limitations
 
-Defender for Cloud Apps conditional access app control modifies underlying application code and therefore doesn't currently support built-in apps or browser extensions.
+Defender for Cloud Apps Conditional Access app control modifies underlying application code and therefore doesn't currently support built-in apps or browser extensions.
 
 As an administrator, you might want to define default system behavior for when a policy can't be enforced, choosing to either allow access or totally block it.
 
@@ -81,4 +85,4 @@ The following table lists example results when the *Block upload of files contai
 
 ## Related content
 
-- [Microsoft Defender for Cloud Apps conditional access app control](proxy-intro-aad.md)
+- [Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)

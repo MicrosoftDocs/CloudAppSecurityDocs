@@ -1,7 +1,7 @@
 ---
 title: Require step-up authentication (authentication context) upon risky action
 description: This tutorial provides instructions for requiring step-up authentication (authentication context) upon risky action.
-ms.date: 01/29/2023
+ms.date: 05/15/2024
 ms.topic: tutorial
 ---
 # Tutorial: Require step-up authentication (authentication context) upon risky action
@@ -24,29 +24,15 @@ Protect your organization by requiring Microsoft Entra Conditional Access polici
 
 - A valid license for Microsoft Entra ID P1 license
 
-- Configure a cloud app for SSO using one of the following authentication protocols:
-
-    | IdP   | Protocols                           |
-    | ----------- | -------------------------- |
-    | Microsoft Entra ID    | SAML 2.0 or OpenID Connect |
+- Your cloud app, in this case SharePoint Online, configured as a Microsoft Entra ID app and using SSO via SAML 2.0 or OpenID Connect
 
 - Make sure the [app is deployed to Defender for Cloud Apps](proxy-deployment-aad.md)
 
 ## Create a policy to enforce step-up authentication
 
-Defender for Cloud Apps session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a conditional access policy **and** a session policy.
+Defender for Cloud Apps session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a Conditional Access policy **and** a session policy.
 
-### Step 1: Configure your IdP to work with Defender for Cloud Apps
-
-Make sure you've configured your IdP solution to work with Defender for Cloud Apps, as follows:
-
-- For [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Microsoft Entra ID](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-
-- For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
-
-After completing this task, go to the Defender for Cloud Apps portal and create a session policy to monitor and control file downloads in the session.
-
-### Step 2: Create a session policy
+**To create your policy**:
 
 1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Polices** -> **Policy management**.
 
@@ -62,7 +48,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
     - **Device tag**: Select **Does not equal**, and then select **Intune compliant**, **Microsoft Entra hybrid joined**, or **Valid client certificate**. Your selection depends on the method used in your organization for identifying managed devices.
 
-    - **App**: Select the app you want to control.
+    - **App**: Select **Automated Azure AD onboarding** and then select **SharePoint Online** from the list.
 
     - **Users**: Select the users you want to monitor.
 

@@ -1,30 +1,19 @@
 ---
-title: Deploy Conditional Access App Control for custom apps with non-Microsoft identity providers
-description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for any apps using non-Microsoft identity providers
-ms.date: 02/29/2024
+title: Onboard non-Microsoft IdP custom apps for Conditional Access app control | Microsoft Defender for Cloud Apps
+description: Learn how to deploy Conditional Access app control with Microsoft Defender for Cloud Apps, for custom apps with a non-Microsoft IdP.
+ms.date: 01/04/2024
 ms.topic: how-to
 ---
-# Deploy Conditional Access App Control for custom apps with non-Microsoft identity providers
+
+# Onboard non-Microsoft IdP custom apps for Conditional Access app control
 
 
 
-Session controls in Microsoft Defender for Cloud Apps can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps hosted via the Microsoft Entra application proxy with session controls. It provides steps to route app sessions from other IdP solutions to Defender for Cloud Apps. For Microsoft Entra ID, see [Deploy Conditional Access App Control for custom apps using Microsoft Entra ID](proxy-deployment-any-app.md).
+Access and session controls in Microsoft Defender for Cloud apps work with both catalog and custom apps. While Microsoft Entra ID apps are automatically onboarded to use Conditional Access app control, if you're working with a non-Microsoft IdP, you'll need to onboard your app manually.
 
-For a list of apps that are featured by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#pre-onboarded-apps).
+This article describes how to both configure your IdP to work with Defender for Cloud Apps, and then also manually onboard each custom app. In contrast, [catalog apps from a non-Microsoft IdP](proxy-deployment-featured-idp.md) are automatically onboarded when you configure the integration between your IdP and Defender for Cloud Apps.
 
 ## Prerequisites
-
-### Add admins to the app onboarding/maintenance list
-
-1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
-
-1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
-
-1. Enter the user principal name or email for the users that will be onboarding the app, and then select **Save**.
-
-    ![Screenshot of settings for App onboarding and maintenance.](media/app-onboarding-settings.png)
-
-### Check for necessary licenses
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
@@ -32,217 +21,134 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
   - Microsoft Defender for Cloud Apps
 
 - Apps must be configured with single sign-on
-- Apps must use the following authentication protocols:
+- Apps must be configured with the SAML 2.0 authentication protocol.
 
-    |IdP|Protocols|
-    |---|---|
-    |Other|SAML 2.0|
+## Add admins to your app onboarding/maintenance list
 
-## To deploy any app
+1. In Microsoft Defender XDR, select **Settings > Cloud Apps > Conditional Access App Control > App onboarding/maintenance**.
 
-Follow these steps to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
+1. Enter the usernames or emails of any users who will be onboarding your app, and then select **Save**.
 
-1. **[Configure your IdP to work with Defender for Cloud Apps](#step-1-configure-your-idp-to-work-with-defender-for-cloud-apps)**
+For more information, see [Diagnose and troubleshoot with the Admin View toolbar](troubleshooting-proxy.md#diagnose-and-troubleshoot-with-the-admin-view-toolbar).
 
-1. **[Configure the app that you are deploying](#conf-app)**
+## Configure your IdP to work with Defender for Cloud Apps
 
-1. **[Verify that the app is working correctly](#verify-app)**
+This procedure describes how to route app sessions from other IdP solutions to Defender for Cloud Apps.
 
-1. **[Enable the app for use in your organization](#enable-app)**
-
-> [!NOTE]
-> To deploy Conditional Access App Control for Microsoft Entra apps, you need a valid [license for Microsoft Entra ID P1 or higher](/azure/active-directory/license-users-groups) as well as a Defender for Cloud Apps license.
-
-## Step 1: Configure your IdP to work with Defender for Cloud Apps
-
-> [!NOTE]
-> For examples of how to configure IdP solutions, see:
->
+> [!TIP]
+> The following articles provide detailed examples of this procedure:
+> 
 > - [Configure your PingOne IdP](proxy-idp-pingone.md)
 > - [Configure your AD FS IdP](proxy-idp-adfs.md)
 > - [Configure your Okta IdP](proxy-idp-okta.md)
 
-1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
-1. Under **Connected apps**, select **Conditional Access App Control apps**.
 
-1. Select **+Add**, and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
-1. On the **APP INFORMATION** page, fill out the form using the information from your app's single sign-on configuration page, and then select **Next**.
-    - If your IdP provides a single sign-on metadata file for the selected app, select **Upload metadata file from the app** and upload the metadata file.
-    - Or, select **Fill in data manually** and provide the following information:
-        - **Assertion consumer service URL**
-        - If your app provides a SAML certificate, select **Use <app_name> SAML certificate** and upload the certificate file.
+**To configure your IdP to work with Defender for Cloud Apps**:
 
-    ![Screenshot showing app information page.](media/proxy-deploy-add-idp-app-info.png)
+1. In Microsoft Defender XDR, select **Settings > Cloud Apps > Connected Apps > Conditional Access App Control apps**.
 
-1. On the **IDENTITY PROVIDER** page, use the provided steps to set up a new application in your IdP's portal, and then select **Next**.
-    1. Go to your IdP's portal and create a new custom SAML app.
-    1. Copy the single sign-on configuration of the existing `<app_name>` app to the new custom app.
-    1. Assign users to the new custom app.
-    1. Copy the apps single sign-on configuration information. You'll need it in the next step.
+1. In the **Conditional Access App Control apps** page, select **+ Add**.
 
-    ![Screenshot showing gather identity provider information page.](media/proxy-deploy-add-idp-get-conf.png)
+1. In the **Add a SAML application with your identity provider** dialog, select the **Search for an app** drop down and then select the app you want to deploy. With your app selected, select **Start wizard**.
+
+1. On the wizard's **APP INFORMATION** page, either upload a metadata file from your app or enter app data manually.
+
+    Make sure to provide the following information:
+
+    - The **Assertion consumer service URL**. This is the URL that your app uses to receive SAML assertions from your IdP. 
+    - A SAML certificate, if your app provides one. In such cases, select the **Use ... SAML certificate** option, and then upload the certificate file.
+
+    When you're finished, select **Next** to continue.
+
+1. On the wizard's **IDENTITY PROVIDER** page, follow the instructions to set up a new custom app in your IdP's portal.
 
     > [!NOTE]
-    > These steps may differ slightly depending on your identity provider. This step is recommended for the following reasons:
+    > The steps required may differ, depending on your IdP. We recommend that you perform the external configuration as described for the following reasons:
     >
-    > - Some identity providers do not allow you to change the SAML attributes or URL properties of a gallery app
-    > - Configuring a custom app enables you to test this application with access and session controls without changing the existing behavior for your organization.
+    > - Some identity providers do not allow you to change the SAML attributes or URL properties of a gallery / catalog app.
+    > - When you configure a custom app, you can test the app with Defender for Cloud Apps access and session controls, without changing your organization's existing configured behavior.
 
-1. On the next page, fill out the form using the information from your app's single sign-on configuration page, and then select **Next**.
-    - If your IdP provides a single sign-on metadata file for the selected app, select **Upload metadata file from the app** and upload the metadata file.
-    - Or, select **Fill in data manually** and provide the following information:
-        - **Assertion consumer service URL**
-        - If your app provides a SAML certificate, select **Use <app_name> SAML certificate** and upload the certificate file.
+    Copy your app's single sign-on configuration information for use later in this procedure. When you're finished, select **Next** to continue.
 
-    ![Screenshot showing enter identity provider information page.](media/proxy-deploy-add-idp-enter-conf.png)
+1. Continuing on the **IDENTITY PROVIDER** page of the wizard, either upload a metadata file from your IdP or enter app data manually.
 
-1. On the next page, copy the following information, and then select **Next**. You'll need the information in the next step.
+    Make sure to provide the following information:
 
-    - Single sign-on URL
-    - Attributes and values
+    - The **Single sign-on service URL**. This is the URL that your IdP uses to receive single sign-on requests. 
+    - A SAML certificate, if your IdP provides one. In such cases, select the **Use identity provider's SAML certificate** option, and then upload the certificate file.
 
-    ![Screenshot showing gather identity providers SAML information page.](media/proxy-deploy-add-idp-ext-conf.png)
+1. Continuing on the **IDENTITY PROVIDER** page of the wizard, copy both the single sign-on URL and all attributes and values for use later in this procedure.
 
-1. In your IdP's portal, do the following:
-    > [!NOTE]
-    > The settings are commonly found in IdP portal's custom app settings page.
+    When you're done, select **Next** to continue.
 
-    1. **Recommended** - Create a backup of your current settings.
-    1. Replace the single sign-on URL field value with the Defender for Cloud Apps SAML single sign-on URL you noted earlier.
-        > [!NOTE]
-        > Some providers may refer to the single sign-on URL as the *Reply URL*.
-    1. Add the attributes and values you made a note of earlier to the app's properties.
-        > [!NOTE]
-        >
-        > - Some providers may refer to them as *User attributes* or *Claims*.
-        > - When creating a new SAML app, the Okta Identity Provider limits attributes to 1024 characters. To mitigate this limitation, first create the app without the relevant attributes. After creating the app, edit it, and then add the relevant attributes.
+1. Browse to your IdP's portal and enter the values you'd copied to your IdP configuration. Typically, these settings are found in your IdP's custom app settings area.
 
-    1. Verify that the name identifier is in the email address format.
-    1. Save your settings.
-1. On the **APP CHANGES** page, do the following, and then select **Next**. You'll need the information in the next step.
+    1. Enter your app's single sign-on URL that you'd copied from the previous step. Some providers may refer to the single sign-on URL as the *Reply URL*.
 
-    - Copy the Single sign-on URL
-    - Download the Defender for Cloud Apps SAML certificate
+    1. Add the attributes and values you'd copied from the previous step to the app's properties. Some providers may refer to them as *User attributes* or *Claims*.
 
-    ![Screenshot showing gather Defender for Cloud Apps SAML information page.](media/proxy-deploy-add-idp-app-changes.png)
+        If your attributes are limited to 1024 characters for new apps, first create the app without the relevant attributes, and add them in afterwards by editing the app.
 
-1. In your app's portal, on the single sign-on settings, do the following:
-    1. **Recommended** - Create a backup of your current settings.
-    1. In the single sign-on URL field, enter the Defender for Cloud Apps single sign-on URL you made a note of earlier.
-    1. Upload the Defender for Cloud Apps SAML certificate you downloaded earlier.
-    > [!NOTE]
-    >
-    > - After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
-    > - The Defender for Cloud Apps SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
+    1. Verify that your name identifier is in the format of an email address.
 
-## Step 2: Add the app manually and install certificates, if necessary<a name="conf-app"></a><a name="add-app"></a>
+    1. Make sure to save your settings when you're done.
 
-Applications in the app catalog are automatically populated into the table under Connected Apps. Check that the app you want to deploy is recognized by navigating there.
+1. Back in Defender for Cloud Apps, on the wizard's **APP CHANGES** page, copy the SAML single sign-on URL and download the Microsoft Defender for Cloud Apps SAML certificate. The SAML single sign-on URL is a customized URL for your app when used with Defender for Cloud Apps Conditional Access app control.
 
-1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
-1. Under **Connected apps**, select **Conditional Access App Control apps** to access a table of applications that can be configured with access and session policies.
+1. Browse to your app's portal and configure your single sign on settings as follows:
 
-    ![Conditional access app control apps.](media/conditional-access-app-control-apps.png)
+    1. (Recommended) Create a backup of your current settings.
+    1. Replace the identity provider sign-in URL field value with the Defender for Cloud Apps SAML single sign-on URL you copied from the previous step. The specific name for this field may differ, depending on your app.
+    1. Upload the Defender for Cloud Apps SAML certificate you downloaded in the previous step.
+    1. Make sure to save your changes.
 
-1. Select the **App: Select apps…** dropdown menu to filter and search for the app you want to deploy.
+1. In the wizard, select **Finish** to complete the configuration.
 
-    ![Select App: Select apps to search for the app.](media/select-apps.png)
+After saving your app's single-sign on settings with the values customized by Defender for Cloud Apps, all associated sign-in requests to the app are routed though Defender for Cloud Apps and Conditional Access app control.
 
-1. If you don't see the app there, you'll have to manually add it.
-
-### How to manually add an unidentified app
-
-1. In the banner, select **View new apps**.
-
-    ![Conditional access app control view new apps.](media/caac-view-apps.png)
-
-1. In the list of new apps, for each app that you're onboarding, select the **+** sign, and then select **Add**.
-
-    > [!NOTE]
-    > If an app does not appear in the Defender for Cloud Apps app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
-
-    ![Conditional access app control discovered Microsoft Entra apps.](media/caac-discovered-aad-apps.png)
-
-### To add domains for an app<a name="add-domains"></a>
-
-Associating the correct domains to an app allows Defender for Cloud Apps to enforce policies and audit activities.
-
-For example, if you've configured a policy that blocks downloading files for an associated domain, file downloads by the app from that domain will be blocked. However, file downloads by the app from domains not associated with the app won't be blocked and the action won't be audited in the activity log.
 > [!NOTE]
-> Defender for Cloud Apps still adds a suffix to domains not associated with the app to ensure a seamless user experience.
+> The Defender for Cloud Apps SAML certificate is valid for 1 year. After it expires, you'll need to generate a new one. 
 
-1. From within the app, on the Defender for Cloud Apps admin toolbar, select **Discovered domains**.
-    > [!NOTE]
-    > The admin toolbar is only visible to users with permissions to onboard or maintenance apps.
-1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
-    > [!NOTE]
-    > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
-1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
-1. Under **Connected apps**, select **Conditional Access App Control apps**.
-1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then select **Edit app**.
-    > [!TIP]
-    > To view the list of domains configured in the app, select **View app domains**.
-1. In **User-defined domains**, enter all the domains you want to associate with this app, and then select **Save**.
-    > [!NOTE]
-    > You can use the * wildcard character as a placeholder for any character. When adding domains, decide whether you want to add specific domains (`sub1.contoso.com`,`sub2.contoso.com`) or multiple domains (`*.contoso.com`).
+## Onboard your app for Conditional Access app control<a name="conf-app"></a><a name="add-app"></a>
 
-### Install root certificates<a name="install-certs"></a>
+If you're working with a custom app that's not automatically populated in the app catalog, you'll need to add it manually.
 
-1. Repeat the following steps to install the **Current CA** and **Next CA** self-signed root certificates.
-    1. Select the certificate.
-    1. Select **Open**, and when prompted select **Open** again.
-    1. Select **Install certificate**.
-    1. Choose either **Current User** or **Local Machine**.
-    1. Select **Place all certificates in the following store** and then select **Browse**.
-    1. Select **Trusted Root Certificate Authorities** and then select **OK**.
-    1. Select **Finish**.
+**To check if your app is already added**:
 
-    > [!NOTE]
-    > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page.
+1. In Microsoft Defender XDR, select **Settings > Cloud Apps > Connected apps > Conditional Access App Control apps**.
 
-1. Select **Continue**.
-1. Check that the application is available in the table.
+1. Select the **App: Select apps…** dropdown menu to search for your app.
 
-   ![Onboard with session control.](media/proxy-deployment-aad/onboard-with-session-control.png)
+If your app is already listed, continue with the [procedure for catalog apps instead](proxy-deployment-featured-idp.md#sign-in-to-your-app-using-a-user-scoped-to-the-policy).
 
-## Step 3: Verify that the app is working correctly<a name="verify-app"></a>
+**To add your app manually**:
 
-To verify that the application is protected, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
+1. If you have new apps, you'll see a banner at the top of the page notifying you that you have new apps to onboard. Select the **View new apps** link to see them. 
 
-Open the application and perform the following checks:
+1. In the **Discovered Azure AD apps** dialog, locate your app, such as by the **Login URL** value. Select the **+** button and then **Add** to onboard it as a custom app.
 
-- Check to see if the lock :::image type="icon" source="media/in-browser-protection/lock.png"::: icon appears in your browser, or if you're working in a browser other than Microsoft Edge, check that your app URL contains the `.mcas` suffix. For more information, see [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
-- Visit all pages within the app that are part of a user's work process and verify that the pages render correctly.
-- Verify that the behavior and functionality of the app isn't adversely affected by performing common actions such as downloading and uploading files.
-- Review the list of domains associated with the app. For more information, see [Add the domains for the app](#add-domains).
+## Install root certificates<a name="install-certs"></a>
 
-If you encounter errors or issues, use the admin toolbar to gather resources such as `.har` files and recorded sessions for filing a support ticket.
+Make sure that you're using the correct **Current CA** or **Next CA** certificates for each of your apps.
 
-## Step 4: Enable the app for use in your organization<a name="enable-app"></a>
+**To install your certificates**, repeat the following step for each certificate:
 
-Once you're ready to enable the app for use in your organization's production environment, do the following steps.
+1. Open and install the certificate, selecting either **Current User** or **Local Machine**.
 
-1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
-1. Under **Connected apps**, select **Conditional Access App Control apps**.
-1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
-1. Select **Use the app with session controls** and then select **Save**.
+1. When prompted for where you want to place your certificates, browse to **Trusted Root Certificate Authorities**.
 
-   ![Edit this app dialogue.](media/proxy-deployment-aad/edit-app-checked.png)
+1. Select **OK** and **Finish** as needed to complete the procedure.
 
-## Next steps
+1. Restart your browser, open your app again, and select **Continue** when prompted.
 
-> [!div class="nextstepaction"]
-> [« PREVIOUS: Deploy Conditional Access App Control for catalog apps](proxy-deployment-aad.md)
+1. In Microsoft Defender XDR, select **Settings > Cloud Apps > Connected apps > Conditional Access App Control apps**, and make sure that your app is still listed in the table.
 
-> [!div class="nextstepaction"]
-> [NEXT: How to create a session policy »](session-policy-aad.md)
+For more information, see [App doesn't appear on the Conditional Access App Control apps page](troubleshooting-proxy.md#app-doesnt-appear-on-the-conditional-access-app-control-apps-page).
 
-## See also
+## Related content
 
-> [!div class="nextstepaction"]
-> [Introduction to Conditional Access App Control](proxy-intro-aad.md)
-
-> [!div class="nextstepaction"]
-> [Troubleshooting access and session controls](troubleshooting-proxy.md)
+- [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)
+- [Deploy Conditional Access app control for catalog apps with non-Microsoft IdPs](proxy-deployment-featured-idp.md)
+- [Troubleshooting access and session controls](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -1,7 +1,7 @@
 ---
 title: Information protection policies 
 description: This article outlines the steps to configure many information protection policies in Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 05/15/2024
 ms.topic: conceptual
 ---
 # Information protection policies
@@ -76,32 +76,6 @@ Detect files containing personally identifying information and other sensitive d
 
 > [!NOTE]
 > The ability to apply a sensitivity label directly in Defender for Cloud Apps is currently only supported for Box, Google Workspace, SharePoint online and OneDrive for Business.
-
-## Detect stale externally shared data
-
-Detect unused and stale files, files that weren't updated recently, that are accessible publicly via direct public link, web search, or to specific external users.
-
-### Prerequisites
-
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-
-### Steps
-
-1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
-
-1. Select and apply the policy template **Stale externally shared files**.
-
-1. Customize the filter **Last modified** to match your organization's policy.
-
-1. Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example:
-
-    - Google Workspace: Make the file private and notify the last file editor
-
-    - Box: Notify the last file editor
-
-    - SharePoint online: Make the file private and send a policy-match digest to the file owner
-
-1. Create the file policy.
 
 ## Detect data access from an unauthorized location
 
@@ -220,7 +194,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Microsoft Purview Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
+- [Microsoft Purview Information Protection integration](azip-integration.md) is enabled and GDPR label is configured in Microsoft Purview
 
 ### Steps
 
@@ -241,9 +215,9 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
+Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for Conditional Access app control.
 
-- Make sure your app is a SAML-based app that utilizes Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
@@ -268,8 +242,9 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
-- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for Conditional Access app control.
+
+For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
@@ -298,11 +273,11 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 
 ### Prerequisites
 
-- [Deploy conditional access app control for Microsoft Entra apps](proxy-deployment-aad.md).
+- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on, or is onboarded to Defender for Cloud Apps for Conditional Access app control.
 
-- Make sure your app is a SAML-based app that uses Microsoft Entra ID for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
-- sensitivity labels from Microsoft Purview Information Protection must be configured and used inside your organization.
+- Sensitivity labels from Microsoft Purview Information Protection must be configured and used inside your organization.
 
 ### Steps
 

@@ -1,7 +1,7 @@
 ---
 title: Protect any apps in use in your organization in real time
 description: This tutorial provides instructions for using access and session controls to monitor and control access to apps and their data.
-ms.date: 01/29/2023
+ms.date: 05/15/2024
 ms.topic: tutorial
 ---
 # Tutorial: Protect any apps in use in your organization in real time
@@ -24,15 +24,9 @@ Use this process to roll out real-time controls in your organization.
 
 ### Phase 1: Monitor user activities for anomalies
 
-1. **Deploy your apps**: Start by deploying the important apps that your organization uses. The deployment is made simple by our native integration with Microsoft Entra Conditional Access. You can deploy apps using the following steps:
+Microsoft Entra ID apps are automatically deployed for Conditional Access app control, and are monitored in real time for immediate insights into their activities and related information. Use this information to identify anomalous behavior.
 
-    - Start by [deploying apps that are featured](proxy-intro-aad.md) by Defender for Cloud Apps to work out-of-the-box. For a list of apps that are featured, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
-
-    - Then, for apps not featured by Defender for Cloud Apps, use the following process to [onboard and deploy any app](proxy-deployment-any-app.md).
-
-    Once your apps are deployed, they are monitored in real time giving you immediate insights into their activities and related information. You can use this information to identify anomalous behavior.
-
-1. **Monitor and investigate**: In Defender for Cloud Apps, use the [Activity Log](activity-filters.md) to monitor and characterize app use in your environment, and understand their risks. You can narrow the scope of activities listed by using [search, filters, and queries](activity-filters-queries.md) to quickly identify risky activities.
+Use the Defender for Cloud Apps' [Activity Log](activity-filters.md) to monitor and characterize app use in your environment, and understand their risks. Narrow the scope of activities listed by using [search, filters, and queries](activity-filters-queries.md) to quickly identify risky activities.
 
 ### Phase 2: Protect your data when it's exfiltrated
 
@@ -51,7 +45,7 @@ For any of the apps you've configured above, you can configure a session policy 
 
 1. Create a session policy to [block uploads of incorrectly labeled files](session-policy-aad.md#protect-upload).
 
-1. Configure a policy to display a [block message with instructions on how to correct the label and try again](session-policy-aad.md#educate-protect).
+1. Configure a policy to display a [block message with instructions on how to correct the label and try again](session-policy-aad.md#educate-users-to-protect-sensitive-files).
 
 Protecting file uploads in this way ensures that data saved to the cloud has the correct access permissions applied. In the event that a file is shared or lost, it can only be accessed by authorized users.
 
