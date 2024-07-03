@@ -19,6 +19,22 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## July 2024
+### In-browser protection 
+Edge browser users from macOS, scoped to session policies, are now protected with in-browser protection.
+
+The following session policies are now supported:
+- Block and Monitor upload of sensitive files
+- Block and Monitor paste
+- Block and Monitor of malware upload
+- Block and Monitor of malware download
+
+See [In-browser protection](https://learn.microsoft.com/defender-cloud-apps/in-browser-protection)
+
+  In-browser protection is supported with the last 2 stable versions of Edge (for example, if the newest Edge is 126, in-browser protection works for v126 and v125). 
+
+See [Microsoft Edge releases](https://learn.microsoft.com/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases)
+
 ## June 2024
 
 ### Automatic redirection for the classic Defender for Cloud Apps portal - General Availability
