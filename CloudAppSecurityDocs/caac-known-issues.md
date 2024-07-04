@@ -64,7 +64,8 @@ In the following applications, we encountered scenarios where navigating to a li
 - Microsoft Power Automate
 - Microsoft Power Apps
 - Workplace from Meta
-- ServiceNow  
+- ServiceNow
+- Workday
 
 ### File upload limitations
 
