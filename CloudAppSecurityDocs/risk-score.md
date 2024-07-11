@@ -46,34 +46,7 @@ Risk scores are kept up to date using the following sources:
 - **Continuous analysis by the Defender for Cloud Apps analysis team**, for attributes such as encryption at rest.
 - **Customer requests** for changes to the cloud app catalog. All requests are reviewed by our cloud analysis team and updated based on their findings. For information, see [Request a risk score update](#request-a-risk-score-update).
 
-## Planned changes for the risk scoring
-Microsoft Defender for Cloud Apps is making some changes to the cloud app catalog to improve our app risk scoring.
 
-Changes include:
-
--  Removing the following irrelevant and redundant indicators from the catalog:
-- Consumer Popularity Index
-- Safe Harbor
-- Jericho Forum Commandments
-- Heartbleed Patched
-- Protected against DROWN
-- ISO 27002
-- The following values of PCI-DSS indicator: 1, 2, 3, 3.1, and 3.2
-
--   Removing the following indicators from the default score calculation. These indicators will continue to be presented in the catalog and can be included in score calculations by configuring the score metrics:
-- Founded
-- Holding
-- Domain Registration
-- FedRAMP level
-- FISMA
-
-Due to the changes detailed above:
-
--    The risk score for some apps might change and new alerts might be triggered, if you’ve created discovery policies based on a total app score or any of the removed indicators.
-
--    Any existing policies that were created based on the removed indicators will be disabled.
-
-We plan to gradually roll out changes to the cloud app catalog starting later in 2024. We recommend that you review your existing policies and modify them or create new policies as needed.
 ## Confirm cloud app security risk
 
 Check the cloud app catalog to ensure that the apps used by the organization fit into your organization's security requirements. For example, you might want to periodically check that CRM apps used in your organization are adequately secure. In this case, you'd use the following steps to identify your apps:
