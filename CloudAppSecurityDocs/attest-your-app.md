@@ -34,8 +34,7 @@ Follow the service attributes described below to successfully complete the submi
 | Disaster recovery plan | General | Boolean | True, False | Does this app have a disaster recovery plan that includes a backup and restore strategy? |
 | Latest breach | Security | Date | MMM-dd-YYYY | Most recent incident in which sensitive, protected, or confidential data owned by the app was viewed, stolen, or used by an individual unauthorized to do so. |
 | Data-at-rest encryption method | Security | String | Close list - provided in questionnaire | The type of encryption of data-at-rest performed on the app. |
-| Multi
-factor authentication | Security | Boolean | True, False | Does this app support multifactor authentication solutions? |
+| Multifactor authentication | Security | Boolean | True, False | Does this app support multifactor authentication solutions? |
 | IP address restriction | Security | Boolean | True, False | Does this app support restriction of specific IP addresses by the app? |
 | User audit trail | Security | Boolean | True, False | Does this app support availability of audit trail per user account? |
 | Admin audit trail | Security | Boolean | True, False | Does this app support availability of an admin audit trail in the app? |
@@ -57,8 +56,7 @@ factor authentication | Security | Boolean | True, False | Does this app support
 | Password policy | Security | Boolean | True, False | Does this app enforce a password policy that complies with best practices? |
 | FINRA | Compliance | Boolean | True, False, N/A | Does this app comply with FINRA, a standard set for not-for-profit organizations authorized by Congress that regulates and enforces the enhancement of investor safeguards and market integrity? |
 | FISMA | Compliance | Boolean | True, False, N/A | Does this app comply with FISMA, the US legislation that defines a comprehensive framework to protect government information, operations and assets within federal agencies, against threats? |
-| GAAP | Compliance | Boolean | True, False, N/A | Does this app comply with GAAP, a collection of commonly 
-followed accounting rules and standards for financial reporting? |
+| GAAP | Compliance | Boolean | True, False, N/A | Does this app comply with GAAP, a collection of commonly followed accounting rules and standards for financial reporting? |
 | HIPAA | Compliance | Boolean | True, False, N/A | Does this app comply with HIPAA, the US legislation that sets standards for protecting the confidentiality and security of individually identifiable health information? |
 | ISAE 3402 | Compliance | Boolean | True, False, N/A | Does this app comply with ISAE 3402, the global standard providing assurance that a service organization has appropriate controls in place? |
 | ISO 27001 | Compliance | Boolean | True, False | Is this app ISO 27001 certified, a certificate given to companies upholding internationally recognized guidelines and general principles for initiating, implementing, maintaining, and improving information security management within an organization? |
