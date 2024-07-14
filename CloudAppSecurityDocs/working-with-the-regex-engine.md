@@ -22,6 +22,8 @@ To test regular expressions, you can use the following websites:
 
 - [https://regex101.com/](https://regex101.com/) - Provides detailed analysis of the RegEx.
 
+- [https://extendsclass.com/](https://extendsclass.com/regex-tester.html) - Provides a graphical representation of the RegEx.
+
 ### Limitations of regular expressions in Defender for Cloud Apps
 
 The following limitations are imposed on custom regular expressions:
