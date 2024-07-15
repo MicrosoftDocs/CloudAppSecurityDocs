@@ -27,7 +27,7 @@ Before you start, verify that you satisfy the following prerequisites:
 
 If your organization satisfies the [prerequisites](#prerequisites), go to [Microsoft Defender XDR > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and select **Use app governance**. For example:
 
-:::image type="content" source="media/app-governance-get-started/app-governance-service-status1.png" alt-text="Screenshot of the App governance toggle in Microsoft Defender XDR." lightbox="media/app-governance-get-started/app-governance-service-status1.png":::
+![Screenshot of the App governance toggle in Microsoft Defender XDR.](media/app-governance-get-started/app-governance-service-status2.png)
 
 After you've signed up for app governance, you'll need to wait up to 10 hours to see and use the product.
 
