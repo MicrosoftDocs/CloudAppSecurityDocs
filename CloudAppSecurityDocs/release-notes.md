@@ -20,7 +20,7 @@ For more information on what's new with other Microsoft Defender security produc
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## July 2024
-### In-browser protection 
+### In-browser protection for macOS users and newly supported policies (Preview)
 Edge browser users from macOS, scoped to session policies, are now protected with in-browser protection.
 
 The following session policies are now supported:
