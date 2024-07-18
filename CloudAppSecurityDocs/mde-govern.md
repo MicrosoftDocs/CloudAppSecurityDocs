@@ -58,6 +58,26 @@ Use the following steps to enable access control for cloud apps:
 
     ![Screenshot showing how to enable custom network indicators in Defender for Endpoint.](media/mde-custom-network-indicators.png)
 
+## Educate users when accessing blocked apps & customize the block page
+
+Admins can now configure and embed a support/help URL for block pages. With this configuration, admins can educate users when they access blocked apps. Users are prompted with a custom redirect link to a company page listing apps blocked for use and necessary steps to be followed to secure an exception on block pages. End users will be redirected to this URL that is configured by admin when they click on "Visit the Support page” on the block page.
+
+Defender for Cloud Apps uses the built-in **Unsanctioned** app tag to mark cloud apps as blocked for use. The tag is available on both the Cloud Discovery and Cloud App Catalog pages. By enabling the integration with Defender for Endpoint, you can seamlessly educate users on apps blocked for use and steps to secure an exception with a single click in the Defender for Cloud Apps portal.
+
+Apps marked as **Unsanctioned** are automatically synced to Defender for Endpoint's custom URL indicators, usually within a few minutes. More specifically, the domains used by blocked apps are propagated to endpoint devices to provide a message by Microsoft Defender Antivirus within the Network Protection SLA.
+
+### Setting up the custom redirect URL for the block page
+
+Use the following steps to configure a custom help/support URL pointing to a company web page or a sharepoint link where you can educate employees on why they've been blocked from accessing the application and provide a list of steps to secure an exception or share the corporate access policy to adhere to your organization's risk acceptance.
+
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**.
+1. In the **Alerts**, select the **Notification URL** from the drop down
+2. Under **User Notification** , Select the **Notification URL for blocked apps**
+3. In the **Notification URL** box, enter your URL
+   
+    ![Screenshot showing how to configure notification URL for blocked pages.](media/mde-educate-config-notification-url.png)
+ 
+
 ## Block apps for specific device groups
 
 To block usage for specific device groups, do the following steps:
