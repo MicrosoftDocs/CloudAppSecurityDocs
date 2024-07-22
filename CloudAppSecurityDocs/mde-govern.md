@@ -49,7 +49,7 @@ Use the following steps to enable access control for cloud apps:
 
     ![Screenshot showing how to enable blocking with Defender for Endpoint.](media/mde-integration.png)
    
-       > [!NOTE]
+    > [!NOTE]
     > It can take up to 30 minutes for this setting to take effect.
 
 1. In Microsoft Defender XDR, go to **Settings** > **Endpoints** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/microsoft-365/security/defender-endpoint/indicator-ip-domain).
@@ -72,10 +72,10 @@ Use the following steps to configure a custom help/support URL pointing to a com
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**.
 1. In the **Alerts**, select the **Notification URL** from the drop down
-2. Under **User Notification** , Select the **Notification URL for blocked apps**
-1. In the **Notification URL** box, enter your URL![Image showing configuration of adding custom URL for blocked apps.](media/mde-govern/screenshot-2024-07-22-131556.png)
+1. Under **User Notification** , Select the **Notification URL for blocked apps**
+1. In the **Notification URL** box, enter your URL:
 
-
+  ![Image showing configuration of adding custom URL for blocked apps.](media/mde-govern/screenshot-2024-07-22-131556.png)
 
 ## Block apps for specific device groups
 
@@ -113,7 +113,7 @@ To block an app, do the following steps:
 
     ![Choose a profile to unsanction an app with.](media/choosing-unsanctioned-app-profile.png)
    
-       The **Tag as unsanctioned?** dialog appears only when your tenant has cloud app blocking with Defender for Endpoint enabled and if you have admin access to make changes.
+    The **Tag as unsanctioned?** dialog appears only when your tenant has cloud app blocking with Defender for Endpoint enabled and if you have admin access to make changes.
 
 > [!NOTE]
 >
