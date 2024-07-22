@@ -49,7 +49,7 @@ Use the following steps to enable access control for cloud apps:
 
     ![Screenshot showing how to enable blocking with Defender for Endpoint.](media/mde-integration.png)
    
-       > [!NOTE]
+    > [!NOTE]
     > It can take up to 30 minutes for this setting to take effect.
 
 1. In Microsoft Defender XDR, go to **Settings** > **Endpoints** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/microsoft-365/security/defender-endpoint/indicator-ip-domain).
@@ -116,7 +116,7 @@ To block an app, do the following steps:
 
     ![Choose a profile to unsanction an app with.](media/choosing-unsanctioned-app-profile.png)
    
-       The **Tag as unsanctioned?** dialog appears only when your tenant has cloud app blocking with Defender for Endpoint enabled and if you have admin access to make changes.
+    The **Tag as unsanctioned?** dialog appears only when your tenant has cloud app blocking with Defender for Endpoint enabled and if you have admin access to make changes.
 
 > [!NOTE]
 >
