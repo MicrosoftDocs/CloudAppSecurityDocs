@@ -73,9 +73,9 @@ Use the following steps to configure a custom help/support URL pointing to a com
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**.
 1. In the **Alerts**, select the **Notification URL** from the drop down
 2. Under **User Notification** , Select the **Notification URL for blocked apps**
-1. In the **Notification URL** box, enter your URL
+1. In the **Notification URL** box, enter your URL![Image showing configuration of adding custom URL for blocked apps.](media/mde-govern/screenshot-2024-07-22-131556.png)
 
-![Screenshot 2024-07-22 131556](media/mde-govern/screenshot-2024-07-22-131556.png)
+
 
 ## Block apps for specific device groups
 
