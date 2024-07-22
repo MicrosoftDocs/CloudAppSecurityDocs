@@ -35,6 +35,10 @@ The following articles provide sample processes for configuring a non-Microsoft 
 - [Active Directory Federation Services (AD FS) as your IdP](proxy-idp-adfs.md)
 - [Okta as your IdP](proxy-idp-okta.md)
 
+## Prerequisites: 
+1. Ensure your firewall configurations allow traffic from all the IP addresses listed [here](https://learn.microsoft.com/en-us/defender-cloud-apps/network-requirements)
+1. Confirm that your application possesses a complete certificate chain. Incomplete or partial certificate chains may lead to unexpected behavior in applications when monitored with Conditional Access app control policies.
+
 ## Create a Microsoft Entra ID Conditional Access policy
 
 In order for your access or session policy to work, you must also have Microsoft Entra ID Conditional Access policy, which creates the permissions to control traffic.
