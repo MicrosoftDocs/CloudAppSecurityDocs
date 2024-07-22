@@ -1,7 +1,7 @@
 ---
 title: Govern discovered apps using Microsoft Defender for Endpoint
 description: This article describes how to govern Microsoft Defender for Endpoint discovered apps.
-ms.date: 05/20/2024
+ms.date: 07/22/2024
 ms.topic: how-to
 ---
 
@@ -70,12 +70,11 @@ Apps marked as **Unsanctioned** are automatically synced to Defender for Endpoin
 
 Use the following steps to configure a custom help/support URL pointing to a company web page or a sharepoint link where you can educate employees on why they've been blocked from accessing the application and provide a list of steps to secure an exception or share the corporate access policy to adhere to your organization's risk acceptance.
 
-1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**.
-1. In the **Alerts**, select the **Notification URL** from the drop down
-1. Under **User Notification** , Select the **Notification URL for blocked apps**
-1. In the **Notification URL** box, enter your URL:
+1. In the Microsoft Defender portal, select **Settings** > **Cloud Apps** > **Cloud Discovery** > **Microsoft Defender for Endpoint**.
+1. In the **Alerts** dropdown, select **Informational**.
+1. Under **User warnings** > **Notification URL for blocked apps**, enter your URL. For example:
 
-  ![Image showing configuration of adding custom URL for blocked apps.](media/mde-govern/screenshot-2024-07-22-131556.png)
+![Image showing configuration of adding custom URL for blocked apps.](media/mde-govern/mda-custom-block-url-config.png)
 
 ## Block apps for specific device groups
 
