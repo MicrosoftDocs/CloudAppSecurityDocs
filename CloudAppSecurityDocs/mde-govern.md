@@ -74,7 +74,7 @@ Use the following steps to configure a custom help/support URL pointing to a com
 1. In the **Alerts** dropdown, select **Informational**.
 1. Under **User warnings** > **Notification URL for blocked apps**, enter your URL. For example:
 
-![Image showing configuration of adding custom URL for blocked apps.](media/mde-govern/mda-custom-block-url-config.png)
+[ ![Screenshot showing configuration of adding custom URL for blocked apps.](media/mde-govern/mda-custom-block-url-config.png) ](media/mde-govern/mda-custom-block-url-config.png#lightbox)
 
 ## Block apps for specific device groups
 
