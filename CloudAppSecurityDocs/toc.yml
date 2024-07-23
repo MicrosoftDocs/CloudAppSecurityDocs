@@ -297,8 +297,6 @@ items:
         - name: Content inspection
           href: content-inspection.md
           items:
-          - name: Built-in content inspection
-            href: content-inspection-built-in.md
           - name: Data Classification Service integration
             href: dcs-inspection.md
           - name: Working with the RegEx engine
