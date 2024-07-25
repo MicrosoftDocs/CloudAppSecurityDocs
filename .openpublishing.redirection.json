@@ -1,6 +1,16 @@
 {
     "redirections": [
     {
+      "source_path": "CloudAppSecurityDocs/webinars.md",
+      "redirect_url": "/defender-cloud-apps/what-is-defender-for-cloud-apps",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "CloudAppSecurityDocs/app-governance-whats-new.md",
+      "redirect_url": "/previous-versions/defender-cloud-apps/release-note-archive",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "CloudAppSecurityDocs/content-inspection-built-in.md",
       "redirect_url": "/previous-versions/defender-cloud-apps/dcs-inspection",
       "redirect_document_id": false
