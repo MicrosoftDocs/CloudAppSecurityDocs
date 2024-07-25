@@ -40,11 +40,11 @@ The following session policies are now supported:
 - Block and Monitor of malware upload
 - Block and Monitor of malware download
 
-See [In-browser protection](https://learn.microsoft.com/defender-cloud-apps/in-browser-protection)
+See [In-browser protection](in-browser-protection.md).
 
   In-browser protection is supported with the last 2 stable versions of Edge (for example, if the newest Edge is 126, in-browser protection works for v126 and v125). 
 
-See [Microsoft Edge releases](https://learn.microsoft.com/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases)
+See [Microsoft Edge releases](/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases).
 
 ## June 2024
 
