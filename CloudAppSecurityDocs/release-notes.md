@@ -20,6 +20,17 @@ For more information on what's new with other Microsoft Defender security produc
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## July 2024
+### Configure and embed a custom support URL in Block pages (Preview)
+
+Customize the Microsoft Defender for Cloud Apps(MDA) block experience for apps that are blocked using Cloud Discovery.
+
+You can set up a custom redirect URL on block pages 
+- To educate and redirect end users to organization acceptable use policy 
+- To guide end users on steps to follow to secure an exception for block
+
+For more information, see  [Configure custom URL for MDA block pages](https://learn.microsoft.com/en-us/defender-cloud-apps/mde-govern#educate-users-when-accessing-blocked-apps--customize-the-block-page)
+
+
 ### In-browser protection for macOS users and newly supported policies (Preview)
 Edge browser users from macOS, scoped to session policies, are now protected with in-browser protection.
 
