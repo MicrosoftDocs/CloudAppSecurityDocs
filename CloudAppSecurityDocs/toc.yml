@@ -94,10 +94,8 @@ items:
       href: custom-log-parser.md
   - name: Enrich cloud discovery
     href: cloud-discovery-aad-enrichment.md
-  - name: Working with discovered apps *
+  - name: Cloud discovery dashboard
     href: discovered-apps.md
-  - name: Working with the app page *
-    href: working-with-app-page.md
   - name: Find your cloud app and calculate risk scores
     href: risk-score.md
   - name: Anonymize cloud discovery data
@@ -106,6 +104,8 @@ items:
     href: cloud-discovery-custom-apps.md
   - name: Filter and query discovered apps
     href: discovered-app-queries.md
+  - name: View app details
+    href: working-with-app-page.md
   - name: Attest your app
     href: attest-your-app.md
   - name: Troubleshooting cloud discovery
