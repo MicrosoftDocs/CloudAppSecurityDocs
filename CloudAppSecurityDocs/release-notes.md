@@ -21,6 +21,17 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## July 2024
 
+### Configure and embed a custom support URL in Block pages (Preview)
+
+Customize the Microsoft Defender for Cloud Apps(MDA) block experience for apps that are blocked using Cloud Discovery.
+
+You can set up a custom redirect URL on block pages 
+- To educate and redirect end users to organization acceptable use policy 
+- To guide end users on steps to follow to secure an exception for block
+
+For more information, see  [Configure custom URL for MDA block pages](mde-govern.md#educate-users-when-accessing-blocked-apps--customize-the-block-page)
+
+
 ### In-browser protection for macOS users and newly supported policies (Preview)
 
 Edge browser users from macOS, scoped to session policies, are now protected with in-browser protection.
@@ -32,11 +43,11 @@ The following session policies are now supported:
 - Block and Monitor of malware upload
 - Block and Monitor of malware download
 
-See [In-browser protection](https://learn.microsoft.com/defender-cloud-apps/in-browser-protection)
+See [In-browser protection](in-browser-protection.md).
 
   In-browser protection is supported with the last 2 stable versions of Edge (for example, if the newest Edge is 126, in-browser protection works for v126 and v125). 
 
-See [Microsoft Edge releases](https://learn.microsoft.com/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases)
+See [Microsoft Edge releases](/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases).
 
 ## June 2024
 
