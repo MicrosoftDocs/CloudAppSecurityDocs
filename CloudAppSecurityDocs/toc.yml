@@ -338,7 +338,8 @@ items:
     href: tutorial-flow.md
 - name: App governance
   items:
-  - name: Protect and govern your apps
+  - name: Overview
+    displayName: app governance
     href: app-governance-manage-app-governance.md
   - name: Turn on app governance
     href: app-governance-get-started.md
