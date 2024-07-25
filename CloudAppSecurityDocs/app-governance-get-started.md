@@ -21,13 +21,13 @@ Before you start, verify that you satisfy the following prerequisites:
 
 - You must have [one of the appropriate roles](#roles) to turn on app governance and access it.
 
-- Your organization's billing address must be in a region **other than** Brazil, Singapore ,Latin America, South Korea, Switzerland, Norway, South Africa, Sweden or United Arab Emirates.
+- Your organization's billing address must be in a region **other than** Brazil, Singapore, Latin America, South Korea, Switzerland, Norway, South Africa, Sweden or United Arab Emirates.
 
 ## Turn on app governance
 
 If your organization satisfies the [prerequisites](#prerequisites), go to [Microsoft Defender XDR > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and select **Use app governance**. For example:
 
-:::image type="content" source="media/app-governance-get-started/app-governance-service-status1.png" alt-text="Screenshot of the App governance toggle in Microsoft Defender XDR." lightbox="media/app-governance-get-started/app-governance-service-status1.png":::
+:::image type="content" source="media/app-governance-get-started/app-governance-service-status2.png" alt-text="Screenshot of the App governance toggle in Microsoft Defender XDR." lightbox="media/app-governance-get-started/app-governance-service-status2.png":::
 
 After you've signed up for app governance, you'll need to wait up to 10 hours to see and use the product.
 
