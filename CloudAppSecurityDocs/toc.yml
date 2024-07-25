@@ -55,42 +55,6 @@ items:
     href: activity-privacy.md
   - name: IP tags and ranges
     href: ip-tags.md
-
-- name: Tutorials
-  items:
-  - name: Discover and manage shadow IT
-    href: tutorial-shadow-it.md
-  - name: Detect suspicious user activity with UEBA
-    href: tutorial-suspicious-activity.md
-  - name: Investigate risky users
-    href: tutorial-ueba.md
-  - name: Investigate risky OAuth apps
-    href: investigate-risky-oauth.md
-  - name: Discover and protect sensitive information
-    href: tutorial-dlp.md
-  - name: Protect any app in your organization in real time
-    href: tutorial-proxy.md
-  - name: Block downloads of sensitive information
-    href: use-case-proxy-block-session-aad.md
-  - name: Protecting your files with admin quarantine
-    href: use-case-admin-quarantine.md
-  - name: Apply Microsoft Information Protection labels automatically
-    href: use-case-information-protection.md
-  - name: Extend governance to endpoint remediation
-    href: tutorial-flow.md
-  - name: Require step-up authentication upon risky action
-    href: tutorial-step-up-authentication.md
-
-
-- name: Concepts
-  items:
-  - name: Working with the app page
-    href: working-with-app-page.md
-  - name: Working with discovered apps
-    href: discovered-apps.md
-  - name: Conditional Access app control
-    href: proxy-intro-aad.md
-    displayName: Conditional Access app control, Conditional Access, Conditional Access policies
 - name: Discover cloud apps
   items:
   - name: Set up cloud discovery
@@ -132,6 +96,10 @@ items:
       href: custom-log-parser.md
   - name: Enrich cloud discovery
     href: cloud-discovery-aad-enrichment.md
+  - name: Working with discovered apps *
+    href: discovered-apps.md
+  - name: Working with the app page *
+    href: working-with-app-page.md
   - name: Find your cloud app and calculate risk scores
     href: risk-score.md
   - name: Anonymize cloud discovery data
@@ -222,13 +190,21 @@ items:
   - name: Accounts
     href: accounts.md
   - name: OAuth apps
-    href: manage-app-permissions.md
+    items:
+    - name: Manage OAuth apps
+      href: manage-app-permissions.md
+    - name: Investigate OAuth apps
+      href: investigate-risky-oauth.md
   - name: Security configuration for SaaS applications
     href: security-saas.md
   - name: Investigate anomaly detection alerts
     href: investigate-anomaly-alerts.md
   - name: Investigate app governance threat detection alerts
     href: app-governance-anomaly-detection-alerts.md
+  - name: Investigate risky users
+    href: tutorial-ueba.md
+  - name: Detect suspicious user activity with UEBA
+    href: tutorial-suspicious-activity.md
 - name: Control cloud apps with policies
   items:
   - name: Overview
@@ -255,12 +231,20 @@ items:
         href: dcs-inspection.md
       - name: Working with the RegEx engine
         href: working-with-the-regex-engine.md
+      - name: Discover and protect sensitive information
+        href: tutorial-dlp.md
       - name: Troubleshooting content inspection
         href: troubleshooting-content-inspection.md
+    - name: Apply Microsoft Information Protection labels automatically
+      href: use-case-information-protection.md
+
   - name: Conditional access policies
     items:
     - name: Overview
-      displayName: Conditional Access app control, caac
+      href: proxy-intro-aad.md
+      displayName: conditional access app control, conditional access, conditional access policies
+    - name: Recommended usage flow
+      displayName: Conditional access app control, caac
       href: conditional-access-app-control-how-to-overview.md
     - name: Create access policies
       displayName: Conditional Access app control, caac
@@ -287,6 +271,14 @@ items:
         href: proxy-idp-adfs.md
       - name: Sample - Deploy Okta apps
         href: proxy-idp-okta.md
+    - name: Common use cases
+      items:
+      - name: Protect any app in your organization in real time
+        href: tutorial-proxy.md
+      - name: Block downloads of sensitive information
+        href: use-case-proxy-block-session-aad.md
+      - name: Require step-up authentication upon risky action
+        href: tutorial-step-up-authentication.md
     - name: Known limitations
       href: caac-known-issues.md
       displayName: Conditional Access app control, caac
@@ -306,6 +298,8 @@ items:
       href: cloud-discovery-policies.md
     - name: Cloud Discovery anomaly detection policy
       href: cloud-discovery-anomaly-detection-policy.md
+    - name: Discover and manage shadow IT
+      href: tutorial-shadow-it.md
   - name: Policy templates
     href: policy-template-reference.md
   - name: Common policies
@@ -316,9 +310,10 @@ items:
       href: policies-threat-protection.md
     - name: Common information protection policies
       href: policies-information-protection.md
+  - name: Protecting your files with admin quarantine
+    href: use-case-admin-quarantine.md
   - name: Troubleshooting policies
     href: troubleshoot-policies.md
-
 - name: Govern connected cloud apps
   items:
   - name: Governance actions
@@ -341,6 +336,62 @@ items:
       href: troubleshooting-siem.md
   - name: Automate processes using Microsoft Power Automate
     href: flow-integration.md
+  - name: Extend governance to endpoint remediation
+    href: tutorial-flow.md
+- name: App governance
+  items:
+  - name: Protect and govern your apps
+    href: app-governance-manage-app-governance.md
+  - name: Turn on app governance
+    href: app-governance-get-started.md
+  - name: Get started with app governance
+    href: app-governance-trial-user-guide.md
+  - name: App governance FAQ
+    href: app-governance-faq.yml
+  - name: Get visibility and insights
+    items:
+    - name: Learn about visibility and insights
+      href: app-governance-visibility-insights-overview.md
+    - name: Get started
+      href: app-governance-visibility-insights-get-started.md
+    - name: View your apps
+      href: app-governance-visibility-insights-view-apps.md
+    - name: Determine compliance posture
+      href: app-governance-visibility-insights-compliance-posture.md
+    - name: Sensitive content
+      href: app-governance-visibility-insights-sensitive-content.md
+  - name: Implement app policies
+    items:
+    - name: Learn about app policies
+      href: app-governance-app-policies-overview.md
+    - name: Get started
+      href: app-governance-app-policies-get-started.md
+    - name: Predefined app policies
+      href: app-governance-predefined-policies.md
+    - name: Create app policies
+      href: app-governance-app-policies-create.md
+    - name: Manage app policies
+      href: app-governance-app-policies-manage.md
+    - name: Investigate predefined app policy alerts
+      href: app-governance-investigate-predefined-policies.md
+  - name: Detect and remediate app threats
+    items:
+    - name: Learn about detection and remediation
+      href: app-governance-detect-remediate-overview.md
+    - name: Get started
+      href: app-governance-detect-remediate-get-started.md
+    - name: Monitor and respond to apps with unusual data usage
+      href: app-governance-monitor-apps-unusual-data-usage.md
+    - name: Remediate app threats
+      href: app-governance-manage-alerts.md
+  - name: Secure apps and other assets
+    items:
+    - name: Secure apps accessing non-Graph APIs
+      href: app-governance-secure-apps-access-non-graph-api.md
+    - name: Secure apps with app hygiene features
+      href: app-governance-secure-apps-app-hygiene-features.md
+    - name: Hunt for threats in app activities
+      href: app-activity-threat-hunting.md
 - name: Operations guide
   items:
   - name: Operations guide overview
@@ -448,7 +499,7 @@ items:
 
 - name: Resources
   items:
-  - name: Watch our webinars
+  - name: Watch our webinars *
     href: webinars.md
   - name: Release note archive
     href: release-note-archive.md
@@ -470,3 +521,11 @@ items:
     href: /defender-for-identity/
   - name: Microsoft Defender Vulnerability Management
     href: /microsoft-365/security/defender-vulnerability-management/
+
+
+
+  - name: Manage app governance
+    
+    - name: What's new archive for app governance
+      href: app-governance-whats-new.md
+
