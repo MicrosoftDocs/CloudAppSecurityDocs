@@ -510,6 +510,26 @@ The Conditional Access proxy is used again in your next session.
 
 For more information, see [Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
 
+### Second sign-in (also known as 'second login')
+
+Some applications have more than one deep link to sign in. Unless you define the sign-in links in the app settings, users might be redirected to an unrecognized page when they sign in, blocking their access.
+
+The integration between IdPs such as Microsoft Entra ID is based on intercepting an app sign-in and redirecting it. This means that browser sign-ins can't be controlled directly without triggering a second sign-in. To trigger a second sign-in, we need to employ a second sign-in URL specifically for that purpose.
+
+If the app uses a nonce, the second sign-in might be transparent to users, or they are prompted to sign-in again.
+
+If it isn't transparent to the end user, add the second sign-in URL to the app settings:
+
+Go to 'settings''Cloud apps''connected apps''Conditional Access App Control Apps'
+
+Select the relevant app and then select the three dots.
+
+Select **Edit app\Advanced login configuration**.
+
+Add the second sign-in URL as mentioned in the error page.
+
+If you're confident the app doesn't use a nonce, you can disable this by editing the apps settings as described in [Slow sign-ins](/defender-cloud-apps/troubleshooting-proxy).
+
 ### Record a session
 
 You may want to help the root cause analysis of a problem by sending a session recording to Microsoft support engineers. Use the **Admin View** toolbar to record your session.
