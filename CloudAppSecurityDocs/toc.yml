@@ -9,8 +9,6 @@ items:
     href: release-notes.md
   - name: Defender for Cloud Apps data security and privacy
     href: cas-compliance-trust.md
-  - name: Lifecycle management *
-    href: lifecycle-management.md
   - name: Preview features
     href: /microsoft-365/security/defender/preview?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/bread/toc.json
   - name: Compare
@@ -404,6 +402,8 @@ items:
     href: ops-guide/ops-guide-monthly.md
   - name: Ad-hoc activities
     href: ops-guide/ops-guide-ad-hoc.md
+  - name: Lifecycle management
+    href: lifecycle-management.md
 - name: REST API
   items:
   - name: Introduction
@@ -496,10 +496,9 @@ items:
         href: api-files-list.md
       - name: Fetch File
         href: api-files-fetch.md
-
 - name: Resources
   items:
-  - name: Watch our webinars *
+  - name: Watch our webinars
     href: webinars.md
   - name: Release note archive
     href: release-note-archive.md
@@ -521,11 +520,3 @@ items:
     href: /defender-for-identity/
   - name: Microsoft Defender Vulnerability Management
     href: /microsoft-365/security/defender-vulnerability-management/
-
-
-
-  - name: Manage app governance
-    
-    - name: What's new archive for app governance
-      href: app-governance-whats-new.md
-
