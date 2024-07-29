@@ -84,7 +84,7 @@ To use pre-onboarded apps with Defender for Cloud Apps, you must route the app t
 
 Follow these steps to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
 
-1. **[Configure your Entra ID to work with Defender for Cloud Apps](#step-1-configure-azure-ad-to-work-with-defender-for-cloud-apps)**
+1. **[Configure your Entra ID to work with Defender for Cloud Apps](#step-1-configure-entra-id-to-work-with-defender-for-cloud-apps)**
 
 1. **[Configure the app that you are deploying](#conf-app)**
 
