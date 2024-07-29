@@ -18,7 +18,6 @@ ms.date:     07/23/2024
 
 Session controls in Microsoft Defender for Cloud Apps can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps hosted via the Entra ID Application Proxy with session controls. It provides steps to create an Entra ID Conditional Access policy that routes app sessions to Defender for Cloud Apps. For other IdP solutions, see [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](proxy-deployment-any-app-idp.md).
 
-For a list of apps that are featured by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#pre-onboarded-apps).
 
 ## Prerequisites
 
@@ -46,6 +45,41 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
     |---|---|
     |Entra ID|SAML 2.0 or OpenID Connect|
   
+ ### Check for pre-onboarded apps
+  
+ Before you onboard your apps, make sure that it's not included in the following list of pre-onboarded apps for both access and session controls:
+  
+- AWS
+- Box
+- Concur
+- CornerStone on Demand
+- DocuSign
+- Dropbox
+- Egnyte
+- GitHub
+- Google Workspace
+- HighQ
+- JIRA/Confluence
+- LinkedIn Learning
+- Microsoft Azure DevOps (Visual Studio Team Services)
+- Microsoft Azure portal
+- Microsoft Dynamics 365 CRM
+- Microsoft Exchange Online
+- Microsoft OneDrive for Business
+- Microsoft Power BI
+- Microsoft SharePoint Online
+- Microsoft Teams
+- Microsoft Yammer
+- Salesforce
+- ServiceNow
+- Slack
+- Tableau
+- Workday
+- Workiva
+- Workplace by Facebook
+
+To use pre-onboarded apps with Defender for Cloud Apps, you must route the app to access and session controls and perform an initial sign-in.
+
 ## To deploy any app
 
 Follow these steps to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
