@@ -317,22 +317,26 @@ items:
         - name: Configure policies for identity-managed devices
           displayName: Conditional Access app control, caac
           href: conditional-access-app-control-identity.md
-        - name: Use in-browser protection (Microsoft Edge for Business)
-          href: in-browser-protection.md
-        - name: Deploy catalog and custom apps with a non-Microsoft IdP
+        - name: Manual onboarding
           items:
-          - name: Deploy for non-Microsoft IdP catalog apps 
-            displayName: Conditional Access app control, caac
-            href: proxy-deployment-featured-idp.md
-          - name: Deploy for non-Microsoft IdP custom apps
-            displayName: Conditional Access app control, caac
-            href: proxy-deployment-any-app-idp.md
-          - name: Sample - Deploy PingOne apps
-            href: proxy-idp-pingone.md
-          - name: Sample - Deploy AD FS apps
-            href: proxy-idp-adfs.md
-          - name: Sample - Deploy Okta apps
-            href: proxy-idp-okta.md
+          - name: Manual onboarding for Microsoft IdP
+            href: appsmanualonboardingwithentraid.md
+          - name: Deploy catalog and custom apps with a non-Microsoft IdP
+            items:
+            - name: Deploy for non-Microsoft IdP catalog apps 
+              displayName: Conditional Access app control, caac
+              href: proxy-deployment-featured-idp.md
+            - name: Deploy for non-Microsoft IdP custom apps
+              displayName: Conditional Access app control, caac
+              href: proxy-deployment-any-app-idp.md
+            - name: Sample - Deploy PingOne apps
+              href: proxy-idp-pingone.md
+            - name: Sample - Deploy AD FS apps
+              href: proxy-idp-adfs.md
+            - name: Sample - Deploy Okta apps
+              href: proxy-idp-okta.md     
+        - name: Use in-browser protection (Microsoft Edge for Business)
+          href: in-browser-protection.md        
         - name: Known limitations
           href: caac-known-issues.md
           displayName: Conditional Access app control, caac
