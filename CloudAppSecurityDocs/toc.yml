@@ -53,20 +53,6 @@ items:
     href: activity-privacy.md
   - name: IP tags and ranges
     href: ip-tags.md
-- name: Operations guide
-  items:
-  - name: Operations guide overview
-    href: ops-guide/ops-guide.md
-  - name: Daily activities
-    href: ops-guide/ops-guide-daily.md
-  - name: Weekly activities
-    href: ops-guide/ops-guide-weekly.md
-  - name: Monthly activities
-    href: ops-guide/ops-guide-monthly.md
-  - name: Ad-hoc activities
-    href: ops-guide/ops-guide-ad-hoc.md
-  - name: Lifecycle management
-    href: lifecycle-management.md
 - name: Discover cloud apps
   items:
   - name: Set up cloud discovery
@@ -404,6 +390,20 @@ items:
       href: app-governance-secure-apps-app-hygiene-features.md
     - name: Hunt for threats in app activities
       href: app-activity-threat-hunting.md
+- name: Operations guide
+  items:
+  - name: Operations guide overview
+    href: ops-guide/ops-guide.md
+  - name: Daily activities
+    href: ops-guide/ops-guide-daily.md
+  - name: Weekly activities
+    href: ops-guide/ops-guide-weekly.md
+  - name: Monthly activities
+    href: ops-guide/ops-guide-monthly.md
+  - name: Ad-hoc activities
+    href: ops-guide/ops-guide-ad-hoc.md
+  - name: Lifecycle management
+    href: lifecycle-management.md
 - name: REST API
   items:
   - name: Introduction
