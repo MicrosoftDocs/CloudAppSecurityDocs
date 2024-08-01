@@ -53,6 +53,8 @@ items:
     href: activity-privacy.md
   - name: IP tags and ranges
     href: ip-tags.md
+  - name: Security configuration for SaaS applications
+    href: security-saas.md
 - name: Discover cloud apps
   items:
   - name: Set up cloud discovery
@@ -193,12 +195,8 @@ items:
       href: manage-app-permissions.md
     - name: Investigate OAuth apps
       href: investigate-risky-oauth.md
-  - name: Security configuration for SaaS applications
-    href: security-saas.md
   - name: Investigate anomaly detection alerts
     href: investigate-anomaly-alerts.md
-  - name: Investigate app governance threat detection alerts
-    href: app-governance-anomaly-detection-alerts.md
   - name: Investigate risky users
     href: tutorial-ueba.md
   - name: Detect suspicious user activity with UEBA
@@ -301,7 +299,7 @@ items:
     href: policy-template-reference.md
   - name: Common policies
     items:
-    - name: Cpmmon cloud discovery policies
+    - name: Common cloud discovery policies
       href: policies-cloud-discovery.md
     - name: Common threat protection policies
       href: policies-threat-protection.md
@@ -344,8 +342,8 @@ items:
     href: app-governance-get-started.md
   - name: Get started with app governance
     href: app-governance-trial-user-guide.md
-  - name: App governance FAQ
-    href: app-governance-faq.yml
+  - name: Investigate app governance threat detection alerts
+    href: app-governance-anomaly-detection-alerts.md
   - name: Get visibility and insights
     items:
     - name: Learn about visibility and insights
@@ -390,6 +388,8 @@ items:
       href: app-governance-secure-apps-app-hygiene-features.md
     - name: Hunt for threats in app activities
       href: app-activity-threat-hunting.md
+  - name: App governance FAQ
+    href: app-governance-faq.yml
 - name: Operations guide
   items:
   - name: Operations guide overview

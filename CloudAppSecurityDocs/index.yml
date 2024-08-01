@@ -27,18 +27,16 @@ landingContent:
         links:
           - text: What is Defender for Cloud Apps?
             url: ./what-is-defender-for-cloud-apps.md
-          - text: Top SaaS app use cases
-            url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW11pbJ
-          - text: SaaS Security
-            url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10AbW
+          - text: Defender for Cloud Apps and zero trust monitoring
+            url: zero-trust.md
       - linkListType: whats-new
         links:
-          - text: Releases
+          - text: What's new in Defender for Cloud Apps
             url: release-notes.md
-      - linkListType: video
+      - linkListType: concept
         links:
-          - text: Deployment videos
-            url: https://go.microsoft.com/fwlink/?linkid=2110166
+          - text: Best practices for protecting your organizations
+            url: best-practices.md
 
   # Card (optional)
   - title: Get started
@@ -47,127 +45,100 @@ landingContent:
         links:
           - text: Get started with Defender for Cloud Apps
             url: ./get-started.md
-      - linkListType: reference
-        links:
-          - text: Using the Defender for Cloud Apps REST API
-            url: api-introduction.md
-          - text: Investigate anomaly detection alerts
-            url: investigate-anomaly-alerts.md
-
-  # Card
-  - title: Explore our top use cases
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Detect and manage suspicious activities
-            url: tutorial-suspicious-activity.md
-          - text: Investigate risky users
-            url: tutorial-ueba.md
-          - text: Investigate risky OAuth apps
-            url: investigate-risky-oauth.md
-          - text: Protect any app in your organization in real time
-            url: tutorial-proxy.md
-          - text: Block download of sensitive information
-            url: use-case-proxy-block-session-aad.md
-          - text: Protect files with admin quarantine
-            url: use-case-admin-quarantine.md
-          - text: Apply sensitivity labels from Microsoft Purview Information Protection
-            url: use-case-information-protection.md
-          - text: Extend governance to endpoint remediation
-            url: tutorial-flow.md
-
-  # Card
-  - title: Concepts
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Protect apps with Conditional Access App Control
-            url: proxy-intro-aad.md
-          - text: Working with the dashboard
-            url: daily-activities-to-protect-your-cloud-environment.md
-          - text: Working with App risk scores
-            url: risk-score.md
-          - text: Working with discovered apps
-            url: discovered-apps.md
-          - text: Protect connected apps
-            url: protect-connected-apps.md
-          - text: Manage app governance
-            url: app-governance-manage-app-governance.md
-
-  # Card
-  - title: Best practices
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Discover and assess cloud apps
-            url: best-practices.md#discover-and-assess-cloud-apps
-          - text: Apply cloud governance policies
-            url: best-practices.md#apply-cloud-governance-policies
-          - text: Limit exposure of shared data and enforce collaboration policies
-            url: best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies
-          - text: Discover, classify, label, and protect regulated and sensitive data stored in the cloud
-            url: best-practices.md#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud
-          - text: Enforce DLP and compliance policies for data stored in the cloud
-            url: best-practices.md#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud
-          - text: Block and protect download of sensitive data to unmanaged or risky devices
-            url: best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices
-          - text: Secure collaboration with external users by enforcing real-time session controls
-            url: best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls
-          - text: Detect cloud threats, compromised accounts, malicious insiders, and ransomware
-            url: best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware
-          - text: Use the audit trail of activities for forensic investigations
-            url: best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations
-          - text: Secure IaaS services and custom apps
-            url: best-practices.md#secure-iaas-services-and-custom-apps
-
-  # Card
-  - title: Discover and control Shadow IT
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Discover and identify Shadow IT
-            url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
-          - text: Evaluate and analyze
-            url: tutorial-shadow-it.md#phase-2-evaluate-and-analyze
-          - text: Manage your apps
-            url: tutorial-shadow-it.md#phase-3-manage-your-apps
-      - linkListType: concept
-        links:
-          - text: Working with the dashboard
-            url: daily-activities-to-protect-your-cloud-environment.md
-          - text: Working with the discovered apps
-            url: discovered-apps.md
-          - text: Working with App risk scores
-            url: risk-score.md
-      - linkListType: deploy
-        links:
-          - text: Deploy Cloud Discovery
-            url: set-up-cloud-discovery.md
       - linkListType: how-to-guide
         links:
-          - text: Integrate with Microsoft Defender for Endpoint
-            url: mde-integration.md
-          - text: Cloud Discovery enrichment
-            url: cloud-discovery-aad-enrichment.md
-      - linkListType: reference
+          - text: Basic set up
+            url: general-setup.md
+      - linkListType: concept
         links:
-          - text: Discover and assess cloud apps
-            url: best-practices.md#discover-and-assess-cloud-apps
-      - linkListType: video
-        links:
-          - text: Shadow IT discovery beyond the corporate network
-            url: https://www.youtube.com/watch?v=f8hbvbY1Hnc
+          - text: Operations guide
+            url: ops-guide/ops-guide.md
+          - text: App governance for OAuth apps
+            url: app-governance-manage-app-governance.md
 
-  # Card
-  - title: Additional resources
+  # Card (optional)
+  - title: Discover and connect cloud apps
     linkLists:
-      - linkListType: learn
+      - linkListType: concept
         links:
-          - text: Read our e-books
-            url: e-books.md
-          - text: Explore Microsoft 365, a complete solution that includes Defender for Cloud Apps
-            url: /microsoft-365/
-      - linkListType: video
+          - text: Cloud discovery overview
+            url: discovered-apps.md
+          - text: API app connectors
+            url: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+      - linkListType: how-to-guide
         links:
-          - text: Watch our webinars
-            url: webinars.md
+          - text: Set up cloud discovery
+            url: set-up-cloud-discovery.md
+          - text: Enrich cloud discovery
+            url: cloud-discovery-aad-enrichment.md
+          - text: Calculate risk scores
+            url: risk-score.md
+          - text: Troubleshoot cloud discovery
+            url: troubleshooting-cloud-discovery.md
+
+
+  # Card (optional)
+  - title: Investigate and respond
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About cloud app investigations
+            url: investigate.md
+      - linkListType: how-to-guide
+        links:
+          - text: Investigate behaviors by hunting
+            url: behaviors.md
+          - text: Investigate activities
+            url: activity-filters.md
+          - text: Investigate apps discovered by Microsoft Defender for Endpoint
+            url: mde-investigation.md
+          - text: Investigate and remediate risky OAuth apps
+            url: investigate-risky-oauth.md
+          - text: Investigate anomaly detection alerts
+            url: investigate-anomaly-alerts.md
+          - text: Investigate risky users
+            url: tutorial-ueba.md
+
+  # Card (optional)
+  - title: Control cloud apps with policies
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About cloud app control policies
+            url: control-cloud-apps-with-policies
+          - text: Activity policies
+            url: user-activity-policies.md
+          - text: Anomaly detection policies
+            url: anomaly-detection-policy.md
+          - text: OAuth policies
+            url: app-permission-policy.md
+          - text: File policies
+            url: data-protection-policies.md
+          - text: Content inspection policies
+            url: content-inspection.md
+          - text: Conditional access app control policies
+            url: proxy-intro-aad.md
+          - text: Shadow IT discovery policies
+            url: cloud-discovery-policies.md
+          - text: Cloud discovery anomaly detection policy
+            url: cloud-discovery-anomaly-detection-policy.md
+
+  # Card (optional)
+  - title: Govern connected apps
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Governance actions
+            url: governance-actions.md
+      - linkListType: how-to-guide
+        links:
+          - text: Govern apps discovered with Microsoft Defender for Endpoint
+            url: mde-govern.md
+          - text: Integrate with Microsoft Purview
+            url: azip-integration.md
+          - text: Integrate with Microsoft Sentinel
+            url: siem-sentinel.md
+          - text: Integrate with generic SIEM solutions
+            url: siem.md 
+
+
