@@ -105,7 +105,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: About cloud app control policies
-            url: control-cloud-apps-with-policies
+            url: control-cloud-apps-with-policies.md
           - text: Activity policies
             url: user-activity-policies.md
           - text: Anomaly detection policies
