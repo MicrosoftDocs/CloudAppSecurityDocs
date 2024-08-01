@@ -235,7 +235,6 @@ items:
         href: troubleshooting-content-inspection.md
     - name: Apply Microsoft Information Protection labels automatically
       href: use-case-information-protection.md
-
   - name: Conditional access policies
     items:
     - name: Overview
