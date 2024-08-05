@@ -340,20 +340,6 @@ items:
       href: protect-zoom.md
     - name: Troubleshooting API connectors using error messages
       href: troubleshooting-api-connectors-using-error-messages.md
-- name: Integrate for event management
-  items:
-  - name: Microsoft Sentinel integration
-    href: siem-sentinel.md
-  - name: Generic SIEM integration
-    href: siem.md
-  - name: Troubleshooting SIEM integration
-    href: troubleshooting-siem.md
-- name: Integration for automation and orchestration
-  items:
-  - name: Automate processes using Microsoft Power Automate
-    href: flow-integration.md
-  - name: Extend governance to endpoint remediation
-    href: tutorial-flow.md
 - name: App governance
   items:
   - name: Overview
@@ -423,6 +409,8 @@ items:
     href: ops-guide/ops-guide-monthly.md
   - name: Ad-hoc activities
     href: ops-guide/ops-guide-ad-hoc.md
+- name: Integrations
+  items:
 - name: REST API
   items:
   - name: Introduction
