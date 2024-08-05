@@ -1,8 +1,13 @@
 {
     "redirections": [
-    {
+      {
+        "source_path": "CloudAppSecurityDocs/lifecycle-management.md",
+        "redirect_url": "/defender-cloud-apps/ops-guide/ops-guide.md",
+        "redirect_document_id": false
+      },
+      {
       "source_path": "CloudAppSecurityDocs/app-governance-whats-new.md",
-      "redirect_url": "/previous-versions/defender-cloud-apps/release-note-archive",
+      "redirect_url": "/defender-cloud-apps/release-note-archive",
       "redirect_document_id": false
     },
     {
