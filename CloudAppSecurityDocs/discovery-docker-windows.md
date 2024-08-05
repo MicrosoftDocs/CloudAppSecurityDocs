@@ -1,7 +1,7 @@
 ---
 title: Configure automatic log upload using on-premises Docker on Windows | Microsoft Defender for Cloud Apps
 description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Windows in an on-premises server.
-ms.date: 12/20/2023
+ms.date: 08/05/2024
 ms.topic: how-to
 ---
 # Configure automatic log upload using on-premises Docker on Windows
@@ -22,9 +22,9 @@ You can configure automatic log upload for continuous reports in Defender for Cl
 
     For a list of supported Docker architectures, see [Docker installation documentation](https://docs.docker.com/engine/install/).
 
-- **Set your firewall** as described in [Network requirements](network-requirements.md#log-collector)
+- **Set your firewall** as needed. For more information, see [Network requirements](network-requirements.md#log-collector).
 
-- **Virtualization** on the operating system must be enabled with Hyper-V
+- **Virtualization** on the operating system must be enabled with Hyper-V.
 
 > [!IMPORTANT]
 >
@@ -46,7 +46,7 @@ docker rm <collector_name>
 
 ## Log collector performance
 
-The Log collector can successfully handle log capacity of up to 50 GB per hour. The main bottlenecks in the log collection process are:
+The log collector can successfully handle log capacity of up to 50 GB per hour. The main bottlenecks in the log collection process are:
 
 * Network bandwidth - Your network bandwidth determines the log upload speed.
 
@@ -77,7 +77,7 @@ Use the following steps to define your data sources and link them to a log colle
         > [!NOTE]
         > Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
-    1. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network. It's recommended to set up a dedicated data source per network device to enable you to:
+    1. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network. We recommend that you set up a dedicated data source per network device to enable you to:
 
         * Monitor the status of each device separately, for investigation purposes.
         * Explore Shadow IT Discovery per device, if each device is used by a different user segment.
@@ -149,10 +149,10 @@ The following steps describe the deployment in Windows. The deployment steps for
 
 1. Open a command prompt as an adminstrator and enter the run command you'd copied earlier from the portal in [Step 1 – Web portal configuration](#step-1--web-portal-configuration). 
 
-    If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
+    If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 172.31.255.255:8080, your updated run command is:
 
     ```console
-    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
+    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='10.255.255.255'" -e "PROXY=172.31.255.255:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
 1. To verify that the collector is running properly, run:
@@ -163,7 +163,7 @@ The following steps describe the deployment in Windows. The deployment steps for
 
     You should see the message: **Finished successfully!** For example:
 
-    ![Verify that collector is running properly.](media/ubuntu8.png)
+    ![Screenshot of a command that the collector is running properly.](media/ubuntu8.png)
 
 ## Step 3 - On-premises configuration of your network appliances
 
@@ -175,7 +175,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 ## Step 4 - Verify the successful deployment in the portal
 
-Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
+Check the collector status in the **log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
 :::image type="content" source="media/collector-status-connected.png" alt-text="Verify that the collector status is Connected." lightbox="media/collector-status-connected.png":::
 
