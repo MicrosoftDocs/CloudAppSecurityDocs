@@ -63,14 +63,14 @@ landingContent:
         links:
           - text: Cloud discovery overview
             url: discovered-apps.md
-          - text: API app connectors
-            url: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
       - linkListType: how-to-guide
         links:
           - text: Set up cloud discovery
             url: set-up-cloud-discovery.md
           - text: Enrich cloud discovery
             url: cloud-discovery-aad-enrichment.md
+          - text: Connect cloud apps
+            url: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
           - text: Calculate risk scores
             url: risk-score.md
           - text: Troubleshoot cloud discovery
