@@ -69,16 +69,12 @@ Defender for Cloud Apps supports malware detection for the following apps:
 * Box
 * Dropbox
 * Google Workspace
-* Microsoft 365 (requires a valid license for Microsoft Defender for Microsoft 365 P1)
-
 > [!NOTE]
-> * Malware detected in *Microsoft 365 apps* is automatically blocked by the app. Users cannot reach blocked files, and only the app's admin has access.
+> * Proactively sandboxing will be done in third party applications (*Box*, *Dropbox* etc.). In *OneDrive* and *SharePoint* files are being scanned and sandboxed as part of the service itself.
 > 
-> * In *Box*, *Dropbox*, and *Google Workspace*, Defender for Cloud Apps doesn't automatically block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
+In *Box*, *Dropbox*, and *Google Workspace*, Defender for Cloud Apps doesn't automatically block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
 > 
 > * If you're unsure about whether a detected file is truly malware or a false positive, go to the Microsoft Security Intelligence page at [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) and submit the file for further analysis.
->
-
 ### Activity from anonymous IP addresses
 
 * This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device's IP address, and may be used for malicious intent. This detection uses a machine-learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
@@ -181,7 +177,6 @@ To affect the anomaly detection engine to suppress or surface alerts according t
 
 > [!NOTE]
 > Impossible travel, activity from infrequent countries/regions, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts don't apply on failed logins and non-interactive logins.
-
 ## Scope anomaly detection policies
 
 Each anomaly detection policy can be independently scoped so that it applies only to the users and groups you want to include and exclude in the policy.
