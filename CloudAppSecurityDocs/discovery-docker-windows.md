@@ -96,7 +96,7 @@ Use the following steps to define your data sources and link them to a log colle
 
     1. Use the ![copy to clipboard icon.](media/copy-icon.png) **Copy** button to copy the command to the clipboard and save it to a separate location.
 
-    1. Use the ![copy to clipboard icon.](media/export-icon.png) **Export** button to export the expected data source configuration. This configuration describes how you should set the log export in your appliances.
+    1. Use the ![Export](media/export-icon.png) **Export** button to export the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
 For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-advanced-management.md#change-the-ftp-password).
 
@@ -201,9 +201,10 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 Verify that the logs are being uploaded to Defender for Cloud Apps and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Microsoft Entra user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
-1. Under **Cloud Discovery**, select **Continuous reports**.
+1. In the Microsoft Defender portal, select **Settings** > **Cloud Apps** > **Cloud Discovery** > **Continuous reports**.
+
 1. Select the **Create report** button and fill in the fields.
+
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
     >[!NOTE]
