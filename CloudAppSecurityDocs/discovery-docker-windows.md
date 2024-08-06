@@ -14,7 +14,7 @@ You can configure automatic log upload for continuous reports in Defender for Cl
 
     |Specification  |Description  |
     |---------|---------|
-    |**Operating system**     |  One of the following:  <li> Windows 10 (Fall creators update) <li> Windows Sever version 1709+ (SAC) <li> Windows Server 2019 (LTSC)       |
+    |**Operating system**     |  One of the following:  <li> Windows 10 (Fall creators update) <li> Windows Server version 1709+ (SAC) <li> Windows Server 2019 (LTSC)       |
     |**Disk space**     |    250 GB     |
     |**CPU cores**     |    2     |
     |**CPU architecture**     |  Intel 64 and AMD 64       |
@@ -62,11 +62,11 @@ Use the following steps to define your data sources and link them to a log colle
 
     1. Select **+Add data source**.  
 
-        ![Add a data source.](media/add-data-source.png)
+        ![Screenshot of the Add data source button.](media/add-data-source.png)
 
     1. **Name** your proxy or firewall.  
 
-        ![Add name for data source.](media/ubuntu1.png)
+        ![Screenshot of the Add data source dialog](media/ubuntu1.png)
 
     1. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
 
@@ -75,7 +75,7 @@ Use the following steps to define your data sources and link them to a log colle
     1. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
 
         > [!NOTE]
-        > Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
+        > Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings for your firewall/proxy.
 
     1. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network. We recommend that you set up a dedicated data source per network device to enable you to:
 
@@ -143,11 +143,11 @@ The following steps describe the deployment in Windows. The deployment steps for
 
 1. If the WSL2 installation isn't completed, a message shows to indicate that the WSL 2 Linux kernel is installed using a separate MSI update package. 
 
-1. Complete the installation by downloading the package. For mor information, see [Download the Linux kernel update package.](/windows/wsl/install-manual).
+1. Complete the installation by downloading the package. For more information, see [Download the Linux kernel update package](/windows/wsl/install-manual).
 
 1. Open the Docker Desktop client again and make sure that it has started.
 
-1. Open a command prompt as an adminstrator and enter the run command you'd copied earlier from the portal in [Step 1 – Web portal configuration](#step-1--web-portal-configuration). 
+1. Open a command prompt as an administrator and enter the run command you'd copied earlier from the portal in [Step 1 – Web portal configuration](#step-1--web-portal-configuration). 
 
     If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 172.31.255.255:8080, your updated run command is:
 

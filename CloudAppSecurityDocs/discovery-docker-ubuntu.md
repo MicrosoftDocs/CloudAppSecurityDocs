@@ -20,7 +20,6 @@ You can configure automatic log upload for continuous reports in Defender for Cl
 |**CPU cores**     |    2     |
 |**CPU Architecture**     |   Intel 64 and AMD 64      |
 |**RAM**     |     4 GB    |
-|Row6     |         |
 
 Make sure to set your firewall as needed. For more information, see [Network requirements](network-requirements.md#log-collector).
 
@@ -49,11 +48,11 @@ The log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     1. Select **+Add data source**.  
 
-        ![Add a data source.](media/add-data-source.png)
+        ![Screenshot of the Add data source button.](media/add-data-source.png)
 
     1. **Name** your proxy or firewall.  
 
-        ![Add name for data source.](media/ubuntu1.png)
+        ![Screenshot of the Add data source dialog](media/ubuntu1.png)
 
     1. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
 
@@ -62,7 +61,7 @@ The log collector can successfully handle log capacity of up to 50 GB per hour. 
     1. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
 
         > [!NOTE]
-        > Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
+        > Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings for your firewall/proxy.
 
     1. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network. We recommend that you set up a dedicated data source per network device to enable you to:
 
@@ -89,7 +88,7 @@ For users sending log data via FTP for the first time, we recommend changing the
 
 ## Step 2 – On-premises deployment of your machine
 
-The following steps describe the deployment in Ubuntu. The deployment steps for other supported platforms may be slightly different.
+The following steps describe the deployment in Ubuntu. The deployment steps for other supported platforms might be slightly different.
 
 1. Open a terminal on your Ubuntu machine.
 
@@ -245,7 +244,7 @@ The following steps describe the deployment in Ubuntu. The deployment steps for 
         apt-get remove docker docker-engine docker.io
         ```
 
-    1. If you are installing on Ubuntu 14.04, install the linux-image-extra package.
+    1. If you're installing on Ubuntu 14.04, install the linux-image-extra package.
 
         ```bash
         apt-get update -y
@@ -335,7 +334,7 @@ Verify that the logs are being uploaded to Defender for Cloud Apps and that repo
 
 1. In the Microsoft Defender portal, select **Settings** > **Cloud Apps** > **Cloud Discovery** > **Continuous reports**.
 
-1. Click the **Create report** button and fill in the fields.
+1. Select the **Create report** button and fill in the fields.
 
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
