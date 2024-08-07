@@ -24,7 +24,7 @@ By integrating Microsoft Purview Information Protection into Defender for Cloud 
 
 - To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Microsoft 365](./connect-office-365.md).
 
-For Defender for Cloud Apps to apply sensitivity labels, they must be published as part of a sensitivity label policy in the Microsoft Purview compliance portal.
+For Defender for Cloud Apps to apply sensitivity labels, they must be published as part of a sensitivity label policy in Microsoft Purview.
 
 Defender for Cloud Apps currently supports applying sensitivity labels from Microsoft Purview Information Protection for the following file types:
 

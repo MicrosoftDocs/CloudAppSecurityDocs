@@ -63,7 +63,7 @@ To prevent users from accidentally blocking business-critical services and causi
 - Microsoft Entra Permissions Management
 - Microsoft Conditional Access Application Control
 - Microsoft Secure Score
-- Microsoft Purview compliance portal
+- Microsoft Purview
 - Microsoft Intune
 - Microsoft Support
 - Microsoft AD FS Help
