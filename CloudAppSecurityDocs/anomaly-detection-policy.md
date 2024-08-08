@@ -69,12 +69,12 @@ Defender for Cloud Apps supports malware detection for the following apps:
 * Box
 * Dropbox
 * Google Workspace
+
 > [!NOTE]
-> * Proactively sandboxing will be done in third party applications (*Box*, *Dropbox* etc.). In *OneDrive* and *SharePoint* files are being scanned and sandboxed as part of the service itself.
-> 
-In *Box*, *Dropbox*, and *Google Workspace*, Defender for Cloud Apps doesn't automatically block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
-> 
+>* Proactively sandboxing will be done in third party applications (*Box*, *Dropbox* etc.). In *OneDrive* and *SharePoint* files are being scanned and sandboxed as part of the service itself.
+> * In *Box*, *Dropbox*, and *Google Workspace*, Defender for Cloud Apps doesn't automatically block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
 > * If you're unsure about whether a detected file is truly malware or a false positive, go to the Microsoft Security Intelligence page at [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) and submit the file for further analysis.
+
 ### Activity from anonymous IP addresses
 
 * This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device's IP address, and may be used for malicious intent. This detection uses a machine-learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
