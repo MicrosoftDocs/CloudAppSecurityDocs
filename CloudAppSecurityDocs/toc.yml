@@ -240,8 +240,19 @@ items:
     - name: Investigate risky users
       href: tutorial-ueba.md
   - name: Respond to threats
-    href: governance-actions.md
-- name: Protect your information
+    items:
+    - name: Overview
+      href: governance-actions.md
+      displayName: governance actions
+    - name: Manage events with SIEM solutions
+      items:
+      - name: Integrate with Microsoft Sentinel
+        href: siem-sentinel.md
+      - name: Integrate with generic SIEM solutions
+        href: siem.md
+    - name: Customize alert automation with Power Automate
+      href: flow-integration.md
+- name: Protect semsitive data
   items:
   - name: Discover and protect sensitive information
     href: tutorial-dlp.md
@@ -409,8 +420,6 @@ items:
     href: ops-guide/ops-guide-monthly.md
   - name: Ad-hoc activities
     href: ops-guide/ops-guide-ad-hoc.md
-- name: Integrations
-  items:
 - name: REST API
   items:
   - name: Introduction
