@@ -24,7 +24,6 @@ The following table lists activities that we recommend you perform regularly wit
 |**Monthly**     | - [Review policy assessments](ops-guide-monthly.md#review-policy-assessments) <br>  -  [Review activity logs](ops-guide-monthly.md#review-activity-logs)       |
 |**Ad-hoc**     |   - [Review Microsoft service health](ops-guide-ad-hoc.md#review-microsoft-service-health) <br>  - [Run advanced hunting queries](ops-guide-ad-hoc.md#run-advanced-hunting-queries)<br>  - [Review file quarantines](ops-guide-ad-hoc.md#review-file-quarantines)<br>  - [Review app risk scores](ops-guide-ad-hoc.md#review-app-risk-scores)<br>  - [Delete cloud discovery data](ops-guide-ad-hoc.md#delete-cloud-discovery-data) <br>  - [Generate a cloud discovery executive report](ops-guide-ad-hoc.md#generate-a-cloud-discovery-executive-report)<br>  - [Generate a cloud discovery snapshot report](ops-guide-ad-hoc.md#generate-a-cloud-discovery-snapshot-report)    |
 
-In addition to activities you perform at at a regular cadence, use a lifecycle management strategy to ensure your configurations, exclusions, and policies for Microsoft Defender for Cloud Apps remain up to date and are reviewed regularly. For more information, see [Lifecycle management strategy in Defender for Cloud Apps](../lifecycle-management.md).
 
 ## Related content
 
