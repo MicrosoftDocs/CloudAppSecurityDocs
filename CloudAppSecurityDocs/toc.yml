@@ -96,7 +96,7 @@ items:
         href: log-collector-advanced-management.md
       - name: Use the custom log parser
         href: custom-log-parser.md
-    - name: Connect apps to get visibility and protection
+    - name: Connect apps for visibility and protection
       items:
       - name: Overview
         displayName: connect apps
