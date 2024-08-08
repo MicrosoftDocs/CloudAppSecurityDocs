@@ -141,66 +141,64 @@ items:
   items:
   - name: Security configuration for SaaS applications
     href: security-saas.md
-  - name: Connect cloud apps
-    items:
-    - name: Connect apps to get visibility and protection
-      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
-    - name: Custom connectors with the open app connector platform
-      href: ./connector-platform.md
-    - name: Asana
-      href: protect-asana.md
-    - name: Atlassian
-      href: protect-atlassian.md
-    - name: AWS
-      href: protect-aws.md
-    - name: Azure
-      href: protect-azure.md
-    - name: Box
-      href: protect-box.md
-    - name: Citrix ShareFile
-      href: ./protect-citrix-sharefile.md
-    - name: DocuSign
-      href: protect-docusign.md
-    - name: Dropbox
-      href: protect-dropbox.md
-    - name: Egnyte
-      href: protect-egnyte.md
-    - name: GitHub
-      href: protect-github.md
-    - name: GCP
-      href: protect-gcp.md
-    - name: Google Workspace
-      href: protect-google-workspace.md
-    - name: Microsoft 365
-      href: protect-office-365.md
-    - name: Miro
-      href: protect-miro.md
-    - name: NetDocuments
-      href: protect-netdocuments.md
-    - name: Okta
-      href: protect-okta.md
-    - name: OneLogin
-      href: protect-onelogin.md
-    - name: Salesforce
-      href: protect-salesforce.md
-    - name: ServiceNow
-      href: protect-servicenow.md
-    - name: Slack
-      href: protect-slack.md
-    - name: Smartsheet
-      href: protect-smartsheet.md
-    - name: Webex
-      href: protect-webex.md
-    - name: Workday
-      href: protect-workday.md
-    - name: Workplace (Preview)
-      href: protect-workplace.md
-    - name: Zendesk
-      href: protect-zendesk.md
-    - name: Zoom
-      href: protect-zoom.md
-    - name: Troubleshooting API connectors using error messages
-      href: troubleshooting-api-connectors-using-error-messages.md
+  - name: Connect apps to get visibility and protection
+    href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+  - name: Custom connectors with the open app connector platform
+    href: ./connector-platform.md
+  - name: Asana
+    href: protect-asana.md
+  - name: Atlassian
+    href: protect-atlassian.md
+  - name: AWS
+    href: protect-aws.md
+  - name: Azure
+    href: protect-azure.md
+  - name: Box
+    href: protect-box.md
+  - name: Citrix ShareFile
+    href: ./protect-citrix-sharefile.md
+  - name: DocuSign
+    href: protect-docusign.md
+  - name: Dropbox
+    href: protect-dropbox.md
+  - name: Egnyte
+    href: protect-egnyte.md
+  - name: GitHub
+    href: protect-github.md
+  - name: GCP
+    href: protect-gcp.md
+  - name: Google Workspace
+    href: protect-google-workspace.md
+  - name: Microsoft 365
+    href: protect-office-365.md
+  - name: Miro
+    href: protect-miro.md
+  - name: NetDocuments
+    href: protect-netdocuments.md
+  - name: Okta
+    href: protect-okta.md
+  - name: OneLogin
+    href: protect-onelogin.md
+  - name: Salesforce
+    href: protect-salesforce.md
+  - name: ServiceNow
+    href: protect-servicenow.md
+  - name: Slack
+    href: protect-slack.md
+  - name: Smartsheet
+    href: protect-smartsheet.md
+  - name: Webex
+    href: protect-webex.md
+  - name: Workday
+    href: protect-workday.md
+  - name: Workplace (Preview)
+    href: protect-workplace.md
+  - name: Zendesk
+    href: protect-zendesk.md
+  - name: Zoom
+    href: protect-zoom.md
+  - name: Troubleshooting API connectors using error messages
+    href: troubleshooting-api-connectors-using-error-messages.md
 - name: Protect from threats
   items:
   - name: Control apps with policies
