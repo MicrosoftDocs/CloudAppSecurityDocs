@@ -252,7 +252,7 @@ items:
         href: siem.md
     - name: Customize alert automation with Power Automate
       href: flow-integration.md
-- name: Protect semsitive data
+- name: Protect sensitive data
   items:
   - name: Discover and protect sensitive information
     href: tutorial-dlp.md
