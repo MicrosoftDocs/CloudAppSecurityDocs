@@ -23,13 +23,13 @@ GET /api/v1/entities/<pk>/
 
 | Parameter | Description |
 | --- | --- |
-| pk | A dictionary with the entity ID, SaaS, and instance details encoded as a base64 string. For example: `{"id":"3fa9f28b-eb0e-463a-ba7b-8089fe9991e2","saas":11161,"inst":0}` encoded as a base64 string. |
+| pk | A dictionary with the entity ID, SaaS, and instance details encoded as a base64 string. For example: `{"id":"00aa00aa-bb11-cc22-dd33-44ee44ee44ee","saas":11161,"inst":0}` encoded as a base64 string. |
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```rest
 curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.portal.cloudappsecurity.com/api/v1/entities/<pk>/"
