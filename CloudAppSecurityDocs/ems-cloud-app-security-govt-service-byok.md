@@ -106,7 +106,7 @@ When you enable data encryption, Defender for Cloud Apps immediately uses your A
 
 ### To enable data encryption
 
-1. In the Microosft Defender portal, select **Settings > Cloud Apps > Data encryption > Enable data encryption**.
+1. In the Microsoft Defender portal, select **Settings > Cloud Apps > Data encryption > Enable data encryption**.
 
 1. In the **Azure Key Vault key URI** box, paste the key identifier URI value you copied earlier. Defender for Cloud Apps always uses the latest key version, regardless of the key version specified by the URI.
 
@@ -123,4 +123,4 @@ Whenever you create new versions of the key configured for data encryption, Defe
 
 ## How to handle data encryption failures
 
-If there is a problem accessing your Azure Key Vault key, Defender for Cloud Apps will fail to encrypt your data and your tenant will be lock down within an hour. When your tenant is locked down, all access to it will be blocked until the cause has been resolved. Once your key is accessible again, full access to your tenant will be restored. For information about handling data encryption failures, see [Troubleshooting data encryption with your own key](ems-cloud-app-security-govt-service-byok-troubleshoot.md).
+If there is a problem accessing your Azure Key Vault key, Defender for Cloud Apps will fail to encrypt your data and your tenant will be locked down within an hour. When your tenant is locked down, all access to it will be blocked until the cause has been resolved. Once your key is accessible again, full access to your tenant will be restored. For information about handling data encryption failures, see [Troubleshooting data encryption with your own key](ems-cloud-app-security-govt-service-byok-troubleshoot.md).
