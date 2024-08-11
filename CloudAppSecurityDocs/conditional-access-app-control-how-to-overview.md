@@ -17,7 +17,7 @@ The following image shows the high level process for configuring and implementin
 
 ## Which identity provider are you using?
 
-Before you start using Conditional Access app control, understand whether your apps are managed by Microsoft Entra or another identity provider (IdP).
+Before you start using Conditional Access app control, understand whether your apps are managed by Microsoft Entra or another identity provider (IdP). 
 
 - **Microsoft Entra apps** are automatically onboarded for Conditional Access app control, and are immediately available for you to use in your access and session policy conditions (Preview). Can be manually onboarded before you can select them in your access and session policy conditions.
 
