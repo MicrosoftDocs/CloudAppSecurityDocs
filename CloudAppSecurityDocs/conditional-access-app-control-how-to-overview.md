@@ -9,7 +9,7 @@ ms.topic: how-to
 
 This article provides an overview of how to use Microsoft Defender for Cloud Apps app control to create access and session policies. Conditional Access app control provides real-time monitoring and control over user access to cloud apps.
 
-## Conditional Access app control usage flow
+## Conditional Access app control usage flow (Preview)
 
 The following image shows the high level process for configuring and implementing Conditional Access app control:
 
@@ -19,7 +19,7 @@ The following image shows the high level process for configuring and implementin
 
 Before you start using Conditional Access app control, understand whether your apps are managed by Microsoft Entra or another identity provider (IdP).
 
-- **Microsoft Entra apps** are automatically onboarded for Conditional Access app control, and are immediately available for you to use in your access and session policy conditions.
+- **Microsoft Entra apps** are automatically onboarded for Conditional Access app control, and are immediately available for you to use in your access and session policy conditions (Preview). Can be manually onboarded before you can select them in your access and session policy conditions.
 
 - **Apps that use non-Microsoft IdPs** must be manually onboarded before you can select them in your access and session policy conditions.
 
