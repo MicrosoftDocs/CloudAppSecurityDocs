@@ -23,7 +23,7 @@ Session controls in Microsoft Defender for Cloud Apps can be configured to work 
 
 ### Add admins to the app onboarding/maintenance list
 
-1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4](media/settings-icon.png "settings icon 4") and select **Settings**.
+1. In the menu bar of Defender for Cloud Apps, select the settings cog and select **Settings**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
@@ -124,7 +124,7 @@ Follow these steps to configure any app to be controlled by Defender for Cloud A
 
 Applications in the app catalog are automatically populated into the table under Connected Apps. Check that the app you want to deploy is recognized by navigating there.
 
-1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 1](media/settings-icon.png "settings icon 1"), and select the **Conditional Access App Control** tab to access a table of applications that can be configured with access and session policies.
+1. In the menu bar of Defender for Cloud Apps, select the settings cog, and select the **Conditional Access App Control** tab to access a table of applications that can be configured with access and session policies.
 
     ![Conditional access app control apps](media/conditional-access-app-control-apps.png)
 
@@ -161,7 +161,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
     > [!NOTE]
     > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
-1. Go to Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon 2](media/settings-icon.png "settings icon 2") and select **Conditional Access App Control**.
+1. Go to Defender for Cloud Apps, in the menu bar, select the settings cog and select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then under **APP DETAILS**, choose **Edit**.
     > [!TIP]
     > To view the list of domains configured in the app, select **View app domains**.
@@ -186,8 +186,6 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. Select **Continue**.
 1. Check that the application is available in the table.
 
-    ![Check if app is available in table](media/available-apps.png)
-
 ## Step 3: Verify that the app is working correctly<a name="verify-app"></a>
 
 To verify that the application is being proxied, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
@@ -205,11 +203,9 @@ If you encounter errors or issues, use the admin toolbar to gather resources suc
 
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Defender for Cloud Apps, select the settings cog ![settings icon 3](media/settings-icon.png), and then select **Conditional Access App Control**.
+1. In Defender for Cloud Apps, select the settings cog, and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use with Conditional Access App Control** and then select **Save**.
-
-    ![Enable session controls pop-up](media/edit-app-enable-session-controls.png)
 
 ## Step 5: Update the Entra ID policy<a name="update-azure-ad"></a>
 
