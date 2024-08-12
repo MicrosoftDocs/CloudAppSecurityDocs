@@ -98,8 +98,6 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Copy the User ID and Account Base URI. You'll need them later.
 
-    ![DocuSign settings.](media/docusign-settings.png)
-
 ### Configure Defender for Cloud Apps
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
