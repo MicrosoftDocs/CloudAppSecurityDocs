@@ -50,13 +50,13 @@ Follow the steps to create a Cloud Discovery anomaly detection policy:
 
 1. On the **Create Cloud Discovery anomaly detection policy** page, the **Policy template** option provides a list of templates that you can choose from to use as a base for the policy. By default, the option is set to **No template**.
    
-   - If you want to base the policy on a template, expand the dropdown menu and select a template:
+   If you want to base the policy on a template, expand the dropdown menu and select a template:
    
-      - **Anomalous behavior in discovered users**: Alerts when anomalous behavior is detected in discovered users and apps. You can use this template to check for large amounts of uploaded data compared to other users, or large user transactions compared to the user's history.
+   - **Anomalous behavior in discovered users**: Alerts when anomalous behavior is detected in discovered users and apps. You can use this template to check for large amounts of uploaded data compared to other users, or large user transactions compared to the user's history.
       
-      - **Anomalous behavior of discovered IP addresses**: Alerts when anomalous behavior is detected in discovered IP addresses and apps. You can use this template to check for large amounts of uploaded data compared to other IP addresses, or large app transactions compared to the IP address's history.
+   - **Anomalous behavior of discovered IP addresses**: Alerts when anomalous behavior is detected in discovered IP addresses and apps. You can use this template to check for large amounts of uploaded data compared to other IP addresses, or large app transactions compared to the IP address's history.
 
-      :::image type="content" source="media/anomaly-policy-template.png" border="false" alt-text="Screenshot that shows how to select a template to use as the base for the new policy.":::
+   :::image type="content" source="media/anomaly-policy-template.png" border="false" alt-text="Screenshot that shows how to select a template to use as the base for the new policy.":::
 
 1. Enter a **Policy name** and **Description** for the new policy.
 
