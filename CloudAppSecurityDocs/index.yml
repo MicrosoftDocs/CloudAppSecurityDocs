@@ -35,8 +35,8 @@ landingContent:
             url: release-notes.md
       - linkListType: concept
         links:
-          - text: Best practices for protecting your organizations
-            url: best-practices.md
+          - text: Data security and privacy
+            url: cas-compliance-trust.md
 
   # Card (optional)
   - title: Get started
@@ -49,96 +49,101 @@ landingContent:
         links:
           - text: Basic set up
             url: general-setup.md
+          - text: View and manage security posture
+            url: security-saas.md
       - linkListType: concept
         links:
+          - text: Best practices for protecting your organizations
+            url: best-practices.md
           - text: Operations guide
             url: ops-guide/ops-guide.md
-          - text: App governance for OAuth apps
-            url: app-governance-manage-app-governance.md
 
   # Card (optional)
-  - title: Discover and connect cloud apps
+  - title: Cloud discovery
     linkLists:
       - linkListType: concept
         links:
           - text: Cloud discovery overview
+            url: set-up-cloud-discovery.md
+          - text: Cloud discovery dashboard
             url: discovered-apps.md
       - linkListType: how-to-guide
         links:
-          - text: Set up cloud discovery
-            url: set-up-cloud-discovery.md
-          - text: Enrich cloud discovery
-            url: cloud-discovery-aad-enrichment.md
-          - text: Connect cloud apps
-            url: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
           - text: Calculate risk scores
             url: risk-score.md
-          - text: Troubleshoot cloud discovery
-            url: troubleshooting-cloud-discovery.md
-
+          - text: Connect cloud apps
+            url: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+          - text: Collect logs
+            url: discovery-docker.md
+          - text: Discover and manage shadow IT
+            url: tutorial-shadow-it.md
 
   # Card (optional)
-  - title: Investigate and respond
+  - title: Threat protection
     linkLists:
       - linkListType: concept
         links:
-          - text: About cloud app investigations
+          - text: App control with policies
+            url: control-cloud-apps-with-policies.md
+          - text: Access and session protection
+            url: proxy-intro-aad.md
+          - text: Cloud app risk and suspicious activity investigation
             url: investigate.md
+          - text: Threat response governance actions
+            url: governance-actions.md
+
       - linkListType: how-to-guide
         links:
+          - text: Use in-browser protection with Microsoft Edge
+            url: in-browser-protection.md
           - text: Investigate behaviors by hunting
             url: behaviors.md
-          - text: Investigate activities
-            url: activity-filters.md
-          - text: Investigate apps discovered by Microsoft Defender for Endpoint
-            url: mde-investigation.md
-          - text: Investigate and remediate risky OAuth apps
-            url: investigate-risky-oauth.md
           - text: Investigate anomaly detection alerts
             url: investigate-anomaly-alerts.md
           - text: Investigate risky users
             url: tutorial-ueba.md
 
   # Card (optional)
-  - title: Control cloud apps with policies
+  - title: Information protection
     linkLists:
       - linkListType: concept
         links:
-          - text: About cloud app control policies
-            url: control-cloud-apps-with-policies.md
-          - text: Activity policies
-            url: user-activity-policies.md
-          - text: Anomaly detection policies
-            url: anomaly-detection-policy.md
-          - text: OAuth policies
-            url: app-permission-policy.md
-          - text: File policies
-            url: data-protection-policies.md
-          - text: Content inspection policies
+          - text: Common information protection policies
+            url: policies-information-protection.md
+          - text: DLP content inspection
             url: content-inspection.md
-          - text: Conditional access app control policies
-            url: proxy-intro-aad.md
-          - text: Shadow IT discovery policies
-            url: cloud-discovery-policies.md
-          - text: Cloud discovery anomaly detection policy
-            url: cloud-discovery-anomaly-detection-policy.md
 
-  # Card (optional)
-  - title: Govern connected apps
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Governance actions
-            url: governance-actions.md
       - linkListType: how-to-guide
         links:
-          - text: Govern apps discovered with Microsoft Defender for Endpoint
-            url: mde-govern.md
-          - text: Integrate with Microsoft Purview
+          - text: Integrate with Microsoft Information Protection
             url: azip-integration.md
-          - text: Integrate with Microsoft Sentinel
-            url: siem-sentinel.md
-          - text: Integrate with generic SIEM solutions
-            url: siem.md 
+          - text: Discover and protect sensitive information
+            url: tutorial-dlp.md
+          - text: Protect files with admin quarrantine
+            url: use-case-admin-quarantine.md
+          - text: Protect data in motion
+            url: tutorial-proxy.md
+          - text: Block sensitive information download
+            url: use-case-proxy-block-session-aad.md
 
-
+  # Card (optional)
+  - title: App governance for OAuth apps
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: App governance overview
+            url: app-governance-manage-app-governance.md
+      - linkListType: how-to-guide
+        links:
+          - text: Turn on app governance
+            url: app-governance-get-started.md
+          - text: Get started
+            url: app-governance-trial-user-guide.md
+          - text: Investigate app governance threat detections
+            url: app-governance-anomaly-detection-alerts.md
+          - text: Create app governance app policies
+            url: app-governance-app-policies-get-started.md
+          - text: Monitor and respond to unusual data usage
+            url: app-governance-monitor-apps-unusual-data-usage.md
+          - text: Secure apps with app hygiene
+            url: app-governance-secure-apps-app-hygiene-features.md

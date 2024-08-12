@@ -27,18 +27,14 @@ items:
       href: ems-cloud-app-security-govt-service-byok-troubleshoot.md
   - name: Defender for Cloud Apps and Zero Trust monitoring
     href: zero-trust.md
-  - name: Support and troubleshooting
-    href: support-and-ts.md
+  - name: Best practices
+    href: best-practices.md
 - name: Deploy Defender for Cloud Apps
   items:
-  - name: Overview
-    items:
-    - name: Network requirements
-      href: network-requirements.md
-    - name: Getting started
-      href: ./get-started.md
-    - name: Best practices
-      href: best-practices.md
+  - name: Network requirements
+    href: network-requirements.md
+  - name: Getting started
+    href: ./get-started.md
   - name: Configuration
     items:
     - name: Basic set up
@@ -60,16 +56,14 @@ items:
 - name: Discover cloud apps
   items:
   - name: Overview
-    items:
-    - name: Discover cloud apps
-      displayName: cloud discovery, best practices
-      href: set-up-cloud-discovery.md
-    - name: Govern discovered apps
-      href: governance-discovery.md
-    - name: Enrich cloud discovery
-      href: cloud-discovery-aad-enrichment.md
-    - name: Anonymize cloud discovery data
-      href: cloud-discovery-anonymizer.md
+    displayName: cloud discovery, best practices
+    href: set-up-cloud-discovery.md
+  - name: Govern discovered apps
+    href: governance-discovery.md
+  - name: Enrich cloud discovery
+    href: cloud-discovery-aad-enrichment.md
+  - name: Anonymize cloud discovery data
+    href: cloud-discovery-anonymizer.md
   - name: Configure cloud discovery
     items:
     - name: Find your cloud app and calculate risk scores
@@ -321,11 +315,11 @@ items:
         href: flow-integration.md
       - name: Extend governance to endpoint remediation
         href: tutorial-flow.md
-- name: Protect sensitive data
+- name: Protect sensitive information
   items:
   - name: Discover and protect sensitive information
     href: tutorial-dlp.md
-  - name: Protect your data at rest and in use
+  - name: Protect your data at rest
     items:
     - name: Protecting your files with admin quarantine
       href: use-case-admin-quarantine.md
@@ -337,7 +331,7 @@ items:
       href: tutorial-proxy.md
     - name: Block downloads of sensitive information
       href: use-case-proxy-block-session-aad.md
-  - name: Implelment information protection policies
+  - name: Implement information protection policies
     items:
     - name: File policies
       href: data-protection-policies.md
@@ -519,6 +513,8 @@ items:
         href: api-files-fetch.md
 - name: Resources
   items:
+  - name: Support and troubleshooting
+    href: support-and-ts.md
   - name: Additional integrations
     href: additional-integrations.md
   - name: Watch our webinars
