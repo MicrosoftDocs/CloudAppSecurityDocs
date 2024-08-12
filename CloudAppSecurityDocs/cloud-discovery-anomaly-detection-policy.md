@@ -56,7 +56,7 @@ Follow the steps to create a Cloud Discovery anomaly detection policy:
       
       - **Anomalous behavior of discovered IP addresses**: Alerts when anomalous behavior is detected in discovered IP addresses and apps. You can use this template to check for large amounts of uploaded data compared to other IP addresses, or large app transactions compared to the IP address's history.
 
-      :::image type="content" source="media/anomaly-policy-template.png" border="false" alt-text="Screenshot that shows how to select a template to use as the base for the new policy.:::
+      :::image type="content" source="media/anomaly-policy-template.png" border="false" alt-text="Screenshot that shows how to select a template to use as the base for the new policy.":::
 
 1. Enter a **Policy name** and **Description** for the new policy.
 
@@ -116,7 +116,7 @@ When you create a policy, it's enabled by default. You can disable a policy and 
 
 1. On the **Policies** page, locate the policy to update in the list of policies.
 
-1. In the list of policies, scroll to the right for the policy row, and select **More options** (...).
+1. In the list of policies, scroll to the right on the policy row, and select **More options** (...).
 
 1. On the popup menu, select the action to perform on the policy.
 
