@@ -4,7 +4,7 @@ description: This article provides instructions for setting admin preferences in
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Admin notification settings
+# Manage admin notifications
 
 
 
