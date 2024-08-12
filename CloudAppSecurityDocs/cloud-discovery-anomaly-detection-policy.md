@@ -14,7 +14,7 @@ A Cloud Discovery anomaly detection policy enables you to set up and configure c
 This article describes how to create and configure a Cloud Discovery anomaly detection policy in Microsoft Defender for Cloud Apps.
 
 > [!IMPORTANT]
-> Starting August 2024, **Cloud Discovery anomaly** support for Microsoft Defender for Cloud Apps is retired. As such, the procedure presented in this article is provided for informational purposes only. If you want to receive security alerts similar to anomaly detection, complete the steps in [Create app discovery policy](#create-app-discovery-policy).
+> Starting August 2024, **Cloud Discovery anomaly** support for Microsoft Defender for Cloud Apps is retired. As such, the legacy procedure presented in this article is provided for informational purposes only. If you want to receive security alerts similar to anomaly detection, complete the steps in [Create app discovery policy](#create-app-discovery-policy).
 
 ## Create app discovery policy
 
@@ -30,9 +30,9 @@ Although support for Cloud Discovery anomaly detection is retired, you can recei
 
    :::image type="content" source="media/trigger-policy-match.png" border="false" alt-text="Screenshot that shows how to select the 'Trigger a policy match if all the following occur on the same day' option for an app discovery policy.":::
 
-1. Configure the associated filters and settings, as described in [Create an anomaly detection policy](#obsolete-create-anomaly-detection-policy).
+1. Configure the associated filters and settings, as described in [Create an anomaly detection policy](#legacy-create-anomaly-detection-policy).
 
-## (Obsolete) Create anomaly detection policy
+## (Legacy) Create anomaly detection policy
 
 For each anomaly detection policy, you set filters that enable you to selectively monitor application usage. Filters are available for the application, selected data views, and a selected start date. You can also set the sensitivity and specify how many alerts for the policy to trigger.
 
@@ -56,6 +56,8 @@ Follow the steps to create a Cloud Discovery anomaly detection policy:
       
    - **Anomalous behavior of discovered IP addresses**: Alerts when anomalous behavior is detected in discovered IP addresses and apps. You can use this template to check for large amounts of uploaded data compared to other IP addresses, or large app transactions compared to the IP address's history.
 
+   The following image shows how to select a template to use as the base for the new policy in the Microsoft Defender portal:
+
    :::image type="content" source="media/anomaly-policy-template.png" border="false" alt-text="Screenshot that shows how to select a template to use as the base for the new policy.":::
 
 1. Enter a **Policy name** and **Description** for the new policy.
@@ -65,6 +67,8 @@ Follow the steps to create a Cloud Discovery anomaly detection policy:
    - Expand the dropdown menu and choose to filter all matching apps by **App tag**, **Apps and domain**, **Category**, various **Risk factors**, or **Risk score.** 
    
    - To create more filters, select **Add a filter**.
+
+   The following image shows how to select a filter for the policy to apply to all matching applications in the Microsoft Defender portal:
 
    :::image type="content" source="media/anomaly-filter-apps.png" border="false" alt-text="Screenshot that shows how to select a filter for the policy to apply to all matching applications.":::
 
@@ -83,6 +87,8 @@ Follow the steps to create a Cloud Discovery anomaly detection policy:
       - **IP addresses**: Ignore the association of application usage with users.
       
       - **Users, IP addresses** (default): Monitor associate of application usage by users and IP addresses. This option can produce duplicate alerts when a tight correspondence exists between users and IP addresses.
+
+   The following image shows how to configure application usage filters and the start date for raising usage alerts in the Microsoft Defender portal:
 
    :::image type="content" source="media/anomaly-apply-to.png" border="false" alt-text="Screenshot that shows how to configure application usage filters and the start date for raising usage alerts.":::
 
@@ -105,6 +111,8 @@ Follow the steps to create a Cloud Discovery anomaly detection policy:
    - To set your organization's default settings to use your values for the **Daily alert limit** and email settings, select **Save as default settings**.
    
    - To use your organization's default settings for the **Daily alert limit** and email settings, select **Restore default settings**.
+
+   The following image shows how to configure alerts for the policy, including sensitivity, email notifications, and a daily limit in the Microsoft Defender portal:
 
    :::image type="content" source="media/anomaly-alerts.png" border="false" alt-text="Screenshot that shows how to configure alerts, including sensitivity, email, and daily limit.":::
 
