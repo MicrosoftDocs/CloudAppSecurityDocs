@@ -1,11 +1,11 @@
 ---
-title: File filters 
+title: Investigage files in Microsoft Defender for Cloud Apps
 description: This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
 ms.date: 06/20/2024
 ms.topic: how-to
 ---
 
-# File filters in Microsoft Defender for Cloud Apps
+# Investigate files with Microsoft Defender for Cloud Apps
 
 To provide data protection, Microsoft Defender for Cloud Apps gives you visibility into all the files from your connected apps. After you connect Microsoft Defender for Cloud Apps to an app using the App connector, Microsoft Defender for Cloud Apps scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Defender for Cloud Apps rescans each file every time it's modified – the modification can be to content, metadata, or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps.
 
