@@ -7,7 +7,7 @@ items:
     href: what-is-defender-for-cloud-apps.md
   - name: What's new in Defender for Cloud Apps
     href: release-notes.md
-  - name: Defender for Cloud Apps data security and privacy
+  - name: Privacy with Defender for Cloud Apps
     href: cas-compliance-trust.md
   - name: Preview features
     href: /microsoft-365/security/defender/preview?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/bread/toc.json
@@ -25,7 +25,7 @@ items:
       href: ems-cloud-app-security-govt-service-byok.md
     - name: Troubleshooting data encryption with your own key
       href: ems-cloud-app-security-govt-service-byok-troubleshoot.md
-  - name: Defender for Cloud Apps and Zero Trust monitoring
+  - name: Zero Trust monitoring with Defender for Cloud Apps
     href: zero-trust.md
   - name: Best practices
     href: best-practices.md
@@ -39,19 +39,19 @@ items:
     items:
     - name: Basic set up
       href: general-setup.md
-    - name: Manage admins
+    - name: Configure admin access
       href: manage-admins.md
-    - name: Admin settings
+    - name: Configure admin notifications
       href: admin-settings.md
-    - name: Mail settings
+    - name: Configure user notifications
       href: mail-settings.md
-    - name: User groups
+    - name: Import user groups from connected apps
       href: user-groups.md
-    - name: Scoped deployment
+    - name: Scope your deployment
       href: scoped-deployment.md
-    - name: Activity privacy
+    - name: Configure activity monitoring to protect user privacy
       href: activity-privacy.md
-    - name: IP tags and ranges
+    - name: Work with IP ranges and tags
       href: ip-tags.md
 - name: Discover cloud apps
   items:
@@ -196,14 +196,14 @@ items:
   href: security-saas.md
 - name: Protect from threats
   items:
-  - name: Control apps with policies
+  - name: Control cloud apps with policies
     items:
     - name: Overview
       displayName: control, policies
       href: control-cloud-apps-with-policies.md
-    - name: Create custom policies with templates
+    - name: Supported policy templates
       href: policy-template-reference.md
-    - name: Troubleshooting policies
+    - name: Troubleshoot policies
       href: troubleshoot-policies.md
   - name: Configure threat protection
     items:
