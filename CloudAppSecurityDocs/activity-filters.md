@@ -1,5 +1,5 @@
 ---
-title: Activities 
+title: Investigate activities 
 description: This article provides a list of activities, filters, and match parameters that can be applied to activity policies.
 ms.date: 01/29/2023
 ms.topic: how-to
