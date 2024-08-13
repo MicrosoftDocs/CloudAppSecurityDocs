@@ -1,11 +1,11 @@
 ---
-title: Activity filters and queries | Microsoft Defender for Cloud Apps
+title: Filter and query activities | Microsoft Defender for Cloud Apps
 description: This article provides a list of Defender for Cloud Apps activity filters and queries and explains how to work with them.
 ms.date: 12/21/2023
 ms.topic: how-to
 ---
 
-# Activity filters and queries
+# Filter and query Defender for Cloud Apps activities
 
 
 
