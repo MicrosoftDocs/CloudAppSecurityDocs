@@ -6,7 +6,7 @@ ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 description: Learn how to investigate threat detection alerts from app governance in Microsoft Defender XDR with Microsoft Defender for Cloud Apps.
 ---
 
-# Investigate threat detection alerts
+# Investigate app governance threat detection alerts
 
 App governance provides security detections and alerts for malicious activities. This article lists details for each alert that can aid your investigation and remediation, including the conditions for triggering alerts. Since threat detections are nondeterministic by nature, they're only triggered when there's behavior that deviates from the norm.
 
