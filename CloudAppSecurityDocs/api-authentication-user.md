@@ -33,6 +33,8 @@ This page explains how to create a Microsoft Entra application, get an access to
 
 ## Create an app
 
+<!--can we use a different role here?-->
+
 1. Sign in to [Azure](https://portal.azure.com) with a user account that has the **Global Administrator** role.
 
 1. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
@@ -101,6 +103,7 @@ This page explains how to create a Microsoft Entra application, get an access to
 
 For more information on Microsoft Entra tokens, see [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
+<!--do we need to use the password here?-->
 ### Using C#
 
 - Copy/Paste the following class in your application.

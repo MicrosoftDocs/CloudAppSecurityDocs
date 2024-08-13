@@ -184,7 +184,7 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 > [!IMPORTANT]
 >
 > - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers and Global Readers groups.
-> - Only Microsoft Entra Global Administrators or Security Administrators can edit the **Manage admin access** page and grant other users access to Defender for Cloud Apps.
+> - To edit the **Manage admin access** page and grant other users access to Defender for Cloud Apps, you must have at least a Security Administrator role.
 
 1. In the Microsoft Defender Portal, in the left-hand menu, select **Permissions**.
 
@@ -199,7 +199,7 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 
     ![add admins.](media/add-admin.png)
 
-1. Next, select the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, or **Cloud Discovery report admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
+1. Next, select the drop-down to set what type of role the admin has. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
 
     >[!NOTE]
     > Any admin, whose access is limited, that attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
