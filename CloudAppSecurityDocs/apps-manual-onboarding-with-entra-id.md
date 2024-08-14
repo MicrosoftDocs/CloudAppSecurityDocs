@@ -3,8 +3,8 @@
 # For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
 # For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
 
-title:       Manual onboarding of apps using Entra ID | Microsoft Defender for Cloud Apps
-description: Learn how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps hosted via the Entra ID Application Proxy with session controls.
+title:       Manual onboarding of apps using Microsoft Entra ID | Microsoft Defender for Cloud Apps
+description: Learn how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps hosted via the Microsoft Entra ID Application Proxy with session controls.
 author:      damalkaw # GitHub alias
 ms.author:   damalkaw # Microsoft alias
 ms.service:  defender-for-cloud-apps
@@ -84,7 +84,7 @@ To use pre-onboarded apps with Defender for Cloud Apps, you must route the app t
 
 Follow these steps to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
 
-1. **[Configure your Microsoft Entra ID to work with Defender for Cloud Apps](#step-1-configure-entra-id-to-work-with-defender-for-cloud-apps)**
+1. **[Configure your Microsoft Entra ID to work with Defender for Cloud Apps](#step-1-configure-microsoft-entra-id-to-work-with-defender-for-cloud-apps)**
 
 1. **[Configure the app that you are deploying](#conf-app)**
 
@@ -207,9 +207,9 @@ Once you're ready to enable the app for use in your organization's production en
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use with Conditional Access App Control** and then select **Save**.
 
-## Step 5: Update the Microsoft Microsoft Entra ID policy<a name="update-azure-ad"></a>
+## Step 5: Update the Microsoft Entra ID policy<a name="update-azure-ad"></a>
 
-1. In Microsoft MicrosoftEntra ID, under **Security**, select **Conditional Access**.
+1. In  Microsoft Entra ID, under **Security**, select **Conditional Access**.
 1. Update the policy you created earlier to include the relevant users, groups, and controls you require.
 1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Defender for Cloud Apps and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
 
