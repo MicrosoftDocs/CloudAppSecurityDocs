@@ -85,7 +85,6 @@ In the details pane, select any of the following tabs to view more details:
 
 For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require at least the following administrator roles:
 
-<!--what is the least privileged account we need?-->
 
 - *Compliance Administrator*
 - *Company Administrator*

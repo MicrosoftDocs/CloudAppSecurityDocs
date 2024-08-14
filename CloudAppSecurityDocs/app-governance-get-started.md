@@ -49,7 +49,6 @@ App governance is available to organizations with a valid Defender for Cloud App
 
 ## Roles
 
-<!--what is the least privileged account we need?-->
 
 You must have at least one of these roles to turn on app governance:
 
