@@ -98,11 +98,14 @@ This page explains how to create a Microsoft Entra application, get an access to
 
 For more information on Microsoft Entra tokens, see [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
-<!--do we need to use the password here?-->
 ### Using C#
 
 - Copy/Paste the following class in your application.
-- Use **AcquireUserTokenAsync** method with your application ID, tenant ID, user name, and password to acquire a token.
+- Use **AcquireUserTokenAsync** method with your application ID, tenant ID, and authentication acquire a token.
+
+> [!NOTE]
+> While the following code sample demonstrates how to acquire a token using the username and password flow, Microsoft recommends that you use more secure authentication flows in a production environment.
+>
 
     ```csharp
     namespace MDA
