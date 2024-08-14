@@ -59,7 +59,7 @@ landingContent:
             url: ops-guide/ops-guide.md
 
   # Card (optional)
-  - title: Cloud discovery
+  - title: Cloud discovery and security posture
     linkLists:
       - linkListType: concept
         links:
@@ -77,6 +77,8 @@ landingContent:
             url: discovery-docker.md
           - text: Discover and manage shadow IT
             url: tutorial-shadow-it.md
+          - text: Manage SaaS security posture
+            url: security-saas.md
 
   # Card (optional)
   - title: Threat protection

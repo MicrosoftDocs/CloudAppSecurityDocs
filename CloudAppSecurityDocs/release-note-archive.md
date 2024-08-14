@@ -758,7 +758,7 @@ Label management from the Azure Information Protection portal (classic) is depre
 New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 - **Public preview for overriding privilege sensitivity labels**  
-Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [How to integrate Microsoft Purview Information Protection with Defender for Cloud Apps](azip-integration.md#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps).
+Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [How to integrate Microsoft Purview with Defender for Cloud Apps](azip-integration.md#how-to-integrate-microsoft-purview-with-defender-for-cloud-apps).
 
 - **Extended Advanced Hunting events**  
 We've expanded the available events in Cloud App Security. Microsoft Defender XDR Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Microsoft 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).
