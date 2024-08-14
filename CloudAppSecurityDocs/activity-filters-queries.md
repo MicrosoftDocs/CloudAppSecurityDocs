@@ -163,6 +163,8 @@ For example:
 
 You can export all activities from up to six months by clicking the Export button in the top-left corner  
 ![Export button.](media/activity-filters-queries/image1.png)
+
+
 When exporting data, administrators can choose a date range of up to six months, and have the ability the exclude private activities.  
 The exported file is limited to 100,000 records and will be in CSV format.
 
@@ -170,7 +172,7 @@ The result file will be accessible under the **Exported reports**. Users can nav
 Reports that include private activities will be marked with an Eye icon in the reports page.  ![Eye icon.](media/activity-filters-queries/image3.png)
 
 
-Next steps
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Best practices for protecting your organization](best-practices.md)
