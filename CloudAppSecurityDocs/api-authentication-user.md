@@ -107,45 +107,44 @@ For more information on Microsoft Entra tokens, see [Microsoft Entra tutorial](/
 > While the following code sample demonstrates how to acquire a token using the username and password flow, Microsoft recommends that you use more secure authentication flows in a production environment.
 >
 
-    ```csharp
-    namespace MDA
-    {
-        using System.Net.Http;
-        using System.Text;
-        using System.Threading.Tasks;
-        using Newtonsoft.Json.Linq;
-    
-        public static class MDAUtils
-        {
-            private const string Authority = "https://login.microsoftonline.com";
-    
-            private const string MDAId = "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1";
+```csharp
+namespace MDA
+{
+    using System.Net.Http;
+    using System.Text;
+    using System.Threading.Tasks;
+    using Newtonsoft.Json.Linq;
 
-            private const string Scope = "Investigation.read";
-    
-            public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
+    public static class MDAUtils
+    {
+        private const string Authority = "https://login.microsoftonline.com";
+
+        private const string MDAId = "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1";
+        private const string Scope = "Investigation.read";
+
+        public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
+        {
+            using (var httpClient = new HttpClient())
             {
-                using (var httpClient = new HttpClient())
+                var urlEncodedBody = $"scope={MDAId}/{Scope}&client_id={appId}&grant_type=password&username={username}&password={password}";
+
+                var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
+
+                using (var response = await httpClient.PostAsync($"{Authority}/{tenantId}/oauth2/token", stringContent).ConfigureAwait(false))
                 {
-                    var urlEncodedBody = $"scope={MDAId}/{Scope}&client_id={appId}&grant_type=password&username={username}&password={password}";
-    
-                    var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
-    
-                    using (var response = await httpClient.PostAsync($"{Authority}/{tenantId}/oauth2/token", stringContent).ConfigureAwait(false))
-                    {
-                        response.EnsureSuccessStatusCode();
-    
-                        var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-    
-                        var jObject = JObject.Parse(json);
-    
-                        return jObject["access_token"].Value<string>();
-                    }
+                    response.EnsureSuccessStatusCode();
+
+                    var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+
+                    var jObject = JObject.Parse(json);
+
+                    return jObject["access_token"].Value<string>();
                 }
             }
         }
-    } 
-    ```
+    }
+} 
+```
 
 ## Validate the token
 
