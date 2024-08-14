@@ -162,15 +162,18 @@ For example:
 #### Export activities six months back (Preview)
 
 You can export all activities from up to six months by clicking the Export button in the top-left corner  
-![Export button.](media/activity-filters-queries/image1.png)
+![Click the export icon to export records.](media/activity-filters-queries/export-button-of-activity-logs.png)
+
+
 
 
 When exporting data, you can choose a date range of up to six months, and have the ability to exclude private activities.  
 The exported file is limited to 100,000 records and will be in CSV format.
 
 The result file will be accessible under the **Exported reports**. Users can navigate to **Reports -> Cloud Apps** in Microsoft 365 Defender portal to view the status of the export process and access past exports.  
-Reports that include private activities will be marked with an Eye icon in the reports page.  ![Eye icon.](media/activity-filters-queries/image3.png)
+Reports that include private activities will be marked with an Eye icon in the reports page.  
 
+![eye-icon-to-indicate-private-report](media/activity-filters-queries/eye-icon-to-indicate-private-report.png)
 
 ## Next steps
 
