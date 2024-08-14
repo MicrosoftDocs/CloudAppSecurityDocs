@@ -21,21 +21,11 @@ In general, you’ll need to take the following steps to use the APIs:
 
 This article explains how to create a Microsoft Entra application, get an access token to Microsoft Defender for Cloud Apps, and validate the token.
 
-## Create an app
+## Create an app for Defender for Cloud Apps
 
-<!--can we use a different role here?-->
-1. Sign in to [Azure](https://portal.azure.com) with a user that has the **Global Administrator** role.
+1. In the Microsoft Entra admin center, register a new application. For more information, see [Quickstart: Register an application with the Microsoft Entra admin center](/azure/active-directory/develop/quickstart-register-app).
 
-    > [!IMPORTANT]
-    > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
-
-2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
-
-   ![Image of Microsoft Azure and navigation to application registration.](media/atp-azure-new-app2.png)
-
-3. In the registration form, choose a name for your application, and then select **Register**.
-
-4. To enable your app to access Defender for Cloud Apps and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Cloud App Security**, and then select **Microsoft Cloud App Security**.
+1. To enable your app to access Defender for Cloud Apps and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Cloud App Security**, and then select **Microsoft Cloud App Security**.
 
    > [!NOTE]
    > *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear. Make sure to type this name, even though the product is now called Defender for Cloud Apps.
@@ -50,25 +40,25 @@ This article explains how to create a Microsoft Entra application, get an access
 
      - To determine which permission you need, look at the **Permissions** section in the API you're interested to call.
 
-5. Select **Grant admin consent**.
+1. Select **Grant admin consent**.
 
      > [!NOTE]
      > Every time you add a permission, you must select **Grant admin consent** for the new permission to take effect.
 
     ![Grant permissions.](media/grant-consent.png)
 
-6. To add a secret to the application, select **Certificates & secrets**, select **New client secret**, add a description to the secret, and then select **Add**.
+1. To add a secret to the application, select **Certificates & secrets**, select **New client secret**, add a description to the secret, and then select **Add**.
 
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
     ![Image of create app key.](media/webapp-create-key2.png)
 
-7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the **Application (client) ID** and the **Directory (tenant) ID**.
+1. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the **Application (client) ID** and the **Directory (tenant) ID**.
 
    ![Image of created app id.](media/app-and-tenant-ids.png)
 
-8. **For Microsoft Defender for Cloud Apps Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
+1. **For Microsoft Defender for Cloud Apps Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
     - Go to **Authentication**, and add `https://portal.azure.com` as the **Redirect URI**.
 
