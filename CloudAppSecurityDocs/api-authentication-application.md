@@ -26,6 +26,9 @@ This article explains how to create a Microsoft Entra application, get an access
 <!--can we use a different role here?-->
 1. Sign in to [Azure](https://portal.azure.com) with a user that has the **Global Administrator** role.
 
+    > [!IMPORTANT]
+    > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
    ![Image of Microsoft Azure and navigation to application registration.](media/atp-azure-new-app2.png)
