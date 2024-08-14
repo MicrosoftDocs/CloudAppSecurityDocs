@@ -173,7 +173,7 @@ The exported file is limited to 100,000 records and will be in CSV format.
 The result file will be accessible under the **Exported reports**. Users can navigate to **Reports -> Cloud Apps** in Microsoft 365 Defender portal to view the status of the export process and access past exports.  
 Reports that include private activities will be marked with an Eye icon in the reports page.  
 
-![eye-icon-to-indicate-private-report](media/activity-filters-queries/eye-icon-to-indicate-private-report.png)
+![eye-icon](media/activity-filters-queries/eye-icon-to-indicate-private-report.png)
 
 ## Next steps
 
