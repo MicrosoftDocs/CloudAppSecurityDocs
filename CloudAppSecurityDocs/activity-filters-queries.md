@@ -108,11 +108,11 @@ To make investigation even simpler, you can now create custom queries and save t
 1. In the **Save query** pop-up, name your query.
 
    ![new query.](media/new-activity-query.png)
-
+   
 1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
    ![open query.](media/select-activity-query.png)
-
+   
 Defender for Cloud Apps also provides you with **Suggested queries**. Suggested queries provide you with recommended avenues of investigation that filter your activities. You can edit these queries and save them as custom queries. The following are optional suggested queries:
 
 - Admin activities - filters all your activities to display only those activities that involve admins.
@@ -159,7 +159,18 @@ For example:
 
 ![Filter after selecting investigate 6 months back.](media/filter-six-months-back.png)
 
-## Next steps
+#### Export activities six months back [Preview]
+
+You can export all activities from up to six months by clicking the Export button in the top-left corner  
+![User's image](media/activity-filters-queries/image1.png)
+When exporting data, administrators can choose a date range of up to six months, and have the ability the exclude private activities.  
+The exported file is limited to 100,000 records and will be in CSV format.
+
+The result file will be accessible under the **Exported reports**. Users can navigate to **Reports -> Cloud Apps** in Microsoft 365 Defender portal to view the status of the export process and access past exports.  
+Reports that include private activities will be marked with an Eye icon in the reports page.  ![User's image](media/activity-filters-queries/image3.png)
+
+
+Next steps
 
 > [!div class="nextstepaction"]
 > [Best practices for protecting your organization](best-practices.md)
