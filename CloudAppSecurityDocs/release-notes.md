@@ -19,6 +19,16 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## August 2024
+
+### Large scale export of Activity logs (Preview)
+
+A new user experience dedicated to providing users the option to export from “activity log” page up to six months back or up to 100K events.
+
+You can filter the results using time range and various other filters and even hide private activities.
+
+For more information, see [Export activities six months back](activity-filters-queries.md#export-activities-six-months-back-preview)
+
 ## July 2024
 ### Configure and embed a custom support URL in Block pages (Preview)
 
