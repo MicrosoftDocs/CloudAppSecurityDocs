@@ -14,9 +14,9 @@ If you need programmatic access Microsoft Defender for Cloud Apps without a user
 
 If you aren't sure which access you need, read the [Introduction page](api-authentication.md).
 
-Microsoft Defender for Cloud Apps exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Defender for Cloud Apps capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender for Cloud Apps exposes much of its data and actions through a set of programmatic APIs. Those APIs enable you to automate work flows and innovate based on Microsoft Defender for Cloud Apps capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-In general, you’ll need to take the following steps to use the APIs:
+In general, you need to take the following steps to use the APIs:
 
 - Create a Microsoft Entra application
 - Get an access token using this application
@@ -38,7 +38,7 @@ This page explains how to create a Microsoft Entra application, get an access to
 
 1. When the **Register an application** page appears, enter your application's registration information:
 
-   - **Name** - Enter a meaningful application name that will be displayed to users of the app.
+   - **Name** - Enter a meaningful application name that is displayed to users of the app.
    - **Supported account types** - Select which accounts you would like your application to support.
 
        | Supported account types | Description |
@@ -47,7 +47,7 @@ This page explains how to create a Microsoft Entra application, get an access to
        | **Accounts in any organizational directory** | Select this option if you would like to target all business and educational customers.<br><br>This option maps to a Microsoft Entra-only multitenant.<br><br>If you registered the app as Microsoft Entra-only single-tenant, you can update it to be Microsoft Entra multitenant and back to single-tenant through the **Authentication** pane. |
        | **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>This option maps to Microsoft Entra multitenant and personal Microsoft accounts.<br><br>If you registered the app as Microsoft Entra multitenant and personal Microsoft accounts, you can't change this in the UI. Instead, you must use the application manifest editor to change the supported account types. |
 
-   - **Redirect URI (optional)** - Select the type of app you're building, **Web** or **Public client (mobile & desktop)**, and then enter the redirect URI (or reply URL) for your application.
+   - **Redirect URI (optional)** - Select the type of app you're building, **Web, or **Public client (mobile & desktop)**, and then enter the redirect URI (or reply URL) for your application.
        - For web applications, provide the base URL of your app. For example, `http://localhost:31544` might be the URL for a web app running on your local machine. Users would use this URL to sign in to a web client application.
        - For public client applications, provide the URI used by Microsoft Entra ID to return token responses. Enter a value specific to your application, such as `myapp://auth`.
 
@@ -59,13 +59,13 @@ This page explains how to create a Microsoft Entra application, get an access to
 
     - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type *Microsoft Cloud App Security* and then select **Microsoft Cloud App Security**.
 
-    - **Note**: *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear. Make sure to type this name, even though the product is now called Defender for Cloud Apps.
+    - **Note**: *Microsoft Cloud App Security* doesn't appear in the original list. Start writing its name in the text box to see it appear. Make sure to type this name, even though the product is now called Defender for Cloud Apps.
 
-      ![add permission.](media/add-permission.png)
+      ![Screenshot of adding permissions.](media/add-permission.png)
 
     - Choose **Delegated permissions** > **Investigation.Read** > select **Add permissions**
 
-      ![application permissions.](media/application-permissions-public-client.png)
+      ![Screenshot of adding application permissions.](media/application-permissions-public-client.png)
 
     - **Important note**: Select the relevant permissions. **Investigation.Read** is only an example. For other permission scopes, see [Supported permission scopes](#supported-permission-scopes)
 
@@ -75,22 +75,22 @@ This page explains how to create a Microsoft Entra application, get an access to
 
       **Note**: Every time you add permission you must select **Grant admin consent** for the new permission to take effect.
 
-      ![Image of Grant permissions.](media/grant-consent.png)
+      ![Screenshot of of granting admin permissions.](media/grant-consent.png)
 
 1. Write down your application ID and your tenant ID:
 
    - On your application page, go to **Overview** and copy the following information:
 
-        ![Image of created app id.](media/app-and-tenant-ids.png)
+        ![Screenshot of the created app ID.](media/app-and-tenant-ids.png)
 
 ## Supported permission scopes
 
 | Permission name      | Description                                                  | Supported actions                                            |
 | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Investigation.read   | Perform all supported actions on activities and alerts except closing alerts.<br />View IP ranges but not add, update or delete.<br /><br />Perform all entities actions. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread<br />Entities list, fetch, fetch tree<br />Subnet list |
+| Investigation.read   | Perform all supported actions on activities and alerts except closing alerts.<br />View IP ranges but not add, update, or delete.<br /><br />Perform all entities actions. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread<br />Entities list, fetch, fetch tree<br />Subnet list |
 | Investigation.manage | Perform all investigation.read actions in addition to managing alerts and IP ranges. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread, close<br />Entities list, fetch, fetch tree<br />Subnet list, create/update/delete |
 | Discovery.read       | Perform all supported actions on activities and alerts except closing alerts.<br />List discovery reports and categories. | Alerts list, fetch, mark as read/unread<br />Discovery list reports, list report categories |
-| Discovery.manage     | Discovery.read permissions<br />Close alerts, upload discovery files and generate block scripts | Alerts list, fetch, mark as read/unread, close<br />Discovery list reports, list report categories<br />Discovery file upload, generate block script |
+| Discovery.manage     | Discovery.read permissions<br />Close alerts, upload discovery files, and generate block scripts | Alerts list, fetch, mark as read/unread, close<br />Discovery list reports, list report categories<br />Discovery file upload, generate block script |
 | Settings.read        | List IP ranges.                                              | Subnet list                                                  |
 | Settings.manage      | List and manage IP ranges.                                   | Subnet list, create/update/delete                            |
 
@@ -152,7 +152,7 @@ Verify to make sure you got a correct token:
 - Validate that you get a 'scp' claim with the desired app permissions
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-    ![Image of token validation.](media/webapp-decoded-token.png)
+    ![Screenshot of token validation.](media/webapp-decoded-token.png)
 
 ## Use the token to access the Microsoft Defender for Cloud Apps API
 
