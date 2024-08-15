@@ -34,7 +34,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
    - Select **Application permissions** > **Investigation.Read**, and then select **Add permissions**.
 
-        ![Screenshot of adding app permission.](media/application-permissions.png)
+        :::image type="content" source="media/application-permissions.png" alt-text="Screenshot of adding app permission." lightbox="media/application-permissions.png":::
 
      You need to select the relevant permissions. **Investigation.Read** is only an example. For other permission scopes, see [Supported permission scopes](#supported-permission-scopes)
 
@@ -56,7 +56,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
 1. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the **Application (client) ID** and the **Directory (tenant) ID**.
 
-   ![Screenshot of the created app ID](media/app-and-tenant-ids.png)
+   ![Screenshot of the created app ID.](media/app-and-tenant-ids.png)
 
 1. **For Microsoft Defender for Cloud Apps Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
