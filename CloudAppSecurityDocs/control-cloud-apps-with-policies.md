@@ -14,7 +14,7 @@ For example, if there's a data violation threat that you want to quarantine, you
 
 ## Policy types
 
-When you look at the **Policy management** page, the various policies and templates can be distinguished by type and icon to see which policies are available. The policies can be viewed together on the **All policies** tab, or in their respective category tabs. The available policies depend on the data source and what you have enabled in Defender for Cloud Apps for your organization. For example, if you uploaded Cloud Discovery logs, the policies relating to Cloud Discovery are displayed.
+When you look at the **Policy management** page, the various policies and templates can be distinguished by type and icon to see which policies are available. The policies can be viewed together on the **All policies** tab, or in their respective category tabs. The available policies depend on the data source and what you have enabled in Defender for Cloud Apps for your organization. For example, if you uploaded cloud discovery logs, the policies relating to cloud discovery are displayed.
 
 The following types of policies can be created:
 
@@ -28,7 +28,7 @@ The following types of policies can be created:
 |![access policy icon.](media/proxy-policy.png)|Access policy|Conditional Access|Access policies provide you with real-time monitoring and control over user logins to your cloud apps. [Learn more](access-policy-aad.md)|
 |![session policy icon.](media/proxy-policy.png)|Session policy|Conditional Access|Session policies provide you with real-time monitoring and control over user activity in your cloud apps. [Learn more](session-policy-aad.md)|
 |![cloud discovery policy icon.](media/discovery-policy.png)|App discovery policy|Shadow IT|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization. [Learn more](cloud-discovery-policies.md)|
-|![anomaly detection policy icon.](media/anomaly-detection-policy.png)|Cloud Discovery anomaly detection policy|Shadow IT|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app. [Learn more](cloud-discovery-anomaly-detection-policy.md)|
+|![anomaly detection policy icon.](media/anomaly-detection-policy.png)|cloud discovery anomaly detection policy|Shadow IT|Cloud discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app. [Learn more](cloud-discovery-anomaly-detection-policy.md)|
 
 ## Identifying risk
 
@@ -46,7 +46,7 @@ Defender for Cloud Apps helps you mitigate different risks in the cloud. You can
 
     Monitor configuration changes including remote configuration manipulation.
 
-- **Cloud Discovery:** Are new apps being used in your organization? Do you have a problem of Shadow IT apps being used that you don't know about?
+- **Cloud discovery:** Are new apps being used in your organization? Do you have a problem of Shadow IT apps being used that you don't know about?
 
     Rate overall risk for each cloud app based on regulatory and industry certifications and best practices. Enables you to monitor the number of users, activities, traffic volume, and typical usage hours for each cloud application.
 
@@ -135,7 +135,7 @@ To create a policy based on investigation results, do the following steps:
     >
     > [Data protection policies](data-protection-policies.md)
     >
-    > [Cloud Discovery policies](cloud-discovery-policies.md)
+    > [Cloud discovery policies](cloud-discovery-policies.md)
 
 ### Add automated actions to respond and remediate risks automatically
 

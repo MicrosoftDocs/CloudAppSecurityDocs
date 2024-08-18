@@ -30,7 +30,7 @@ This section describes the troubleshooting steps we recommend you taking if the 
 **Recommended steps**
 
 1. In the Microsoft Defender Portal, select **Settings** > **Cloud Apps**.
-1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps. For example:
+1. Under **conditional access app control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps. For example:
 
     ![Screenshot of the user monitoring options.](media/proxy-user-monitoring.png)
    

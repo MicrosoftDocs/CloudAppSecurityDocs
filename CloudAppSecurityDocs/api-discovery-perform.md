@@ -1,10 +1,10 @@
 ---
-title: Perform file upload - Cloud Discovery API
-description: This article describes the perform file upload request in the Defender for Cloud Apps Cloud Discovery API.
+title: Perform file upload - cloud discovery API
+description: This article describes the perform file upload request in the Defender for Cloud Apps cloud discovery API.
 ms.date: 01/29/2023
 ms.topic: reference
 ---
-# Perform file upload - Cloud Discovery API
+# Perform file upload - cloud discovery API
 
 
 
@@ -12,7 +12,7 @@ Upload the file contents by performing an HTTP PUT request. You will be required
 
 > [!NOTE]
 >
-> - You can upload individual files of up to 5 GB. If you need to upload larger files, break the Cloud Discovery data into multiple chunks.
+> - You can upload individual files of up to 5 GB. If you need to upload larger files, break the cloud discovery data into multiple chunks.
 > - If you do not know which environment you are running, check the [Initiate file upload](api-discovery-initiate.md) request, which returns this information.
 
 ## HTTP request

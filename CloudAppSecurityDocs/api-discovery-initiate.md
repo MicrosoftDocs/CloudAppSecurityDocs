@@ -1,10 +1,10 @@
 ---
-title: Initiate file upload - Cloud Discovery API
-description: This article describes the upload_url request in the Defender for Cloud Apps Cloud Discovery API.
+title: Initiate file upload - cloud discovery API
+description: This article describes the upload_url request in the Defender for Cloud Apps cloud discovery API.
 ms.date: 01/29/2023
 ms.topic: reference
 ---
-# Initiate file upload - Cloud Discovery API
+# Initiate file upload - cloud discovery API
 
 
 
@@ -20,8 +20,8 @@ GET /api/v1/discovery/upload_url/
 
 | Parameter | Description |
 | --- |--- |
-| filename | Name of the file you want to upload to Cloud Discovery processing |
-| source | The type of Cloud Discovery log file being uploaded |
+| filename | Name of the file you want to upload to cloud discovery processing |
+| source | The type of cloud discovery log file being uploaded |
 
 The following source types are currently supported:
 
@@ -106,7 +106,7 @@ The following source types are currently supported:
 
 | Parameter | Description |
 | --- | --- |
-| url | The target URL that will perform your Cloud Discovery upload. |
+| url | The target URL that will perform your cloud discovery upload. |
 | provider | Either "azure" or "aws", an indication whether the upload is target to Windows Azure Storage and AWS S3 storage. |
 
 ## Example
