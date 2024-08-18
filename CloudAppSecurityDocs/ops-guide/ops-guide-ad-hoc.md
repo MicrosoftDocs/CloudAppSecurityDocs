@@ -108,13 +108,13 @@ For more information, see [Understand how quarantine works](../use-case-admin-qu
 
 The cloud app catalog rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. We recommend reviewing the score for each of the apps in your environment to make sure it aligns with your company regulations.
 
-After checking an app's risk score, you might want to submit a request to change the score, or customize the risk score in **cloud discovery > Score metrics**.
+After checking an app's risk score, you might want to submit a request to change the score, or customize the risk score in **Cloud Discovery > Score metrics**.
 
 For more information, see [Find your cloud app and calculate risk scores](../risk-score.md).
 
 ## Delete cloud discovery data
 
-**Where**: In the Microsoft Defender XDR Portal, select **Settings > Cloud apps > cloud discovery > Delete Data**.
+**Where**: In the Microsoft Defender XDR Portal, select **Settings > Cloud apps > Cloud Discovery > Delete Data**.
 
 **Persona**: Compliance administrators
 

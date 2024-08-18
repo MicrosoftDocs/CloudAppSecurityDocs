@@ -132,6 +132,6 @@ For more information, see:
 - [Troubleshooting access and session controls](troubleshooting-proxy.md)
 - [Tutorial: Block download of sensitive information with conditional access app control](use-case-proxy-block-session-aad.md)
 - [Blocking downloads on unmanaged devices using session controls](use-case-proxy-block-session-aad.md)
-- [conditional access app control webinar](webinars.md#on-demand-webinars)
+- [Conditional access app control webinar](webinars.md#on-demand-webinars)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

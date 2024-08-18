@@ -260,6 +260,6 @@ Additionally, you can onboard a custom app as a conditional access app control a
 
 **For more information**:
 
-- [Add custom apps to Cloud discovery](cloud-discovery-custom-apps.md)
+- [Add custom apps to cloud discovery](cloud-discovery-custom-apps.md)
 - [Onboard non-Microsoft IdP catalog apps for Conditional Access app control](proxy-deployment-featured-idp.md)
 - [Onboard non-Microsoft IdP custom apps for Conditional Access app control](proxy-deployment-any-app-idp.md)

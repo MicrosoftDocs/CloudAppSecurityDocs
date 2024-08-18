@@ -55,7 +55,7 @@ Set the thresholds that should trigger an alert for a certain discovered app at 
 
 ![app discovery policy example.](media/app-discovery-policy-example.png "app discovery policy example")
 
-## Cloud iscovery anomaly detection
+## Cloud discovery anomaly detection
 
 Defender for Cloud Apps searches all the logs in your cloud discovery for anomalies. For instance, when a user, who never used Dropbox before, suddenly uploads 600 GB to it, or when there are a lot more transactions than usual on a particular app. The anomaly detection policy is enabled by default. It's not necessary to configure a new policy for it to work. However, you can fine-tune which types of anomalies you want to be alerted about in the default policy.
 
