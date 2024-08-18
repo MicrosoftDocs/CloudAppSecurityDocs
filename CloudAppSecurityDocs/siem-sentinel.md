@@ -28,7 +28,7 @@ Integrating with Microsoft Sentinel includes configuration in both Defender for 
 To integrate with Microsoft Sentinel:
 
 * You must have a valid Microsoft Sentinel license
-* You must be a Global Administrator or a Security Administrator in your tenant.
+* You must be at least a Security Administrator in your tenant.
 
 ### US Government support
 
