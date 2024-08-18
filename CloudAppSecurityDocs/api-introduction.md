@@ -12,7 +12,7 @@ This article describes how to interact with Defender for Cloud Apps over HTTPS.
 
 The Microsoft Defender for Cloud Apps API provides programmatic access to Defender for Cloud Apps through REST API endpoints. Applications can use the API to perform read and update operations on Defender for Cloud Apps data and objects. For example, the Defender for Cloud Apps API supports the following common operations for a user object:
 
-- Upload log files for Cloud Discovery
+- Upload log files for cloud discovery
 - Generate block scripts
 - List activities and alerts
 - Dismiss or resolve alerts

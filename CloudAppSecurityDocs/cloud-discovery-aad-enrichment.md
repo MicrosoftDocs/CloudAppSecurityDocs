@@ -1,14 +1,14 @@
 ---
-title: Enrich Cloud Discovery data with Microsoft Entra usernames
+title: Enrich cloud discovery data with Microsoft Entra usernames
 description: This article provides information about how to enrich Defender for Cloud Apps Discovery data with Microsoft Entra usernames.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Enrich Cloud Discovery data with Microsoft Entra usernames
+# Enrich cloud discovery data with Microsoft Entra usernames
 
 
 
-Cloud Discovery data can now be enriched with Microsoft Entra username data. When you enable this feature, the username, received in discovery traffic logs, is matched and replaced by the Microsoft Entra username. Cloud Discovery enrichment enables the following features:
+Cloud discovery data can now be enriched with Microsoft Entra username data. When you enable this feature, the username, received in discovery traffic logs, is matched and replaced by the Microsoft Entra username. Cloud discovery enrichment enables the following features:
 
 - You can investigate Shadow IT usage by Microsoft Entra user. The user will be shown with its UPN.
 - You can correlate the Discovered cloud app use with the API collected activities.

@@ -41,7 +41,7 @@ The request is sent to Microsoft Support Team. The team will respond to your ser
 ## Related topics
 
 - [Check service health](/microsoft-365/enterprise/view-service-health)
-- [Troubleshooting Cloud Discovery errors](troubleshooting-cloud-discovery.md)
+- [Troubleshooting cloud discovery errors](troubleshooting-cloud-discovery.md)
 - [Troubleshooting content inspection errors](troubleshooting-content-inspection.md)
 - [Troubleshooting App Connector error messages](troubleshooting-api-connectors-using-error-messages.md)
 - [Troubleshooting Microsoft Defender for Cloud Apps policies](troubleshoot-policies.md)

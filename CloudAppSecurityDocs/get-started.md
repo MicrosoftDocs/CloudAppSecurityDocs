@@ -94,15 +94,15 @@ We recommend using Defender for Cloud Apps sensitive information protection in p
 
 You can use policies to help you monitor trends, see security threats, and generate customized reports and alerts. With policies, you can create governance actions, and set data loss prevention and file-sharing controls.
 
-## Step 4: Set up Cloud Discovery
+## Step 4: Set up cloud discovery
 
-**How to page**: [Set up Cloud Discovery](set-up-cloud-discovery.md)
+**How to page**: [Set up cloud discovery](set-up-cloud-discovery.md)
 
 **Required task**: Enable Defender for Cloud Apps to view your cloud app use
 
 1. [Integrate with Microsoft Defender for Endpoint](mde-integration.md) to automatically enable Defender for Cloud Apps to monitor your Windows 10 and Windows 11 devices inside and outside your corporation.
 1. If you use [Zscaler, integrate](zscaler-integration.md) it with Defender for Cloud Apps.
-1. To achieve full coverage, create a continuous Cloud Discovery report
+1. To achieve full coverage, create a continuous cloud discovery report
 
     1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
     1. Under **Cloud Discovery**, choose **Automatic log upload**.
@@ -110,14 +110,14 @@ You can use policies to help you monitor trends, see security threats, and gener
     1. On the **Log collectors** tab, configure the log collector.
 
 **Migration recommendation**  
-We recommend using Defender for Cloud Apps discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Defender for Cloud Apps [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft Defender XDR, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps) to forward signals to Defender for Cloud Apps. Configuring Cloud Discovery won't conflict with the log collection of your current CASB solution.
+We recommend using Defender for Cloud Apps discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Defender for Cloud Apps [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft Defender XDR, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps) to forward signals to Defender for Cloud Apps. Configuring cloud discovery won't conflict with the log collection of your current CASB solution.
 
-### To create a snapshot Cloud Discovery report
+### To create a snapshot cloud discovery report
 
 1. In the Microsoft Defender Portal, under **Cloud Apps**, choose **Cloud discovery**.
 1. In the top right-hand corner, select **Actions** -> **Create Cloud Discovery snapshot report**.
 
-### Why should you configure Cloud Discovery reports?
+### Why should you configure cloud discovery reports?
 
 Having visibility into shadow IT in your organization is critical.
 After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.

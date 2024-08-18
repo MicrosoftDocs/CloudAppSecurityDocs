@@ -22,12 +22,12 @@ Activities from your [API connected apps](enable-instant-visibility-protection-a
 - **[Discovery log](tutorial-shadow-it.md)**  
 Activities extracted from firewall and proxy traffic logs that are forwarded to Defender for Cloud Apps. The logs are analyzed against the [cloud app catalog](risk-score.md), ranked, and scored based on more than 90 risk factors.
 - **[Proxy log](proxy-intro-aad.md)**  
-Activities from your [Conditional Access App Control apps](tutorial-proxy.md#phase-1-monitor-user-activities-for-anomalies).
+Activities from your [conditional access app control apps](tutorial-proxy.md#phase-1-monitor-user-activities-for-anomalies).
 
 Next, you'll want to tune your policies. The following policies can be fine-tuned by setting filters, dynamic thresholds (UEBA) to help train their detection models, and suppressions to reduce common false positive detections:
 
 - Anomaly detection
-- Cloud Discovery anomaly detection
+- Cloud discovery anomaly detection
 - Rule-based activity detection
 
 In this tutorial, you'll learn how to tune user activity detections to identify true compromises and reduce alert fatigue resulting from handling large volumes of false positive detections:
