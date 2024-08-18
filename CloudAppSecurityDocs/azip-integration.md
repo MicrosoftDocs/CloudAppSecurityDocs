@@ -33,7 +33,7 @@ Defender for Cloud Apps currently supports applying sensitivity labels from Micr
   > [!NOTE]
   > For PDF, you must use unified labels.
 
-This feature is currently available for files stored in Box, Google Workspace, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
+This feature is currently available for files stored in Box, Google Workspace, SharePoint Online, and OneDrive. More cloud apps will be supported in future versions.
 
 ## How it works
 

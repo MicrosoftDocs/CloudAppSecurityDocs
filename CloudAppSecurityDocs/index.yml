@@ -47,7 +47,7 @@ landingContent:
             url: ./get-started.md
       - linkListType: how-to-guide
         links:
-          - text: Basic set up
+          - text: Basic setup
             url: general-setup.md
           - text: View and manage security posture
             url: security-saas.md

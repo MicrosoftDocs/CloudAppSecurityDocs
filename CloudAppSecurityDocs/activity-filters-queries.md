@@ -119,7 +119,7 @@ Defender for Cloud Apps also provides you with **Suggested queries**. Suggested 
 
 - Download activities - filters all your activities to display only those activities that were download activities, including downloading user list as a .csv file, downloading shared content, and downloading a folder.
 
-- Failed log-in - filters all your activities to display only failed log-ins and failed sign-ins via SSO
+- Failed log-in - filters all your activities to display only failed sign-in and failed sign-ins via SSO
 
 - File and folder activities - filters all your activities to display only those involving files and folders. The filter includes uploading, download, and accessing folders, along with creating, deleting, uploading, downloading, quarantining, and accessing files and transferring content.
 
@@ -129,7 +129,7 @@ Defender for Cloud Apps also provides you with **Suggested queries**. Suggested 
 
 - Sharing activities - filters all your activities to display only those activities that involve sharing folders and files, including creating a company link, creating an anonymous link, and granting read/write permissions.
 
-- Successful log-in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log-on, single sign-on logon, and log-on from a new device.
+- Successful log-in - filters all your activities to display only those activities that involve successful sign-ins, including impersonate action, impersonate sign-in, single sign-o sign-ins, and sign-in from a new device.
 
 ![query activities.](media/queries-activity.png)
 

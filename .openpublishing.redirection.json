@@ -2,7 +2,7 @@
     "redirections": [
       {
         "source_path": "CloudAppSecurityDocs/lifecycle-management.md",
-        "redirect_url": "/defender-cloud-apps/ops-guide/ops-guide.md",
+        "redirect_url": "/defender-cloud-apps/ops-guide/ops-guide",
         "redirect_document_id": false
       },
       {
