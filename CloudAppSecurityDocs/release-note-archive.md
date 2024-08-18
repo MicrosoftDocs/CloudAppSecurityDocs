@@ -457,11 +457,11 @@ We've released a new log collector version with the latest vulnerabilities fixes
 - **Onboarding application to session controls (Preview)**  
   The process of onboarding an application to be used for session controls has been improved and should increase the success rate of the onboarding process. To onboard an application:
 
-  1. Go to the conditional access app control list in **Settings** -> **Conditional Access app control**.
+  1. Go to the Conditional Access App Control list in **Settings** -> **Conditional Access app control**.
   1. After selecting **Onboard with session control**, you're presented with an **Edit this app** form.
   1. To onboard the application to session controls, you must select the **Use the app with session controls** option.
   
-  For more information, see [Deploy conditional access app control for catalog apps with Azure AD](proxy-deployment-aad.md).
+  For more information, see [Deploy Conditional Access App Control for catalog apps with Azure AD](proxy-deployment-aad.md).
 
 
 ### Defender for Cloud Apps release 234
@@ -775,7 +775,7 @@ We've further improved our Defender for Endpoint integration by using enhanced s
   - [KB4601382](https://support.microsoft.com/topic/february-24-2021-kb4601382-os-builds-19041-844-and-19042-844-preview-1a7ed2b4-017d-2644-a1e8-dd6bf14cba76): Windows 10, version 20H2, version [21H1 Insider](https://blogs.windows.com/windows-insider/2021/02/17/announcing-windows-10-insider-preview-build-19043-844-21h1/)
 
 - **Configurable session lifetime**  
-We're enabling customers to configure a shorter session lifetime for conditional access app control. By default, sessions proxied by Cloud App Security have a maximum lifetime of 14 days. For more information about shortening session lifetimes, contact us at mcaspreview@microsoft.com.
+We're enabling customers to configure a shorter session lifetime for Conditional Access App Control. By default, sessions proxied by Cloud App Security have a maximum lifetime of 14 days. For more information about shortening session lifetimes, contact us at mcaspreview@microsoft.com.
 
 
 ### Cloud App Security release 192, 193, and 194
@@ -879,7 +879,7 @@ We've updated the term **machine** to **device** as part of the general Microsof
 Released September 6, 2020
 
 - **Access and session controls for Azure portal GA**  
-conditional access app control for the Azure portal is now generally available. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
+Conditional Access App Control for the Azure portal is now generally available. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
 
 ### Cloud App Security release 181
 
@@ -948,7 +948,7 @@ Released June 14, 2020
 We've expanded our session controls to detect potential malware using Microsoft Threat Intelligence upon file uploads or downloads. The new detection is now available out-of-the-box and can be configured to automatically block files identified as potential malware. For more information, see [Block malware on upload or download](session-policy-aad.md#block-malware-on-upload-or-download).
 
 - **New access token support for access and session controls**  
-We've added the ability to treat access token and code requests as logins when onboarding apps to access and session controls. To use tokens, select the settings cog icon, select **conditional access app control**, edit the relevant app (three dots menu > **Edit app**), select **Treat access token and code requests as app logins**, and then select **Save**. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
+We've added the ability to treat access token and code requests as logins when onboarding apps to access and session controls. To use tokens, select the settings cog icon, select **Conditional Access App Control**, edit the relevant app (three dots menu > **Edit app**), select **Treat access token and code requests as app logins**, and then select **Save**. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md).
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
 On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allowlist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
@@ -1233,8 +1233,8 @@ We're gradually rolling out new logic to identify if an Azure Active Directory s
 
 Released July 21, 2019
 
-- **Onboard and deploy conditional access app control for any app is now GA**  
-Since previewing conditional access app control for any app last month, we've received tremendous feedback and are excited to announce GA. This new capability allows you to deploy any web app to work with session and access policies, enabling powerful real-time monitoring and control.
+- **Onboard and deploy Conditional Access App Control for any app is now GA**  
+Since previewing Conditional Access App Control for any app last month, we've received tremendous feedback and are excited to announce GA. This new capability allows you to deploy any web app to work with session and access policies, enabling powerful real-time monitoring and control.
 
 - **Security configuration assessment for AWS**  
 Cloud App Security is gradually rolling out the ability to get a security configuration assessment of your Amazon Web Services environment for CIS compliance, and provides recommendations for missing configurations and security controls. This ability provides organizations with a single view for monitoring the compliance status for all connected AWS accounts.
@@ -1249,7 +1249,7 @@ Released July 7, 2019
 - **Enhanced Dropbox support**  
 Cloud App Security now supports the **Trash** governance action for Dropbox – This governance action can be used manually or automatically as part of a file policy.
 - **New featured apps for Cloud Access App Control**  
-conditional access app control for the following featured apps is now generally available:
+Conditional Access App Control for the following featured apps is now generally available:
 
   - OneDrive for Business
   - SharePoint Online
@@ -1264,8 +1264,8 @@ Cloud App Security scans files from your connected apps for DLP exposure and mal
 
 Released June 23, 2019
 
-- **Deploy conditional access app control for any app (preview)**  
-We're excited to announce that we've expanded our support for conditional access app control to any web app, in addition to the rich support we already offer for [our featured applications](proxy-intro-aad.md). This new capability allows you to deploy any web app to work with session and access policies, enabling powerful real-time monitoring and control. For example, you can protect downloads with Azure Information Protection labels, block upload of sensitive documents, providing auditing, among many others.
+- **Deploy Conditional Access App Control for any app (preview)**  
+We're excited to announce that we've expanded our support for Conditional Access App Control to any web app, in addition to the rich support we already offer for [our featured applications](proxy-intro-aad.md). This new capability allows you to deploy any web app to work with session and access policies, enabling powerful real-time monitoring and control. For example, you can protect downloads with Azure Information Protection labels, block upload of sensitive documents, providing auditing, among many others.
 - **Portal activity auditing**  
 Cloud App Security audits all admin activity in the portal to provide you with comprehensive monitoring and investigation of activities performed. Now you can also export up to 90 days of activities for further investigation and analysis, for example, auditing of an admin investigating a specific user or viewing specific alerts. To export the log, go to the **Manage admin access** settings page.
 - **Custom session sign out from Cloud App Security portal**  
@@ -1368,7 +1368,7 @@ As part of this capability, Cloud App Security automatically identifies suspicio
 As part of this change, malware detection policies now include a Detection type field that enables you to filter by threat intelligence and sandboxing.
 
 - **Conditional Access updates**  
-conditional access app control added the ability to monitor and block the following activities:
+Conditional Access App Control added the ability to monitor and block the following activities:
   - File uploads in any app - enabling scenarios such as preventing upload of known malware extensions, and ensuring users protect files with Azure Information Protection prior to upload.
   - Copy and paste in any app - rounding out robust controls of data exfiltration that already included controlling download, print, and custom activities such as share.
   - Send message - ensuring that personal data such as passwords isn't shared in popular collaboration tools such as Slack, Salesforce, and Workplace by Facebook.
@@ -1447,7 +1447,7 @@ You can now affect the anomaly detection engine to suppress or surface alerts ac
   - You can also configure whether the alerts for Activity from infrequent country/region, anonymous IP addresses, suspicious IP addresses, and  impossible travel should analyze both failed and successful logins or only successful logins.
 
 - **Support for multiple trust chains**  
-conditional access app control now supports adding and using multiple trusted root or intermediate certificates as a form of device management.
+Conditional Access App Control now supports adding and using multiple trusted root or intermediate certificates as a form of device management.
 
 - **New Cloud Discovery role** (gradual rollout)  
 Cloud App Security now provides a new admin role for Cloud Discovery users. This role can be used in order to scope the access of an admin user to only Cloud Discovery settings and data within the Cloud App Security portal.
@@ -1495,7 +1495,7 @@ Suspicious inbox manipulation rules: This policy profiles your environment and t
 - **Support for groups in app permission policies**  
 Cloud App Security now gives you the ability to define app permission policies more granularly, based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the administrators group.
 
-- **conditional access app control now integrates with your on-premises apps via Azure Active Directory Application Proxy**  
+- **Conditional Access App Control now integrates with your on-premises apps via Azure Active Directory Application Proxy**  
   - The [Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy) provides single sign-on and secure remote access for your web apps hosted on-premises.
   - These on-premises web apps can now be routed to Microsoft Cloud App Security via Azure AD Conditional Access to provide real-time monitoring and controls, via [access](access-policy-aad.md) and [session](session-policy-aad.md) policies.
 
@@ -1517,8 +1517,8 @@ Released October  2018
 
 Released September 25, 2018
 
-- **conditional access app control for Microsoft 365 is now in Public Preview**  
-  - conditional access app control now also supports Microsoft 365 and any app that is configured with Open ID Connect.
+- **Conditional Access App Control for Microsoft 365 is now in Public Preview**  
+  - Conditional Access App Control now also supports Microsoft 365 and any app that is configured with Open ID Connect.
   - Provide feedback from within a session: This new tool enables you to provide feedback to the Cloud App Security team about the performance of an application under session control, directly from within the session.
 
 - **Native integration with Microsoft Defender ATP for Shadow IT Discovery beyond your corp**  
@@ -1595,8 +1595,8 @@ Released July 8, 2018
 
 Released June 24, 2018
 
-- **conditional access app control GA**  
-Microsoft Cloud App Security's conditional access app control (reverse proxy) is now generally available for any SAML applications. conditional access app control integrates directly with your Azure AD Conditional Access policies to **monitor and control your users' sessions in real time**, while enabling them to be productive. Since first previewing the feature, many features and improvements have been made, including:
+- **Conditional Access App Control GA**  
+Microsoft Cloud App Security's Conditional Access App Control (reverse proxy) is now generally available for any SAML applications. Conditional Access App Control integrates directly with your Azure AD Conditional Access policies to **monitor and control your users' sessions in real time**, while enabling them to be productive. Since first previewing the feature, many features and improvements have been made, including:
   - The ability to create an [access policy](access-policy-aad.md) to manage access to the same apps from native clients, in addition to creating a session policy for browser traffic.
   - The app onboarding process was streamlined to support custom SAML applications in your organization.
   - As part of the Azure worldwide network, the integration and interface have been improved for a seamless experience for users located anywhere in the world.
@@ -1691,7 +1691,7 @@ Released April 29, 2018
 
 Released April 22, 2018
 
-- The public preview of **conditional access app control (formerly known as Cloud App Security Proxy)** has been enhanced with capabilities that facilitate deeper visibility into, and control over various applications. You can now create a Session Policy with an *Activity type* filter, to monitor, and block various app-specific activities. This new filter augments the existing file download control features, to provide you with comprehensive control of the applications in your organization and works hand-in-hand with Azure Active Directory Conditional Access, to provide real-time visibility and control of risky user sessions—for example, sessions with B2B collaboration users or users coming from an unmanaged device. For more information, see [Session policies](session-policy-aad.md).
+- The public preview of **Conditional Access App Control (formerly known as Cloud App Security Proxy)** has been enhanced with capabilities that facilitate deeper visibility into, and control over various applications. You can now create a Session Policy with an *Activity type* filter, to monitor, and block various app-specific activities. This new filter augments the existing file download control features, to provide you with comprehensive control of the applications in your organization and works hand-in-hand with Azure Active Directory Conditional Access, to provide real-time visibility and control of risky user sessions—for example, sessions with B2B collaboration users or users coming from an unmanaged device. For more information, see [Session policies](session-policy-aad.md).
 
 - Gradual rollout: Cloud App Security's **anomaly detection policies have been improved** to include two new types of threat detection: Ransomware activity and Terminated user activity. Cloud App Security extended its ransomware detection capabilities with anomaly detection to ensure a more comprehensive coverage against sophisticated Ransomware attacks. Using our security research expertise to identify behavioral patterns that reflect ransomware activity, Cloud App Security ensures holistic and robust protection. Terminated user activity enables you to monitor the accounts of terminated users, who may have been deprovisioned from corporate apps, but in many cases they still retain access to certain corporate resources. For more information, see [Get instantaneous behavioral analytics and anomaly detection](anomaly-detection-policy.md).
 
@@ -1821,7 +1821,7 @@ Released October 29, 2017
   - Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices.
   - Control access from noncorporate networks or risky IP addresses.
 
-  For more information, see [Protect apps with conditional access app control](proxy-intro-aad.md).
+  For more information, see [Protect apps with Conditional Access App Control](proxy-intro-aad.md).
 
 - We're gradually rolling out the ability to filter according to specific service activity names. This new Activity Type filter is more granular, to enable you to monitor specific app activities, as opposed to more general activity types. For example, previously, you could filter for the **Run command**, and now you can filter for specific EXO cmdlets. The activity name can also be seen in the Activity drawer under **Type (in app)**. This capability will eventually replace the Activity type filter.
 
