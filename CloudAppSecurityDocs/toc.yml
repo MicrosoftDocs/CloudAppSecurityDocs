@@ -37,7 +37,7 @@ items:
     href: ./get-started.md
   - name: Configuration
     items:
-    - name: Basic set up
+    - name: Basic setup
       href: general-setup.md
     - name: Configure admin access
       href: manage-admins.md
@@ -368,7 +368,7 @@ items:
     - name: Overview
       displayName: visibility, insights
       href: app-governance-visibility-insights-overview.md
-    - name: Get started with app governance visibilty and insights
+    - name: Get started with app governance visibility and insights
       href: app-governance-visibility-insights-get-started.md
     - name: View your apps with app governance
       href: app-governance-visibility-insights-view-apps.md

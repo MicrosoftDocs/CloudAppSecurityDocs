@@ -121,7 +121,7 @@ landingContent:
             url: azip-integration.md
           - text: Discover and protect sensitive information
             url: tutorial-dlp.md
-          - text: Protect files with admin quarrantine
+          - text: Protect files with admin quarantine
             url: use-case-admin-quarantine.md
           - text: Protect data in motion
             url: tutorial-proxy.md
