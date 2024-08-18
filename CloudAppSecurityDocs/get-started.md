@@ -18,7 +18,7 @@ Defender for Cloud Apps can help you use the benefits of cloud applications whil
 
 ## Prerequisites
 
-To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Microsoft Entra ID or Microsoft 365.  
+To set up Defender for Cloud Apps, you must at least be a Security Administrator in Microsoft Entra ID or Microsoft 365.  
 
 Users with admin roles have the same admin permissions across any cloud apps your organization is subscribed to, regardless of where you've assigned the role. For more information, see [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles) and [Assigning administrator roles in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference).
 
