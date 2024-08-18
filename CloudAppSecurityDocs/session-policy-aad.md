@@ -168,9 +168,9 @@ Select the **Preview** link to view an example of the configured message in a ne
 
 ### Export Cloud discovery logs
 
-Conditional Access App Control records the traffic logs of every user session that is routed through it. The traffic logs include the time, IP, user agent, URLs visited, and the number of bytes uploaded and downloaded. These logs are analyzed and a continuous report, **Defender for Cloud Apps Conditional Access App Control**, is added to the list of Cloud Discovery reports in the Cloud Discovery dashboard.
+Conditional Access App Control records the traffic logs of every user session that is routed through it. The traffic logs include the time, IP, user agent, URLs visited, and the number of bytes uploaded and downloaded. These logs are analyzed and a continuous report, **Defender for Cloud Apps Conditional Access App Control**, is added to the list of cloud discovery reports in the cloud discovery dashboard.
 
-To export Cloud discovery logs from the Cloud Discovery dashboard:
+To export Cloud discovery logs from the cloud discovery dashboard:
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control**.
 

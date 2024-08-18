@@ -1,14 +1,14 @@
 ---
-title: Cloud Discovery data anonymization
-description: This article provides information about how to protect user privacy by anonymizing the usernames in your Cloud Discovery data.
+title: Cloud discovery data anonymization
+description: This article provides information about how to protect user privacy by anonymizing the usernames in your cloud discovery data.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Cloud Discovery data anonymization
+# Cloud discovery data anonymization
 
 
 
-Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Microsoft Defender for Cloud Apps portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. When necessary, for a specific security investigation (for example, a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, they can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal's **Governance log**.
+Cloud discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Microsoft Defender for Cloud Apps portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. When necessary, for a specific security investigation (for example, a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, they can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal's **Governance log**.
 
 Key points:
 
@@ -35,9 +35,9 @@ Key points:
 
 1. When anonymization is selected, Defender for Cloud Apps parses the traffic log and extracts specific data attributes.
 1. Defender for Cloud Apps replaces the username with an encrypted username.
-1. It then analyzes cloud usage data and generates Cloud Discovery reports based on the anonymized data.
+1. It then analyzes cloud usage data and generates cloud discovery reports based on the anonymized data.
 
-    ![Anonymize Cloud Discovery dashboard.](media/anonymize-dashboard.png)
+    ![Anonymize cloud discovery dashboard.](media/anonymize-dashboard.png)
 
 1. For a specific investigation, such as an investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification.
 

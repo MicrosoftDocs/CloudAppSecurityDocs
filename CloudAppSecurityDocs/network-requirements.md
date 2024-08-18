@@ -178,7 +178,7 @@ To enable notifications to be sent from the default template and settings, add t
 
 ## Log collector
 
-To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
+To enable cloud discovery features using a log collector and detect Shadow IT in your organization, open the following items:
 
 - Allow the log collector to receive inbound FTP and Syslog traffic as configured for the data sources.
 - Allow the log collector to initiate outbound traffic to the Defender for Cloud Apps APIs (for example `<mytenant>.us2.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services). To find your tenant URL, see [View your data center](#view-your-data-center).

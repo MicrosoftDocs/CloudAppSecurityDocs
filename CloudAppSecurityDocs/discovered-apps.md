@@ -154,7 +154,7 @@ We recommend deleting cloud discovery data in the following cases:
 - If many users or IP addresses recently started working again after being offline for some time, their activity is identified as anomalous and might give you false positive violations.
 
 > [!IMPORTANT]
-> Make sure you want to delete data before doing so. This action is irreversbile and deletes **all** Cloud Discovery data in the system.
+> Make sure you want to delete data before doing so. This action is irreversbile and deletes **all** cloud discovery data in the system.
 >
 
 **To delete cloud discovery data**:
@@ -171,13 +171,13 @@ We recommend deleting cloud discovery data in the following cases:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
+> [Create snapshot cloud discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 > [!div class="nextstepaction"]
 > [Configure automatic log upload for continuous reports](discovery-docker.md)
 
 > [!div class="nextstepaction"]
-> [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
+> [Working with cloud discovery data](working-with-cloud-discovery-data.md)
 
 > [!div class="nextstepaction"]
 > [Discover apps using Microsoft Defender for Endpoint's integration](mde-integration.md)

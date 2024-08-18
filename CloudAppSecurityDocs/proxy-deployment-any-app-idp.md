@@ -15,7 +15,7 @@ This article describes how to both configure your IdP to work with Defender for 
 
 ## Prerequisites
 
-- Your organization must have the following licenses to use Conditional Access App Control:
+- Your organization must have the following licenses to use conditional access app control:
 
   - The license required by your identity provider (IdP) solution
   - Microsoft Defender for Cloud Apps
@@ -143,7 +143,7 @@ Make sure that you're using the correct **Current CA** or **Next CA** certificat
 
 1. In Microsoft Defender XDR, select **Settings > Cloud Apps > Connected apps > Conditional Access App Control apps**, and make sure that your app is still listed in the table.
 
-For more information, see [App doesn't appear on the Conditional Access App Control apps page](troubleshooting-proxy.md#app-doesnt-appear-on-the-conditional-access-app-control-apps-page).
+For more information, see [App doesn't appear on the conditional access app control apps page](troubleshooting-proxy.md#app-doesnt-appear-on-the-conditional-access-app-control-apps-page).
 
 ## Related content
 

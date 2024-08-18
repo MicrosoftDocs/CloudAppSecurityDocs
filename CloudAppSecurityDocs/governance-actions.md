@@ -163,7 +163,7 @@ For information about how governance actions are treated when there are policy c
 |App dashboard > App permissions |Permissions| Ban app | In Google and Salesforce: revoke a third-party app's permissions to Google or Salesforce and ban it from receiving permissions in the future. In Microsoft 365: doesn't allow the permission of third-party apps to access Office, but doesn't revoke them. |Google Workspace, Salesforce, Office |
 |App dashboard > App permissions |Permissions|Revoke app|Revoke a third-party app's permissions to Google or Salesforce. This is a one-time action that will occur on all existing permissions, but won't prevent future connections. | Google Workspace, Salesforce|
 |App dashboard > App permissions | Account | Revoke user from app|You can revoke specific users when clicking on the number under Users. The screen will display the specific users and you can use the X to delete permissions for any user.| Google Workspace, Salesforce|
-|Discover > Discovered Apps/IP addresses/Users| Cloud Discovery | Export discovery data | Creates a CSV from the discovery data. | Discovery |
+|Discover > Discovered Apps/IP addresses/Users| Cloud discovery | Export discovery data | Creates a CSV from the discovery data. | Discovery |
 |File policy|File |Trash|Moves the file in the user's trash.| Box, Dropbox, Google Drive, OneDrive, SharePoint, Cisco Webex (Permanently delete) |
 |File Policy|File | Notify last file editor |Sends an email to notify the last person who edited the file that it violates a policy. |Google Workspace, Box|
 |File Policy|File |Notify file owner|Sends an email to the file owner, when a file violates a policy. In Dropbox, if no owner is associated with a file, the notification will be sent to the specific user you set. | All apps |
@@ -190,10 +190,10 @@ For information about how governance actions are treated when there are policy c
 |Files|File|Change sharing link access level|Changes the access level of the shared link between company only, collaborators only, and public.| Box|
 |Files, File policy|File | Remove public access| If a file was yours and you put it in public access, it becomes accessible to anyone else configured with access to the file (depending on what kind of access the file had). | Google Workspace|
 |Files, File policy|File |Remove direct shared link| Removes a link that is created for the file that is public but only shared with specific people.|Box, Dropbox |
-|Settings> Cloud Discovery settings| Cloud Discovery | Recalculate Cloud Discovery scores |Recalculates the scores in the Cloud app catalog after a score metric change.| Discovery |
-|Settings> Cloud Discovery settings > Manage data views| Cloud Discovery | Create custom Cloud Discovery filter data view|Creates a new data view for a more granular view of the discovery results. For example, specific IP ranges. | Discovery |
-|Settings> Cloud Discovery settings > Delete data| Cloud Discovery | Delete Cloud Discovery data |Deletes all the data collected from discovery sources.| Discovery |
-|Settings> Cloud Discovery settings > Upload logs manually/Upload logs automatically | Cloud Discovery | Parse Cloud Discovery data| Notification that all the log data was parsed. | Discovery |
+|Settings> Cloud Discovery settings| Cloud discovery | Recalculate cloud discovery scores |Recalculates the scores in the Cloud app catalog after a score metric change.| Discovery |
+|Settings> Cloud Discovery settings > Manage data views| Cloud discovery | Create custom cloud discovery filter data view|Creates a new data view for a more granular view of the discovery results. For example, specific IP ranges. | Discovery |
+|Settings> Cloud Discovery settings > Delete data| Cloud discovery | Delete cloud discovery data |Deletes all the data collected from discovery sources.| Discovery |
+|Settings> Cloud Discovery settings > Upload logs manually/Upload logs automatically | Cloud discovery | Parse cloud discovery data| Notification that all the log data was parsed. | Discovery |
 
 ## Next steps
 

@@ -1,14 +1,14 @@
 ---
-title: Troubleshooting Cloud Discovery errors 
-description: This article provides a list of Cloud Discovery frequent errors and resolution recommendations for each.
+title: Troubleshooting cloud discovery errors 
+description: This article provides a list of cloud discovery frequent errors and resolution recommendations for each.
 ms.date: 05/15/2024
 ms.topic: conceptual
 ---
-# Troubleshooting Cloud Discovery errors
+# Troubleshooting cloud discovery errors
 
 
 
-This article provides a list of Cloud Discovery errors and resolution recommendations for each.
+This article provides a list of cloud discovery errors and resolution recommendations for each.
 
 Even after Discovery is set up, customers might continue hardening the Operating System in order to meet compliance standards. However, this action might cause interference with the containerization service itself.
 
@@ -23,7 +23,7 @@ If you integrated Microsoft Defender for Endpoint with Defender for Cloud Apps, 
 
 ## Log parsing errors
 
-You can track the processing of Cloud Discovery logs using the governance log. This article provides resolution actions to be taken for each error that can be displayed there.
+You can track the processing of cloud discovery logs using the governance log. This article provides resolution actions to be taken for each error that can be displayed there.
 
 ### Governance log errors
 
@@ -50,7 +50,7 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 
 |Issue|Resolution|
 |----|----|
-|Discovery data was uploaded and parsed successfully but the Cloud Discovery dashboard looks empty|The Dashboard might be filtered on data your logs don't have so there's no data to show. Try changing the filters in the Cloud Discovery dashboard to show different types of data to see the results.|
+|Discovery data was uploaded and parsed successfully but the cloud discovery dashboard looks empty|The Dashboard might be filtered on data your logs don't have so there's no data to show. Try changing the filters in the cloud discovery dashboard to show different types of data to see the results.|
 
 ## Next steps
 

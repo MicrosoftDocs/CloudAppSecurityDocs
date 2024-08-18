@@ -195,7 +195,7 @@ Alternatively, you can check the log collector status from within the docker con
     collector_status -p
     ```
 
-If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
+If you have problems during deployment, see [Troubleshooting cloud discovery](troubleshooting-cloud-discovery.md).
 
 ## Optional - Create custom continuous reports
 
