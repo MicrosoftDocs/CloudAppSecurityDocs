@@ -225,6 +225,9 @@ The Defender for Cloud Apps experience in the Microsoft Defender portal is now a
 
 For more information, see [Built-in admin roles in Defender for Cloud Apps](manage-admins.md#built-in-admin-roles-in-defender-for-cloud-apps).
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global admin is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 ## February 2024
 
 ### SSPM support for more connected apps in general availability
