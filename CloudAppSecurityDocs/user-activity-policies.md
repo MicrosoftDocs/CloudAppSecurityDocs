@@ -1,11 +1,11 @@
 ---
-title: Activity policies
+title: Create activity policies | Microsoft Defender for Cloud Apps
 description: This article provides instructions for creating and working with activity policies.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
 
-# Activity policies
+# Create Microsoft Defender for Cloud Apps activity policies
 
 
 
@@ -45,7 +45,7 @@ To create a new activity policy, follow this procedure:
 
    When a filter is set to *does not equal* and the attribute does not exist on the event, the event will not be filtered out. For example, filtering on **Device Tag does not equal Microsoft Entra hybrid joined** doesn't filter out events that do not contain **Device tag**, even if the device is Microsoft Entra joined.
 
-   In case of a a guest user, there may be cases where the **User From Group** filter doesn't recognize the account by its domain. To make sure all guest users are included, use the **External users** as the group, if it meets your needs for the policy.
+   In case of a guest user, there may be cases where the **User From Group** filter doesn't recognize the account by its domain. To make sure all guest users are included, use the **External users** as the group, if it meets your needs for the policy.
                  
 1. Under **Create filters for the policy**, select when a policy violation will be triggered. Choose to trigger when a **Single activity** matches the filters or only when a specified number of **Repeated activities** are detected.
     - If you choose **Repeated activity**, you can set **In a single app**. This setting will trigger a policy match only when the repeated activities occur in the same app. For example, five downloads in 30 minutes from Box trigger a policy match.

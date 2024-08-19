@@ -1,11 +1,11 @@
 ---
-title: Working with discovered apps | Microsoft Defender for Cloud Apps
+title: View discovered apps on the Cloud discovery dashboard | Microsoft Defender for Cloud Apps
 description: This article describes the process for identifying and remediating risky cloud discovery apps in Defender for Cloud Apps.
 ms.date: 06/02/2024
 ms.topic: how-to
 ---
 
-# Working with discovered apps
+# View discovered apps with the Cloud discovery dashboard
 
 The **Cloud discovery** page provides a dashboard designed to give you more insight into how cloud apps are being used in your organization. The dashboard provides an at-a-glance view of the types of apps being used, your open alerts, and the risk levels of apps in your organization. It also shows who your top app users are, and provides an **App headquarter location** map.
 

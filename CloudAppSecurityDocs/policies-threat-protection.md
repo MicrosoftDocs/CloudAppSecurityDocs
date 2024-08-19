@@ -1,10 +1,10 @@
 ---
-title: Threat protection policies 
+title: Common threat protection policies | Microsoft Defender for Cloud Apps
 description: This topic outlines the steps to configure many threat protection policies in Defender for Cloud Apps.
 ms.date: 05/15/2024
 ms.topic: conceptual
 ---
-# Threat protection policies
+# Common Defender for Cloud Apps threat protection policies
 
 
 
@@ -112,7 +112,7 @@ Detect admin activities performed from and IP address that is considered a risky
 
 ## Detect activities by service account from external IP addresses
 
-Detect service account activities originating from a non-internal IP addresses. This could indicate suspicious behavior or a compromised account.
+Detect service account activities originating from non-internal IP addresses. This could indicate suspicious behavior or a compromised account.
 
 ### Prerequisites
 

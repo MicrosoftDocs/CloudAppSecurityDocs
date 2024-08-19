@@ -1,10 +1,10 @@
 ---
-title: Conditional Access app control | Microsoft Defender for Cloud Apps
+title: Conditional access app control | Microsoft Defender for Cloud Apps
 description: Learn how Microsoft Defender for Cloud Apps provides Conditional Access app control.
 ms.date: 02/29/2024
 ms.topic: conceptual
 ---
-# Microsoft Defender for Cloud Apps Conditional Access app control
+# Microsoft Defender for Cloud Apps conditional access app control
 
 In today's workplace, it's not enough to know what's happened in your cloud environment after the fact. You also need to stop breaches and leaks in real-time, and prevent employees from intentionally or accidentally putting your data and organization at risk.
 

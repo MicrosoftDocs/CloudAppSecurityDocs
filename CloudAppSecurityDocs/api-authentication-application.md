@@ -58,7 +58,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
    ![Screenshot of the created app ID.](media/app-and-tenant-ids.png)
 
-1. **For Microsoft Defender for Cloud Apps Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
+1. **For Microsoft Defender for Cloud Apps Partners only**. Set your app to be multitenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multitenanted:
 
     - Go to **Authentication**, and add `https://portal.azure.com` as the **Redirect URI**.
 
