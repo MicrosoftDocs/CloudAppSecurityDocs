@@ -112,7 +112,7 @@ Detect admin activities performed from and IP address that is considered a risky
 
 ## Detect activities by service account from external IP addresses
 
-Detect service account activities originating from a non-internal IP addresses. This could indicate suspicious behavior or a compromised account.
+Detect service account activities originating from non-internal IP addresses. This could indicate suspicious behavior or a compromised account.
 
 ### Prerequisites
 
