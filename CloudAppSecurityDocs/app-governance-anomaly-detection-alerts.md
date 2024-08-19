@@ -697,7 +697,7 @@ This detection identifies an application in your tenant that was observed making
 
 **TP or FP?**
  
-- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious. After verifiying the Azure resource being used and validating the app use in the tenant, the given activity may require that the app be disabled. This is usually evidence of suspected enumeration activity against the KeyVault resource to gain access to credentials for lateral movement or privilege escalation.
+- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious. After verifying the Azure resource being used and validating the app use in the tenant, the given activity may require that the app be disabled. This is usually evidence of suspected enumeration activity against the KeyVault resource to gain access to credentials for lateral movement or privilege escalation.
  
   **Recommended actions**: Review the Azure resources accessed or created by the application and any recent changes made to the application. Based on your investigation, choose whether you want to ban access to this app. Review the permission level requested by this app and which users have granted access.
  
