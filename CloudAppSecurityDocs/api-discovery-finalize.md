@@ -1,10 +1,10 @@
 ---
-title: Finalize file upload - Cloud Discovery API
-description: This article describes the done_upload request in the Defender for Cloud Apps Cloud Discovery API.
+title: Finalize file upload - cloud discovery API
+description: This article describes the done_upload request in the Defender for Cloud Apps cloud discovery API.
 ms.date: 01/29/2023
 ms.topic: reference
 ---
-# Finalize file upload - Cloud Discovery API
+# Finalize file upload - cloud discovery API
 
 
 

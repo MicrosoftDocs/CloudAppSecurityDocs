@@ -8,15 +8,15 @@ ms.topic: conceptual
 
 
 
-Microsoft Defender for Cloud Apps enables you to attest your app, so that you make sure that the compliance and security details we use to rate your app in our Cloud App Catalog are up to date.
+Microsoft Defender for Cloud Apps enables you to attest your app, so that you make sure that the compliance and security details we use to rate your app in our cloud app catalog are up to date.
 
-Whether your app is already listed in the Cloud App Catalog, or it's new, submit a [self-attestation questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4CRHM-U7CtKpJma_QJAnSlUMEpLQzBaQ1hWNDMxUEhRNFI3Q0FZUkdWRC4u). For details on the self-attestation process, contact casfeedback@microsoft.com.
+Whether your app is already listed in the cloud app catalog, or it's new, submit a [self-attestation questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4CRHM-U7CtKpJma_QJAnSlUMEpLQzBaQ1hWNDMxUEhRNFI3Q0FZUkdWRC4u). For details on the self-attestation process, contact casfeedback@microsoft.com.
 
 Follow the service attributes described below to successfully complete the submission of the questionnaire:
 
 | Field | Info category | Type | Accepted values | Description |
 |------|-------|------|---------|----------|
-| App name | General | String | Free text | The name for your application as it should appear in the Cloud App Catalog. |
+| App name | General | String | Free text | The name for your application as it should appear in the cloud app catalog. |
 | Description | General | String | Free text | Short explanation of what your application enables users to do or achieve. |
 | Category| General | String | Close list - provided in questionnaire | Classification of the app according to the field to which it relates. |
 | Headquarters | General | Country code | Close list - provided in questionnaire | The country/region of the provider's headquarters.|

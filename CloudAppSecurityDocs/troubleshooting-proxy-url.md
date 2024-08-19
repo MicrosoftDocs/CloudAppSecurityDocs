@@ -15,7 +15,7 @@ This article provides information about the `mcas.ms`, `mcas-gov.us`, and `mcas-
 
 This is normal behavior and results from Defender for Cloud Apps protecting your environment in a browser other than Microsoft Edge. Even if your organization doesn't use Defender for Cloud Apps, when someone visits your site or service from an environment that does, and they use a browser other than Microsoft Edge, their URLs are rewritten to protect their access.
 
-For example, Contoso protects its environment using Conditional Access App Control provided by Defender for Cloud Apps. When a Contoso user visits `fabrikam.com` from Google Chrome, the user is automatically redirected to `fabrikam.com.mcas.ms`. As a result, Fabrikam's phishing team sees a new DNS entry and certificate for `fabrikam.com.mcas.ms`.
+For example, Contoso protects its environment using conditional access app control provided by Defender for Cloud Apps. When a Contoso user visits `fabrikam.com` from Google Chrome, the user is automatically redirected to `fabrikam.com.mcas.ms`. As a result, Fabrikam's phishing team sees a new DNS entry and certificate for `fabrikam.com.mcas.ms`.
 
 So even though Fabrikam doesn't actually use Defender for Cloud Apps, they see the DNS entry or certificate because Contoso does.
 

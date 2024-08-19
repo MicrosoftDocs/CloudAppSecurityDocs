@@ -232,9 +232,9 @@ Create app discovery policies to start alerting and tagging newly discovered app
 For more information, see:
 
 - [View and manage incidents and alerts](/microsoft-365/security/defender/mto-incidents-alerts)
-- [Cloud Discovery policies](../policies-cloud-discovery.md)
-- [Create Cloud Discovery policies](../cloud-discovery-policies.md)
-- [Set up Cloud Discovery](../set-up-cloud-discovery.md)
+- [Cloud discovery policies](../policies-cloud-discovery.md)
+- [Create cloud discovery policies](../cloud-discovery-policies.md)
+- [Set up cloud discovery](../set-up-cloud-discovery.md)
 - [Discover and assess cloud apps](../best-practices.md#discover-and-assess-cloud-apps)
 
 **Persona**: Security and Compliance administrators, SOC analysts

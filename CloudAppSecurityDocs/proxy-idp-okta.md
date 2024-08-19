@@ -1,10 +1,10 @@
 ---
-title: Deploy Conditional Access App Control for any web app using Okta
-description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for any web app using Okta as the identity provider.
+title: Deploy conditional access app control for any web app using Okta
+description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps conditional access app control for any web app using Okta as the identity provider.
 ms.date: 05/15/2024
 ms.topic: how-to
 ---
-# Deploy Conditional Access App Control for any web app using Okta as the identity provider (IdP)
+# Deploy conditional access app control for any web app using Okta as the identity provider (IdP)
 
 
 
@@ -14,7 +14,7 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 ## Prerequisites
 
-- Your organization must have the following licenses to use Conditional Access App Control:
+- Your organization must have the following licenses to use conditional access app control:
 
   - A pre-configured Okta tenant.
   - Microsoft Defender for Cloud Apps
@@ -71,7 +71,7 @@ Use the following steps to route your web app sessions from Okta to Defender for
 ## Step 2: Configure Defender for Cloud Apps with your app's SAML information
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
-1. Under **Connected apps**, select **Conditional Access App Control apps**.
+1. Under **Connected apps**, select **conditional access app control apps**.
 1. Select **+Add**, and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
 1. On the **APP INFORMATION** page, select **Fill in data manually**, in the **Assertion consumer service URL** enter the Salesforce **Login URL** you noted earlier, and then click **Next**.
 
@@ -176,7 +176,7 @@ In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign
 
     > [!NOTE]
     >
-    > - After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
+    > - After saving your settings, all associated login requests to this app will be routed through conditional access app control.
     > - The Defender for Cloud Apps SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
     ![Update SSO settings.](media/proxy-idp-okta/idp-okta-sf-update-sso-settings.png)
@@ -185,12 +185,12 @@ In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign
 
 ## Step 8: Complete the configuration in Defender for Cloud Apps
 
-- Back in the Defender for Cloud Apps **APP CHANGES** page, click **Finish**. After completing the wizard, all associated login requests to this app will be routed through Conditional Access App Control.
+- Back in the Defender for Cloud Apps **APP CHANGES** page, click **Finish**. After completing the wizard, all associated login requests to this app will be routed through conditional access app control.
 
 ## Related content
 
 > [!div class="nextstepaction"]
-> [Introduction to Conditional Access App Control](proxy-intro-aad.md)
+> [Introduction to conditional access app control](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
 > [Troubleshooting access and session controls](troubleshooting-proxy.md)

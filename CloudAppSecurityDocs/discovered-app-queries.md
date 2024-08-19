@@ -88,10 +88,10 @@ Additionally, you can use the suggested queries as a starting point for a new qu
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
+> [Create snapshot cloud discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 > [!div class="nextstepaction"]
 > [Configure automatic log upload for continuous reports](discovery-docker.md)
 
 > [!div class="nextstepaction"]
-> [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
+> [Working with cloud discovery data](working-with-cloud-discovery-data.md)

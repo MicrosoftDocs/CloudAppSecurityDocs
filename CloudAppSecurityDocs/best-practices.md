@@ -27,14 +27,14 @@ The best practices discussed in this article include:
 
 ## Discover and assess cloud apps
 
-Integrating Defender for Cloud Apps with Microsoft Defender for Endpoint gives you the ability to use Cloud Discovery beyond your corporate network or secure web gateways. With the combined user and device information, you can identify risky users or devices, see what apps they are using, and investigate further in the Defender for Endpoint portal.
+Integrating Defender for Cloud Apps with Microsoft Defender for Endpoint gives you the ability to use cloud discovery beyond your corporate network or secure web gateways. With the combined user and device information, you can identify risky users or devices, see what apps they are using, and investigate further in the Defender for Endpoint portal.
 
 **Best practice**: Enable Shadow IT Discovery using Defender for Endpoint  
-**Detail**: Cloud Discovery analyzes traffic logs collected by Defender for Endpoint and assesses identified apps against the cloud app catalog to provide compliance and security information. By configuring Cloud Discovery, you gain visibility into cloud use, Shadow IT, and continuous monitoring of the unsanctioned apps being used by your users.  
+**Detail**: Cloud discovery analyzes traffic logs collected by Defender for Endpoint and assesses identified apps against the cloud app catalog to provide compliance and security information. By configuring cloud discovery, you gain visibility into cloud use, Shadow IT, and continuous monitoring of the unsanctioned apps being used by your users.  
 **For more information**:
 
 * [Microsoft Defender for Endpoint integration with Defender for Cloud Apps](mde-integration.md)
-* [Set up Cloud Discovery](set-up-cloud-discovery.md)
+* [Set up cloud discovery](set-up-cloud-discovery.md)
 * [Discover and manage shadow IT in your network](tutorial-shadow-it.md)
 
 ---
@@ -43,8 +43,8 @@ Integrating Defender for Cloud Apps with Microsoft Defender for Endpoint gives y
 **Details**: App Discovery policies make it easier to track of the significant discovered applications in your organization to help you manage these applications efficiently. Create policies to receive alerts when detecting new apps that are identified as either risky, non-compliant, trending, or high-volume.  
 **For more information**:
 
-* [Cloud Discovery policies](cloud-discovery-policies.md)
-* [Cloud Discovery anomaly detection policy](cloud-discovery-anomaly-detection-policy.md)
+* [Cloud discovery policies](cloud-discovery-policies.md)
+* [Cloud discovery anomaly detection policy](cloud-discovery-anomaly-detection-policy.md)
 * [Get instantaneous behavioral analytics and anomaly detection](anomaly-detection-policy.md)
 
 ---
@@ -157,7 +157,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 ## Block and protect download of sensitive data to unmanaged or risky devices
 
 **Best practice**: Manage and control access to high risk devices  
-**Detail**: Use Conditional Access App Control to set controls on your SaaS apps. You can create session policies to monitor your high risk, low trust sessions. Similarly, you can create session policies to block and protect downloads by users trying to access sensitive data from unmanaged or risky devices. If you don't create session policies to monitor high-risk sessions, you'll lose the ability to block and protect downloads in the web client, as well as the ability to monitor low-trust session both in Microsoft and third-party apps.  
+**Detail**: Use conditional access app control to set controls on your SaaS apps. You can create session policies to monitor your high risk, low trust sessions. Similarly, you can create session policies to block and protect downloads by users trying to access sensitive data from unmanaged or risky devices. If you don't create session policies to monitor high-risk sessions, you'll lose the ability to block and protect downloads in the web client, as well as the ability to monitor low-trust session both in Microsoft and third-party apps.  
 **For more information**:
 
 * [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md)
@@ -170,7 +170,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 
 ## Secure collaboration with external users by enforcing real-time session controls
 
-**Best practice**: Monitor sessions with external users using Conditional Access App Control  
+**Best practice**: Monitor sessions with external users using conditional access app control  
 **Detail**: To secure collaboration in your environment, you can create a session policy to monitor sessions between your internal and external users. This not only gives you the ability to monitor the session between your users (and notify them that their session activities are being monitored), but it also enables you to limit specific activities as well. When creating session policies to monitor activity, you can choose the apps and users you'd like to monitor.  
 **For more information**:
 
@@ -256,10 +256,10 @@ When dismissing alerts, it's important to investigate and understand why they ar
 **Best practice**: Onboard custom apps  
 **Detail**: To gain additional visibility into activities from your line-of-business apps, you can onboard custom apps to Defender for Cloud Apps. Once custom apps are configured, you see information about who's using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
 
-Additionally, you can onboard a custom app as a Conditional Access App Control app to monitor their low-trust sessions. Microsoft Entra ID apps are automatically onboarded.
+Additionally, you can onboard a custom app as a conditional access app control app to monitor their low-trust sessions. Microsoft Entra ID apps are automatically onboarded.
 
 **For more information**:
 
-- [Add custom apps to Cloud Discovery](cloud-discovery-custom-apps.md)
+- [Add custom apps to cloud discovery](cloud-discovery-custom-apps.md)
 - [Onboard non-Microsoft IdP catalog apps for Conditional Access app control](proxy-deployment-featured-idp.md)
 - [Onboard non-Microsoft IdP custom apps for Conditional Access app control](proxy-deployment-any-app-idp.md)
