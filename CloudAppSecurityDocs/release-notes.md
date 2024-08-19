@@ -25,7 +25,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 We've reorganized the Microsoft Defender for Cloud Apps documentation to better match our main product pillars and use cases, and to align with our overall [Microsoft Defender documentation](/defender-xdr).
 
-Use the feedback mechanisms at the top and bottom of each documentation page to send us your comments on Defender for Cloud Apps documentation content.
+Use the feedback mechanisms at the top and bottom of each documentation page to send us your comments on Defender for Cloud Apps documentation.
 
 ### Large scale export of Activity logs (Preview)
 
