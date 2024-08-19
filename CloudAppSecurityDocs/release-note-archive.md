@@ -346,6 +346,11 @@ March 19, 2023
 - **Automatic redirection from Microsoft Defender for Cloud Apps to the Microsoft Defender Portal (Preview)**  
 A new automatic redirection toggle allows you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft Defender XDR. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft Defender Portal. The toggle default value is set to **Off**, and admins need explicitly to opt in to the automatic redirection and start using the Microsoft Defender XDR exclusively. You still have an option to opt out from the Microsoft Defender XDR experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
 
+### App governance March 2023 release
+
+- **App hygiene public preview:** App governance now provides insights and policy capability for unused apps, apps with unused credentials, and apps with expiring credentials. Each of these features has a predefined policy out of the box and you can define your own custom policies as well. You can export these insights from the apps list for easy reporting and triage across your organization. 
+
+
 ### Defender for Cloud Apps release 248
 
 March 5, 2023
@@ -358,6 +363,12 @@ We've witnessed an improvement of between 10% and 40%, depending on the applicat
 The Defender for Cloud Apps connector for ServiceNow now supports the ServiceNow Tokyo version. With this update, you can protect the latest versions of ServiceNow using Defender for Cloud Apps. For more information, see [Connect ServiceNow to Microsoft Defender for Cloud Apps](connect-servicenow.md).
 
 ## February 2023
+
+### App governance February 2023 release
+
+- **Enhanced alert investigation experience:** App governance now provides additional information admins need to investigate and remediate incidents and alerts. This enhancement includes more details under **What happened** and **Recommended actions** in the alert story on Microsoft Defender XDR alert pages. This information is available for all app governance alerts, including alerts triggered by threat detection rules, predefined policies, and user-defined policies. [Learn more about the enhanced alert experience.](/defender-cloud-apps/app-governance-detect-remediate-detect-threats)
+- **App Governance app hygiene features public preview:** App Governance insights and controls on unused apps, apps with unused credentials, and apps with expiring credentials launched to public preview on February 15, 2023. Admins can sort, filter, and export on app last used date, credentials unused since, and credentials expiration date. A predefined policy for unused apps, apps with unused credentials, and apps with expiring credentials comes out of the box.
+   
 
 ### Defender for Cloud Apps release 246 and 247
 
@@ -429,6 +440,13 @@ October 30, 2022
 
   For more information, see [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
+
+### App governance October 2022 release
+
+- **Added insights and remediation for sensitive content**: App governance provides insights and automated remediation capabilities through predefined and custom policies for apps that access content with Microsoft Purview Information Protection labels. Enterprise admins now have visibility into the workloads that these apps access and whether they access sensitive data in these workloads. With predefined and custom policies, admins are alerted about apps that have attempted to access sensitive data. Moreover, app governance can automatically deactivate noncompliant apps.
+- **Expanded coverage to include all non-Graph API apps** - App governance has expanded coverage to secure more apps in your tenant. In addition to OAuth apps that use Microsoft Graph API, app governance now provides visibility and protection for all OAuth apps registered on Microsoft Entra ID. [Learn more about app governance coverage.](/defender-cloud-apps/app-governance-secure-apps-access-non-graph-api)
+
+
 ### Defender for Cloud Apps release 236
 
 September 18, 2022
@@ -497,6 +515,18 @@ In November 2020, we moved to suffix domains in the form of `<appName>.mcas.ms`,
 > They should manually replace the URL section `.<region>.cas.ms` with `.mcas.us`.
 
 
+### App governance July 2022 release
+
+- **Added more predefined policies**: App governance released five more out of the box policies to detect anomalous app behaviors. These policies are activated by default, but you can deactivate them if you choose to. [Learn more here](app-governance-predefined-policies.md)
+- **New video library**: App governance created a new library of short videos on features in app governance, how to use them, and info on how to learn more. [Check it out here](https://youtube.com/playlist?list=PLyhj1WZ29G66k4F_OZeMkQymRGyqHwZVp)
+- **Secure Score integration GA**: Microsoft Secure Score integration with the app governance (AppG) add-on to Microsoft Defender for Cloud Apps (MDA) has reached general availability. AppG customers now receive recommendations in Secure Score, helping them secure their Microsoft 365 OAuth apps.
+   Why is this integration important?
+   Secure Score is a representation of an organization's security posture and an entry point to various opportunities to improve that posture. By following Secure Score recommendations, customers improve resilience against known and emerging threats.
+   AppG is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data. With deep integration into workloads and threat detection capabilities, AppG is well-suited to significantly reduce large attack surfaces in enterprise app ecosystems. By following AppG-related recommendations and enabling proposed policy settings, enterprises can protect both apps and data from misuse and actual bad actor activity.
+
+
+
+
 ### Defender for Cloud Apps release 231
 
 July 10, 2022
@@ -528,6 +558,12 @@ Extra Defender for Cloud Apps admin activities have been added:
 - **DocuSign API Connector is generally available**  
 The DocuSign API connector is generally available, providing you deeper visibility and control over your organization’s usage of DocuSign app. For more information, see [How Defender for Cloud Apps helps protect your DocuSign environment](protect-docusign.md).
 
+
+### App governance May 2022 release
+
+- **Predefined policies GA**: App governance released a set of out of the box policies to detect anomalous app behaviors. These policies are activated by default, but you can deactivate them if you choose to. [Learn more here](app-governance-predefined-policies.md)
+- **Teams workload GA**: App governance added insights, policy capabilities, and governance for the Teams workload. You can see data usage, permissions usage, and create policies on Teams permissions and usage.
+- **App governance alerts unified in the M365D alerts and incidents queues**: The app governance alerts queue has been unified with the Microsoft Defender XDR alerts experience and are aggregated into incidents.
 
 ### Defender for Cloud Apps release 226
 
@@ -724,7 +760,7 @@ Label management from the Azure Information Protection portal (classic) is depre
 New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 - **Public preview for overriding privilege sensitivity labels**  
-Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [How to integrate Microsoft Purview Information Protection with Defender for Cloud Apps](azip-integration.md#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps).
+Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [How to integrate Microsoft Purview with Defender for Cloud Apps](azip-integration.md#how-to-integrate-microsoft-purview-with-defender-for-cloud-apps).
 
 - **Extended Advanced Hunting events**  
 We've expanded the available events in Cloud App Security. Microsoft Defender XDR Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Microsoft 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).

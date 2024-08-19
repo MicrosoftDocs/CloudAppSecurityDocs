@@ -1,12 +1,11 @@
 ---
-title: Set up cloud discovery | Microsoft Defender for Cloud Apps
-description: This article describes the setup procedure for Microsoft Defender for Cloud Apps cloud discovery.
+title: Cloud app discovery overview | Microsoft Defender for Cloud Apps
+description: This article describes Microsoft Defender for Cloud Apps support for cloud app discovery.
 ms.date: 12/20/2023
-ms.topic: how-to
+ms.topic: conceptual
 ---
-# Set up cloud discovery
 
-
+# Cloud app discovery overview
 
 Cloud discovery analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 
