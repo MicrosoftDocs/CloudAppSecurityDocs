@@ -21,6 +21,12 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## August 2024
 
+### Reorganized Defender for Cloud Apps documentation
+
+We've reorganized the Microsoft Defender for Cloud Apps documentation to highlight our main product pillars and use cases, and to align with our overall [Microsoft Defender documentation](/defender-xdr).
+
+Use the feedback mechanisms at the top and bottom of each documentation page to send us your comments on Defender for Cloud Apps documentation.
+
 ### Large scale export of Activity logs (Preview)
 
 A new user experience dedicated to providing users the option to export from “activity log” page up to six months back or up to 100K events.
