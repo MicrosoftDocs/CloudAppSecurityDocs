@@ -10,7 +10,7 @@ items:
   - name: Privacy with Defender for Cloud Apps
     href: cas-compliance-trust.md
   - name: Preview features
-    href: /microsoft-365/security/defender/preview?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/bread/toc.json
+    href: /microsoft-365/security/defender/preview?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/breadcrumb/toc.json
   - name: Compare
     items:
     - name: Microsoft 365 Cloud App Security
@@ -291,7 +291,7 @@ items:
       - name: Investigate OAuth apps
         href: investigate-risky-oauth.md
     - name: CloudAppEvents schema for advanced hunting
-      href: /defender-xdr/advanced-hunting-cloudappevents-table?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/bread/toc.json
+      href: /defender-xdr/advanced-hunting-cloudappevents-table?toc=/cloud-app-security/toc.json&bc=/cloud-app-security/breadcrumb/toc.json
   - name: Investigate alerts
     items:
     - name: Investigate anomaly detection alerts
