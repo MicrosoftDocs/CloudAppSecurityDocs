@@ -31,8 +31,7 @@ To use in-browser protection, users must also have the following environmental r
 
 All other scenarios are served automatically with the standard reverse proxy technology, including user sessions from browsers that don't support in-browser protection, or for policies not supported by in-browser protection.
 
-For example, the following users are all served by the reverse proxy:
-
+For instance, these scenarios are served by the reverse proxy:
 - Google Chrome users
 - Microsoft Edge users who are scoped to a protect file download policy
 - Microsoft Edge users on Android devices
@@ -40,6 +39,7 @@ For example, the following users are all served by the reverse proxy:
 - Microsoft Edge users in InPrivate mode
 - Microsoft Edge users with older browser versions
 - B2B guest users
+- Session is scoped to conditional access policy defined in Entra ID portal
 
 ## User experience with in-browser protection
 
