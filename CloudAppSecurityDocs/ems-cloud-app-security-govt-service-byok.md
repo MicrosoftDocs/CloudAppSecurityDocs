@@ -23,6 +23,8 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
 
 ### To register the app
 
+<!-- IDs listed here are approved and shouldn't be changed.-->
+
 1. Install [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation).
 
 1. Open a PowerShell terminal and run the following commands:
@@ -31,10 +33,10 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
     Connect-MgGraph -Scopes "Application.ReadWrite.All"
     
     # Create a new service principal
-    New-MgServicePrincipal -AppId 00001111-aaaa-2222-bbbb-3333cccc4444
+    New-MgServicePrincipal -AppId 6a12de16-95c8-4e42-a451-7dbbc34634cd
 
     # Update Service Principal
-    $servicePrincipalId = Get-MgServicePrincipal -Filter "AppId eq '00001111-aaaa-2222-bbbb-3333cccc4444'" | Select Id
+    $servicePrincipalId = Get-MgServicePrincipal -Filter "AppId eq '6a12de16-95c8-4e42-a451-7dbbc34634cd'" | Select Id
     $params = @{
     	accountEnabled = $true
     }
