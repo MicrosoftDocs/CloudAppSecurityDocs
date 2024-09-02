@@ -41,7 +41,7 @@ The following table lists more examples of files that are and aren't scanned:
 |**A Word file** composed of images and text, 4-MB size and 2 million characters     |  Not scanned        |
 |**A Word file** composed of images and text, 40-MB size and 400-K characters     |  Not scanned         |
 
-## Files encrypted by sensitivity labels are not supported
+## Files encrypted with sensitivity labels are not supported
 For tenants that enable co-authoring for files encrypted with sensitivity labels:
 A session policy to block file uploads\download that relies on label filters or file content will operate based on the policy settings of ‘Always apply the selected action even if data cannot be scanned’, in case of file with encrypted sensitivity label.
 
