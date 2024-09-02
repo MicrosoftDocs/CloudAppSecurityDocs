@@ -93,6 +93,8 @@ This article explains how to create a Microsoft Entra application, get an access
 
 For more information on Microsoft Entra tokens, see the [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
+<!-- IDs listed in the following sections are approved and shouldn't be changed.-->
+
 ### Use PowerShell
 
 ```powershell
