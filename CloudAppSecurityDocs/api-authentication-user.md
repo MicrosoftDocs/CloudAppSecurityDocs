@@ -100,6 +100,8 @@ For more information on Microsoft Entra tokens, see [Microsoft Entra tutorial](/
 
 ### Using C#
 
+<!-- IDs listed here are approved and shouldn't be changed.-->
+
 - Copy/Paste the following class in your application.
 - Use **AcquireUserTokenAsync** method with your application ID, tenant ID, and authentication acquire a token.
 
