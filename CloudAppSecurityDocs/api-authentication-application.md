@@ -103,7 +103,7 @@ $tenantId = '' ### Paste your tenant ID here
 $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application key here
 
-$resourceAppIdUri = 'a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1'
+$resourceAppIdUri = '05a65629-4c1b-48c1-a78b-804c4abdd4af'
 $oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
@@ -134,7 +134,7 @@ The following code was tested with NuGet Microsoft.Identity.Client 4.47.2.
     string appId = "00001111-aaaa-2222-bbbb-3333cccc4444"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
     const string authority = "https://login.microsoftonline.com";
-    const string audience = "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1";
+    const string audience = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
 
     IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
@@ -160,7 +160,7 @@ See [Microsoft Authentication Library (MSAL) for Python](https://github.com/Azur
 1. Run the following command:
 
 ```curl
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
+curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=05a65629-4c1b-48c1-a78b-804c4abdd4af/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
 You get an answer in the following form:
