@@ -35,7 +35,7 @@ End users will continue to receive the block message directly through the browse
 
 Screenshot of the notify end user by email option:
 
-![Notify-End-User-By-Email](media/release-notes/notify-end-user-by-email.png)
+![Screenshot of how to block notifying end user by email.](media/release-notes/notify-end-user-by-email.png)
 
 ## August 2024
 
