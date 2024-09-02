@@ -23,6 +23,8 @@ You must register the **Microsoft Defender for Cloud Apps - BYOK** app in your t
 
 ### To register the app
 
+<!-- IDs listed here are approved and shouldn't be changed.-->
+
 1. Install [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation).
 
 1. Open a PowerShell terminal and run the following commands:
