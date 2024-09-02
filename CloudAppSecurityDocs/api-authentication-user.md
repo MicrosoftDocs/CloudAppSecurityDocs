@@ -119,7 +119,7 @@ namespace MDA
     {
         private const string Authority = "https://login.microsoftonline.com";
 
-        private const string MDAId = "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1";
+        private const string MDAId = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
         private const string Scope = "Investigation.read";
 
         public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
