@@ -19,6 +19,24 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## September 2024
+
+### Removing the ability to email end users about blocked actions
+
+Effective October 1st, 2024, we will discontinue the feature that notifies end users via email when their action is blocked by session policies.
+
+This option ensures that if a user's action is blocked, they get both a browser message and an email notification.
+
+Admins can no longer configure this setting when creating new session policies.
+
+Existing session policies with this setting will not trigger email notifications to end users when a block action occurs.
+
+End users will continue to receive the block message directly through the browser and will stop receiving block notification via email.
+
+Screenshot of the notify end user by email option:
+
+![Screenshot of how to block notifying end user by email.](media/release-notes/notify-end-user-by-email.png)
+
 ## August 2024
 
 ### Reorganized Defender for Cloud Apps documentation
