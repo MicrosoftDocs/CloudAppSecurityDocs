@@ -21,7 +21,7 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## September 2024
 
-### Removing the ability to email end users about blocked actions.
+### Removing the ability to email end users about blocked actions
 
 Effective October 1st, 2024, we will discontinue the feature that notifies end users via email when their action is blocked by session policies.
 
