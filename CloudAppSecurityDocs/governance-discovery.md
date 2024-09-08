@@ -13,7 +13,7 @@ After you review the list of discovered apps in your environment, you can secure
 
 ## Sanctioning/unsanctioning an app
 
-You can mark a specific risky app as unsanctioned by clicking the three dots at the end of the row. Then select **Unsanctioned**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use, or [generate a block script using the Defender for Cloud Apps APIs](api-discovery-script.md) to block all unsanctioned apps.
+You can mark a specific risky app as unsanctioned by clicking the three dots at the end of the row. Then select **Unsanctioned**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the cloud discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use, or [generate a block script using the Defender for Cloud Apps APIs](api-discovery-script.md) to block all unsanctioned apps.
 
   :::image type="content" source="media/tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/tag-as-unsanctioned.png":::
 
@@ -27,7 +27,7 @@ Otherwise, if your tenant uses Zscaler NSS, iboss, Corrata, Menlo, or Open Syste
 
 Defender for Cloud Apps enables you to block access to unsanctioned apps by using your existing on-premises security appliances. You can generate a dedicated block script and import it to your appliance. This solution doesn't require redirection of all of the organization's web traffic to a proxy.
 
-1. In the Cloud Discovery dashboard, tag any apps you want to block as **Unsanctioned**.
+1. In the cloud discovery dashboard, tag any apps you want to block as **Unsanctioned**.
 
     :::image type="content" source="media/tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/tag-as-unsanctioned.png":::
 
@@ -63,7 +63,7 @@ To prevent users from accidentally blocking business-critical services and causi
 - Microsoft Entra Permissions Management
 - Microsoft Conditional Access Application Control
 - Microsoft Secure Score
-- Microsoft Purview compliance portal
+- Microsoft Purview
 - Microsoft Intune
 - Microsoft Support
 - Microsoft AD FS Help

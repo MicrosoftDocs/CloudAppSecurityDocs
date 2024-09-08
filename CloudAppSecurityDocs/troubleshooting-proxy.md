@@ -44,8 +44,8 @@ Use the following table to find the issue you're trying to troubleshoot:
 |---------|---------|
 |[Network condition issues](#network-condition-issues)     |  [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page) <br><br>[Slow sign-ins](#slow-sign-ins) <br><br> [More considerations for network conditions](#more-considerations-for-network-conditions)       |
 |[Device identification issues](#device-identification-issues)    | [Misidentified Intune Compliant or Microsoft Entra hybrid joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices) <br><br>[Client certificates aren't prompting when expected](#client-certificates-arent-prompting-when-expected)  <br><br> [Client certificates aren't prompting when expected](#client-certificates-arent-prompting-when-expected) <br> [Client certificates are prompting at every sign-in](#client-certificates-are-prompting-at-every-sign-in) <br><br>[More considerations for device identification](#more-considerations-for-device-identification)      |
-|[Issues when onboarding an app](#issues-when-onboarding-an-app)     |  [App doesn't appear on the Conditional Access App Control apps page](#app-doesnt-appear-on-the-conditional-access-app-control-apps-page) <br><br> [App status: Continue Setup](#app-status-continue-setup)   [Can't configure controls for native apps](#cant-configure-controls-for-built-in-apps) <br><br> [Request session control option appears](#request-session-control-option-appears)    |
-|[Issues when creating access and session policies](#issues-when-creating-access-and-session-policies)     | [In Conditional Access policies, you can't see the Conditional Access App Control option](#in-conditional-access-policies-you-cant-see-the-conditional-access-app-control-option) <br><br> [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control) <br><br> [Can't create session policies for an app](#cant-create-session-policies-for-an-app) <br><br>[Can't choose Inspection Method: Data Classification Service](#cant-choose-inspection-method-data-classification-service) <br><br> [Can't choose Action: Protect](#cant-choose-action-protect) <br><br> [More considerations for onboarding apps](#more-considerations-for-onboarding-apps)        |
+|[Issues when onboarding an app](#issues-when-onboarding-an-app)     |  [App doesn't appear on the conditional access app control apps page](#app-doesnt-appear-on-the-conditional-access-app-control-apps-page) <br><br> [App status: Continue Setup](#app-status-continue-setup)   [Can't configure controls for native apps](#cant-configure-controls-for-built-in-apps) <br><br> [Request session control option appears](#request-session-control-option-appears)    |
+|[Issues when creating access and session policies](#issues-when-creating-access-and-session-policies)     | [In Conditional Access policies, you can't see the conditional access app control option](#in-conditional-access-policies-you-cant-see-the-conditional-access-app-control-option) <br><br> [Error message when creating a policy: You don't have any apps deployed with conditional access app control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control) <br><br> [Can't create session policies for an app](#cant-create-session-policies-for-an-app) <br><br>[Can't choose Inspection Method: Data Classification Service](#cant-choose-inspection-method-data-classification-service) <br><br> [Can't choose Action: Protect](#cant-choose-action-protect) <br><br> [More considerations for onboarding apps](#more-considerations-for-onboarding-apps)        |
 | [Diagnose and troubleshoot with the Admin View toolbar](#diagnose-and-troubleshoot-with-the-admin-view-toolbar) | [Bypass proxy session](#bypass-proxy-session) <br><br> [Record a session](#record-a-session)  <br><br> [Add domains for your app](#add-domains-for-your-app)|
 
 ## Network condition issues
@@ -255,9 +255,9 @@ Common scenarios you might encounter while onboarding an app include:
 - [Can't configure controls for built-in apps](#cant-configure-controls-for-built-in-apps)
 - [**Request session control** option appears](#request-session-control-option-appears)
 
-### App doesn't appear on the Conditional Access App Control apps page
+### App doesn't appear on the conditional access app control apps page
 
-When onboarding an non-Microsoft IdP app to Conditional Access App Control, the final deployment step is to have the end user navigate to the app. Do the steps in this section if the app isn't appearing on the **Settings > Cloud apps > Connected apps > Conditional Access App Control apps** page expected.
+When onboarding an non-Microsoft IdP app to conditional access app control, the final deployment step is to have the end user navigate to the app. Do the steps in this section if the app isn't appearing on the **Settings > Cloud apps > Connected apps > Conditional Access App Control apps** page expected.
 
 **Recommended steps**
 
@@ -310,7 +310,7 @@ Built-in apps can be detected heuristically and you can use access policies to m
 
 ### *App isn't recognized* page appears
 
-Defender for Cloud Apps can recognize over 31,000 apps through the **Cloud App Catalog**.
+Defender for Cloud Apps can recognize over 31,000 apps through the cloud app catalog.
 
 If you're using a custom app that is configured through Microsoft Entra SSO, and isn't one of the supported apps, you come across an **App is not recognized** page. To resolve the issue, you must configure the app with Conditional Access app control.
 
@@ -386,23 +386,23 @@ To use these policies in Defender for Cloud Apps, you must first configure a pol
 
 Common scenarios you might encounter while configuring these policies include:
 
-- [In Conditional Access policies, you can't see the Conditional Access App Control option](#in-conditional-access-policies-you-cant-see-the-conditional-access-app-control-option)
-- [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)
+- [In Conditional Access policies, you can't see the conditional access app control option](#in-conditional-access-policies-you-cant-see-the-conditional-access-app-control-option)
+- [Error message when creating a policy: You don't have any apps deployed with conditional access app control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)
 - [Can't create session policies for an app](#cant-create-session-policies-for-an-app)
 - [Can't choose **Inspection Method**: **Data Classification Service**](#cant-choose-inspection-method-data-classification-service)
 - [Can't choose **Action**: **Protect**](#cant-choose-action-protect)
 
-### In Conditional Access policies, you can't see the Conditional Access App Control option
+### In Conditional Access policies, you can't see the conditional access app control option
 
-To route sessions to Defender for Cloud Apps, Microsoft Entra Conditional Access policies must be configured to include Conditional Access App Control session controls.
+To route sessions to Defender for Cloud Apps, Microsoft Entra Conditional Access policies must be configured to include conditional access app control session controls.
 
 **Recommended steps**
 
 If you don't see the **Conditional Access App Control** option in your Conditional Access policy, make sure that you have a valid license for Microsoft Entra ID P1 and a valid Defender for Cloud Apps license.
 
-### Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control
+### Error message when creating a policy: You don't have any apps deployed with conditional access app control
 
-When creating an access or session policy, you might see the following error message: *You don't have any apps deployed with Conditional Access App Control*. This error indicates that the app is a non-Microsoft IdP app that hasn't been onboarded for Conditional Access app control.
+When creating an access or session policy, you might see the following error message: *You don't have any apps deployed with conditional access app control*. This error indicates that the app is a non-Microsoft IdP app that hasn't been onboarded for Conditional Access app control.
 
 **Recommended steps**
 
@@ -465,7 +465,7 @@ If the **Protect** action isn't available, use the following steps to investigat
 
 ## Diagnose and troubleshoot with the Admin View toolbar
 
-The **Admin View** toolbar sits at the bottom of your screen and provides tools for admin users to diagnose and troubleshoot issues with Conditional Access App Control.
+The **Admin View** toolbar sits at the bottom of your screen and provides tools for admin users to diagnose and troubleshoot issues with conditional access app control.
 
 To view the **Admin View** toolbar, you must make sure to add specific admin user accounts to the **App onboarding / maintenance** list in the Microsoft Defender XDR settings. 
 
@@ -509,6 +509,26 @@ To bypass the proxy, in the **Admin View** toolbar, select **Bypass experience**
 The Conditional Access proxy is used again in your next session.
 
 For more information, see [Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
+
+### Second sign-in (also known as 'second login')
+
+Some applications have more than one deep link to sign in. Unless you define the sign-in links in the app settings, users might be redirected to an unrecognized page when they sign in, blocking their access.
+
+The integration between IdPs such as Microsoft Entra ID is based on intercepting an app sign-in and redirecting it. This means that browser sign-ins can't be controlled directly without triggering a second sign-in. To trigger a second sign-in, we need to employ a second sign-in URL specifically for that purpose.
+
+If the app uses a nonce, the second sign-in might be transparent to users, or they are prompted to sign-in again.
+
+If it isn't transparent to the end user, add the second sign-in URL to the app settings:
+
+Go to **Settings > Cloud apps > Connected apps > Conditional Access App Control Apps**
+
+Select the relevant app and then select the three dots.
+
+Select **Edit app\Advanced login configuration**.
+
+Add the second sign-in URL as mentioned in the error page.
+
+If you're confident the app doesn't use a nonce, you can disable this by editing the apps settings as described in [Slow sign-ins](/defender-cloud-apps/troubleshooting-proxy).
 
 ### Record a session
 

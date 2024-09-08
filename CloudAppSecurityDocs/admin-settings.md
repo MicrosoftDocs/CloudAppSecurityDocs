@@ -1,10 +1,10 @@
 ---
-title: Admin notification settings
+title: Configure admin notifications
 description: This article provides instructions for setting admin preferences in Defender for Cloud Apps.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Admin notification settings
+# Configure admin notifications
 
 
 
@@ -28,6 +28,6 @@ Microsoft Defender for Cloud Apps allows you to customize your admin notificatio
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up Cloud Discovery](set-up-cloud-discovery.md)
+> [Set up cloud discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

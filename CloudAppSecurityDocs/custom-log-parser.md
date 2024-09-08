@@ -8,7 +8,7 @@ ms.topic: how-to
 
 
 
-Defender for Cloud Apps enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Defender for Cloud Apps. This can be a CSV parser or a custom key value parser.
+Defender for Cloud Apps enables you to configure a custom parser to match and process the format of your logs so that they can be used for cloud discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Defender for Cloud Apps. This can be a CSV parser or a custom key value parser.
 
 The custom parser enables you to use logs from unsupported firewalls by following this process.
 
@@ -22,7 +22,7 @@ The custom parser enables you to use logs from unsupported firewalls by followin
 
 1. Under **Source**, scroll all the way down and select **Custom log format...**. For example:
 
-    ![Screenshot of the Create new Cloud Discovery snapshot report dialog.](media/custom-log-upload.png)
+    ![Screenshot of the Create new cloud discovery snapshot report dialog.](media/custom-log-upload.png)
 
 1. Collect logs from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.
 
@@ -60,12 +60,12 @@ View the report either by selecting the link in the status bar, or select **Sett
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
+> [Create snapshot cloud discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 > [!div class="nextstepaction"]
 > [Configure automatic log upload for continuous reports](discovery-docker.md)
 
 > [!div class="nextstepaction"]
-> [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
+> [Working with cloud discovery data](working-with-cloud-discovery-data.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

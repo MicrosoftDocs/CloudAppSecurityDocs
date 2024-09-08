@@ -1,11 +1,11 @@
 ---
-title: Email notification preferences
+title: Configure user notifications
 description: This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps.
 ms.date: 03/15/2023
 ms.topic: how-to
 ---
 
-# Email notification preferences
+# Configure user notifications
 
 
 
@@ -130,7 +130,7 @@ Below is a sample email template:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up Cloud Discovery](set-up-cloud-discovery.md)
+> [Set up cloud discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 

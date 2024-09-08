@@ -1,10 +1,10 @@
 ---
-title: List continuous reports - Cloud Discovery API
-description: This article describes the list continuous reports request in the Defender for Cloud Apps Cloud Discovery API.
+title: List continuous reports - cloud discovery API
+description: This article describes the list continuous reports request in the Defender for Cloud Apps cloud discovery API.
 ms.date: 01/29/2023
 ms.topic: reference
 ---
-# List continuous reports - Cloud Discovery API
+# List continuous reports - cloud discovery API
 
 
 

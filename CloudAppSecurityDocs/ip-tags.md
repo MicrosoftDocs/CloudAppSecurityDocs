@@ -1,11 +1,11 @@
 ---
-title: Working with IP ranges and tags
+title: Work with IP ranges and tags
 description: This article provides instructions for working with IP tags and IP categories.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
 
-# Working with IP ranges and tags
+# Work with IP ranges and tags
 
 
 
@@ -62,7 +62,7 @@ In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps*
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up Cloud Discovery](set-up-cloud-discovery.md)
+> [Set up cloud discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 

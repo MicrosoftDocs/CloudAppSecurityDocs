@@ -19,16 +19,75 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
-## July 2024
+## September 2024
 
-### Defender for Cloud Apps support for Graph API (Preview)
+### Defender for Cloud Apps support for Graph API (preview)
 
 Defender for Cloud Apps customers can now query data about discovered apps via the Graph API. Use the Graph API to customize views and automate flows on the **Discovered apps** page, such as applying filters to view specific data. The API supports [GET](/graph/use-the-api) capabitilies only.
 
 For more information, see:
 
-- [Work with discovered apps via Graph API](discovered-apps-api-graph.md).
-- TBD reference
+- [Work with discovered apps via Graph API](discovered-apps-api-graph.md)
+- [Microsoft Graph API reference for Microsoft Defender for Cloud Apps](/graph/api/resources/security-cloudappdiscovery-overview?view=graph-rest-beta)
+
+### Removing the ability to email end users about blocked actions
+
+Effective October 1st, 2024, we will discontinue the feature that notifies end users via email when their action is blocked by session policies.
+
+This option ensures that if a user's action is blocked, they get both a browser message and an email notification.
+
+Admins can no longer configure this setting when creating new session policies.
+
+Existing session policies with this setting will not trigger email notifications to end users when a block action occurs.
+
+End users will continue to receive the block message directly through the browser and will stop receiving block notification via email.
+
+Screenshot of the notify end user by email option:
+
+![Screenshot of how to block notifying end user by email.](media/release-notes/notify-end-user-by-email.png)
+
+## August 2024
+
+### Reorganized Defender for Cloud Apps documentation
+
+We've reorganized the Microsoft Defender for Cloud Apps documentation to highlight our main product pillars and use cases, and to align with our overall [Microsoft Defender documentation](/defender-xdr).
+
+Use the feedback mechanisms at the top and bottom of each documentation page to send us your comments on Defender for Cloud Apps documentation.
+
+### Large scale export of Activity logs (Preview)
+
+A new user experience dedicated to providing users the option to export from “activity log” page up to six months back or up to 100K events.
+
+You can filter the results using time range and various other filters and even hide private activities.
+
+For more information, see [Export activities six months back](activity-filters-queries.md#export-activities-six-months-back-preview)
+
+## July 2024
+### Configure and embed a custom support URL in Block pages (Preview)
+
+Customize the Microsoft Defender for Cloud Apps(MDA) block experience for apps that are blocked using Cloud Discovery.
+
+You can set up a custom redirect URL on block pages 
+- To educate and redirect end users to organization acceptable use policy 
+- To guide end users on steps to follow to secure an exception for block
+
+For more information, see  [Configure custom URL for MDA block pages](mde-govern.md#educate-users-when-accessing-blocked-apps--customize-the-block-page)
+
+
+### In-browser protection for macOS users and newly supported policies (Preview)
+Edge browser users from macOS, scoped to session policies, are now protected with in-browser protection.
+
+The following session policies are now supported:
+- Block and Monitor upload of sensitive files
+- Block and Monitor paste
+- Block and Monitor of malware upload
+- Block and Monitor of malware download
+
+See [In-browser protection](in-browser-protection.md).
+
+  In-browser protection is supported with the last 2 stable versions of Edge (for example, if the newest Edge is 126, in-browser protection works for v126 and v125). 
+
+See [Microsoft Edge releases](/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases).
 
 ## June 2024
 
@@ -198,6 +257,9 @@ The Defender for Cloud Apps experience in the Microsoft Defender portal is now a
 - Cloud Discovery report admin
 
 For more information, see [Built-in admin roles in Defender for Cloud Apps](manage-admins.md#built-in-admin-roles-in-defender-for-cloud-apps).
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global admin is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ## February 2024
 

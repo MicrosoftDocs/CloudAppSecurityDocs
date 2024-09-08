@@ -1,21 +1,23 @@
 ---
-title: File filters 
+title: Investigate files in Microsoft Defender for Cloud Apps
 description: This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
-ms.date: 03/01/2023
+ms.date: 06/20/2024
 ms.topic: how-to
 ---
 
-# File filters in Microsoft Defender for Cloud Apps
-
-
+# Investigate files with Microsoft Defender for Cloud Apps
 
 To provide data protection, Microsoft Defender for Cloud Apps gives you visibility into all the files from your connected apps. After you connect Microsoft Defender for Cloud Apps to an app using the App connector, Microsoft Defender for Cloud Apps scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Defender for Cloud Apps rescans each file every time it's modified – the modification can be to content, metadata, or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps.
 
-> [!NOTE]
-> File monitoring should be enabled in Settings. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Information Protection**, select **Files**. Select **Enable file monitoring** and then select **Save**.  
-> If there are no active file policies, then seven days after the last file page engagement time file monitoring will become disabled.  
-> If there are no active file policies, then 35 days after the last file page engagement time Defender for Cloud Apps will begin deleting the data that Defender for Cloud Apps maintains about these stored files.
-> Starting Aug 20 2023, the filter 'last modified before (days) will be deprecated. Instead, we recommend the utilization of "file before (date) and continue the investigating by fixed date, you can also use 'manual' investigation by "modified before (date)" - in "policy page" or "files page". 
+> [!IMPORTANT]
+> Starting **September 1, 2024**, we'll be deprecating the **Files** page from Microsoft Defender for Cloud Apps. At that point, create and modify Information Protection policies and find malware files from the **Cloud apps > Policies > Policy Management** page. For more information, see [File policies in Microsoft Defender for Cloud Apps](data-protection-policies.md).
+
+## Enable file monitoring
+
+To enable file monitoring for Defender for Cloud Apps, first turn on file monitoring in the **Settings** area. In the Microsoft Defender portal, select **Settings** > **Cloud Apps** > **Information Protection** > **Files** > **Enable file monitoring** > **Save**.
+
+- If there are no active file policies, seven days after the last file page engagement time, file monitoring is automatically turned back off.
+- If there are no active file policies, 35 days after the last file page engagement time, Defender for Cloud Apps starts deleting any data maintained by Defender for Cloud apps about stored files.
 
 ## File filter examples
 

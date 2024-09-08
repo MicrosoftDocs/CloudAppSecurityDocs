@@ -56,8 +56,6 @@ Filter your API commands using `$select` and `$filter` to get data for a specifi
 GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/<streamId>/aggregatedAppsDetails (period=duration'P30D')?$filter=riskRating  le 4 &$select=displayName
 ```
 
-<!--For more information, see xref.-->
-
 ## Get the userIdentifier of all users, devices, or IP addresses using a specific app
 
 Identify the users, devices, or IP addresses that are currently using a specific app, run one of the following commands:
@@ -80,8 +78,6 @@ Identify the users, devices, or IP addresses that are currently using a specific
     GET  https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/<streamId>/aggregatedAppsDetails (period=duration'P30D')/ <id>/name  
     ```
 
-<!--For more information, see xref.-->
-
 ## Use filters to see apps by category
 
 Use filters to see apps of a specific category, such as apps that are categorized as *Marketing*, and are also not HIPPA or GDPR compliant. For example, run:
@@ -92,4 +88,4 @@ GET  https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery
 
 ## Related content
 
-For more information, see [Working with discovered apps](discovered-apps.md).
+For more information, see [Working with discovered apps](discovered-apps.md) and the [Microsoft Graph API reference](/graph/api/resources/security-cloudappdiscovery-overview?view=graph-rest-beta).

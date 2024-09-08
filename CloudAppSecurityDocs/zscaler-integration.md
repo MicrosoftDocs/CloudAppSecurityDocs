@@ -1,6 +1,6 @@
 ---
 title: Integrate with Zscaler
-description: This article describes how to integrate Microsoft Defender for Cloud Apps with Zscaler for seamless Cloud Discovery and automated block of unsanctioned apps.
+description: This article describes how to integrate Microsoft Defender for Cloud Apps with Zscaler for seamless cloud discovery and automated block of unsanctioned apps.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
@@ -43,7 +43,7 @@ If you work with both Microsoft Defender for Cloud Apps and [Zscaler](https://ww
 
 After completing the integration steps, any app that you set as *unsanctioned* in Defender for Cloud Apps is pinged by Zscaler every two hours, and then blocked by Zscaler according to your Zscalar configuration. For more information, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
 
-Continue by investigating cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
+Continue by investigating cloud apps discovered on your network. For more information and investigation steps, see [Working with cloud discovery](working-with-cloud-discovery-data.md).
 
 
 ## Next steps

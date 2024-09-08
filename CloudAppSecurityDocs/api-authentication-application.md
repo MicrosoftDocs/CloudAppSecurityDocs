@@ -11,9 +11,9 @@ ms.topic: reference
 
 This page describes how to create an application to get programmatic access to Defender for Cloud Apps without a user. If you need programmatic access to Defender for Cloud Apps on behalf of a user, see [Get access with user context](api-authentication-user.md). If you aren't sure which access you need, see the [Managing API tokens](api-authentication.md) page.
 
-Microsoft Defender for Cloud Apps exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Defender for Cloud Apps capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender for Cloud Apps exposes much of its data and actions through a set of programmatic APIs. Those APIs help you automate work flows and innovate based on Defender for Cloud Apps capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-In general, you’ll need to take the following steps to use the APIs:
+In general, you need to take the following steps to use the APIs:
 
 - Create a Microsoft Entra application.
 - Get an access token using this application.
@@ -21,54 +21,48 @@ In general, you’ll need to take the following steps to use the APIs:
 
 This article explains how to create a Microsoft Entra application, get an access token to Microsoft Defender for Cloud Apps, and validate the token.
 
-## Create an app
+## Create an app for Defender for Cloud Apps
 
-1. Sign in to [Azure](https://portal.azure.com) with a user that has the **Global Administrator** role.
+1. In the Microsoft Entra admin center, register a new application. For more information, see [Quickstart: Register an application with the Microsoft Entra admin center](/azure/active-directory/develop/quickstart-register-app).
 
-2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
-
-   ![Image of Microsoft Azure and navigation to application registration.](media/atp-azure-new-app2.png)
-
-3. In the registration form, choose a name for your application, and then select **Register**.
-
-4. To enable your app to access Defender for Cloud Apps and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Cloud App Security**, and then select **Microsoft Cloud App Security**.
+1. To enable your app to access Defender for Cloud Apps and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Cloud App Security**, and then select **Microsoft Cloud App Security**.
 
    > [!NOTE]
    > *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear. Make sure to type this name, even though the product is now called Defender for Cloud Apps.
 
-   ![add permission.](media/add-permission.png)
+   ![Screenshot of adding permission.](media/add-permission.png)
 
    - Select **Application permissions** > **Investigation.Read**, and then select **Add permissions**.
 
-        ![app permission.](media/application-permissions.png)
+        :::image type="content" source="media/application-permissions.png" alt-text="Screenshot of adding app permission." lightbox="media/application-permissions.png":::
 
      You need to select the relevant permissions. **Investigation.Read** is only an example. For other permission scopes, see [Supported permission scopes](#supported-permission-scopes)
 
      - To determine which permission you need, look at the **Permissions** section in the API you're interested to call.
 
-5. Select **Grant admin consent**.
+1. Select **Grant admin consent**.
 
      > [!NOTE]
      > Every time you add a permission, you must select **Grant admin consent** for the new permission to take effect.
 
-    ![Grant permissions.](media/grant-consent.png)
+    ![Screenshot of granting admin permissions.](media/grant-consent.png)
 
-6. To add a secret to the application, select **Certificates & secrets**, select **New client secret**, add a description to the secret, and then select **Add**.
+1. To add a secret to the application, select **Certificates & secrets**, select **New client secret**, add a description to the secret, and then select **Add**.
 
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-    ![Image of create app key.](media/webapp-create-key2.png)
+    ![Screenshot of creating an app key.](media/webapp-create-key2.png)
 
-7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the **Application (client) ID** and the **Directory (tenant) ID**.
+1. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the **Application (client) ID** and the **Directory (tenant) ID**.
 
-   ![Image of created app id.](media/app-and-tenant-ids.png)
+   ![Screenshot of the created app ID.](media/app-and-tenant-ids.png)
 
-8. **For Microsoft Defender for Cloud Apps Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
+1. **For Microsoft Defender for Cloud Apps Partners only**. Set your app to be multitenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multitenanted:
 
     - Go to **Authentication**, and add `https://portal.azure.com` as the **Redirect URI**.
 
-    - On the bottom of the page, under **Supported account types**, select the **Accounts in any organizational directory** application consent for your multi-tenant app.
+    - On the bottom of the page, under **Supported account types**, select the **Accounts in any organizational directory** application consent for your multitenant app.
 
     You need your application to be approved in each tenant where you intend to use it. This is because your application interacts Defender for Cloud Apps on behalf of your customer.
 
@@ -88,16 +82,18 @@ This article explains how to create a Microsoft Entra application, get an access
 
 | Permission name      | Description                                                  | Supported actions                                            |
 | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Investigation.read   | Perform all supported actions on activities and alerts except closing alerts.<br />View IP ranges but not add, update or delete.<br /><br />Perform all entities actions. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread<br />Entities list, fetch, fetch tree<br />Subnet list |
+| Investigation.read   | Perform all supported actions on activities and alerts except closing alerts.<br />View IP ranges but not add, update, or delete.<br /><br />Perform all entities actions. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread<br />Entities list, fetch, fetch tree<br />Subnet list |
 | Investigation.manage | Perform all investigation.read actions in addition to managing alerts and IP ranges. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread, close<br />Entities list, fetch, fetch tree<br />Subnet list, create/update/delete |
 | Discovery.read       | Perform all supported actions on activities and alerts except closing alerts.<br />List discovery reports and categories. | Alerts list, fetch, mark as read/unread<br />Discovery list reports, list report categories |
-| Discovery.manage     | Discovery.read permissions<br />Close alerts, upload discovery files and generate block scripts | Alerts list, fetch, mark as read/unread, close<br />Discovery list reports, list report categories<br />Discovery file upload, generate block script |
+| Discovery.manage     | Discovery.read permissions<br />Close alerts, upload discovery files, and generate block scripts | Alerts list, fetch, mark as read/unread, close<br />Discovery list reports, list report categories<br />Discovery file upload, generate block script |
 | Settings.read        | List IP ranges.                                              | Subnet list                                                  |
 | Settings.manage      | List and manage IP ranges.                                   | Subnet list, create/update/delete                            |
 
 ## Get an access token
 
 For more information on Microsoft Entra tokens, see the [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+
+<!-- IDs listed in the following sections are approved and shouldn't be changed.-->
 
 ### Use PowerShell
 
@@ -137,7 +133,7 @@ The following code was tested with NuGet Microsoft.Identity.Client 4.47.2.
 
     ```c#
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
-    string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+    string appId = "00001111-aaaa-2222-bbbb-3333cccc4444"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
     const string authority = "https://login.microsoftonline.com";
     const string audience = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
@@ -169,7 +165,7 @@ See [Microsoft Authentication Library (MSAL) for Python](https://github.com/Azur
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=05a65629-4c1b-48c1-a78b-804c4abdd4af/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
-You'll get an answer in the following form:
+You get an answer in the following form:
 
 ```output
 {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
@@ -183,7 +179,7 @@ Ensure that you got the correct token:
 1. Validate that you get a 'roles' claim with the desired permissions
 1. In the following image, you can see a decoded token acquired from an app with permissions to all Microsoft Defender for Cloud Apps roles:
 
-![Image of token validation.](media/webapp-decoded-token.png)
+![Screenshot of token validation.](media/webapp-decoded-token.png)
 
 ## Use the token to access Microsoft Defender for Cloud Apps API
 

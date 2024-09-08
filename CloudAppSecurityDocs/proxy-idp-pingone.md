@@ -1,10 +1,10 @@
 ---
-title: Deploy Conditional Access App Control for any web app using PingOne
-description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for any web app using the PingOne identity provider.
+title: Deploy conditional access app control for any web app using PingOne
+description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps conditional access app control for any web app using the PingOne identity provider.
 ms.date: 05/15/2024
 ms.topic: how-to
 ---
-# Deploy Conditional Access App Control for any web app using PingOne as the identity provider (IdP)
+# Deploy conditional access app control for any web app using PingOne as the identity provider (IdP)
 
 
 
@@ -14,7 +14,7 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 ## Prerequisites
 
-- Your organization must have the following licenses to use Conditional Access App Control:
+- Your organization must have the following licenses to use conditional access app control:
 
   - A relevant PingOne license (required for single sign-on)
   - Microsoft Defender for Cloud Apps
@@ -203,15 +203,15 @@ In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign
 
 ## Step 8: Complete the configuration in Defender for Cloud Apps
 
-- Back in the Defender for Cloud Apps **APP CHANGES** page, select **Finish**. After completing the wizard, all associated login requests to this app will be routed through Conditional Access App Control.
+- Back in the Defender for Cloud Apps **APP CHANGES** page, select **Finish**. After completing the wizard, all associated login requests to this app will be routed through conditional access app control.
 
 ## Related content
 
 > [!div class="nextstepaction"]
-> [« PREVIOUS: Deploy Conditional Access App Control for any apps](proxy-deployment-any-app.md)
+> [« PREVIOUS: Deploy conditional access app control for any apps](proxy-deployment-any-app.md)
 
 > [!div class="nextstepaction"]
-> [Introduction to Conditional Access App Control](proxy-intro-aad.md)
+> [Introduction to conditional access app control](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
 > [Troubleshooting access and session controls](troubleshooting-proxy.md)

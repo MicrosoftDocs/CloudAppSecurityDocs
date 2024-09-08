@@ -33,7 +33,7 @@ Our approach to information protection can be split into the following phases th
 
     - **Use an app connector**: Our app connectors use the APIs supplied by app providers. They provide greater visibility into and control over the apps used in your organization. Scans are performed periodically (every 12 hours) and in real time (triggered each time a change is detected). For more information and instructions on how to add apps, see [Connecting apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-    - **Use Conditional Access App Control**: Our Conditional Access app control solution uses a reverse proxy architecture that is uniquely integrated with Microsoft Entra Conditional Access, and allows you to apply controls to any app. 
+    - **Use conditional access app control**: Our Conditional Access app control solution uses a reverse proxy architecture that is uniquely integrated with Microsoft Entra Conditional Access, and allows you to apply controls to any app. 
 
         Microsoft Edge users benefit from direct, in-browser protection. Conditional Access app control is applied in other browsers using a reverse proxy architecture. For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access app control](proxy-intro-aad.md) and [In-browser protection with Microsoft Edge for Business (Preview)](in-browser-protection.md).
     

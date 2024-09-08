@@ -1,10 +1,10 @@
 ---
-title: Discovered app filters and queries
+title: Discovered app filters and queries | Microsoft Defender for Cloud Apps
 description: This article provides a list of Defender for Cloud Apps discovered app filters and queries and explains how to work with them.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Discovered app filters and queries in Microsoft Defender for Cloud Apps
+# Filter and query discovered apps in Microsoft Defender for Cloud Apps
 
 
 
@@ -21,13 +21,13 @@ When you turn on **Advanced filters**, you'll see a list of possible filters, in
 - **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged. Additionally, you can create a custom tag for your app and then use it to filter for specific types of apps.
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains.
 - **Categories**: The categories filter, located on the left of the page, enables you to search for types of apps according to app categories. Example categories include social network apps, cloud storage apps, and hosting services. You can select multiple categories at a time, or a single category, then apply the basic and advanced filters on top.
-- **Compliance risk factor**: Lets you search for a specific standards, certification, and compliance that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, and more.).
+- **Compliance risk factor**: Lets you search for a specific standards, certification, and compliance that the app might comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, and more.).
 - **General risk factor**: Lets you search for general risk factors such as consumer popularity, data center locale, and more.
 - **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only highly risky apps. You can also override the risk score set by Defender for Cloud Apps. For more information, see [Working with the risk score](risk-score.md).
-- **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
+- **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multifactor authentication, etc.).
 - **Usage**: Lets you filter based on the usage statistics of this app. Usage such as apps with less than or more than a specified number of **data uploads**, apps with more than or less than a specified number of **Users**.
   - **Transaction**: One log line of usage between two devices.
-- **Legal risk factor**: Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users. Examples include GDPR ready cloud apps, DMCA, and data retention policy.
+- **Legal risk factor**: Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users, such as for DMCA and data retention policies.
 
 ### Creating and managing custom app tags
 
@@ -35,7 +35,7 @@ You can create a custom app tag. These tags can then be used as filters for deep
 
 To create a custom app tag:
 
-1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **App tags**. Then select **+Addd app tag**.
+1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **App tags**. Then select **+Add app tag**.
 
    ![create custom app tag.](media/create-app-tag.png)
 
@@ -88,10 +88,10 @@ Additionally, you can use the suggested queries as a starting point for a new qu
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
+> [Create snapshot cloud discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 > [!div class="nextstepaction"]
 > [Configure automatic log upload for continuous reports](discovery-docker.md)
 
 > [!div class="nextstepaction"]
-> [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
+> [Working with cloud discovery data](working-with-cloud-discovery-data.md)

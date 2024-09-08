@@ -124,7 +124,7 @@ We recommend deleting cloud discovery data in the following scenarios:
 - When you want a new custom data view to include events in all log file data, including older files. Custom data views only apply to new data available from that point onward, so we recommend deleting any old data and uploading it again to include it in custom data views.
 - When many users or IP addresses started working again after being offline for some time, delete old data to prevent the new activity from being identified as anomalous, with false positive violations.
 
-For more information, see [Deleting Cloud Discovery data](../discovered-apps.md#deleting-cloud-discovery-data).
+For more information, see [Deleting cloud discovery data](../discovered-apps.md#deleting-cloud-discovery-data).
 
 
 ## Generate a cloud discovery executive report
@@ -133,9 +133,9 @@ For more information, see [Deleting Cloud Discovery data](../discovered-apps.md#
 
 **Persona**: Compliance administrators
 
-We recommend using a Cloud Discovery executive report to get an overview of Shadow IT used across your organization. Cloud Discovery executive reports identify the top potential risks and help you plan a workflow to mitigate and manage risks until they're resolved.
+We recommend using a cloud discovery executive report to get an overview of Shadow IT used across your organization. cloud discovery executive reports identify the top potential risks and help you plan a workflow to mitigate and manage risks until they're resolved.
 
-For more information, see [Generate Cloud Discovery executive report](../discovered-apps.md#generate-a-cloud-discovery-executive-report).
+For more information, see [Generate cloud discovery executive report](../discovered-apps.md#generate-a-cloud-discovery-executive-report).
 
 ## Generate a cloud discovery snapshot report
 
@@ -145,7 +145,7 @@ For more information, see [Generate Cloud Discovery executive report](../discove
 
 If you don't have a log yet and want to see a sample of what one might look like, download a sample log file.
 
-For more information, see [Create snapshot Cloud Discovery reports](../create-snapshot-cloud-discovery-reports.md).
+For more information, see [Create snapshot cloud discovery reports](../create-snapshot-cloud-discovery-reports.md).
 
 ## Related content
 

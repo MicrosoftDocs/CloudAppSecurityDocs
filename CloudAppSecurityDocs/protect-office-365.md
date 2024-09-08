@@ -119,7 +119,7 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 - You must have at least one assigned Microsoft 365 license to connect Microsoft 365 to Defender for Cloud Apps.
 
-- To enable monitoring of Microsoft 365 activities in Defender for Cloud Apps, you are required to enable auditing in the [Microsoft Purview compliance portal](/microsoft-365/compliance/turn-audit-log-search-on-or-off).
+- To enable monitoring of Microsoft 365 activities in Defender for Cloud Apps, you are required to enable auditing in [Microsoft Purview](/purview/audit-log-enable-disable).
 
 - Exchange Mailbox audit logging must be turned on for each user mailbox before user activity in Exchange Online is logged, see [Exchange Mailbox activities](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 

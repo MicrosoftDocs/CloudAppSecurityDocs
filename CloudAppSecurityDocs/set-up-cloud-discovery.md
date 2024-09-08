@@ -1,14 +1,13 @@
 ---
-title: Set up cloud discovery | Microsoft Defender for Cloud Apps
-description: This article describes the setup procedure for Microsoft Defender for Cloud Apps cloud discovery.
+title: Cloud app discovery overview | Microsoft Defender for Cloud Apps
+description: This article describes Microsoft Defender for Cloud Apps support for cloud app discovery.
 ms.date: 12/20/2023
-ms.topic: how-to
+ms.topic: conceptual
 ---
-# Set up Cloud Discovery
 
+# Cloud app discovery overview
 
-
-Cloud Discovery analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+Cloud discovery analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 
 >[!TIP]
 > By default, Defender for Cloud Apps cannot discover apps that aren't in the catalog. 
@@ -24,15 +23,15 @@ You can generate the following types of reports:
 
 - **Continuous reports** - Analyze all logs that are forwarded from your network using Defender for Cloud Apps. They provide improved visibility over all data, and automatically identify anomalous use using either the Machine Learning anomaly detection engine or by using custom policies that you define. These reports can be created by connecting in the following ways:
 
-  - [**Microsoft Defender for Endpoint integration**](mde-integration.md): Defender for Cloud Apps integrates with Defender for Endpoint natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
+  - [**Microsoft Defender for Endpoint integration**](mde-integration.md): Defender for Cloud Apps integrates with Defender for Endpoint natively, to simplify rollout of cloud discovery, extend cloud discovery capabilities beyond your corporate network, and enable machine-based investigation.
   - [**Log collector**](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
-  - **Secure Web Gateway (SWG)**: If you work with both Defender for Cloud Apps and one of the following SWGs, you can integrate the products to enhance your security Cloud Discovery experience. Together, Defender for Cloud Apps and SWGs provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the SWG's portal.
+  - **Secure Web Gateway (SWG)**: If you work with both Defender for Cloud Apps and one of the following SWGs, you can integrate the products to enhance your security cloud discovery experience. Together, Defender for Cloud Apps and SWGs provide seamless deployment of cloud discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the SWG's portal.
     - [Zscaler integration](zscaler-integration.md)
     - [iboss integration](iboss-integration.md)
     - [Corrata integration](corrata-integration.md)
     - [Menlo Security integration](menlo-integration.md)
 
-- **[Cloud Discovery API](api-discovery.md)** – Use the Defender for Cloud Apps Cloud Discovery API to automate traffic log upload and get automated Cloud Discovery report and risk assessment. You can also use the API to [generate block scripts](api-discovery-script.md) and streamline app controls directly to your network appliance.
+- **[Cloud discovery API](api-discovery.md)** – Use the Defender for Cloud Apps cloud discovery API to automate traffic log upload and get automated cloud discovery report and risk assessment. You can also use the API to [generate block scripts](api-discovery-script.md) and streamline app controls directly to your network appliance.
 
 ## Log process flow: From raw data to risk assessment
 
@@ -42,7 +41,7 @@ The process of generating a risk assessment consists of the following steps. The
 
 - **Parse** – Defender for Cloud Apps parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.
 
-- **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 31,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.
+- **Analyze** – Traffic data is analyzed against the cloud app catalog to identify more than 31,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.
 
 - **Generate report** - A risk assessment report of the data extracted from log files is generated.
 
@@ -88,7 +87,7 @@ The process of generating a risk assessment consists of the following steps. The
 - Zscaler
 
 > [!NOTE]
-> Cloud Discovery supports both IPv4 and IPv6 addresses.
+> Cloud discovery supports both IPv4 and IPv6 addresses.
 
 If your log isn't supported, or if you're using a newly released log format from one of the supported data sources and the upload is failing, select **Other** as the **Data source** and specify the appliance and log you're trying to upload. Your log will be reviewed by the Defender for Cloud Apps cloud analyst team and you'll be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
 
@@ -140,10 +139,10 @@ Data attributes (according to vendor documentation):
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
+> [Create snapshot cloud discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 > [!div class="nextstepaction"]
 > [Configure automatic log upload for continuous reports](discovery-docker.md)
 
 > [!div class="nextstepaction"]
-> [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
+> [Working with cloud discovery data](working-with-cloud-discovery-data.md)

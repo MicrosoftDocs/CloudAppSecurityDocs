@@ -1,11 +1,11 @@
 ---
-title: Scoped deployment
+title: Scope your deployment to include or exclude users or user groups.
 description: This article provides information about how to scope your Defender for Cloud Apps deployment, including and excluding specific users or groups.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
 
-# Scoped deployment
+# Scope your deployment to specific users or user groups
 
 
 
@@ -78,6 +78,6 @@ The following user activities are monitored:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up Cloud Discovery](set-up-cloud-discovery.md)
+> [Set up cloud discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

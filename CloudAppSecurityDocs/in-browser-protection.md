@@ -24,22 +24,22 @@ To use in-browser protection, users must also have the following environmental r
 
 |Requirement  |Description  |
 |---------|---------|
-|**Operating systems**     |   Windows 10 or 11      |
+|**Operating systems**     |   Windows 10 or 11, macOS      |
 |**Identity platform**     | Microsoft Entra ID        |
-|**Microsoft Edge for Business versions**     |   122 and higher      |
-|**Supported session policies**     | - Block\Monitor of file download (all files\sensitive files) <br>- Block\Monitor file upload <br>- Block\Monitor copy\cut <br>- Block\Monitor print <br><br> Users that are served by multiple policies, including at least one policy that's *not* supported by Microsoft Edge for Business, their sessions are always served by the reverse proxy. <br><br>Policies defined in the Microsoft Entra ID portal are also always served by reverse proxy.   |
+|**Microsoft Edge for Business versions**     |   The last 2 stable versions (for example, if the newest Edge is 126, in-browser protection works for v126 and v125). <br> See [Microsoft Edge releases](https://learn.microsoft.com/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases)     |
+|**Supported session policies**     | - Block\Monitor of file download (all files\sensitive files) <br>- Block\Monitor file upload (all files\sensitive files) <br>- Block\Monitor copy\cut\paste <br>- Block\Monitor print <br>- Block\Monitor malware upload <br>- Block\Monitor malware download <br><br> Users that are served by multiple policies, including at least one policy that's *not* supported by Microsoft Edge for Business, their sessions are always served by the reverse proxy. <br><br>Policies defined in the Microsoft Entra ID portal are also always served by reverse proxy.   |
 
 All other scenarios are served automatically with the standard reverse proxy technology, including user sessions from browsers that don't support in-browser protection, or for policies not supported by in-browser protection.
 
-For example, the following users are all served by the reverse proxy:
-
+For instance, these scenarios are served by the reverse proxy:
 - Google Chrome users
-- Microsoft Edge users who are scoped to a block paste policy
+- Microsoft Edge users who are scoped to a protect file download policy
 - Microsoft Edge users on Android devices
 - Users in apps that use the OKTA authentication method
 - Microsoft Edge users in InPrivate mode
 - Microsoft Edge users with older browser versions
 - B2B guest users
+- Session is scoped to conditional access policy defined in Entra ID portal
 
 ## User experience with in-browser protection
 

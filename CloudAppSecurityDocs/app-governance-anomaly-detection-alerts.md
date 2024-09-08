@@ -6,7 +6,7 @@ ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 description: Learn how to investigate threat detection alerts from app governance in Microsoft Defender XDR with Microsoft Defender for Cloud Apps.
 ---
 
-# Investigate threat detection alerts
+# Investigate app governance threat detection alerts
 
 App governance provides security detections and alerts for malicious activities. This article lists details for each alert that can aid your investigation and remediation, including the conditions for triggering alerts. Since threat detections are nondeterministic by nature, they're only triggered when there's behavior that deviates from the norm.
 
@@ -697,7 +697,7 @@ This detection identifies an application in your tenant that was observed making
 
 **TP or FP?**
  
-- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious. After after verifiying the Azure resource being used and validating the app use in the tenant, the given activity may require that the app be disabled. This is usually evidence of suspected enumeration activity against the KeyVault resource to gain access to credentials for lateral movement or privilege escalation.
+- **TP**: If the app is unknown or not being used, the given activity is potentially suspicious. After verifying the Azure resource being used and validating the app use in the tenant, the given activity may require that the app be disabled. This is usually evidence of suspected enumeration activity against the KeyVault resource to gain access to credentials for lateral movement or privilege escalation.
  
   **Recommended actions**: Review the Azure resources accessed or created by the application and any recent changes made to the application. Based on your investigation, choose whether you want to ban access to this app. Review the permission level requested by this app and which users have granted access.
  
@@ -1126,7 +1126,7 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 
 **MITRE IDs**: T1114
 
-This detection generates alerts for multi-tenant cloud apps with EWS application permissions showing a significant increase in calls to the Exchange Web Services API that are specific to email enumeration and collection. This app might be involved in accessing and retrieving sensitive email data.
+This detection generates alerts for multitenant cloud apps with EWS application permissions showing a significant increase in calls to the Exchange Web Services API that are specific to email enumeration and collection. This app might be involved in accessing and retrieving sensitive email data.
 
 **TP or FP?**
 
@@ -1154,7 +1154,7 @@ This detection generates alerts for multi-tenant cloud apps with EWS application
 
 **MITRE IDs**: T1530
 
-This detection generates alerts for a multi-tenant cloud app that has been inactive for a while and has recently started making API calls. This app may be compromised by an attacker and being used to access and retrieve sensitive data.
+This detection generates alerts for a multitenant cloud app that has been inactive for a while and has recently started making API calls. This app may be compromised by an attacker and being used to access and retrieve sensitive data.
 
 **TP or FP?**
 

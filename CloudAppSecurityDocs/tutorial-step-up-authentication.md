@@ -18,7 +18,7 @@ An employee logged in to SharePoint Online from the corporate office. During the
 
 ## The solution
 
-Protect your organization by requiring Microsoft Entra Conditional Access policies to be reassessed during sensitive session actions the Defender for Cloud Apps Conditional Access App Control.
+Protect your organization by requiring Microsoft Entra Conditional Access policies to be reassessed during sensitive session actions the Defender for Cloud Apps conditional access app control.
 
 ## Prerequisites
 
