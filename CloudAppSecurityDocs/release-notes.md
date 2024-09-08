@@ -87,7 +87,11 @@ See [In-browser protection](in-browser-protection.md).
 
   In-browser protection is supported with the last 2 stable versions of Edge (for example, if the newest Edge is 126, in-browser protection works for v126 and v125). 
 
+<<<<<<< HEAD
 See [Microsoft Edge releases](/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases).
+=======
+See [Microsoft Edge releases](https://learn.microsoft.com/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases)
+>>>>>>> 4fb6d1217afb7a1a3cfb861407622cb828f3303f
 
 ## June 2024
 
