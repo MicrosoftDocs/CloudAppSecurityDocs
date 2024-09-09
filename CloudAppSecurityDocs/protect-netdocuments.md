@@ -38,7 +38,8 @@ Connecting NetDocuments to Defender for Cloud Apps gives you improved insights i
 >[!NOTE]
 >Login/Logouts activities are not supported by NetDocuments.
 
-For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
+For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy)
+.
 
 ## Automate governance controls
 
@@ -74,10 +75,6 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 ### Configure NetDocuments
 
 1. Sign in to your NetDocuments account with a Full NetDocuments Repository Admin user.
-
-1. Enter the admin portal from the top-right corner.
-
-    ![Enter the NetDocuments admin portal.](media/netdocuments-enter-admin-portal.png)
 
 1. Enter the **Information and Settings** section from the top-left corner.
 
