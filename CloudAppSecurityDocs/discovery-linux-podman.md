@@ -5,7 +5,7 @@ ms.date: 12/21/2023
 ms.topic: how-to
 ---
 
-# Configure automatic log upload using Podman (Preview)
+# Configure automatic log upload using Podman
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

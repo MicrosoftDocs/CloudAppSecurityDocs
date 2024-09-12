@@ -30,10 +30,10 @@ This section describes the troubleshooting steps we recommend you taking if the 
 **Recommended steps**
 
 1. In the Microsoft Defender Portal, select **Settings** > **Cloud Apps**.
-1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps. For example:
+1. Under **conditional access app control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps. For example:
 
     ![Screenshot of the user monitoring options.](media/proxy-user-monitoring.png)
-
+   
 1. Verify that the **Notify users that their activity is being monitored** option is selected.
 
 1. Select whether you want to use the default message or provide a custom message:
@@ -59,16 +59,16 @@ If an end user receives a general failure after signing into an app from a non-M
 
 1. In the list of apps, on the row in which the app you can't access appears, select the three dots at the end of the row, and then select **Edit app**.
 
-    1. Validate that the SAML certificate that was uploaded is correct.
+1. Validate that the SAML certificate that was uploaded is correct.
 
     1. Verify that valid SSO URLs are provided in the app configuration.
 
     1. Validate that the attributes and values in the custom app are reflected in identity provider settings. 
     
     For example:
-    
+ 
     ![Screenshot of the SAML information page.](media/proxy-deploy-add-idp-ext-conf.png).
-
+   
 1. If you still can't access the app, open a [support ticket](support-and-ts.md).
 
 ## Something Went Wrong page appears
@@ -92,9 +92,6 @@ Sometimes during a proxied session, the **Something Went Wrong** page might appe
 The ability to block clipboard actions such as cut, copy, paste, and file controls such as download, upload, and print is required to prevent data exfiltration and infiltration scenarios. 
 
 This ability enables companies to balance security and productivity for end users. If you're experiencing problems with these features, use the following steps to investigate the issue.
-
-> [!NOTE]
-> Cut, copy, and paste aren't blocked for data within the same Excel document. Only copying to external locations is blocked.
 
 **Recommended steps**
 
@@ -207,7 +204,7 @@ To allow the preview, an Exchange administrator should perform the following ste
 1. After these parameters are set, run a test on OWA with a PDF file and a session policy configured to block downloads. The **Download** option should be removed from the dropdown and you can preview the file. For example:
 
     ![Screenshot of a PDF preview not blocked.](media/after-powershell.png)
-
+   
 ## Similar site warning appears
 
 Malicious actors can craft URLs that are similar to other sites' URLs in order to impersonate and trick users to believe they're browsing to another site. Some browsers try to detect this behavior and warn users before accessing the URL or block access.
@@ -219,26 +216,6 @@ This message only appears for Chrome users, as Microsoft Edge users benefit from
 :::image type="content" source="media/chrome-similar-site-warning.png" alt-text="Screenshot of a similar site warning in Chrome." lightbox="media/chrome-similar-site-warning.png" border="false":::
 
 If you receive a message like this, contact Microsoft’s support to address it with the relevant browser vendor.
-
-## Second sign-in (also known as 'second login')
-
-Some applications have more than one deep link to sign in. Unless you define the sign-in links in the app settings, users might be redirected to an unrecognized page when they sign in, blocking their access.
-
-The integration between IdPs such as Microsoft Entra ID is based on intercepting an app sign-in and redirecting it. This means that browser sign-ins can't be controlled directly without triggering a second sign-in. To trigger a second sign-in, we need to employ a second sign-in URL specifically for that purpose.
-
-If the app uses a nonce, the second sign-in might be transparent to users, or they are prompted to sign-in again.
-
-If it isn't transparent to the end user, add the second sign-in URL to the app settings:
-
-1. Go to 'settings'\'Cloud apps'\'connected apps'\'Conditional Access App Control Apps'
-
-1. Select the relevant app and then select the three dots.
-
-1. Select **Edit app\Advanced login configuration**.
-
-1. Add the second sign-in URL as mentioned in the error page.
-
-If you're confident the app doesn't use a nonce, you can disable this by editing the apps settings as described in [Slow sign-ins](troubleshooting-proxy.md#slow-sign-ins).
 
 ## More considerations for troubleshooting apps
 

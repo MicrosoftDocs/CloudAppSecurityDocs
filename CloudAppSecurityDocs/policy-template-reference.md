@@ -1,11 +1,11 @@
 ---
-title: Policy templates
+title: Microsoft Defender for Cloud Apps policy templates
 description: This article provides information on policy templates included in Microsoft Defender for Cloud Apps.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
 
-# Policy templates
+# Defender for Cloud Apps policy templates
 
 We recommend that you simplify policy creation by starting with existing templates whenever possible. This article lists several policy templates available with Microsoft Defender for Cloud Apps. 
 
@@ -17,23 +17,23 @@ For the full list of templates, check the Microsoft Defender Portal.
 
 |Risk category|Template name|Description|
 |-----|----|----|
-|Cloud Discovery|Anomalous behavior in discovered users|Alert when anomalous behavior is detected in discovered users and apps, such as: large amounts of uploaded data compared to other users, large user transactions compared to the user's history.|
-|Cloud Discovery|Anomalous behavior of discovered IP addresses|Alerts when anomalous behavior is detected in discovered IP addresses and apps, such as: large amounts of uploaded data compared to other IP addresses, large app transactions compared to the IP address's history.|
-|Cloud Discovery|Collaboration app compliance check|Alert when new collaboration apps are discovered that aren't compliant with SOC2 and SSAE 16, and are used by more than 50 users with a total daily use of more than 50 MB.|
-|Cloud Discovery|Cloud storage app compliance check|Alert when new cloud storage apps are discovered that aren't compliant with SOC2, SSAE 16, ISAE 3402 and PCI DSS, and are used by more than 50 users with total daily use of more than 50 MB.|
-|Cloud Discovery|CRM app compliance check|Alert when new CRM apps are discovered that aren't compliant with SOC2, SSAE 16, ISAE 3402, ISO 27001 and HIPAA, and are used by more than 50 users with a total daily use of more than 50 MB.|
-|Cloud Discovery|New cloud storage app|Alert when new cloud storage apps are discovered that are used by more than 50 users with total daily use of more than 50 MB.|
-|Cloud Discovery|New code hosting app|Alert when new code hosting apps are discovered that are used by more than 50 users with total daily use of more than 50 MB.|
-|Cloud Discovery|New collaboration app|Alert when new collaboration apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
-|Cloud Discovery|New CRM app|Alert when new CRM apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
-|Cloud Discovery|New high volume app|Alert when new apps are discovered that have total daily traffic of more than 500 MB.|
-|Cloud Discovery|New high upload volume app|Alert when new apps are discovered whose total daily upload traffic is more than 500 MB.|
-|Cloud Discovery|New Human-Resource Management app|Alert when newly discovered Human-Resource Management apps are used by more than 50 users with a total daily use of more than 50 MB.|
-|Cloud Discovery|New online meeting app|Alert when new online meeting apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
-|Cloud Discovery|New popular app|Alert when new apps are discovered that are used by more than 500 users.|
-|Cloud Discovery|New risky app|Alert when new apps are discovered with risk score lower than 6 and that are used by more than 50 users with a total daily use of more than 50 MB.|
-|Cloud Discovery|New sales app|Alert when new sales apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
-|Cloud Discovery|New vendor management system apps|Alert when new vendor management system apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
+|Cloud discovery|Anomalous behavior in discovered users|Alert when anomalous behavior is detected in discovered users and apps, such as: large amounts of uploaded data compared to other users, large user transactions compared to the user's history.|
+|Cloud discovery|Anomalous behavior of discovered IP addresses|Alerts when anomalous behavior is detected in discovered IP addresses and apps, such as: large amounts of uploaded data compared to other IP addresses, large app transactions compared to the IP address's history.|
+|Cloud discovery|Collaboration app compliance check|Alert when new collaboration apps are discovered that aren't compliant with SOC2 and SSAE 16, and are used by more than 50 users with a total daily use of more than 50 MB.|
+|Cloud discovery|Cloud storage app compliance check|Alert when new cloud storage apps are discovered that aren't compliant with SOC2, SSAE 16, ISAE 3402 and PCI DSS, and are used by more than 50 users with total daily use of more than 50 MB.|
+|Cloud discovery|CRM app compliance check|Alert when new CRM apps are discovered that aren't compliant with SOC2, SSAE 16, ISAE 3402, ISO 27001 and HIPAA, and are used by more than 50 users with a total daily use of more than 50 MB.|
+|Cloud discovery|New cloud storage app|Alert when new cloud storage apps are discovered that are used by more than 50 users with total daily use of more than 50 MB.|
+|Cloud discovery|New code hosting app|Alert when new code hosting apps are discovered that are used by more than 50 users with total daily use of more than 50 MB.|
+|Cloud discovery|New collaboration app|Alert when new collaboration apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
+|Cloud discovery|New CRM app|Alert when new CRM apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
+|Cloud discovery|New high volume app|Alert when new apps are discovered that have total daily traffic of more than 500 MB.|
+|Cloud discovery|New high upload volume app|Alert when new apps are discovered whose total daily upload traffic is more than 500 MB.|
+|Cloud discovery|New Human-Resource Management app|Alert when newly discovered Human-Resource Management apps are used by more than 50 users with a total daily use of more than 50 MB.|
+|Cloud discovery|New online meeting app|Alert when new online meeting apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
+|Cloud discovery|New popular app|Alert when new apps are discovered that are used by more than 500 users.|
+|Cloud discovery|New risky app|Alert when new apps are discovered with risk score lower than 6 and that are used by more than 50 users with a total daily use of more than 50 MB.|
+|Cloud discovery|New sales app|Alert when new sales apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
+|Cloud discovery|New vendor management system apps|Alert when new vendor management system apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
 |DLP|Externally shared source code|Alert when a file containing source code is shared outside your organization.|
 |DLP|File containing PCI detected in the cloud (built-in DLP engine)|Alert when a file with payment card information (PCI) is detected by the Microsoft Defender for Cloud Apps built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
 |DLP|File containing PHI detected in the cloud (built-in DLP engine)|Alert when a file with protected health information (PHI) is detected by the Microsoft Defender for Cloud Apps built-in data loss prevention (DLP) engine in a sanctioned cloud app.|

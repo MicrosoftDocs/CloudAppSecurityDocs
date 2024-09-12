@@ -8,15 +8,15 @@ ms.topic: conceptual
 
 
 
-Microsoft Defender for Cloud Apps enables you to attest your app, so that you make sure that the compliance and security details we use to rate your app in our Cloud App Catalog are up to date.
+Microsoft Defender for Cloud Apps enables you to attest your app, so that you make sure that the compliance and security details we use to rate your app in our cloud app catalog are up to date.
 
-Whether your app is already listed in the Cloud App Catalog, or it's new, submit a [self-attestation questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR73pcZQhsv1CrknpDWXAGGFUNlgwTzc1SDEyWjJOV0lLMlAzWjNVS0xLSy4u). For details on the self-attestation process, contact casfeedback@microsoft.com.
+Whether your app is already listed in the cloud app catalog, or it's new, submit a [self-attestation questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4CRHM-U7CtKpJma_QJAnSlUMEpLQzBaQ1hWNDMxUEhRNFI3Q0FZUkdWRC4u). For details on the self-attestation process, contact casfeedback@microsoft.com.
 
 Follow the service attributes described below to successfully complete the submission of the questionnaire:
 
 | Field | Info category | Type | Accepted values | Description |
 |------|-------|------|---------|----------|
-| App name | General | String | Free text | The name for your application as it should appear in the Cloud App Catalog. |
+| App name | General | String | Free text | The name for your application as it should appear in the cloud app catalog. |
 | Description | General | String | Free text | Short explanation of what your application enables users to do or achieve. |
 | Category| General | String | Close list - provided in questionnaire | Classification of the app according to the field to which it relates. |
 | Headquarters | General | Country code | Close list - provided in questionnaire | The country/region of the provider's headquarters.|
@@ -34,7 +34,7 @@ Follow the service attributes described below to successfully complete the submi
 | Disaster recovery plan | General | Boolean | True, False | Does this app have a disaster recovery plan that includes a backup and restore strategy? |
 | Latest breach | Security | Date | MMM-dd-YYYY | Most recent incident in which sensitive, protected, or confidential data owned by the app was viewed, stolen, or used by an individual unauthorized to do so. |
 | Data-at-rest encryption method | Security | String | Close list - provided in questionnaire | The type of encryption of data-at-rest performed on the app. |
-| Multi-factor authentication | Security | Boolean | True, False | Does this app support multi-factor authentication solutions? |
+| Multifactor authentication | Security | Boolean | True, False | Does this app support multifactor authentication solutions? |
 | IP address restriction | Security | Boolean | True, False | Does this app support restriction of specific IP addresses by the app? |
 | User audit trail | Security | Boolean | True, False | Does this app support availability of audit trail per user account? |
 | Admin audit trail | Security | Boolean | True, False | Does this app support availability of an admin audit trail in the app? |
@@ -56,7 +56,7 @@ Follow the service attributes described below to successfully complete the submi
 | Password policy | Security | Boolean | True, False | Does this app enforce a password policy that complies with best practices? |
 | FINRA | Compliance | Boolean | True, False, N/A | Does this app comply with FINRA, a standard set for not-for-profit organizations authorized by Congress that regulates and enforces the enhancement of investor safeguards and market integrity? |
 | FISMA | Compliance | Boolean | True, False, N/A | Does this app comply with FISMA, the US legislation that defines a comprehensive framework to protect government information, operations and assets within federal agencies, against threats? |
-| GAAP | Compliance | Boolean | True, False, N/A | Does this app comply with GAAP, a collection of commonly-followed accounting rules and standards for financial reporting? |
+| GAAP | Compliance | Boolean | True, False, N/A | Does this app comply with GAAP, a collection of commonly followed accounting rules and standards for financial reporting? |
 | HIPAA | Compliance | Boolean | True, False, N/A | Does this app comply with HIPAA, the US legislation that sets standards for protecting the confidentiality and security of individually identifiable health information? |
 | ISAE 3402 | Compliance | Boolean | True, False, N/A | Does this app comply with ISAE 3402, the global standard providing assurance that a service organization has appropriate controls in place? |
 | ISO 27001 | Compliance | Boolean | True, False | Is this app ISO 27001 certified, a certificate given to companies upholding internationally recognized guidelines and general principles for initiating, implementing, maintaining, and improving information security management within an organization? |
@@ -77,7 +77,7 @@ Follow the service attributes described below to successfully complete the submi
 | COBIT | Compliance | Boolean | True, False | Does this app comply with COBIT, which sets best practices for the governance and control of information systems and technology, and aligns IT with business principles? |
 | COPPA | Compliance | Boolean | True, False, N/A | Does this app comply with COPPA, which defines requirements on website and online services operators that provide content to children under 13 years of age? |
 | FERPA | Compliance | Boolean | True, False, N/A | Does this app comply with FERPA, a federal law that protects the privacy of student education records? |
-| GAPP | Compliance | Boolean | True, False, N/A | Does this app comply with GAPP, a collection of commonly-followed rules that address privacy risks in an organization? |
+| GAPP | Compliance | Boolean | True, False, N/A | Does this app comply with GAPP, a collection of commonly followed rules that address privacy risks in an organization? |
 | HITRUST CSF | Compliance | Boolean | True, False, N/A | Does this app comply with HITRUST CSF, a set of controls that harmonizes the requirements of information security regulations and standards? |
 | Jericho Forum Commandments | Compliance | Boolean | True, False | Does this app follow Jericho Forum Commandments, a set if principles to be observed when architecting systems for secure operation in de-perimeterized environments? |
 | ISO 27002 | Compliance | Boolean | True, False, N/A | Does this app comply with ISO 27002, which establishes common guidelines for organizational information security standards and information security management practices? |
@@ -93,7 +93,7 @@ Follow the service attributes described below to successfully complete the submi
 | GDPR - Data protection officer | Legal | Boolean | True, False, N/A | Does this app appoint a data protection officer to oversee data security strategy and GDPR compliance? |
 | GDPR - Right to object | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to object to the processing of their personal data in certain circumstances? |
 | GDPR - Right to access | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to know, upon request, what personal data a company is using and how it is being used? |
-| GDPR - Right to data Portablility | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to obtain and reuse their personal data for their own purposes across different services upon request? |
+| GDPR - Right to data Portability | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to obtain and reuse their personal data for their own purposes across different services upon request? |
 | GDPR - Right to be informed | Legal | Boolean | True, False, N/A | Does this app inform individuals of the appropriate safeguards it takes when personal data is transferred to a non-EU country/region or to an international organization? |
 | GDPR - Right to restriction of processing | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to block or suppress processing of personal data? |
 | GDPR - Rights related to automated decision making | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to choose not to be subject to a decision that is based solely on automated processing? This includes profiling, which may have legal ramifications. |

@@ -18,7 +18,7 @@ For portal access requirements, see [Portal access](network-requirements.md#port
 
 1. In the Microsoft Defender Portal, select **Settings**. Then choose **Cloud Apps**.
 
-1. Under **System** -> **Organization details**, it's important that you provide an **Organization display name** for your organization. It's displayed on emails and web pages sent from the system.
+1. Under **System** -> **Organization details**, it's important that you provide an **Organization display name** for your organization.
 
 1. Provide an **Environment name** (tenant). This information is especially important if you manage more than one tenant.
 
@@ -46,6 +46,6 @@ For portal access requirements, see [Portal access](network-requirements.md#port
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up Cloud Discovery](set-up-cloud-discovery.md)
+> [Set up cloud discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -1,6 +1,6 @@
 ---
 title: Advanced log collector management | Microsoft Defender for Cloud Apps
-description: This article provides information about advanced management tasks for Defender for Cloud Apps Cloud Discovery log collectors.
+description: This article provides information about advanced management tasks for Defender for Cloud Apps cloud discovery log collectors.
 ms.date: 03/18/2024
 ms.topic: how-to
 ---
@@ -15,7 +15,7 @@ Defender for Cloud Apps cloud discovery continues to focus on base firewall form
 This article describes how to modify the configuration for your Defender for Cloud Apps cloud discovery Docker.
 
 ## Modify the log collector FTP configuration
-Use these steps in the following sections to modify the configuration for your Defender for Cloud Apps Cloud Discovery Docker.
+Use these steps in the following sections to modify the configuration for your Defender for Cloud Apps cloud discovery Docker.
 
 ### Verify the log collector version
 
@@ -155,9 +155,7 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     ./keytool --list --keystore ../lib/security/cacerts | grep self
     ```
 
-You should see your imported proxy CA certificate. For example:
-
-:::image type="content" source="media/log-collector-advanced-tasks/docker-2.png" alt-text="Screenshot of the keytool interface." lightbox="media/log-collector-advanced-tasks/docker-2.png":::
+Your imported proxy CA certificate is displayed.
 
 ### Restrict IP addresses sending syslog messages to the log collector on Linux
 
@@ -527,7 +525,7 @@ When updating your log collector:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Deploy Cloud Discovery](set-up-cloud-discovery.md)
+> [Deploy cloud discovery](set-up-cloud-discovery.md)
 
 > [!div class="nextstepaction"]
 > [User activity policies](user-activity-policies.md)

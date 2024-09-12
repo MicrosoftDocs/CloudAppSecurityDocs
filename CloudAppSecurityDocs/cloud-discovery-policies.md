@@ -1,14 +1,14 @@
 ---
-title: Create Cloud Discovery policies
-description: This article provides information about working with Cloud Discovery policies.
+title: Create cloud discovery policies
+description: This article provides information about working with cloud discovery policies.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Create Cloud Discovery policies
+# Create cloud discovery policies
 
 
 
-You can create app discovery policies to alert you when new apps are detected. Defender for Cloud Apps also searches all the logs in your Cloud Discovery for anomalies.
+You can create app discovery policies to alert you when new apps are detected. Defender for Cloud Apps also searches all the logs in your cloud discovery for anomalies.
 
 ## Creating an app discovery policy
 
@@ -18,7 +18,7 @@ Discovery policies enable you to set alerts that notify you when new apps are de
 
 1. Select **Create policy** and then select **App discovery policy**.
 
-    ![Create a Cloud Discovery policy.](media/create-policy-from-shadow-it-tab.png)
+    ![Create a cloud discovery policy.](media/create-policy-from-shadow-it-tab.png)
 
 1. Give your policy a name and description. If you want, you can base it on a template. For more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
@@ -55,9 +55,9 @@ Set the thresholds that should trigger an alert for a certain discovered app at 
 
 ![app discovery policy example.](media/app-discovery-policy-example.png "app discovery policy example")
 
-## Cloud Discovery anomaly detection
+## Cloud discovery anomaly detection
 
-Defender for Cloud Apps searches all the logs in your Cloud Discovery for anomalies. For instance, when a user, who never used Dropbox before, suddenly uploads 600 GB to it, or when there are a lot more transactions than usual on a particular app. The anomaly detection policy is enabled by default. It's not necessary to configure a new policy for it to work. However, you can fine-tune which types of anomalies you want to be alerted about in the default policy.
+Defender for Cloud Apps searches all the logs in your cloud discovery for anomalies. For instance, when a user, who never used Dropbox before, suddenly uploads 600 GB to it, or when there are a lot more transactions than usual on a particular app. The anomaly detection policy is enabled by default. It's not necessary to configure a new policy for it to work. However, you can fine-tune which types of anomalies you want to be alerted about in the default policy.
 
 1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
 

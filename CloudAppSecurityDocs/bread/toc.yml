@@ -1,7 +1,0 @@
-- name: Microsoft Defender for Cloud Apps
-  tocHref: /defender-cloud-apps/
-  topicHref: /defender-cloud-apps/index
-  items:
-  - name: Microsoft Defender XDR
-    tocHref: /defender-cloud-apps/
-    topicHref: /defender-cloud-apps/index

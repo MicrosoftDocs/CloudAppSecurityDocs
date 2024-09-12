@@ -52,7 +52,7 @@ The [Defender for Cloud Apps connector](/connectors/cloudappsecurity/) in Power 
 
 > [!NOTE]
 >
-> The maximum supported number of Power Platform environments is 180, but there is no limit to the number of playbooks that can be used within each environment.
+> The maximum supported number of Power Platform environments is 80, but there is no limit to the number of playbooks that can be used within each environment.
 
 ## Related videos
 

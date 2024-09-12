@@ -18,6 +18,9 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 > - [Understand how quarantine works](#understand-how-quarantine-works)
 > - [Set up admin quarantine](#set-up-admin-quarantine)
 
+> [!IMPORTANT]
+> Starting **September 1, 2024**, we'll be deprecating the **Files** page from Microsoft Defender for Cloud Apps. At that point, create and modify Information Protection policies and find malware files from the **Cloud apps > Policies > Policy Management** page. For more information, see [File policies in Microsoft Defender for Cloud Apps](data-protection-policies.md).
+
 ## Understand how quarantine works
 
 > [!NOTE]

@@ -1,10 +1,10 @@
 ---
-title: Block download of sensitive information with Conditional Access App Control
+title: Block download of sensitive information with conditional access app control
 description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Microsoft Entra ID Conditional Access app control.
 ms.date: 05/15/2024
 ms.topic: tutorial
 ---
-# Tutorial: Block download of sensitive information with Conditional Access App Control
+# Tutorial: Block download of sensitive information with conditional access app control
 
 
 

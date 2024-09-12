@@ -5,9 +5,7 @@ ms.date: 02/15/2023
 ms.topic: overview
 ---
 
-# What are the differences in discovery capabilities for Microsoft Defender for Cloud Apps and Cloud App Discovery?
-
-
+# Compare discovery capabilities for Defender for Cloud Apps and Cloud App Discovery?
 
 This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery.
 
@@ -15,17 +13,17 @@ For information about licensing, see the [Microsoft 365 licensing datasheet](htt
 
 ## Microsoft Defender for Cloud Apps
 
-Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery is one of the features of Defender for Cloud Apps, which enables you to gain visibility into Shadow IT by discovering cloud apps in use.
+Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud discovery is one of the features of Defender for Cloud Apps, which enables you to gain visibility into Shadow IT by discovering cloud apps in use.
 
-## Cloud App Discovery
+## Cloud app discovery
 
-Cloud App Discovery comes at no additional cost as part of:
+Cloud app discovery comes at no additional cost as part of:
 
 1. Microsoft Entra ID P1.
 1. Enterprise Mobility + Security E3 (EMS E3).
 1. Microsoft 365 E3.
     
-This is a subset of Microsoft Defender for Cloud Apps. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
+This is a subset of Microsoft Defender for Cloud Apps. It includes cloud discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
 
 [Upgrade to Microsoft Defender for Cloud Apps](https://www.microsoft.com/security/business/cloud-apps-defender) to receive the full suite of Cloud Access Security Broker (CASB) capabilities offered by Microsoft Defender for Cloud Apps.
 
@@ -35,10 +33,10 @@ The following table is a comparison of the discovery capabilities in Defender fo
 
 |Capability|Feature|Microsoft Defender for Cloud Apps| Cloud App Discovery |
 |----|----|----|----|
-|Cloud Discovery|Discovered apps|31,000 + cloud apps|31,000 + cloud apps|
-||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual and automatic log upload. [Learn more about setting up Cloud Discovery](set-up-cloud-discovery.md)|
+|Cloud discovery|Discovered apps|31,000 + cloud apps|31,000 + cloud apps|
+||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual and automatic log upload. [Learn more about setting up cloud discovery](set-up-cloud-discovery.md)|
 ||Log anonymization for user privacy|Yes|Yes|
-||Access to full Cloud App Catalog|Yes|Yes|
+||Access to full cloud app catalog|Yes|Yes|
 ||Cloud app risk assessment|Yes|Yes|
 ||Cloud usage analytics per app, user, IP address|Yes|Yes|
 ||Ongoing analytics & reporting|Yes|Yes|

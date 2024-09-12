@@ -15,7 +15,7 @@ This article describes how to configure your IdP to work with Defender for Cloud
 
 ## Prerequisites
 
-- Your organization must have the following licenses to use Conditional Access App Control:
+- Your organization must have the following licenses to use conditional access app control:
 
   - The license required by your identity provider (IdP) solution
   - Microsoft Defender for Cloud Apps

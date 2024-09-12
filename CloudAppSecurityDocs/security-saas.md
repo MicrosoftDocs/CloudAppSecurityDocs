@@ -5,7 +5,7 @@ ms.date: 01/18/2024
 ms.topic: how-to
 ---
 
-# Turn on and manage SaaS security posture management (SSPM)
+# Turn on and manage SaaS security posture (SSPM)
 
 Your SaaS application environments may be configured in a risky posture. Microsoft Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to help you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application. For example:
 

@@ -1,11 +1,11 @@
 ---
-title: Activity filters and queries | Microsoft Defender for Cloud Apps
+title: Filter and query activities | Microsoft Defender for Cloud Apps
 description: This article provides a list of Defender for Cloud Apps activity filters and queries and explains how to work with them.
 ms.date: 12/21/2023
 ms.topic: how-to
 ---
 
-# Activity filters and queries
+# Filter and query Defender for Cloud Apps activities
 
 
 
@@ -108,18 +108,18 @@ To make investigation even simpler, you can now create custom queries and save t
 1. In the **Save query** pop-up, name your query.
 
    ![new query.](media/new-activity-query.png)
-
+   
 1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
    ![open query.](media/select-activity-query.png)
-
+   
 Defender for Cloud Apps also provides you with **Suggested queries**. Suggested queries provide you with recommended avenues of investigation that filter your activities. You can edit these queries and save them as custom queries. The following are optional suggested queries:
 
 - Admin activities - filters all your activities to display only those activities that involve admins.
 
 - Download activities - filters all your activities to display only those activities that were download activities, including downloading user list as a .csv file, downloading shared content, and downloading a folder.
 
-- Failed log-in - filters all your activities to display only failed log-ins and failed sign-ins via SSO
+- Failed log-in - filters all your activities to display only failed sign-in and failed sign-ins via SSO
 
 - File and folder activities - filters all your activities to display only those involving files and folders. The filter includes uploading, download, and accessing folders, along with creating, deleting, uploading, downloading, quarantining, and accessing files and transferring content.
 
@@ -129,7 +129,7 @@ Defender for Cloud Apps also provides you with **Suggested queries**. Suggested 
 
 - Sharing activities - filters all your activities to display only those activities that involve sharing folders and files, including creating a company link, creating an anonymous link, and granting read/write permissions.
 
-- Successful log-in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log-on, single sign-on logon, and log-on from a new device.
+- Successful log-in - filters all your activities to display only those activities that involve successful sign-ins, including impersonate action, impersonate sign-in, single sign-o sign-ins, and sign-in from a new device.
 
 ![query activities.](media/queries-activity.png)
 
@@ -158,6 +158,22 @@ From there you can define the filters as is normally done with the **Activity Lo
 For example: 
 
 ![Filter after selecting investigate 6 months back.](media/filter-six-months-back.png)
+
+#### Export activities six months back (Preview)
+
+You can export all activities from up to six months by clicking the Export button in the top-left corner  
+![Click the export icon to export records.](media/activity-filters-queries/export-button-of-activity-logs.png)
+
+
+
+
+When exporting data, you can choose a date range of up to six months, and have the ability to exclude private activities.  
+The exported file is limited to 100,000 records and will be in CSV format.
+
+The result file will be accessible under the **Exported reports**. Users can navigate to **Reports -> Cloud Apps** in Microsoft 365 Defender portal to view the status of the export process and access past exports.  
+Reports that include private activities will be marked with an Eye icon in the reports page.  
+
+![eye-icon](media/activity-filters-queries/eye-icon-to-indicate-private-report.png)
 
 ## Next steps
 

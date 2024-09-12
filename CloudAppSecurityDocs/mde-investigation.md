@@ -39,7 +39,7 @@ After you integrate Defender for Endpoint with Defender for Cloud Apps, investig
     - **User history**: Lists all the users who signed in to the device.
     - **IP address history**: Lists all the IP addresses that were assigned to the device.
  
-As with any other Cloud Discovery source, you can export the data from the **Defender-managed endpoints** report for further investigation.
+As with any other cloud discovery source, you can export the data from the **Defender-managed endpoints** report for further investigation.
 
 > [!NOTE]
 >

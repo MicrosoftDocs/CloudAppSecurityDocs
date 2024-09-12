@@ -22,12 +22,12 @@ Activities from your [API connected apps](enable-instant-visibility-protection-a
 - **[Discovery log](tutorial-shadow-it.md)**  
 Activities extracted from firewall and proxy traffic logs that are forwarded to Defender for Cloud Apps. The logs are analyzed against the [cloud app catalog](risk-score.md), ranked, and scored based on more than 90 risk factors.
 - **[Proxy log](proxy-intro-aad.md)**  
-Activities from your [Conditional Access App Control apps](tutorial-proxy.md#phase-1-monitor-user-activities-for-anomalies).
+Activities from your [conditional access app control apps](tutorial-proxy.md#phase-1-monitor-user-activities-for-anomalies).
 
 Next, you'll want to tune your policies. The following policies can be fine-tuned by setting filters, dynamic thresholds (UEBA) to help train their detection models, and suppressions to reduce common false positive detections:
 
 - Anomaly detection
-- Cloud Discovery anomaly detection
+- Cloud discovery anomaly detection
 - Rule-based activity detection
 
 In this tutorial, you'll learn how to tune user activity detections to identify true compromises and reduce alert fatigue resulting from handling large volumes of false positive detections:
@@ -117,7 +117,7 @@ Once you are familiar with the policies, you should consider how you want to fin
 
 Like the anomaly detection policies, there are several built-in [cloud discovery anomaly detection policies](cloud-discovery-anomaly-detection-policy.md) that you can fine-tune. For example, the Data exfiltration to unsanctioned apps policy alerts you when data is being exfiltrated to an unsanctioned app and comes preconfigured with settings based on Microsoft experience in the security field.
 
-However, you can fine-tune the built-in policies or create your own policies to aid you in identifying other scenarios that you may be interested in investigating. Since these policies are based on cloud discovery logs, they have different [tuning capabilities](cloud-discovery-anomaly-detection-policy.md#cloud-discovery-anomaly-detection-policy-reference) more focused on anomalous app behavior and data exfiltration.
+However, you can fine-tune the built-in policies or create your own policies to aid you in identifying other scenarios that you may be interested in investigating. Since these policies are based on cloud discovery logs, they have different [tuning capabilities](cloud-discovery-anomaly-detection-policy.md#legacy-create-anomaly-detection-policy) more focused on anomalous app behavior and data exfiltration.
 
 1. **Tune usage monitoring**  
 Set the usage filters to control the baseline, scope, and activity period for detecting anomalous behavior. For example, you may want to receive alerts for anomalous activities relating to executive-level employees.

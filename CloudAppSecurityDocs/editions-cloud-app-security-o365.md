@@ -4,7 +4,7 @@ description: This article describes the differences between Defender for Cloud A
 ms.date: 05/19/2024
 ms.topic: overview
 ---
-# What are the differences between Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security?
+# Compare Microsoft Defender for Cloud Apps and Microsoft 365 Cloud App Security
 
 This article describes the differences between Defender for Cloud Apps and Microsoft 365 Cloud App Security.
 
@@ -26,10 +26,10 @@ Microsoft 365 Cloud App Security includes threat detection based on user activit
 
 |Capability|Feature|Microsoft Defender for Cloud Apps|Microsoft 365 Cloud App Security|
 |----|----|----|----|
-|Cloud Discovery|Discovered apps |31,000 + cloud apps  |750+ cloud apps with similar functionality to Microsoft 365|
+|Cloud discovery|Discovered apps |31,000 + cloud apps  |750+ cloud apps with similar functionality to Microsoft 365|
 ||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual log upload|
 ||Log anonymization for user privacy|Yes||
-||Access to full Cloud App Catalog|Yes||
+||Access to full cloud app catalog|Yes||
 ||Cloud app risk assessment|Yes||
 ||Cloud usage analytics per app, user, IP address|Yes||
 ||Ongoing analytics & reporting|Yes||
@@ -44,7 +44,7 @@ Microsoft 365 Cloud App Security includes threat detection based on user activit
 ||SIEM connector|Yes. Alerts and activity logs for cross-SaaS apps.|For Microsoft 365 alerts only|
 ||Integration to Microsoft Intelligent Security Graph|Yes|Yes|
 ||Activity policies|Yes|Yes|
-|Conditional Access App Control|Real-time session monitoring and control|Any cloud and on-premises app|For Microsoft 365 apps|
+|Conditional access app control|Real-time session monitoring and control|Any cloud and on-premises app|For Microsoft 365 apps|
 |Cloud Platform Security|Security configurations|For Azure, AWS, and GCP|For Azure|
 
 ## Next steps

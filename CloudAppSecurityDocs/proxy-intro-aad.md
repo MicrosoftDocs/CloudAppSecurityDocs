@@ -1,10 +1,10 @@
 ---
-title: Conditional Access app control | Microsoft Defender for Cloud Apps
+title: Conditional access app control | Microsoft Defender for Cloud Apps
 description: Learn how Microsoft Defender for Cloud Apps provides Conditional Access app control.
 ms.date: 02/29/2024
 ms.topic: conceptual
 ---
-# Microsoft Defender for Cloud Apps Conditional Access app control
+# Microsoft Defender for Cloud Apps conditional access app control
 
 In today's workplace, it's not enough to know what's happened in your cloud environment after the fact. You also need to stop breaches and leaks in real-time, and prevent employees from intentionally or accidentally putting your data and organization at risk.
 
@@ -80,7 +80,7 @@ Microsoft Entra ID apps are also automatically onboarded for Conditional Access 
 Defender for Cloud Apps identifies apps using data from the cloud app catalog. If you've customized apps with plugins, any associated custom domains must be added to the relevant app in the catalog. For more information, see [Working with the risk score](risk-score.md).
 
 > [!NOTE]
-> Installed apps with *non-interactive* sign-in flows, such as the Authenticator app and other built-in apps, cannot be used with access controls. Our recommendation in that case is to craft an access policy in Entra ID portal in addition to Microsoft defender for cloud apps access policies
+> Installed apps with *non-interactive* sign-in flows, such as the Authenticator app and other built-in apps, cannot be used with Access controls. Our recommendation in that case is to craft an Access policy in Entra ID portal in addition to Microsoft defender for cloud apps access policies
 >
 
 ## Session control support scope
