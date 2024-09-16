@@ -17,6 +17,8 @@ You can mark a specific risky app as unsanctioned by clicking the three dots at 
 
   :::image type="content" source="media/tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/tag-as-unsanctioned.png":::
 
+> [!NOTE]
+> An app that is onboarded to inline proxy or connected via app connector, all such applications would be auto sanctioned state in Cloud Discovery.
 ## Blocking apps with built-in streams
 
 If your tenant uses Microsoft Defender for Endpoint, once you mark an app as unsanctioned, it's automatically blocked. Moreover, you can scope blocking to specific Defender for Endpoint device groups, monitor applications, and use the [warn and educate](mde-govern.md#educate-users-when-accessing-risky-apps) features. For more information, see [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md).
@@ -31,18 +33,18 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
 
     :::image type="content" source="media/tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/tag-as-unsanctioned.png":::
 
-2. In the title bar, select **Actions** and then select **Generate block script...**.
+1. In the title bar, select **Actions** and then select **Generate block script...**.
 
     ![Generate block script.](media/generate-block-script.png)
-
-3. In **Generate block script**, select the appliance you want to generate the block script for.
+   
+1. In **Generate block script**, select the appliance you want to generate the block script for.
 
     ![Generate block script pop-up.](media/generate-block-script-pop-up.png)
-
-4. Then select the **Generate script** button to create a block script for all your unsanctioned apps. By default, the file is named with the date on which it was exported and the appliance type you selected. *2017-02-19_CAS_Fortigate_block_script.txt* would be an example file name.
+   
+1. Then select the **Generate script** button to create a block script for all your unsanctioned apps. By default, the file is named with the date on which it was exported and the appliance type you selected. *2017-02-19_CAS_Fortigate_block_script.txt* would be an example file name.
 
    ![Generate block script button.](media/generate-block-script-button.png)
-
+   
 5. Import the file created to your appliance.
 
 ## Blocking unsupported streams
