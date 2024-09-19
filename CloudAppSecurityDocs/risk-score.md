@@ -173,7 +173,7 @@ The following table lists the cloud app catalog's supported categories:
 | **E-commerce**                 | Cloud apps that provide e-commerce platforms and tools, for either purchasing or selling products. |
 | **Education**                  | Cloud apps that provide education tools and platforms, such as training, test, knowledge base, knowledge checks, and management of the studying process for individuals and organizations.  |
 | **Forums**                     | Cloud apps that provide forums and blogs, helping sharing knowledge and maintaining communities. |
-| **Health**                     | Cloud apps that provide health services such as fitness products, health insurance, doctors’ appointments scheduling, laboratory services and more.   |
+| **Health**                     | Cloud apps that provide health services such as fitness products, health insurance, doctors' appointments scheduling, laboratory services and more.   |
 | **Hosting services**           | Cloud apps that provide hosting services such as servers and websites hosting. |
 | **Human-resource management**  | Cloud apps that are used to process and manage human resources and business processes related data. |
 | **Generative AI** | Cloud apps that can generate digital media content such text, images, videos, and so on, using generative AI models. |
@@ -182,7 +182,7 @@ The following table lists the cloud app catalog's supported categories:
 | **Marketing**                  | Cloud apps that are used by businesses to manage product marketing strategy and operations. |
 | **News and entertainment**     | Cloud apps that provide news and entertainment information. |
 | **Online meetings**            | Cloud apps that are used for online audio and video conferencing.  |
-| **Operations management**      | Cloud apps that are used to manage business practices of organization’s internal flows and procedures. |
+| **Operations management**      | Cloud apps that are used to manage business practices of organization's internal flows and procedures. |
 | **Personal instant messaging** | Cloud apps that provide nonbusiness real-time text correspondence using an online chat. |
 | **Product design**             | Cloud apps that provide product sketching and prototyping tools. |
 | **Productivity**               | Cloud apps that are used for creating, producing and modifying information and media. |
