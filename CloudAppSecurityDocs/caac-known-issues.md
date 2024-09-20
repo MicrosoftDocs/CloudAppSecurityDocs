@@ -53,7 +53,7 @@ Session policies don't protect external business-to-business (B2B) collaboration
 
 ## Limitations for sessions that the reverse proxy serves
 
-This section lists limitations that apply only on sessions that the reverse proxy serves. Users of Microsoft Edge can benefit from in-browser protection instead of using the reverse proxy, so these limitations don't affect them.
+The following limitations apply only on sessions that the reverse proxy serves. Users of Microsoft Edge can benefit from in-browser protection instead of using the reverse proxy, so these limitations don't affect them.
 
 ### Built-in app and browser plug-in limitations
 
@@ -63,7 +63,7 @@ As an administrator, you might want to define default system behavior for when a
 
 ### Context loss limitations
 
-In the following applications, we encountered scenarios where browsing to a link might result in loss of the full path of the link. Typically, the user lands on the home page of the app.
+In the following applications, we encountered scenarios where browsing to a link might result in loss of the link's full path. Typically, the user lands on the home page of the app.
 
 - ArcGIS
 - GitHub
@@ -75,7 +75,7 @@ In the following applications, we encountered scenarios where browsing to a link
 
 ### File upload limitations
 
-If you apply a session policy to block or monitor the upload of sensitive files, the user's attempts to upload files or folders by using a drag-and-drop operation blocks the complete list of files and folders in the following scenarios:
+If you apply a session policy to block or monitor the upload of sensitive files, the user's attempts to upload files or folders by using a drag-and-drop operation block the complete list of files and folders in the following scenarios:
 
 - A folder that contains at least one file and at least one subfolder
 - A folder that contains multiple subfolders

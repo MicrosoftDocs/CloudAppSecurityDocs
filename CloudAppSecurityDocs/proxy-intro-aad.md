@@ -24,7 +24,7 @@ For example:
 
 Microsoft Edge users benefit from [direct, in-browser protection](in-browser-protection.md). A lock :::image type="icon" source="media/in-browser-protection/lock.png" border="false"::: icon on the browser's address bar indicates this protection.
 
-Users of other browsers are redirected via reverse proxy to Defender for Cloud Apps. Those browsers display an `*.mcas.ms` suffix in the link's URL. For example, if the app URL is *myapp.com*, the app URL is updated to *myapp.com.mcas.ms*.
+Users of other browsers are redirected via reverse proxy to Defender for Cloud Apps. Those browsers display an `*.mcas.ms` suffix in the link's URL. For example, if the app URL is `myapp.com`, the app URL is updated to `myapp.com.mcas.ms`.
 
 This article describes app control in Defender for Cloud Apps through [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies.
 
@@ -62,7 +62,7 @@ In some rare scenarios, blocking activities on the server side renders the app u
 
 ## System performance and data storage
 
-Defender for Cloud Apps uses Azure datacenters around the world to provide optimized performance through geolocation. A user's session might be hosted outside a particular region, depending on traffic patterns and their location. However, to protect user privacy, no session data is stored in these datacenters.
+Defender for Cloud Apps uses Azure datacenters around the world to provide optimized performance through geolocation. A user's session might be hosted outside a particular region, depending on traffic patterns and their location. However, to help protect user privacy, these datacenters don't store any session data.
 
 Defender for Cloud Apps proxy servers don't store data at rest. When we cache content, we follow the requirements laid out in [RFC 7234 (HTTP caching)](https://tools.ietf.org/html/rfc7234) and cache only public content.
 
@@ -80,7 +80,7 @@ Microsoft Entra ID apps are also automatically onboarded for Conditional Access 
 Defender for Cloud Apps identifies apps by using data from the cloud app catalog. If you customized apps with plug-ins, you must add any associated custom domains to the relevant app in the catalog. For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
 
 > [!NOTE]
-> You can't use installed apps that have *non-interactive* sign-in flows, such as the Authenticator app and other built-in apps, with access controls. Our recommendation in that case is to craft an access policy in the Microsoft Entra ID portal in addition to Microsoft Defender for Cloud Apps access policies.
+> You can't use installed apps that have *noninteractive* sign-in flows, such as the Authenticator app and other built-in apps, with access controls. Our recommendation in that case is to craft an access policy in the Microsoft Entra ID portal in addition to Microsoft Defender for Cloud Apps access policies.
 
 ## Scope of support for session control
 
