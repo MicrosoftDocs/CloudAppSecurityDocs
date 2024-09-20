@@ -21,7 +21,7 @@ In Microsoft Defender XDR, select **Settings** > **Conditional Access App Contro
 
 ## Maximum file size for session policies based on content inspection in Information Protection
 
-When you apply a session policy to block file uploads or downloads based on content inspection in Microsoft Purview Information Protection, inspection is performed on only files that are smaller than 30 MB and have fewer than 1 million characters.
+When you apply a session policy to block file uploads or downloads based on content inspection in Microsoft Purview Information Protection, inspection is performed on only files that are smaller than 30 MB and that have fewer than 1 million characters.
 
 For example, you might define one of the following session policies:
 
@@ -43,7 +43,7 @@ The following table lists more examples of files that are and aren't scanned:
 
 ## Files encrypted with sensitivity labels
 
-For tenants that enable co-authoring for files encrypted with sensitivity labels, a session policy to block file upload\download that relies on label filters or file content will operate based on the **Always apply the selected action even if data cannot be scanned** policy setting.
+For tenants that enable coauthoring for files encrypted with sensitivity labels, a session policy to block file upload\download that relies on label filters or file content will operate based on the **Always apply the selected action even if data cannot be scanned** policy setting.
 
 For example, assume that a session policy is configured to prevent downloading files that contain credit card numbers and is set to **Always apply the selected action even if data cannot be scanned**. Any file with an encrypted sensitivity label is blocked from downloading, regardless of its content.
 
@@ -55,13 +55,13 @@ Session policies don't protect external business-to-business (B2B) collaboration
 
 This section lists limitations that apply only on sessions that the reverse proxy serves. Users of Microsoft Edge can benefit from in-browser protection instead of using the reverse proxy, so these limitations don't affect them.
 
-### Built-in apps and browser plug-ins
+### Built-in app and browser plug-in limitations
 
 Conditional Access app control in Defender for Cloud Apps modifies underlying application code. It doesn't currently support built-in apps or browser extensions.
 
 As an administrator, you might want to define default system behavior for when a policy can't be enforced. You can choose to either allow access or totally block it.
 
-### Context loss
+### Context loss limitations
 
 In the following applications, we encountered scenarios where browsing to a link might result in loss of the full path of the link. Typically, the user lands on the home page of the app.
 
@@ -73,7 +73,7 @@ In the following applications, we encountered scenarios where browsing to a link
 - ServiceNow
 - Workday
 
-### File upload
+### File upload limitations
 
 If you apply a session policy to block or monitor the upload of sensitive files, the user's attempts to upload files or folders by using a drag-and-drop operation blocks the complete list of files and folders in the following scenarios:
 

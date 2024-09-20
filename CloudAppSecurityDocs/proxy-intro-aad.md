@@ -41,11 +41,11 @@ Access and session policies include the following types of activities:
 |**Prevent data exfiltration** |Block the download, cut, copy, and print of sensitive documents on (for example) unmanaged devices. |
 | **Require authentication context** |Reevaluate Microsoft Entra Conditional Access policies when a sensitive action occurs in the session, such as requiring multifactor authentication. |
 |**Protect on download** |Instead of blocking the download of sensitive documents, require documents to be labeled and encrypted when you integrate with Microsoft Purview Information Protection. This action helps protect the document and restrict user access in a potentially risky session. |
-|**Prevent upload of unlabeled files** |Ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content. Before a sensitive file is uploaded, distributed, and used by others, it's important to make sure that the sensitive file has the label that your organization's policy defined. |
-|**Block potential malware** |Help protect your environment from malware by blocking the upload of potentially malicious files. Any file that's uploaded or downloaded can be scanned against Microsoft Threat Intelligence and blocked instantaneously. |
+|**Prevent upload of unlabeled files** |Ensure that the upload of unlabeled files that have sensitive content is blocked until the user classifies the content. Before a user uploads, distributes, or uses a sensitive file, the file must have the label that your organization's policy defined. |
+|**Block potential malware** |Help protect your environment from malware by blocking the upload of potentially malicious files. Any file that a user tries to upload or download can be scanned against Microsoft Threat Intelligence and blocked instantaneously. |
 |**Monitor user sessions for compliance** |Investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future. Risky users are monitored when they sign in to apps, and their actions are logged from within the session. |
 |**Block access** |Granularly block access for specific apps and users, depending on several risk factors. For example, you can block them if they're using client certificates as a form of device management. |
-|**Block custom activities** |Some apps have unique scenarios that carry risk. An example is sending messages with sensitive content in apps like Microsoft Teams or Slack. In these kinds of scenarios, scan messages for sensitive content and block them in real time. |
+|**Block custom activities** |Some apps have unique scenarios that carry risk. An example is sending messages that have sensitive content in apps like Microsoft Teams or Slack. In these kinds of scenarios, scan messages for sensitive content and block them in real time. |
 
 For more information, see:
 
