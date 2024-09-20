@@ -19,7 +19,7 @@ In cases like these, be sure to cover files that are larger than 50 MB by using 
 
 In Microsoft Defender XDR, select **Settings** > **Conditional Access App Control** > **Default behavior** to manage settings for files that are larger than 50 MB.
 
-## Maximum file size for session policies based on information protection content inspection in Information Protection
+## Maximum file size for session policies based on content inspection in Information Protection
 
 When you apply a session policy to block file uploads or downloads based on content inspection in Microsoft Purview Information Protection, inspection is performed on only files that are smaller than 30 MB and have fewer than 1 million characters.
 
@@ -37,13 +37,13 @@ The following table lists more examples of files that are and aren't scanned:
 |---------|---------|
 |A TXT file, 1-MB size and 1 million characters |Yes |
 |A TXT file, 2-MB size and 2 million characters |No |
-|A Word file composed of images and text, 4-MB size and 400-K characters | Yes |
+|A Word file composed of images and text, 4-MB size and 400K characters | Yes |
 |A Word file composed of images and text, 4-MB size and 2 million characters |No |
-|A Word file composed of images and text, 40-MB size and 400-K characters |No |
+|A Word file composed of images and text, 40-MB size and 400K characters |No |
 
 ## Files encrypted with sensitivity labels
 
-For tenants that enable co-authoring for files encrypted with sensitivity labels, a session policy to block file upload\download that relies on label filters or file content will operate based on the policy settings of **Always apply the selected action even if data cannot be scanned**.
+For tenants that enable co-authoring for files encrypted with sensitivity labels, a session policy to block file upload\download that relies on label filters or file content will operate based on the **Always apply the selected action even if data cannot be scanned** policy setting.
 
 For example, assume that a session policy is configured to prevent downloading files that contain credit card numbers and is set to **Always apply the selected action even if data cannot be scanned**. Any file with an encrypted sensitivity label is blocked from downloading, regardless of its content.
 
@@ -51,7 +51,7 @@ For example, assume that a session policy is configured to prevent downloading f
 
 Session policies don't protect external business-to-business (B2B) collaboration users in Microsoft Teams applications.
 
-## Limitations for sessions served by reverse proxy
+## Limitations for sessions that the reverse proxy serves
 
 This section lists limitations that apply only on sessions that the reverse proxy serves. Users of Microsoft Edge can benefit from in-browser protection instead of using the reverse proxy, so these limitations don't affect them.
 
@@ -88,7 +88,7 @@ The following table lists example results when you define the **Block upload of 
 |---------|---------|
 |A user tries to upload a selection of 200 nonsensitive files by using a drag-and-drop operation. |Files are blocked. |
 |A user tries to upload a selection of 200 files by using the file upload dialog. Some are sensitive, and some aren't. |Nonsensitive files are uploaded. <br><br>Sensitive files are blocked. |
-|A user tries to upload a selection of 200 files by using a drag-and-drop operations. Some are sensitive, and some aren't. |The full set of files is blocked. |
+|A user tries to upload a selection of 200 files by using a drag-and-drop operation. Some are sensitive, and some aren't. |The full set of files is blocked. |
 
 ## Related content
 
