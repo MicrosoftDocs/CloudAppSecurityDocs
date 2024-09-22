@@ -36,7 +36,7 @@ Before you start, make sure that you have the following prerequisites:
     - [Onboard non-Microsoft IdP catalog apps for Conditional Access app control](proxy-deployment-featured-idp.md)
     - [Onboard non-Microsoft IdP custom apps for Conditional Access app control](proxy-deployment-any-app-idp.md)
 
-In order for your access policy to work, you must also have a Microsoft Entra ID Conditional Access policy, which creates the permissions to control traffic.
+In order for your session policy to work, you must also have a Microsoft Entra ID Conditional Access policy, which creates the permissions to control traffic.
 
 [!INCLUDE [entra-conditional-access-policy](includes/entra-conditional-access-policy.md)]
 
@@ -49,7 +49,7 @@ This procedure describes how to create a new session policy in Defender for Clou
 1. Select **Create policy** > **Session policy**. For example:
 
     ![Screenshot of the Create a Conditional Access policy page.](media/create-policy-from-conditional-access-tab.png)
-
+   
 1. On the **Create session policy** page, start by either selecting a template from the **Policy template** dropdown, or by entering all details manually.
 
 1. <a name="type"></a>Enter the following basic information for your policy. If you're using a template, much of the content is already filled in for you.
@@ -177,8 +177,8 @@ To export Cloud discovery logs from the cloud discovery dashboard:
 1. Above the table, select the export button. For example:
 
     ![Screenshot of the export button.](media/export-button.png)
-
-
+   
+   
 1. Select the range of the report and select **Export**. This process may take some time.
 
 1. To download the exported log after the report is ready, in the Microsoft Defender Portal go to **Reports** -> **Cloud Apps** and then **Exported reports**.
@@ -186,7 +186,7 @@ To export Cloud discovery logs from the cloud discovery dashboard:
 1. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and select **Download**. For example:
 
     ![Screenshot of the download button.](media/download-button.png)
-
+   
 ## Supported activities for session policies
 
 The following sections provide more details about each activity supported by Defender for Cloud Apps session policies.
