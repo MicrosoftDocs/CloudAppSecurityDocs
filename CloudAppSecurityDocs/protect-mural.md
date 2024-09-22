@@ -53,13 +53,13 @@ This section provides instructions for connecting Microsoft Defender for Cloud A
 
 **To connect Mural to Defender for Cloud Apps**:
 
-1.	Sign into your [Mural](https://app.mural.co/) account and select your account icon > **Manage Company > Developtment > API keys > Create API key**.
+1.	Sign into your [Mural](https://app.mural.co/) account and select your account icon > **Manage Company > Development > API keys > Create API key**.
 1.	Select all checkboxes and then select **Create API Key** and then **Copy Key**.
 1.	In the Microsoft Defender portal, select **Settings > Cloud Apps > Connected Apps > App Connectors > Connect an app > Mural**.
-1.	In the connection wizard, enter your isntance name, and then select **Next**.
+1.	In the connection wizard, enter your instance name, and then select **Next**.
 1.	Paste the API key you'd copied from the Mural portal and then select **Submit**.
 
-Once the connection is successfully established, Defender for Cloud Apps starts fetching Mural audit logs. Since Mural's API logs are delayed by 48 hours, the audit log ingestion to Defender for Cloud Apps is similiarly delayed.
+Once the connection is successfully established, Defender for Cloud Apps starts fetching Mural audit logs. Since Mural's API logs are delayed by 48 hours, the audit log ingestion to Defender for Cloud Apps is similarly delayed.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](/defender-cloud-apps/troubleshooting-api-connectors-using-error-messages).
 
