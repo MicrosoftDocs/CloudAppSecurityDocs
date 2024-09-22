@@ -19,7 +19,18 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+
 ## September 2024
+
+### Connect Mural to Defender for Cloud Apps (Preview)
+
+Defender for Cloud Apps now supports connections to [Mural](https://www.mural.co/) accounts using app connector APIs, giving your visibility into and control over your organization's Mural use.
+
+For more information, see:
+
+- [How Defender for Cloud Apps helps protect your Mural environment](protect-mural.md)
+- [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
+- [Mural Help Center](https://support.mural.co/s/)
 
 ### Removing the ability to email end users about blocked actions
 

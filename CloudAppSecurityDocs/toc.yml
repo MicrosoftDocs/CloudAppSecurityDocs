@@ -125,6 +125,8 @@ items:
         href: protect-office-365.md
       - name: Miro
         href: protect-miro.md
+      - name: Mural
+        href: protect-mural.md
       - name: NetDocuments
         href: protect-netdocuments.md
       - name: Okta
@@ -206,6 +208,7 @@ items:
     - name: Troubleshoot policies
       href: troubleshoot-policies.md
   - name: Configure threat protection
+
     items:
     - name: Detect suspicious user activity with UEBA
       href: tutorial-suspicious-activity.md
