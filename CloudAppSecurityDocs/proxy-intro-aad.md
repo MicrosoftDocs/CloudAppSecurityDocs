@@ -1,10 +1,10 @@
 ---
 title: Conditional Access app control | Microsoft Defender for Cloud Apps
-description: Learn how Microsoft Defender for Cloud Apps provides app control through Microsoft Entra Conditional Access.
+description: Learn how Microsoft Defender for Cloud Apps provides Conditional Access app control.
 ms.date: 02/29/2024
 ms.topic: conceptual
 ---
-# Microsoft Defender for Cloud Apps app control for Conditional Access
+# Conditional Access app control in Microsoft Defender for Cloud Apps
 
 In today's workplace, it's not enough to know what happened in your cloud environment after the fact. You need to stop breaches and leaks in real time. You also need to prevent employees from intentionally or accidentally putting your data and organization at risk.
 
@@ -26,7 +26,7 @@ Microsoft Edge users benefit from [direct, in-browser protection](in-browser-pro
 
 Users of other browsers are redirected via reverse proxy to Defender for Cloud Apps. Those browsers display an `*.mcas.ms` suffix in the link's URL. For example, if the app URL is `myapp.com`, the app URL is updated to `myapp.com.mcas.ms`.
 
-This article describes app control in Defender for Cloud Apps through [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies.
+This article describes Conditional Access app control in Defender for Cloud Apps through [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies.
 
 ## Activities in Conditional Access app control
 

@@ -1,13 +1,13 @@
 ---
 title: Conditional Access app control known limitations | Microsoft Defender for Cloud Apps
-description: Learn about known limitations for working with Microsoft Entra Conditional Access app control in Microsoft Defender for Cloud Apps.
+description: Learn about known limitations for working with Conditional Access app control in Microsoft Defender for Cloud Apps.
 ms.date: 01/23/2024
 ms.topic: how-to
 ---
 
 # Known limitations in Conditional Access app control 
 
-This article describes known limitations for working with Microsoft Entra Conditional Access app control in Microsoft Defender for Cloud Apps.
+This article describes known limitations for working with Conditional Access app control in Microsoft Defender for Cloud Apps.
 
 To learn more about security limitations, contact our support team.
 
@@ -92,4 +92,4 @@ The following table lists example results when you define the **Block upload of 
 
 ## Related content
 
-- [Microsoft Defender for Cloud Apps app control for Conditional Access](proxy-intro-aad.md)
+- [Conditional Access app control in Microsoft Defender for Cloud Apps](proxy-intro-aad.md)
