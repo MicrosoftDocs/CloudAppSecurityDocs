@@ -17,8 +17,6 @@ For the full list of templates, check the Microsoft Defender Portal.
 
 |Risk category|Template name|Description|
 |-----|----|----|
-|Cloud discovery|Anomalous behavior in discovered users|Alert when anomalous behavior is detected in discovered users and apps, such as: large amounts of uploaded data compared to other users, large user transactions compared to the user's history.|
-|Cloud discovery|Anomalous behavior of discovered IP addresses|Alerts when anomalous behavior is detected in discovered IP addresses and apps, such as: large amounts of uploaded data compared to other IP addresses, large app transactions compared to the IP address's history.|
 |Cloud discovery|Collaboration app compliance check|Alert when new collaboration apps are discovered that aren't compliant with SOC2 and SSAE 16, and are used by more than 50 users with a total daily use of more than 50 MB.|
 |Cloud discovery|Cloud storage app compliance check|Alert when new cloud storage apps are discovered that aren't compliant with SOC2, SSAE 16, ISAE 3402 and PCI DSS, and are used by more than 50 users with total daily use of more than 50 MB.|
 |Cloud discovery|CRM app compliance check|Alert when new CRM apps are discovered that aren't compliant with SOC2, SSAE 16, ISAE 3402, ISO 27001 and HIPAA, and are used by more than 50 users with a total daily use of more than 50 MB.|
