@@ -80,7 +80,7 @@ Microsoft Entra ID apps are also automatically onboarded for Conditional Access 
 Defender for Cloud Apps identifies apps by using data from the cloud app catalog. If you customized apps with plug-ins, you must add any associated custom domains to the relevant app in the catalog. For more information, see [Find your cloud app and calculate risk scores](risk-score.md).
 
 > [!NOTE]
-> You can't use installed apps that have *noninteractive* sign-in flows, such as the Authenticator app and other built-in apps, with access controls. Our recommendation in that case is to craft an access policy in the Microsoft Entra ID portal in addition to Microsoft Defender for Cloud Apps access policies.
+> You can't use installed apps that have *noninteractive* sign-in flows, such as the Authenticator app and other built-in apps, with access controls. Our recommendation in that case is to craft an access policy in the Microsoft Entra admin center in addition to Microsoft Defender for Cloud Apps access policies.
 
 ## Scope of support for session control
 
