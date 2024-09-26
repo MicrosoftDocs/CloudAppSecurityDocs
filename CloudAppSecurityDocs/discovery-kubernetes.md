@@ -5,7 +5,7 @@ ms.date: 06/02/2024
 ms.topic: how-to
 ---
 
-# Configure automatic log upload using Docker on Azure Kubernetes Service (AKS) (Preview)
+# Configure automatic log upload using Docker on Azure Kubernetes Service (AKS)
 
 This article describes how to configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker container on Azure Kubernetes Service (AKS).
 
@@ -38,7 +38,7 @@ This article describes how to configure automatic log upload for continuous repo
 1. Run the helm command using the following syntax:
 
     ```AzureCLI
-    helm install <release-name> oci://agentspublic.azurecr.io/logcollector-chart --version 0.1.0 --set inputString="<generated id> ",env.PUBLICIP="<public id>",env.SYSLOG="true",env.COLLECTOR="<collector-name>",env.CONSOLE="<Console-id>",env.INCLUDE_TLS="on" --set-file ca=<absolute path of ca.pem file> --set-file serverkey=<absolute path of server-key.pem file> --set-file servercert=<absolute path of server-cert.pem file> --set replicas=<no of replicas> --set image.tag=0.272.0
+    helm install <release-name> oci://agentspublic.azurecr.io/logcollector-chart --version 1.0.0 --set inputString="<generated id> ",env.PUBLICIP="<public ip>",env.SYSLOG="true",env.COLLECTOR="<collector-name>",env.CONSOLE="<Console-id>",env.INCLUDE_TLS="on" --set-file ca=<absolute path of ca.pem file> --set-file serverkey=<absolute path of server-key.pem file> --set-file servercert=<absolute path of server-cert.pem file> --set replicas=<no of replicas> --set image.tag=0.272.0
     ```
 
     Find the values for the helm command using the docker command used when the collector is configured. For example:
