@@ -21,7 +21,7 @@ In Microsoft Defender XDR, select **Settings** > **Conditional Access App Contro
 
 ## Maximum file size for session policies based on content inspection
 
-When you apply a session policy to block file uploads or downloads based on content inspection, the inspection is performed on only files that are smaller than 30 MB and that have fewer than 1 million characters.
+When you apply a session policy to block file uploads or downloads based on content inspection, the inspection is performed only on files that are smaller than 30 MB and that have fewer than 1 million characters.
 
 For example, you might define one of the following session policies:
 
@@ -43,7 +43,7 @@ The following table lists more examples of files that are and aren't scanned:
 
 ## Files encrypted with sensitivity labels
 
-For tenants that enable coauthoring for files encrypted with sensitivity labels, a session policy to block file upload\download that relies on label filters or file content will operate based on the **Always apply the selected action even if data cannot be scanned** policy setting.
+For tenants that enable coauthoring for files encrypted with sensitivity labels, a session policy to block file upload/download that relies on label filters or file content will operate based on the **Always apply the selected action even if data cannot be scanned** policy setting.
 
 For example, assume that a session policy is configured to prevent downloading files that contain credit card numbers and is set to **Always apply the selected action even if data cannot be scanned**. Any file with an encrypted sensitivity label is blocked from downloading, regardless of its content.
 
