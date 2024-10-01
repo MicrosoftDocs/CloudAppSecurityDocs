@@ -45,7 +45,9 @@ For instance, these scenarios are served by the reverse proxy:
 
 Users know that they're using the in-browser protection in Microsoft Edge for Business because they see an extra *"lock"* icon in the browser address bar. The icon indicates that the session is protected by Defender for Cloud Apps. For example:
 
-:::image type="content" source="media/in-browser-protection/url-icon.png" alt-text="Screenshot of an extra lock icon in the browser address bar.":::
+To confirm that in-browser protection is active, users need to click on the “lock” icon in the browser's address bar and look for the “suitcase” symbol in the form that appears. The symbol indicates that the session is protected by Defender for Cloud Apps. For example:
+
+![Edge-in-browser-indication](media/in-browser-protection/edge-in-browser-indication.png)
 
 Also, the `.mcas.ms` suffix doesn't appear in the browser address bar with in-browser protection, as it does with standard Conditional Access app control, and developer tools are turned off with in-browser protection.
 
