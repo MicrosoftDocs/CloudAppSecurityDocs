@@ -43,8 +43,6 @@ For instance, these scenarios are served by the reverse proxy:
 
 ## User experience with in-browser protection
 
-Users know that they're using the in-browser protection in Microsoft Edge for Business because they see an extra *"lock"* icon in the browser address bar. The icon indicates that the session is protected by Defender for Cloud Apps. For example:
-
 To confirm that in-browser protection is active, users need to click on the “lock” icon in the browser's address bar and look for the “suitcase” symbol in the form that appears. The symbol indicates that the session is protected by Defender for Cloud Apps. For example:
 
 ![Edge-in-browser-indication](media/in-browser-protection/edge-in-browser-indication.png)
