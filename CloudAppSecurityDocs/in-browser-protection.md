@@ -39,13 +39,13 @@ For instance, these scenarios are served by the reverse proxy:
 - Microsoft Edge users in InPrivate mode
 - Microsoft Edge users with older browser versions
 - B2B guest users
-- Session is scoped to conditional access policy defined in Entra ID portal
+- Session is scoped to conditional access policy defined in Microsoft Entra ID portal
 
 ## User experience with in-browser protection
 
 To confirm that in-browser protection is active, users need to click on the “lock” icon in the browser's address bar and look for the “suitcase” symbol in the form that appears. The symbol indicates that the session is protected by Defender for Cloud Apps. For example:
 
-![Edge-in-browser-indication](media/in-browser-protection/edge-in-browser-indication.png)
+![Screenshot of Edge in browser indication.](media/in-browser-protection/edge-in-browser-indication.png)
 
 Also, the `.mcas.ms` suffix doesn't appear in the browser address bar with in-browser protection, as it does with standard Conditional Access app control, and developer tools are turned off with in-browser protection.
 
