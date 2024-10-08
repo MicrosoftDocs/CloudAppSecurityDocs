@@ -90,6 +90,16 @@ The following table lists example results when you define the **Block upload of 
 |A user tries to upload a selection of 200 files by using the file upload dialog. Some are sensitive, and some aren't. |Nonsensitive files are uploaded. <br><br>Sensitive files are blocked. |
 |A user tries to upload a selection of 200 files by using a drag-and-drop operation. Some are sensitive, and some aren't. |The full set of files is blocked. |
 
+## Limitations for sessions that are served with Edge in-browser protection
+
+The following limitations apply only on sessions that are served with Edge in-browser protection.
+
+### Deep link is lost when user switches to Edge by clicking 'Continue in Edge'  
+
+A user who starts a session in a browser other than Edge is prompted to switch to Edge by clicking the ‘Continue in Edge’ button.
+
+If the URL points to a resource within the secured application, the user will be directed to the application's homepage in Edge.
+
 ## Related content
 
 - [Conditional Access app control in Microsoft Defender for Cloud Apps](proxy-intro-aad.md)
