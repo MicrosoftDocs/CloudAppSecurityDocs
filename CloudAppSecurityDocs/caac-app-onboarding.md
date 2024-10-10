@@ -5,7 +5,7 @@ author:  Adipkmic
 ms.author: adipavekatz  
 manager:  raynew
 ms.date: 10/10/2024  
-ms.topic:  how-to
+ms.topic:  concept-article
 ms.service: defender-for-cloud-apps
 ms.custom: QuickDraft  
 ms.reviewer: adipavekatz  
