@@ -1,35 +1,30 @@
 ---  
-title: "Caaac app onboarding"  
-description:  
-author:  
+title: Automatically onboard Microsoft Entra ID apps 
+description:  Learn how to automatically onboard Microsoft Entra ID apps to Microsoft Defender for Cloud Apps conditional access app control
+author:  Adipkmic
 ms.author: adipavekatz  
-manager:  
+manager:  raynew
 ms.date: 10/10/2024  
-ms.topic:  
-ms.service: defender-xdr  
-ms.subservice:  
-ms.localizationpriority:  
-ms.collection:  
+ms.topic:  concept-article
+ms.service: defender-for-cloud-apps
 ms.custom: QuickDraft  
 ms.reviewer: adipavekatz  
 search.appverid: MET150  
-f1.keywords:  
-audience:  
 ai-usage:  
 - ai-assisted  
 ---  
 
-**Customer Intent for this Article:** Understand how to automatically onboard applications into Microsoft Defender XDR using Entra ID and configure Conditional Access App Control.
+# Automatically onboard Microsoft Entra ID apps to conditional access app control
 
-## Overview
+All SaaS applications that exist in the Microsoft Entra ID catalog will be available automatically in the policy app filter. The following image shows the high-level process for configuring and implementing Conditional Access app control:
 
-All SaaS applications that exist in the Entra ID catalog will be available automatically in the policy app filter. The following image shows the high-level process for configuring and implementing Conditional Access app control:
+:::image type="content" source="media/caac-app-onboarding/process.png" alt-text="Diagram of the process for configuring and implementing conditional access app control":::
 
 ## Prerequisites
 
 - Your organization must have the following licenses to use Conditional Access App Control:
   - Microsoft Defender for Cloud Apps
-- Apps must be configured with single sign-on in Entra ID
+- Apps must be configured with single sign-on in Microsoft Entra ID
 
 Fully performing and testing the procedures in this article requires that you have a session or access policy configured. For more information, see:
 
@@ -38,30 +33,36 @@ Fully performing and testing the procedures in this article requires that you ha
 
 ## Supported Apps
 
-All SaaS apps listed in the Entra ID catalog will be available for filtering within the Microsoft Defender for Cloud Apps session and access policies. Each app chosen in the filter will automatically be onboarded into the system and will be controlled.
+All SaaS apps listed in the Microsoft Entra ID catalog will be available for filtering within the Microsoft Defender for Cloud Apps session and access policies. Each app chosen in the filter will automatically be onboarded into the system and will be controlled.
 
-If an application is not listed, you have the option to manually onboard it as outlined in the provided instructions.
+:::image type="content" source="media/caac-app-onboarding/filter.png" alt-text="Screenshot of the filter showing automatically onboarded apps":::
 
-**Note:** Dependency on Entra ID Conditional Access policy:
+If an application isn't listed, you have the option to manually onboard it as outlined in the provided instructions.
 
-All apps listed in the Entra ID catalog will be available for filtering within Microsoft Defender for Cloud Apps session and access policies. However, only those applications that are included in Entra ID's conditional policy with Microsoft Defender for Cloud Apps permissions will be actively managed within access or session policies.
+**Note:** Dependency on Microsoft Entra ID Conditional Access policy:
 
-When creating a policy, if the relevant Entra ID's conditional policy is missing, an alert will appear, both during the policy creation process and upon saving the policy.
+All apps listed in the Microsoft Entra ID catalog will be available for filtering within Microsoft Defender for Cloud Apps session and access policies. However, only those applications that are included in Microsoft Entra ID's conditional policy with Microsoft Defender for Cloud Apps permissions will be actively managed within access or session policies.
 
-**Note:** To ensure that this policy runs as expected, we recommend checking the Entra Conditional Access policies created in Entra ID. You can see the full Entra Conditional Access policies list in a banner on the create policy page.
+When creating a policy, if the relevant Microsoft Entra ID's conditional policy is missing, an alert will appear, both during the policy creation process and upon saving the policy.
+
+**Note:** To ensure that this policy runs as expected, we recommend checking the Microsoft Entra Conditional Access policies created in Entra ID. You can see the full Microsoft Entra Conditional Access policies list in a banner on the create policy page.
+
+:::image type="content" source="media/caac-app-onboarding/recommendation.png" alt-text="Screenshot of the recommendation shown in the portal.":::
 
 ## Conditional Access App Control Configuration Page
 
 Admins will be able to control app configurations such as:
 
-1.  **Status:** App status - Disable or Enable
-2.  **Policies:** Does at least one inline policy connect
-3.  **IDP:** Onboarded app via IDP via Entra or Non-MS IDP
-4.  **Edit app:** Edit app configuration such as adding domains or disabling the app.
+- **Status:** App status - Disable or Enable
+- **Policies:** Does at least one inline policy connect
+- **IDP:** Onboarded app via IDP via Microsoft Entra or Non-MS IDP
+- **Edit app:** Edit app configuration such as adding domains or disabling the app.
 
-All apps that automatically onboarded will be set to "enabled" by default. Following the initial login by a user, administrators will have the ability to view the application under **Settings** \> **Connected apps** \> **Conditional Access App Control apps**
+All apps that automatically onboarded will be set to "enabled" by default. Following the initial sign-in by a user, administrators will have the ability to view the application under **Settings** \> **Connected apps** \> **Conditional Access App Control apps**
+
+:::image type="content" source="media/caac-app-onboarding/settings.png" alt-text="Screenshot of the Conditional Access App Control settings.":::
 
 ## Common App Misconfigurations
 
-1.  Second sign-in (also known as 'second login')
-2.  Missing domains
+- [Second sign-in (also known as 'second sign-in')](troubleshooting-proxy.md#second-sign-in-also-known-as-second-login)
+- [Missing domains](troubleshooting-proxy.md#add-domains-for-your-app)
