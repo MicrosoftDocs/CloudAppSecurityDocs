@@ -208,7 +208,6 @@ items:
     - name: Troubleshoot policies
       href: troubleshoot-policies.md
   - name: Configure threat protection
-
     items:
     - name: Detect suspicious user activity with UEBA
       href: tutorial-suspicious-activity.md
@@ -240,7 +239,7 @@ items:
     - name: App onboarding
       items:
       - name: Automatic onboarding for Microsoft IdP
-        href: 
+        href: caac-app-onboarding.md
       - name: Manual onboarding for Microsoft IdP
         href: apps-manual-onboarding-with-microsoft-entra-id.md
       - name: Onboard catalog and custom apps with a non-Microsoft IdP
