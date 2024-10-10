@@ -7,11 +7,9 @@ manager:  raynew
 ms.date: 10/10/2024  
 ms.topic:  concept-article
 ms.service: defender-for-cloud-apps
-ms.custom: QuickDraft  
+ms.custom: QuickDraft, ai-usage
 ms.reviewer: adipavekatz  
 search.appverid: MET150  
-ai-usage:  
-- ai-assisted  
 ---  
 
 # Automatically onboard Microsoft Entra ID apps to conditional access app control
