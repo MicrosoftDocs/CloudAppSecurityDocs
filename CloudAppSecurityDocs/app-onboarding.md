@@ -56,9 +56,8 @@ Admins will be able to control app configurations such as:
 - **IDP:** Onboarded app via IDP via Microsoft Entra or Non-MS IDP
 - **Edit app:** Edit app configuration such as adding domains or disabling the app.
 
-All apps that automatically onboarded will be set to "enabled" by default. Following the initial sign-in by a user, administrators will have the ability to view the application under **Settings** \> **Connected apps** \> **Conditional Access App Control apps**
+All apps that automatically onboarded will be set to "enabled" by default. Following the initial sign-in by a user, administrators will have the ability to view the application under **Settings** \> **Connected apps** \> **Conditional Access App Control apps**.
 
-:::image type="content" source="media/caac-app-onboarding/settings.png" alt-text="Screenshot of the Conditional Access App Control settings.":::
 
 ## Common App Misconfigurations
 
