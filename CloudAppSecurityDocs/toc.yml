@@ -239,7 +239,7 @@ items:
     - name: App onboarding
       items:
       - name: Automatic onboarding for Microsoft IdP
-        href: caac-app-onboarding.md
+        href: app-onboarding.md
       - name: Manual onboarding for Microsoft IdP
         href: apps-manual-onboarding-with-microsoft-entra-id.md
       - name: Onboard catalog and custom apps with a non-Microsoft IdP
