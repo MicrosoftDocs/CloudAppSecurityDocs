@@ -16,7 +16,7 @@ search.appverid: MET150
 
 All SaaS applications that exist in the Microsoft Entra ID catalog will be available automatically in the policy app filter. The following image shows the high-level process for configuring and implementing Conditional Access app control:
 
-:::image type="content" source="media/caac-app-onboarding/process.png" alt-text="Diagram of the process for configuring and implementing conditional access app control":::
+:::image type="content" source="media/caac-app-onboarding/process.png" alt-text="Diagram of the process for configuring and implementing conditional access app control.":::
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ Fully performing and testing the procedures in this article requires that you ha
 
 All SaaS apps listed in the Microsoft Entra ID catalog will be available for filtering within the Microsoft Defender for Cloud Apps session and access policies. Each app chosen in the filter will automatically be onboarded into the system and will be controlled.
 
-:::image type="content" source="media/caac-app-onboarding/filter.png" alt-text="Screenshot of the filter showing automatically onboarded apps":::
+:::image type="content" source="media/caac-app-onboarding/filter.png" alt-text="Screenshot of the filter showing automatically onboarded apps.":::
 
 If an application isn't listed, you have the option to manually onboard it as outlined in the provided instructions.
 
@@ -43,7 +43,7 @@ All apps listed in the Microsoft Entra ID catalog will be available for filterin
 
 When creating a policy, if the relevant Microsoft Entra ID's conditional policy is missing, an alert will appear, both during the policy creation process and upon saving the policy.
 
-**Note:** To ensure that this policy runs as expected, we recommend checking the Microsoft Entra Conditional Access policies created in Entra ID. You can see the full Microsoft Entra Conditional Access policies list in a banner on the create policy page.
+**Note:** To ensure that this policy runs as expected, we recommend checking the Microsoft Entra Conditional Access policies created in Microsoft Entra ID. You can see the full Microsoft Entra Conditional Access policies list in a banner on the create policy page.
 
 :::image type="content" source="media/caac-app-onboarding/recommendation.png" alt-text="Screenshot of the recommendation shown in the portal.":::
 
