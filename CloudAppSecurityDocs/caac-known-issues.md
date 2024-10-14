@@ -96,7 +96,13 @@ The following limitations apply only on sessions that are served with Edge in-br
 
 ### Deep link is lost when user switches to Edge by clicking 'Continue in Edge'  
 
-A user who starts a session in a browser other than Edge is prompted to switch to Edge by clicking the ‘Continue in Edge’ button.
+A user who starts a session in a browser other than Edge, is prompted to switch to Edge by clicking the ‘Continue in Edge’ button.
+
+If the URL points to a resource within the secured application, the user will be directed to the application's homepage in Edge.
+
+### Deep link is lost when user switches to Edge work profile'  
+
+A user who starts a session in Edge with a profile other than his work profile, is prompted to switch to his work profile by clicking the ‘Switch to work profile’ button.
 
 If the URL points to a resource within the secured application, the user will be directed to the application's homepage in Edge.
 
