@@ -58,7 +58,7 @@ To create a new file policy, follow this procedure:
 1. Select **Create policy** and select **File policy**.
 
     ![Create a Information Protection policy.](media/create-policy-from-information-protection-tab.png)
-
+   
 1. Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
 1. Give your policy a **Policy severity**. If you have set Defender for Cloud Apps to send you notifications on policy matches for a specific policy severity level, this level is used to determine whether the policy's matches trigger a notification.
@@ -89,7 +89,7 @@ To create a new file policy, follow this procedure:
 1. Once you've created your policy, you can view it by filtering for the **File policy** type. You can always edit a policy, calibrate its filters, or change the automated actions. The policy is automatically enabled upon creation and starts scanning your cloud files immediately.  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files. It's recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better. For guidance, you can use the **Edit and preview results** button next to the filters.
 
     ![File policy edit and preview results.](media/file-policy-edit-and-preview-results.png)
-
+   
 1. To view file policy matches, files that are suspected to violate the policy, go to **Policies** -> **Policy management**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, under the **Count** column, select the number of **matches** for a policy. Alternatively, select the three dots at the end of the row for a policy and choose **View all matches**.  This opens the **File policy report**. Select the **Matching now** tab to see files that currently match the policy. Select the **History** tab to see a history back to up to six months of files that matched the policy.
 
 ## File policy best practices
@@ -122,28 +122,18 @@ Each policy is composed of the following parts:
 
 * **Extensions** - Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.
 
-## File queries
-
-To make investigation even simpler, you can now create custom queries and save them for later use.
-
-1. In the **Files** page, use the filters as described previously to drill down into your apps as necessary.
-
-1. After you've finished building your query, select the **Save as** button above the filters.
-
-1. In the **Save query** pop-up, name your query.
-
-1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
-
 ## View files policies results
 
 You can go to the Policy center to review file policy violations.
 
 1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**, and then select the **Information protection** tab.
 1. For each file policy, you can see the file policy violations by selecting the **matches**.  
-   ![PCI matches.](media/pci-matches.png "pci matches")
+
+    ![Screenshot of sample PCI matches.](media/pci-matches.png "Screenshot of sample PCI matches.")
 
 1. You can select the file itself to get information about the files.  
-   ![PCI content matches.](media/pci-content-matches.png "pci content matches")
+
+    ![Screenshot of sample PCI content matches.](media/pci-content-matches.png "Screenshot of sample PCI content matches.")
 
 1. For example, you can select **Collaborators** to see who has access to this file, and you can select **Matches** to see the Social Security numbers. ![Content matches credit card numbers.](media/content-matches-ccn.png "content matches Social Security numbers")
 
