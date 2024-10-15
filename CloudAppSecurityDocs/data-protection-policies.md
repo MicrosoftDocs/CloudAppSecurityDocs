@@ -128,9 +128,11 @@ You can go to the Policy center to review file policy violations.
 
 1. In the Microsoft Defender Portal, under **Cloud Apps**, go to **Policies** -> **Policy management**, and then select the **Information protection** tab.
 1. For each file policy, you can see the file policy violations by selecting the **matches**.  
+
 ![Screenshot of sample PCI matches.](media/pci-matches.png "Screenshot of sample PCI matches.")
 
 1. You can select the file itself to get information about the files.  
+
 ![Screenshot of sample PCI content matches.](media/pci-content-matches.png "Screenshot of sample PCI content matches.")
 
 1. For example, you can select **Collaborators** to see who has access to this file, and you can select **Matches** to see the Social Security numbers. ![Content matches credit card numbers.](media/content-matches-ccn.png "content matches Social Security numbers")
