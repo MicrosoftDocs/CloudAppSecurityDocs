@@ -19,6 +19,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+
 ## September 2024
 
 ### Defender for Cloud Apps support for Graph API (preview)
@@ -29,6 +30,26 @@ For more information, see:
 
 - [Work with discovered apps via Graph API](discovered-apps-api-graph.md)
 - [Microsoft Graph API reference for Microsoft Defender for Cloud Apps](/graph/api/resources/security-cloudappdiscovery-overview?view=graph-rest-beta)
+
+### Enforce Edge in-browser when accessing business apps
+
+Administrators who understand the power of Edge in-browser protection, can now require their users to use Edge when accessing corporate resources. 
+
+A primary reason is security, since the barrier to circumventing session controls using Edge is much higher than with reverse proxy technology.
+
+For more information see: 
+[Enforce Edge in-browser protection when accessing business apps](https://learn.microsoft.com/defender-cloud-apps/in-browser-protection#enforce-edge-in-browser-when-accessing-business-apps)
+
+### Connect Mural to Defender for Cloud Apps (Preview)
+
+Defender for Cloud Apps now supports connections to [Mural](https://www.mural.co/) accounts using app connector APIs, giving your visibility into and control over your organization's Mural use.
+
+For more information, see:
+
+- [How Defender for Cloud Apps helps protect your Mural environment](protect-mural.md)
+- [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
+- [Mural Help Center](https://support.mural.co/s/)
+
 
 ### Removing the ability to email end users about blocked actions
 

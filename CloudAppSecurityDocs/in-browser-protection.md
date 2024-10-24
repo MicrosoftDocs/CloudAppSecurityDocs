@@ -39,13 +39,13 @@ For instance, these scenarios are served by the reverse proxy:
 - Microsoft Edge users in InPrivate mode
 - Microsoft Edge users with older browser versions
 - B2B guest users
-- Session is scoped to conditional access policy defined in Entra ID portal
+- Session is scoped to conditional access policy defined in Microsoft Entra ID portal
 
 ## User experience with in-browser protection
 
-Users know that they're using the in-browser protection in Microsoft Edge for Business because they see an extra *"lock"* icon in the browser address bar. The icon indicates that the session is protected by Defender for Cloud Apps. For example:
+To confirm that in-browser protection is active, users need to click on the “lock” icon in the browser's address bar and look for the “suitcase” symbol in the form that appears. The symbol indicates that the session is protected by Defender for Cloud Apps. For example:
 
-:::image type="content" source="media/in-browser-protection/url-icon.png" alt-text="Screenshot of an extra lock icon in the browser address bar.":::
+![Screenshot of Edge in browser indication.](media/in-browser-protection/edge-in-browser-indication.png)
 
 Also, the `.mcas.ms` suffix doesn't appear in the browser address bar with in-browser protection, as it does with standard Conditional Access app control, and developer tools are turned off with in-browser protection.
 
@@ -81,6 +81,31 @@ If the same exact context and action are configured for both Defender for Cloud 
 For example, if you have an Endpoint DLP policy that blocks a file upload to Salesforce, and you also have a Defender for Cloud Apps policy that monitors file uploads to Salesforce, the Endpoint DLP policy is applied.
 
 For more information, see [Learn about data loss prevention](/purview/dlp-learn-about-dlp).
+
+## Enforce Edge in-browser when accessing business apps
+Administrators who understand the power of Edge in-browser protection, can require their users to use Edge when accessing corporate resources. 
+A primary reason is security, since the barrier to circumventing session controls using Edge is much higher than with reverse proxy technology.
+
+Admin experience   
+The feature is controlled through the following settings:   
+M365 Defender > Settings > Cloud Apps > Edge for Business protection > Enforce usage of Edge for business   
+
+The following options are available:   
+- Do not enforce (default)   
+- Allow access only from Edge   
+- Enforce access from Edge when possible
+
+Admins have the option to apply policies on all devices or only on unmanaged devices.
+
+**Allow access only from Edge** means that access to the business application, scoped to session policies, can only be obtained via the Edge browser.
+
+**Enforce access from Edge when possible** means that users should use Edge to access the application if their context permits, but if not, they may use a different browser to access the protected application.
+
+For example: 
+If a user is subject to a policy that does not align with in-browser protection capabilities (such as, 'Protect file upon download'), OR 
+the Operating System is incompatible (for instance, Android). 
+In that scenario, because the user lacks control over the context, they may opt to use a different browser. 
+If the policies applicable to him allow it and the operating system is compatible (Windows 10, 11, macOS), then he is required to utilize Edge. 
 
 ## Related content
 

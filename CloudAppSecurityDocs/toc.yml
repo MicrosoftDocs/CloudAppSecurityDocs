@@ -125,6 +125,8 @@ items:
         href: protect-office-365.md
       - name: Miro
         href: protect-miro.md
+      - name: Mural
+        href: protect-mural.md
       - name: NetDocuments
         href: protect-netdocuments.md
       - name: Okta
@@ -236,22 +238,26 @@ items:
     - name: Identity-managed devices with conditional access app control
       displayName: Conditional Access app control, caac
       href: conditional-access-app-control-identity.md
-    - name: Manual onboarding for Microsoft IdP
-      href: apps-manual-onboarding-with-microsoft-entra-id.md
-    - name: Onboard catalog and custom apps with a non-Microsoft IdP
+    - name: App onboarding
       items:
-      - name: Onboard non-Microsoft IdP catalog apps 
-        displayName: Conditional Access app control, caac
-        href: proxy-deployment-featured-idp.md
-      - name: Onboard non-Microsoft IdP custom apps
-        displayName: Conditional Access app control, caac
-        href: proxy-deployment-any-app-idp.md
-      - name: Deploy for any web app with PingOne
-        href: proxy-idp-pingone.md
-      - name: Deploy for any web app using AD FS
-        href: proxy-idp-adfs.md
-      - name: Deploy for any web app using Okta
-        href: proxy-idp-okta.md     
+      - name: Automatic onboarding for Microsoft IdP
+        href: app-onboarding.md
+      - name: Manual onboarding for Microsoft IdP
+        href: apps-manual-onboarding-with-microsoft-entra-id.md
+      - name: Onboard catalog and custom apps with a non-Microsoft IdP
+        items:
+        - name: Onboard non-Microsoft IdP catalog apps 
+          displayName: Conditional Access app control, caac
+          href: proxy-deployment-featured-idp.md
+        - name: Onboard non-Microsoft IdP custom apps
+          displayName: Conditional Access app control, caac
+          href: proxy-deployment-any-app-idp.md
+        - name: Deploy for any web app with PingOne
+          href: proxy-idp-pingone.md
+        - name: Deploy for any web app using AD FS
+          href: proxy-idp-adfs.md
+        - name: Deploy for any web app using Okta
+          href: proxy-idp-okta.md     
     - name: Use in-browser protection (Microsoft Edge for Business)
       href: in-browser-protection.md    
     - name: Require step-up authentication upon risky action

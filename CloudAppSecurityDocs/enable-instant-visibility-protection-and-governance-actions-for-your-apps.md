@@ -1,7 +1,7 @@
 ---
 title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 02/20/2023
+ms.date: 05/06/2024
 ms.topic: how-to
 ---
 
@@ -69,6 +69,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | [Google  Workspace](protect-google-workspace.md) | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
 | [Microsoft 365](protect-office-365.md)        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | [Miro](protect-miro.md)  | ✔ |  |  | ✔ | ✔| |
+| [Mural](protect-mural.md)  | ✔ |  |  | ✔ | ✔| |
 | [NetDocuments](protect-netdocuments.md)  | ✔ |  | ✔ |  | ✔ | ✔ |
 | [Okta](protect-okta.md)              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
 | [OneLogin](protect-onelogin.md) | ✔ | | ✔ | ✔ | ✔ | ✔ |
@@ -100,6 +101,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | [Google  Workspace](protect-google-workspace.md) | ✔                                    | ✔                         | ✔                         |✔|
 | [Microsoft 365](protect-office-365.md)      | ✔                                    | ✔                         | ✔                         | ✔                 |
 | [Miro](protect-miro.md)  |  |  |  |  |
+| [Mural](protect-mural.md)  |  |  |  |  |
 | [NetDocuments](protect-netdocuments.md)  |  |  |  | Preview |
 | [Okta](protect-okta.md)              |                                      | Not applicable            | Not applicable            | ✔|
 |  [OneLogin](protect-onelogin.md) | |  |  |  |
@@ -131,6 +133,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | [Google  Workspace](protect-google-workspace.md) | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
 | [Okta](protect-okta.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | [Miro](protect-miro.md)   |  |  |  |  |  |
+| [Mural](protect-mural.md)   |  |  |  |  |  |
 | [NetDocuments](protect-netdocuments.md)  |  |  |  |  |  |
 | [Okta](protect-okta.md)               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | [OneLogin](protect-onelogin.md) |  |  |  |  |  |

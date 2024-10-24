@@ -93,9 +93,6 @@ The ability to block clipboard actions such as cut, copy, paste, and file contro
 
 This ability enables companies to balance security and productivity for end users. If you're experiencing problems with these features, use the following steps to investigate the issue.
 
-> [!NOTE]
-> Cut, copy, and paste aren't blocked for data within the same Excel document. Only copying to external locations is blocked.
-
 **Recommended steps**
 
 If the session is being proxied, use the following steps to verify the policy:
