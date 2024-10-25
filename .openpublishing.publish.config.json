@@ -6,6 +6,8 @@
       "build_source_folder": "CloudAppSecurityDocs",
       "build_output_subfolder": "cloud-app-security",
       "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -21,9 +23,7 @@
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/CloudAppSecurityDocs",
   "git_repository_branch_open_to_public_contributors": "main",
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -44,15 +44,15 @@
       "Pdf"
     ]
   },
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  },
-  "need_generate_pdf_url_template": true,
-  "Targets": {
+  "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
   },
+  "docs_build_engine": {},
+  "skip_source_output_uploading": false,
+  "contribution_branch_mappings": {},
+  "need_generate_pdf_url_template": true,
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "enable_branch_build_custom_validation": true,
