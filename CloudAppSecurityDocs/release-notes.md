@@ -19,6 +19,29 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## October 2024
+
+### New anomaly data in advanced hunting CloudAppEvents table
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal, can now utilize the new *LastSeenForUser* and *UncommonForUser* columns for queries and detections rules.  
+The new columns are designed to assist you to better __identify uncommon activities__ that may appear suspicious, and allow you to create more accurate custom detections, as well as investigate any suspicious activities that arise.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+
+### New Conditional Access app control / inline data in advanced hunting CloudAppEvents table
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new *AuditSource* and *SessionData* columns for queries and detection rules.   
+Using this data allows for queries that consider specific audit sources, including access and session control, and queries by specific inline sessions.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+
+### New data in advanced hunting CloudAppEvents table - OAuthAppId
+
+Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender portal can now use the new _OAuthAppId_ column for queries and detection rules.
+
+Using _OAuthAppId_ allows the queries that consider specific OAuth applications, making queries and detection rules more accurate.
+
+For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
 ## September 2024
 
