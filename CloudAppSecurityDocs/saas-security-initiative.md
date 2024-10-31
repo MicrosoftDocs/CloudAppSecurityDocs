@@ -17,7 +17,7 @@ The SaaS Security Initiative serves as the main hub for SaaS Security Posture Ma
 ### Prerequisites
 
 - Your organization must have Microsoft Defender for Cloud Apps licenses.
-- Your app must be connected to Defender for Cloud Apps.
+- The app which you wish to see security recommendations for, must be connected.
 - For more information, see:
 
     - [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
