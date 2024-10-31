@@ -201,6 +201,8 @@ items:
     - name: "Overview "
       href: sspm-overview.md
       displayName: "SSPM posture "
+    - name: SaaS security initiative
+      href: saas-security-initiative.md
 - name: Threat protection
   items:
   - name: Control cloud apps with policies
