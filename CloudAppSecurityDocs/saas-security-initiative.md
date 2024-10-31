@@ -36,6 +36,7 @@ Once selected, you can click on any of the **Non-Compliant** recommendations to 
 
 ### Additional Information
 
-Each metric includes a list of associated app connectors, encouraging organizations to enable additional connectors for enhanced visibility. If you are interested in recommendations for specific applications, navigate to the **Security Recommendations** tab and filter by the relevant application.
+- Each metric includes a list of associated app connectors, encouraging organizations to enable additional connectors for enhanced visibility. If you are interested in recommendations for specific applications, navigate to the **Security Recommendations** tab and filter by the relevant application.
+- To learn more about inactives visit [here](https://learn.microsoft.com/en-us/security-exposure-management/initiatives)
 
 
