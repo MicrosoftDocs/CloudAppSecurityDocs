@@ -83,13 +83,8 @@ In the details pane, select any of the following tabs to view more details:
 
     :::image type="content" source="media/app-governance-visibility-insights-view-apps/sensitive-labels-details.png" alt-text="Screenshot of the Sensitivity labels tab.":::
 
-For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require at least the following administrator roles:
+For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require a *Company Administrator* administrator role.
 
-
-- *Compliance Administrator*
-- *Company Administrator*
-- *Security Administrator*
-- *Security Operator*
 
 ## Managing Google Workspace and Salesforce OAuth apps
 
