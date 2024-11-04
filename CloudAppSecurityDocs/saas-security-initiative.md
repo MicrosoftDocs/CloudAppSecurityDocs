@@ -4,10 +4,10 @@ description: Learn how to use the "SaaS security initiative" in Microsoft XDR
 ms.topic: how-to
 ms.date: 10/31/2024
 ---
-## SaaS Security Initiative 
+# SaaS Security Initiative 
 
 The SaaS Security Initiative provides a centralized place for SaaS security best practices, enabling organizations to manage and prioritize security recommendations effectively. By focusing on the most impactful metrics, organizations can enhance their SaaS security posture efficiently.
-![image of the SaaS security initiative home page](CloudAppSecurityDocs\media\saas-securty-initiative\screenshot-of-the-saas-security-initiative-home-page.png)
+![Screenshot of the SaaS security initiative home page](CloudAppSecurityDocs\media\saas-securty-initiative\screenshot-of-the-saas-security-initiative-home-page.png)
 
 
 ## What is the SaaS Security Initiative?
