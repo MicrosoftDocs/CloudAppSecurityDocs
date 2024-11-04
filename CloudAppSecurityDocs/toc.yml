@@ -196,11 +196,10 @@ items:
       href: tutorial-shadow-it.md
 - name: Security posture
   href: security-saas.md
-- name: SaaS security posture management (SSPM)(Preview)
+- name: Posture management(SSPM)(Preview)
   items:
-    - name: "Overview "
-      href: sspm-overview.md
-      displayName: "SSPM posture "
+    - name: Overview
+      href: posture-overview.md
     - name: SaaS security initiative
       href: saas-security-initiative.md
 - name: Threat protection
