@@ -15,7 +15,7 @@ One of Microsoft Defender for Cloud Apps’ core pillars is SaaS Security Postur
 ## How to manage your organization SaaS security posture
 To effectively manage your organization’s SaaS security posture, we recommend beginning with the SaaS Security initiative in Microsoft Defender XDR. This initiative consolidates best practices and measurable metrics specifically for securing SaaS applications, allowing you to prioritize and address the most impactful recommendations for SaaS environments. For more information, see:
 
-- [SaaS Security Initiative](https://learn.microsoft.com/defender-cloud-apps/saas-security-initiative.md)
+- [SaaS Security Initiative](https://learn.microsoft.com/defender-cloud-apps/saas-security-initiative)
 
 In addition you can find a variety of SSPM recommendations under different initiatives. Key initiatives include:
 
