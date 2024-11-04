@@ -10,7 +10,7 @@ ms.date: 10/31/2024
 One of Microsoft Defender for Cloud Apps’ core pillars is SaaS Security Posture Management (SSPM), which offers detailed visibility into the security state of your SaaS applications and provides actionable guidance to help you strengthen your security posture efficiently. Your SaaS application environments may be configured in a risky posture, and Defender for Cloud Apps provides risk-based security configuration assessments to help you identify and mitigate potential risks. These recommendations are shown via [Microsoft Security Exposure Management](https://learn.microsoft.com/security-exposure-management/microsoft-security-exposure-management) in the SaaS security initiative once you have a connector to an application. For example:
 
 
-![Screenshot of the SaaS security initiative.](CloudAppSecurityDocs/media/sspm-overview/screenshot-of-the-saas-security-initiative-home-page.png)
+![Screenshot of the SaaS security initiative.](<media/posture-overview/screenshot-of-the-saas-security-initiative-home-page.png>)
 
 ## How to manage your organization SaaS security posture
 To effectively manage your organization’s SaaS security posture, we recommend beginning with the SaaS Security initiative in Microsoft Defender XDR. This initiative consolidates best practices and measurable metrics specifically for securing SaaS applications, allowing you to prioritize and address the most impactful recommendations for SaaS environments. For more information, see:
@@ -44,10 +44,10 @@ This procedure describes how to ensure that your connector is set to show data i
 1. Use the filter to locate the app where you want to turn on SSPM recommendations.
 
 1. Open the instance drawer and note whether 'Secure score' or 'Exposure management' recommendations are turned on or off. For example, the following screenshot shows that 'Secure score' or 'Exposure management' recommendations are turned on for **Okta Contoso EU** instance:
-![Screenshot of an instance where Secure Score recommendations are turned on.](CloudAppSecurityDocs/media/sspm-overview/screenshot-of-an-instance-where-secure-score-recommendations-are-turned-on.png)
+![Screenshot of an instance where Secure Score recommendations are turned on.](<media/posture-overview/screenshot-of-an-instance-where-secure-score-recommendations-are-turned-on.png>)
 
     If the instance is currently set to **Off**, select the **...** options menu and then select **Turn on 'Secure Score' or 'Exposure management' recommendations**. For example:
-![Screenshot of the Turn on Secure Score or 'Exposure management' recommendations option.](CloudAppSecurityDocs/media/sspm-overview/screenshot-of-the-turn-on-secure-score-or-exposure-management-recommendations-option.png)
+![Screenshot of the Turn on Secure Score or 'Exposure management' recommendations option.](<media/posture-overview/screenshot-of-the-turn-on-secure-score-or-exposure-management-recommendations-option.png>)
 
     > [!NOTE]
     > In case you have multiple instances of the same app, you can send security recommendations for each instance separately.
@@ -56,7 +56,7 @@ Security recommendations for the selected instance are added to Microsoft Securi
 Security recommendations are shown automatically in [Microsoft Security Exposure Management](/microsoft-365/security/defender/microsoft-secure-score). Recommendations are based on Microsoft benchmarks, and may take up to 24 hours to update.
 
 In SaaS security initiative, in the **Security recommendations** filter by product to view any recommended actions. If you have multiple instances of an app, you can select to filter recommendations from specific instances only. For example:
-![Screenshot of a SaaS initiative filter showing multiple instances of an app.](CloudAppSecurityDocs/media/sspm-overview/screenshot-of-a-saas-initiative-filter-showing-multiple-instances-of-an-app.png)
+![Screenshot of a SaaS initiative filter showing multiple instances of an app.](<media\posture-overview\screenshot-of-a-saas-initiative-filter-showing-multiple-instances-of-an-app.png>)
 
 
 
