@@ -19,6 +19,13 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## November 2024
+
+### SaaS Security initative in Exposure Management (preview)
+[Microsoft Security Exposure Management](https://learn.microsoft.com/security-exposure-management/) offers a focused, metric-driven way of tracking exposure in specific security areas using security [initiatives](https://learn.microsoft.com/security-exposure-management/initiatives). The "SaaS security initiative" provides a centralized location for all best practices related to SaaS security, categorized into 12 measurable metrics. These metrics are designed to assist in effectively managing and prioritizing the large number of security recommendations.
+
+For more information, see [SaaS security initiative](https://learn.microsoft.com/defender-cloud-apps/saas-security-initiative)
+
 ## October 2024
 
 ### New anomaly data in advanced hunting CloudAppEvents table
