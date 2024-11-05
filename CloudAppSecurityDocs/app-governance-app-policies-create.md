@@ -124,7 +124,8 @@ Use a custom app policy when you need to do something not already done by one of
    | **Roles of consenting users**            | Select roles from list                                       | Apps that have been given consent by users with specific roles | Multiple selections allowed. <p> Any Microsoft Entra role with assigned member should be made available in this list. |
    | **Sensitivity labels accessed**          | Select one or more sensitivity labels from the list          | Apps that accessed data with specific sensitivity labels in the last 30 days. |                                                              |
    | **Services accessed** (Graph only)       | Exchange and/or OneDrive and/or SharePoint and/or Teams      | Apps that have accessed OneDrive, SharePoint, or Exchange Online using Microsoft Graph and EWS APIs | Multiple selections allowed.                                 |
-   | **Error rate** (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last seven days are greater than a specified percentage |                                                              |
+   | **Error rate** (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last seven days are greater than a specified percentage |            
+   | **App origin**                          | External or Internal         | Apps that originated within the tenant or registered in an external tenant |                                                    |
    
        All of the specified conditions must be met for this app policy to generate an alert.
 
