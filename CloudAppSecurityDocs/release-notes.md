@@ -25,25 +25,19 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 Defender for Cloud Apps users who use app governance will be able to gain visibility into the origin of OAuth apps connected to Microsoft 365. You can filter and monitor apps that have external origins, to proactively review such apps and improve the security posture of the organization.
 
-For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+For more information, see [View your apps with app governance](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
 ### Permissions filter and export capabilities
 
 Defender for Cloud Apps users who use app governance can utilize the new *Permissions* filter and export capabilities to quickly identify apps with specific permissions to access Microsoft 365. 
 
-For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
-
 ### Visibility into privilege level for popular Microsoft first-party APIs
 
 Defender for Cloud Apps users who use app governance can now gain visibility into privilege level for all popular Microsoft first-party API permissions. The enhanced coverage of privilege level classification will enable you to view and monitor apps with powerful permissions into legacy and other non-Graph APIs that have access to Microsoft 365.
 
-For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
-
 ### Granular data usage insights into EWS API access
 
 Defender for Cloud Apps users who use app governance can now get granular insights into data accessed by apps using legacy EWS API alongside Microsoft Graph. The enhanced coverage of data usage insights will enable you to get deeper visibility into apps accessing emails using legacy EWS API.
-
-For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
 ## October 2024
 
