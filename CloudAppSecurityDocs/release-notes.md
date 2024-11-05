@@ -21,21 +21,21 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## November 2024
 
-### Visibility into app origin
+### Visibility into app origin (Preview)
 
 Defender for Cloud Apps users who use app governance will be able to gain visibility into the origin of OAuth apps connected to Microsoft 365. You can filter and monitor apps that have external origins, to proactively review such apps and improve the security posture of the organization.
 
-For more information, see [View your apps with app governance](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
+For more information, see [detailed information about apps](/defender-cloud-apps/app-governance-visibility-insights-view-apps#getting-detailed-information-on-an-app).
 
-### Permissions filter and export capabilities
+### Permissions filter and export capabilities (Preview)
 
 Defender for Cloud Apps users who use app governance can utilize the new *Permissions* filter and export capabilities to quickly identify apps with specific permissions to access Microsoft 365. 
 
-### Visibility into privilege level for popular Microsoft first-party APIs
+### Visibility into privilege level for popular Microsoft first-party APIs (Preview)
 
 Defender for Cloud Apps users who use app governance can now gain visibility into privilege level for all popular Microsoft first-party API permissions. The enhanced coverage of privilege level classification will enable you to view and monitor apps with powerful permissions into legacy and other non-Graph APIs that have access to Microsoft 365.
 
-### Granular data usage insights into EWS API access
+### Granular data usage insights into EWS API access (Preview)
 
 Defender for Cloud Apps users who use app governance can now get granular insights into data accessed by apps using legacy EWS API alongside Microsoft Graph. The enhanced coverage of data usage insights will enable you to get deeper visibility into apps accessing emails using legacy EWS API.
 
