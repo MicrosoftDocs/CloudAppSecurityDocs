@@ -41,15 +41,17 @@ One of the primary value points for app governance is the ability to quickly vie
 
 1. Filter the apps listed using one or more of the following default filter options:
 
-    - **API access**
-    - **Privilege level**
-    - **Permission usage**
-    - **Permission type**
-    - **Publisher verified**
+   - **API access**
+   - **Privilege level**
+   - **Permission**
+   - **Permission usage**
+   - **App origin**
+   - **Permission type**
+   - **Publisher verified**
 
     Use one of the following nondefault filters to further customize the apps listed:
 
-    - **Last modified**
+- **Last modified**
     - **Added on**
     - **Certification**
     - **Users**
@@ -58,12 +60,13 @@ One of the primary value points for app governance is the ability to quickly vie
     - **Sensitivity labels accessed**
 
     > [!TIP]
+    > 
     > Save the query to save the currently selected filters for use again in the future.
 
 1. Select the name of an app to view more details. For example:
 
-    :::image type="content" source="media/app-governance-visibility-insights-get-started/image2.png" alt-text="Screenshot of an app details pane showing an app summary.":::
-
+   :::image type="content" source="media/app-governance-visibility-insights-get-started/app-governance-app-list-view.png" alt-text="Screenshot of an app details pane showing an app summary.":::
+   
 The details pane lists the app usage over the past 30 days, the users who have consented to the app, and the permissions assigned to the app. 
 
 For example, an administrator might review the activity and permissions of an app that is generating alerts and make a decision to disable the app using the **Disable App** button towards the bottom of the app details pane.
