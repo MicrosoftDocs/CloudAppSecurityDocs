@@ -134,9 +134,9 @@ Use a custom app policy when you need to do something not already done by one of
 
 1. On the **Define Policy Status** page, select one of these options:
 
-    - **Audit mode**: Policies are evaluated but configured actions won't occur. Audit mode policies appear with the status of **Audit** in the list of policies. You should use Audit mode for testing a new policy.
-    - **Active**: Policies are evaluated and configured actions will occur.
-    - **Inactive**: Policies aren't evaluated and configured actions won't occur.
+- **Audit mode**: Policies are evaluated but configured actions won't occur. Audit mode policies appear with the status of **Audit** in the list of policies. You should use Audit mode for testing a new policy.
+- **Active**: Policies are evaluated and configured actions will occur.
+- **Inactive**: Policies aren't evaluated and configured actions won't occur.
 
 1. Carefully review all parameters of your custom policy. Select **Submit** when you're satisfied. You can also go back and change settings by selecting **Edit** beneath any of the settings.
 
