@@ -126,17 +126,17 @@ Use a custom app policy when you need to do something not already done by one of
    | **Services accessed** (Graph only)       | Exchange and/or OneDrive and/or SharePoint and/or Teams      | Apps that have accessed OneDrive, SharePoint, or Exchange Online using Microsoft Graph and EWS APIs | Multiple selections allowed.                                 |
    | **Error rate** (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last seven days are greater than a specified percentage |            
    | **App origin**                          | External or Internal         | Apps that originated within the tenant or registered in an external tenant |                                                    |
-   
-       All of the specified conditions must be met for this app policy to generate an alert.
+
+> All of the specified conditions must be met for this app policy to generate an alert.
 
 1. When you're done specifying the conditions, select **Save**, and then select **Next**.
 1. On the **Define Policy Actions** page, select **Disable app** if you want app governance to disable the app when an alert based on this policy is generated, and then select **Next**. Use caution when applying actions because a policy may affect users and legitimate app use.
 
 1. On the **Define Policy Status** page, select one of these options:
 
-- **Audit mode**: Policies are evaluated but configured actions won't occur. Audit mode policies appear with the status of **Audit** in the list of policies. You should use Audit mode for testing a new policy.
-- **Active**: Policies are evaluated and configured actions will occur.
-- **Inactive**: Policies aren't evaluated and configured actions won't occur.
+    - **Audit mode**: Policies are evaluated but configured actions won't occur. Audit mode policies appear with the status of **Audit** in the list of policies. You should use Audit mode for testing a new policy.
+    - **Active**: Policies are evaluated and configured actions will occur.
+    - **Inactive**: Policies aren't evaluated and configured actions won't occur.
 
 1. Carefully review all parameters of your custom policy. Select **Submit** when you're satisfied. You can also go back and change settings by selecting **Edit** beneath any of the settings.
 
