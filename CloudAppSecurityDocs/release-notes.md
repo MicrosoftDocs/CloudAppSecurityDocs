@@ -20,6 +20,12 @@ For more information on what's new with other Microsoft Defender security produc
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
 ## October 2024
+### Internal Session Controls application notice
+ The Enterprise application “Microsoft Defender for Cloud Apps – Session Controls” is used internally by the Conditional Access App Control service.  
+Please ensure there is no CA policy restricting access to this application. 
+For policies that restrict all or certain applications, please ensure this application is listed as an exception or confirm that the blocking policy is deliberate.  
+
+For more information, see [Sample: Create Microsoft Entra ID Conditional Access policies for use with Defender for Cloud Apps](https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#sample-create-microsoft-entra-id-conditional-access-policies-for-use-with-defender-for-cloud-apps).
 
 ### New anomaly data in advanced hunting CloudAppEvents table
 
