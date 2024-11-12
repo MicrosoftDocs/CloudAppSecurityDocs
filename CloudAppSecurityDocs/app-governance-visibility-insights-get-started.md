@@ -45,7 +45,7 @@ One of the primary value points for app governance is the ability to quickly vie
       
    - **Privilege level**
       
-   - **Permission**
+   - **Permission** (Preview)
       
    - **Permission usage**
       
@@ -56,8 +56,8 @@ One of the primary value points for app governance is the ability to quickly vie
    - **Publisher verified**
       
     Use one of the following nondefault filters to further customize the apps listed:
-   
-   - **Last modified**
+
+- **Last modified**
       
    - **Added on**
       
@@ -71,7 +71,7 @@ One of the primary value points for app governance is the ability to quickly vie
    
    - **Sensitivity labels accessed**
    
-   > [!TIP]
+      > [!TIP]
    > Save the query to save the currently selected filters for use again in the future.
    
    
