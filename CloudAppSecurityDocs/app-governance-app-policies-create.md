@@ -77,7 +77,7 @@ The following table lists the app governance templates supported to generate ale
 
 Use a custom app policy when you need to do something not already done by one of the built-in templates.
 
-1. To create a new custom app policy, first select **Create new policy** on the **Policies** page. On the **Choose App policy template page**, select the **Custom** category, the **Custom policy** template, and then select **Next**.
+- To create a new custom app policy, first select **Create new policy** on the **Policies** page. On the **Choose App policy template page**, select the **Custom** category, the **Custom policy** template, and then select **Next**.
 
 1. On the **Name and description** page, configure the following:
 
@@ -88,20 +88,20 @@ Use a custom app policy when you need to do something not already done by one of
       - Medium
       - Low
 
-1. On the **Choose Policy settings and conditions** page, for **Choose which apps this policy is applicable for**, select:
+2. On the **Choose Policy settings and conditions** page, for **Choose which apps this policy is applicable for**, select:
 
     - All Apps
     - Choose specific apps
     - All apps except
 
-1. If you choose specific apps, or all apps except for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy applies, and then select **Add**. Select **Next** when you're satisfied with the list.
+3. If you choose specific apps, or all apps except for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy applies, and then select **Add**. Select **Next** when you're satisfied with the list.
 
-1. Select **Edit conditions**. Select **Add condition** and choose a condition from the list. Set the desired threshold for your selected condition. Repeat to add more conditions. Select **Save** to save the rule, and when you're finished adding rules, select **Next**.
+4. Select **Edit conditions**. Select **Add condition** and choose a condition from the list. Set the desired threshold for your selected condition. Repeat to add more conditions. Select **Save** to save the rule, and when you're finished adding rules, select **Next**.
 
     > [!NOTE]
     > Some policy conditions are only applicable to apps that access Graph API permissions. When evaluating apps that access only non-Graph APIs, app governance will skip these policy conditions and proceed to check only other policy conditions.
 
-1. Here are the available conditions for a custom app policy:
+5. Here are the available conditions for a custom app policy:
 
    | Condition                            | Condition values accepted                                    | Description                                                  | More information                                             |
    | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -124,21 +124,21 @@ Use a custom app policy when you need to do something not already done by one of
    | **Roles of consenting users**            | Select roles from list                                       | Apps that have been given consent by users with specific roles | Multiple selections allowed. <p> Any Microsoft Entra role with assigned member should be made available in this list. |
    | **Sensitivity labels accessed**          | Select one or more sensitivity labels from the list          | Apps that accessed data with specific sensitivity labels in the last 30 days. |                                                              |
    | **Services accessed** (Graph only)       | Exchange and/or OneDrive and/or SharePoint and/or Teams      | Apps that have accessed OneDrive, SharePoint, or Exchange Online using Microsoft Graph and EWS APIs | Multiple selections allowed.                                 |
-   | **Error rate** (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last seven days are greater than a specified percentage |            
-   | **App origin**                          | External or Internal         | Apps that originated within the tenant or registered in an external tenant |                                                    |
+   | **Error rate** (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last seven days are greater than a specified percentage ||
+   | **App origin** (Preview)                          | External or Internal         | Apps that originated within the tenant or registered in an external tenant |                                                    |
+   
+  All of the specified conditions must be met for this app policy to generate an alert.
 
-> All of the specified conditions must be met for this app policy to generate an alert.
+6. When you're done specifying the conditions, select **Save**, and then select **Next**.
+7. On the **Define Policy Actions** page, select **Disable app** if you want app governance to disable the app when an alert based on this policy is generated, and then select **Next**. Use caution when applying actions because a policy may affect users and legitimate app use.
 
-1. When you're done specifying the conditions, select **Save**, and then select **Next**.
-1. On the **Define Policy Actions** page, select **Disable app** if you want app governance to disable the app when an alert based on this policy is generated, and then select **Next**. Use caution when applying actions because a policy may affect users and legitimate app use.
-
-1. On the **Define Policy Status** page, select one of these options:
+8. On the **Define Policy Status** page, select one of these options:
 
     - **Audit mode**: Policies are evaluated but configured actions won't occur. Audit mode policies appear with the status of **Audit** in the list of policies. You should use Audit mode for testing a new policy.
     - **Active**: Policies are evaluated and configured actions will occur.
     - **Inactive**: Policies aren't evaluated and configured actions won't occur.
 
-1. Carefully review all parameters of your custom policy. Select **Submit** when you're satisfied. You can also go back and change settings by selecting **Edit** beneath any of the settings.
+9. Carefully review all parameters of your custom policy. Select **Submit** when you're satisfied. You can also go back and change settings by selecting **Edit** beneath any of the settings.
 
 ## Test and monitor your new app policy
 
