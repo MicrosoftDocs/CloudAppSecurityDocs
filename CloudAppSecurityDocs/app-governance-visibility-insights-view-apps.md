@@ -31,7 +31,7 @@ On the **Microsoft 365** tab, the apps in your tenant are listed with the follow
 | **App status** | Shows whether the app is enabled or disabled, and if disabled by whom |
 | **Graph API access**| Shows whether the app has at least one Graph API permission |
 | **Permission type**| Shows whether the app has application (app only), delegated, or mixed permissions |
-| **App origin**| Shows whether the app originated within the tenant or was registered in an external tenant |
+| **App origin** (Preview)| Shows whether the app originated within the tenant or was registered in an external tenant |
 | **Consent type**| Shows whether the app consent has been given at the user or the admin level, and the number of users whose data is accessible to the app |
 | **Publisher**| Publisher of the app and their verification status |
 | **Last modified**| Date and time when registration information was last updated on Microsoft Entra ID |
