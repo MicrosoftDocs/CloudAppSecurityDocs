@@ -19,6 +19,32 @@ For more information on what's new with other Microsoft Defender security produc
 
 For news about earlier releases, see [Archive of past updates for Microsoft Defender for Cloud Apps](release-note-archive.md).
 
+## November 2024
+
+### Visibility into app origin (Preview)
+
+Defender for Cloud Apps users who use app governance will be able to gain visibility into the origin of OAuth apps connected to Microsoft 365. You can filter and monitor apps that have external origins, to proactively review such apps and improve the security posture of the organization.
+
+For more information, see [detailed insights into OAuth apps](/defender-cloud-apps/app-governance-visibility-insights-view-apps#getting-detailed-information-on-an-app).
+
+### Permissions filter and export capabilities (Preview)
+
+Defender for Cloud Apps users who use app governance can utilize the new *Permissions* filter and export capabilities to quickly identify apps with specific permissions to access Microsoft 365. 
+
+For more information, see [filters on app governance](/defender-cloud-apps/app-governance-visibility-insights-get-started#view-app-insights).
+
+### Visibility into privilege level for popular Microsoft first-party APIs (Preview)
+
+Defender for Cloud Apps users who use app governance can now gain visibility into privilege level for all popular Microsoft first-party API permissions. The enhanced coverage of privilege level classification will enable you to view and monitor apps with powerful permissions into legacy and other non-Graph APIs that have access to Microsoft 365. 
+
+For more information, see [OAuth app permission related details on app governance](/defender-cloud-apps/app-governance-visibility-insights-view-apps#getting-detailed-information-on-an-app).
+
+### Granular data usage insights into EWS API access (Preview)
+
+Defender for Cloud Apps users who use app governance can now get granular insights into data accessed by apps using legacy EWS API alongside Microsoft Graph. The enhanced coverage of data usage insights will enable you to get deeper visibility into apps accessing emails using legacy EWS API.
+
+For more information, see [OAuth app data usage insights on app governance](/defender-cloud-apps/app-governance-visibility-insights-view-apps#getting-detailed-information-on-an-app).
+
 ## October 2024
 ### Internal Session Controls application notice
  The Enterprise application “Microsoft Defender for Cloud Apps – Session Controls” is used internally by the Conditional Access App Control service.  
@@ -57,7 +83,7 @@ Administrators who understand the power of Edge in-browser protection, can now r
 A primary reason is security, since the barrier to circumventing session controls using Edge is much higher than with reverse proxy technology.
 
 For more information see: 
-[Enforce Edge in-browser protection when accessing business apps](https://learn.microsoft.com/defender-cloud-apps/in-browser-protection#enforce-edge-in-browser-when-accessing-business-apps)
+[Enforce Edge in-browser protection when accessing business apps](in-browser-protection.md#enforce-edge-in-browser-when-accessing-business-apps)
 
 ### Connect Mural to Defender for Cloud Apps (Preview)
 
