@@ -56,25 +56,24 @@ One of the primary value points for app governance is the ability to quickly vie
    - **Publisher verified**
       
     Use one of the following nondefault filters to further customize the apps listed:
-
-- **Last modified**
+   
+   - **Last modified**
       
    - **Added on**
       
    - **Certification**
-   
+      
    - **Users**
-   
+      
    - **Services accessed**
-   
+      
    - **Data usage**
-   
+      
    - **Sensitivity labels accessed**
    
-      > [!TIP]
-   > Save the query to save the currently selected filters for use again in the future.
-   
-   
+     > [!TIP]
+     > Save the query to save the currently selected filters for use again in the future.
+     
 1. Select the name of an app to view more details. For example:
 
    ![Screenshot of an app details pane showing an app summary.](media/app-governance-visibility-insights-get-started/app-governance-app-list-view.png)
