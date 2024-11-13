@@ -127,7 +127,7 @@ Use a custom app policy when you need to do something not already done by one of
    | **Error rate** (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last seven days are greater than a specified percentage ||
    | **App origin** (Preview)                          | External or Internal         | Apps that originated within the tenant or registered in an external tenant |                                                    |
    
-  All of the specified conditions must be met for this app policy to generate an alert.
+     All of the specified conditions must be met for this app policy to generate an alert.
 
 6. When you're done specifying the conditions, select **Save**, and then select **Next**.
 7. On the **Define Policy Actions** page, select **Disable app** if you want app governance to disable the app when an alert based on this policy is generated, and then select **Next**. Use caution when applying actions because a policy may affect users and legitimate app use.
