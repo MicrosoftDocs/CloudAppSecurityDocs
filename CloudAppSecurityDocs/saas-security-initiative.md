@@ -28,7 +28,7 @@ To initiate the process, navigate to the **Exposure Management** blade and selec
 
 On this page, you'll find 12 measurable metrics that categorize hundreds of best practice recommendations. 
 
-It's recommended to prioritize metrics with the highest **Impact on Initiative Score**, which is a composite measure that considers both the **Weight** of each recommendation and the percentage of **Non-Compliant** recommendations. To effectively monitor progress, It's advisable to set a **target score** for your organization’s security posture. This target will serve as a benchmark for improvement and help track advancements over time.
+It's recommended to prioritize metrics with the highest **Impact on Initiative Score**, which is a composite measure that considers both the **Weight** of each recommendation and the percentage of **Non-Compliant** recommendations. To effectively monitor progress, it's advisable to set a **target score** for your organization’s security posture. This target will serve as a benchmark for improvement and help track advancements over time.
 
 For instance, to gain visibility into all best practice recommendations pertaining to privileged access within SaaS applications, select the metric labeled **Missing Best Practices to Secure Privileged Access in SaaS Apps**.
 

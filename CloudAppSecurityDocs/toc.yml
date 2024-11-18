@@ -194,9 +194,7 @@ items:
       href: discovered-app-queries.md
     - name: Discover and manage shadow IT
       href: tutorial-shadow-it.md
-- name: Security posture
-  href: security-saas.md
-- name: Posture management(SSPM)(Preview)
+- name: Posture management (SSPM)
   items:
     - name: Overview
       href: posture-overview.md
