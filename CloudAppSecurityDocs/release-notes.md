@@ -1,7 +1,7 @@
 ---
 title: What's new | Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 06/16/2024
+ms.date: 11/19/2024
 ms.topic: overview
 ---
 
@@ -21,11 +21,21 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## November 2024
 
-### SaaS Security initative in Exposure Management
-[Microsoft Security Exposure Management](https://learn.microsoft.com/security-exposure-management/) offers a focused, metric-driven way of tracking exposure in specific security areas using security [initiatives](https://learn.microsoft.com/security-exposure-management/initiatives). The "SaaS security initiative" provides a centralized location for all best practices related to SaaS security, categorized into 12 measurable metrics. These metrics are designed to assist in effectively managing and prioritizing the large number of security recommendations.
+### Defender for Cloud Apps support for Graph API (preview)
+
+Defender for Cloud Apps customers can now query data about discovered apps via the Graph API. Use the Graph API to customize views and automate flows on the **Discovered apps** page, such as applying filters to view specific data. The API supports [GET](/graph/use-the-api) capabilities only.
+
+For more information, see:
+
+- [Work with discovered apps via Graph API](discovered-apps-api-graph.md)
+- [Microsoft Graph API reference for Microsoft Defender for Cloud Apps](/graph/api/resources/security-cloudappdiscovery-overview?view=graph-rest-beta)
+
+### SaaS Security initiative in Exposure Management
+
+[Microsoft Security Exposure Management](/security-exposure-management/) offers a focused, metric-driven way of tracking exposure in specific security areas using security [initiatives](/security-exposure-management/initiatives). The "SaaS security initiative" provides a centralized location for all best practices related to SaaS security, categorized into 12 measurable metrics. These metrics are designed to assist in effectively managing and prioritizing the large number of security recommendations.
 This capability is General Availability (Worldwide) - Note Microsoft Security Exposure Management data and capabilities are currently unavailable in U.S Government clouds - GCC, GCC High and DoD
 
-For more information, see [SaaS security initiative](https://learn.microsoft.com/defender-cloud-apps/saas-security-initiative)![image](https://github.com/user-attachments/assets/356178e5-7b93-40e7-8210-e6d2e84d33b7)
+For more information, see [SaaS security initiative](saas-security-initiative.md).
 
 ### Visibility into app origin (Preview)
 
@@ -52,12 +62,13 @@ Defender for Cloud Apps users who use app governance can now get granular insigh
 For more information, see [OAuth app data usage insights on app governance](/defender-cloud-apps/app-governance-visibility-insights-view-apps#getting-detailed-information-on-an-app).
 
 ## October 2024
+
 ### Internal Session Controls application notice
  The Enterprise application “Microsoft Defender for Cloud Apps – Session Controls” is used internally by the Conditional Access App Control service.  
 Please ensure there is no CA policy restricting access to this application. 
 For policies that restrict all or certain applications, please ensure this application is listed as an exception or confirm that the blocking policy is deliberate.  
 
-For more information, see [Sample: Create Microsoft Entra ID Conditional Access policies for use with Defender for Cloud Apps](https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#sample-create-microsoft-entra-id-conditional-access-policies-for-use-with-defender-for-cloud-apps).
+For more information, see [Sample: Create Microsoft Entra ID Conditional Access policies for use with Defender for Cloud Apps](session-policy-aad.md#sample-create-microsoft-entra-id-conditional-access-policies-for-use-with-defender-for-cloud-apps).
 
 ### New anomaly data in advanced hunting CloudAppEvents table
 
@@ -81,9 +92,8 @@ Using _OAuthAppId_ allows the queries that consider specific OAuth applications,
 
 For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
 
-## September 2024
-
 ### Enforce Edge in-browser when accessing business apps
+
 Administrators who understand the power of Edge in-browser protection, can now require their users to use Edge when accessing corporate resources. 
 
 A primary reason is security, since the barrier to circumventing session controls using Edge is much higher than with reverse proxy technology.
@@ -101,6 +111,7 @@ For more information, see:
 - [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 - [Mural Help Center](https://support.mural.co/s/)
 
+
 ### Removing the ability to email end users about blocked actions
 
 Effective October 1st, 2024, we will discontinue the feature that notifies end users via email when their action is blocked by session policies.
@@ -113,7 +124,7 @@ Existing session policies with this setting will not trigger email notifications
 
 End users will continue to receive the block message directly through the browser and will stop receiving block notification via email.
 
-Screenshot of the notify end user by email option:
+For example:
 
 ![Screenshot of how to block notifying end user by email.](media/release-notes/notify-end-user-by-email.png)
 
@@ -146,9 +157,11 @@ For more information, see  [Configure custom URL for MDA block pages](mde-govern
 
 
 ### In-browser protection for macOS users and newly supported policies (Preview)
-Edge browser users from macOS, scoped to session policies, are now protected with in-browser protection.
+
+Edge browser users from macOS who are scoped to session policies are now protected with in-browser protection.
 
 The following session policies are now supported:
+
 - Block and Monitor upload of sensitive files
 - Block and Monitor paste
 - Block and Monitor of malware upload
