@@ -35,7 +35,7 @@ For more information, see:
 [Microsoft Security Exposure Management](/security-exposure-management/) offers a focused, metric-driven way of tracking exposure in specific security areas using security [initiatives](/security-exposure-management/initiatives). The "SaaS security initiative" provides a centralized location for all best practices related to SaaS security, categorized into 12 measurable metrics. These metrics are designed to assist in effectively managing and prioritizing the large number of security recommendations.
 This capability is General Availability (Worldwide) - Note Microsoft Security Exposure Management data and capabilities are currently unavailable in U.S Government clouds - GCC, GCC High and DoD
 
-For more information, see [SaaS security initiative](https://learn.microsoft.com/defender-cloud-apps/saas-security-initiative)![image](https://github.com/user-attachments/assets/356178e5-7b93-40e7-8210-e6d2e84d33b7)
+For more information, see [SaaS security initiative](saas-security-initiative.md)![image](https://github.com/user-attachments/assets/356178e5-7b93-40e7-8210-e6d2e84d33b7)
 
 ### Visibility into app origin (Preview)
 
