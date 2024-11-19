@@ -80,10 +80,10 @@ Identify the users, devices, or IP addresses that are currently using a specific
 
 ## Use filters to see apps by category
 
-Use filters to see apps of a specific category, such as apps that are categorized as *Marketing*, and are also not HIPPA or GDPR compliant. For example, run:
+Use filters to see apps of a specific category, such as apps that are categorized as *Marketing*, and are also not HIPPA compliant. For example, run:
 
 ```http
-GET  https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/<MDEstreamId>/aggregatedAppsDetails (period=duration 'P30D')?$filter= (appInfo/Hippa eq 'false' or appInfo/GDPR eq 'false') and category eq 'Marketing'  
+GET  https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams/<MDEstreamId>/aggregatedAppsDetails (period=duration 'P30D')?$filter= (appInfo/Hippa eq 'false') and category eq 'Marketing'  
 ```
 
 ## Related content
