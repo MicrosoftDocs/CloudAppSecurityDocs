@@ -6,6 +6,9 @@ ms.date: 10/31/2024
 ---
 # SaaS Security Initiative 
 
+> [!NOTE]
+> Microsoft Security Exposure Management data and capabilities are currently unavailable in U.S Government clouds - GCC, GCC High and DoD.
+
 The SaaS Security Initiative provides a centralized place for SaaS security best practices, enabling organizations to manage and prioritize security recommendations effectively. By focusing on the most impactful metrics, organizations can enhance their SaaS security posture efficiently.
 ![Screenshot of the SaaS security initiative home page.](<media\saas-securty-initiative\screenshot-of-the-saas-security-initiative-home-page.png>)
 
