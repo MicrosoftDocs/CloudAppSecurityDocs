@@ -23,14 +23,14 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ### Defender for Cloud Apps support for Graph API (preview)
 
-Defender for Cloud Apps customers can now query data about discovered apps via the Graph API. Use the Graph API to customize views and automate flows on the **Discovered apps** page, such as applying filters to view specific data. The API supports [GET](/graph/use-the-api) capabitilies only.
+Defender for Cloud Apps customers can now query data about discovered apps via the Graph API. Use the Graph API to customize views and automate flows on the **Discovered apps** page, such as applying filters to view specific data. The API supports [GET](/graph/use-the-api) capabilities only.
 
 For more information, see:
 
 - [Work with discovered apps via Graph API](discovered-apps-api-graph.md)
 - [Microsoft Graph API reference for Microsoft Defender for Cloud Apps](/graph/api/resources/security-cloudappdiscovery-overview?view=graph-rest-beta)
 
-### SaaS Security initative in Exposure Management
+### SaaS Security initiative in Exposure Management
 
 [Microsoft Security Exposure Management](/security-exposure-management/) offers a focused, metric-driven way of tracking exposure in specific security areas using security [initiatives](/security-exposure-management/initiatives). The "SaaS security initiative" provides a centralized location for all best practices related to SaaS security, categorized into 12 measurable metrics. These metrics are designed to assist in effectively managing and prioritizing the large number of security recommendations.
 This capability is General Availability (Worldwide) - Note Microsoft Security Exposure Management data and capabilities are currently unavailable in U.S Government clouds - GCC, GCC High and DoD
@@ -124,7 +124,7 @@ Existing session policies with this setting will not trigger email notifications
 
 End users will continue to receive the block message directly through the browser and will stop receiving block notification via email.
 
-Screenshot of the notify end user by email option:
+For example:
 
 ![Screenshot of how to block notifying end user by email.](media/release-notes/notify-end-user-by-email.png)
 
@@ -157,9 +157,11 @@ For more information, see  [Configure custom URL for MDA block pages](mde-govern
 
 
 ### In-browser protection for macOS users and newly supported policies (Preview)
-Edge browser users from macOS, scoped to session policies, are now protected with in-browser protection.
+
+Edge browser users from macOS who are scoped to session policies are now protected with in-browser protection.
 
 The following session policies are now supported:
+
 - Block and Monitor upload of sensitive files
 - Block and Monitor paste
 - Block and Monitor of malware upload
