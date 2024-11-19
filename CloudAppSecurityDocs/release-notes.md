@@ -21,6 +21,15 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## November 2024
 
+### Defender for Cloud Apps support for Graph API (preview)
+
+Defender for Cloud Apps customers can now query data about discovered apps via the Graph API. Use the Graph API to customize views and automate flows on the **Discovered apps** page, such as applying filters to view specific data. The API supports [GET](/graph/use-the-api) capabitilies only.
+
+For more information, see:
+
+- [Work with discovered apps via Graph API](discovered-apps-api-graph.md)
+- [Microsoft Graph API reference for Microsoft Defender for Cloud Apps](/graph/api/resources/security-cloudappdiscovery-overview?view=graph-rest-beta)
+
 ### Visibility into app origin (Preview)
 
 Defender for Cloud Apps users who use app governance will be able to gain visibility into the origin of OAuth apps connected to Microsoft 365. You can filter and monitor apps that have external origins, to proactively review such apps and improve the security posture of the organization.
@@ -46,12 +55,13 @@ Defender for Cloud Apps users who use app governance can now get granular insigh
 For more information, see [OAuth app data usage insights on app governance](/defender-cloud-apps/app-governance-visibility-insights-view-apps#getting-detailed-information-on-an-app).
 
 ## October 2024
+
 ### Internal Session Controls application notice
  The Enterprise application “Microsoft Defender for Cloud Apps – Session Controls” is used internally by the Conditional Access App Control service.  
 Please ensure there is no CA policy restricting access to this application. 
 For policies that restrict all or certain applications, please ensure this application is listed as an exception or confirm that the blocking policy is deliberate.  
 
-For more information, see [Sample: Create Microsoft Entra ID Conditional Access policies for use with Defender for Cloud Apps](https://learn.microsoft.com/defender-cloud-apps/session-policy-aad#sample-create-microsoft-entra-id-conditional-access-policies-for-use-with-defender-for-cloud-apps).
+For more information, see [Sample: Create Microsoft Entra ID Conditional Access policies for use with Defender for Cloud Apps](session-policy-aad.md#sample-create-microsoft-entra-id-conditional-access-policies-for-use-with-defender-for-cloud-apps).
 
 ### New anomaly data in advanced hunting CloudAppEvents table
 
@@ -74,17 +84,6 @@ Defender for Cloud Apps users who use advanced hunting in the Microsoft Defender
 Using _OAuthAppId_ allows the queries that consider specific OAuth applications, making queries and detection rules more accurate.
 
 For more information, see [Advanced Hunting "CloudAppEvents" Data schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table).
-
-## November 2024
-
-### Defender for Cloud Apps support for Graph API (preview)
-
-Defender for Cloud Apps customers can now query data about discovered apps via the Graph API. Use the Graph API to customize views and automate flows on the **Discovered apps** page, such as applying filters to view specific data. The API supports [GET](/graph/use-the-api) capabitilies only.
-
-For more information, see:
-
-- [Work with discovered apps via Graph API](discovered-apps-api-graph.md)
-- [Microsoft Graph API reference for Microsoft Defender for Cloud Apps](/graph/api/resources/security-cloudappdiscovery-overview?view=graph-rest-beta)
 
 ### Enforce Edge in-browser when accessing business apps
 
