@@ -21,6 +21,13 @@ For news about earlier releases, see [Archive of past updates for Microsoft Defe
 
 ## November 2024
 
+### Internal Session Controls application notice
+ The Enterprise application “Microsoft Defender for Cloud Apps – Session Controls” is used internally by the Conditional Access App Control service.  
+Please ensure there is no CA policy restricting access to this application. 
+For policies that restrict all or certain applications, please ensure this application is listed as an exception or confirm that the blocking policy is deliberate.  
+
+For more information, see [Sample: Create Microsoft Entra ID Conditional Access policies for use with Defender for Cloud Apps](session-policy-aad.md#sample-create-microsoft-entra-id-conditional-access-policies-for-use-with-defender-for-cloud-apps).
+
 ### Defender for Cloud Apps support for Graph API (preview)
 
 Defender for Cloud Apps customers can now query data about discovered apps via the Graph API. Use the Graph API to customize views and automate flows on the **Discovered apps** page, such as applying filters to view specific data. The API supports [GET](/graph/use-the-api) capabilities only.
@@ -62,13 +69,6 @@ Defender for Cloud Apps users who use app governance can now get granular insigh
 For more information, see [OAuth app data usage insights on app governance](/defender-cloud-apps/app-governance-visibility-insights-view-apps#getting-detailed-information-on-an-app).
 
 ## October 2024
-
-### Internal Session Controls application notice
- The Enterprise application “Microsoft Defender for Cloud Apps – Session Controls” is used internally by the Conditional Access App Control service.  
-Please ensure there is no CA policy restricting access to this application. 
-For policies that restrict all or certain applications, please ensure this application is listed as an exception or confirm that the blocking policy is deliberate.  
-
-For more information, see [Sample: Create Microsoft Entra ID Conditional Access policies for use with Defender for Cloud Apps](session-policy-aad.md#sample-create-microsoft-entra-id-conditional-access-policies-for-use-with-defender-for-cloud-apps).
 
 ### New anomaly data in advanced hunting CloudAppEvents table
 
