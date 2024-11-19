@@ -4,7 +4,7 @@ description: Learn how to work with apps discovered by Microsoft Defender for Cl
 ms.topic: how-to #Don't change
 ms.date: 06/24/2024
 
-#customer intent: As a security engieeer, I want to work with discovered apps via API so that I can customize and automate the Microsoft Defender for Cloud Apps **Discovered apps** page functionality.
+#customer intent: As a security engineer, I want to work with discovered apps via API so that I can customize and automate the Microsoft Defender for Cloud Apps **Discovered apps** page functionality.
 
 ---
 
