@@ -30,6 +30,13 @@ For more information, see:
 - [Work with discovered apps via Graph API](discovered-apps-api-graph.md)
 - [Microsoft Graph API reference for Microsoft Defender for Cloud Apps](/graph/api/resources/security-cloudappdiscovery-overview?view=graph-rest-beta)
 
+### SaaS Security initative in Exposure Management
+
+[Microsoft Security Exposure Management](https://learn.microsoft.com/security-exposure-management/) offers a focused, metric-driven way of tracking exposure in specific security areas using security [initiatives](https://learn.microsoft.com/security-exposure-management/initiatives). The "SaaS security initiative" provides a centralized location for all best practices related to SaaS security, categorized into 12 measurable metrics. These metrics are designed to assist in effectively managing and prioritizing the large number of security recommendations.
+This capability is General Availability (Worldwide) - Note Microsoft Security Exposure Management data and capabilities are currently unavailable in U.S Government clouds - GCC, GCC High and DoD
+
+For more information, see [SaaS security initiative](https://learn.microsoft.com/defender-cloud-apps/saas-security-initiative)![image](https://github.com/user-attachments/assets/356178e5-7b93-40e7-8210-e6d2e84d33b7)
+
 ### Visibility into app origin (Preview)
 
 Defender for Cloud Apps users who use app governance will be able to gain visibility into the origin of OAuth apps connected to Microsoft 365. You can filter and monitor apps that have external origins, to proactively review such apps and improve the security posture of the organization.
