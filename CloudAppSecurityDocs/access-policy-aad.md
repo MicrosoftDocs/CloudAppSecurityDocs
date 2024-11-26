@@ -6,8 +6,6 @@ ms.topic: how-to
 ---
 # Create Microsoft Defender for Cloud Apps access policies
 
-
-
 Microsoft Defender for Cloud Apps access policies use Conditional Access app control to provide real-time monitoring and control over access to cloud apps. Access policies control access based on user, location, device, and app, and are supported for any device.
 
 Policies created for a host app are not connected to any related resource apps. For example, access policies that you create for Teams, Exchange, or Gmail are not connected to SharePoint, OneDrive, or Google Drive. If you need a policy for the resource app in addition to the host app, create a separate policy.
